@@ -1,0 +1,59 @@
+{
+  "experiment": "Popularity, reserved candidate tiers and forward-spectrum fusion together",
+  "submitted_at_utc": "2026-10-04T13:06:29.123Z",
+  "official": {
+    "ref": "56824628",
+    "status": "COMPLETE",
+    "public_score": "0.340",
+    "error_description": "",
+    "verified_at_utc": "2026-10-04T17:05:29.552502Z"
+  },
+  "reference": {
+    "ref": "56801511",
+    "status": "COMPLETE",
+    "public_score": "0.340",
+    "configuration": "Popularity plus reserved tiers"
+  },
+  "other_observed_rows": [
+    {
+      "ref": "56818694",
+      "public_score": "0.338",
+      "configuration": "Forward fusion"
+    },
+    {
+      "ref": "56818650",
+      "public_score": "0.331",
+      "configuration": "Control"
+    }
+  ],
+  "configuration": {
+    "private_execution_ref": "prvsiyan/zz-gpuchk-844231",
+    "execution_version": 6,
+    "candidate_cap": 500,
+    "popularity": true,
+    "reserved_tiers": true,
+    "forward_fusion": true,
+    "precursor_union": false,
+    "ranker_unchanged": true
+  },
+  "bindings": {
+    "server_source_sha256": "92c4e53a1f15f93b7106f421c0732470f43a14ba6ad1cdbb06a2ae9c87b53b48",
+    "ranker_sha256": "463a89768df71e24fbc94c5cf5a7aaad7e38ed919fa29f4c06dff20f0fc59072",
+    "visible_submission_sha256": "0d1cad260919fbece05d6389ccd51a8391ef06cf81d09db631f16b3b5b449785"
+  },
+  "visible_runtime": {
+    "seconds": 3515.046,
+    "queries": 400,
+    "open_library_gates": 0,
+    "popularity_activations": 0,
+    "tier_activations": 0,
+    "forward_activations": 0,
+    "forward_service_started": false
+  },
+  "interpretation": "Ties the popularity-plus-tier reference at reported precision; no demonstrated advancement.",
+  "limits": [
+    "Visible routing closed all 400 gates, so visible artifact equality does not identify hidden-stage behavior.",
+    "Each modified configuration has one completed official draw; observed differences are not isolated or additive causal gains.",
+    "Equal displayed scores do not establish equality of unrounded MRR@25."
+  ]
+}
