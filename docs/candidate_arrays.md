@@ -18,6 +18,8 @@ A passing array contract cannot establish molecular identity alignment, descript
 
 `src/precursor_window_union.py` is a standard-library primitive for combining several neutral-mass windows with an existing fallback candidate set:
 
+For the import example below, start Python from the repository root with `PYTHONPATH=src python`, or run your own script with `PYTHONPATH=src python your_script.py`.
+
 ```python
 from precursor_window_union import union_precursor_windows
 
