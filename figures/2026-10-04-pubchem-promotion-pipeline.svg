@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1130" viewBox="0 0 1400 1130" role="img" aria-labelledby="title desc">
+  <title id="title">AP-2 baseline and prospective PubChem promotion</title>
+  <desc id="desc">The existing pipeline uses mass candidates and four channels, capped pool ranking, conditional pool and tier refinements, fixed slots and scoring identity deduplication. A prospective promotion belongs after final fusion. Local CPU collection covers fingerprint and tier metadata only; the actual CUDA forward service and production selected pool exclusions are not reproduced, so full quality remains on hold.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#31564b"/></marker>
+    <marker id="mutedArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#a46f43"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#24483d}.title{font-size:34px;font-weight:700}.subtitle{font-size:18px;fill:#566961}.heading{font-size:21px;font-weight:700}.body{font-size:17px}.small{font-size:15px;fill:#526c60}.chip{font-size:13px;font-weight:700;letter-spacing:1.1px}.node{fill:#fffef9;stroke:#9bac9b;stroke-width:1.6}.flow{fill:none;stroke:#31564b;stroke-width:2;marker-end:url(#arrow)}.hold{fill:#fff1dd;stroke:#c89355;stroke-width:1.6}.prospective{fill:#f4f9ef;stroke:#618a55;stroke-width:2;stroke-dasharray:8 6}.branch{fill:none;stroke:#a46f43;stroke-width:2;stroke-dasharray:7 5;marker-end:url(#mutedArrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="1130" fill="#f7f5ed"/>
+  <path d="M1244 0C1263 38 1217 50 1241 88C1262 124 1322 116 1304 164" stroke="#c6d5b9" stroke-width="3" fill="none"/>
+  <path d="M1238 45C1200 32 1178 54 1193 69C1208 83 1226 58 1238 45M1258 100C1300 80 1323 96 1309 114C1296 131 1277 111 1258 100" fill="#dce7d0"/>
+  <text x="62" y="62" class="title">A promotion hypothesis, placed after fusion</text>
+  <text x="62" y="94" class="subtitle">Existing AP-2 structure · original CPU metadata preflight · no measured score gain</text>
+  <rect x="63" y="119" width="370" height="31" rx="15" fill="#e6eddc"/>
+  <text x="80" y="140" class="chip">BASELINE SOURCE PINNED · 4 OCT 2026</text>
+  <rect x="496" y="174" width="407" height="70" rx="15" class="node"/>
+  <text x="699" y="202" class="heading" text-anchor="middle">Complete query spectra</text>
+  <text x="699" y="226" class="small" text-anchor="middle">precursor, adduct, polarity, instrument and CE</text>
+  <path d="M699 244V271" class="flow"/>
+  <rect x="474" y="272" width="452" height="92" rx="15" class="node"/>
+  <text x="700" y="302" class="heading" text-anchor="middle">Pool candidates in neutral-mass window</text>
+  <text x="700" y="329" class="body" text-anchor="middle">10 ppm; 30 ppm only when empty</text>
+  <text x="700" y="352" class="small" text-anchor="middle">Empty pool means AP-2 is never invoked</text>
+  <path d="M699 364V391" class="flow"/>
+  <rect x="371" y="392" width="658" height="110" rx="15" class="node"/>
+  <text x="700" y="421" class="heading" text-anchor="middle">Four evidence channels → eight existing HGB heads</text>
+  <text x="700" y="448" class="body" text-anchor="middle">library · analogs · production fingerprint pair · fragments</text>
+  <text x="700" y="474" class="small" text-anchor="middle">Before ranking: cap 500 by library similarity + standardized FP dot</text>
+  <text x="700" y="492" class="small" text-anchor="middle">Cached uncapped lists do not reproduce this selected membership</text>
+  <path d="M700 502V529" class="flow"/>
+  <rect x="491" y="530" width="418" height="77" rx="15" class="node"/>
+  <text x="700" y="559" class="heading" text-anchor="middle">Conditional refinement gate</text>
+  <text x="700" y="586" class="body" text-anchor="middle">best library similarity &lt; literal 0.90</text>
+  <path d="M491 568H266V619" class="flow"/>
+  <path d="M909 568H1127V619" class="flow"/>
+  <rect x="70" y="620" width="395" height="88" rx="15" class="node"/>
+  <text x="267" y="650" class="heading" text-anchor="middle">Pool popularity reorder</text>
+  <text x="267" y="678" class="body" text-anchor="middle">Existing pool positions; top head only</text>
+  <path d="M267 708V731" class="flow"/>
+  <rect x="70" y="732" width="395" height="86" rx="15" class="hold"/>
+  <text x="267" y="762" class="heading" text-anchor="middle">Pool forward cascade</text>
+  <text x="267" y="790" class="body" text-anchor="middle">Actual baseline CUDA service unavailable locally</text>
+  <rect x="938" y="620" width="395" height="113" rx="15" class="node"/>
+  <text x="1135" y="649" class="heading" text-anchor="middle">PubChem tier</text>
+  <text x="1135" y="677" class="body" text-anchor="middle">60000 window cap → Morgan shortlist</text>
+  <text x="1135" y="702" class="body" text-anchor="middle">5000 + 200 documented → full FP dot</text>
+  <text x="1135" y="724" class="small" text-anchor="middle">z(f.z) + 0.25 × popularity; exclude selected pool</text>
+  <path d="M1135 733V748" class="flow"/>
+  <rect x="938" y="749" width="395" height="69" rx="15" class="hold"/>
+  <text x="1135" y="778" class="heading" text-anchor="middle">Tier forward cascade</text>
+  <text x="1135" y="801" class="small" text-anchor="middle">Same missing baseline CUDA service</text>
+  <path d="M465 774H566V839" class="flow"/>
+  <path d="M938 783H834V839" class="flow"/>
+  <rect x="497" y="840" width="406" height="88" rx="15" class="node"/>
+  <text x="700" y="870" class="heading" text-anchor="middle">Fixed-slot merge → scoring dedup</text>
+  <text x="700" y="898" class="body" text-anchor="middle">Then retain the final 25 candidates</text>
+  <text x="700" y="918" class="small" text-anchor="middle">Every other candidate's order is the baseline</text>
+  <path d="M700 928V951" class="branch"/>
+  <rect x="404" y="952" width="593" height="114" rx="15" class="prospective"/>
+  <text x="700" y="980" class="heading" text-anchor="middle">Prospective: promote one leading eligible tier identity</text>
+  <text x="700" y="1006" class="body" text-anchor="middle">Candidate-specific 10 ppm + identity-bound finite statistics</text>
+  <text x="700" y="1031" class="body" text-anchor="middle">Remove equivalent alias; preserve all other relative order</text>
+  <text x="700" y="1055" class="small" text-anchor="middle">Policy unapproved; full-list quality on HOLD</text>
+  <path d="M909 670H858V651H548" class="branch"/>
+  <rect x="481" y="627" width="438" height="112" rx="15" fill="#e9efdf" stroke="#afc398"/>
+  <text x="700" y="655" class="heading" text-anchor="middle">Local preflight scope</text>
+  <text x="700" y="681" class="body" text-anchor="middle">32 frozen queries · complete raw spectra</text>
+  <text x="700" y="707" class="small" text-anchor="middle">Production FP and unexcluded tier metadata only</text>
+  <text x="700" y="729" class="small" text-anchor="middle">No cap 500, final list, threshold or quality claim</text>
+  <text x="62" y="1100" class="small">Solid boxes: current baseline structure. Dashed promotion: independently authored mechanics, still a hypothesis.</text>
+</svg>

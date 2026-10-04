@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "experiment": "Identity-bound PubChem tier mechanics and precursor eligibility",
+  "status": "COMPLETED_CPU_METADATA_PREFLIGHT_NO_QUALITY_CLAIM",
+  "started_utc": "2026-10-04T20:56:36.890850+00:00",
+  "elapsed_seconds": 360.3666382079973,
+  "selection": {
+    "queries": 32,
+    "NP": 16,
+    "timsTOF": 16,
+    "salt": "pubchem-promotion-calibration-preflight-20261004-v1",
+    "role": "checkpoint_selection",
+    "complete_spectra": 138,
+    "frozen_before_inference": true,
+    "missing_truth_cases_retained": 2,
+    "independent_validation": false
+  },
+  "counts": {
+    "all_retained": 32,
+    "collected": 30,
+    "empty_pubchem_window_abstentions": 2,
+    "leaders_with_finite_identity_bound_metadata": 30,
+    "leaders_matching_at_least_one_declared_precursor": 29,
+    "real_promotions": 0
+  },
+  "models": {
+    "production_fingerprint_pair": true,
+    "merged_sha256": "261529c823825cbe2028684bbf7214a95a7e631ca9f656336d577c507cce8294",
+    "single_sha256": "c19aa29016ed4d7a67bac38105b8fa5076c696c29eb66a504558c9b2e52b614a",
+    "eight_HGB_unchanged": true,
+    "HGB_inference": false
+  },
+  "mechanics": {
+    "tests_passed": 22,
+    "core_default": "abstain",
+    "chemistry_identity": "Caller-supplied heavy-atom composition and tautomer-canonical InChIKey14; module checks contracts, not chemical equivalence",
+    "candidate_mass_tolerance_ppm": 10,
+    "strong_library_gate": "No promotion when literal library_max >= 0.90",
+    "policy": "No calibrated policy or confidence threshold selected",
+    "promotion_requires": [
+      "Explicit policy attestation",
+      "Actual complete AP2 pipeline and invocation",
+      "Finite identity-bound full-survivor standardization and popularity",
+      "Candidate-specific observed-precursor compatibility"
+    ],
+    "ordering": "After scoring-identity deduplication; preserve relative order of other candidates and displace only the tail"
+  },
+  "observed_hazard": {
+    "scope": "One descriptive NP query, not a prevalence or quality estimate",
+    "adduct": "[M-H]-",
+    "spectra": 8,
+    "neutral_mass_clusters": [
+      610.153376,
+      610.007276
+    ],
+    "median_mass": 610.080326,
+    "tier_candidate_mass": 610.079449,
+    "candidate_matches_actual_precursor_clusters": false,
+    "result": "Abstain; median-window membership alone does not imply compatibility with a measured precursor"
+  },
+  "source_sha256": {
+    "baseline": "fa772eae3fafff982b10553f3750b5a0de404ae6f2324a253168f681075a64a5",
+    "core": "27a370aad07c75e7de588a7d90721d473aabfe4a25e8fff8bbcc85b3d24380fc",
+    "tests": "1b0943e6b7c44b19912285d609998efd3015996d718026a774d4b3e0c5c2f998",
+    "diagram": "beaa626889c3cd2cf3b0eb23ea5cc1a4995e66166512a46cee6fc380763324bb",
+    "freeze": "4701a60fea061503cabad94b99210f85559858576c35de226f536a9d2ae25152",
+    "complete_raw_inputs": "ff83d740fe93c89f239775d0c56547801cdf12f0439609a6fc8086704d86e1f9",
+    "collection_summary": "1b95ddc7897eab3f686c10ce9c96a15e301888123165203cf80bc03fc8653b14"
+  },
+  "post_run_input_integrity": {
+    "pinned_assets": 22,
+    "all_unchanged": true
+  },
+  "exact_production_cap500": false,
+  "actual_CUDA_forward_invoked": false,
+  "final25_reconstructed": false,
+  "confidence_calibration_eligible": false,
+  "production_promotion": false,
+  "official_score": null,
+  "limits": [
+    "Checkpoint-role queries and upstream fingerprint exposure prevent independent generalization claims.",
+    "Unexcluded and conditional cached-window metadata do not reproduce production's selected cap500 exclusions.",
+    "RDKit 2026.03.3 is not attested as the production generation version.",
+    "Synthetic contracts and finite metadata do not demonstrate ranking quality."
+  ],
+  "run_example": "cd examples/pubchem_promotion && python -m unittest -v test_promotion_core.py",
+  "files": {
+    "core": "../examples/pubchem_promotion/promotion_core.py",
+    "tests": "../examples/pubchem_promotion/test_promotion_core.py",
+    "figure": "../figures/2026-10-04-pubchem-promotion-pipeline.svg"
+  }
+}
