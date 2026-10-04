@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "experiment": "Frozen native ranker on production fingerprint inputs",
+  "recorded_utc": "2026-10-04T20:16:09.136893+00:00",
+  "decision": "HOLD",
+  "candidate": "Two 350-tree LambdaRank heads, priors 0.30 and 0.60; raw arithmetic mean, routed only when library maximum is below literal 0.90",
+  "control": "Exact arithmetic mean of eight saved production HistGradientBoosting probability heads",
+  "quality_promotion": false,
+  "independent_validation": false,
+  "full_pipeline_validated": false,
+  "official_score": null,
+  "class1": {
+    "completed_utc": "2026-10-04T20:06:26.648993+00:00",
+    "results": [
+      {
+        "scope": "all31",
+        "denominator": 31,
+        "control": {
+          "mrr25": 0.894489247311828,
+          "top1": 27,
+          "top25": 30
+        },
+        "candidate": {
+          "mrr25": 0.8911290322580645,
+          "top1": 27,
+          "top25": 29
+        },
+        "comparison": {
+          "mrr25_delta": -0.0033602150537634396,
+          "paired_ci95": [
+            -0.02217741935483871,
+            0.014112903225806453
+          ],
+          "wins": 1,
+          "losses": 2,
+          "ties": 28
+        }
+      },
+      {
+        "scope": "historical_weak6",
+        "denominator": 6,
+        "control": {
+          "mrr25": 0.4548611111111111,
+          "top1": 2,
+          "top25": 5
+        },
+        "candidate": {
+          "mrr25": 0.4375,
+          "top1": 2,
+          "top25": 4
+        },
+        "comparison": {
+          "mrr25_delta": -0.017361111111111105,
+          "paired_ci95": [
+            -0.10416666666666667,
+            0.07291666666666667
+          ],
+          "wins": 1,
+          "losses": 2,
+          "ties": 3
+        }
+      }
+    ],
+    "protocol_sha256": "13d78a3be69e0908fa2e9211f15e8b93e8f6a37532158fe6bdc628d3aa9dcdaf",
+    "summary_sha256": "47091620d16e41fb3de4b9a7cc9e0292e8a30b6fadd485fb5acf3c053148ec3c"
+  },
+  "class2": {
+    "completed_utc": "2026-10-04T20:16:09.136893+00:00",
+    "results": [
+      {
+        "scope": "NP_full128",
+        "denominator": 128,
+        "control": {
+          "mrr25": 0.7343098958333333,
+          "top1": 79,
+          "top25": 113
+        },
+        "candidate": {
+          "mrr25": 0.798654513888889,
+          "top1": 95,
+          "top25": 113
+        },
+        "comparison": {
+          "mrr25_delta": 0.06434461805555555,
+          "paired_ci95": [
+            0.03059624565972222,
+            0.10015462239583336
+          ],
+          "wins": 20,
+          "losses": 5,
+          "ties": 103
+        }
+      },
+      {
+        "scope": "NP_le500",
+        "denominator": 124,
+        "control": {
+          "mrr25": 0.7338037634408603,
+          "top1": 77,
+          "top25": 109
+        },
+        "candidate": {
+          "mrr25": 0.8056003584229391,
+          "top1": 94,
+          "top25": 109
+        },
+        "comparison": {
+          "mrr25_delta": 0.07179659498207885,
+          "paired_ci95": [
+            0.038978494623655914,
+            0.10674283154121864
+          ],
+          "wins": 20,
+          "losses": 4,
+          "ties": 100
+        }
+      },
+      {
+        "scope": "timsTOF_full128",
+        "denominator": 128,
+        "control": {
+          "mrr25": 0.9264322916666667,
+          "top1": 111,
+          "top25": 128
+        },
+        "candidate": {
+          "mrr25": 0.947265625,
+          "top1": 116,
+          "top25": 128
+        },
+        "comparison": {
+          "mrr25_delta": 0.020833333333333336,
+          "paired_ci95": [
+            0.00390625,
+            0.040364583333333336
+          ],
+          "wins": 5,
+          "losses": 0,
+          "ties": 123
+        }
+      },
+      {
+        "scope": "timsTOF_le500",
+        "denominator": 127,
+        "control": {
+          "mrr25": 0.9258530183727034,
+          "top1": 110,
+          "top25": 127
+        },
+        "candidate": {
+          "mrr25": 0.9468503937007874,
+          "top1": 115,
+          "top25": 127
+        },
+        "comparison": {
+          "mrr25_delta": 0.020997375328083993,
+          "paired_ci95": [
+            0.003937007874015748,
+            0.04068241469816273
+          ],
+          "wins": 5,
+          "losses": 0,
+          "ties": 122
+        }
+      },
+      {
+        "scope": "all256",
+        "denominator": 256,
+        "control": {
+          "mrr25": 0.83037109375,
+          "top1": 190,
+          "top25": 241
+        },
+        "candidate": {
+          "mrr25": 0.8729600694444444,
+          "top1": 211,
+          "top25": 241
+        },
+        "comparison": {
+          "mrr25_delta": 0.04258897569444445,
+          "paired_ci95": [
+            0.023111979166666664,
+            0.0637478298611111
+          ],
+          "wins": 25,
+          "losses": 5,
+          "ties": 226
+        }
+      }
+    ],
+    "protocol_sha256": "037d98a1196777091a8df2f3fd4712e8d4e29182d1e8267d8335356d76baa182",
+    "summary_sha256": "75570a065b22a3dbaab4747767c8db2aa9d17e2d1e87ccb22ebedce65e5846a0",
+    "panel": {
+      "queries": 256,
+      "NP": 128,
+      "timsTOF": 128,
+      "retrieval_misses": 14,
+      "empty_queries": 3,
+      "windows_above_live_500_cap": 5,
+      "overcap_NP": 4,
+      "overcap_timsTOF": 1,
+      "metadata_frozen_before_calls": true,
+      "earlier_clean_FP_panel_common_canonical_groups": 0
+    }
+  },
+  "method": {
+    "ranking": "Existing candidate order and default NumPy argsort(-scores), metric-class deduplication, first 25 valid unique classes",
+    "bootstrap": {
+      "unit": "query",
+      "replicates": 4000,
+      "seed": 20261003,
+      "percentile_interval": [
+        0.025,
+        0.975
+      ]
+    },
+    "calls_per_comparison": {
+      "production_HGB": 8,
+      "native_heads": 2
+    },
+    "fitted": false,
+    "tuned": false,
+    "parameter_scan": false,
+    "GPU": false,
+    "versions": {
+      "numpy": "2.0.2",
+      "scikit_learn": "1.6.1",
+      "scipy": "1.16.3",
+      "lightgbm": "4.6.0",
+      "rdkit": "2026.03.3"
+    },
+    "root_review": "Frozen input hashes, output hashes, pre-call timestamps and all aggregate metrics independently checked without new model calls"
+  },
+  "interpretation": "Class-2 ranking improves within this panel; Class-1 loses one top-25 answer and its MRR interval includes zero. The stronger descriptive ungated Class-2 arm is not selected. No production promotion follows.",
+  "limitations": [
+    "Queries are reused. Production fingerprints have exposure to 437690 spectra now assigned to held-out roles; the exact 256-query fingerprint training-group mapping is unverified.",
+    "Ranker training keys and canonical groups are disjoint, which does not establish independence from fingerprint training.",
+    "The earlier clean-fingerprint Class-2 panel has zero common canonical groups: this is not a same-query causal fingerprint-domain comparison.",
+    "Five windows exceed the production cap. The predeclared <=500 subsets omit those queries; candidates were not recapped or features regenerated.",
+    "Mac CPU feature generation is not an end-to-end Kaggle Linux CUDA equivalence check.",
+    "Popularity, PubChem, forward scoring and final fusion were not validated. Raw score spacing can alter downstream standardization and popularity behavior."
+  ],
+  "artifact_sha256": {
+    "production8": "463a89768df71e24fbc94c5cf5a7aaad7e38ed919fa29f4c06dff20f0fc59072",
+    "native_prior030": "68ec7a4ed4438a04ceed21ee3608ec92c126d9664fe873001f3fe13597765897",
+    "native_prior060": "62e83c711a823cede55609ef5e0da916def1f28d9918e9c695a1a98d55d8ecba",
+    "cohort": "8ad60c03069dc76ff3d15093d6b978d1b754018c47a583750bd0901674889cc1",
+    "class2_features": "be23790cffffa5ba3968ab7c445ad5fa432f37773af2abcfe100a9d26bf1b94a"
+  },
+  "public_data": "Aggregate metrics and hashes only; no query identities, labels, spectra or structures."
+}
