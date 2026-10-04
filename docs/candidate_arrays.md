@@ -14,6 +14,14 @@ Checks include finite positive masses, sorting across chunk boundaries, matching
 
 A passing array contract cannot establish molecular identity alignment, descriptor semantics, chemical validity, or asset licensing. Record those separately from shape and numeric validation.
 
+## Row identity and scoring identity
+
+Unique raw SMILES or raw InChIKey14 values do not establish uniqueness under the competition's scoring identity. The [official evaluation](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/overview/evaluation) uses RDKit 2026.03.3 and its default tautomer canonicalization before comparing InChIKey14 values. Its implementation also checks heavy-atom composition, excluding hydrogen and charge, before canonicalization.
+
+Keep an auxiliary scoring-identity index separate from the structures, row indices, descriptor inputs, and lookup keys used to build a bank. At final selection, preserve the first ranked representative of each scoring identity and refill from later candidates when appropriate. Changing the representation used for model features or existing lookups needs separate validation.
+
+The array utility above performs numeric and storage checks. It does not canonicalize structures, certify chemical alignment, or verify uniqueness under the scoring identity. No whole-bank canonicalization result is claimed here.
+
 ## Inclusive precursor-window union
 
 `src/precursor_window_union.py` is a standard-library primitive for combining several neutral-mass windows with an existing fallback candidate set:
