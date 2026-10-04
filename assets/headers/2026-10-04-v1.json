@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-04",
+  "campaign": "Enveda CASMI",
+  "image": "2026-10-04-v1.png",
+  "sha256": "b6c3cebfb8c55e9cdf1eef4801f53b76c5403ed63da16618a6bcd8c2a69118ef",
+  "style": "Botanical cyanotype and copper engraving",
+  "generation_mode": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: exquisite opening cover for an Enveda CASMI mass-spectrometry structure-identification research notebook. Create a wide landscape 16:9 botanical cyanotype and copper-engraving hybrid artwork. Fine plant leaves and seed structures occupy one side, transforming organically into delicate molecular crystal forms and then a sparse, elegant skyline of mass-spectrum-like peaks on the other side; this is conceptual art rather than a scientific chart. Rich Prussian blue paper, pale cyan light, luminous ivory linework and sparing copper foil glints. Early botanical atlas precision meets contemporary editorial abstraction. Beautiful, airy, intricate but readable, strong central sweep and ample quiet margins. No text, no numbers, no claimed molecule identity, no quantitative labels, no score badges or watermarks. Show the wonder of discovering chemical structure from spectral evidence, museum-quality finish.",
+  "intended_use": "Opening artwork for the campaign notebook and repository",
+  "illustrative": true,
+  "cadence": "Refresh approximately every 10 versions, rotating art styles and retaining versioned assets",
+  "kaggle_versions_using_asset": [],
+  "diagram_policy": "Include readable pipeline, data, validation and experiment diagrams throughout; measured charts use reproducible plotting.",
+  "notebook_identity_preserved": true
+}
