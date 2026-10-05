@@ -1,0 +1,2167 @@
+{
+  "status": "PASS_CHECKPOINT_MEASUREMENT_ONLY",
+  "mode": "CHECKPOINT_CONTRACT_ONLY",
+  "quality_metric": null,
+  "official_score": null,
+  "models_instantiated": 0,
+  "inference_calls": 0,
+  "torch_version": "2.10.0+cu128",
+  "checkpoint_sha_scope": "OBSERVED_FIRST_MEASUREMENT; no trusted expected weight hashes",
+  "architecture_check_scope": "LIMITED_METADATA_AND_LISTED_PK_NORM_HEAD_SHAPES_BLOCK_INDICES; not strict state loading or numerical compatibility",
+  "every_internal_tensor_shape_verified": false,
+  "weight_values_finiteness_checked": false,
+  "strict_model_state_loading_performed": false,
+  "numerical_compatibility_verified": false,
+  "files": [
+    {
+      "dataset_ref": "prvsiyan/casmi26-fp-models-v2",
+      "dataset_version": 1,
+      "file": "fp_merged_m1.pt",
+      "bytes": 144110255,
+      "observed_sha256": "261529c823825cbe2028684bbf7214a95a7e631ca9f656336d577c507cce8294",
+      "sha_verified_against_expected": false,
+      "checkpoint_top_level_keys": [
+        "d",
+        "layers",
+        "model",
+        "nbits",
+        "step"
+      ],
+      "metadata": {
+        "step": 24000,
+        "nbits": 6930,
+        "d": 512,
+        "layers": 6
+      },
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6,
+      "output_head_shape": [
+        6930,
+        2048
+      ],
+      "block_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "architecture_checks": {
+        "pk_shape": true,
+        "norm_shape": true,
+        "hidden_head_shape": true,
+        "output_head_shape": true,
+        "output_bias_shape": true,
+        "layer_indices": true,
+        "default_eight_heads_divide_d": true
+      },
+      "architecture_consistent": true,
+      "architecture_check_scope": "LIMITED_METADATA_AND_LISTED_PK_NORM_HEAD_SHAPES_BLOCK_INDICES; not strict state loading or numerical compatibility",
+      "every_internal_tensor_shape_verified": false,
+      "weight_values_finiteness_checked": false,
+      "strict_model_state_loading_performed": false,
+      "numerical_compatibility_verified": false,
+      "width_matches_coconut_feature_map": true,
+      "feature_order_binding": "UNBOUND_NO_CHECKPOINT_FEATURE_ORDER",
+      "state_tensor_shapes": {
+        "mz_emb.inv": [
+          256
+        ],
+        "nl_emb.inv": [
+          256
+        ],
+        "pk.weight": [
+          512,
+          1025
+        ],
+        "pk.bias": [
+          512
+        ],
+        "prec_emb.inv": [
+          256
+        ],
+        "ad.weight": [
+          26,
+          512
+        ],
+        "ins.weight": [
+          5,
+          512
+        ],
+        "gl.weight": [
+          512,
+          515
+        ],
+        "gl.bias": [
+          512
+        ],
+        "blocks.0.n1.weight": [
+          512
+        ],
+        "blocks.0.n1.bias": [
+          512
+        ],
+        "blocks.0.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.0.qkv.bias": [
+          1536
+        ],
+        "blocks.0.o.weight": [
+          512,
+          512
+        ],
+        "blocks.0.o.bias": [
+          512
+        ],
+        "blocks.0.n2.weight": [
+          512
+        ],
+        "blocks.0.n2.bias": [
+          512
+        ],
+        "blocks.0.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.0.ff.0.bias": [
+          2048
+        ],
+        "blocks.0.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.0.ff.3.bias": [
+          512
+        ],
+        "blocks.1.n1.weight": [
+          512
+        ],
+        "blocks.1.n1.bias": [
+          512
+        ],
+        "blocks.1.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.1.qkv.bias": [
+          1536
+        ],
+        "blocks.1.o.weight": [
+          512,
+          512
+        ],
+        "blocks.1.o.bias": [
+          512
+        ],
+        "blocks.1.n2.weight": [
+          512
+        ],
+        "blocks.1.n2.bias": [
+          512
+        ],
+        "blocks.1.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.1.ff.0.bias": [
+          2048
+        ],
+        "blocks.1.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.1.ff.3.bias": [
+          512
+        ],
+        "blocks.2.n1.weight": [
+          512
+        ],
+        "blocks.2.n1.bias": [
+          512
+        ],
+        "blocks.2.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.2.qkv.bias": [
+          1536
+        ],
+        "blocks.2.o.weight": [
+          512,
+          512
+        ],
+        "blocks.2.o.bias": [
+          512
+        ],
+        "blocks.2.n2.weight": [
+          512
+        ],
+        "blocks.2.n2.bias": [
+          512
+        ],
+        "blocks.2.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.2.ff.0.bias": [
+          2048
+        ],
+        "blocks.2.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.2.ff.3.bias": [
+          512
+        ],
+        "blocks.3.n1.weight": [
+          512
+        ],
+        "blocks.3.n1.bias": [
+          512
+        ],
+        "blocks.3.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.3.qkv.bias": [
+          1536
+        ],
+        "blocks.3.o.weight": [
+          512,
+          512
+        ],
+        "blocks.3.o.bias": [
+          512
+        ],
+        "blocks.3.n2.weight": [
+          512
+        ],
+        "blocks.3.n2.bias": [
+          512
+        ],
+        "blocks.3.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.3.ff.0.bias": [
+          2048
+        ],
+        "blocks.3.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.3.ff.3.bias": [
+          512
+        ],
+        "blocks.4.n1.weight": [
+          512
+        ],
+        "blocks.4.n1.bias": [
+          512
+        ],
+        "blocks.4.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.4.qkv.bias": [
+          1536
+        ],
+        "blocks.4.o.weight": [
+          512,
+          512
+        ],
+        "blocks.4.o.bias": [
+          512
+        ],
+        "blocks.4.n2.weight": [
+          512
+        ],
+        "blocks.4.n2.bias": [
+          512
+        ],
+        "blocks.4.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.4.ff.0.bias": [
+          2048
+        ],
+        "blocks.4.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.4.ff.3.bias": [
+          512
+        ],
+        "blocks.5.n1.weight": [
+          512
+        ],
+        "blocks.5.n1.bias": [
+          512
+        ],
+        "blocks.5.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.5.qkv.bias": [
+          1536
+        ],
+        "blocks.5.o.weight": [
+          512,
+          512
+        ],
+        "blocks.5.o.bias": [
+          512
+        ],
+        "blocks.5.n2.weight": [
+          512
+        ],
+        "blocks.5.n2.bias": [
+          512
+        ],
+        "blocks.5.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.5.ff.0.bias": [
+          2048
+        ],
+        "blocks.5.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.5.ff.3.bias": [
+          512
+        ],
+        "norm.weight": [
+          512
+        ],
+        "norm.bias": [
+          512
+        ],
+        "head.0.weight": [
+          2048,
+          1024
+        ],
+        "head.0.bias": [
+          2048
+        ],
+        "head.3.weight": [
+          6930,
+          2048
+        ],
+        "head.3.bias": [
+          6930
+        ]
+      },
+      "state_tensor_dtypes": [
+        "torch.float32"
+      ],
+      "tensor_devices": [
+        "cpu"
+      ],
+      "model_instantiated": false,
+      "inference_performed": false,
+      "load_and_inspect_seconds": 0.13894007900000815
+    },
+    {
+      "dataset_ref": "prvsiyan/casmi26-fp-models-v2",
+      "dataset_version": 1,
+      "file": "fp_single_s2.pt",
+      "bytes": 144110255,
+      "observed_sha256": "c19aa29016ed4d7a67bac38105b8fa5076c696c29eb66a504558c9b2e52b614a",
+      "sha_verified_against_expected": false,
+      "checkpoint_top_level_keys": [
+        "d",
+        "layers",
+        "model",
+        "nbits",
+        "step"
+      ],
+      "metadata": {
+        "step": 20000,
+        "nbits": 6930,
+        "d": 512,
+        "layers": 6
+      },
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6,
+      "output_head_shape": [
+        6930,
+        2048
+      ],
+      "block_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "architecture_checks": {
+        "pk_shape": true,
+        "norm_shape": true,
+        "hidden_head_shape": true,
+        "output_head_shape": true,
+        "output_bias_shape": true,
+        "layer_indices": true,
+        "default_eight_heads_divide_d": true
+      },
+      "architecture_consistent": true,
+      "architecture_check_scope": "LIMITED_METADATA_AND_LISTED_PK_NORM_HEAD_SHAPES_BLOCK_INDICES; not strict state loading or numerical compatibility",
+      "every_internal_tensor_shape_verified": false,
+      "weight_values_finiteness_checked": false,
+      "strict_model_state_loading_performed": false,
+      "numerical_compatibility_verified": false,
+      "width_matches_coconut_feature_map": true,
+      "feature_order_binding": "UNBOUND_NO_CHECKPOINT_FEATURE_ORDER",
+      "state_tensor_shapes": {
+        "mz_emb.inv": [
+          256
+        ],
+        "nl_emb.inv": [
+          256
+        ],
+        "pk.weight": [
+          512,
+          1025
+        ],
+        "pk.bias": [
+          512
+        ],
+        "prec_emb.inv": [
+          256
+        ],
+        "ad.weight": [
+          26,
+          512
+        ],
+        "ins.weight": [
+          5,
+          512
+        ],
+        "gl.weight": [
+          512,
+          515
+        ],
+        "gl.bias": [
+          512
+        ],
+        "blocks.0.n1.weight": [
+          512
+        ],
+        "blocks.0.n1.bias": [
+          512
+        ],
+        "blocks.0.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.0.qkv.bias": [
+          1536
+        ],
+        "blocks.0.o.weight": [
+          512,
+          512
+        ],
+        "blocks.0.o.bias": [
+          512
+        ],
+        "blocks.0.n2.weight": [
+          512
+        ],
+        "blocks.0.n2.bias": [
+          512
+        ],
+        "blocks.0.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.0.ff.0.bias": [
+          2048
+        ],
+        "blocks.0.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.0.ff.3.bias": [
+          512
+        ],
+        "blocks.1.n1.weight": [
+          512
+        ],
+        "blocks.1.n1.bias": [
+          512
+        ],
+        "blocks.1.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.1.qkv.bias": [
+          1536
+        ],
+        "blocks.1.o.weight": [
+          512,
+          512
+        ],
+        "blocks.1.o.bias": [
+          512
+        ],
+        "blocks.1.n2.weight": [
+          512
+        ],
+        "blocks.1.n2.bias": [
+          512
+        ],
+        "blocks.1.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.1.ff.0.bias": [
+          2048
+        ],
+        "blocks.1.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.1.ff.3.bias": [
+          512
+        ],
+        "blocks.2.n1.weight": [
+          512
+        ],
+        "blocks.2.n1.bias": [
+          512
+        ],
+        "blocks.2.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.2.qkv.bias": [
+          1536
+        ],
+        "blocks.2.o.weight": [
+          512,
+          512
+        ],
+        "blocks.2.o.bias": [
+          512
+        ],
+        "blocks.2.n2.weight": [
+          512
+        ],
+        "blocks.2.n2.bias": [
+          512
+        ],
+        "blocks.2.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.2.ff.0.bias": [
+          2048
+        ],
+        "blocks.2.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.2.ff.3.bias": [
+          512
+        ],
+        "blocks.3.n1.weight": [
+          512
+        ],
+        "blocks.3.n1.bias": [
+          512
+        ],
+        "blocks.3.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.3.qkv.bias": [
+          1536
+        ],
+        "blocks.3.o.weight": [
+          512,
+          512
+        ],
+        "blocks.3.o.bias": [
+          512
+        ],
+        "blocks.3.n2.weight": [
+          512
+        ],
+        "blocks.3.n2.bias": [
+          512
+        ],
+        "blocks.3.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.3.ff.0.bias": [
+          2048
+        ],
+        "blocks.3.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.3.ff.3.bias": [
+          512
+        ],
+        "blocks.4.n1.weight": [
+          512
+        ],
+        "blocks.4.n1.bias": [
+          512
+        ],
+        "blocks.4.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.4.qkv.bias": [
+          1536
+        ],
+        "blocks.4.o.weight": [
+          512,
+          512
+        ],
+        "blocks.4.o.bias": [
+          512
+        ],
+        "blocks.4.n2.weight": [
+          512
+        ],
+        "blocks.4.n2.bias": [
+          512
+        ],
+        "blocks.4.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.4.ff.0.bias": [
+          2048
+        ],
+        "blocks.4.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.4.ff.3.bias": [
+          512
+        ],
+        "blocks.5.n1.weight": [
+          512
+        ],
+        "blocks.5.n1.bias": [
+          512
+        ],
+        "blocks.5.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.5.qkv.bias": [
+          1536
+        ],
+        "blocks.5.o.weight": [
+          512,
+          512
+        ],
+        "blocks.5.o.bias": [
+          512
+        ],
+        "blocks.5.n2.weight": [
+          512
+        ],
+        "blocks.5.n2.bias": [
+          512
+        ],
+        "blocks.5.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.5.ff.0.bias": [
+          2048
+        ],
+        "blocks.5.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.5.ff.3.bias": [
+          512
+        ],
+        "norm.weight": [
+          512
+        ],
+        "norm.bias": [
+          512
+        ],
+        "head.0.weight": [
+          2048,
+          1024
+        ],
+        "head.0.bias": [
+          2048
+        ],
+        "head.3.weight": [
+          6930,
+          2048
+        ],
+        "head.3.bias": [
+          6930
+        ]
+      },
+      "state_tensor_dtypes": [
+        "torch.float32"
+      ],
+      "tensor_devices": [
+        "cpu"
+      ],
+      "model_instantiated": false,
+      "inference_performed": false,
+      "load_and_inspect_seconds": 0.054332504000001336
+    },
+    {
+      "dataset_ref": "prvsiyan/casmi26-fp-models-v4",
+      "dataset_version": 1,
+      "file": "fp_merged_m1.pt",
+      "bytes": 432339069,
+      "observed_sha256": "edfeafc7855ce091c5bdb854c603cd67b1ceb058a2f2cb6a722e2675d4060c17",
+      "sha_verified_against_expected": false,
+      "checkpoint_top_level_keys": [
+        "d",
+        "layers",
+        "model",
+        "nbits",
+        "opt",
+        "step"
+      ],
+      "metadata": {
+        "step": 24000,
+        "nbits": 6930,
+        "d": 512,
+        "layers": 6
+      },
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6,
+      "output_head_shape": [
+        6930,
+        2048
+      ],
+      "block_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "architecture_checks": {
+        "pk_shape": true,
+        "norm_shape": true,
+        "hidden_head_shape": true,
+        "output_head_shape": true,
+        "output_bias_shape": true,
+        "layer_indices": true,
+        "default_eight_heads_divide_d": true
+      },
+      "architecture_consistent": true,
+      "architecture_check_scope": "LIMITED_METADATA_AND_LISTED_PK_NORM_HEAD_SHAPES_BLOCK_INDICES; not strict state loading or numerical compatibility",
+      "every_internal_tensor_shape_verified": false,
+      "weight_values_finiteness_checked": false,
+      "strict_model_state_loading_performed": false,
+      "numerical_compatibility_verified": false,
+      "width_matches_coconut_feature_map": true,
+      "feature_order_binding": "UNBOUND_NO_CHECKPOINT_FEATURE_ORDER",
+      "state_tensor_shapes": {
+        "mz_emb.inv": [
+          256
+        ],
+        "nl_emb.inv": [
+          256
+        ],
+        "pk.weight": [
+          512,
+          1025
+        ],
+        "pk.bias": [
+          512
+        ],
+        "prec_emb.inv": [
+          256
+        ],
+        "ad.weight": [
+          26,
+          512
+        ],
+        "ins.weight": [
+          5,
+          512
+        ],
+        "gl.weight": [
+          512,
+          515
+        ],
+        "gl.bias": [
+          512
+        ],
+        "blocks.0.n1.weight": [
+          512
+        ],
+        "blocks.0.n1.bias": [
+          512
+        ],
+        "blocks.0.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.0.qkv.bias": [
+          1536
+        ],
+        "blocks.0.o.weight": [
+          512,
+          512
+        ],
+        "blocks.0.o.bias": [
+          512
+        ],
+        "blocks.0.n2.weight": [
+          512
+        ],
+        "blocks.0.n2.bias": [
+          512
+        ],
+        "blocks.0.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.0.ff.0.bias": [
+          2048
+        ],
+        "blocks.0.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.0.ff.3.bias": [
+          512
+        ],
+        "blocks.1.n1.weight": [
+          512
+        ],
+        "blocks.1.n1.bias": [
+          512
+        ],
+        "blocks.1.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.1.qkv.bias": [
+          1536
+        ],
+        "blocks.1.o.weight": [
+          512,
+          512
+        ],
+        "blocks.1.o.bias": [
+          512
+        ],
+        "blocks.1.n2.weight": [
+          512
+        ],
+        "blocks.1.n2.bias": [
+          512
+        ],
+        "blocks.1.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.1.ff.0.bias": [
+          2048
+        ],
+        "blocks.1.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.1.ff.3.bias": [
+          512
+        ],
+        "blocks.2.n1.weight": [
+          512
+        ],
+        "blocks.2.n1.bias": [
+          512
+        ],
+        "blocks.2.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.2.qkv.bias": [
+          1536
+        ],
+        "blocks.2.o.weight": [
+          512,
+          512
+        ],
+        "blocks.2.o.bias": [
+          512
+        ],
+        "blocks.2.n2.weight": [
+          512
+        ],
+        "blocks.2.n2.bias": [
+          512
+        ],
+        "blocks.2.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.2.ff.0.bias": [
+          2048
+        ],
+        "blocks.2.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.2.ff.3.bias": [
+          512
+        ],
+        "blocks.3.n1.weight": [
+          512
+        ],
+        "blocks.3.n1.bias": [
+          512
+        ],
+        "blocks.3.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.3.qkv.bias": [
+          1536
+        ],
+        "blocks.3.o.weight": [
+          512,
+          512
+        ],
+        "blocks.3.o.bias": [
+          512
+        ],
+        "blocks.3.n2.weight": [
+          512
+        ],
+        "blocks.3.n2.bias": [
+          512
+        ],
+        "blocks.3.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.3.ff.0.bias": [
+          2048
+        ],
+        "blocks.3.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.3.ff.3.bias": [
+          512
+        ],
+        "blocks.4.n1.weight": [
+          512
+        ],
+        "blocks.4.n1.bias": [
+          512
+        ],
+        "blocks.4.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.4.qkv.bias": [
+          1536
+        ],
+        "blocks.4.o.weight": [
+          512,
+          512
+        ],
+        "blocks.4.o.bias": [
+          512
+        ],
+        "blocks.4.n2.weight": [
+          512
+        ],
+        "blocks.4.n2.bias": [
+          512
+        ],
+        "blocks.4.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.4.ff.0.bias": [
+          2048
+        ],
+        "blocks.4.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.4.ff.3.bias": [
+          512
+        ],
+        "blocks.5.n1.weight": [
+          512
+        ],
+        "blocks.5.n1.bias": [
+          512
+        ],
+        "blocks.5.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.5.qkv.bias": [
+          1536
+        ],
+        "blocks.5.o.weight": [
+          512,
+          512
+        ],
+        "blocks.5.o.bias": [
+          512
+        ],
+        "blocks.5.n2.weight": [
+          512
+        ],
+        "blocks.5.n2.bias": [
+          512
+        ],
+        "blocks.5.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.5.ff.0.bias": [
+          2048
+        ],
+        "blocks.5.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.5.ff.3.bias": [
+          512
+        ],
+        "norm.weight": [
+          512
+        ],
+        "norm.bias": [
+          512
+        ],
+        "head.0.weight": [
+          2048,
+          1024
+        ],
+        "head.0.bias": [
+          2048
+        ],
+        "head.3.weight": [
+          6930,
+          2048
+        ],
+        "head.3.bias": [
+          6930
+        ]
+      },
+      "state_tensor_dtypes": [
+        "torch.float32"
+      ],
+      "tensor_devices": [
+        "cpu"
+      ],
+      "model_instantiated": false,
+      "inference_performed": false,
+      "load_and_inspect_seconds": 0.22560948899996447
+    },
+    {
+      "dataset_ref": "prvsiyan/casmi26-fp-models-v4",
+      "dataset_version": 1,
+      "file": "fp_merged_m2.pt",
+      "bytes": 432339069,
+      "observed_sha256": "5ea8a9ed8ec080ee77449936c422cc420df07b4cff83ac5629acee1e838db33d",
+      "sha_verified_against_expected": false,
+      "checkpoint_top_level_keys": [
+        "d",
+        "layers",
+        "model",
+        "nbits",
+        "opt",
+        "step"
+      ],
+      "metadata": {
+        "step": 20000,
+        "nbits": 6930,
+        "d": 512,
+        "layers": 6
+      },
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6,
+      "output_head_shape": [
+        6930,
+        2048
+      ],
+      "block_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "architecture_checks": {
+        "pk_shape": true,
+        "norm_shape": true,
+        "hidden_head_shape": true,
+        "output_head_shape": true,
+        "output_bias_shape": true,
+        "layer_indices": true,
+        "default_eight_heads_divide_d": true
+      },
+      "architecture_consistent": true,
+      "architecture_check_scope": "LIMITED_METADATA_AND_LISTED_PK_NORM_HEAD_SHAPES_BLOCK_INDICES; not strict state loading or numerical compatibility",
+      "every_internal_tensor_shape_verified": false,
+      "weight_values_finiteness_checked": false,
+      "strict_model_state_loading_performed": false,
+      "numerical_compatibility_verified": false,
+      "width_matches_coconut_feature_map": true,
+      "feature_order_binding": "UNBOUND_NO_CHECKPOINT_FEATURE_ORDER",
+      "state_tensor_shapes": {
+        "mz_emb.inv": [
+          256
+        ],
+        "nl_emb.inv": [
+          256
+        ],
+        "pk.weight": [
+          512,
+          1025
+        ],
+        "pk.bias": [
+          512
+        ],
+        "prec_emb.inv": [
+          256
+        ],
+        "ad.weight": [
+          26,
+          512
+        ],
+        "ins.weight": [
+          5,
+          512
+        ],
+        "gl.weight": [
+          512,
+          515
+        ],
+        "gl.bias": [
+          512
+        ],
+        "blocks.0.n1.weight": [
+          512
+        ],
+        "blocks.0.n1.bias": [
+          512
+        ],
+        "blocks.0.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.0.qkv.bias": [
+          1536
+        ],
+        "blocks.0.o.weight": [
+          512,
+          512
+        ],
+        "blocks.0.o.bias": [
+          512
+        ],
+        "blocks.0.n2.weight": [
+          512
+        ],
+        "blocks.0.n2.bias": [
+          512
+        ],
+        "blocks.0.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.0.ff.0.bias": [
+          2048
+        ],
+        "blocks.0.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.0.ff.3.bias": [
+          512
+        ],
+        "blocks.1.n1.weight": [
+          512
+        ],
+        "blocks.1.n1.bias": [
+          512
+        ],
+        "blocks.1.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.1.qkv.bias": [
+          1536
+        ],
+        "blocks.1.o.weight": [
+          512,
+          512
+        ],
+        "blocks.1.o.bias": [
+          512
+        ],
+        "blocks.1.n2.weight": [
+          512
+        ],
+        "blocks.1.n2.bias": [
+          512
+        ],
+        "blocks.1.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.1.ff.0.bias": [
+          2048
+        ],
+        "blocks.1.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.1.ff.3.bias": [
+          512
+        ],
+        "blocks.2.n1.weight": [
+          512
+        ],
+        "blocks.2.n1.bias": [
+          512
+        ],
+        "blocks.2.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.2.qkv.bias": [
+          1536
+        ],
+        "blocks.2.o.weight": [
+          512,
+          512
+        ],
+        "blocks.2.o.bias": [
+          512
+        ],
+        "blocks.2.n2.weight": [
+          512
+        ],
+        "blocks.2.n2.bias": [
+          512
+        ],
+        "blocks.2.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.2.ff.0.bias": [
+          2048
+        ],
+        "blocks.2.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.2.ff.3.bias": [
+          512
+        ],
+        "blocks.3.n1.weight": [
+          512
+        ],
+        "blocks.3.n1.bias": [
+          512
+        ],
+        "blocks.3.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.3.qkv.bias": [
+          1536
+        ],
+        "blocks.3.o.weight": [
+          512,
+          512
+        ],
+        "blocks.3.o.bias": [
+          512
+        ],
+        "blocks.3.n2.weight": [
+          512
+        ],
+        "blocks.3.n2.bias": [
+          512
+        ],
+        "blocks.3.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.3.ff.0.bias": [
+          2048
+        ],
+        "blocks.3.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.3.ff.3.bias": [
+          512
+        ],
+        "blocks.4.n1.weight": [
+          512
+        ],
+        "blocks.4.n1.bias": [
+          512
+        ],
+        "blocks.4.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.4.qkv.bias": [
+          1536
+        ],
+        "blocks.4.o.weight": [
+          512,
+          512
+        ],
+        "blocks.4.o.bias": [
+          512
+        ],
+        "blocks.4.n2.weight": [
+          512
+        ],
+        "blocks.4.n2.bias": [
+          512
+        ],
+        "blocks.4.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.4.ff.0.bias": [
+          2048
+        ],
+        "blocks.4.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.4.ff.3.bias": [
+          512
+        ],
+        "blocks.5.n1.weight": [
+          512
+        ],
+        "blocks.5.n1.bias": [
+          512
+        ],
+        "blocks.5.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.5.qkv.bias": [
+          1536
+        ],
+        "blocks.5.o.weight": [
+          512,
+          512
+        ],
+        "blocks.5.o.bias": [
+          512
+        ],
+        "blocks.5.n2.weight": [
+          512
+        ],
+        "blocks.5.n2.bias": [
+          512
+        ],
+        "blocks.5.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.5.ff.0.bias": [
+          2048
+        ],
+        "blocks.5.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.5.ff.3.bias": [
+          512
+        ],
+        "norm.weight": [
+          512
+        ],
+        "norm.bias": [
+          512
+        ],
+        "head.0.weight": [
+          2048,
+          1024
+        ],
+        "head.0.bias": [
+          2048
+        ],
+        "head.3.weight": [
+          6930,
+          2048
+        ],
+        "head.3.bias": [
+          6930
+        ]
+      },
+      "state_tensor_dtypes": [
+        "torch.float32"
+      ],
+      "tensor_devices": [
+        "cpu"
+      ],
+      "model_instantiated": false,
+      "inference_performed": false,
+      "load_and_inspect_seconds": 0.22423541199998454
+    },
+    {
+      "dataset_ref": "prvsiyan/casmi26-fp-models-v4",
+      "dataset_version": 1,
+      "file": "fp_single_aug.pt",
+      "bytes": 432339414,
+      "observed_sha256": "60e5fbe610ff34b87e8630ada140230608a061d29ab1016ecbadde4787d4d9f1",
+      "sha_verified_against_expected": false,
+      "checkpoint_top_level_keys": [
+        "d",
+        "layers",
+        "model",
+        "nbits",
+        "opt",
+        "step"
+      ],
+      "metadata": {
+        "step": 20000,
+        "nbits": 6930,
+        "d": 512,
+        "layers": 6
+      },
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6,
+      "output_head_shape": [
+        6930,
+        2048
+      ],
+      "block_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "architecture_checks": {
+        "pk_shape": true,
+        "norm_shape": true,
+        "hidden_head_shape": true,
+        "output_head_shape": true,
+        "output_bias_shape": true,
+        "layer_indices": true,
+        "default_eight_heads_divide_d": true
+      },
+      "architecture_consistent": true,
+      "architecture_check_scope": "LIMITED_METADATA_AND_LISTED_PK_NORM_HEAD_SHAPES_BLOCK_INDICES; not strict state loading or numerical compatibility",
+      "every_internal_tensor_shape_verified": false,
+      "weight_values_finiteness_checked": false,
+      "strict_model_state_loading_performed": false,
+      "numerical_compatibility_verified": false,
+      "width_matches_coconut_feature_map": true,
+      "feature_order_binding": "UNBOUND_NO_CHECKPOINT_FEATURE_ORDER",
+      "state_tensor_shapes": {
+        "mz_emb.inv": [
+          256
+        ],
+        "nl_emb.inv": [
+          256
+        ],
+        "pk.weight": [
+          512,
+          1025
+        ],
+        "pk.bias": [
+          512
+        ],
+        "prec_emb.inv": [
+          256
+        ],
+        "ad.weight": [
+          26,
+          512
+        ],
+        "ins.weight": [
+          5,
+          512
+        ],
+        "gl.weight": [
+          512,
+          515
+        ],
+        "gl.bias": [
+          512
+        ],
+        "blocks.0.n1.weight": [
+          512
+        ],
+        "blocks.0.n1.bias": [
+          512
+        ],
+        "blocks.0.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.0.qkv.bias": [
+          1536
+        ],
+        "blocks.0.o.weight": [
+          512,
+          512
+        ],
+        "blocks.0.o.bias": [
+          512
+        ],
+        "blocks.0.n2.weight": [
+          512
+        ],
+        "blocks.0.n2.bias": [
+          512
+        ],
+        "blocks.0.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.0.ff.0.bias": [
+          2048
+        ],
+        "blocks.0.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.0.ff.3.bias": [
+          512
+        ],
+        "blocks.1.n1.weight": [
+          512
+        ],
+        "blocks.1.n1.bias": [
+          512
+        ],
+        "blocks.1.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.1.qkv.bias": [
+          1536
+        ],
+        "blocks.1.o.weight": [
+          512,
+          512
+        ],
+        "blocks.1.o.bias": [
+          512
+        ],
+        "blocks.1.n2.weight": [
+          512
+        ],
+        "blocks.1.n2.bias": [
+          512
+        ],
+        "blocks.1.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.1.ff.0.bias": [
+          2048
+        ],
+        "blocks.1.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.1.ff.3.bias": [
+          512
+        ],
+        "blocks.2.n1.weight": [
+          512
+        ],
+        "blocks.2.n1.bias": [
+          512
+        ],
+        "blocks.2.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.2.qkv.bias": [
+          1536
+        ],
+        "blocks.2.o.weight": [
+          512,
+          512
+        ],
+        "blocks.2.o.bias": [
+          512
+        ],
+        "blocks.2.n2.weight": [
+          512
+        ],
+        "blocks.2.n2.bias": [
+          512
+        ],
+        "blocks.2.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.2.ff.0.bias": [
+          2048
+        ],
+        "blocks.2.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.2.ff.3.bias": [
+          512
+        ],
+        "blocks.3.n1.weight": [
+          512
+        ],
+        "blocks.3.n1.bias": [
+          512
+        ],
+        "blocks.3.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.3.qkv.bias": [
+          1536
+        ],
+        "blocks.3.o.weight": [
+          512,
+          512
+        ],
+        "blocks.3.o.bias": [
+          512
+        ],
+        "blocks.3.n2.weight": [
+          512
+        ],
+        "blocks.3.n2.bias": [
+          512
+        ],
+        "blocks.3.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.3.ff.0.bias": [
+          2048
+        ],
+        "blocks.3.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.3.ff.3.bias": [
+          512
+        ],
+        "blocks.4.n1.weight": [
+          512
+        ],
+        "blocks.4.n1.bias": [
+          512
+        ],
+        "blocks.4.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.4.qkv.bias": [
+          1536
+        ],
+        "blocks.4.o.weight": [
+          512,
+          512
+        ],
+        "blocks.4.o.bias": [
+          512
+        ],
+        "blocks.4.n2.weight": [
+          512
+        ],
+        "blocks.4.n2.bias": [
+          512
+        ],
+        "blocks.4.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.4.ff.0.bias": [
+          2048
+        ],
+        "blocks.4.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.4.ff.3.bias": [
+          512
+        ],
+        "blocks.5.n1.weight": [
+          512
+        ],
+        "blocks.5.n1.bias": [
+          512
+        ],
+        "blocks.5.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.5.qkv.bias": [
+          1536
+        ],
+        "blocks.5.o.weight": [
+          512,
+          512
+        ],
+        "blocks.5.o.bias": [
+          512
+        ],
+        "blocks.5.n2.weight": [
+          512
+        ],
+        "blocks.5.n2.bias": [
+          512
+        ],
+        "blocks.5.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.5.ff.0.bias": [
+          2048
+        ],
+        "blocks.5.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.5.ff.3.bias": [
+          512
+        ],
+        "norm.weight": [
+          512
+        ],
+        "norm.bias": [
+          512
+        ],
+        "head.0.weight": [
+          2048,
+          1024
+        ],
+        "head.0.bias": [
+          2048
+        ],
+        "head.3.weight": [
+          6930,
+          2048
+        ],
+        "head.3.bias": [
+          6930
+        ]
+      },
+      "state_tensor_dtypes": [
+        "torch.float32"
+      ],
+      "tensor_devices": [
+        "cpu"
+      ],
+      "model_instantiated": false,
+      "inference_performed": false,
+      "load_and_inspect_seconds": 0.14512670100003788
+    },
+    {
+      "dataset_ref": "prvsiyan/casmi26-fp-models-v4",
+      "dataset_version": 1,
+      "file": "fp_single_s2.pt",
+      "bytes": 432339069,
+      "observed_sha256": "30d2d97d49adb1b6e84ba8459553357397dbc9d7a6a1440ae1a77f9085df34f8",
+      "sha_verified_against_expected": false,
+      "checkpoint_top_level_keys": [
+        "d",
+        "layers",
+        "model",
+        "nbits",
+        "opt",
+        "step"
+      ],
+      "metadata": {
+        "step": 20000,
+        "nbits": 6930,
+        "d": 512,
+        "layers": 6
+      },
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6,
+      "output_head_shape": [
+        6930,
+        2048
+      ],
+      "block_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "architecture_checks": {
+        "pk_shape": true,
+        "norm_shape": true,
+        "hidden_head_shape": true,
+        "output_head_shape": true,
+        "output_bias_shape": true,
+        "layer_indices": true,
+        "default_eight_heads_divide_d": true
+      },
+      "architecture_consistent": true,
+      "architecture_check_scope": "LIMITED_METADATA_AND_LISTED_PK_NORM_HEAD_SHAPES_BLOCK_INDICES; not strict state loading or numerical compatibility",
+      "every_internal_tensor_shape_verified": false,
+      "weight_values_finiteness_checked": false,
+      "strict_model_state_loading_performed": false,
+      "numerical_compatibility_verified": false,
+      "width_matches_coconut_feature_map": true,
+      "feature_order_binding": "UNBOUND_NO_CHECKPOINT_FEATURE_ORDER",
+      "state_tensor_shapes": {
+        "mz_emb.inv": [
+          256
+        ],
+        "nl_emb.inv": [
+          256
+        ],
+        "pk.weight": [
+          512,
+          1025
+        ],
+        "pk.bias": [
+          512
+        ],
+        "prec_emb.inv": [
+          256
+        ],
+        "ad.weight": [
+          26,
+          512
+        ],
+        "ins.weight": [
+          5,
+          512
+        ],
+        "gl.weight": [
+          512,
+          515
+        ],
+        "gl.bias": [
+          512
+        ],
+        "blocks.0.n1.weight": [
+          512
+        ],
+        "blocks.0.n1.bias": [
+          512
+        ],
+        "blocks.0.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.0.qkv.bias": [
+          1536
+        ],
+        "blocks.0.o.weight": [
+          512,
+          512
+        ],
+        "blocks.0.o.bias": [
+          512
+        ],
+        "blocks.0.n2.weight": [
+          512
+        ],
+        "blocks.0.n2.bias": [
+          512
+        ],
+        "blocks.0.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.0.ff.0.bias": [
+          2048
+        ],
+        "blocks.0.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.0.ff.3.bias": [
+          512
+        ],
+        "blocks.1.n1.weight": [
+          512
+        ],
+        "blocks.1.n1.bias": [
+          512
+        ],
+        "blocks.1.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.1.qkv.bias": [
+          1536
+        ],
+        "blocks.1.o.weight": [
+          512,
+          512
+        ],
+        "blocks.1.o.bias": [
+          512
+        ],
+        "blocks.1.n2.weight": [
+          512
+        ],
+        "blocks.1.n2.bias": [
+          512
+        ],
+        "blocks.1.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.1.ff.0.bias": [
+          2048
+        ],
+        "blocks.1.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.1.ff.3.bias": [
+          512
+        ],
+        "blocks.2.n1.weight": [
+          512
+        ],
+        "blocks.2.n1.bias": [
+          512
+        ],
+        "blocks.2.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.2.qkv.bias": [
+          1536
+        ],
+        "blocks.2.o.weight": [
+          512,
+          512
+        ],
+        "blocks.2.o.bias": [
+          512
+        ],
+        "blocks.2.n2.weight": [
+          512
+        ],
+        "blocks.2.n2.bias": [
+          512
+        ],
+        "blocks.2.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.2.ff.0.bias": [
+          2048
+        ],
+        "blocks.2.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.2.ff.3.bias": [
+          512
+        ],
+        "blocks.3.n1.weight": [
+          512
+        ],
+        "blocks.3.n1.bias": [
+          512
+        ],
+        "blocks.3.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.3.qkv.bias": [
+          1536
+        ],
+        "blocks.3.o.weight": [
+          512,
+          512
+        ],
+        "blocks.3.o.bias": [
+          512
+        ],
+        "blocks.3.n2.weight": [
+          512
+        ],
+        "blocks.3.n2.bias": [
+          512
+        ],
+        "blocks.3.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.3.ff.0.bias": [
+          2048
+        ],
+        "blocks.3.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.3.ff.3.bias": [
+          512
+        ],
+        "blocks.4.n1.weight": [
+          512
+        ],
+        "blocks.4.n1.bias": [
+          512
+        ],
+        "blocks.4.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.4.qkv.bias": [
+          1536
+        ],
+        "blocks.4.o.weight": [
+          512,
+          512
+        ],
+        "blocks.4.o.bias": [
+          512
+        ],
+        "blocks.4.n2.weight": [
+          512
+        ],
+        "blocks.4.n2.bias": [
+          512
+        ],
+        "blocks.4.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.4.ff.0.bias": [
+          2048
+        ],
+        "blocks.4.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.4.ff.3.bias": [
+          512
+        ],
+        "blocks.5.n1.weight": [
+          512
+        ],
+        "blocks.5.n1.bias": [
+          512
+        ],
+        "blocks.5.qkv.weight": [
+          1536,
+          512
+        ],
+        "blocks.5.qkv.bias": [
+          1536
+        ],
+        "blocks.5.o.weight": [
+          512,
+          512
+        ],
+        "blocks.5.o.bias": [
+          512
+        ],
+        "blocks.5.n2.weight": [
+          512
+        ],
+        "blocks.5.n2.bias": [
+          512
+        ],
+        "blocks.5.ff.0.weight": [
+          2048,
+          512
+        ],
+        "blocks.5.ff.0.bias": [
+          2048
+        ],
+        "blocks.5.ff.3.weight": [
+          512,
+          2048
+        ],
+        "blocks.5.ff.3.bias": [
+          512
+        ],
+        "norm.weight": [
+          512
+        ],
+        "norm.bias": [
+          512
+        ],
+        "head.0.weight": [
+          2048,
+          1024
+        ],
+        "head.0.bias": [
+          2048
+        ],
+        "head.3.weight": [
+          6930,
+          2048
+        ],
+        "head.3.bias": [
+          6930
+        ]
+      },
+      "state_tensor_dtypes": [
+        "torch.float32"
+      ],
+      "tensor_devices": [
+        "cpu"
+      ],
+      "model_instantiated": false,
+      "inference_performed": false,
+      "load_and_inspect_seconds": 0.22529499000000897
+    }
+  ],
+  "feature_map": {
+    "slug": "coconut-casmi26-candidates",
+    "version": 2,
+    "file": "fp_bits.npy",
+    "sha256": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+    "bytes": 55568,
+    "length": 6930,
+    "dtype": "int64",
+    "unique_ids": true,
+    "nonnegative_ids": true,
+    "allow_pickle": false
+  },
+  "all_widths_match": true,
+  "all_architectures_consistent": true,
+  "feature_order_fully_bound": false,
+  "elapsed_seconds": 30.271306204999973
+}
