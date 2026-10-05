@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "all_numerical_evidence_reproduced": true,
+    "existing_output_refusal_preserves_every_retained_file": true,
+    "existing_output_refused_before_new_study": true,
+    "frozen_protocol_reproduced_byte_exact": true,
+    "new_portable_launcher_passed_all_15_checks": true,
+    "numerical_source_and_authority_reproduced_byte_exact": true
+  },
+  "existing_output_exit_code": 2,
+  "new_portable_smoke_process_CPU_seconds": 1.6601700000000001,
+  "new_portable_smoke_receipt_sha256": "14cd7655759664e95ea23c1d80f139be437dca98b04fdf2a0749c19d5d567a2b",
+  "new_portable_smoke_wall_seconds": 0.918826708002598,
+  "no_dependencies_installed": true,
+  "no_native_TPU_model_data_notebook_or_GitHub_mutation": true,
+  "original_plus_new_portable_smoke_process_CPU_seconds": 3.44693,
+  "original_receipt_sha256": "56b20c530cb3005fa6fbd1942a43db863cedf9daf4fafb76114593ad648e8ea1",
+  "runtime_dependent_timing_fields_excluded_from_identity_comparison": true,
+  "status": "PASS_NEW_JAX_PORTABLE_LAUNCHER_SMOKE_ONLY"
+}

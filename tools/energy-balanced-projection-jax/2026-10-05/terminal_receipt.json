@@ -1,0 +1,364 @@
+{
+  "FP32_measured_disagreement": {
+    "JAX_loss": 1.2403464317321777,
+    "TPU_BF16_equivalence_claim": null,
+    "authority_FP64_of_exact_FP32_arrays_loss": 1.2403462483431045,
+    "end_to_end_loss_absolute_delta_vs_original_FP64": 1.699796727816505e-07,
+    "end_to_end_molecular_gradient": {
+      "maximum_absolute": 9.306466254577206e-08,
+      "relative_l2": 6.51246369550798e-07
+    },
+    "end_to_end_spectral_gradient": {
+      "maximum_absolute": 3.9880844390771664e-08,
+      "relative_l2": 3.1926544232492375e-07
+    },
+    "loss_dtype": "float32",
+    "molecular_gradient_dtype": "float32",
+    "molecular_one_SGD_update": {
+      "maximum_absolute": 1.427052961910924e-08,
+      "relative_l2": 3.825063931363421e-08
+    },
+    "same_initial_arrays_loss_absolute_delta": 1.8338907326054255e-07,
+    "same_initial_arrays_molecular_gradient": {
+      "maximum_absolute": 9.268226097702836e-08,
+      "relative_l2": 6.52239726831647e-07
+    },
+    "same_initial_arrays_spectral_gradient": {
+      "maximum_absolute": 4.249244883736125e-08,
+      "relative_l2": 3.1877381235071727e-07
+    },
+    "spectral_gradient_dtype": "float32",
+    "spectral_one_SGD_update": {
+      "maximum_absolute": 1.1634789520709177e-08,
+      "relative_l2": 3.672414719789415e-08
+    }
+  },
+  "FP64": {
+    "full_gradient_parameter_count": 458752,
+    "loss_absolute_delta": 0.0,
+    "molecular_gradient": {
+      "maximum_absolute": 5.551115123125783e-17,
+      "relative_l2": 4.0809299443487735e-16
+    },
+    "spectral_gradient": {
+      "maximum_absolute": 2.2898349882893854e-16,
+      "relative_l2": 1.055580390571585e-15
+    }
+  },
+  "authority_sha256": "da9b7861fd07bf49ad864dbf9a1e795dea8c573b3744b7d4d2665944ede3ad8c",
+  "checks": [
+    {
+      "check": "JAX_FP64_same_logit_loss_and_all_225_derivatives_match_authority",
+      "evidence": {
+        "derivatives": {
+          "maximum_absolute": 1.3877787807814457e-17,
+          "relative_l2": 9.245994118270308e-17
+        },
+        "loss_absolute_delta": 0.0
+      },
+      "passed": true
+    },
+    {
+      "check": "independent_JAX_autodiff_all_458752_head_derivatives_match_analytic_NumPy",
+      "evidence": {
+        "full_gradient_parameter_count": 458752,
+        "loss_absolute_delta": 0.0,
+        "molecular_gradient": {
+          "maximum_absolute": 5.551115123125783e-17,
+          "relative_l2": 4.0809299443487735e-16
+        },
+        "spectral_gradient": {
+          "maximum_absolute": 2.2898349882893854e-16,
+          "relative_l2": 1.055580390571585e-15
+        }
+      },
+      "passed": true
+    },
+    {
+      "check": "one_full_SGD_update_matches_authority",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "every_padding_and_cross_formula_logit_derivative_is_exact_zero",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "excluded_extreme_logits_leave_JAX_loss_and_every_derivative_unchanged",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "row_column_permutation_preserves_loss_and_all_logit_derivatives",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "row_column_permutation_preserves_both_complete_head_gradients",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "CE_replication_preserves_equal_energy_JAX_loss_and_full_head_gradients",
+      "evidence": {
+        "molecular": {
+          "maximum_absolute": 8.326672684688674e-17,
+          "relative_l2": 3.3057621286106536e-16
+        },
+        "spectral": {
+          "maximum_absolute": 6.938893903907228e-17,
+          "relative_l2": 4.1975766069781336e-16
+        }
+      },
+      "passed": true
+    },
+    {
+      "check": "missing_CEs_have_zero_weights_and_each_molecule_sums_to_one",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "same_JIT_arguments_repeat_bit_identically_on_this_CPU",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "16_parameter_finite_differences_match_independent_JAX_autodiff",
+      "evidence": {
+        "maximum_absolute_error": 1.5230644870301013e-11
+      },
+      "passed": true
+    },
+    {
+      "check": "explicit_FP32_outputs_remain_FP32_with_global_x64_enabled",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "FP32_JAX_padding_and_cross_formula_derivatives_still_exact_zero",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "frozen_authority_and_all_initial_arrays_preserved",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "complete_CPU_and_wall_budgets_pass",
+      "evidence": {
+        "process_CPU_seconds": 1.78676,
+        "wall_seconds": 1.0457783339952584
+      },
+      "passed": true
+    }
+  ],
+  "checks_passed": 15,
+  "elapsed_process_CPU_seconds": 1.78676,
+  "elapsed_wall_seconds": 1.0457783339952584,
+  "encoder_model_chemical_data_retrieval_or_competition_calls": false,
+  "finite_differences": [
+    {
+      "absolute_error": 7.832762216608558e-12,
+      "analytic": -0.11453668021472198,
+      "central_difference": -0.11453668020688922,
+      "head": "spectral",
+      "index": [
+        953,
+        191
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.22754584275242e-12,
+      "analytic": 0.01788195143193691,
+      "central_difference": 0.017881951430709364,
+      "head": "spectral",
+      "index": [
+        385,
+        119
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 8.059428124873591e-12,
+      "analytic": -0.044307335786152625,
+      "central_difference": -0.0443073357780932,
+      "head": "spectral",
+      "index": [
+        422,
+        126
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 5.821529022731475e-12,
+      "analytic": -0.007893872072402478,
+      "central_difference": -0.007893872078224007,
+      "head": "spectral",
+      "index": [
+        226,
+        81
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 7.561106254994066e-12,
+      "analytic": 0.008039033886563863,
+      "central_difference": 0.00803903389412497,
+      "head": "spectral",
+      "index": [
+        589,
+        187
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.1372448772625776e-11,
+      "analytic": 0.0010411661419203009,
+      "central_difference": 0.0010411661532927496,
+      "head": "spectral",
+      "index": [
+        940,
+        49
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 7.957731695817927e-12,
+      "analytic": -0.035216218055947116,
+      "central_difference": -0.03521621806390485,
+      "head": "spectral",
+      "index": [
+        780,
+        123
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.5360629435079431e-12,
+      "analytic": 0.031066131410258307,
+      "central_difference": 0.03106613141179437,
+      "head": "spectral",
+      "index": [
+        840,
+        175
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.4206080756196116e-11,
+      "analytic": 0.10615032854622207,
+      "central_difference": 0.10615032856042815,
+      "head": "molecular",
+      "index": [
+        603,
+        205
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.1755213122355279e-11,
+      "analytic": 0.010563410924411437,
+      "central_difference": 0.010563410912656224,
+      "head": "molecular",
+      "index": [
+        459,
+        208
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.5230644870301013e-11,
+      "analytic": -0.01253719019014115,
+      "central_difference": -0.012537190174910505,
+      "head": "molecular",
+      "index": [
+        537,
+        59
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.1143967693083567e-12,
+      "analytic": 0.013213262674009749,
+      "central_difference": 0.013213262672895352,
+      "head": "molecular",
+      "index": [
+        753,
+        179
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.329245594887743e-11,
+      "analytic": 0.0003505854850569311,
+      "central_difference": 0.00035058547176447513,
+      "head": "molecular",
+      "index": [
+        76,
+        60
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 9.125886895125501e-12,
+      "analytic": -0.0010458785928645,
+      "central_difference": -0.001045878583738613,
+      "head": "molecular",
+      "index": [
+        227,
+        68
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.3227609979571398e-11,
+      "analytic": -0.006803574912434693,
+      "central_difference": -0.006803574925662303,
+      "head": "molecular",
+      "index": [
+        92,
+        158
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 5.201863245707372e-12,
+      "analytic": -0.008698226066844918,
+      "central_difference": -0.008698226061643055,
+      "head": "molecular",
+      "index": [
+        270,
+        118
+      ],
+      "passed": true
+    }
+  ],
+  "measured_first_call_times_include_compile_and_execution": {
+    "FP32_head_value_gradients_first_compile_and_execution_seconds": 0.12625208400277188,
+    "FP64_head_value_gradients_first_compile_and_execution_seconds": 0.09560562499973457,
+    "FP64_logit_value_gradient_first_compile_and_execution_seconds": 0.23738574999879347
+  },
+  "native_TPU_readiness": "HOLD_FOR_NATIVE_TPU_RUNTIME_PARITY_AND_TIMING",
+  "protocol_sha256": "59f467e695aa72f686cd066d84b63c47cdfab1fd5a67719db473b37f7eb9f092",
+  "runtime": {
+    "devices": [
+      {
+        "device_kind": "cpu",
+        "id": 0,
+        "platform": "cpu"
+      }
+    ],
+    "jax": "0.11.0",
+    "jaxlib": "0.11.0",
+    "matmul_precision": "highest",
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "x64": true
+  },
+  "source_sha256": "a584784cf625740528d1b3dc0dcb51d4292dc7e564bc0f87ea10fabeadca7741",
+  "speedup_claim": null,
+  "status": "PASS_CPU_JAX_SYNTHETIC_FIXED_MASK_NUMERICAL_READINESS_ONLY"
+}

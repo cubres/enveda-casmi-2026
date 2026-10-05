@@ -1,0 +1,232 @@
+{
+  "CPU_source_guard_preserved": true,
+  "FP32_interpretation": {
+    "PASS_status_does_not_qualify_native_TPU_precision_or_throughput": true,
+    "full_FP32_preregistered_acceptance_gate": false,
+    "measured_disagreement": "Descriptive CPU measurements only"
+  },
+  "authorship_and_license": {
+    "code": "Original authorized Cubres campaign implementation",
+    "component_license": "MIT",
+    "dependencies": "Separately installed JAX, jaxlib and NumPy; no dependency code or binary is redistributed"
+  },
+  "bounded_subprocess_import_contract": {
+    "artifact_kind": "Bounded isolated subprocess study",
+    "module_import_changes_global_JAX_x64_and_matmul_precision": true,
+    "module_import_sets_RLIMIT_CPU_and_SIGALRM": true,
+    "run_through_verified_portable_subprocess_launcher": true,
+    "trainer_or_library_integration_requires_separate_reviewed_wrapper": true
+  },
+  "component_prefix": "tools/energy-balanced-projection-jax/2026-10-05",
+  "dependency_pins": {
+    "jax": "0.11.0",
+    "jaxlib": "0.11.0",
+    "numpy": "2.2.6"
+  },
+  "documentation_review": {
+    "no_code_or_observed_result_change": true,
+    "no_new_numerical_rerun": "The v1 launcher qualification applies to unchanged launcher and preserved study bytes",
+    "original_packet_retained_unchanged": true,
+    "root_requested_clarifications": [
+      "Import-time CPU resource/alarm/global JAX effects",
+      "FP32 descriptive measurement without full preregistered acceptance threshold"
+    ]
+  },
+  "future_native_TPU_qualification": "Planned separate precision and synchronized useful-throughput check only; no current native readiness claim",
+  "measured_runtime": {
+    "devices": [
+      {
+        "device_kind": "cpu",
+        "id": 0,
+        "platform": "cpu"
+      }
+    ],
+    "jax": "0.11.0",
+    "jaxlib": "0.11.0",
+    "matmul_precision": "highest",
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "x64": true
+  },
+  "new_portable_launcher": "run_study.py; only the new launcher supplies the retained reproduction paths",
+  "new_portable_launcher_validation": {
+    "checks": {
+      "all_numerical_evidence_reproduced": true,
+      "existing_output_refusal_preserves_every_retained_file": true,
+      "existing_output_refused_before_new_study": true,
+      "frozen_protocol_reproduced_byte_exact": true,
+      "new_portable_launcher_passed_all_15_checks": true,
+      "numerical_source_and_authority_reproduced_byte_exact": true
+    },
+    "existing_output_exit_code": 2,
+    "new_portable_smoke_process_CPU_seconds": 1.6601700000000001,
+    "new_portable_smoke_receipt_sha256": "14cd7655759664e95ea23c1d80f139be437dca98b04fdf2a0749c19d5d567a2b",
+    "new_portable_smoke_wall_seconds": 0.918826708002598,
+    "no_dependencies_installed": true,
+    "no_native_TPU_model_data_notebook_or_GitHub_mutation": true,
+    "original_plus_new_portable_smoke_process_CPU_seconds": 3.44693,
+    "original_receipt_sha256": "56b20c530cb3005fa6fbd1942a43db863cedf9daf4fafb76114593ad648e8ea1",
+    "runtime_dependent_timing_fields_excluded_from_identity_comparison": true,
+    "status": "PASS_NEW_JAX_PORTABLE_LAUNCHER_SMOKE_ONLY"
+  },
+  "original_observation": {
+    "checks_passed": 15,
+    "process_CPU_seconds": 1.78676,
+    "protocol_sha256": "59f467e695aa72f686cd066d84b63c47cdfab1fd5a67719db473b37f7eb9f092",
+    "receipt_sha256": "56b20c530cb3005fa6fbd1942a43db863cedf9daf4fafb76114593ad648e8ea1",
+    "source_sha256": "a584784cf625740528d1b3dc0dcb51d4292dc7e564bc0f87ea10fabeadca7741",
+    "wall_seconds": 1.0457783339952584
+  },
+  "original_sources_and_evidence_byte_exact": [
+    "jax_projection_parity.py",
+    "frozen_energy_authority.py",
+    "frozen_protocol.json",
+    "terminal_receipt.json",
+    "NATIVE_QUALIFICATION.md"
+  ],
+  "prepared_date": "2026-10-05",
+  "preserve_prior_NumPy_component_files": [
+    {
+      "git_blob_sha1": "af56a26b0a0e793380647ee48b798e4d3a4d08e8",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/LICENSE",
+      "sha256": "578d8da29c883896ff9b45043d570f8262ceab046c1be991d4f3adf9326ad69d",
+      "type": "blob"
+    },
+    {
+      "git_blob_sha1": "d26404f41918131bc60f8919d83f51d8bbc1b4f6",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/README.md",
+      "sha256": "a8e693ae45d33d4a89bd188f6872f29abbd3a21edcface92ace59b4bf2d03e0e",
+      "type": "blob"
+    },
+    {
+      "git_blob_sha1": "b672996848cc647f2df3cbc162f0326f7e3543e6",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/frozen_energy_authority.py",
+      "sha256": "da9b7861fd07bf49ad864dbf9a1e795dea8c573b3744b7d4d2665944ede3ad8c",
+      "type": "blob"
+    },
+    {
+      "git_blob_sha1": "98920490d70acb06ed5eebb597304946203651a2",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/frozen_input_protocol.json",
+      "sha256": "46727ad499ab10d82e996efcdd5bbd1f37de4f985b6fd50eef2e6b12e591b25f",
+      "type": "blob"
+    },
+    {
+      "git_blob_sha1": "07a26d518e3102933d62e66ea368038d001f12ee",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/projection_parity_study.py",
+      "sha256": "9203c656c783d86244469a43816ffe13e77e43663d0ee14a92892342c7828678",
+      "type": "blob"
+    },
+    {
+      "git_blob_sha1": "d2dc0bfe09161fd2257b2c881dee25837d5b1d81",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/provenance.json",
+      "sha256": "c5503758856de017a9b8185b2d054d21403ab7ca8c315ad93e8b15424172569d",
+      "type": "blob"
+    },
+    {
+      "git_blob_sha1": "aaa34fa3b2377114be9997b741b6add7774f2f9e",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/requirements.txt",
+      "sha256": "a23aaf94250a9f53031a592980142245a848e2372b6c6c3093e8260b129265b8",
+      "type": "blob"
+    },
+    {
+      "git_blob_sha1": "b8c84ee4b9f3095ece8cd9721001da3c485676c3",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/run_study.py",
+      "sha256": "be1ca0890f04725e02cdc3c257515b506e13580a4abf8c91b29b17272470929c",
+      "type": "blob"
+    },
+    {
+      "git_blob_sha1": "b64d4b90649190f1cd04677283877a31cfb73008",
+      "mode": "100644",
+      "path": "tools/energy-balanced-projection/2026-10-05/terminal_receipt.json",
+      "sha256": "cb549c949f9a45045d5d04e251ea6a7f90a9785161565ecb63c790b66f510a40",
+      "type": "blob"
+    }
+  ],
+  "repository_snapshot": {
+    "default_branch": "main",
+    "existing_blob_count": 39,
+    "head_sha": "0c5cf4615cf1de050e7e3dc769630c5b760f284b",
+    "new_prefix_absent": true,
+    "observed_utc": "2026-10-05 16:52:59 UTC",
+    "owner_id": 266148010,
+    "private": false,
+    "repository_full_name": "cubres/enveda-casmi-2026",
+    "repository_id": 1404220679,
+    "root_only_publication": true,
+    "tree_sha": "6285e79e9533fec4da30c444d43f3c84a3c9670f",
+    "tree_truncated": false
+  },
+  "reviewed_version": "v2 documentation clarification only; numerical and launcher bytes unchanged",
+  "schema": "energy-balanced-projection-jax-component-v1",
+  "scope": {
+    "CPU_or_TPU_speedup_claim": null,
+    "actual_CPU_JAX_autodiff": true,
+    "chemical_or_competition_target_call": false,
+    "data": "Seeded synthetic feature arrays and metadata only",
+    "full_head_parameter_derivatives": 458752,
+    "model_or_pretrained_weight_call": false,
+    "native_TPU_call": false,
+    "original_head_shapes": [
+      [
+        1024,
+        256
+      ],
+      [
+        768,
+        256
+      ]
+    ],
+    "retrieval_or_official_score": null
+  },
+  "source_and_evidence_pins": {
+    "LICENSE": {
+      "bytes": 1063,
+      "sha256": "578d8da29c883896ff9b45043d570f8262ceab046c1be991d4f3adf9326ad69d"
+    },
+    "NATIVE_QUALIFICATION.md": {
+      "bytes": 3631,
+      "sha256": "3a54650834ce04c87dcf977736cb1fb213f005d7399dff2a3d9780c412598064"
+    },
+    "README.md": {
+      "bytes": 6648,
+      "sha256": "c71c8c94089b7f410b4028f5214a0103d4af6132e5fa8b58dffa8e67756ec10c"
+    },
+    "frozen_energy_authority.py": {
+      "bytes": 4646,
+      "sha256": "da9b7861fd07bf49ad864dbf9a1e795dea8c573b3744b7d4d2665944ede3ad8c"
+    },
+    "frozen_protocol.json": {
+      "bytes": 2768,
+      "sha256": "59f467e695aa72f686cd066d84b63c47cdfab1fd5a67719db473b37f7eb9f092"
+    },
+    "jax_projection_parity.py": {
+      "bytes": 18189,
+      "sha256": "a584784cf625740528d1b3dc0dcb51d4292dc7e564bc0f87ea10fabeadca7741"
+    },
+    "launcher_validation.json": {
+      "bytes": 1022,
+      "sha256": "b6179c59bb3f99b31d87e4ea1294c53e804120faef86f47b18e33f152481d0b2"
+    },
+    "requirements.txt": {
+      "bytes": 40,
+      "sha256": "353e7b78e4d910c6ca8b9e700635caefb5af1ecefeeaa91d44de23907a2bf60f"
+    },
+    "run_study.py": {
+      "bytes": 3745,
+      "sha256": "ab7c31559338b40f01f344ad6c4b09ca0a549925a98de8bf769432091096fdda"
+    },
+    "terminal_receipt.json": {
+      "bytes": 9904,
+      "sha256": "56b20c530cb3005fa6fbd1942a43db863cedf9daf4fafb76114593ad648e8ea1"
+    }
+  },
+  "status": "OBSERVED_CPU_JAX_SYNTHETIC_NUMERICAL_READINESS_ONLY"
+}

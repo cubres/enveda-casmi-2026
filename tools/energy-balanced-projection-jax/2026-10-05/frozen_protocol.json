@@ -1,0 +1,123 @@
+{
+  "FP32": "Record disagreement separately; no TPU precision extrapolation",
+  "FP64_gradient_atol": 1e-11,
+  "FP64_gradient_rtol": 1e-10,
+  "FP64_loss_atol": 1e-11,
+  "all_input_initialization_and_plan_pins": {
+    "molecular": {
+      "dtype": "float64",
+      "sha256": "c6609cbf767f035979a769949e546cb6ec1dd550c8c919ccb2a24cce9f9a8a41",
+      "shape": [
+        9,
+        768
+      ]
+    },
+    "molecular_head": {
+      "dtype": "float64",
+      "sha256": "8483f97588e322f62a91bad5ab87e24627c709deae8c1ed2f8fabb8bdf1dad2a",
+      "shape": [
+        768,
+        256
+      ]
+    },
+    "plan_0": {
+      "dtype": "float64",
+      "sha256": "fb3e88f68b436dbffb3bd36352b5c96c18b9e9bbc86977761ead2778b80cb9d1",
+      "shape": [
+        7,
+        3,
+        25
+      ]
+    },
+    "plan_1": {
+      "dtype": "float64",
+      "sha256": "110fb4611be3ccbb2a39804af343d8cf4de77182ffbe4f856c7da80a1ac3aa35",
+      "shape": [
+        7,
+        3
+      ]
+    },
+    "plan_2": {
+      "dtype": "bool",
+      "sha256": "fe2efb2e424a5ba496949108b302e4f0224763863fd3deb5c231169a4c100205",
+      "shape": [
+        7,
+        9
+      ]
+    },
+    "plan_3": {
+      "dtype": "float64",
+      "sha256": "2ab6619d871017fb9ccc369ff70b66e95af7e6e9a19a7c2654a5f4ae1c9c91f6",
+      "shape": [
+        7,
+        9
+      ]
+    },
+    "spectral": {
+      "dtype": "float64",
+      "sha256": "73863c1dd50b4c32364714fae8a9f5dc07f626d6748678a0d365cec60f39ee47",
+      "shape": [
+        25,
+        1024
+      ]
+    },
+    "spectral_head": {
+      "dtype": "float64",
+      "sha256": "08f35f53217fb9d71243f5901dc2aaa193dfa47a02d65402db2ded8d8ced8350",
+      "shape": [
+        1024,
+        256
+      ]
+    }
+  },
+  "authority_sha256": "da9b7861fd07bf49ad864dbf9a1e795dea8c573b3744b7d4d2665944ede3ad8c",
+  "eta": 0.5,
+  "finite_difference_atol": 2e-08,
+  "finite_difference_rtol": 2e-05,
+  "finite_difference_samples_per_head": 8,
+  "finite_difference_step": 1e-05,
+  "hard_CPU_seconds": 30,
+  "host_metadata_only_grouping": true,
+  "jax": "0.11.0",
+  "jaxlib": "0.11.0",
+  "matmul_precision": "highest",
+  "no_competition_model_data_weights_or_TPU_call": true,
+  "numpy": "2.2.6",
+  "pure_kernel_dynamic_shapes": false,
+  "scope": "SYNTHETIC_CPU_PURE_JAX_NUMERICAL_READINESS_ONLY",
+  "seed": 20261005,
+  "sgd_rate": 0.05,
+  "source_sha256": "a584784cf625740528d1b3dc0dcb51d4292dc7e564bc0f87ea10fabeadca7741",
+  "strata": [
+    {
+      "20": 1,
+      "40": 4
+    },
+    {
+      "20": 2,
+      "60": 1
+    },
+    {
+      "40": 1
+    },
+    {
+      "20": 3,
+      "40": 1,
+      "60": 2
+    },
+    {
+      "60": 1
+    },
+    {
+      "20": 2,
+      "40": 1
+    },
+    {
+      "40": 2,
+      "60": 1
+    }
+  ],
+  "wall_failsafe_seconds": 60,
+  "width": 256,
+  "x64_explicitly_enabled": true
+}
