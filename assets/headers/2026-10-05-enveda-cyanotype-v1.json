@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-05 21:18:11 UTC",
+  "artifact": "Enveda opening artwork v1",
+  "generated_by": "OpenAI image-generation tool",
+  "prompt": "Create a remarkably beautiful wide horizontal editorial cover illustration for a scientific notebook about identifying molecules from tandem mass spectra and natural products, titled conceptually 'from spectra to structure'. Landscape panoramic composition, approximately 21:9 feeling. Original botanical cyanotype and hand-engraved scientific atlas aesthetic on warm ivory paper: rich Prussian blue, muted sage, copper-gold accents. Left foreground: exquisitely detailed medicinal leaves and a translucent faceted droplet. Across the center, elegant abstract spectral peak lines and fragments gently transform into delicate molecular constellations and interlocking geometrical forms; these are clearly decorative artwork, not a measured spectrum, no actual charts with numeric axes. Right: a calm glass prism or laboratory vial with light passing through into a fan of botanical forms, giving a visual metaphor for inference from spectral evidence. Museum-quality fine linework, restrained paper texture, sophisticated lighting, confident negative space in the upper middle for a future title, harmonious balanced composition and high resolution. No lettering, no logos, no watermark, no fake numerical labels. Artistically grounded, not stock photo or generic AI tech neon. This should feel like a carefully art-directed natural-products chemistry research cover.",
+  "transparent_background": false,
+  "source_image_preserved": true,
+  "scientific_data_visualization": false,
+  "interpretation": "Decorative botanical/spectral/molecular illustration; the peak lines and molecular forms do not encode measured spectra or a validated molecule.",
+  "campaign": "enveda-CASMI26-molecule-id-mass-spectra",
+  "notebook_installed": false,
+  "sha256": "a5bcbfcb976bb32ffc69385b9a9e6a78b4bc2962f91bd78d8139efc51d30d30f",
+  "bytes": 3396866,
+  "proposed_rotation": "Retain this asset and consider a fresh subject-specific cover about every ten notebook versions."
+}
