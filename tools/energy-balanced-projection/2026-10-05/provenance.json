@@ -1,0 +1,124 @@
+{
+  "component_prefix": "tools/energy-balanced-projection/2026-10-05",
+  "new_launcher_validation": {
+    "checks": {
+      "all_numerical_sections_reproduced": true,
+      "existing_output_refused_before_execution": true,
+      "frozen_input_protocol_reproduced_byte_exact": true,
+      "launcher_successful_16_checks": true,
+      "refusal_preserves_every_retained_file": true,
+      "source_and_authority_preserved": true
+    },
+    "child_existing_output_exit": 2,
+    "no_dependency_installations": true,
+    "no_model_data_TPU_notebook_GitHub_mutation": true,
+    "numerical_sections_exclude_runtime_dependent_timing_and_receipt_hashes": true,
+    "original_plus_smoke_cpu_seconds": 0.160476,
+    "original_receipt_sha256": "cb549c949f9a45045d5d04e251ea6a7f90a9785161565ecb63c790b66f510a40",
+    "portable_smoke_cpu_seconds": 0.072002,
+    "portable_smoke_receipt_sha256": "e731f6407b79af30fff5d4361bc767dfbf0c8d57922d0d29bc594fd4b886d9ce",
+    "portable_smoke_wall_seconds": 0.07248174999767798,
+    "status": "PASS_NEW_PORTABLE_CLI_SMOKE_ONLY"
+  },
+  "observed_checks": 16,
+  "original_authorship": {
+    "frozen_energy_authority.py": "Original NumPy energy-balanced objective developed in this campaign",
+    "license": "MIT for this component",
+    "projection_parity_study.py": "Original campaign implementation by Cubres and the authorized coding assistant",
+    "run_study.py": "New portable launcher; no changes to either preserved original numerical source"
+  },
+  "original_process_cpu_seconds": 0.08847400000000001,
+  "original_wall_seconds": 0.13440975000048638,
+  "prepared_date": "2026-10-05",
+  "repository_snapshot": {
+    "authenticated_login": "cubres",
+    "authenticated_owner_id": 266148010,
+    "default_branch": "main",
+    "head_sha": "443f2fec4cf2f4fe23c28c81d4fc332f4ec6b56d",
+    "observed_utc": "2026-10-05 16:11:48 UTC",
+    "owner_id": 266148010,
+    "owner_login": "cubres",
+    "prefix_absent": true,
+    "private": false,
+    "repository_full_name": "cubres/enveda-casmi-2026",
+    "repository_id": 1404220679,
+    "root_only_publication": true,
+    "tree_entry_count": 47,
+    "tree_sha": "588a82560a1ef6846ffbc845fa23b960153b01ef",
+    "tree_truncated": false
+  },
+  "reproduction_note": "New runs regenerate the frozen protocol and numerical sections; runtime-dependent elapsed times and terminal receipt hash vary. The source hardcoded experiment constants are preserved.",
+  "retained_original_files_byte_exact": [
+    "projection_parity_study.py",
+    "frozen_energy_authority.py",
+    "frozen_input_protocol.json",
+    "terminal_receipt.json"
+  ],
+  "runtime": {
+    "BLAS_OMP_THREADS": 1,
+    "numpy": "2.2.6",
+    "platform_contract": "POSIX Python3.12; resource module required",
+    "python": "3.12.14"
+  },
+  "schema": "energy-balanced-projection-component-v1",
+  "scope": {
+    "TPU_speed_or_parity_claim": null,
+    "active_spectral_rows": 22,
+    "candidate_group_sizes": [
+      3,
+      2,
+      2
+    ],
+    "chemical_training_or_competition_targets": false,
+    "encoder_or_pretrained_weights": false,
+    "full_parameter_gradient_count": 458752,
+    "inputs": "Synthetic random feature arrays only",
+    "molecular_head_shape": [
+      768,
+      256
+    ],
+    "padded_columns": 2,
+    "padded_rows": 3,
+    "retrieval_or_official_score_result": null,
+    "spectral_head_shape": [
+      1024,
+      256
+    ],
+    "synthetic_identity_count": 7
+  },
+  "source_and_evidence_pins": {
+    "LICENSE": {
+      "bytes": 1063,
+      "sha256": "578d8da29c883896ff9b45043d570f8262ceab046c1be991d4f3adf9326ad69d"
+    },
+    "README.md": {
+      "bytes": 5597,
+      "sha256": "a8e693ae45d33d4a89bd188f6872f29abbd3a21edcface92ace59b4bf2d03e0e"
+    },
+    "frozen_energy_authority.py": {
+      "bytes": 4646,
+      "sha256": "da9b7861fd07bf49ad864dbf9a1e795dea8c573b3744b7d4d2665944ede3ad8c"
+    },
+    "frozen_input_protocol.json": {
+      "bytes": 4275,
+      "sha256": "46727ad499ab10d82e996efcdd5bbd1f37de4f985b6fd50eef2e6b12e591b25f"
+    },
+    "projection_parity_study.py": {
+      "bytes": 21034,
+      "sha256": "9203c656c783d86244469a43816ffe13e77e43663d0ee14a92892342c7828678"
+    },
+    "requirements.txt": {
+      "bytes": 13,
+      "sha256": "a23aaf94250a9f53031a592980142245a848e2372b6c6c3093e8260b129265b8"
+    },
+    "run_study.py": {
+      "bytes": 3153,
+      "sha256": "be1ca0890f04725e02cdc3c257515b506e13580a4abf8c91b29b17272470929c"
+    },
+    "terminal_receipt.json": {
+      "bytes": 13905,
+      "sha256": "cb549c949f9a45045d5d04e251ea6a7f90a9785161565ecb63c790b66f510a40"
+    }
+  },
+  "status": "SYNTHETIC_NUMERICAL_CONTRACT_OBSERVED"
+}

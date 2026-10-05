@@ -1,0 +1,542 @@
+{
+  "FP32_measured_disagreement": {
+    "authority_same_FP32_logit_loss": 1.240346516596835,
+    "derivative_dtype": "float32",
+    "end_to_end_loss_delta_vs_original_FP64": 4.08398251883213e-07,
+    "end_to_end_molecular_gradient_vs_original_FP64": {
+      "maximum_absolute": 1.0796582373961972e-07,
+      "relative_l2": 8.326843077554202e-07
+    },
+    "end_to_end_spectral_gradient_vs_original_FP64": {
+      "maximum_absolute": 8.280248188583667e-08,
+      "relative_l2": 7.24258970038013e-07
+    },
+    "interpretation": "Measured CPU FP32 disagreement; no TPU/BF16 equivalence or speed claim",
+    "logit_dtype": "float32",
+    "molecular_SGD_update_vs_original_FP64": {
+      "maximum_absolute": 1.427052961910924e-08,
+      "relative_l2": 3.972377509359905e-08
+    },
+    "same_FP32_weights_features_molecular_gradient": {
+      "maximum_absolute": 8.763187242522008e-08,
+      "relative_l2": 5.970386402318929e-07
+    },
+    "same_FP32_weights_features_spectral_gradient": {
+      "maximum_absolute": 7.230054675788633e-08,
+      "relative_l2": 5.292220412099021e-07
+    },
+    "same_logit_derivative": {
+      "maximum_absolute": 3.6369226727450688e-09,
+      "relative_l2": 3.6520249170456125e-08
+    },
+    "same_logit_loss_absolute_delta": 1.5355392180005367e-07,
+    "spectral_SGD_update_vs_original_FP64": {
+      "maximum_absolute": 1.1634789520709177e-08,
+      "relative_l2": 3.9958243080076385e-08
+    },
+    "static_FP32_loss": 1.2403466701507568
+  },
+  "FP64": {
+    "authority_loss": 1.240346261752505,
+    "full_logit_derivative_comparison": {
+      "maximum_absolute": 1.3877787807814457e-17,
+      "relative_l2": 7.424978658211835e-17
+    },
+    "static_loss": 1.240346261752505
+  },
+  "authority_sha256": "da9b7861fd07bf49ad864dbf9a1e795dea8c573b3744b7d4d2665944ede3ad8c",
+  "checks": [
+    {
+      "check": "FP64_loss_and_all_logit_derivatives",
+      "detail": {
+        "gradient": {
+          "maximum_absolute": 1.3877787807814457e-17,
+          "relative_l2": 7.424978658211835e-17
+        },
+        "loss_absolute_delta": 0.0
+      },
+      "passed": true
+    },
+    {
+      "check": "FP64_complete_spectral_and_molecular_head_gradients",
+      "detail": {
+        "molecular": {
+          "maximum_absolute": 2.7755575615628914e-17,
+          "relative_l2": 1.381351518551123e-16
+        },
+        "parameter_derivatives_compared": 458752,
+        "spectral": {
+          "maximum_absolute": 2.7755575615628914e-17,
+          "relative_l2": 1.3295101186803821e-16
+        }
+      },
+      "passed": true
+    },
+    {
+      "check": "FP64_one_explicit_SGD_update",
+      "detail": {
+        "molecular": {
+          "maximum_absolute": 2.7755575615628914e-17,
+          "relative_l2": 1.483961137049715e-17
+        },
+        "spectral": {
+          "maximum_absolute": 1.3877787807814457e-17,
+          "relative_l2": 1.5658385548655523e-17
+        }
+      },
+      "passed": true
+    },
+    {
+      "check": "all_padding_and_cross_formula_derivatives_exact_zero",
+      "detail": {
+        "excluded_logit_entries": 172
+      },
+      "passed": true
+    },
+    {
+      "check": "extreme_padding_and_cross_formula_logits_do_not_affect_loss_or_gradient",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "row_and_column_permutation_preserve_all_derivatives",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "permuted_static_loss_matches_frozen_authority",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "replicating_one_CE_preserves_equal_energy_head_update",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "missing_collision_energies_are_masked_not_zero_imputed",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "32_sampled_parameter_finite_differences",
+      "detail": {
+        "maximum_absolute_error": 2.033911233878527e-11,
+        "samples": 32
+      },
+      "passed": true
+    },
+    {
+      "check": "equal_energy_and_replicate_weighted_objectives_make_distinct_updates",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "replicate_weighted_update_changes_under_CE_replication",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "FP32_excluded_derivatives_remain_exact_zero",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "all_synthetic_inputs_and_initial_weights_restored",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "original_authority_file_preserved",
+      "detail": null,
+      "passed": true
+    },
+    {
+      "check": "complete_study_cpu_under_60_seconds",
+      "detail": null,
+      "passed": true
+    }
+  ],
+  "checks_passed": 16,
+  "elapsed_wall_seconds": 0.13440975000048638,
+  "encoder_run": false,
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "numpy": "2.2.6",
+    "python": "3.12.14"
+  },
+  "finite_differences": [
+    {
+      "absolute_error": 7.832734461032942e-12,
+      "analytic": -0.11453668021472195,
+      "central_difference": -0.11453668020688922,
+      "head": "spectral",
+      "index": [
+        953,
+        191
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.942076187366748e-11,
+      "analytic": -0.012592332918051802,
+      "central_difference": -0.01259233289863104,
+      "head": "spectral",
+      "index": [
+        224,
+        182
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 7.411781258181982e-12,
+      "analytic": 0.0047524144693732884,
+      "central_difference": 0.004752414461961507,
+      "head": "spectral",
+      "index": [
+        226,
+        79
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.5812767761858026e-12,
+      "analytic": -0.02607734950041486,
+      "central_difference": -0.026077349501996135,
+      "head": "spectral",
+      "index": [
+        167,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 9.862631544788059e-12,
+      "analytic": 0.033273421230624635,
+      "central_difference": 0.033273421240487266,
+      "head": "spectral",
+      "index": [
+        716,
+        83
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 4.557120306114548e-12,
+      "analytic": 0.015590333708343295,
+      "central_difference": 0.015590333712900415,
+      "head": "spectral",
+      "index": [
+        792,
+        116
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 4.355214106022132e-12,
+      "analytic": -0.007862271971162769,
+      "central_difference": -0.007862271966807555,
+      "head": "spectral",
+      "index": [
+        940,
+        42
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 4.91812146563575e-12,
+      "analytic": 0.0376573247855892,
+      "central_difference": 0.037657324780671075,
+      "head": "spectral",
+      "index": [
+        123,
+        126
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 3.374980850345821e-12,
+      "analytic": 0.06373498702911827,
+      "central_difference": 0.06373498703249325,
+      "head": "spectral",
+      "index": [
+        291,
+        201
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.2388735870505485e-12,
+      "analytic": 0.009601198701507798,
+      "central_difference": 0.009601198702746672,
+      "head": "spectral",
+      "index": [
+        422,
+        122
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.5779114126424076e-12,
+      "analytic": -0.015799010453874933,
+      "central_difference": -0.015799010455452844,
+      "head": "spectral",
+      "index": [
+        780,
+        117
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 9.519763449761243e-12,
+      "analytic": 0.016976177132283343,
+      "central_difference": 0.016976177141803106,
+      "head": "spectral",
+      "index": [
+        907,
+        217
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.0219074284695262e-11,
+      "analytic": 0.0006527244846893641,
+      "central_difference": 0.0006527244744702898,
+      "head": "spectral",
+      "index": [
+        589,
+        183
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 2.033911233878527e-11,
+      "analytic": -0.01615919644946135,
+      "central_difference": -0.016159196469800463,
+      "head": "spectral",
+      "index": [
+        226,
+        83
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 4.687491714228109e-13,
+      "analytic": -0.0014882534431739497,
+      "central_difference": -0.0014882534427052006,
+      "head": "spectral",
+      "index": [
+        840,
+        169
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 4.273727205461597e-12,
+      "analytic": -0.03173516594384632,
+      "central_difference": -0.031735165939572596,
+      "head": "spectral",
+      "index": [
+        385,
+        116
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 3.10385050994455e-12,
+      "analytic": 0.10615032854622207,
+      "central_difference": 0.10615032854932592,
+      "head": "molecular",
+      "index": [
+        603,
+        205
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 8.265164594400964e-12,
+      "analytic": 0.013479942886979623,
+      "central_difference": 0.013479942895244788,
+      "head": "molecular",
+      "index": [
+        169,
+        145
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 5.251157148000729e-12,
+      "analytic": 0.029019116915296655,
+      "central_difference": 0.029019116920547813,
+      "head": "molecular",
+      "index": [
+        610,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 4.683027403362683e-12,
+      "analytic": 0.005170890931236567,
+      "central_difference": 0.00517089092655354,
+      "head": "molecular",
+      "index": [
+        689,
+        47
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.0944684394886828e-11,
+      "analytic": -0.013514950037032295,
+      "central_difference": -0.01351495004797698,
+      "head": "molecular",
+      "index": [
+        754,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.8183628214263337e-11,
+      "analytic": -0.02751172117190408,
+      "central_difference": -0.02751172119008771,
+      "head": "molecular",
+      "index": [
+        110,
+        136
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.801330612449803e-11,
+      "analytic": -0.012829154734356132,
+      "central_difference": -0.012829154716342826,
+      "head": "molecular",
+      "index": [
+        128,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 8.772127989276068e-12,
+      "analytic": 0.004365095405024755,
+      "central_difference": 0.004365095396252627,
+      "head": "molecular",
+      "index": [
+        637,
+        151
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.3185849547653339e-11,
+      "analytic": 0.0034848698572656402,
+      "central_difference": 0.0034848698704514898,
+      "head": "molecular",
+      "index": [
+        465,
+        83
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 3.745843045466213e-12,
+      "analytic": -0.004588850617965928,
+      "central_difference": -0.004588850621711771,
+      "head": "molecular",
+      "index": [
+        368,
+        113
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 9.204048981303892e-12,
+      "analytic": -0.012867295020268763,
+      "central_difference": -0.012867295029472812,
+      "head": "molecular",
+      "index": [
+        569,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.028105725553452e-11,
+      "analytic": 0.01985003416164993,
+      "central_difference": 0.019850034171930986,
+      "head": "molecular",
+      "index": [
+        225,
+        94
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.2607007451870267e-11,
+      "analytic": -0.009297847893114256,
+      "central_difference": -0.009297847880507248,
+      "head": "molecular",
+      "index": [
+        534,
+        120
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 6.79888437216114e-12,
+      "analytic": 0.0032690252103907513,
+      "central_difference": 0.0032690252171896357,
+      "head": "molecular",
+      "index": [
+        239,
+        214
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 1.0318055437830154e-11,
+      "analytic": -0.011121608856863663,
+      "central_difference": -0.011121608867181719,
+      "head": "molecular",
+      "index": [
+        66,
+        82
+      ],
+      "passed": true
+    },
+    {
+      "absolute_error": 7.346304120581237e-12,
+      "analytic": 0.011919285562304078,
+      "central_difference": 0.011919285569650382,
+      "head": "molecular",
+      "index": [
+        600,
+        193
+      ],
+      "passed": true
+    }
+  ],
+  "native_TPU_run": false,
+  "objective_update_difference": {
+    "equal_energy_loss": 1.240346261752505,
+    "equal_energy_replicate_duplication_gradient_relative_l2": 4.1869070061476865e-16,
+    "meaning": "Numerical objective/update behavior only; no quality, retrieval or score evidence",
+    "molecular_update_delta_l2": 0.21584347346662605,
+    "replicate_weighted_duplication_gradient_relative_l2": 1.4561375581373033,
+    "replicate_weighted_loss": 1.3086056411686482,
+    "replicate_weighted_loss_after_duplication": 1.4269080761898212,
+    "spectral_update_delta_l2": 0.24838321916731754
+  },
+  "official_score": null,
+  "process_cpu_seconds": 0.08847400000000001,
+  "protocol_sha256": "46727ad499ab10d82e996efcdd5bbd1f37de4f985b6fd50eef2e6b12e591b25f",
+  "retrieval_result": null,
+  "source_sha256": "9203c656c783d86244469a43816ffe13e77e43663d0ee14a92892342c7828678",
+  "status": "PASS_SYNTHETIC_FP64_PROJECTION_NUMERICAL_CONTRACT_ONLY",
+  "training_data_run": false
+}

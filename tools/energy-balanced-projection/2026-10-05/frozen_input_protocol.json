@@ -1,0 +1,200 @@
+{
+  "active_rows": 22,
+  "all_array_pins": {
+    "column_active": {
+      "bytes": 9,
+      "dtype": "bool",
+      "sha256": "cd239e5be5b867da90e93b2112b106e4a551c21e0da6c41995642249a260c842",
+      "shape": [
+        9
+      ]
+    },
+    "energies": {
+      "bytes": 200,
+      "dtype": "float64",
+      "sha256": "6f6d6d609ea8ae3f6b718278ceddb806ded23b1856cfe3987bc676a0183f17a9",
+      "shape": [
+        25
+      ]
+    },
+    "mask_candidate": {
+      "bytes": 63,
+      "dtype": "bool",
+      "sha256": "fe2efb2e424a5ba496949108b302e4f0224763863fd3deb5c231169a4c100205",
+      "shape": [
+        7,
+        9
+      ]
+    },
+    "mask_levels": {
+      "bytes": 24,
+      "dtype": "float64",
+      "sha256": "26a99472b4e06e5d32239ef07d57329d5b6a4efe895bc309bf193e5c0a4efe31",
+      "shape": [
+        3
+      ]
+    },
+    "mask_molecules": {
+      "bytes": 56,
+      "dtype": "int64",
+      "sha256": "81845a01dafa45c9b26e10a7af52a92e8604d5d8ef690f1e3ccdcfe3b5c6ae98",
+      "shape": [
+        7
+      ]
+    },
+    "mask_observed": {
+      "bytes": 21,
+      "dtype": "bool",
+      "sha256": "94513eff561f2568e4bdb6212e914e6f62fd95270a0e4b413bce734fbb4f6d06",
+      "shape": [
+        7,
+        3
+      ]
+    },
+    "mask_positive": {
+      "bytes": 504,
+      "dtype": "float64",
+      "sha256": "2ab6619d871017fb9ccc369ff70b66e95af7e6e9a19a7c2654a5f4ae1c9c91f6",
+      "shape": [
+        7,
+        9
+      ]
+    },
+    "mask_reduce": {
+      "bytes": 4200,
+      "dtype": "float64",
+      "sha256": "fb3e88f68b436dbffb3bd36352b5c96c18b9e9bbc86977761ead2778b80cb9d1",
+      "shape": [
+        7,
+        3,
+        25
+      ]
+    },
+    "molecular": {
+      "bytes": 55296,
+      "dtype": "float64",
+      "sha256": "c6609cbf767f035979a769949e546cb6ec1dd550c8c919ccb2a24cce9f9a8a41",
+      "shape": [
+        9,
+        768
+      ]
+    },
+    "molecular_head": {
+      "bytes": 1572864,
+      "dtype": "float64",
+      "sha256": "8483f97588e322f62a91bad5ab87e24627c709deae8c1ed2f8fabb8bdf1dad2a",
+      "shape": [
+        768,
+        256
+      ]
+    },
+    "row_active": {
+      "bytes": 25,
+      "dtype": "bool",
+      "sha256": "755b6d64e458b7aa583dcd6ab74f385c5076d053820f2940c273358cb03d5067",
+      "shape": [
+        25
+      ]
+    },
+    "spectral": {
+      "bytes": 204800,
+      "dtype": "float64",
+      "sha256": "73863c1dd50b4c32364714fae8a9f5dc07f626d6748678a0d365cec60f39ee47",
+      "shape": [
+        25,
+        1024
+      ]
+    },
+    "spectral_head": {
+      "bytes": 2097152,
+      "dtype": "float64",
+      "sha256": "08f35f53217fb9d71243f5901dc2aaa193dfa47a02d65402db2ded8d8ced8350",
+      "shape": [
+        1024,
+        256
+      ]
+    },
+    "targets": {
+      "bytes": 200,
+      "dtype": "int64",
+      "sha256": "1e8cd3cfab58c9b48ddad00d5b021d6a66b850bc6056ec0a6fc8eda6b0ec18d4",
+      "shape": [
+        25
+      ]
+    }
+  },
+  "authority_source_sha256": "da9b7861fd07bf49ad864dbf9a1e795dea8c573b3744b7d4d2665944ede3ad8c",
+  "cpu_absolute_seconds": 60,
+  "dtype_first": "float64",
+  "dtype_second": "float32",
+  "eta": 0.5,
+  "excluded": [
+    "weights",
+    "chemical data",
+    "encoder conversions",
+    "TPU",
+    "competition targets",
+    "rankings",
+    "retrieval gain",
+    "GitHub",
+    "notebooks"
+  ],
+  "finite_difference_atol": 2e-08,
+  "finite_difference_rtol": 2e-05,
+  "finite_difference_samples_each_head": 16,
+  "finite_difference_step": 1e-05,
+  "formula_groups": [
+    3,
+    2,
+    2
+  ],
+  "fp32_measurement_only": true,
+  "fp64_full_gradient_atol": 1e-12,
+  "fp64_full_gradient_rtol": 1e-11,
+  "logit_scale": 0.0625,
+  "molecular_head_shape": [
+    768,
+    256
+  ],
+  "molecules": 7,
+  "padded_columns": 2,
+  "padded_rows": 3,
+  "scope": "SYNTHETIC_NUMERICAL_ONLY_NO_ENCODERS_NO_RETRIEVAL_NO_SCORE",
+  "seed": 20261005,
+  "sgd_rate": 0.05,
+  "spectral_head_shape": [
+    1024,
+    256
+  ],
+  "strata": [
+    {
+      "20": 1,
+      "40": 4
+    },
+    {
+      "20": 2,
+      "60": 1
+    },
+    {
+      "40": 1
+    },
+    {
+      "20": 3,
+      "40": 1,
+      "60": 2
+    },
+    {
+      "60": 1
+    },
+    {
+      "20": 2,
+      "40": 1
+    },
+    {
+      "40": 2,
+      "60": 1
+    }
+  ],
+  "study_source_sha256": "9203c656c783d86244469a43816ffe13e77e43663d0ee14a92892342c7828678",
+  "wall_failsafe_seconds": 90
+}
