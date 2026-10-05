@@ -1,0 +1,134 @@
+{
+  "status": "PASS_PUBLICATION_READY_SOURCE_ONLY_DOCUMENTED_DEFAULT",
+  "reviewed_utc": "2026-10-05T21:08:00.191441+00:00",
+  "reviewer": "independent knee_training_interpretation agent; not the packet author",
+  "packet": "/Users/cubres/Documents/Neurogolf/research/codex_enveda_anchored_sum_control_20261005T204452Z/portable_v2",
+  "manifest_sha256": "59069a77da2d2fdf460f7d610fc58eebd25c712b045d30508b8c518fed78279b",
+  "manifest_entries_verified": 16,
+  "all_original_packet_files_unchanged": true,
+  "manifest_files": {
+    "ATTRIBUTION.txt": {
+      "bytes": 886,
+      "sha256": "342799ba3105acd626f0fbb62228d5ab6bf163a97e4015901b5d06227252e1cf"
+    },
+    "DESIGN_AND_LIMITS.md": {
+      "bytes": 5449,
+      "sha256": "d336c3c9ae5200a048b249c0565a76ae085a6ccb60aeb45d418acfff497103fb"
+    },
+    "PROVENANCE.json": {
+      "bytes": 3562,
+      "sha256": "cafd2290f3e92dded61cafbc9e492f9761a26158b40b58f04d6ce8a3533dce49"
+    },
+    "USAGE.txt": {
+      "bytes": 1832,
+      "sha256": "aa1ad947e021633b41fc24caedbc17d5525a4e318ad3212a6b868e8a06759c67"
+    },
+    "VERIFICATION_DEFAULT.json": {
+      "bytes": 2544,
+      "sha256": "410bf5d53eaee49b1c937b03298359065d465037d7860e5ed5cbd50b1248ecd4"
+    },
+    "VERIFICATION_WITH_OPTIONAL_CCO.json": {
+      "bytes": 3310,
+      "sha256": "6f9d71241a9ed5b501ec1962df2526fc6612bbe149bf7a591d0f04dc1fcf570d"
+    },
+    "accepted_fwd_runner.py": {
+      "bytes": 16254,
+      "sha256": "622d576e47fb6405b73a1ef2d400f97fefab4017a2ba6fccef406e4334c057d4"
+    },
+    "accepted_runner_header.txt": {
+      "bytes": 1571,
+      "sha256": "2d0357aef0aaf3e6e5b326906fc283eadce018dd8bd861923376c78489e1a461"
+    },
+    "aggregation.diff": {
+      "bytes": 329,
+      "sha256": "07e2932996e4ccaa444be26ca9139d7298c6310624c4318cfae7dc2ac0cd6fcd"
+    },
+    "anchored_ice_sum.py": {
+      "bytes": 5132,
+      "sha256": "9fb0e062bbd1983f77f2a74807c632dd902b86548145967f1d0967bf0aa7e36e"
+    },
+    "anchored_sum_core.py": {
+      "bytes": 737,
+      "sha256": "e7a60a2d897a96e2944d795badbbba28db653c88ba87dff55d4e37eb9685fdf7"
+    },
+    "dispatch.diff": {
+      "bytes": 542,
+      "sha256": "4c58ef42e0150799a403b467c2b882a4c834524d5d4546dfb3d2696526e69414"
+    },
+    "dispatched_score_item.py": {
+      "bytes": 1440,
+      "sha256": "c53c8c06d68a8500fa3aa4d70e79b8ff12a40136779fadf27e7bb505a0b609ae"
+    },
+    "original_merge_predicted.py": {
+      "bytes": 749,
+      "sha256": "30975c4f701460dad1627675eb38e7683c3af561296555198869807f52cd53bd"
+    },
+    "original_score_item.py": {
+      "bytes": 1427,
+      "sha256": "357ea55c67ecf9f478450639d228d014f22bb7f589accccce44756994b3acc39"
+    },
+    "verify_anchored_sum.py": {
+      "bytes": 13867,
+      "sha256": "b05c259065049e3dc967591bbae5a5f0421ad1f20fd3c82f38dc5f9d33b9dabd"
+    }
+  },
+  "accepted_runner_hash_verified": true,
+  "exact_original_header_preserved": true,
+  "inert_reference_extraction": {
+    "top_level_function_allowlist": [
+      "clean_spectrum",
+      "merge_predicted",
+      "_weighted",
+      "entropy_similarity",
+      "conditions",
+      "score_item"
+    ],
+    "no_reference_import_or_entrypoint_execution": true,
+    "models_installers_activation_excluded": true,
+    "no_decorators_or_forbidden_names_in_selected_functions": true
+  },
+  "one_assignment_intervention_verified": true,
+  "one_callsite_dispatch_change_verified": true,
+  "no_other_exported_core_or_score_item_byte_changes": true,
+  "additional_overflow_guard_declared_separately": true,
+  "synthetic_default_portability": {
+    "return_code": 0,
+    "cwd_was_fresh_review_directory": true,
+    "replay_path": "/Users/cubres/Documents/Neurogolf/research/codex_enveda_anchored_sum_control_20261005T204452Z/portable_v2/independent_reviews/20261005T210759857205Z/DEFAULT_VERIFIER_PORTABILITY_REPLAY.json",
+    "replay_sha256": "c2d5968ed2d901d27e604cf6c9307ef9338d86f35e9e954526f29d487b8ddc61",
+    "same_report_except_environment_versions": true,
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "ordinary_cases": 513,
+    "overflow_HOLD_cases": 2,
+    "malformed_shape_cases": 3,
+    "fake_job_count_per_arm": 12,
+    "GL_unchanged": true,
+    "optional_canary": "UNAVAILABLE_NOT_SUPPLIED"
+  },
+  "attribution": {
+    "credited_url": "https://github.com/coleygroup/ms-pred",
+    "pinned_commit": "708148c2a8eb0c32120644436fefd2fe90cd2214",
+    "software_license_credit": "MIT",
+    "original_wrapper_credit_retained": true,
+    "no_blanket_checkpoint_dataset_rights_claim": true,
+    "upstream_license_remote_verified_in_this_review": false
+  },
+  "publication_scope": "Complete source-only portable synthetic method bundle, with attribution and limits retained. No native integration, model quality, query exposure, ranking or official-score improvement claim.",
+  "blocking_issues": [],
+  "nonblocking_improvements": [
+    {
+      "priority": "low",
+      "file": "verify_anchored_sum.py",
+      "issue": "Most verifier conditions use assert. Python optimized mode disables these checks, while the CLI can still print PASS.",
+      "suggestion": "Explicitly reject optimized Python mode before verification, or replace essential assertions with unconditional checks. Documented normal default execution was independently verified and is correct."
+    }
+  ],
+  "model_or_native_execution": false,
+  "real_query_or_label_reads": false,
+  "remote_calls": false,
+  "native_canary_read_or_replayed": false,
+  "notebook_actions": false,
+  "packet_mutations": false,
+  "review_files_only_created": true
+}

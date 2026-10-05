@@ -1,0 +1,33 @@
+Anchored ICE SUM: portable source-only method check
+
+Run from this directory with Python and an existing NumPy installation:
+    python3 -B verify_anchored_sum.py
+
+The default run needs no private data, weights, Torch, RDKit, network or Kaggle.
+It checks 513 ordinary synthetic cases, two explicit overflow HOLD cases,
+three malformed shapes and a fake two-channel score_item call. The optional
+native-generated CCO canary is absent and reported UNAVAILABLE_NOT_SUPPLIED.
+
+If you already possess that exact synthetic CCO canary, you may additionally run:
+    python3 -B verify_anchored_sum.py --synthetic-canary ./canary-raw.npz
+
+Only SHA256 614dc1f2be54390dfa1ad30ff64e41759010bd2442e453b473bacaba92086e8b
+is accepted. The optional file is not included or downloaded. A supplied missing
+file or wrong hash fails explicitly; it is not treated as a passing canary.
+
+The pinned reference defaults to ./accepted_fwd_runner.py, resolved relative to
+the verifier file even when your current directory differs. --runner may select
+another exact byte-identical reference copy; any source hash drift fails.
+
+accepted_fwd_runner.py is a retained source reference: do not execute or import
+it for these checks. The verifier AST-extracts only six pure functions and does
+not run its CLI, Models class, installer, environment activation or entrypoint.
+
+The scientific core has one assignment difference: original MAX becomes += v.
+MAX control and GL delegation stay original. The added SUM overflow eligibility
+guard is documented separately in DESIGN_AND_LIMITS.md. Existing source header
+and upstream attribution are preserved.
+
+Tested here: Python 3.9.6, NumPy 2.0.2, CPU synthetic arrays only.
+No native serving, model quality, accelerator speed or ranking gain is claimed.
+JSON results are printed to stdout; the verifier writes no files.

@@ -1,0 +1,103 @@
+{
+  "channel_dispatch": {
+    "GL_original_delegation": true,
+    "MAX_original_control": true,
+    "diff_path": "dispatch.diff",
+    "modified_path": "dispatched_score_item.py",
+    "no_candidate_CE_entropy_model_fusion_changes": true,
+    "original_path": "original_score_item.py"
+  },
+  "created_utc": "2026-10-05T21:00:13.496507+00:00",
+  "default_verifier": {
+    "bytes": 13982,
+    "dependencies": "Existing Python and NumPy only; no installation supplied",
+    "fake_two_channel_jobs_per_arm": 12,
+    "malformed_shape_cases": 3,
+    "optimized_mode_rejection_report_path": "OPTIMIZED_MODE_REJECTION_CHECK.json",
+    "optimized_python_rejected": true,
+    "optional_canary_status": "UNAVAILABLE_NOT_SUPPLIED",
+    "ordinary_cases": 513,
+    "overflow_HOLD_cases": 2,
+    "path": "verify_anchored_sum.py",
+    "portable_v2_original_sha256": "b05c259065049e3dc967591bbae5a5f0421ad1f20fd3c82f38dc5f9d33b9dabd",
+    "private_data_required": false,
+    "publication_default_report_path": "PUBLICATION_DEFAULT_CHECK.json",
+    "reference_default": "accepted_fwd_runner.py",
+    "report_path": "VERIFICATION_DEFAULT.json",
+    "sha256": "d8ec003ca639ab1b076bbe0831dc5510cb46bb2e996fc7797383c2d486f54303"
+  },
+  "dispatcher": {
+    "bytes": 5132,
+    "excluded_execution": [
+      "Models class",
+      "main",
+      "install_site",
+      "activate",
+      "reference entrypoint",
+      "trainers"
+    ],
+    "path": "anchored_ice_sum.py",
+    "pure_function_allowlist": [
+      "clean_spectrum",
+      "merge_predicted",
+      "_weighted",
+      "entropy_similarity",
+      "conditions",
+      "score_item"
+    ],
+    "sha256": "9fb0e062bbd1983f77f2a74807c632dd902b86548145967f1d0967bf0aa7e36e"
+  },
+  "hidden_ranking_effect_verified": false,
+  "native_models_executed": false,
+  "native_serve_integration_verified": false,
+  "notebook_metadata_native_protocol_driver_dataset_modelasset_changes": false,
+  "official_score_gain_claim": false,
+  "optional_canary": {
+    "cli_argument": "--synthetic-canary",
+    "description": "Exact previously retained synthetic CCO mechanical probe, CE40/60; no competition queries or labels",
+    "downloaded": false,
+    "included": false,
+    "ordinary_cases_when_supplied": 515,
+    "report_path": "VERIFICATION_WITH_OPTIONAL_CCO.json",
+    "required_sha256": "614dc1f2be54390dfa1ad30ff64e41759010bd2442e453b473bacaba92086e8b"
+  },
+  "prior_v1_manifest_entries_verified_unchanged": true,
+  "remote_publication_or_submission": false,
+  "review": {
+    "portable_v2_independent_review_passed": true,
+    "portable_v2_independent_review_path": "INDEPENDENT_REVIEW_V2.json",
+    "portable_v2_root_review_pending": false,
+    "publication_revision_root_review_path": "ROOT_REVIEW.json",
+    "publication_revision_root_review_pending": false,
+    "v1_root_review_passed": true
+  },
+  "scientific_core": {
+    "diff_path": "aggregation.diff",
+    "only_assignment_change": "it[-1] = max(it[-1], v) -> it[-1] += v",
+    "original_filter_group_representative_topk_ties_FP64_unchanged": true,
+    "original_path": "original_merge_predicted.py",
+    "sum_overflow_eligibility_guard_additional_and_documented": true,
+    "sum_path": "anchored_sum_core.py"
+  },
+  "source_reference": {
+    "bytes": 16254,
+    "path": "accepted_fwd_runner.py",
+    "role": "Exact inert source reference; never imported or run; AST-extracted pure functions only",
+    "sha256": "622d576e47fb6405b73a1ef2d400f97fefab4017a2ba6fccef406e4334c057d4"
+  },
+  "status": "PORTABLE_SOURCE_ONLY_PREPARED_AND_SYNTHETICALLY_VERIFIED",
+  "upstream_attribution": {
+    "commit": "708148c2a8eb0c32120644436fefd2fe90cd2214",
+    "credit_path": "ATTRIBUTION.txt",
+    "license_scope": "Upstream software attribution; no blanket checkpoint or dataset license claim",
+    "models_and_weights_redistributed": false,
+    "original_header_path": "accepted_runner_header.txt",
+    "software_license": "MIT",
+    "url": "https://github.com/coleygroup/ms-pred"
+  },
+  "validation_environment": {
+    "compute": "CPU pure arrays and constructed prediction interface only",
+    "numpy": "2.0.2",
+    "python": "3.9.6"
+  }
+}

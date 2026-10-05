@@ -1,0 +1,8 @@
+{
+  "checked_utc": "2026-10-05T21:10:03.534489+00:00",
+  "status": "PASS_OPTIMIZED_MODE_REJECTED",
+  "returncode": 1,
+  "stdout_empty": true,
+  "required_error_present": true,
+  "interpreter": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]"
+}

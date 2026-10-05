@@ -1,0 +1,16 @@
+The accepted forward runner is original code written for this project.
+Its exact original source and header are retained in accepted_fwd_runner.py.
+
+Its header identifies unmodified upstream ms-pred models:
+    https://github.com/coleygroup/ms-pred
+    commit 708148c2a8eb0c32120644436fefd2fe90cd2214
+    upstream software license: MIT
+
+The independent reducer ablation changes this project's runner postprocessing;
+it does not modify upstream model source or claim authorship of upstream models.
+No upstream model implementation, checkpoint, weights or model dataset is added.
+The optional CCO arrays are retained outputs of our synthetic mechanical probe,
+not competition query data or labels, and are not included in this bundle.
+
+The MIT attribution describes the upstream software identified by the accepted
+source; it is not a blanket claim about checkpoint or dataset licensing.

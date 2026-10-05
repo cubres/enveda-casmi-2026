@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+"""AP-2 Stage 1 forward-model runner. Original code written for this project.
+
+Runs the UNMODIFIED upstream ms-pred models (coleygroup/ms-pred @ 708148c, MIT) -- ICEBERG `msg_all`
+(gen + inten_contr) and the GLACIER MassSpecGym checkpoint -- inside this process, after putting a private
+copy of the exact upstream stack first on sys.path (torch 2.6.0, dgl 2.5.0, torch-scatter 2.1.2,
+torch-sparse 0.6.18, RDKit 2025.03.6, pytorch-lightning 2.5.0.post0). The calling notebook keeps its own
+torch and RDKit 2026.03.3; it only talks to this process through files or JSON lines.
+
+Modes
+  batch IN.json OUT.json   score every item; OUT.json = {id: {"iceberg": [...], "glacier": [...]}}
+  serve                    one JSON item per stdin line -> one JSON reply per stdout line (models stay loaded)
+  raw IN.json OUT.npz      predicted peak lists only, for parity checks against an upstream reference run
+
+Item: {"id": str, "candidates": [smiles, ...],
+       "spectra": [{"mz": [...], "it": [...], "precursor_mz": float, "adduct": str, "ce": float,
+                    "instrument": str, "mode": "positive" | "negative"}, ...]}
+A score is the mean entropy similarity between a candidate's predicted spectrum and each covered measured
+spectrum (positive mode, adduct in --adducts, finite collision energy); null when nothing is covered.
+
+Stack selection: --stack gpu installs wheels/hi + wheels/lo into --site (CUDA build); --stack cpu installs
+wheels/cpu + the CPU-agnostic wheels (reference runs); --stack none imports whatever the interpreter has.
+"""

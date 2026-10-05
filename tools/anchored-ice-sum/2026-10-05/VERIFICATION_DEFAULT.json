@@ -1,0 +1,78 @@
+{
+  "actual_queries_or_labels_read": false,
+  "canary": [],
+  "canary_sha256": null,
+  "canary_status": "UNAVAILABLE_NOT_SUPPLIED",
+  "domain": "Original float64 reshape/finite-positive filter; tested tolerance .001, top1/2/100; synthetic finite ordinary values, explicit overflow/malformed-shape cases and fake two-channel score_item; optional hash-checked retained synthetic CCO only",
+  "fake_prediction_interfaces_instantiated": true,
+  "fake_two_channel": {
+    "GL_scores_exact_equal": true,
+    "ICE_changed_candidate_indices": [
+      0
+    ],
+    "candidate_count": 3,
+    "conditions_per_channel": 2,
+    "identical_prediction_call_arguments": true,
+    "input_unchanged": true,
+    "job_count_per_arm": 12,
+    "native_models_or_serving_or_labels": false,
+    "new_ICE_scores": [
+      0.999853853916932,
+      0.9826158382964684,
+      0.9996645001569358
+    ],
+    "old_ICE_scores": [
+      0.9948075576717772,
+      0.9826158382964684,
+      0.9996645001569358
+    ],
+    "predict_calls_per_arm": 2,
+    "raw_predicted_arrays_identical": true,
+    "status": "PASS_CONSTRUCTED_INTERFACE_ONLY",
+    "unchanged_ICE_candidate_indices": [
+      1,
+      2
+    ]
+  },
+  "hidden_ranking_effect_verified": false,
+  "invalid_shape_cases": 3,
+  "named_boundary_and_filter_cases": [
+    "anchored-chain-not-transitive",
+    "exact-boundary-inside",
+    "nextafter-boundary-outside",
+    "stable-mass-sort-first-representative",
+    "known-duplicate-sum",
+    "sum-changes-topk-by-strength-only",
+    "equal-summed-topk-stable-order",
+    "top100-tied-101-groups",
+    "empty",
+    "all-filtered",
+    "mixed-filtering-retained",
+    "flat-reshape-contract-preserved",
+    "negative-masses-preserved-original-contract"
+  ],
+  "native_model_objects_instantiated": false,
+  "native_models_executed": false,
+  "native_serve_integration_proven": false,
+  "numpy": "2.0.2",
+  "official_score_gain_claim": false,
+  "ordinary_case_count": 513,
+  "overflow_cases": [
+    {
+      "case": "within-group-finite-addition-overflow",
+      "runtime_warning_count": 2,
+      "status": "HOLD"
+    },
+    {
+      "case": "finite-normalization-denominator-overflow",
+      "runtime_warning_count": 1,
+      "status": "HOLD"
+    }
+  ],
+  "python": "3.9.6",
+  "random_collision_free_exact_parity_cases": 250,
+  "random_duplicate_known_sum_cases": 250,
+  "runner_sha256": "622d576e47fb6405b73a1ef2d400f97fefab4017a2ba6fccef406e4334c057d4",
+  "status": "PASS_SOURCE_ONLY_SYNTHETIC_REDUCER_VERIFICATION",
+  "sum_guard_is_additional_eligibility_restriction": true
+}

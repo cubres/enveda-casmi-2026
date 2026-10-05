@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-10-05T21:09:32.480092+00:00",
+  "status": "PASS_SOURCE_ONLY_PUBLICATION_REVISION_STATIC_REVIEW",
+  "parent_verifier_sha256": "b05c259065049e3dc967591bbae5a5f0421ad1f20fd3c82f38dc5f9d33b9dabd",
+  "revision": "Fail explicitly before tests when __debug__ is false",
+  "scientific_source_dispatcher_and_inert_runner_unchanged": true,
+  "native_execution": false,
+  "ranking_gain_claim": false,
+  "fresh_default_and_optimized_mode_checks_pending": false,
+  "fresh_default_check": "PASS_513_SYNTHETIC_CASES_AND_FAKE_TWO_CHANNEL_INTERFACE",
+  "optimized_mode_check": "PASS_NONZERO_BEFORE_TESTS_NO_STDOUT_REPORT",
+  "complete": true
+}

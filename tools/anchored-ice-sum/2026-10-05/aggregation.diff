@@ -1,0 +1,11 @@
+--- original_AST_merge_predicted
++++ anchored_ICE_SUM_core
+@@ -9,7 +9,7 @@
+     mz, it = [a[0, 0]], [a[0, 1]]
+     for m, v in a[1:]:
+         if m - mz[-1] <= merge_tol:
+-            it[-1] = max(it[-1], v)
++            it[-1] += v
+         else:
+             mz.append(m); it.append(v)
+     mz, it = np.array(mz), np.array(it)
