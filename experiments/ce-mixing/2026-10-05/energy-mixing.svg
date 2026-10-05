@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="660" viewBox="0 0 1080 660" role="img" aria-labelledby="title desc">
+  <title id="title">Two ways to predict a merged acquisition</title>
+  <desc id="desc">The baseline predicts at mean energy 40 eV. The hypothesis predicts separately at 20, 40 and 60 eV, normalizes each raw prediction, and mixes them before a shared final top 100 peak budget. Both use the same measured-query scorer. This is a protocol schematic, not observed data.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L8 4.5 L0 9" fill="none" stroke="#8595a5" stroke-width="1.5"/></marker>
+    <style>text{font-family:Arial,sans-serif;fill:#e9eff5}.title{font-size:29px;font-weight:700}.label{font-size:18px;font-weight:700}.small{font-size:15px;fill:#b7c5d2}.line{stroke:#8595a5;stroke-width:2;fill:none;marker-end:url(#arrow)}.box{fill:#152636;stroke:#385266;stroke-width:1.5}</style>
+  </defs>
+  <rect width="1080" height="660" rx="20" fill="#0b1722"/>
+  <text x="42" y="55" class="title">A merged acquisition is not its mean energy</text>
+  <text x="42" y="85" class="small">Frozen protocol · eight structures · 24 distinct raw forwards · no observed results shown</text>
+  <rect x="42" y="128" width="216" height="374" rx="14" class="box"/>
+  <text x="62" y="159" class="label">Forward inputs</text>
+  <text x="62" y="198" class="small">Labeled structure</text>
+  <text x="62" y="231" class="small">[M+H]+ · QTOF</text>
+  <text x="62" y="264" class="small">Energies: 20 / 40 / 60 eV</text>
+  <line x1="62" y1="290" x2="238" y2="290" stroke="#385266"/>
+  <text x="62" y="324" class="small">Query peaks enter</text>
+  <text x="62" y="350" class="small">only the later scorer.</text>
+  <text x="62" y="406" class="small">Model CE conditioning</text>
+  <text x="62" y="432" class="small">must be enabled.</text>
+  <text x="62" y="470" class="small">Otherwise: HOLD.</text>
+  <path d="M258 218 H300" class="line"/>
+  <rect x="311" y="150" width="256" height="139" rx="14" class="box"/>
+  <text x="332" y="182" class="label">Mean-energy baseline</text>
+  <text x="332" y="218" class="small">Reuse actual f(40)</text>
+  <text x="332" y="252" class="small">Round masses · duplicate MAX</text>
+  <path d="M258 388 H300" class="line"/>
+  <rect x="311" y="329" width="256" height="173" rx="14" class="box"/>
+  <text x="332" y="361" class="label">Separate-energy mixture</text>
+  <text x="332" y="397" class="small">f(20) + f(40) + f(60)</text>
+  <text x="332" y="430" class="small">Base-peak normalize each</text>
+  <text x="332" y="463" class="small">Equal weights · merge raw peaks</text>
+  <path d="M567 218 H612" class="line"/>
+  <path d="M567 415 H612" class="line"/>
+  <rect x="624" y="150" width="193" height="352" rx="14" class="box"/>
+  <text x="644" y="184" class="label">Common final</text>
+  <text x="644" y="211" class="label">representation</text>
+  <text x="644" y="262" class="small">Top 100 peaks</text>
+  <text x="644" y="298" class="small">Ascending mass</text>
+  <text x="644" y="334" class="small">Maximum = 1</text>
+  <text x="644" y="370" class="small">float32</text>
+  <text x="644" y="438" class="small">Singleton f(40):</text>
+  <text x="644" y="467" class="small">exact parity required</text>
+  <path d="M817 326 H855" class="line"/>
+  <rect x="867" y="238" width="172" height="179" rx="14" class="box"/>
+  <text x="886" y="271" class="label">Same scorer</text>
+  <text x="886" y="308" class="small">Measured query</text>
+  <text x="886" y="340" class="small">Entropy similarity</text>
+  <text x="886" y="377" class="small">Eight paired deltas</text>
+  <rect x="42" y="542" width="997" height="82" rx="13" fill="#203024" stroke="#526d54"/>
+  <text x="62" y="572" class="label">Interpretation stays narrow</text>
+  <text x="62" y="602" class="small">Unknown training overlap and acquisition weights. Energy integration + late truncation are coupled. No official score.</text>
+</svg>
