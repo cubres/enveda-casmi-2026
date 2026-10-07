@@ -1,0 +1,220 @@
+[
+  {
+    "dataset_ref": "prvsiyan/casmi26-fp-models-v2",
+    "dataset_version": 1,
+    "file": "fp_merged_m1.pt",
+    "server_total_bytes": 144110255,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "a753b70b7d6d259e274fe7fcfbb802b1580011a4597afb4b99500716e75e9f73",
+    "checked_at_utc": "2026-10-07T20:34:35.087848+00:00",
+    "value_payloads_inspected": false,
+    "torch_zip_first_member": "fp_merged_m1/data.pkl",
+    "metadata_pickle_sha256": "1da2c6b89afc8b250eddf0992ef592cb65d7210f55a35c4684700ada42b8dae3",
+    "metadata_pickle_bytes": 11146,
+    "checkpoint_scalar_metadata": {
+      "step": 24000,
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/casmi26-fp-models-v2",
+    "dataset_version": 1,
+    "file": "fp_single_s2.pt",
+    "server_total_bytes": 144110255,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "0af3b5e6d66ddd3ed8ff2276317ffd9ee781d0d208f1943f90cb9dc36bf4d357",
+    "checked_at_utc": "2026-10-07T20:34:36.510454+00:00",
+    "value_payloads_inspected": false,
+    "torch_zip_first_member": "fp_single_s2/data.pkl",
+    "metadata_pickle_sha256": "da681e0110844e7730192c9a2f8147c9fe97ed84578b8703b30156bb48fb55f2",
+    "metadata_pickle_bytes": 11146,
+    "checkpoint_scalar_metadata": {
+      "step": 20000,
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/casmi26-fp-models-v4",
+    "dataset_version": 1,
+    "file": "fp_merged_m1.pt",
+    "server_total_bytes": 432339069,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "8efe60ad248582a900a4a14416a474c05c19abc5fae06d5a061eebeedbdb5575",
+    "checked_at_utc": "2026-10-07T20:34:37.600250+00:00",
+    "value_payloads_inspected": false,
+    "torch_zip_first_member": "fp_model_m1/data.pkl",
+    "metadata_pickle_sha256": "176bda319fc17602a4f4cbd0e4fd7eb412941a9a5d0e47c5b3922d3359b35f80",
+    "metadata_pickle_bytes": 35387,
+    "checkpoint_scalar_metadata": {
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/casmi26-fp-models-v4",
+    "dataset_version": 1,
+    "file": "fp_merged_m2.pt",
+    "server_total_bytes": 432339069,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "a93e338f878577606c35784fbff4d623a095708c81f38a07e9604c76cc38119e",
+    "checked_at_utc": "2026-10-07T20:34:38.793876+00:00",
+    "value_payloads_inspected": false,
+    "torch_zip_first_member": "fp_model_m2/data.pkl",
+    "metadata_pickle_sha256": "dfcd513b3a3fd76c43ba0b248b1ec7b0c62e2abda7dea21e6e87f50a83a908f4",
+    "metadata_pickle_bytes": 35387,
+    "checkpoint_scalar_metadata": {
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/casmi26-fp-models-v4",
+    "dataset_version": 1,
+    "file": "fp_single_aug.pt",
+    "server_total_bytes": 432339414,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "2e46f3b9687df069b8efff0eb1b0972d868178f489763c82578e8c517213fbba",
+    "checked_at_utc": "2026-10-07T20:34:39.879114+00:00",
+    "value_payloads_inspected": false,
+    "torch_zip_first_member": "fp_model_aug/data.pkl",
+    "metadata_pickle_sha256": "b674295f963abc834ce23e2c9d43fc6953cd33562d3f4892ccd802c775534b04",
+    "metadata_pickle_bytes": 35387,
+    "checkpoint_scalar_metadata": {
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/casmi26-fp-models-v4",
+    "dataset_version": 1,
+    "file": "fp_single_s2.pt",
+    "server_total_bytes": 432339069,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "98aeeb4d01b8a168d0940e8bea7628b2442cace8df4c647703372227c3ac4be0",
+    "checked_at_utc": "2026-10-07T20:34:41.209271+00:00",
+    "value_payloads_inspected": false,
+    "torch_zip_first_member": "fp_model_s2/data.pkl",
+    "metadata_pickle_sha256": "5bb9f9fb175093d2fe75a245c19697a3fcdee4c7c27287449cabb4eb98f2886e",
+    "metadata_pickle_bytes": 35387,
+    "checkpoint_scalar_metadata": {
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+    "dataset_version": 2,
+    "file": "coco_fp.npy",
+    "server_total_bytes": 378349391,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "c5de1196309ede5097994c3e0642b7d1991019029ab2e5fe6879baab7e1b566e",
+    "checked_at_utc": "2026-10-07T20:34:42.358927+00:00",
+    "value_payloads_inspected": false,
+    "npy_header": {
+      "shape": [
+        436389,
+        867
+      ],
+      "dtype": "uint8",
+      "fortran_order": false,
+      "header_bytes": 128
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+    "dataset_version": 2,
+    "file": "coco_mass.npy",
+    "server_total_bytes": 3491240,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "745b1b0b1639eb2b48f22fec4a46edb9287cad9a471433cf9bf0383adc9db32c",
+    "checked_at_utc": "2026-10-07T20:34:43.423893+00:00",
+    "value_payloads_inspected": false,
+    "npy_header": {
+      "shape": [
+        436389
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "header_bytes": 128
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+    "dataset_version": 2,
+    "file": "coco_meta.pkl",
+    "server_total_bytes": 41450156,
+    "inspected_bytes": 262144,
+    "prefix_sha256": "e6ae6fba065dba7e348e436ab780ddb711050a1312edeba45fa4420d4a6528a4",
+    "checked_at_utc": "2026-10-07T20:34:44.777914+00:00",
+    "value_payloads_inspected": false,
+    "metadata_header_only": true
+  },
+  {
+    "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+    "dataset_version": 2,
+    "file": "fp_bits.npy",
+    "server_total_bytes": 55568,
+    "inspected_bytes": 55568,
+    "prefix_sha256": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+    "checked_at_utc": "2026-10-07T20:34:45.565306+00:00",
+    "value_payloads_inspected": false,
+    "npy_header": {
+      "shape": [
+        6930
+      ],
+      "dtype": "int64",
+      "fortran_order": false,
+      "header_bytes": 128
+    }
+  },
+  {
+    "dataset_ref": "prvsiyan/casmi26-ranker-features",
+    "dataset_version": 6,
+    "file": "rank_train.npz",
+    "server_total_bytes": 9553020,
+    "inspected_bytes": 9553020,
+    "prefix_sha256": "41ccec87fba5f8ab255aaf5a723567f25bd766064265c5cc2b83ba2cf15f57f8",
+    "checked_at_utc": "2026-10-07T20:34:47.242553+00:00",
+    "value_payloads_inspected": false,
+    "sha256": "41ccec87fba5f8ab255aaf5a723567f25bd766064265c5cc2b83ba2cf15f57f8",
+    "arrays": {
+      "X.npy": {
+        "shape": [
+          142762,
+          31
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "Y.npy": {
+        "shape": [
+          142762
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "M.npy": {
+        "shape": [
+          142762
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "G.npy": {
+        "shape": [
+          142762
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      }
+    }
+  }
+]

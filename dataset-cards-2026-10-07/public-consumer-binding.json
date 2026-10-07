@@ -1,0 +1,19 @@
+{
+  "ref": "prvsiyan/analog-propagation-casmi-2026-baseline",
+  "id": 134523031,
+  "title": "Analog Propagation - CASMI 2026 baseline",
+  "is_private": false,
+  "current_version_number": 32,
+  "dataset_data_sources": [
+    "prvsiyan/casmi26-fp-models-v2",
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/chebi-lipidmaps-casmi26",
+    "prvsiyan/coconut-casmi26-candidates",
+    "prvsiyan/pubchem-npformula-massindex",
+    "prvsiyan/rdkit-wheel-offline"
+  ],
+  "checked_at_utc": "2026-10-07T20:41:28.563117+00:00",
+  "source_sha256": "3ce550ab18441573ee519a4e1df88ae03090e00e424c16671e02bc6b76214a9e",
+  "rank_features_ast_matches_prior": true,
+  "rank_features_sha256": "3ed163be13cc802a0b95603dbf52d2489e32ebaa6b3b57b4d6577ac6f414ec2e"
+}

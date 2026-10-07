@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-07T20:45:33.247033+00:00",
+  "reviewer_task": "/root/owned_dataset_cards_after_repair_oct7/public_dataset_card_lessons",
+  "status": "PASS_FINAL_FACTUAL_DOCUMENTATION",
+  "scope": "Current four published cards and referenced public metadata/header receipts; no inference or score validation",
+  "corrected_before_publication": [
+    "Column30 is correlation with NEGATED normalized model rank",
+    "G query/structure mapping is unproven by shipped archive headers; recover it before validation splitting"
+  ],
+  "full_checkpoint_loaders_executed": false,
+  "description_hashes": {
+    "prvsiyan/casmi26-fp-models-v2": "1626a108ff8e24e5e6427617f5d58160f4badc52085201c6f5bf571cff546526",
+    "prvsiyan/casmi26-fp-models-v4": "87048410778eb7eb24f83f8c4e50c5b349b5b3c6aecee0943fe822887fe3c251",
+    "prvsiyan/coconut-casmi26-candidates": "1a50d5956f2c949681e066fa0c2207dac5f36c3310ba080b6eb596093a2e1e8f",
+    "prvsiyan/casmi26-ranker-features": "b9d1b828afebafce9b6763ee32967fd8b2c2f6693a5fa572e25f238701641da9"
+  }
+}

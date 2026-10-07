@@ -1,0 +1,48 @@
+{
+  "recorded_at_utc": "2026-10-07T20:45:33.248582+00:00",
+  "suggested_repository_path": "datasets/cards/2026-10-07",
+  "contains_no_dataset_payloads": true,
+  "contains_no_notebook_files": true,
+  "files": {
+    "independent-review.json": {
+      "bytes": 1047,
+      "sha256": "0124da02fe1fcece42ee836a0c2453805b7ce295bbd288b3e0d7c9e6c8ca37a1"
+    },
+    "casmi26-ranker-features.md": {
+      "bytes": 5760,
+      "sha256": "b9d1b828afebafce9b6763ee32967fd8b2c2f6693a5fa572e25f238701641da9"
+    },
+    "public-consumer-binding.json": {
+      "bytes": 743,
+      "sha256": "19e36706d027511dba6324835f96190f9520628b2e1c1358ca8b867d278798d3"
+    },
+    "casmi26-fp-models-v4.md": {
+      "bytes": 4509,
+      "sha256": "87048410778eb7eb24f83f8c4e50c5b349b5b3c6aecee0943fe822887fe3c251"
+    },
+    "publication-receipts.json": {
+      "bytes": 2972,
+      "sha256": "3e84074d5df3348058d5c8adfd03af2548121e29d32de74442b466d50397f9c5"
+    },
+    "README.md": {
+      "bytes": 4023,
+      "sha256": "b3018b3abb7f62176a26cc2db26c6bc69d3718aef25d3721ae4cd90000d05a82"
+    },
+    "coconut-small-array-receipts.json": {
+      "bytes": 784,
+      "sha256": "103fbe9c4062e880d577c58d6eedc778e84b1752d9cb983da5f4b9655cbe3357"
+    },
+    "coconut-casmi26-candidates.md": {
+      "bytes": 5568,
+      "sha256": "1a50d5956f2c949681e066fa0c2207dac5f36c3310ba080b6eb596093a2e1e8f"
+    },
+    "schema-header-evidence.json": {
+      "bytes": 6985,
+      "sha256": "326d022980e8e23b7ef981180158e0fa2c1170fea3d6f9dc5279cc359c673b02"
+    },
+    "casmi26-fp-models-v2.md": {
+      "bytes": 4607,
+      "sha256": "1626a108ff8e24e5e6427617f5d58160f4badc52085201c6f5bf571cff546526"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "file": "coco_mass.npy",
+    "version": 2,
+    "bytes": 3491240,
+    "sha256": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c",
+    "shape": [
+      436389
+    ],
+    "dtype": "float64",
+    "checked_at_utc": "2026-10-07T20:36:46.618269+00:00",
+    "labels_used": false,
+    "finite": true,
+    "ascending": true,
+    "minimum_da": 100.009519128,
+    "maximum_da": 1299.7599298120003
+  },
+  {
+    "file": "fp_bits.npy",
+    "version": 2,
+    "bytes": 55568,
+    "sha256": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+    "shape": [
+      6930
+    ],
+    "dtype": "int64",
+    "checked_at_utc": "2026-10-07T20:36:47.455171+00:00",
+    "labels_used": false,
+    "unique": true,
+    "minimum_index": 2,
+    "maximum_index": 10405
+  }
+]
