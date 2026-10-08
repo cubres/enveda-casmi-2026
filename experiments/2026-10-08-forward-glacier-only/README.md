@@ -13,3 +13,15 @@ No score is claimed here. Documentation is MIT like its siblings.
 ## Update, 13:45 UTC: draw 2 from the public notebook
 
 Version 33 of the public notebook [Analog Propagation — CASMI 2026 baseline](https://www.kaggle.com/code/prvsiyan/analog-propagation-casmi-2026-baseline) is an in-place update carrying the same F1 payload with the pipeline explained for readers (engine, popularity prior, PubChem tier with fixed slots, forward re-scoring and why GLACIER-only, the file-backed owned runner, the ledger of all official rows, credits and licences); all 37 earlier cells are preserved. Its commit run completed in 62 minutes with the V6 fidelity check and the forward canary passing ([public-v33-commit-run-receipt.json](public-v33-commit-run-receipt.json)). Draw 2 was submitted from it at 13:44 UTC as row 56956461 ([draw2-public-v33-accepted.json](draw2-public-v33-accepted.json)); both scores are unknown at this writing and the predeclared rule will be applied to the pair.
+
+## Update, 17:01 UTC: both draws scored
+
+Both F1 draws scored **0.344**: row 56953547 from bench version 20 and row 56956461 from public version 33. The incumbent V6 rows (56824628, 56859903) still show **0.340**. None of our 35 rows has changed since the host announced it would rerun every submission on corrected test data, so that rescore is not yet visible.
+
+**Decision under the rule frozen before scoring.** Against R = 0.340 the gain is +0.004, which falls between the reject bound (R + 0.001) and the adopt bound (R + 0.008). The result is **inconclusive**: V6 stays the incumbent and no third draw is spent.
+
+The final call waits for the rescored incumbent:
+- F1 is adopted only if the rescored V6 is ≤ 0.336;
+- F1 is rejected only if the rescored V6 is ≥ 0.343.
+
+Independently of that, the public notebook's card now shows 0.344 ([f1-scores.json](f1-scores.json)).

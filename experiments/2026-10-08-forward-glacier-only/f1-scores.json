@@ -1,0 +1,4 @@
+{"observed_utc": "2026-10-08T17:01:11Z", "f1_draws": {"56953547": 0.344, "56956461": 0.344},
+ "incumbent_v6_rows": {"56824628": 0.340, "56859903": 0.340}, "incumbent_rescore_visible": false,
+ "rule": {"R": "mean of rescored incumbent rows", "adopt": "mean(F1) >= R + 0.008 and min(F1) >= R", "reject": "mean(F1) <= R + 0.001", "else": "inconclusive, keep incumbent, no third draw"},
+ "decision_with_R_0_340": "INCONCLUSIVE (+0.004)", "final_pending": "host rescore of the incumbent; adopt iff R <= 0.336, reject iff R >= 0.343"}
