@@ -1,0 +1,33 @@
+{
+ "arm": "F1_v6_glacier_only",
+ "change": "V6 cell 3: CFG.FWD_WEIGHTS {'iceberg': 0.0, 'glacier': 1.0}",
+ "status": "PASS_F1_SUBMISSION_WRITTEN",
+ "elapsed_s": 3891.0,
+ "cap_s": 7130,
+ "mode": {
+  "is_rerun": false,
+  "env_flag": false,
+  "test_signature": "654e030e4173780e945252b4a5adf70b",
+  "comp_dir": "/kaggle/input/enveda-CASMI26-molecule-id-mass-spectra",
+  "spectra": 1213
+ },
+ "process": {
+  "pid": 62,
+  "pgid": 62,
+  "own_group": true,
+  "returncode": 0,
+  "timed_out": false,
+  "signals": [],
+  "remaining_members": [],
+  "cleanup_proven": true
+ },
+ "config": {
+  "commit_cap_s": 7130,
+  "rerun_cap_s": 30600,
+  "require_gpu": true,
+  "require_canary": true,
+  "v6_visible_csv_prefix": "0d1cad26"
+ },
+ "payload_sha256": "5cc3bf3e8e42e4400633a8d40ca1f73da9fb3dc3607ab2d509e2b9242e7e7053",
+ "v6_source_sha256": "92c4e53a1f15f93b7106f421c0732470f43a14ba6ad1cdbb06a2ae9c87b53b48"
+}

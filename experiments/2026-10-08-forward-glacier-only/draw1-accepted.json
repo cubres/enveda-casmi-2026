@@ -1,0 +1,15 @@
+{
+ "submitted_utc": "2026-10-08T12:23:27Z",
+ "kernel_version": 20,
+ "submission_sha256": "0d1cad260919fbece05d6389ccd51a8391ef06cf81d09db631f16b3b5b449785",
+ "message": "F1 draw 1/2: exact V6 composition (0.340 x2) with forward re-scoring weights ICEBERG 0.0 / GLACIER 1.0, everything else byte-identical; predeclared: adopt if mean of two draws >= 0.348 and both >= 0.340, reject if mean <= 0.341 | visible CSV == V6 | bench row",
+ "new_rows": [
+  {
+   "ref": "56953547",
+   "date": "2026-10-08 12:23:17.380000",
+   "status": "SubmissionStatus.PENDING",
+   "description": "F1 draw 1/2: exact V6 composition (0.340 x2) with forward re-scoring weights ICEBERG 0.0 / GLACIER 1.0, everything else byte-identical; predeclared: adopt if mean of two draws >= 0.348 and both >= 0.340, reject if mean <= 0.341 | visible CSV == V6 | bench row"
+  }
+ ],
+ "official_score": null
+}

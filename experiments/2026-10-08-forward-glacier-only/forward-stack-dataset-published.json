@@ -1,0 +1,25 @@
+{
+ "utc": "2026-10-08T12:04:33Z",
+ "before": {
+  "title": "CASMI26 forward reference stack",
+  "subtitle": "",
+  "is_private": true,
+  "license_name": "Other (specified in description)"
+ },
+ "after": {
+  "title": "CASMI26 forward reference stack",
+  "subtitle": "",
+  "is_private": true,
+  "license_name": "Other (specified in description)",
+  "current_version_number": 2
+ },
+ "final_state": {
+  "title": "CASMI26 forward reference stack",
+  "subtitle": "Offline ms-pred ICEBERG/GLACIER (MassSpecGym) with pinned wheels and a runner",
+  "is_private": false,
+  "license_name": "Other (specified in description)",
+  "version": 2
+ },
+ "subtitle": "Offline ms-pred ICEBERG/GLACIER (MassSpecGym) with pinned wheels and a runner",
+ "description_sha256": "d8b495eb4c4191b768493aacb0a3b13337278198276f1588edbb290dd65ae881"
+}

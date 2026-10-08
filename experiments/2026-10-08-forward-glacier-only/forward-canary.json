@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "f1_is_rerun": "0",
+  "forward_packages": 1,
+  "molecule": "m_005e53",
+  "n_candidates": 8,
+  "n_spectra": 5,
+  "n_mh_spectra": 5,
+  "environment": {
+    "ready": true,
+    "device": "cuda",
+    "torch": "2.6.0+cu124",
+    "rdkit": "2025.03.6"
+  },
+  "service_status": "ready",
+  "service_errors": [],
+  "requests": [
+    {
+      "id": "f1-canary:m_005e53",
+      "predictions": 48,
+      "seconds": 3.46
+    }
+  ],
+  "glacier_finite": 8,
+  "iceberg_finite": 8
+}
