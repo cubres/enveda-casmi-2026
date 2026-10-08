@@ -1,0 +1,22 @@
+{
+ "status": "PASS_SUBMISSION_WRITTEN_LAST",
+ "elapsed_s": 3730.5,
+ "cap_s": 7130,
+ "mode": {
+  "is_rerun": false,
+  "env_flag": false,
+  "test_signature": "654e030e4173780e945252b4a5adf70b",
+  "comp_dir": "/kaggle/input/competitions/enveda-CASMI26-molecule-id-mass-spectra",
+  "spectra": 1213
+ },
+ "process": {
+  "pid": 61,
+  "pgid": 61,
+  "own_group": true,
+  "returncode": 0,
+  "timed_out": false,
+  "signals": [],
+  "remaining_members": [],
+  "cleanup_proven": true
+ }
+}

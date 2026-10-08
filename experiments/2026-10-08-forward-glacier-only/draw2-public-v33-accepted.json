@@ -1,0 +1,15 @@
+{
+ "submitted_utc": "2026-10-08T13:44:14Z",
+ "notebook": "prvsiyan/analog-propagation-casmi-2026-baseline version 33 (public)",
+ "submission_sha256": "0d1cad260919fbece05d6389ccd51a8391ef06cf81d09db631f16b3b5b449785",
+ "message": "F1 draw 2/2 from the public notebook: V6 composition (0.340 x2) with forward re-scoring ICEBERG 0.0 / GLACIER 1.0, everything else byte-identical; predeclared rule: adopt if mean of two draws >= 0.348 and both >= 0.340, reject if mean <= 0.341 | forward stack dataset now public",
+ "new_rows": [
+  {
+   "ref": "56956461",
+   "date": "2026-10-08 13:44:05.153000",
+   "status": "SubmissionStatus.PENDING",
+   "description": "F1 draw 2/2 from the public notebook: V6 composition (0.340 x2) with forward re-scoring ICEBERG 0.0 / GLACIER 1.0, everything else byte-identical; predeclared rule: adopt if mean of two draws >= 0.348 and both >= 0.340, reject if mean <= 0.341 | forward stack dataset now public"
+  }
+ ],
+ "official_score": null
+}
