@@ -25,3 +25,9 @@ The final call waits for the rescored incumbent:
 - F1 is rejected only if the rescored V6 is ≥ 0.343.
 
 Independently of that, the public notebook's card now shows 0.344 ([f1-scores.json](f1-scores.json)).
+
+## Final, 20:17 UTC: the incumbent measured on the corrected data
+
+The exact incumbent version (bench V6) was resubmitted as row 56963908 and scored **0.340**, so R = 0.340. The F1 mean of 0.344 is R + 0.004, which falls between the reject bound (0.341) and the adopt bound (0.348). The decision is **inconclusive**: V6 stays the incumbent for decisions, and no further F1 draw is spent.
+
+Every draw reproduced exactly (V6: 0.340 three times; F1: 0.344 twice). The pipeline is deterministic, so the uncertainty lies in the roughly 132-molecule public split rather than in run-to-run noise. A gain of +0.004 is about half of one molecule moved to rank 1.
