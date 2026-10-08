@@ -1,0 +1,123 @@
+{
+  "all_8_attachment_roles_covered": true,
+  "competition_submission": false,
+  "created_utc": "2026-10-08T10:43:40.045866+00:00",
+  "exact_private_refs_redacted": true,
+  "file_count": 21,
+  "files": {
+    "HOW_TO_RUN.md": {
+      "bytes": 5886,
+      "sha256": "8f583fc1741225d5ea9b625c5d9b2735d2457d95d1cbe5ed5b0516fd447c3cd2"
+    },
+    "INPUT_CARDS.md": {
+      "bytes": 7746,
+      "sha256": "3939b541ba3334877a9d097df3a5be03297c0835d2b16ec30bd55023b82bffc8"
+    },
+    "LICENSE": {
+      "bytes": 1063,
+      "sha256": "eed854701ae3433dccb0da2fc34fb3a8b70460bb4cad7f9e1abb4145a6cdbf0e"
+    },
+    "NOTICE.md": {
+      "bytes": 1956,
+      "sha256": "9f87dc93a7f2ea4c93583ad71a418d26382e207cbe198123b09e49f26ff295d5"
+    },
+    "README.md": {
+      "bytes": 4711,
+      "sha256": "1590d9180c2cb6221d2f914ab152f6652810a495270253b5be36f534eeba29c8"
+    },
+    "input-contract.json": {
+      "bytes": 7678,
+      "sha256": "1d66df5a3e21d2901459cd59940a8b79898c5d7aad946afe9f237486122f646d"
+    },
+    "native_mount_bridge_v5.py": {
+      "bytes": 5632,
+      "sha256": "3405ae869d5291ae82f4eadcc9b9e68d5e62a721c7127960e7623ec169f32c18"
+    },
+    "progress-snapshot.json": {
+      "bytes": 2343,
+      "sha256": "cf4f261e16dbda11109e688aa22e1043186700d5d79b69e74d7024262000deaa"
+    },
+    "reference-metadata-evidence.json": {
+      "bytes": 3171,
+      "sha256": "9abd13e77ee4abf62e2b25b4bd42f31960ce19a5495b652c1bc9ff3e902c34ef"
+    },
+    "scoped_mount_resolver_v2.py": {
+      "bytes": 9817,
+      "sha256": "a4609ef7526bf112497457eeac645b62cd2a771794d0b4968d9be47abedb2ab3"
+    },
+    "source-binding.svg": {
+      "bytes": 3212,
+      "sha256": "93c4ffbb110072cc3f5f9aa160df47e0bdb3256a78858c064b02b28a06664325"
+    },
+    "synthetic-demo/PORTABLE_TEST_EXECUTION.json": {
+      "bytes": 604,
+      "sha256": "457c0ce776dfdd8faaa212e5652f964673a19fb519f2a48acd929abeb63ce9fa"
+    },
+    "synthetic-demo/PORTABLE_TEST_LOG.txt": {
+      "bytes": 1881,
+      "sha256": "52e3f054f0a702b1bbda3c681a83632d427e3e09f637156862744b36068fd79d"
+    },
+    "synthetic-demo/PUBLIC_FILES_MANIFEST.json": {
+      "bytes": 1990,
+      "sha256": "b3321cae34aaaff504eb7cf9108cada0fcf3b3a8ea0a0a969c9148c76c97af3b"
+    },
+    "synthetic-demo/README.md": {
+      "bytes": 3436,
+      "sha256": "e03cac177ec57dc51bc23f827d0639a50dfe078caadc0abf46d62bfeaca28291"
+    },
+    "synthetic-demo/SYNTHETIC_DEMO_EXECUTION.json": {
+      "bytes": 6421,
+      "sha256": "5544b38cb91672641a9ab8a7349618a101787119779ebacd7687f8887a6752a1"
+    },
+    "synthetic-demo/demo.py": {
+      "bytes": 7063,
+      "sha256": "05ed099e38be80b4aef297573c1d2c329582b61c8dd045271f3869e3d9131520"
+    },
+    "synthetic-demo/native_mount_bridge.py": {
+      "bytes": 5632,
+      "sha256": "3405ae869d5291ae82f4eadcc9b9e68d5e62a721c7127960e7623ec169f32c18"
+    },
+    "synthetic-demo/scoped_mount_resolver.py": {
+      "bytes": 9817,
+      "sha256": "a4609ef7526bf112497457eeac645b62cd2a771794d0b4968d9be47abedb2ab3"
+    },
+    "synthetic-demo/test_demo.py": {
+      "bytes": 8181,
+      "sha256": "53b1896ca4bb994d14167263e80f1eaa1664e2d0b6ddc5b746048d5f3eccef14"
+    },
+    "verify_public_inputs.py": {
+      "bytes": 852,
+      "sha256": "31e5d9b47a54ec2e9a7e132badc1bbbb10f1d4a85150b9cda9fb396bf4ddd30d"
+    }
+  },
+  "github_published": false,
+  "license_scope": "MIT for original helper software/docs only; no third-party payloads relicensed",
+  "native_metrics": "COMPLETE_DIAGNOSTIC_ONLY",
+  "no_notebook_artifacts": true,
+  "official_score": null,
+  "only_changed_parent_payload_files": [
+    "INPUT_CARDS.md",
+    "NOTICE.md",
+    "README.md",
+    "input-contract.json",
+    "progress-snapshot.json",
+    "source-binding.svg"
+  ],
+  "only_new_payload_files": [],
+  "original_v1_manifest_sha256": "0e09a0f5f41258ea568d72ffb60fd26166a7d50cd7b735c3332efe32890ea9c8",
+  "packet_version": 4,
+  "parent19_payload_files_byte_identical": false,
+  "parent_manifest_sha256": "25fba5c5fb93ec17ca4ab344d16909914abadaeabea0298abfd6603a88c59f95",
+  "portable_tests_passed": 14,
+  "portable_tests_skipped": 0,
+  "prior_dataset_cards_commit_preserved": "565aa34c39447bc822ed21449d8b8990230d4d9e",
+  "private_payloads_or_raw_weights_exported": false,
+  "publication_allowlist": "Only manifest-listed files plus this manifest; no directory-tree bulk upload",
+  "reusable_bridge_sha256": "3405ae869d5291ae82f4eadcc9b9e68d5e62a721c7127960e7623ec169f32c18",
+  "reusable_resolver_sha256": "a4609ef7526bf112497457eeac645b62cd2a771794d0b4968d9be47abedb2ab3",
+  "status": "DRAFT_V4_V18_COMPLETE_ROOT_REVIEW_PENDING",
+  "synthetic_demo": "PASS",
+  "timestamp_correction": "Acceptance proved within recorded launch start/finish interval; exact acceptance time not established",
+  "total_bytes": 99092,
+  "unchanged_parent_payload_files": 15
+}

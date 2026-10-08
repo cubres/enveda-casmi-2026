@@ -1,0 +1,19 @@
+test_bridge_known_file_lookup_does_not_call_original (__main__.SourceBindingTests.test_bridge_known_file_lookup_does_not_call_original) ... ok
+test_bridge_selector_changes_only_one_expression (__main__.SourceBindingTests.test_bridge_selector_changes_only_one_expression) ... ok
+test_bridge_selector_count_drift_fails (__main__.SourceBindingTests.test_bridge_selector_count_drift_fails) ... ok
+test_cli_stdout_is_json_and_contains_no_private_paths (__main__.SourceBindingTests.test_cli_stdout_is_json_and_contains_no_private_paths) ... ok
+test_demo_emits_relative_public_safe_receipts (__main__.SourceBindingTests.test_demo_emits_relative_public_safe_receipts) ... ok
+test_distinct_files_with_identical_bytes_are_ambiguous (__main__.SourceBindingTests.test_distinct_files_with_identical_bytes_are_ambiguous) ... ok
+test_legacy_layout_is_explicitly_supported (__main__.SourceBindingTests.test_legacy_layout_is_explicitly_supported) ... ok
+test_missing_file_is_a_structured_failure (__main__.SourceBindingTests.test_missing_file_is_a_structured_failure) ... ok
+test_same_physical_alias_is_deduped (__main__.SourceBindingTests.test_same_physical_alias_is_deduped) ... ok
+test_single_canonical_checks_size_and_full_sha (__main__.SourceBindingTests.test_single_canonical_checks_size_and_full_sha) ... ok
+test_traversal_and_absolute_paths_are_rejected (__main__.SourceBindingTests.test_traversal_and_absolute_paths_are_rejected) ... ok
+test_wrong_hash_same_size_is_rejected (__main__.SourceBindingTests.test_wrong_hash_same_size_is_rejected) ... ok
+test_wrong_owner_does_not_fall_back_to_global_filename (__main__.SourceBindingTests.test_wrong_owner_does_not_fall_back_to_global_filename) ... ok
+test_wrong_size_is_rejected (__main__.SourceBindingTests.test_wrong_size_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.059s
+
+OK

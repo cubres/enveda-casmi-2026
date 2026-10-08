@@ -1,0 +1,198 @@
+{
+  "artifact_directory": "run_20261007T232714080127Z",
+  "bank_cell_executions": 0,
+  "fixtures_retained": true,
+  "known_find_uses_only_qualified_path": true,
+  "model_loads": 0,
+  "module_sha256": {
+    "native_mount_bridge.py": "3405ae869d5291ae82f4eadcc9b9e68d5e62a721c7127960e7623ec169f32c18",
+    "scoped_mount_resolver.py": "a4609ef7526bf112497457eeac645b62cd2a771794d0b4968d9be47abedb2ab3"
+  },
+  "network_calls": 0,
+  "official_score": null,
+  "scenarios": {
+    "distinct_physical_duplicates": {
+      "candidates": [
+        {
+          "canonical_source_index": 0,
+          "scoped_relative_path": "datasets/example-lab/synthetic-assets/example.bin",
+          "source_class": "explicit_owner_slug",
+          "state": "resolved"
+        },
+        {
+          "canonical_source_index": 1,
+          "scoped_relative_path": "synthetic-assets/example.bin",
+          "source_class": "legacy_slug",
+          "state": "resolved"
+        }
+      ],
+      "counts": {
+        "canonical_aliases": 0,
+        "explicit_candidates": 2,
+        "missing_candidates": 0,
+        "rejected_candidates": 0,
+        "resolved_candidates": 2,
+        "unique_canonical_paths": 2
+      },
+      "reason": "DISTINCT_CANONICAL_SOURCES",
+      "request": {
+        "expected_sha256": "cac54cf95f91f8a9cb7f4153cc6cd31ce7c3f515030ad922de7cfb01f57cfb05",
+        "expected_size": 63,
+        "owner": "example-lab",
+        "relative_filename": "example.bin",
+        "slug": "synthetic-assets"
+      },
+      "resolved_source_classes": [
+        "explicit_owner_slug",
+        "legacy_slug"
+      ],
+      "resolver": "SCOPED_MOUNT_RESOLVER_V5",
+      "schema_version": 1,
+      "status": "FAIL"
+    },
+    "same_physical_alias": {
+      "candidates": [
+        {
+          "canonical_source_index": 0,
+          "scoped_relative_path": "datasets/example-lab/synthetic-assets/example.bin",
+          "source_class": "explicit_owner_slug",
+          "state": "resolved"
+        },
+        {
+          "canonical_source_index": 0,
+          "scoped_relative_path": "synthetic-assets/example.bin",
+          "source_class": "legacy_slug",
+          "state": "resolved"
+        }
+      ],
+      "counts": {
+        "canonical_aliases": 1,
+        "explicit_candidates": 2,
+        "missing_candidates": 0,
+        "rejected_candidates": 0,
+        "resolved_candidates": 2,
+        "unique_canonical_paths": 1
+      },
+      "observed_sha256": "cac54cf95f91f8a9cb7f4153cc6cd31ce7c3f515030ad922de7cfb01f57cfb05",
+      "observed_size": 63,
+      "reason": "ONE_CANONICAL_SCOPED_SOURCE_MATCHES_EXACT_BYTES",
+      "request": {
+        "expected_sha256": "cac54cf95f91f8a9cb7f4153cc6cd31ce7c3f515030ad922de7cfb01f57cfb05",
+        "expected_size": 63,
+        "owner": "example-lab",
+        "relative_filename": "example.bin",
+        "slug": "synthetic-assets"
+      },
+      "resolved_source_classes": [
+        "explicit_owner_slug",
+        "legacy_slug"
+      ],
+      "resolver": "SCOPED_MOUNT_RESOLVER_V5",
+      "schema_version": 1,
+      "selected_scoped_relative_paths": [
+        "datasets/example-lab/synthetic-assets/example.bin",
+        "synthetic-assets/example.bin"
+      ],
+      "status": "PASS"
+    },
+    "single_canonical": {
+      "candidates": [
+        {
+          "canonical_source_index": 0,
+          "scoped_relative_path": "datasets/example-lab/synthetic-assets/example.bin",
+          "source_class": "explicit_owner_slug",
+          "state": "resolved"
+        },
+        {
+          "scoped_relative_path": "synthetic-assets/example.bin",
+          "source_class": "legacy_slug",
+          "state": "missing_root"
+        }
+      ],
+      "counts": {
+        "canonical_aliases": 0,
+        "explicit_candidates": 2,
+        "missing_candidates": 1,
+        "rejected_candidates": 0,
+        "resolved_candidates": 1,
+        "unique_canonical_paths": 1
+      },
+      "observed_sha256": "cac54cf95f91f8a9cb7f4153cc6cd31ce7c3f515030ad922de7cfb01f57cfb05",
+      "observed_size": 63,
+      "reason": "ONE_CANONICAL_SCOPED_SOURCE_MATCHES_EXACT_BYTES",
+      "request": {
+        "expected_sha256": "cac54cf95f91f8a9cb7f4153cc6cd31ce7c3f515030ad922de7cfb01f57cfb05",
+        "expected_size": 63,
+        "owner": "example-lab",
+        "relative_filename": "example.bin",
+        "slug": "synthetic-assets"
+      },
+      "resolved_source_classes": [
+        "explicit_owner_slug"
+      ],
+      "resolver": "SCOPED_MOUNT_RESOLVER_V5",
+      "schema_version": 1,
+      "selected_scoped_relative_paths": [
+        "datasets/example-lab/synthetic-assets/example.bin"
+      ],
+      "status": "PASS"
+    },
+    "wrong_hash": {
+      "candidates": [
+        {
+          "canonical_source_index": 0,
+          "scoped_relative_path": "datasets/example-lab/synthetic-assets/example.bin",
+          "source_class": "explicit_owner_slug",
+          "state": "resolved"
+        },
+        {
+          "scoped_relative_path": "synthetic-assets/example.bin",
+          "source_class": "legacy_slug",
+          "state": "missing_root"
+        }
+      ],
+      "counts": {
+        "canonical_aliases": 0,
+        "explicit_candidates": 2,
+        "missing_candidates": 1,
+        "rejected_candidates": 0,
+        "resolved_candidates": 1,
+        "unique_canonical_paths": 1
+      },
+      "observed_sha256": "cac54cf95f91f8a9cb7f4153cc6cd31ce7c3f515030ad922de7cfb01f57cfb05",
+      "observed_size": 63,
+      "reason": "SHA256_MISMATCH",
+      "request": {
+        "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "expected_size": 63,
+        "owner": "example-lab",
+        "relative_filename": "example.bin",
+        "slug": "synthetic-assets"
+      },
+      "resolved_source_classes": [
+        "explicit_owner_slug"
+      ],
+      "resolver": "SCOPED_MOUNT_RESOLVER_V5",
+      "schema_version": 1,
+      "selected_scoped_relative_paths": [
+        "datasets/example-lab/synthetic-assets/example.bin"
+      ],
+      "status": "FAIL"
+    }
+  },
+  "selector_text_checks": [
+    {
+      "exact_single_expression_change": true,
+      "index": 19,
+      "inverse_restores_all_source_bytes": true
+    },
+    {
+      "exact_single_expression_change": true,
+      "index": 20,
+      "inverse_restores_all_source_bytes": true
+    }
+  ],
+  "status": "PASS_SYNTHETIC_SOURCE_BINDING_DEMO",
+  "synthetic_files_only": true,
+  "unknown_find_preserves_original_selector": true
+}

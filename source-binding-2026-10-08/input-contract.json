@@ -1,0 +1,184 @@
+{
+  "cid_role": "builder-only local map; never a mounted runtime requirement",
+  "competition_submission": false,
+  "contract_kind": "expected_byte_pins_not_a_runtime_PASS",
+  "lineage": {
+    "expected_sha256": "5b615fc8299b5625e4c382be37595d2e300f1041dd6984b1a061ab9057d092d8",
+    "expected_size": 3762,
+    "owner": "prvsiyan",
+    "relative_filename": "PROVENANCE.json",
+    "slug": "pubchem-popularity-counts",
+    "version": 1
+  },
+  "model_inference_executed_by_this_public_package": false,
+  "mounted_bindings": {
+    "ap2pop_ik14.npy": {
+      "expected_sha256": "7ab2d1835110eb66e27202342a1137e3c49292c880fddc0380c19d3e7d82cb5f",
+      "expected_size": 1482331538,
+      "owner": "prvsiyan",
+      "relative_filename": "ap2pop_ik14.npy",
+      "slug": "pubchem-popularity-counts",
+      "version": 1
+    },
+    "ap2pop_ik14_pmid.npy": {
+      "expected_sha256": "f50e98281eecd563f3a7cb57adb583abe852a840fd7de13811aeda07a6672cf0",
+      "expected_size": 423523388,
+      "owner": "prvsiyan",
+      "relative_filename": "ap2pop_ik14_pmid.npy",
+      "slug": "pubchem-popularity-counts",
+      "version": 1
+    },
+    "ap2pop_ik14_sid.npy": {
+      "expected_sha256": "14615e35defd4ff4040a33c61e35f9daf5e95f63ff1305492bdc621c6545699a",
+      "expected_size": 423523388,
+      "owner": "prvsiyan",
+      "relative_filename": "ap2pop_ik14_sid.npy",
+      "slug": "pubchem-popularity-counts",
+      "version": 1
+    },
+    "ap2pop_manifest.json": {
+      "expected_sha256": "48d2378ab45a352749422af755b5ee4c7bd1db14e4c90b51d8d32cc4af616e4a",
+      "expected_size": 2257,
+      "owner": "prvsiyan",
+      "relative_filename": "ap2pop_manifest.json",
+      "slug": "pubchem-popularity-counts",
+      "version": 1
+    },
+    "ap2pop_store_pmid.npy": {
+      "expected_sha256": "dc15a112127bc23ec860b6d2edbddcddbe4ca4735c22dfd2c418673284a78000",
+      "expected_size": 285482008,
+      "owner": "prvsiyan",
+      "relative_filename": "ap2pop_store_pmid.npy",
+      "slug": "pubchem-popularity-counts",
+      "version": 1
+    },
+    "ap2pop_store_sid.npy": {
+      "expected_sha256": "123ec224f581229cbcf93d9ac613589ffaad8a4ad9ec826d3625f62bb1037f5c",
+      "expected_size": 285482008,
+      "owner": "prvsiyan",
+      "relative_filename": "ap2pop_store_sid.npy",
+      "slug": "pubchem-popularity-counts",
+      "version": 1
+    },
+    "coco_fp.npy": {
+      "expected_sha256": "5d960d7355e0e10b22f1b2fa97c9fde37e86ddffbea8e562ec1873bdbb0e5f88",
+      "expected_size": 378349391,
+      "owner": "prvsiyan",
+      "relative_filename": "coco_fp.npy",
+      "slug": "coconut-casmi26-candidates",
+      "version": 2
+    },
+    "coco_mass.npy": {
+      "expected_sha256": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c",
+      "expected_size": 3491240,
+      "owner": "prvsiyan",
+      "relative_filename": "coco_mass.npy",
+      "slug": "coconut-casmi26-candidates",
+      "version": 2
+    },
+    "coco_meta.pkl": {
+      "expected_sha256": "29eab3083adcb329b52ac7909b4d3ce21f9f95a4008a93356bc526310ab44091",
+      "expected_size": 41450156,
+      "owner": "prvsiyan",
+      "relative_filename": "coco_meta.pkl",
+      "slug": "coconut-casmi26-candidates",
+      "version": 2
+    },
+    "fp_bits.npy": {
+      "expected_sha256": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+      "expected_size": 55568,
+      "owner": "prvsiyan",
+      "relative_filename": "fp_bits.npy",
+      "slug": "coconut-casmi26-candidates",
+      "version": 2
+    },
+    "fp_merged_m1.pt": {
+      "expected_sha256": "261529c823825cbe2028684bbf7214a95a7e631ca9f656336d577c507cce8294",
+      "expected_size": 144110255,
+      "owner": "prvsiyan",
+      "relative_filename": "fp_merged_m1.pt",
+      "slug": "casmi26-fp-models-v2",
+      "version": 1
+    },
+    "fp_single_s2.pt": {
+      "expected_sha256": "c19aa29016ed4d7a67bac38105b8fa5076c696c29eb66a504558c9b2e52b614a",
+      "expected_size": 144110255,
+      "owner": "prvsiyan",
+      "relative_filename": "fp_single_s2.pt",
+      "slug": "casmi26-fp-models-v2",
+      "version": 1
+    },
+    "len.npy": {
+      "expected_sha256": "82d4f462b3d0512a41c1b71a4ecaa0cd545663f9abc7e7e55155f9ef6fa34616",
+      "expected_size": 142741068,
+      "owner": "prvsiyan",
+      "relative_filename": "len.npy",
+      "slug": "pubchem-npformula-massindex",
+      "version": 1
+    },
+    "mass_sorted.npy": {
+      "expected_sha256": "81ead320afbc4df530201da2a41f73b82b8a20d15baa7d6c1b7849c8e4c75923",
+      "expected_size": 570963888,
+      "owner": "prvsiyan",
+      "relative_filename": "mass_sorted.npy",
+      "slug": "pubchem-npformula-massindex",
+      "version": 1
+    },
+    "off.npy": {
+      "expected_sha256": "318c69ed2f4cad7b2d9cbd2c1acca66ae73f140a673e02d6126c4eacd2e84c09",
+      "expected_size": 570963896,
+      "owner": "prvsiyan",
+      "relative_filename": "off.npy",
+      "slug": "pubchem-npformula-massindex",
+      "version": 1
+    },
+    "order.npy": {
+      "expected_sha256": "afb76d8ca955abf05f5fe52b3bbe8c106445380d9e76752742aebe7da3be4936",
+      "expected_size": 570963888,
+      "owner": "prvsiyan",
+      "relative_filename": "order.npy",
+      "slug": "pubchem-npformula-massindex",
+      "version": 1
+    },
+    "rank_train.npz": {
+      "expected_sha256": "41ccec87fba5f8ab255aaf5a723567f25bd766064265c5cc2b83ba2cf15f57f8",
+      "expected_size": 9553020,
+      "owner": "prvsiyan",
+      "relative_filename": "rank_train.npz",
+      "slug": "casmi26-ranker-features",
+      "version": 6
+    },
+    "smiles.txt": {
+      "expected_sha256": "e236b6a6dcdcd9c5974c0feb78d7050066f9d47b479749854013e15bcf87ab09",
+      "expected_size": 3352543686,
+      "owner": "prvsiyan",
+      "relative_filename": "smiles.txt",
+      "slug": "pubchem-npformula-massindex",
+      "version": 1
+    }
+  },
+  "native_runtime_qualification": "PASS_V18_2026-10-07",
+  "official_score": null,
+  "original_pins": {
+    "ap2pop_ik14.npy": "7ab2d1835110eb66e27202342a1137e3c49292c880fddc0380c19d3e7d82cb5f",
+    "ap2pop_ik14_pmid.npy": "f50e98281eecd563f3a7cb57adb583abe852a840fd7de13811aeda07a6672cf0",
+    "ap2pop_ik14_sid.npy": "14615e35defd4ff4040a33c61e35f9daf5e95f63ff1305492bdc621c6545699a",
+    "ap2pop_manifest.json": "48d2378ab45a352749422af755b5ee4c7bd1db14e4c90b51d8d32cc4af616e4a",
+    "ap2pop_store_pmid.npy": "dc15a112127bc23ec860b6d2edbddcddbe4ca4735c22dfd2c418673284a78000",
+    "ap2pop_store_sid.npy": "123ec224f581229cbcf93d9ac613589ffaad8a4ad9ec826d3625f62bb1037f5c",
+    "cid.npy": "899fc8e18498a596c577314377d01b3a004394dec4d565dad84ce4f16349f992",
+    "coco_fp.npy": "5d960d7355e0e10b22f1b2fa97c9fde37e86ddffbea8e562ec1873bdbb0e5f88",
+    "coco_mass.npy": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c",
+    "coco_meta.pkl": "29eab3083adcb329b52ac7909b4d3ce21f9f95a4008a93356bc526310ab44091",
+    "fp_bits.npy": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+    "fp_merged_m1.pt": "261529c823825cbe2028684bbf7214a95a7e631ca9f656336d577c507cce8294",
+    "fp_single_s2.pt": "c19aa29016ed4d7a67bac38105b8fa5076c696c29eb66a504558c9b2e52b614a",
+    "len.npy": "82d4f462b3d0512a41c1b71a4ecaa0cd545663f9abc7e7e55155f9ef6fa34616",
+    "mass_sorted.npy": "81ead320afbc4df530201da2a41f73b82b8a20d15baa7d6c1b7849c8e4c75923",
+    "off.npy": "318c69ed2f4cad7b2d9cbd2c1acca66ae73f140a673e02d6126c4eacd2e84c09",
+    "order.npy": "afb76d8ca955abf05f5fe52b3bbe8c106445380d9e76752742aebe7da3be4936",
+    "rank_train.npz": "41ccec87fba5f8ab255aaf5a723567f25bd766064265c5cc2b83ba2cf15f57f8",
+    "smiles.txt": "e236b6a6dcdcd9c5974c0feb78d7050066f9d47b479749854013e15bcf87ab09"
+  },
+  "source_binding_changes": "Known-file lookup plus two exact IO expressions only"
+}

@@ -1,0 +1,92 @@
+{
+  "private_attachment_count": 2,
+  "private_slots": [
+    {
+      "exact_ref_redacted": true,
+      "is_private": true,
+      "observed_utc": "2026-10-07T20:32:22.530945+00:00",
+      "role": "forward channel disabled in both arms",
+      "slot": 2,
+      "source_metadata_receipt_sha256": "285e51074ca50b804c9c5a7999fd845181b66f775c3474790e35ac7f3bbfc828"
+    },
+    {
+      "exact_ref_redacted": true,
+      "is_private": true,
+      "observed_utc": "2026-10-07T20:32:22.530945+00:00",
+      "role": "legacy transport inactive; no public payload",
+      "slot": 5,
+      "source_metadata_receipt_sha256": "285e51074ca50b804c9c5a7999fd845181b66f775c3474790e35ac7f3bbfc828"
+    }
+  ],
+  "public_dataset_count": 6,
+  "public_datasets": [
+    {
+      "inventory_complete": true,
+      "is_private": false,
+      "license_labels": [
+        "CC0-1.0"
+      ],
+      "observed_utc": "2026-10-07T20:22:12.342325+00:00",
+      "ref": "prvsiyan/casmi26-fp-models-v2",
+      "source_metadata_receipt_sha256": "ce18cb11710f067e67cdf3ff9500324537520139c0b832f509bba37b6d8247a7",
+      "version_selector": 1
+    },
+    {
+      "inventory_complete": true,
+      "is_private": false,
+      "license_labels": [
+        "CC0-1.0"
+      ],
+      "observed_utc": "2026-10-07T20:22:12.641395+00:00",
+      "ref": "prvsiyan/casmi26-ranker-features",
+      "source_metadata_receipt_sha256": "8d9ed37d81546ca2a10c3001a4d79ef3fd85c21eb7a9278e173c310394a7159d",
+      "version_selector": 6
+    },
+    {
+      "inventory_complete": true,
+      "is_private": false,
+      "license_labels": [
+        "Attribution 4.0 International (CC BY 4.0)"
+      ],
+      "observed_utc": "2026-10-07T20:22:12.333205+00:00",
+      "ref": "prvsiyan/coconut-casmi26-candidates",
+      "source_metadata_receipt_sha256": "a590dcb93cda163bf468887574cd587b930425b3a302278231fbd39cc2ba97f3",
+      "version_selector": 2
+    },
+    {
+      "inventory_complete": true,
+      "is_private": false,
+      "license_labels": [
+        "CC0-1.0"
+      ],
+      "observed_utc": "2026-10-07T20:22:13.350165+00:00",
+      "ref": "prvsiyan/pubchem-popularity-counts",
+      "source_metadata_receipt_sha256": "2ee77e6294ca8bcd6007988cf1a443b410d007a08547e811b121731419b62345",
+      "version_selector": 1
+    },
+    {
+      "inventory_complete": true,
+      "is_private": false,
+      "license_labels": [
+        "CC0-1.0"
+      ],
+      "observed_utc": "2026-10-07T20:22:13.378518+00:00",
+      "ref": "prvsiyan/pubchem-npformula-massindex",
+      "source_metadata_receipt_sha256": "74257149bb0f40a05e652dc97de57aa474986717641cec26278dc03e7c6c84d3",
+      "version_selector": 1
+    },
+    {
+      "complete_byte_pin_in_18_file_manifest": false,
+      "is_private": false,
+      "license_labels": [
+        "Other (specified in description)"
+      ],
+      "observed_current_version": 1,
+      "observed_utc": "2026-10-07T20:32:22.530945+00:00",
+      "ref": "prvsiyan/rdkit-wheel-offline",
+      "source_metadata_receipt_sha256": "285e51074ca50b804c9c5a7999fd845181b66f775c3474790e35ac7f3bbfc828",
+      "worker_version_selector": null
+    }
+  ],
+  "status": "SANITIZED_METADATA_REFERENCE_EVIDENCE_NOT_RUNTIME_QUALIFICATION"
+}

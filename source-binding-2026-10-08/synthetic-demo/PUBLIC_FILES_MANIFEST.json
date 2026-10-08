@@ -1,0 +1,51 @@
+{
+  "copy_contract": "Resolver and campaign bridge copied byte-exact; campaign bridge retains its fixed PUBLIC lineage dataset reference. Demo fixtures/output use neutral names.",
+  "cpu_applicability": "Pure CPU file I/O and full SHA256; no accelerator required; no model hardware or speed claim.",
+  "github_writes": 0,
+  "kaggle_writes": 0,
+  "native_models_or_data_used": false,
+  "network_calls": 0,
+  "notebook_mutations": 0,
+  "official_score": null,
+  "portable_test_skips": 0,
+  "portable_tests": 14,
+  "private_refs_or_local_absolute_paths_in_public_outputs": false,
+  "public_files": {
+    "PORTABLE_TEST_EXECUTION.json": {
+      "bytes": 604,
+      "sha256": "457c0ce776dfdd8faaa212e5652f964673a19fb519f2a48acd929abeb63ce9fa"
+    },
+    "PORTABLE_TEST_LOG.txt": {
+      "bytes": 1881,
+      "sha256": "52e3f054f0a702b1bbda3c681a83632d427e3e09f637156862744b36068fd79d"
+    },
+    "README.md": {
+      "bytes": 3436,
+      "sha256": "e03cac177ec57dc51bc23f827d0639a50dfe078caadc0abf46d62bfeaca28291"
+    },
+    "SYNTHETIC_DEMO_EXECUTION.json": {
+      "bytes": 6421,
+      "sha256": "5544b38cb91672641a9ab8a7349618a101787119779ebacd7687f8887a6752a1"
+    },
+    "demo.py": {
+      "bytes": 7063,
+      "sha256": "05ed099e38be80b4aef297573c1d2c329582b61c8dd045271f3869e3d9131520"
+    },
+    "native_mount_bridge.py": {
+      "bytes": 5632,
+      "sha256": "3405ae869d5291ae82f4eadcc9b9e68d5e62a721c7127960e7623ec169f32c18"
+    },
+    "scoped_mount_resolver.py": {
+      "bytes": 9817,
+      "sha256": "a4609ef7526bf112497457eeac645b62cd2a771794d0b4968d9be47abedb2ab3"
+    },
+    "test_demo.py": {
+      "bytes": 8181,
+      "sha256": "53b1896ca4bb994d14167263e80f1eaa1664e2d0b6ddc5b746048d5f3eccef14"
+    }
+  },
+  "publication_subset": "Only the eight listed files plus this manifest; retained local fixture trees and Python caches are not publication inputs.",
+  "status": "PASS_PUBLIC_NEUTRAL_SYNTHETIC_SOURCE_BINDING_PACKAGE",
+  "stdlib_only": true,
+  "synthetic_demo": "PASS"
+}
