@@ -1,0 +1,16 @@
+{
+ "file": "bench V20 commit-run submission.csv (sha256 0d1cad260919fbece05d6389ccd51a8391ef06cf81d09db631f16b3b5b449785)",
+ "rdkit": "2026.03.3",
+ "queries": 400,
+ "guesses": 9608,
+ "dup_slots_total": 0,
+ "unparseable_total": 0,
+ "queries_with_dup": 0,
+ "max_dup_in_a_query": 0,
+ "queries_with_unfilled_slots": 34,
+ "unfilled_slots_total": 392,
+ "mrr25_upper_bound_lost_mean": 0.0,
+ "note": "upper bound assumes the truth sits at the worst-affected position in every query with a wasted slot",
+ "measured_utc": "2026-10-08T15:40Z",
+ "key": "RemoveStereochemistry -> TautomerEnumerator.Canonicalize -> InChIKey[:14]"
+}
