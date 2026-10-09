@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="290" viewBox="0 0 1120 290" role="img" aria-labelledby="title desc">
+<title id="title">The complete candidate-order protection contract</title>
+<desc id="desc">Exact source and complete coverage lead to finite gate evidence, protected whole-list equality and a historical control. Evidence is then labeled terminal hook or neutral full core; missing or changed protected evidence holds.</desc>
+<rect width="1120" height="290" rx="20" fill="#101827"/>
+<g font-family="Arial, sans-serif" fill="#e8effb">
+<text x="28" y="37" font-size="22" font-weight="700">Protect the entire ranking experiment</text>
+<text x="28" y="62" font-size="14" fill="#b8c8dd">Source tests enforce an evidence contract. Native execution and official scores need separate proof.</text>
+<g fill="#1e3045" stroke="#4a7197" stroke-width="1.5">
+<rect x="28" y="92" width="230" height="94" rx="10"/>
+<rect x="292" y="92" width="230" height="94" rx="10"/>
+<rect x="556" y="92" width="230" height="94" rx="10"/>
+<rect x="820" y="92" width="272" height="94" rx="10"/>
+</g>
+<g fill="#e8effb" font-size="15">
+<text x="44" y="120" font-weight="700">1 · Source and coverage</text><text x="44" y="145">Exact IDs, order and counts</text><text x="44" y="166">Finite gates; firing only if open</text>
+<text x="308" y="120" font-weight="700">2 · Protected complete list</text><text x="308" y="145">Output equals its control</text><text x="308" y="166">Every protected rank counts</text>
+<text x="572" y="120" font-weight="700">3 · Historical fidelity</text><text x="572" y="145">Whole protected order agrees</text><text x="572" y="166">Unexplained drift stays HOLD</text>
+<text x="836" y="120" font-weight="700">4 · Scope and provenance</text><text x="836" y="145">Terminal hook: diagnostic only</text><text x="836" y="166">Full core: traced source + bindings</text>
+</g>
+<g stroke="#6bd4c6" stroke-width="2" fill="none"><path d="M258 139h25m-6-5 6 5-6 5M522 139h25m-6-5 6 5-6 5M786 139h25m-6-5 6 5-6 5"/></g>
+<rect x="28" y="218" width="1064" height="45" rx="8" fill="#302a1f" stroke="#dbad5f"/>
+<text x="46" y="246" font-size="15" fill="#f7d599">Missing, malformed or changed protected evidence → HOLD · A contract PASS never authorizes a submission.</text>
+</g></svg>

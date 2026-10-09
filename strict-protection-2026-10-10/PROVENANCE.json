@@ -1,0 +1,19 @@
+{
+  "license": "MIT",
+  "author": "cubres",
+  "original_files": [
+    "strict_protection.py",
+    "test_strict_protection.py",
+    "README.md",
+    "protection-contract.svg"
+  ],
+  "preserved_owned_utility": {
+    "filename": "protected_replay.py",
+    "sha256": "c1c1a15105dbbcdf0c209eff58927c8458b84a046c8fc653447786cf9c7529a0",
+    "origin": "Original owned source-only same-run final-list replay, independently reviewed 9 October 2026; copied byte-for-byte additively."
+  },
+  "third_party_competitor_code_reused": false,
+  "private_data_or_checkpoints_included": false,
+  "native_integration_performed": false,
+  "official_score_gain_claimed": false
+}
