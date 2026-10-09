@@ -1,0 +1,422 @@
+{
+  "boundaries": [
+    "No card or dataset mutation",
+    "No GitHub write",
+    "No notebook mutation, launch or official submission",
+    "No pickle or checkpoint loading",
+    "Full popularity/fingerprint arrays not rehashed",
+    "No score-gain or vote-causality claim"
+  ],
+  "checked_at_utc": "2026-10-09T18:18:07.519991+00:00",
+  "gemma_ui_evidence": {
+    "medal_display": "gold",
+    "observed_at_utc": "2026-10-09 around 18:03 UTC",
+    "observed_votes": "149 in notebook view; 150 in subsequent code listing",
+    "primary_notebook_url": "https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent?scriptVersionId=355310852",
+    "scope": "page observation, not exact completed submission row",
+    "source_of_observation": "independent Gemma researcher primary UI, durable PUBLIC_FRONTIER_OBSERVATIONS.json"
+  },
+  "local_notebook_source_snapshots": [
+    {
+      "campaign": "Knee",
+      "cells": 178,
+      "claim_scope": "local source snapshot only, not live server-head or accepted execution evidence",
+      "file": "the-bee-s-knees-final-rsna-push.ipynb",
+      "markdown_cells": 55,
+      "observed_headings": [
+        "# The bee's knees: anatomical mirror arm, with the BK-A family chain behind a time gate (version 37)",
+        "## Read the experiment before running it",
+        "## 1. Configuration and clock",
+        "## 2. Respect the acquisition geometry",
+        "## 3. The reader, and why tolerance matters",
+        "## 4. The owned process group",
+        "## 4. Let each finding choose its windows"
+      ],
+      "source_bytes": 947737,
+      "source_kind": "prepared V37 candidate",
+      "source_sha256": "9ac3a7e147777c90fbbc6ad0ddc73d1990abbceb90efc132dd9b6c5168f26bf6"
+    },
+    {
+      "campaign": "Gemma",
+      "cells": 29,
+      "claim_scope": "local source snapshot only, not live server-head or accepted execution evidence",
+      "file": "gemma-and-the-shape-of-doubt.ipynb",
+      "markdown_cells": 13,
+      "observed_headings": [
+        "# Gemma and the Shape of Doubt",
+        "### A reproducible developer agent, built around evidence",
+        "## What the score means",
+        "## What the public issues demand",
+        "## Why this approach",
+        "## Complete source",
+        "## Reproducible submission files",
+        "## Official compiler check"
+      ],
+      "source_bytes": 767957,
+      "source_kind": "historical public pull",
+      "source_sha256": "c7c466e1488645719a4abf0b6c542ee4e9b4796e675bb55169c649966e1bb000"
+    },
+    {
+      "campaign": "Enveda",
+      "cells": 47,
+      "claim_scope": "local source snapshot only, not live server-head or accepted execution evidence",
+      "file": "analog-propagation-casmi-2026-baseline.ipynb",
+      "markdown_cells": 29,
+      "observed_headings": [
+        "# \ud83e\uddec Analog Propagation \u2014 CASMI 2026 (V33: the AP-2 composition)",
+        "## 1. The engine (unchanged since V32)",
+        "## 2. Popularity prior",
+        "## 3. PubChem-only tier, at fixed slots",
+        "## 4. Forward isomer check: simulate the spectrum, re-order within a formula",
+        "## 5. How the code cell runs (and why it looks unusual)",
+        "## 6. Results ledger: every official submission"
+      ],
+      "source_bytes": 254152,
+      "source_kind": "historical public V33 pull",
+      "source_sha256": "8ff1cf9e86ef827d72585f6c71c35a23bdc481d27f14ac0bce12529a231bacbc"
+    },
+    {
+      "campaign": "ARC2",
+      "cells": 113,
+      "claim_scope": "local source snapshot only, not live server-head or accepted execution evidence",
+      "file": "arc-agi-2-public-frontier-perfpatch-evidence-lab.ipynb",
+      "markdown_cells": 14,
+      "observed_headings": [
+        "# ARC-AGI-2 credited rerun, Version 21: Version 20 with the fill-only deep pass enabled by default",
+        "# ARC-AGI-2: a credited rerun of the strongest public recipe",
+        "## How the recipe works",
+        "## Credits and licences",
+        "## What we changed, and what we did not",
+        "## The recipe",
+        "## Run the solver (four L4 workers)"
+      ],
+      "source_bytes": 639925,
+      "source_kind": "prepared V21 candidate",
+      "source_sha256": "dcd9e231f1c982bebfb447ea4f3a71e553b73125c313b774222502dc2ce27065"
+    },
+    {
+      "campaign": "ARC3",
+      "cells": 114,
+      "claim_scope": "local source snapshot only, not live server-head or accepted execution evidence",
+      "file": "arc-agi-3-stock-taaf-action7-shadow.ipynb",
+      "markdown_cells": 24,
+      "observed_headings": [
+        "# ARC-AGI-3: Daniel Franzen's Milestone 2 recipe, rerun with attribution",
+        "## Status",
+        "## Credits and licences",
+        "## What we changed, and what we did not",
+        "# About this notebook",
+        "## 0. Harness patch",
+        "## 1. Environment and submission mode",
+        "## V15: input paths (added)"
+      ],
+      "source_bytes": 973908,
+      "source_kind": "prepared V19 harness candidate",
+      "source_sha256": "187b9c7f63742a7a4d00a7bcd0a096e6bca14ca1a512e98ff669de46aa96c9a8"
+    }
+  ],
+  "metadata": [
+    {
+      "checked_at_utc": "2026-10-09T18:01:49.079117+00:00",
+      "data_version": 1,
+      "description_characters": 347,
+      "download_count": 56,
+      "license_label": "CC0: Public Domain",
+      "notebook_count": 1,
+      "ref": "prvsiyan/pubchem-popularity-counts",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "PubChem compound popularity counts",
+      "votes": null,
+      "votes_missing_is_unknown": true
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:49.394201+00:00",
+      "data_version": 1,
+      "description_characters": 0,
+      "download_count": 1167,
+      "license_label": "CC BY-NC-SA 4.0",
+      "notebook_count": 262,
+      "ref": "prvsiyan/chebi-lipidmaps-casmi26",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "ChEBI + LIPID MAPS candidates for CASMI26",
+      "votes": 1,
+      "votes_missing_is_unknown": false
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:49.692543+00:00",
+      "data_version": 2,
+      "description_characters": 5560,
+      "download_count": 3950,
+      "license_label": "Attribution 4.0 International (CC BY 4.0)",
+      "notebook_count": 277,
+      "ref": "prvsiyan/coconut-casmi26-candidates",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "COCONUT 2.0 candidates + fingerprints (CASMI26)",
+      "votes": 4,
+      "votes_missing_is_unknown": false
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:49.967688+00:00",
+      "data_version": 6,
+      "description_characters": 5740,
+      "download_count": 3297,
+      "license_label": "CC BY-NC-SA 4.0",
+      "notebook_count": 265,
+      "ref": "prvsiyan/casmi26-ranker-features",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "CASMI26 ranker training features (public)",
+      "votes": 4,
+      "votes_missing_is_unknown": false
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:50.216460+00:00",
+      "data_version": 1,
+      "description_characters": 4603,
+      "download_count": 3132,
+      "license_label": "CC BY-NC-SA 4.0",
+      "notebook_count": 268,
+      "ref": "prvsiyan/casmi26-fp-models-v2",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "CASMI26 fingerprint models (single + merged)",
+      "votes": 9,
+      "votes_missing_is_unknown": false
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:50.452738+00:00",
+      "data_version": 1,
+      "description_characters": 0,
+      "download_count": 188,
+      "license_label": "Unknown",
+      "notebook_count": null,
+      "ref": "prvsiyan/rsna-knee-two-teacher-bundle-v1",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "RSNA Knee OrthoDiffusion Two Teacher Bundle V1",
+      "votes": 1,
+      "votes_missing_is_unknown": false
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:50.752823+00:00",
+      "data_version": 4,
+      "description_characters": 11540,
+      "download_count": 5454,
+      "license_label": "Other (specified in description)",
+      "notebook_count": 163,
+      "ref": "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "CASMI26 PubChem Popularity Prior",
+      "votes": 48,
+      "votes_missing_is_unknown": false
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:50.987414+00:00",
+      "data_version": 3,
+      "description_characters": 8963,
+      "download_count": 1195,
+      "license_label": "Other (specified in description)",
+      "notebook_count": 5,
+      "ref": "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "CASMI26 Natural-Product Panel Benchmark",
+      "votes": 23,
+      "votes_missing_is_unknown": false
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:51.284073+00:00",
+      "data_version": 1,
+      "description_characters": 8794,
+      "download_count": 1089,
+      "license_label": "Other (specified in description)",
+      "notebook_count": 10,
+      "ref": "dmitriigluzdov/casmi26-fold-safe-fpnet",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "CASMI26 Fold-Safe FPNet: Training and Checkpoint",
+      "votes": 12,
+      "votes_missing_is_unknown": false
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:01:51.530457+00:00",
+      "data_version": 1,
+      "description_characters": 3965,
+      "download_count": 268,
+      "license_label": "CC BY-NC-SA 4.0",
+      "notebook_count": 10,
+      "ref": "samartalwar/casmi-2026-spectral-library-massbankharmonized",
+      "schema_publicness_evidence": {
+        "schema_default_false_when_omitted": true,
+        "sdk_is_private": false,
+        "serialized_field_present": false
+      },
+      "title": "CASMI 2026 Spectral Library (MassBank,harmonized)",
+      "votes": 12,
+      "votes_missing_is_unknown": false
+    }
+  ],
+  "primary_web_source_receipt": {
+    "mechanism": "web.run primary-source search/open in this research turn; pages not copied wholesale",
+    "observations": [
+      {
+        "note": "This is the current source page, not the historical snapshot used by the Kaggle dataset",
+        "observed_primary_facts": [
+          "Current database licensing section states CC BY 4.0",
+          "Citation guidance lists Malik et al. (2025), ChEBI: re-engineered for a sustainable future"
+        ],
+        "url": "https://www.ebi.ac.uk/chebi/about/",
+        "verbatim_license_token": "CC BY 4.0"
+      },
+      {
+        "note": "Current source page; does not alter the existing Kaggle CC BY-NC-SA 4.0 label",
+        "observed_primary_facts": [
+          "Copyright Data section states Creative Commons Attribution 4.0 International for all LIPID MAPS databases"
+        ],
+        "url": "https://www.lipidmaps.org/terms-of-use"
+      },
+      {
+        "observed_primary_facts": [
+          "Citation guidance recommends Conroy et al., LIPID MAPS: update to databases and tools for the lipidomics community (2023), DOI 10.1093/nar/gkad896"
+        ],
+        "url": "https://www.lipidmaps.org/how-to-link"
+      },
+      {
+        "note": "The public card retains this caveat rather than claiming general unrestricted permission",
+        "observed_primary_facts": [
+          "Molecular Data Usage states NCBI places no restrictions on use/distribution",
+          "Original depositors may claim intellectual property rights; NCBI has no rights to transfer to third parties"
+        ],
+        "url": "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+      }
+    ],
+    "recorded_at_utc": "2026-10-09T18:18:41.085890+00:00"
+  },
+  "primary_web_sources": [
+    {
+      "observation": "Current ChEBI database terms state CC BY 4.0; historical packaged snapshot not determined",
+      "url": "https://www.ebi.ac.uk/chebi/about/"
+    },
+    {
+      "observation": "Current LIPID MAPS database terms state CC BY 4.0; existing Kaggle label preserved",
+      "url": "https://www.lipidmaps.org/terms-of-use"
+    },
+    {
+      "observation": "NCBI reuse policy distinguishes its own restrictions from depositor rights",
+      "url": "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+    }
+  ],
+  "small_file_evidence": [
+    {
+      "checked_at_utc": "2026-10-09T18:06:25.506616+00:00",
+      "filename": "bio_mass.npy",
+      "full_file_read": true,
+      "header": {
+        "dtype": "float64",
+        "fortran_order": false,
+        "header_bytes": 128,
+        "shape": [
+          62744
+        ]
+      },
+      "inspected_bytes": 502080,
+      "inspected_sha256": "7b67b125f7bed307c2ac08bf41ad92044bfc2177519c5d4bb36c2c51789a2921",
+      "mass_summary": {
+        "finite": true,
+        "max": 1299.29974316,
+        "min": 100.013599376,
+        "sorted_ascending": true
+      },
+      "ref": "prvsiyan/chebi-lipidmaps-casmi26",
+      "server_inventory_size": 502080,
+      "version": 1
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:06:26.057600+00:00",
+      "filename": "bio_fp.npy",
+      "full_file_read": false,
+      "header": {
+        "dtype": "uint8",
+        "fortran_order": false,
+        "header_bytes": 128,
+        "shape": [
+          62744,
+          867
+        ]
+      },
+      "inspected_bytes": 4096,
+      "inspected_sha256": "c3cc151d855298cd84ed5c0c4152dc55e421498da1de754fa7e7534d1092959b",
+      "ref": "prvsiyan/chebi-lipidmaps-casmi26",
+      "server_inventory_size": 54399176,
+      "version": 1
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:06:26.736490+00:00",
+      "filename": "README.md",
+      "full_file_read": true,
+      "inspected_bytes": 3185,
+      "inspected_sha256": "579e33f54636eb1128e33e5d76493a785fa1f5cf8fe2c14c628719fc9ea3820b",
+      "ref": "prvsiyan/pubchem-popularity-counts",
+      "server_inventory_size": 3185,
+      "version": 1
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:06:27.252311+00:00",
+      "filename": "PROVENANCE.json",
+      "full_file_read": true,
+      "inspected_bytes": 3762,
+      "inspected_sha256": "5b615fc8299b5625e4c382be37595d2e300f1041dd6984b1a061ab9057d092d8",
+      "ref": "prvsiyan/pubchem-popularity-counts",
+      "server_inventory_size": 3762,
+      "version": 1
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:06:27.846966+00:00",
+      "filename": "ap2pop_manifest.json",
+      "full_file_read": true,
+      "inspected_bytes": 2257,
+      "inspected_sha256": "48d2378ab45a352749422af755b5ee4c7bd1db14e4c90b51d8d32cc4af616e4a",
+      "ref": "prvsiyan/pubchem-popularity-counts",
+      "server_inventory_size": 2257,
+      "source_manifest_totals": {
+        "built_utc": "2026-10-02T21:02:11Z",
+        "competition_data_used": false,
+        "n_blocks": 105880815,
+        "n_store_rows": 71370470,
+        "store_rows_with_block": 71370466
+      },
+      "version": 1
+    }
+  ]
+}
