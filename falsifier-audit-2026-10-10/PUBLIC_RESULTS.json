@@ -1,0 +1,100 @@
+{
+  "snapshot_utc": "2026-10-09T22:55:26.532597+00:00",
+  "official": {
+    "account": "prvsiyan",
+    "submission": 57018380,
+    "version": 22,
+    "status": "COMPLETE",
+    "score": 0.335,
+    "completed_best": 0.344,
+    "native_session": 356834102,
+    "accepted_date": "2026-10-09T19:25:34.020Z",
+    "csv_sha256": "2d0e980d0fdb104f60ce3fe90746398054c79f4233f843ae687cb2d8da3598c3",
+    "source_sha256": "52e6dd7ebec308fbc0b95c4d232919e4d84859184891e251ab1380dd11789971",
+    "inventory_sha256": "ce06d56aa7d2aa663c316366582c8ccd5439962a9cb45a9ad86237bbfaf55dda"
+  },
+  "falsifier": {
+    "protocol_written_utc_claim": "2026-10-09T22:17:34Z",
+    "paired_bootstrap": 5000,
+    "seed": 20261012,
+    "confidence": 0.9,
+    "quantile_definition": "tercile means one third, not decimal 0.33; linear interpolation over gate-open inputs",
+    "cohort_role": "Previously used fusion-selection development queries; new filters are not a new independent holdout",
+    "primary_rule": "S1 class2 paired90percent bootstrap lower bound >0",
+    "reported_rule_reproduced": "SURVIVES on this development-panel diagnostic",
+    "scientific_promotion": "NOT_ESTABLISHED",
+    "c2": [
+      {
+        "slice": "S1_primary",
+        "label": "S1 \u00b7 low confidence and analog similarity",
+        "n": 142,
+        "reference_mean": 0.7027127963211859,
+        "candidate_mean": 0.7178533873420585,
+        "mean_delta": 0.015140591020872708,
+        "percentile_interval": [
+          0.002194567824160599,
+          0.028948657359174818
+        ],
+        "wins": 17,
+        "losses": 9,
+        "ties": 116,
+        "mean_gain_when_improved": 0.1842781117717179,
+        "mean_loss_when_worse": 0.1091959972394755,
+        "largest_three_gain_fraction": 0.4788159226796949,
+        "exact_direction_sign_p": 0.16863754391670227,
+        "outcome_equals_one_reference": 81,
+        "outcome_equals_one_candidate": 83
+      },
+      {
+        "slice": "S2_np_proxy",
+        "label": "S2 \u00b7 COCONUT-only first-guess proxy",
+        "n": 38,
+        "reference_mean": 0.23818468272129603,
+        "candidate_mean": 0.2597231715652768,
+        "mean_delta": 0.021538488843980838,
+        "percentile_interval": [
+          -0.0032656637476431486,
+          0.05025809954728719
+        ],
+        "wins": 9,
+        "losses": 9,
+        "ties": 20,
+        "mean_gain_when_improved": 0.14510982844316178,
+        "mean_loss_when_worse": 0.05416954221302047,
+        "largest_three_gain_fraction": 0.6745483674935087,
+        "exact_direction_sign_p": 1.0,
+        "outcome_equals_one_reference": 0,
+        "outcome_equals_one_candidate": 1
+      },
+      {
+        "slice": "S3_tight",
+        "label": "S3 \u00b7 tighter input slice",
+        "n": 61,
+        "reference_mean": 0.5751148590065198,
+        "candidate_mean": 0.5916579243200769,
+        "mean_delta": 0.016543065313557117,
+        "percentile_interval": [
+          -0.006537353218572038,
+          0.04085028834316076
+        ],
+        "wins": 11,
+        "losses": 6,
+        "ties": 44,
+        "mean_gain_when_improved": 0.1561892214066127,
+        "mean_loss_when_worse": 0.1181590752242926,
+        "largest_three_gain_fraction": 0.6305483028720628,
+        "exact_direction_sign_p": 0.332305908203125,
+        "outcome_equals_one_reference": 25,
+        "outcome_equals_one_candidate": 25
+      }
+    ]
+  },
+  "limitations": [
+    "No actual hidden labels or private query records are included",
+    "S2 observed A-first successes are 0/38. Under the documented generator, all simulated truths are training-library source0; the SRC1 prediction flag conditions on an A top-1 error. Actual consumed metadata-source attestation is absent, and low proxy MRR does not establish hidden-domain similarity.",
+    "Mean-effect interval and direction sign test have different null hypotheses; sign test is descriptive, not a new adoption rule",
+    "V22 native400-row terminal-hook parity does not resolve70/400 historical full ordering or identify a hardware cause",
+    "V23 is the GPU, GLACIER-only forward-ON second-list arm referenced to F1=0.344. V22 is the CPU forward-OFF arm referenced to V6=0.340; moving between these arms changes both the forward configuration and hardware/runtime."
+  ],
+  "private_records_included": false
+}

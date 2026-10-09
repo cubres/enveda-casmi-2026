@@ -1,0 +1,33 @@
+{
+  "schema": "original-local-submission-intent-v2",
+  "author": "cubres campaign original tooling",
+  "license": "MIT",
+  "source_sha256": "8545daca2622806a0e629ed56d6938b5658df04da6c9bdd2297fd038a5283304",
+  "tests_sha256": "f4b61556467e07cb489692e2720c10a69c0de8d8374e87fc016b62fcb7275bd2",
+  "tests_per_mode": 14,
+  "author_and_independent_modes": ["normal -B", "optimized -B -O"],
+  "independent_review_status": "PASS_SOURCE_ONLY",
+  "independent_python": "3.12.14",
+  "additional_independent_controls": ["changed filename capitalization", "alternative filename", "changed artifact hash", "competition/reference case aliases"],
+  "fixtures": "invented local records and callbacks only",
+  "prior_design": {
+    "status": "REJECTED_FILENAME_KEY_ESCAPE",
+    "source_sha256": "81542c8292553f4d1d383eeadfbee9edb94d0f209a4bd540ddbe444a29f75ff8",
+    "preserved_locally": true,
+    "integrated": false,
+    "real_requests": 0
+  },
+  "network_calls": 0,
+  "competition_submissions": 0,
+  "coordinator_files_changed": 0,
+  "notebook_artifacts_changed": 0,
+  "guard_changes": 0,
+  "integration_status": "HOLD_UNREVIEWED_NATIVE_ADAPTER",
+  "official_score": null,
+  "limits": [
+    "One local version-wide admission on shared trusted persistent storage is not remote exactly-once delivery.",
+    "Adapter transport retries must be disabled; existing accepted rows must be reconciled before admission.",
+    "Fresh account, notebook/source, native output, scientific, runtime, quota and preservation qualification remain separate.",
+    "An accepted reference remains unscored until its exact completed official row is verified."
+  ]
+}

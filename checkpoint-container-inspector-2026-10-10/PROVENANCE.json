@@ -1,0 +1,48 @@
+{
+  "tool_original_author": "cubres",
+  "tool_license": "MIT",
+  "actual_checkpoints_downloaded_or_opened_in_this_task": 0,
+  "pickle_deserializations": 0,
+  "tensor_model_allocations": 0,
+  "source_dataset": {
+    "ref": "prvsiyan/casmi26-fp-models-v2",
+    "numeric_id": 12054715,
+    "data_version": 1,
+    "current_dataset_license_label": "CC BY-NC-SA 4.0",
+    "files": [
+      {"name": "fp_single_s2.pt", "bytes": 144110255},
+      {"name": "fp_merged_m1.pt", "bytes": 144110255}
+    ]
+  },
+  "historical_header_evidence": {
+    "checked_at_utc": "2026-10-07T20:34:35Z through 2026-10-07T20:34:36Z",
+    "mechanism": "Existing campaign header receipt, read only; no fresh weight read performed",
+    "first_members": ["fp_merged_m1/data.pkl", "fp_single_s2/data.pkl"],
+    "reported_scalar_contract": {"nbits": 6930, "d": 512, "layers": 6},
+    "new_inspector_independently_verifies_scalar_contract": false
+  },
+  "fixtures": {
+    "kind": "Invented small ZIP/ZIP64 and NPY bytes assembled in memory",
+    "real_checkpoint_or_competition_content": false,
+    "pickle_like_payload": "Opaque invented bytes; not deserialized. A malicious-offset fixture deliberately demonstrates a bounded header read into those bytes before HOLD."
+  },
+  "scope": {
+    "container_metadata": "bounded supported syntax only",
+    "physical_payload_access_assurance": "UNVERIFIED_ON_UNTRUSTED_OFFSETS",
+    "architecture_compatibility": "HOLD",
+    "numerical_compatibility": "HOLD",
+    "model_runtime_compatibility": "HOLD",
+    "full_file_integrity": "UNVERIFIED",
+    "official_score_claim": null
+  },
+  "primary_references": [
+    "https://docs.pytorch.org/docs/2.14/notes/serialization.html",
+    "https://numpy.org/doc/stable/reference/generated/numpy.lib.format.html",
+    "https://docs.python.org/3/library/zipfile.html"
+  ],
+  "competitor_source_copied": false,
+  "review_revision": 2,
+  "review_change": "Replaced physical payload-read exclusion claim with explicit unverified access assurance, added instrumented forged-offset control, and validated caller limits.",
+  "remote_mutations": 0,
+  "notebook_mutations": 0
+}

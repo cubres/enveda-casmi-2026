@@ -1,0 +1,17 @@
+{
+  "actual_checkpoints_opened": 0,
+  "cpu_seconds_limit": 120,
+  "downloads": 0,
+  "errors": 0,
+  "failures": 0,
+  "finished_at_utc": "2026-10-09T23:09:20.758744+00:00",
+  "fixtures": "invented BytesIO only",
+  "model_loads": 0,
+  "passed": true,
+  "process_cpu_seconds": 0.018858,
+  "source_sha256": "3277deba4d8b60efdcef8ae414e4e3163d2b610e96cc721e05098d81eb72d500",
+  "tests_run": 40,
+  "tests_sha256": "4065f6cdede226f55a6a35044e264c538a8fab745e9dce11b3e174d39dedaa43",
+  "wall_seconds": 0.02190695799799869,
+  "worker_niceness_expected": 5
+}
