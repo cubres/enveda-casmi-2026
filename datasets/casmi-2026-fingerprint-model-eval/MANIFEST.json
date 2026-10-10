@@ -1,0 +1,52 @@
+{
+  "dataset": "prvsiyan/casmi-2026-fingerprint-model-eval",
+  "version": "1.0",
+  "date": "2026-10-10",
+  "note": "Checksums of every file in this folder except MANIFEST.json itself.",
+  "files": {
+    "LICENSE": {
+      "bytes": 1818,
+      "sha256": "25125dfc90a93b8ce4bcfacffecf9d49fb28211b2231c3e75d1de2e7f3ff811d"
+    },
+    "LICENSE-CODE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "NOTICE.md": {
+      "bytes": 2520,
+      "sha256": "8381641f6a00b85d24283c7710bc5ee379dba092e8956e210fbdcc88ef6f7e91"
+    },
+    "README.md": {
+      "bytes": 20512,
+      "sha256": "0d04e8537f958d95539279156b9fea70c9bdcb629fc62e9d1734f5607b569884"
+    },
+    "dataset-metadata.json": {
+      "bytes": 23103,
+      "sha256": "fc74cdeadb6f00f13f594a03fccd8650be73fdd0435226ae0a664dc5dde6a116"
+    },
+    "eval_metrics.py": {
+      "bytes": 5202,
+      "sha256": "5b9c0bb4d98c32ba44e90956ad3d10f7b952253f81bd89e8567056d19fb128ad"
+    },
+    "evaluation_protocol.json": {
+      "bytes": 909,
+      "sha256": "5e37e575b8f837c0c02710582b0e9bb0b88dbf8e2807ee38ee5bc2a2614f5d3e"
+    },
+    "fpmodel.py": {
+      "bytes": 5327,
+      "sha256": "344e9b01c2e024c5474b6891de872cc4cac740dafdfcd724c7e2c6db9e558914"
+    },
+    "training_recipe_merged.json": {
+      "bytes": 1732,
+      "sha256": "6573867fd965f7f99ac6c3cdb6d067fb1be044e721f6d20546fc72ababb8b11e"
+    },
+    "training_recipe_spectrum.json": {
+      "bytes": 1732,
+      "sha256": "ff61916fc037fe0b8ec5ae70a56d6ead25e723a41dc4df6873476bf6279f0c41"
+    },
+    "training_settings.json": {
+      "bytes": 5521,
+      "sha256": "5d9026727228844da8ebe874ae695a673595e120b4a5a6bbb8dc7e35521a1124"
+    }
+  }
+}
