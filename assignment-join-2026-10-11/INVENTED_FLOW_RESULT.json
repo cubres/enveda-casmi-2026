@@ -1,0 +1,70 @@
+{
+  "status": "INVENTED_CPU_FLOW_ONLY_NO_COMPETITION_METRIC_OR_ACTUAL_FIT",
+  "evaluation": {
+    "status": "INVENTED_FLOW_ONLY",
+    "queries": 3,
+    "truth_in_pool": 2,
+    "pool_recall": 0.6666666666666666,
+    "mean_independent_feature_rr25": 0.5,
+    "mean_assignment_feature_rr25": 0.5,
+    "matching_feature_only_comparison": {
+      "mean_delta": 0.0,
+      "wins": 1,
+      "losses": 1,
+      "ties": 1
+    },
+    "fitted_ranker_comparison": {
+      "mean_delta": 0.0,
+      "wins": 1,
+      "losses": 1,
+      "ties": 1
+    },
+    "per_query_metrics_no_identifiers": [
+      {
+        "truth_in_pool": true,
+        "independent_feature_rr25": 0.5,
+        "assignment_feature_rr25": 1.0,
+        "control_fitted_rr25": 0.5,
+        "feature_delta": 0.5,
+        "intervention_fitted_rr25": 1.0,
+        "fitted_delta": 0.5
+      },
+      {
+        "truth_in_pool": true,
+        "independent_feature_rr25": 1.0,
+        "assignment_feature_rr25": 0.5,
+        "control_fitted_rr25": 1.0,
+        "feature_delta": -0.5,
+        "intervention_fitted_rr25": 0.5,
+        "fitted_delta": -0.5
+      },
+      {
+        "truth_in_pool": false,
+        "independent_feature_rr25": 0.0,
+        "assignment_feature_rr25": 0.0,
+        "control_fitted_rr25": 0.0,
+        "feature_delta": 0.0,
+        "intervention_fitted_rr25": 0.0,
+        "fitted_delta": 0.0
+      }
+    ],
+    "official_score": null,
+    "scientific_limits": "Declared provenance is not authenticated; no unseen-transfer/adoption claim; candidate-pool misses score zero."
+  },
+  "work_cells": 27,
+  "feature_count": 31,
+  "replacement_column": 21,
+  "derived_fragment_columns22_24": "FROZEN_OLD_INDEPENDENT_FEATURES",
+  "runner_cpu_seconds_after_helper_import": 0.002023999999999998,
+  "effective_cpu_limit_seconds": 30,
+  "actual_nice": 10,
+  "join_source_sha256": "ef27e2acf1f1de1a0e7803ed7600e8049dbe64225b4fd4eb26a9d99a2c893373",
+  "runner_source_sha256": "0ca9577f47d6486eee69e93dac2dd3c57f5a122c1c130aa0b004053a616d382d",
+  "actual_training_performed": false,
+  "models_loaded": 0,
+  "competition_data_loaded": 0,
+  "native_jobs": 0,
+  "submissions": 0,
+  "scientific_limit": "All masses, probabilities, labels and model/refit/review pins are invented. One win and one loss do not establish a gain.",
+  "source_regression": "Final-source invented regression after preserving equal-centroid native tie order; no real experiment rerun"
+}

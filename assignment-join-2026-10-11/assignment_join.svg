@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+<title id="title">One-to-one matching needs a complete native join</title>
+<desc id="desc">Invented example: independent explanation credits one ion against two nearby peaks; assignment credits it once. A native export must bind arrays, candidates and probabilities before matching, then preserve float32 raw21 semantics and require a refit before a fitted ranking comparison. The invented flow has one win, one loss and one pool miss.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9" fill="#627d8e"/></marker></defs>
+<rect width="1100" height="850" rx="20" fill="#f5f8fb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#173248">
+<text x="42" y="52" font-size="28" font-weight="700">A matching idea becomes a test through its joins</text>
+<text x="42" y="80" font-size="16" fill="#63798a">Original schematic • all peak values and outcomes below are invented</text>
+<rect x="42" y="115" width="493" height="177" rx="12" fill="#fff4e4" stroke="#bd965a"/>
+<text x="60" y="146" font-size="19" font-weight="700">Independent explanation</text>
+<text x="60" y="173" font-size="16">One ion at 100.007 m/z matches both centroids.</text>
+<circle cx="143" cy="221" r="8" fill="#b48741"/><circle cx="360" cy="221" r="8" fill="#b48741"/>
+<text x="83" y="250" font-size="15">100.000 / weight 0.8</text>
+<text x="297" y="250" font-size="15">100.015 / weight 0.5</text>
+<path d="M150 221H244M350 221H262" stroke="#b48741" stroke-width="2"/>
+<circle cx="253" cy="221" r="11" fill="#173248"/>
+<text x="60" y="277" font-size="16">Both weights receive credit from the same ion.</text>
+<rect x="565" y="115" width="493" height="177" rx="12" fill="#e6f2ee" stroke="#5b8e7b"/>
+<text x="585" y="146" font-size="19" font-weight="700">One-to-one assignment</text>
+<text x="585" y="173" font-size="16">The same ion can receive one observed peak.</text>
+<circle cx="668" cy="221" r="8" fill="#3d8b72"/><circle cx="885" cy="221" r="8" fill="#c4d2db"/>
+<text x="608" y="250" font-size="15">100.000 / weight 0.8</text>
+<text x="822" y="250" font-size="15">100.015 / weight 0.5</text>
+<path d="M676 221H770" stroke="#3d8b72" stroke-width="3"/>
+<circle cx="778" cy="221" r="11" fill="#173248"/>
+<text x="585" y="277" font-size="16">Maximum observed weight is credited once.</text>
+<rect x="42" y="335" width="1016" height="100" rx="12" fill="#ffffff" stroke="#afc1cf"/>
+<text x="60" y="366" font-size="19" font-weight="700">Seal the actual native state before labels</text>
+<text x="60" y="394" font-size="16">Same query + ordered candidates + unchanged cleaned arrays + explicit fragment families</text>
+<text x="60" y="419" font-size="16">Current control probabilities / 31-column float32 features / original per-view scores / reviewed pins</text>
+<path d="M550 435V467" stroke="#627d8e" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="42" y="476" width="493" height="116" rx="12" fill="#e6eff6" stroke="#57839f"/>
+<text x="60" y="507" font-size="19" font-weight="700">Verify native baseline, then change raw21</text>
+<text x="60" y="535" font-size="16">Same ion bank / 0.01 Da / zero ppm / same-query max</text>
+<text x="60" y="563" font-size="16">Keep OLD derived22–24. This is a mixed-feature ablation.</text>
+<rect x="565" y="476" width="493" height="116" rx="12" fill="#ffffff" stroke="#afc1cf"/>
+<text x="585" y="507" font-size="19" font-weight="700">Separate the two ranking comparisons</text>
+<text x="585" y="535" font-size="16">Feature-only ranks: old explanation vs assignment</text>
+<text x="585" y="563" font-size="16">Fitted ranks: HOLD until new model + exact feature pins</text>
+<path d="M535 534H556" stroke="#627d8e" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="42" y="637" width="1016" height="80" rx="12" fill="#173248"/>
+<text x="60" y="669" font-size="19" font-weight="700" fill="#ffffff">Invented complete flow: one win + one loss + one pool miss</text>
+<text x="60" y="698" font-size="16" fill="#e3edf4">Execution and alignment controls passed. No real model fit, competition metric or improvement is established.</text>
+<text x="42" y="768" font-size="16" fill="#63798a">Missing predictions hold the join. Missing acquisition bounds never become peak-derived windows.</text>
+<text x="42" y="797" font-size="16" fill="#63798a">A hash binds a declaration; provenance, rights, exposure and an actual refit still need independent review.</text>
+</g></svg>

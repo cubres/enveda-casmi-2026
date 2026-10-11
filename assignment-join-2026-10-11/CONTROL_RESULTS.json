@@ -1,0 +1,25 @@
+{
+  "status": "PASS_ORIGINAL_INVENTED_BEHAVIOR_CONTROLS",
+  "join_source_sha256": "ef27e2acf1f1de1a0e7803ed7600e8049dbe64225b4fd4eb26a9d99a2c893373",
+  "test_source_sha256": "8b4bcf42c754f66f7394f1ab0cadf23630a8e2fdd6b57d060aede68d5a028e85",
+  "fixture_source_sha256": "52553c522b92a1077fbe362ed640fe9a24d8fb864512b522e2edc018d099e0d4",
+  "normal": {
+    "tests": 39,
+    "status": "PASS"
+  },
+  "optimized": {
+    "tests": 39,
+    "status": "PASS"
+  },
+  "file_backed_invented_cpu_consumer": {
+    "status": "PASS",
+    "runner_source_sha256": "0ca9577f47d6486eee69e93dac2dd3c57f5a122c1c130aa0b004053a616d382d",
+    "queries": 3,
+    "attempt_markers": 1,
+    "effective_cpu_limit_seconds": 30,
+    "actual_nice": 10,
+    "startup_failure": "Requested 90 seconds conflicted with inherited 30 seconds before marker/labels; failure preserved, runner now honors stricter limit",
+    "source_regression": "Final equal-centroid order correction; earlier packets and failures retained"
+  },
+  "scope": "Author execution observations bound to retained source/outputs; not independently authenticated chronology, chemical accuracy, actual fit, real rank gain or hidden score"
+}
