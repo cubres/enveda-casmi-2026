@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700" role="img" aria-labelledby="title desc">
+<title id="title">Candidate neighbours under a measured mass window</title><desc id="desc">An original candidate-support experiment keeps the incumbent universe and adds bounded graph-edit neighbours. Truth is consulted only after sealing the lists.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#617a89"/></marker></defs>
+<rect width="1180" height="700" rx="20" fill="#f5f7fa"/>
+<g font-family="Arial, sans-serif" fill="#183847">
+<text x="55" y="63" font-size="29" font-weight="700">Give the scorer a chance to see the answer</text>
+<text x="55" y="94" font-size="17" fill="#516b79">An original analogue-edit candidate supplement • no formula oracle • no learned templates</text>
+<rect x="55" y="140" width="310" height="120" rx="12" fill="#e6edf5" stroke="#b6c9dd"/>
+<text x="76" y="174" font-size="21" font-weight="700">Frozen incumbent universe</text>
+<text x="76" y="204" font-size="17">Keep its candidates and source pins</text><text x="76" y="230" font-size="17">No deletion or initial rank change</text>
+<rect x="55" y="308" width="310" height="146" rx="12" fill="#e1f2ec" stroke="#9cbfb0"/>
+<text x="76" y="344" font-size="21" font-weight="700">Measured query evidence</text>
+<text x="76" y="375" font-size="17">Top ten spectral analogues</text><text x="76" y="402" font-size="17">Precursor → adduct → neutral mass</text><text x="76" y="429" font-size="17">Unsupported metadata → HOLD</text>
+<rect x="424" y="308" width="300" height="146" rx="12" fill="#fff0d7" stroke="#d9bb7d"/>
+<text x="445" y="344" font-size="21" font-weight="700">One-edit neighbours</text>
+<text x="445" y="375" font-size="17">One local edit; sanitize valence</text><text x="445" y="402" font-size="17">Measured mass filter; record caps</text><text x="445" y="429" font-size="17">Deduplicate edit paths</text>
+<path d="M365 380 H416" stroke="#617a89" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<rect x="782" y="211" width="341" height="170" rx="12" fill="#e9e7f6" stroke="#b9b2d9"/>
+<text x="802" y="248" font-size="21" font-weight="700">Common candidate universe</text>
+<text x="802" y="280" font-size="17">Official identity normalization gate</text><text x="802" y="307" font-size="17">Rescore; measure decoy displacement</text><text x="802" y="334" font-size="17">Seal A0 / A1 before joining truth</text><text x="802" y="360" font-size="15" fill="#6b546f">Prototype is not a 25-rank submission</text>
+<path d="M365 200 H952 V203" stroke="#617a89" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M724 380 H766 V320 H774" stroke="#617a89" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<path d="M952 381 V480" stroke="#617a89" stroke-width="3" fill="none" marker-end="url(#a)"/>
+<rect x="55" y="488" width="1068" height="157" rx="12" fill="#ffffff" stroke="#c3ced5"/>
+<text x="77" y="527" font-size="23" font-weight="700">The first test is support; the deciding test is full-pipeline MRR</text>
+<text x="77" y="561" font-size="18">Missing from A0 + recovered in A1 ≠ ranked correctly in the final list</text>
+<text x="77" y="592" font-size="17">Use exposure-disjoint molecules; report new recoveries, incumbent losses and runtime.</text>
+<text x="77" y="619" font-size="17" fill="#7d5960">Invented chemistry controls demonstrate operators only. Native / official gain remains unproven.</text>
+</g></svg>
+

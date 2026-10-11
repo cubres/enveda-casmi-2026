@@ -1,0 +1,35 @@
+{
+  "scope": "invented public chemistry controls and repeated microbenchmark; no dataset/model execution",
+  "tests": 20,
+  "runs": [
+    {
+      "optimization": false,
+      "returncode": 0,
+      "wall_seconds": 0.1770799590012757,
+      "stdout": "",
+      "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.017s\n\nOK\n"
+    },
+    {
+      "optimization": true,
+      "returncode": 0,
+      "wall_seconds": 0.1974551249986689,
+      "stdout": "",
+      "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.018s\n\nOK\n"
+    }
+  ],
+  "benchmark": {
+    "label": "100 repeated identical invented public seed/mass queries; operator cost only, not natural-product workload estimate",
+    "queries": 100,
+    "cpu_seconds": 0.9623030000000001,
+    "per_query": {
+      "attempted": 215,
+      "additions": 4,
+      "attempt_cap": false
+    }
+  },
+  "rdkit_version": "2026.03.3",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "source_sha256": "a1aa03a2f63005eb73152208d36a67202756663bbea440f56fc52c4b7586dcef",
+  "test_sha256": "2edf7590707b315248b0d6f4c974178960a59923f8ea9b8bd59d9631fc8359b0",
+  "official_score": null
+}
