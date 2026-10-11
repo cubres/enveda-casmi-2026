@@ -1,0 +1,129 @@
+{
+  "schema": "notebook-companion-export/1",
+  "campaign": "enveda",
+  "revision": 1,
+  "repository": "cubres/enveda-casmi-2026",
+  "prospective_prefix": "notebook-companion-2026-10-11-r1",
+  "files_except_this_manifest": [
+    {
+      "path": "ARTWORK_PROVENANCE.json",
+      "encoding": "utf-8",
+      "bytes": 1698,
+      "sha256": "812a94fc18d4d8d28345f69dec789c090c450241617186e29a23a66f09121556",
+      "git_blob_sha": "9106e99f89b6fbb9326e82d89069f37324a64ba0"
+    },
+    {
+      "path": "COMPANION.html",
+      "encoding": "utf-8",
+      "bytes": 6442,
+      "sha256": "cb7126a9e8168fc4708ec19d5107a7dbe881a68cfd434edfc69ada4b1ca3fe20",
+      "git_blob_sha": "a84b8731d7a058f2f63d49e1c99fcfa4410568c3"
+    },
+    {
+      "path": "COMPANION.md",
+      "encoding": "utf-8",
+      "bytes": 5682,
+      "sha256": "3b5ca8ce7bb052980a4834115b55d0c1acc2839e371b9eb0596c45c5a6287d4b",
+      "git_blob_sha": "2a9b504995db28abd3b85ffa01bd28576b3f0163"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "encoding": "utf-8",
+      "bytes": 793,
+      "sha256": "22fe0f48cc32934e203095309eee64b52de30d14e5b1e9d511ab7ec65e79419b",
+      "git_blob_sha": "6318519386fe9446547b555b5bdc147e293747b2"
+    },
+    {
+      "path": "EXAMPLE_EXECUTION.json",
+      "encoding": "utf-8",
+      "bytes": 475,
+      "sha256": "67d0ae9c3b08938d4fddf55b80065d1ab47db45f79426135ccf80d0daf42257c",
+      "git_blob_sha": "898165d43ebebc6861b6087d32134835c8af4b9a"
+    },
+    {
+      "path": "EXAMPLE_RESULT.json",
+      "encoding": "utf-8",
+      "bytes": 1124,
+      "sha256": "7d6d9e8f05926fe29a644044182ff53e3f78a0bbad6c2ccdabc096dc80e13e84",
+      "git_blob_sha": "0fe2d57b7a36214aa15fabc4cbbe48016b6b1258"
+    },
+    {
+      "path": "LICENSE",
+      "encoding": "utf-8",
+      "bytes": 1063,
+      "sha256": "eed854701ae3433dccb0da2fc34fb3a8b70460bb4cad7f9e1abb4145a6cdbf0e",
+      "git_blob_sha": "f6371c8975e87d01580c5f3779471f7da51335df"
+    },
+    {
+      "path": "PREVIEW.html",
+      "encoding": "utf-8",
+      "bytes": 7790,
+      "sha256": "b41adb6658c9244e5c3fef3f09adca4b05b0b7085b6c306ed09706db7105ef16",
+      "git_blob_sha": "206709fc9e3c4ba0a43ac52501f95bff41ede652"
+    },
+    {
+      "path": "README.md",
+      "encoding": "utf-8",
+      "bytes": 1472,
+      "sha256": "8d973d9dad5204a4417a54395d91b98d4b4c66950fae9b5967d4b8ac9bdb9644",
+      "git_blob_sha": "6134a57df55dcb8ec13ec61be3303442d1af576d"
+    },
+    {
+      "path": "assets/hero-enveda-2026-10-11-v1.png",
+      "encoding": "binary",
+      "bytes": 2328877,
+      "sha256": "58834ba08b51183a9b1ca04d21c3aea3de1865213799a4716ab2c5c49fe3d3ba",
+      "git_blob_sha": "837adfd7031e77fc2f3a15e3eb8ef6349795078f"
+    },
+    {
+      "path": "assets/learning-contract.svg",
+      "encoding": "utf-8",
+      "bytes": 4124,
+      "sha256": "6d2eece2f2bcf9d53dd7381ae638bf95feda4d8af2b4f3eda10f336269b6c950",
+      "git_blob_sha": "0e4e155ab9007f152334f19cb3498d75e066d6df"
+    },
+    {
+      "path": "make_diagram.py",
+      "encoding": "utf-8",
+      "bytes": 3997,
+      "sha256": "29bb30cb9fbdaccb84abb17b9758b9526c2e3d7638fbfd36e5d4413e5170e9a9",
+      "git_blob_sha": "500cd93ccd9f595e0b3a64d77ee5ae1727806ea2"
+    },
+    {
+      "path": "toy_example.py",
+      "encoding": "utf-8",
+      "bytes": 2494,
+      "sha256": "e6ef1c00cfcef0862c44e5d4d877762a7de5ff5c1b87510be73855b1814e9d7f",
+      "git_blob_sha": "d65d3509c8c82498183e1e373ffdb5b2f4bb0639"
+    }
+  ],
+  "manifest_self_excluded": true,
+  "opening_art": {
+    "path": "assets/hero-enveda-2026-10-11-v1.png",
+    "sha256": "58834ba08b51183a9b1ca04d21c3aea3de1865213799a4716ab2c5c49fe3d3ba",
+    "git_blob_sha": "837adfd7031e77fc2f3a15e3eb8ef6349795078f",
+    "bytes": 2328877,
+    "concept_art": true,
+    "measured_figure": false,
+    "keep_until_user_requests_change": true
+  },
+  "dependency": {
+    "repo": "cubres/enveda-casmi-2026",
+    "commit": "86719c8b662b21a9069055311e5b03da344e73b8",
+    "path": "fragment-consensus-2026-10-11/fragment_consensus.py",
+    "source_sha256": "d9a91b2163a9532c26fbe281e4d33537343391c9b0bb92a08153fb5a22767b8c",
+    "source_bytes": 7491,
+    "url": "https://github.com/cubres/enveda-casmi-2026/blob/86719c8b662b21a9069055311e5b03da344e73b8/fragment-consensus-2026-10-11/fragment_consensus.py",
+    "license": "MIT"
+  },
+  "example_result_sha256": "7d6d9e8f05926fe29a644044182ff53e3f78a0bbad6c2ccdabc096dc80e13e84",
+  "example_execution_sha256": "67d0ae9c3b08938d4fddf55b80065d1ab47db45f79426135ccf80d0daf42257c",
+  "official_score_snapshot_utc": "2026-10-11T18:27:45.053803+00:00",
+  "official_scalar_row": {
+    "submission": 56956461,
+    "status": "COMPLETE",
+    "public_score": "0.344"
+  },
+  "browser_or_kaggle_layout_qualified": false,
+  "live_notebook_changed": false
+}

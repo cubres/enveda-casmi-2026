@@ -1,0 +1,17 @@
+{
+  "schema": "notebook-companion-opening-art/1",
+  "campaign": "enveda",
+  "version": "2026-10-11-v1",
+  "relative_path": "assets/hero-enveda-2026-10-11-v1.png",
+  "sha256": "58834ba08b51183a9b1ca04d21c3aea3de1865213799a4716ab2c5c49fe3d3ba",
+  "bytes": 2328877,
+  "width": 1672,
+  "height": 941,
+  "source": "built-in imagegen",
+  "prompt": "Use case: stylized-concept. Asset type: wide opening illustration for a public CASMI molecular-identification notebook. Primary request: high-quality original artwork about identifying a molecule from its mass spectrum. Subject: a graceful abstract molecule rendered as delicate interconnected sculpted forms, surrounded by a small number of botanical textures and elegant fragment trails that resolve into a quiet rhythmic skyline of spectral peaks. Style/medium: refined scientific surrealism in ink, botanical watercolor and softly lit translucent material, ivory, deep emerald and muted terracotta palette. Composition: spacious wide 16:9 editorial banner with one clear focal molecule-like sculpture, subtle layered depth. Mood: patient discovery and chemical craftsmanship. Constraints: no text, no logos, no numbers, no actual spectra/data, no claim of a chemically validated molecule, no watermark. Illustrative concept art; avoid a cluttered neon network or a fake scientific chart.",
+  "concept_art": true,
+  "measured_scientific_figure": false,
+  "official_branding": false,
+  "caption": "AI-generated concept art: a botanical molecular sculpture with an imaginary spectral skyline. It is not a validated molecule or measured spectrum.",
+  "refresh_guidance": "Preserve current artwork and all older assets until the user requests a change."
+}

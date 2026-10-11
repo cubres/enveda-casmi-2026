@@ -1,0 +1,41 @@
+{
+  "status": "INVENTED_ION_AND_CENTROIDS_ONLY",
+  "features": {
+    "assignment_max": 1.0,
+    "assignment_median": 0.6,
+    "assignment_q25": 0.3,
+    "uniform_excess_mean": 0.5326666666666663,
+    "uniform_excess_q25": 0.299333333333333,
+    "reuse_gap_max": 0.4,
+    "coverage_mean": 0.0006666666666670077,
+    "hypothesis_count_log1p": 0.6931471805599453,
+    "view_count": 3.0
+  },
+  "per_view": [
+    {
+      "assignment": 0.6,
+      "independent_explain": 1.0,
+      "reuse_gap": 0.4,
+      "uniform_mass_coverage": 0.0006666666666670077,
+      "uniform_excess": 0.5993333333333329
+    },
+    {
+      "assignment": 1.0,
+      "independent_explain": 1.0,
+      "reuse_gap": 0.0,
+      "uniform_mass_coverage": 0.0006666666666670077,
+      "uniform_excess": 0.999333333333333
+    },
+    {
+      "assignment": 0.0,
+      "independent_explain": 0.0,
+      "reuse_gap": 0.0,
+      "uniform_mass_coverage": 0.0006666666666670077,
+      "uniform_excess": -0.0006666666666670077
+    }
+  ],
+  "work_cells": 4,
+  "chemistry_adaptor_provided": false,
+  "candidate_ranking_or_native_ablation": false,
+  "official_score": null
+}

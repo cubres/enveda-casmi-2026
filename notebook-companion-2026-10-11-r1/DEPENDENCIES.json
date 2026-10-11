@@ -1,0 +1,19 @@
+{
+  "schema": "notebook-companion-dependencies/1",
+  "campaign": "enveda",
+  "revision": 1,
+  "helper": {
+    "repo": "cubres/enveda-casmi-2026",
+    "commit": "86719c8b662b21a9069055311e5b03da344e73b8",
+    "path": "fragment-consensus-2026-10-11/fragment_consensus.py",
+    "source_sha256": "d9a91b2163a9532c26fbe281e4d33537343391c9b0bb92a08153fb5a22767b8c",
+    "source_bytes": 7491,
+    "url": "https://github.com/cubres/enveda-casmi-2026/blob/86719c8b662b21a9069055311e5b03da344e73b8/fragment-consensus-2026-10-11/fragment_consensus.py",
+    "license": "MIT"
+  },
+  "example_runtime": "Python 3.9+ standard library",
+  "tool_is_separate_pinned_dependency": true,
+  "network_used_by_example": false,
+  "model_checkpoint_or_competition_data": false,
+  "native_compatibility": "NOT_TESTED"
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="570" viewBox="0 0 1260 570" role="img">
+<title>A maximum can hide a missing match</title>
+<desc>Invented ion m/z 100 · compatible declared windows · no molecule identification</desc>
+<rect width="1260" height="570" rx="22" fill="#f5f8fa"/>
+<g font-family="Arial, sans-serif" fill="#172a38">
+<text x="34" y="48" font-size="27" font-weight="700">A maximum can hide a missing match</text>
+<text x="34" y="78" font-size="16" fill="#526572">Invented ion m/z 100 · compatible declared windows · no molecule identification</text>
+<rect x="34" y="110" width="271" height="169" rx="15" fill="#fff" stroke="#d8e4e9"/>
+<rect x="34" y="110" width="271" height="5" rx="2" fill="#b16c32"/>
+<text x="51" y="141" font-size="14" font-weight="700" fill="#b16c32">01 · ADAPTER</text>
+<text x="51" y="181" font-size="20" font-weight="700" fill="#172a38">Charged ion m/z</text>
+<text x="51" y="218" font-size="16" font-weight="400" fill="#172a38">Adduct, polarity and charge</text>
+<text x="51" y="243" font-size="16" font-weight="400" fill="#172a38">must be handled by the caller.</text>
+<path d="M312,194 h20 m-5,-5 l5,5 l-5,5" fill="none" stroke="#b16c32" stroke-width="2.5"/>
+<rect x="341" y="110" width="271" height="169" rx="15" fill="#fff" stroke="#d8e4e9"/>
+<rect x="341" y="110" width="271" height="5" rx="2" fill="#b16c32"/>
+<text x="358" y="141" font-size="14" font-weight="700" fill="#b16c32">02 · CAPACITY</text>
+<text x="358" y="181" font-size="20" font-weight="700" fill="#172a38">One ion, one centroid</text>
+<text x="358" y="218" font-size="16" font-weight="400" fill="#172a38">Nearby peaks cannot reuse</text>
+<text x="358" y="243" font-size="16" font-weight="400" fill="#172a38">a single hypothesis in a view.</text>
+<path d="M619,194 h20 m-5,-5 l5,5 l-5,5" fill="none" stroke="#b16c32" stroke-width="2.5"/>
+<rect x="648" y="110" width="271" height="169" rx="15" fill="#fff" stroke="#d8e4e9"/>
+<rect x="648" y="110" width="271" height="5" rx="2" fill="#b16c32"/>
+<text x="665" y="141" font-size="14" font-weight="700" fill="#b16c32">03 · FEATURES</text>
+<text x="665" y="181" font-size="20" font-weight="700" fill="#172a38">Keep all three views</text>
+<text x="665" y="218" font-size="16" font-weight="400" fill="#172a38">Maximum 1.0 · median 0.6</text>
+<text x="665" y="243" font-size="16" font-weight="400" fill="#172a38">Interpolated q25 = 0.3</text>
+<path d="M926,194 h20 m-5,-5 l5,5 l-5,5" fill="none" stroke="#b16c32" stroke-width="2.5"/>
+<rect x="955" y="110" width="271" height="169" rx="15" fill="#fff" stroke="#d8e4e9"/>
+<rect x="955" y="110" width="271" height="5" rx="2" fill="#b16c32"/>
+<text x="972" y="141" font-size="14" font-weight="700" fill="#b16c32">04 · ABLATION</text>
+<text x="972" y="181" font-size="20" font-weight="700" fill="#172a38">A proposed ranker fork</text>
+<text x="972" y="218" font-size="16" font-weight="400" fill="#172a38">Fixed appended columns.</text>
+<text x="972" y="243" font-size="16" font-weight="400" fill="#172a38">Runtime and benefit untested.</text>
+<text x="34" y="320" font-size="21" font-weight="700">Executed invented one-to-one support by view</text>
+<text x="34" y="361" font-size="16">View 1 · nearby pair</text>
+<rect x="265" y="342" width="560" height="28" rx="5" fill="#e3e9ed"/>
+<rect x="265" y="342" width="336" height="28" rx="5" fill="#b16c32"/>
+<text x="850" y="362" font-size="17" font-weight="700">0.6</text>
+<text x="34" y="409" font-size="16">View 2 · single match</text>
+<rect x="265" y="390" width="560" height="28" rx="5" fill="#e3e9ed"/>
+<rect x="265" y="390" width="560" height="28" rx="5" fill="#b16c32"/>
+<text x="850" y="410" font-size="17" font-weight="700">1.0</text>
+<text x="34" y="457" font-size="16">View 3 · no match</text>
+<rect x="265" y="438" width="560" height="28" rx="5" fill="#e3e9ed"/>
+<text x="850" y="458" font-size="17" font-weight="700">0.0</text>
+<path d="M34,503 H1226" stroke="#d8e4e9"/>
+<text x="34" y="537" font-size="16" fill="#526572">Window coverage is a density diagnostic, not calibrated physical noise. Collision energy matters.</text>
+</g></svg>
