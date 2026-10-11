@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-10-11T16:59:58.740733+00:00",
+  "status": "ORIGINAL_SYNTHETIC_PROTOTYPE_ONLY",
+  "code_documentation_diagram_licence": "MIT",
+  "dependency": "Python standard library only",
+  "python_author_controls": "3.9.6",
+  "test_runs": [
+    {
+      "optimized": false,
+      "tests": 14,
+      "result": "PASS",
+      "seconds_reported": 0.008
+    },
+    {
+      "optimized": true,
+      "tests": 14,
+      "result": "PASS",
+      "seconds_reported": 0.008
+    }
+  ],
+  "independent_exhaustive_oracle_cases_per_run": 200,
+  "author_test_cpu_limit_seconds": 30,
+  "author_process_nice_adjustment": 5,
+  "synthetic_data": {
+    "source": "Hand-authored numeric vectors and random.Random fixed-seed invented vectors",
+    "competition_spectra_used": false,
+    "competition_candidates_used": false,
+    "competition_labels_used": false,
+    "models_loaded": false,
+    "notebook_code_copied": false,
+    "official_submission": false,
+    "native_execution": false
+  },
+  "source_observation_pins": [
+    {
+      "logical_source": "ENGINE1_OWN_PLAN.md",
+      "bytes": 8451,
+      "sha256": "6477addbee00a99118ba28d9ac690e74d28f78d664fba030dc1352310003864e",
+      "included_in_public_packet": false
+    },
+    {
+      "logical_source": "inspected_original_rank_features.py",
+      "bytes": 3557,
+      "sha256": "716e01b30f55ad89780d433dd81c683037bf60e759e710756a0b40f28c830c86",
+      "included_in_public_packet": false
+    },
+    {
+      "logical_source": "inspected_original_fragment_hypotheses.py",
+      "bytes": 2750,
+      "sha256": "c9c58eae7f0e2d3bff29760e57e8d59da6dd7fe01316e58710c07427c9b98524",
+      "included_in_public_packet": false
+    },
+    {
+      "logical_source": "inspected_original_fragment_aggregation.py",
+      "bytes": 879,
+      "sha256": "68038a891fcbf513375e3d8ff17ba20e21b2d55861f5fa7399c577f6e2c02c79",
+      "included_in_public_packet": false
+    },
+    {
+      "logical_source": "inspected_original_cleaning.py",
+      "bytes": 3996,
+      "sha256": "3448096df103657f5bf366c72c69a2c81b434d8891a7ded3e4e5ac78d5037c46",
+      "included_in_public_packet": false
+    },
+    {
+      "logical_source": "feasibility_corrections.md",
+      "bytes": 15419,
+      "sha256": "31261cbef56d6d82863e554c19908ea1af788940f25b5f3d3ac9671e91780408",
+      "included_in_public_packet": false
+    }
+  ],
+  "primary_background": [
+    {
+      "title": "SciPy linear_sum_assignment official documentation",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linear_sum_assignment.html",
+      "accessed_utc_date": "2026-10-11",
+      "use": "Assignment-problem background only; no code copied or imported."
+    },
+    {
+      "title": "SIRIUS 4 Nature Methods primary article",
+      "url": "https://www.nature.com/articles/s41592-019-0344-8",
+      "doi": "10.1038/s41592-019-0344-8",
+      "accessed_utc_date": "2026-10-11",
+      "use": "Fragmentation background only; no SIRIUS software, figures, or data used."
+    }
+  ],
+  "diagram_validation": "XML parsing passed; numeric bars generated from saved invented results. Pixel visual QA not yet performed.",
+  "qualification": "SOURCE_TESTED_NOT_NATIVE_NOT_FITTED_NOT_SCORED"
+}
