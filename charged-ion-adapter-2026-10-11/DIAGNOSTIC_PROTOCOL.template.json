@@ -1,0 +1,34 @@
+{
+  "status": "FROZEN_R2_DEVELOPMENT_BEFORE_NEW_LABEL_READ",
+  "template_only": true,
+  "frozen_at_utc": "REPLACE_WITH_ACTUAL_BEFORE_LABEL_TIMESTAMP",
+  "previous_exposure": "REPLACE_WITH_ALL_COMPONENT_EXPOSURE_RECORD",
+  "private_data_rights": "CONFIRM_AUTHORIZED_PRIVATE_RESEARCH_BEFORE_USE",
+  "source_pins": [
+    {
+      "path": "/absolute/path/to/authorized_train.parquet",
+      "sha256": "REPLACE_WITH_FULL_FILE_SHA256"
+    },
+    {
+      "path": "/absolute/path/to/authorized_rank_rows.npz",
+      "sha256": "REPLACE_WITH_FULL_FILE_SHA256"
+    }
+  ],
+  "fixed_spectrum_sample": "first 4096 physical records; nine input fields; hold unknown/NIST-labelled ingest; no labels or structures selected",
+  "fixed_numeric_sample": "first 128 sorted G values in each M regime; unchanged candidate rows and existing features",
+  "column_contract": {
+    "X_shape": "N x 31",
+    "Y": "binary truth; one positive per selected query group and regime",
+    "M": "binary saved regime; repeated regimes are not independent samples",
+    "G": "integer caller-bound query group",
+    "score_column_15": "existing fingerprint feature; verify your exact original source contract",
+    "score_column_21": "existing fragment-explanation feature; verify your exact original source contract"
+  },
+  "geometry": {"abs_da": 0.01, "ppm": 0},
+  "preprocessing": "owned floor0.002/top256/linear-normalization/stable ties; native parity unverified",
+  "grouping": "no cross-row consensus; metadata availability and spacing only",
+  "ranking_metric": "uniform exact-tie expected reciprocal rank at 25; paired fragment-minus-fingerprint",
+  "limits": {"spectra": 4096, "sorted_groups": 128, "cpu_seconds": 120, "nice_adjustment": 5, "npz_uncompressed_bytes": 120000000},
+  "scientific_limit": "exposed development; no new matcher ranking, fitted-control comparison or hidden transfer",
+  "publication": "PRIVATE_INPUTS_AND_DERIVED_RESULTS_UNLESS_SEPARATELY_AUTHORIZED"
+}

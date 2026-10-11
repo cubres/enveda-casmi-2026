@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 730" role="img" aria-labelledby="title desc">
+<title id="title">Explicit charged-ion hypotheses and metadata gates</title>
+<desc id="desc">A neutral fragment bank and observed spectra pass separate chemistry and metadata gates. Same-query binding precedes compatible view grouping. Missing acquisition bounds hold density correction. Shared metadata alone does not establish analyte identity.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9" fill="#6a8296"/></marker></defs>
+<rect width="1120" height="730" rx="20" fill="#f4f7fb"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#153247">
+<text x="42" y="52" font-size="27" font-weight="700">Charge is a hypothesis worth recording</text>
+<text x="42" y="80" font-size="16" fill="#5f7281">An original adapter contract • schematic only • no leaderboard or measured spectrum</text>
+<rect x="42" y="117" width="305" height="113" rx="12" fill="#ffffff" stroke="#a8bfce"/>
+<text x="60" y="146" font-size="18" font-weight="700">Observed spectrum</text>
+<text x="60" y="174" font-size="16">m/z + intensity + annotation</text>
+<text x="60" y="199" font-size="16">polarity / precursor / instrument / CE</text>
+<rect x="404" y="117" width="307" height="113" rx="12" fill="#e4f0f7" stroke="#4a85a5"/>
+<text x="423" y="147" font-size="18" font-weight="700">Validate precursor metadata</text>
+<text x="423" y="175" font-size="16">exact label, charge and multiplicity</text>
+<text x="423" y="201" font-size="16">contradiction or ambiguity → HOLD</text>
+<rect x="770" y="117" width="308" height="113" rx="12" fill="#ffffff" stroke="#a8bfce"/>
+<text x="789" y="147" font-size="18" font-weight="700">Clean observed peaks</text>
+<text x="789" y="175" font-size="16">floor 0.002 / top 256 / normalize</text>
+<text x="789" y="201" font-size="16">native tie/precision parity unverified</text>
+<path d="M347 173H396M711 173H762" fill="none" stroke="#6a8296" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="42" y="284" width="305" height="113" rx="12" fill="#ffffff" stroke="#a8bfce"/>
+<text x="60" y="314" font-size="18" font-weight="700">Neutral fragment masses</text>
+<text x="60" y="342" font-size="16">reviewed generator + candidate binding</text>
+<text x="60" y="367" font-size="16">safe numeric format / no pickle loading</text>
+<rect x="404" y="284" width="307" height="113" rx="12" fill="#e3f2ed" stroke="#598b78"/>
+<text x="423" y="314" font-size="18" font-weight="700">Declare an ion family</text>
+<text x="423" y="342" font-size="16">protonated, deprotonated, retained…</text>
+<text x="423" y="367" font-size="16">precursor charge is not fragment charge</text>
+<rect x="770" y="284" width="308" height="113" rx="12" fill="#ffffff" stroke="#a8bfce"/>
+<text x="789" y="314" font-size="18" font-weight="700">Explicit charged-ion bank</text>
+<text x="789" y="342" font-size="16">singly charged + declared H shifts</text>
+<text x="789" y="367" font-size="16">chemical identity remains unverified</text>
+<path d="M347 340H396M711 340H762" fill="none" stroke="#6a8296" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M557 230V276" fill="none" stroke="#6a8296" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="42" y="455" width="500" height="110" rx="12" fill="#e4f0f7" stroke="#4a85a5"/>
+<text x="60" y="485" font-size="18" font-weight="700">Bind ONE query before grouping its views</text>
+<text x="60" y="513" font-size="16">same-query token → adduct / polarity / full CE / instrument</text>
+<text x="60" y="539" font-size="16">Shared metadata alone does not establish analyte identity.</text>
+<rect x="578" y="455" width="500" height="110" rx="12" fill="#fff0dc" stroke="#be985c"/>
+<text x="597" y="485" font-size="18" font-weight="700">Supply a declared acquisition window</text>
+<text x="597" y="513" font-size="16">missing bounds → HOLD density/excess correction</text>
+<text x="597" y="539" font-size="16">Measured peak extrema are not acquisition bounds.</text>
+<rect x="42" y="613" width="1036" height="78" rx="12" fill="#153247"/>
+<text x="60" y="643" font-size="18" font-weight="700" fill="#ffffff">Freeze candidates, arrays, control scores and chemistry before labels.</text>
+<text x="60" y="670" font-size="16" fill="#dce8ef">Then measure actual matching/reuse and paired query ranks. A metadata or geometry diagnostic is not a score gain.</text>
+</g></svg>
