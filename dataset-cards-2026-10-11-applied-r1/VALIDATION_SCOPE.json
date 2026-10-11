@@ -1,0 +1,17 @@
+{
+  "schema": "public-card-validation-scope/1",
+  "full_load_snippets": "SYNTAX_CHECK_ONLY",
+  "real_dataset_payload_reads_for_this_packet": 0,
+  "API_calls_for_this_packet": 0,
+  "existing_invented_control_reexecuted_for_this_packet": false,
+  "native_inference_or_official_score_qualification": false,
+  "existing_executed_invented_mass_control": {
+    "source_url": "https://github.com/cubres/enveda-casmi-2026/blob/7ccd7de5d9bdf37fced42a8adb400a7d19b898f4/dataset-cards-2026-10-11-r1/examples/toy_mass_window.py",
+    "source_sha256": "6a81dbe50084a377affa892d7a7cad5687b5911b869dd726c4d1867840d962ae",
+    "result_sha256": "2655bfbf3fe31c15e8135c0dd911e5cd45afb26729f7ef2f733f44075cd7e9e0",
+    "execution_receipt_sha256": "52f15d9c0408704fc584b8c47f1fa8dace25c811a464c059449a174e7bd19da3",
+    "Python": "3.12.14",
+    "NumPy": "2.2.6",
+    "meaning": "Numeric inclusive endpoint arithmetic only; no real molecule/spectrum/query or score."
+  }
+}
