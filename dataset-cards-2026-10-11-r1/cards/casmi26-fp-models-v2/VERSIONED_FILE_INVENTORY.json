@@ -1,0 +1,28 @@
+{
+  "schema": "read-only-versioned-dataset-file-inventory/1",
+  "ref": "prvsiyan/casmi26-fp-models-v2",
+  "dataset_id": 12054715,
+  "title": "CASMI26 fingerprint models (single + merged)",
+  "data_version": 1,
+  "license_metadata": [
+    {
+      "name": "CC-BY-NC-SA-4.0"
+    }
+  ],
+  "public_visibility_verified": true,
+  "observed_utc": "2026-10-11T19:35:12.585367+00:00",
+  "source_api_filelist_sha256": "0c69abd26406ae56f5d57d36527a08b835d2e2e71641defbc1da22dc8b65a89e",
+  "files": [
+    {
+      "path": "fp_merged_m1.pt",
+      "bytes": 144110255
+    },
+    {
+      "path": "fp_single_s2.pt",
+      "bytes": 144110255
+    }
+  ],
+  "payload_hashes_downloaded": false,
+  "manifest_listed": false,
+  "schema_facts_scope": "Prior owner card unless explicitly API filename/size/version evidence."
+}

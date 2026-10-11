@@ -1,0 +1,24 @@
+{
+  "schema": "read-only-versioned-dataset-file-inventory/1",
+  "ref": "prvsiyan/casmi26-ranker-features",
+  "dataset_id": 12039490,
+  "title": "CASMI26 candidate-ranker training features",
+  "data_version": 6,
+  "license_metadata": [
+    {
+      "name": "CC-BY-NC-SA-4.0"
+    }
+  ],
+  "public_visibility_verified": true,
+  "observed_utc": "2026-10-11T19:35:15.842745+00:00",
+  "source_api_filelist_sha256": "007907a7614275b648fe0dae0c071f071cf69df44cbad77eeaa5e7d67532a2e4",
+  "files": [
+    {
+      "path": "rank_train.npz",
+      "bytes": 9553020
+    }
+  ],
+  "payload_hashes_downloaded": false,
+  "manifest_listed": false,
+  "schema_facts_scope": "Prior owner card unless explicitly API filename/size/version evidence."
+}

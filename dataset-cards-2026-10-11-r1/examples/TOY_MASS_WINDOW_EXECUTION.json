@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ONE_INVENTED_CONTROL",
+  "python": "3.12.14",
+  "source_sha256": "6a81dbe50084a377affa892d7a7cad5687b5911b869dd726c4d1867840d962ae",
+  "result_sha256": "2655bfbf3fe31c15e8135c0dd911e5cd45afb26729f7ef2f733f44075cd7e9e0",
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "wall_seconds": 0.0631267079988902,
+  "nice": 5,
+  "cpu_cap_seconds": 20,
+  "alarm_seconds": 30,
+  "real_data_or_payload_reads": 0,
+  "network_calls": 0
+}

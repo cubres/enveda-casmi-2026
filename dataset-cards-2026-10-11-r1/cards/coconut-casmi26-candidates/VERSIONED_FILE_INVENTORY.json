@@ -1,0 +1,36 @@
+{
+  "schema": "read-only-versioned-dataset-file-inventory/1",
+  "ref": "prvsiyan/coconut-casmi26-candidates",
+  "dataset_id": 12039473,
+  "title": "COCONUT 2.0 candidates + fingerprints (CASMI26)",
+  "data_version": 2,
+  "license_metadata": [
+    {
+      "name": "CC-BY-NC-SA-4.0"
+    }
+  ],
+  "public_visibility_verified": true,
+  "observed_utc": "2026-10-11T19:35:14.518136+00:00",
+  "source_api_filelist_sha256": "1fa810fa4cdd1a8f24714da7a3937e6f1b8338e0f977655243f19b0b7a5585d9",
+  "files": [
+    {
+      "path": "coco_fp.npy",
+      "bytes": 378349391
+    },
+    {
+      "path": "coco_mass.npy",
+      "bytes": 3491240
+    },
+    {
+      "path": "coco_meta.pkl",
+      "bytes": 41450156
+    },
+    {
+      "path": "fp_bits.npy",
+      "bytes": 55568
+    }
+  ],
+  "payload_hashes_downloaded": false,
+  "manifest_listed": false,
+  "schema_facts_scope": "Prior owner card unless explicitly API filename/size/version evidence."
+}

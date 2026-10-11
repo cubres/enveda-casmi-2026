@@ -1,0 +1,150 @@
+{
+  "schema": "original-live-bound-dataset-card-package/1",
+  "campaign": "enveda",
+  "prepared_utc": "2026-10-11T19:47:31.415084+00:00",
+  "datasets": [
+    {
+      "ref": "prvsiyan/casmi26-fp-models-v2",
+      "numeric_id": 12054715,
+      "data_version": 1,
+      "title": "CASMI26 fingerprint models (single + merged)",
+      "slug": "casmi26-fp-models-v2",
+      "license_metadata": [
+        {
+          "name": "CC-BY-NC-SA-4.0"
+        }
+      ],
+      "public_visibility_verified_in_retained_capture": true,
+      "before_description_sha256": "47f97ef17cf14cef9849662f483f0c2c74b8a32135529d7bf16cf1ff592d3c10",
+      "after_description_sha256": "b93293c2b835a9f2b3b3de638e4749b9c03767be7aaebda96c37c2202dede6d5",
+      "before_chars": 3938,
+      "after_chars": 6482,
+      "original_how_to_load_bounds_zero_based_half_open": [
+        1504,
+        1947
+      ],
+      "allowed_changes": [
+        "How to load it section",
+        "Appended exact-version and limited-verification scope",
+        "Independent review's explicitly enumerated count/licence/provenance wording corrections"
+      ],
+      "complete_versioned_filelist_sha256": "0c69abd26406ae56f5d57d36527a08b835d2e2e71641defbc1da22dc8b65a89e",
+      "file_count": 2,
+      "uncompressed_bytes": 288220510,
+      "manifest_listed": false,
+      "payloads_read": false,
+      "python_fences_compile_only": 1,
+      "fences_executed_on_real_payloads": false,
+      "new_score_or_medal_claim": false
+    },
+    {
+      "ref": "prvsiyan/casmi26-fp-models-v4",
+      "numeric_id": 12078661,
+      "data_version": 1,
+      "title": "CASMI26 fingerprint models v4",
+      "slug": "casmi26-fp-models-v4",
+      "license_metadata": [
+        {
+          "name": "CC-BY-NC-SA-4.0"
+        }
+      ],
+      "public_visibility_verified_in_retained_capture": true,
+      "before_description_sha256": "88c89ee72bf91dbcff7f5745b28bc1017663664e6615422d74cb2493d142fe88",
+      "after_description_sha256": "b8d42d3c5d041d6a8ce6e3c5157644e2b10ddf1288d5783440812394d1fa3b44",
+      "before_chars": 3878,
+      "after_chars": 6502,
+      "original_how_to_load_bounds_zero_based_half_open": [
+        1540,
+        1966
+      ],
+      "allowed_changes": [
+        "How to load it section",
+        "Appended exact-version and limited-verification scope",
+        "Independent review's explicitly enumerated count/licence/provenance wording corrections"
+      ],
+      "complete_versioned_filelist_sha256": "0f6d251cdffbbf7512a9044a2bb0e61a559bed0bb8e16ba9628d135659c9e4bb",
+      "file_count": 4,
+      "uncompressed_bytes": 1729356621,
+      "manifest_listed": false,
+      "payloads_read": false,
+      "python_fences_compile_only": 1,
+      "fences_executed_on_real_payloads": false,
+      "new_score_or_medal_claim": false
+    },
+    {
+      "ref": "prvsiyan/coconut-casmi26-candidates",
+      "numeric_id": 12039473,
+      "data_version": 2,
+      "title": "COCONUT 2.0 candidates + fingerprints (CASMI26)",
+      "slug": "coconut-casmi26-candidates",
+      "license_metadata": [
+        {
+          "name": "CC-BY-NC-SA-4.0"
+        }
+      ],
+      "public_visibility_verified_in_retained_capture": true,
+      "before_description_sha256": "980d8b0f4a0903c8c5e7dbecbfd142c1005b589b039a7b225263c1562bd26984",
+      "after_description_sha256": "c0f27b6532dc776b86acdc5184da26c48984522981aa9e70fb38695e8fb9d0b9",
+      "before_chars": 3994,
+      "after_chars": 7269,
+      "original_how_to_load_bounds_zero_based_half_open": [
+        2166,
+        2760
+      ],
+      "allowed_changes": [
+        "How to load it section",
+        "Appended exact-version and limited-verification scope",
+        "Independent review's explicitly enumerated count/licence/provenance wording corrections"
+      ],
+      "complete_versioned_filelist_sha256": "1fa810fa4cdd1a8f24714da7a3937e6f1b8338e0f977655243f19b0b7a5585d9",
+      "file_count": 4,
+      "uncompressed_bytes": 423346355,
+      "manifest_listed": false,
+      "payloads_read": false,
+      "python_fences_compile_only": 1,
+      "fences_executed_on_real_payloads": false,
+      "new_score_or_medal_claim": false
+    },
+    {
+      "ref": "prvsiyan/casmi26-ranker-features",
+      "numeric_id": 12039490,
+      "data_version": 6,
+      "title": "CASMI26 candidate-ranker training features",
+      "slug": "casmi26-ranker-features",
+      "license_metadata": [
+        {
+          "name": "CC-BY-NC-SA-4.0"
+        }
+      ],
+      "public_visibility_verified_in_retained_capture": true,
+      "before_description_sha256": "c390cdd0105d99c72980a88646663ca29d02ee92fe766b897ef1ba2950d3e8e3",
+      "after_description_sha256": "5cb568c2911a21240384970811620c2dfbcaed116670334755350c6c6a7a9ee5",
+      "before_chars": 3963,
+      "after_chars": 6884,
+      "original_how_to_load_bounds_zero_based_half_open": [
+        2151,
+        2307
+      ],
+      "allowed_changes": [
+        "How to load it section",
+        "Appended exact-version and limited-verification scope",
+        "Independent review's explicitly enumerated count/licence/provenance wording corrections"
+      ],
+      "complete_versioned_filelist_sha256": "007907a7614275b648fe0dae0c071f071cf69df44cbad77eeaa5e7d67532a2e4",
+      "file_count": 1,
+      "uncompressed_bytes": 9553020,
+      "manifest_listed": false,
+      "payloads_read": false,
+      "python_fences_compile_only": 1,
+      "fences_executed_on_real_payloads": false,
+      "new_score_or_medal_claim": false
+    }
+  ],
+  "live_api_writes_performed": 0,
+  "payload_downloads": 0,
+  "notebook_mutations": 0,
+  "source_capture_scope": "Retained primary Kaggle owner metadata and exact-version complete filename/size lists; no payload authentication.",
+  "current_description_published": false,
+  "independent_review_required_before_deployment": true,
+  "scientific_figure_or_art_changes": 0
+}

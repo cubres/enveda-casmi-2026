@@ -1,0 +1,10 @@
+{
+  "status": "INVENTED_MASS_BOUNDARIES_ONLY",
+  "numpy_version": "2.2.6",
+  "old_default_upper_selected_rows": 2,
+  "inclusive_upper_selected_rows": 3,
+  "repeated_exact_endpoint_rows": 4,
+  "empty_selected_rows": 0,
+  "real_query_molecule_or_spectrum": false,
+  "native_or_competition_score": null
+}
