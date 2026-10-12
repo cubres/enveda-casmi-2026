@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430" role="img" aria-labelledby="title desc">
+<title id="title">Declared V2 fingerprint layout and BIG packing</title><desc id="desc">Morgan2048 bits followed by167 MACCS coordinates and one zero padding bit form277bytes. MACCS zero-key2048 and padding2215 require explicit qualification. The last byte contains keys160through166 and padding, with the most significant bit first.</desc>
+<rect width="1100" height="430" fill="#f7f9fc"/><g font-family="Arial, sans-serif" fill="#163047">
+<text x="36" y="43" font-size="25" font-weight="700">A277-byte width still needs a semantic contract</text>
+<text x="36" y="74" font-size="16">Declared V2:2048Morgan +167MACCS +1zero pad =2216physical bits</text>
+<rect x="36" y="100" width="620" height="78" rx="9" fill="#d9e9fa" stroke="#537ca5"/><text x="58" y="131" font-size="22" font-weight="700">Morgan2048 · radius2</text><text x="58" y="158" font-size="17">logical coordinates0–2047 · bytes0–255</text>
+<rect x="672" y="100" width="280" height="78" rx="9" fill="#d9eee7" stroke="#467c69"/><text x="688" y="131" font-size="22" font-weight="700">MACCS167</text><text x="688" y="158" font-size="17">keys0–166 · bits2048–2214</text>
+<rect x="968" y="100" width="94" height="78" rx="9" fill="#f5dfd8" stroke="#a76650"/><text x="979" y="130" font-size="20" font-weight="700">pad1</text><text x="979" y="155" font-size="16">bit2215</text>
+<text x="36" y="208" font-size="17">MACCSkey0 at global2048 is reserved zero; check it before masking.</text>
+<text x="36" y="235" font-size="15">Schematic widths are not proportional. A166-key layout needs a different coordinate map.</text>
+<text x="36" y="281" font-size="21" font-weight="700">BIG order</text><text x="36" y="307" font-size="16">bit0 within each byte → MSB</text><text x="36" y="333" font-size="16">bit7 within each byte → LSB</text>
+<text x="460" y="272" font-size="17">Last byte276:MSB → LSB</text>
+<g font-size="16" text-anchor="middle">
+<rect x="460" y="285" width="72" height="50" fill="#d9eee7" stroke="#467c69"/><text x="496" y="316">key160</text>
+<rect x="532" y="285" width="72" height="50" fill="#d9eee7" stroke="#467c69"/><text x="568" y="316">key161</text>
+<rect x="604" y="285" width="72" height="50" fill="#d9eee7" stroke="#467c69"/><text x="640" y="316">key162</text>
+<rect x="676" y="285" width="72" height="50" fill="#d9eee7" stroke="#467c69"/><text x="712" y="316">key163</text>
+<rect x="748" y="285" width="72" height="50" fill="#d9eee7" stroke="#467c69"/><text x="784" y="316">key164</text>
+<rect x="820" y="285" width="72" height="50" fill="#d9eee7" stroke="#467c69"/><text x="856" y="316">key165</text>
+<rect x="892" y="285" width="72" height="50" fill="#d9eee7" stroke="#467c69"/><text x="928" y="316">key166</text>
+<rect x="964" y="285" width="72" height="50" fill="#f5dfd8" stroke="#a76650"/><text x="1000" y="316">pad0</text></g>
+<text x="36" y="387" font-size="16">Source contract only:array bytes, generator version and checkpoint semantics still need qualification.</text>
+</g></svg>

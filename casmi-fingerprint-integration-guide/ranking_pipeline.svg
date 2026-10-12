@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="790" viewBox="0 0 1100 790" role="img" aria-labelledby="title desc">
+<title id="title">Visible CASMI V3 ranking contract</title><desc id="desc">Spectrum features feed an explicit V2 MLP. Bernoulli likelihood sums across spectra then becomes a mean. Combined pool and PubChem candidates are z-scored with priors and a cosine gate. Invalid and duplicate candidates are skipped after stable ranking, before top25 output.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0L10,5L0,10Z" fill="#537ca5"/></marker></defs>
+<rect width="1100" height="790" fill="#f7f9fc"/><g font-family="Arial, sans-serif" fill="#163047">
+<text x="36" y="43" font-size="25" font-weight="700">Scores depend on the order of aggregation and filtering</text>
+<text x="36" y="74" font-size="16">Visible V3 recipe · source facts only · no model-quality or score claim</text>
+<g fill="#d9e9fa" stroke="#537ca5"><rect x="36" y="100" width="470" height="65" rx="9"/><rect x="36" y="195" width="470" height="65" rx="9"/><rect x="36" y="290" width="470" height="65" rx="9"/><rect x="36" y="385" width="470" height="65" rx="9"/></g>
+<text x="56" y="127" font-size="21" font-weight="700">Queryspectra →2514features</text><text x="56" y="151" font-size="16">fragment/loss bins + adduct/mode/energy/metadata</text>
+<text x="56" y="222" font-size="21" font-weight="700">Explicit V2 MLP</text><text x="56" y="246" font-size="16">hidden2048 ·2216output logits</text>
+<text x="56" y="317" font-size="21" font-weight="700">Bernoulli likelihood SUM</text><text x="56" y="341" font-size="16">all outputs · over the molecule's spectra</text>
+<text x="56" y="412" font-size="21" font-weight="700">Mean per molecule</text><text x="56" y="436" font-size="16">divide by spectrum count</text>
+<g fill="none" stroke="#537ca5" stroke-width="2.5" marker-end="url(#arrow)"><path d="M271,165V191"/><path d="M271,260V286"/><path d="M271,355V381"/><path d="M604,322H510"/></g>
+<rect x="604" y="195" width="460" height="142" rx="9" fill="#d9eee7" stroke="#467c69"/>
+<text x="624" y="224" font-size="21" font-weight="700">Combined candidate list</text><text x="624" y="255" font-size="17">training/COCONUT + PubChem</text><text x="624" y="283" font-size="17">10ppm neutral-mass windows</text><text x="624" y="311" font-size="16">same semantic fingerprint coordinates required</text>
+<g fill="none" stroke="#537ca5" stroke-width="2.5" marker-end="url(#arrow)"><path d="M271,450V469H550V488"/><path d="M834,337V469H550V488"/></g>
+<rect x="36" y="492" width="1028" height="65" rx="9" fill="#e5e2f3" stroke="#7d6e9c"/>
+<text x="56" y="520" font-size="21" font-weight="700">Whole-list z-score:(fp−mean)/(std+1e−9)</text><text x="56" y="545" font-size="16">invalid/duplicate rows are still present at this stage</text>
+<g fill="none" stroke="#537ca5" stroke-width="2.5" marker-end="url(#arrow)"><path d="M300,557V584"/><path d="M834,557V584"/></g>
+<rect x="36" y="588" width="494" height="65" rx="9" fill="#d9e9fa" stroke="#537ca5"/><text x="56" y="616" font-size="21" font-weight="700">cosine≥0.7:first by1e6+cosine</text><text x="56" y="640" font-size="16">pool library cosine; PubChem row cosine=0</text>
+<rect x="570" y="588" width="494" height="65" rx="9" fill="#d9eee7" stroke="#467c69"/><text x="590" y="616" font-size="21" font-weight="700">remaining:z+0.25pop+1.0natural</text><text x="590" y="640" font-size="16">default prior weights; exact prior sources required</text>
+<g fill="none" stroke="#537ca5" stroke-width="2.5" marker-end="url(#arrow)"><path d="M283,653V671H550V686"/><path d="M817,653V671H550V686"/></g>
+<rect x="36" y="690" width="1028" height="54" rx="9" fill="#f5dfd8" stroke="#a76650"/>
+<text x="56" y="724" font-size="21" font-weight="700">Stable rank → skip emptySMILES/repeated ik14 → up to25guesses</text>
+<text x="36" y="773" font-size="15">Earlier filtering changes normalization. Original missing-guess fallback 'C' is not successful coverage.</text>
+</g></svg>
