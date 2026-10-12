@@ -1,0 +1,57 @@
+{
+  "record_type": "actual_public_presentation_source_packaging",
+  "observed_through_utc": "2026-10-12T17:03:21.759Z",
+  "notebook": {
+    "id": "prvsiyan/analog-propagation-casmi-2026-baseline",
+    "title": "Analog Propagation - CASMI 2026 baseline",
+    "code_file": "analog-propagation-casmi-2026-baseline.ipynb",
+    "version": 34,
+    "public": true,
+    "updated_in_place": true,
+    "version_url": "https://www.kaggle.com/code/prvsiyan/analog-propagation-casmi-2026-baseline/34",
+    "captured_cell_count": 55,
+    "source_sha256": "835505fd4d6f342a2c14a2149b10a126a514258eb232b38921466b2418f8dc36",
+    "complete_notebook_canonical_sha256": "725d910da4cb9659a0c777f51ef76e8af0bfe6ecef8a3f71b883d61b4387b8df"
+  },
+  "native_packaging": {
+    "native_run_id": 357730079,
+    "status": "PASS_SOURCE_PACKAGING_ONLY",
+    "mode": "PRESENTATION",
+    "page_runtime_seconds": 26,
+    "runtime_is_scientific_or_model_benchmark": false,
+    "compiled_only_payload_cells": 22,
+    "bundle_bytes": 176415,
+    "bundle_sha256": "b87f5cfd61282991ccc17502e7154aa53e38192cb61f3c6dea978b26035b5c80",
+    "original_body_sha256": "ee19bb7775bdc9aba00044a0dbb62cfe57cadda711a3f2cee7758a8877634dfd",
+    "original_cell_canonical_sha256": "abd55525934fecd8269c565aa7c2ff45822aaa8523e3be7dd8e9ed56c2414053",
+    "scientific_dispatch_entered": false
+  },
+  "runtime_hardware": {
+    "saved_enable_gpu": false,
+    "saved_enable_tpu": false,
+    "saved_enable_internet": false,
+    "actual_native_cpu_resource_verified": false,
+    "actual_hardware": "UNVERIFIED"
+  },
+  "presentation": {
+    "existing_opening_asset_and_source_link_preserved": true,
+    "opening_image_render_status": "ARTWORK_LOAD_FAILED_RENDER_UNRESOLVED",
+    "image_dom_complete": true,
+    "image_natural_width": 0,
+    "image_natural_height": 0,
+    "image_failure_observed_utc": "2026-10-12T17:03:21.759Z",
+    "image_failure_cause": "UNESTABLISHED",
+    "artwork_replaced": false,
+    "original_diagrams_present_in_accessibility_observation": true,
+    "diagram_visual_qa_completed": false,
+    "earlier_proposed_wording": "Retained preparation history; this record reports actual public V34."
+  },
+  "scientific_outcome": {
+    "official_submission": false,
+    "official_new_score_verified": false,
+    "official_score": null,
+    "model_quality": "UNMEASURED",
+    "new_scientific_run_claimed": false
+  },
+  "record_scope": "Original two-file factual presentation record only; no notebook payload, chemistry rows, model weights, private receipts or credentials."
+}
