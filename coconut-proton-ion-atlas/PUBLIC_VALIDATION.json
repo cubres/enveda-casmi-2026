@@ -1,0 +1,80 @@
+{
+  "status": "PASS_ACTUAL_REAL_SOURCE_DERIVATION_AND_NUMERICAL_MECHANICS",
+  "observed_utc": "2026-10-12T16:27:24.040119+00:00",
+  "source": {
+    "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+    "data_version": 2,
+    "filename": "coco_mass.npy",
+    "bytes": 3491240,
+    "rows": 436389,
+    "sha256": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c"
+  },
+  "derivation": {
+    "generated_utc": "2026-10-12T16:24:33.747582+00:00",
+    "elapsed_s": 0.52,
+    "user_cpu_s": 0.34,
+    "system_cpu_s": 0.05,
+    "maximum_resident_set_size_bytes": 101957632,
+    "numerical_ion_channels": 8,
+    "matrix_shape": [
+      8,
+      436389
+    ],
+    "matrix_sha256": "70f3b44bd8632f6d1f4d9d343297c2016f95555bfd8bdbcbf6edb237ddbf33fd"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "pillow": "12.3.0"
+  },
+  "checks": {
+    "all_actual_numerical_file_hashes_match": true,
+    "every_channel_every_source_row_transform_checked": true,
+    "unchanged_scientific_reader_and_test_sources_from_actual17test_R1": true,
+    "synthetic_named_mechanics_tests_passed": 17,
+    "synthetic_named_mechanics_tests_failed": 0,
+    "actual_release_inventory_hashes_match": true,
+    "create_metadata_excluded_from_download_inventory": true,
+    "both_actual_PNGs_visually_inspected_readable_unclipped": true
+  },
+  "real_numerical_example": {
+    "source_row_id": 123456,
+    "adduct": "[M+2H]2+",
+    "polarity": "positive",
+    "precursor_mz": 171.0546205825789,
+    "neutral_mass_da": 340.094688232,
+    "ppm": 10.0,
+    "tolerance_basis": "precursor_mz",
+    "returned_source_row_start": 123351,
+    "returned_source_row_stop_exclusive": 123505,
+    "candidate_count": 154,
+    "example_source_row_included": true,
+    "molecular_identifier": null
+  },
+  "source_measurements": {
+    "distinct_exact_float64_masses": 111106,
+    "additional_rows_at_duplicated_exact_mass": 325283,
+    "maximum_exact_mass_multiplicity": 1757,
+    "repeated_exact_mass_groups": 47334
+  },
+  "source_review": {
+    "R1_checks_passed": 23,
+    "R1_receipt_sha256": "b7f667c30e31627bcee6668bca2a7eae7c46209bee347b7ac85c29f21701208e",
+    "R2_checks_passed": 19,
+    "R2_receipt_sha256": "bcea54ba8ae54660e5bfed81ab9b8e615e2716aba9237d2af130acffab841be6"
+  },
+  "evidence_limits": {
+    "ions_are_theoretical": true,
+    "molecular_identity_alignment_measured": false,
+    "competition_query_coverage_measured": false,
+    "model_quality_measured": false,
+    "official_score": null,
+    "competition_data_inputs": 0,
+    "network_calls_for_derivation": 0,
+    "notebook_mutations": 0
+  },
+  "publication_at_receipt_time": {
+    "Kaggle_dataset_created": false,
+    "GitHub_commit_created": false
+  }
+}

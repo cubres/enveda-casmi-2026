@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="630" viewBox="0 0 1400 630" role="img" aria-labelledby="title desc">
+<title id="title">A source row, an explicit ion channel, an inclusive lookup</title>
+<desc id="desc">The exact mass file preserves 436389 source positions. Eight signed proton and charge channels transform masses into sorted theoretical precursor arrays. Binary search returns original source row positions, with no chemical identity or ranking claim.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#a86836" stroke-width="1.5"/></marker></defs>
+<rect width="1400" height="630" rx="24" fill="#fbf6ed"/>
+<text x="62" y="75" font-family="Georgia,serif" font-size="38" fill="#342d25">One row. Several ion hypotheses.</text>
+<text x="65" y="111" font-family="Arial,sans-serif" font-size="20" fill="#71624f">COCONUT ion mass atlas · theoretical masses, explicit conventions</text>
+<rect x="62" y="164" width="356" height="280" rx="18" fill="#f1e7d4" stroke="#d0b68d"/>
+<text x="88" y="207" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#9d6339">PIN THE SOURCE</text>
+<text x="88" y="253" font-family="Georgia,serif" font-size="31" fill="#342d25">436,389 positions</text>
+<text x="88" y="293" font-family="Arial,sans-serif" font-size="19" fill="#554b3d">Neutral mass M in daltons</text>
+<text x="88" y="326" font-family="Arial,sans-serif" font-size="18" fill="#554b3d">Same version · same SHA-256</text>
+<line x1="87" y1="347" x2="388" y2="347" stroke="#d0b68d"/>
+<text x="88" y="380" font-family="Arial,sans-serif" font-size="18" fill="#554b3d">i means source row position</text>
+<text x="88" y="411" font-family="Arial,sans-serif" font-size="17" fill="#86725a">No invented molecular keys</text>
+<path d="M432 298 H495" stroke="#a86836" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="507" y="164" width="355" height="280" rx="18" fill="#e6ede5" stroke="#a6b9a3"/>
+<text x="533" y="207" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#557550">NAME THE ION</text>
+<text x="533" y="253" font-family="Georgia,serif" font-size="31" fill="#342d25">Charge &amp; proton count</text>
+<text x="533" y="296" font-family="Arial,sans-serif" font-size="19" fill="#425d40">m/z = (n × M + h × p) / |z|</text>
+<text x="533" y="332" font-family="Arial,sans-serif" font-size="17" fill="#425d40">±1, ±2, ±3 proton monomers</text>
+<text x="533" y="365" font-family="Arial,sans-serif" font-size="17" fill="#425d40">Plus positive/negative homodimers</text>
+<text x="533" y="409" font-family="Arial,sans-serif" font-size="17" fill="#657a60">Eight sorted channels · same i</text>
+<path d="M875 298 H937" stroke="#a86836" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="948" y="164" width="389" height="280" rx="18" fill="#ede5ec" stroke="#bba6b7"/>
+<text x="974" y="207" font-family="Arial,sans-serif" font-size="16" letter-spacing="2" fill="#8b6080">QUERY THE WINDOW</text>
+<text x="974" y="253" font-family="Georgia,serif" font-size="31" fill="#342d25">Both endpoints included</text>
+<text x="974" y="296" font-family="Arial,sans-serif" font-size="19" fill="#624b5d">Observed m/z ± instrument ppm</text>
+<text x="974" y="330" font-family="Arial,sans-serif" font-size="18" fill="#624b5d">left lower edge · right upper edge</text>
+<line x1="973" y1="347" x2="1308" y2="347" stroke="#bba6b7"/>
+<text x="974" y="380" font-family="Arial,sans-serif" font-size="18" fill="#624b5d">Return original positions [lo:hi]</text>
+<text x="974" y="411" font-family="Arial,sans-serif" font-size="17" fill="#8b7084">Duplicates preserved · no ranking</text>
+<text x="65" y="505" font-family="Georgia,serif" font-size="23" fill="#342d25">Precise mass matching still leaves ambiguity.</text>
+<text x="65" y="540" font-family="Arial,sans-serif" font-size="19" fill="#71624f">Mass bins and repeated-mass runs describe the pool, not coverage of a competition query set.</text>
+<text x="65" y="586" font-family="Arial,sans-serif" font-size="17" fill="#8b7964">Original diagram by prvsiyan · COCONUT / prvsiyan source credit · data CC BY-NC-SA 4.0 · code MIT</text>
+</svg>

@@ -1,0 +1,118 @@
+{
+  "channels": [
+    {
+      "channel_index": 0,
+      "label": "[M+H]+",
+      "molecule_multiplier": 1,
+      "signed_charge": 1,
+      "signed_protons": 1
+    },
+    {
+      "channel_index": 1,
+      "label": "[M-H]-",
+      "molecule_multiplier": 1,
+      "signed_charge": -1,
+      "signed_protons": -1
+    },
+    {
+      "channel_index": 2,
+      "label": "[M+2H]2+",
+      "molecule_multiplier": 1,
+      "signed_charge": 2,
+      "signed_protons": 2
+    },
+    {
+      "channel_index": 3,
+      "label": "[M-2H]2-",
+      "molecule_multiplier": 1,
+      "signed_charge": -2,
+      "signed_protons": -2
+    },
+    {
+      "channel_index": 4,
+      "label": "[M+3H]3+",
+      "molecule_multiplier": 1,
+      "signed_charge": 3,
+      "signed_protons": 3
+    },
+    {
+      "channel_index": 5,
+      "label": "[M-3H]3-",
+      "molecule_multiplier": 1,
+      "signed_charge": -3,
+      "signed_protons": -3
+    },
+    {
+      "channel_index": 6,
+      "label": "[2M+H]+",
+      "molecule_multiplier": 2,
+      "signed_charge": 1,
+      "signed_protons": 1
+    },
+    {
+      "channel_index": 7,
+      "label": "[2M-H]-",
+      "molecule_multiplier": 2,
+      "signed_charge": -1,
+      "signed_protons": -1
+    }
+  ],
+  "evidence_limits": {
+    "competition_query_coverage_measured": false,
+    "metadata_alignment_established": false,
+    "molecular_keys_included": false,
+    "ms2_model_quality_measured": false,
+    "observed_ions": false,
+    "official_score": null,
+    "structures_included": false,
+    "training_overlap_measured": false
+  },
+  "files": {
+    "ion_mz.npy": {
+      "bytes": 27929024,
+      "dtype": "<f8",
+      "sha256": "70f3b44bd8632f6d1f4d9d343297c2016f95555bfd8bdbcbf6edb237ddbf33fd",
+      "shape": [
+        8,
+        436389
+      ]
+    },
+    "neutral_mass_da.npy": {
+      "bytes": 3491240,
+      "dtype": "<f8",
+      "sha256": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c",
+      "shape": [
+        436389
+      ]
+    }
+  },
+  "formula": "precursor_mz = (molecule_multiplier * neutral_mass_da + signed_protons * proton_mass_u) / abs(signed_charge)",
+  "generated_utc": "2026-10-12T16:24:33.747582+00:00",
+  "licenses": {
+    "derived_numerical_data": "CC BY-NC-SA 4.0",
+    "original_code": "MIT"
+  },
+  "measured_source_mass": {
+    "additional_rows_at_duplicate_exact_masses": 325283,
+    "distinct_exact_float64_mass_values": 111106,
+    "finite_positive": true,
+    "maximum_da": 1299.7599298120003,
+    "maximum_exact_mass_multiplicity": 1757,
+    "minimum_da": 100.009519128,
+    "nondecreasing": true,
+    "repeated_exact_mass_groups": 47334
+  },
+  "proton_mass_source": "NIST CODATA 2022: proton mass in u",
+  "proton_mass_u": 1.0072764665789,
+  "schema": "coconut-proton-ion-index-v1",
+  "source": {
+    "bytes": 3491240,
+    "dataset_id": 12039473,
+    "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+    "dataset_version": 2,
+    "filename": "coco_mass.npy",
+    "rows": 436389,
+    "sha256": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c"
+  },
+  "source_row_id": "zero-based position in exact source mass file; implicit array index"
+}

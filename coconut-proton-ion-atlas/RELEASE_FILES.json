@@ -1,0 +1,82 @@
+{
+  "creation_metadata_scope": "dataset-metadata.json is private publication configuration; it is not a downloadable payload file",
+  "files": {
+    "DATA_DICTIONARY.md": {
+      "bytes": 3732,
+      "sha256": "ccc38b23541fe8553e855c02455d4e1b9d99cbffbb6a446c53db408c1d4ce27d"
+    },
+    "DATA_LICENSE.md": {
+      "bytes": 1250,
+      "sha256": "5ccc67d50230b4dea70035b1cc3998d50621d36864f9db6d698c517fb37aec09"
+    },
+    "LICENSE-CODE-MIT.txt": {
+      "bytes": 1370,
+      "sha256": "414afc581a1f08651a2511383b4b8d9d80af1a0815cb407e5b35295f33d187ce"
+    },
+    "MANIFEST.json": {
+      "bytes": 3135,
+      "sha256": "415771f9f1768e006bc2f922a741527a8d92f5efa9344e06324413e099c7e61d"
+    },
+    "README.md": {
+      "bytes": 8844,
+      "sha256": "28efb4b6c06432e3068b58d3245eaad1f1d264401ee7d397093d20e9c5f3edc6"
+    },
+    "SOURCES.md": {
+      "bytes": 4133,
+      "sha256": "8b7f61c720b9a06b4b0fc6d0d9bdb9371575ef0cb00558c423fb393c9c230799"
+    },
+    "adducts.csv": {
+      "bytes": 549,
+      "sha256": "904177feed104a14d14738a8ce48c63ee33440e9c86ee61359757746ee23e54a"
+    },
+    "build_ion_index.py": {
+      "bytes": 9484,
+      "sha256": "1ead394c89bfb2a7497d23229b4701a0a7ffedd7c9c3851471a1fc351e3ac296"
+    },
+    "draw_figures.py": {
+      "bytes": 5819,
+      "sha256": "796076f22de641d413e6af575211018c6a0efd6a584b13d3b75889959f529f77"
+    },
+    "equal_mass_groups.csv": {
+      "bytes": 1672041,
+      "sha256": "3f8d78e4aa607748d75af398dac767c24bef7a73a38038f4a27d79b130bb7458"
+    },
+    "ion-atlas.png": {
+      "bytes": 83799,
+      "sha256": "52bae260132a719e4c2f5a2a9917e12b0b833ff8763680cb3ae532b1765deae6"
+    },
+    "ion-atlas.svg": {
+      "bytes": 4219,
+      "sha256": "54b5f31a4fbcacd5bdab17099de97b4c328d02664172f4320fb7ef5beb7092c2"
+    },
+    "ion_index.py": {
+      "bytes": 7925,
+      "sha256": "a6c5be3bb06d890f54303d1b05f6756661ab0bacb16b0935e386efd70de6bf7a"
+    },
+    "ion_mz.npy": {
+      "bytes": 27929024,
+      "sha256": "70f3b44bd8632f6d1f4d9d343297c2016f95555bfd8bdbcbf6edb237ddbf33fd"
+    },
+    "mass-density.png": {
+      "bytes": 52278,
+      "sha256": "089201e7d594c4a59e5bc1b317a35ec318250487dab3680d909c6693c309fffa"
+    },
+    "mass_distribution.csv": {
+      "bytes": 571,
+      "sha256": "2ae285d33fce6b6e6f84405f89a6f032234881ec21d19d84602cfc1596a65433"
+    },
+    "neutral_mass_da.npy": {
+      "bytes": 3491240,
+      "sha256": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c"
+    },
+    "quickstart.py": {
+      "bytes": 1239,
+      "sha256": "9a6dd302f990a8d5b5f32cf9471c7a763962ccbb9c0fa23bfd13bc3d1ce1bc4f"
+    },
+    "test_ion_index.py": {
+      "bytes": 4755,
+      "sha256": "f2579f7f68eab416d8b68f54e7799b05150659ce9ad0c6a27f65c52056c063cd"
+    }
+  },
+  "schema": "release-file-hashes-v1"
+}
