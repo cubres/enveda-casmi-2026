@@ -1,0 +1,6 @@
+case,invented_neutral_mass_da,charge,molecule_count,signed_shift_da,expected_mz,chemical_data
+protonated,100.0,1,1,1.0072764665789,101.0072764665789,false
+deprotonated,100.0,-1,1,-1.0072764665789,98.9927235334211,false
+double_protonated,300.0,2,1,2.0145529331578,151.0072764665789,false
+double_deprotonated,300.0,-2,1,-2.0145529331578,148.9927235334211,false
+protonated_dimer,100.0,1,2,1.0072764665789,201.0072764665789,false

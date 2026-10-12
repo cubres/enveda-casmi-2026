@@ -1,0 +1,12 @@
+case,invented_candidate_neutral_mass_da,query_neutral_mass_da,ppm_query_denominator,expected_included,chemical_data
+below_lower_adjacent,99.99899999999998,100.0,10.0,false,false
+lower_endpoint,99.999,100.0,10.0,true,false
+lower_duplicate,99.999,100.0,10.0,true,false
+center,100.0,100.0,10.0,true,false
+center_duplicate,100.0,100.0,10.0,true,false
+inside_upper,100.0005,100.0,10.0,true,false
+upper_endpoint,100.001,100.0,10.0,true,false
+upper_duplicate,100.001,100.0,10.0,true,false
+above_upper_adjacent,100.00100000000002,100.0,10.0,false,false
+far_below,99.997,100.0,10.0,false,false
+far_above,100.003,100.0,10.0,false,false

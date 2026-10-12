@@ -1,0 +1,19 @@
+{
+  "expected_keys": [
+    "SYN002",
+    "SYN003",
+    "SYN004",
+    "SYN005",
+    "SYN006",
+    "SYN007",
+    "SYN008"
+  ],
+  "expected_slice": [
+    2,
+    9
+  ],
+  "ppm_query_denominator": 10.0,
+  "purpose": "Boundary duplicates included; toy rows only. No chemistry or model evaluation.",
+  "query_neutral_mass_da": 100.0,
+  "schema": "casmi-interop-invented-oracles-v1"
+}

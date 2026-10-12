@@ -1,0 +1,22 @@
+{
+  "chemical_model_evaluations": 0,
+  "errors": 0,
+  "failures": 0,
+  "fixture_manifest_sha256": "d64acab7e0a803de95234a53f6c5421091f2d9af5fb12e7d9ddd5d006f2e9ba8",
+  "invented_fixtures_only": true,
+  "native_or_chemical_quality_measured": false,
+  "network_calls": 0,
+  "numpy_version": "2.2.6",
+  "observed_utc": "2026-10-12T15:47:05.362144+00:00",
+  "official_score": null,
+  "quickstart_actual_first_key": "SYN004",
+  "quickstart_actual_slice": [
+    2,
+    9
+  ],
+  "schema": "casmi-interop-invented-unit-results-v1",
+  "source_revision": "R2: reject unsupported Morgan count simulation; whole-package Kaggle quickstart",
+  "source_sha256": "0fb444ee21c9b15b11681fff08ef482e3fc01c4ee1c02a67d07dae734d4c7576",
+  "status": "PASS",
+  "tests_run": 25
+}

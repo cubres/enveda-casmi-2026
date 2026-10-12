@@ -1,0 +1,45 @@
+{
+  "chemical_data": false,
+  "feature_semantics": "Morgan-sized and MACCS-sized invented bits; no molecules, no RDKit",
+  "files": {
+    "keys.npy": {
+      "bytes": 416,
+      "dtype": "<U6",
+      "sha256": "b16ce58ae4068ff9cda6ae8846b6c93925a1a936305e5398e5b4dbf62a87d811",
+      "shape": [
+        12
+      ]
+    },
+    "maccs_sized.npy": {
+      "bytes": 2120,
+      "dtype": "|u1",
+      "sha256": "78c2dacac3555bb790dc76bb6310dbf298ee032e05860cbe0cd442260c06a997",
+      "shape": [
+        12,
+        166
+      ]
+    },
+    "masses.npy": {
+      "bytes": 224,
+      "dtype": "<f8",
+      "sha256": "580a35d661e1052b333781590b9389cf99413f2cb44ac88af2e282dd0c34f423",
+      "shape": [
+        12
+      ]
+    },
+    "morgan_sized.npy": {
+      "bytes": 24704,
+      "dtype": "|u1",
+      "sha256": "d0e8838b504cb40af647d21caae1a34916ec96dd44ff27b1bcead79e0152ea13",
+      "shape": [
+        12,
+        2048
+      ]
+    }
+  },
+  "fingerprints_are_invented": true,
+  "mass_semantics": "invented positive neutral mass in Da; sorted ascending",
+  "row_semantics": "SYN000..SYN011 are invented keys, not chemical identifiers",
+  "rows": 12,
+  "schema": "casmi-interop-invented-fixtures-v1"
+}
