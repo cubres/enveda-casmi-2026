@@ -1,0 +1,41 @@
+{
+  "cli_final_source_example": {
+    "actual_competition_inputs": false,
+    "cpu_seconds": 0.016877000000000003,
+    "exit_code": 0,
+    "status": "PASS_FIXED_PANEL_STRUCTURAL_AUDIT_ONLY"
+  },
+  "conditions": {
+    "cpu_limit_seconds": 30,
+    "foreign_models_or_data_executed": false,
+    "nice_increment": 5,
+    "python": "3.9.6"
+  },
+  "evidence_kind": "WHOLLY_INVENTED_SOFTWARE_CONTROLS_NOT_COMPETITION_RESULTS",
+  "file_backed_final_source_demo": {
+    "actual_competition_inputs": false,
+    "count": 16,
+    "qualification_scope": "Final CLI replay over the same fully invented file inputs, same counts, corrected scope text.",
+    "result_sha256": "bbafe0e3e989ef526ce972097d42359c7e00c4830b4bddea71d5bed274e6d6b3",
+    "status": "PASS_FIXED_PANEL_STRUCTURAL_AUDIT_ONLY"
+  },
+  "final_source_change": "Only one result scope string changed: pairs execute inside AP2 after popularity ordering and before later final-list processing. Exact original source is retained privately; normalized AST differs only in that constant. No math/cohort/control change; no repeated full suite.",
+  "measured_scientific_gain": null,
+  "normal_optimized_tested_source_sha256": "8de63ee7d3acc6048149453b09aecf7f830d4999d298e3dfbc9e573ee11a6321",
+  "observations": "These test counts and process CPU values transcribe author-observed local tool results. They do not independently authenticate historical process chronology.",
+  "official_score": null,
+  "qualification": "PASS_40_INVENTED_CONTROLS_NORMAL_AND_OPTIMIZED",
+  "reported_normal": {
+    "failed": 0,
+    "suite_cpu_seconds": 0.015037000000000009,
+    "tests": 40
+  },
+  "reported_optimized": {
+    "failed": 0,
+    "suite_cpu_seconds": 0.015862,
+    "tests": 40
+  },
+  "schema": "ORIGINAL_FIXED_PANEL_AUDIT_INVENTED_CONTROLS_V1",
+  "source_sha256": "7d7fdd879b8321fff9525c2fe3a71630d50847f395f90c66df973cfbe6df1676",
+  "test_source_sha256": "3337c0a6cfc61403eb648df5f3e034e7b5a9d029c865124c559003ccc092d17f"
+}

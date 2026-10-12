@@ -1,0 +1,83 @@
+{
+  "bound_original_source": {
+    "fixed_panel_audit.py": {
+      "bytes": 19691,
+      "sha256": "7d7fdd879b8321fff9525c2fe3a71630d50847f395f90c66df973cfbe6df1676"
+    },
+    "make_figure.py": {
+      "bytes": 5254,
+      "sha256": "f283589e1568f75d5105e8de9e6df221f5db03dcd1730ad20c47b6a74cd9d549"
+    },
+    "synthetic_demo.py": {
+      "bytes": 1741,
+      "sha256": "fdf574b46a39cd9731498e774db61d184425950f299170cb42414edaace4ee23"
+    },
+    "test_fixed_panel_audit.py": {
+      "bytes": 12420,
+      "sha256": "3337c0a6cfc61403eb648df5f3e034e7b5a9d029c865124c559003ccc092d17f"
+    }
+  },
+  "chronology": "Author observations establish local software checks only; byte hashes do not authenticate preregistration or complete remote capture inventory.",
+  "claims": {
+    "competition_gain_measured": false,
+    "final_control_rerun_present": false,
+    "independent_hidden_holdout": false,
+    "native_execution_qualified": false,
+    "numerical_scorer_reproduced": false,
+    "official_score": null
+  },
+  "consumer_panel_contract": {
+    "actual_campaign_consumer_requirement": "Independently bind the original pre-outcome registration and require exactly16/every000..015 query file. Never infer count from surviving results. The generic structural reader does not authenticate that external campaign rule.",
+    "generic_reader_declared_first_k_range": [
+      1,
+      32
+    ],
+    "invented_example": 16,
+    "library_default": 16
+  },
+  "creation_utc": "2026-10-11T23:52:05.187935+00:00",
+  "excluded": [
+    "Real queries or spectra",
+    "Chemical identities or structures",
+    "Actual per-query or aggregate experiment results",
+    "Checkpoint or model code",
+    "Native run/authentication/remote-output receipts",
+    "Private input paths and identifiers"
+  ],
+  "external_mechanism_context": [
+    {
+      "author": "canqiang",
+      "scope": "ICE fallback idea, not redistributed source",
+      "url": "https://www.kaggle.com/code/canqiang/casmi26-e006-window-40-ice-fallback-true"
+    },
+    {
+      "author": "samanyu1808",
+      "scope": "ICEBERG/GLACIER evidence context, not redistributed source",
+      "url": "https://www.kaggle.com/code/samanyu1808/casmi26-iceberg-where-glacier-is-blind-lb-0-438"
+    },
+    {
+      "author": "flexonafft",
+      "scope": "Previously inspected complete-group fallback mechanism context; no third-party implementation is included"
+    }
+  ],
+  "license": "MIT applies to this original source, invented fixtures and diagram only. Rights to any actual input remain separate.",
+  "original_work": [
+    "Standard-library read-only JSON byte/hash joins",
+    "Fixed-panel membership and spectrum-order checks",
+    "Complete candidate and paired slot-preservation checks",
+    "Optional raw scalar response alignment",
+    "Invented adverse controls and source diagrams"
+  ],
+  "privacy": "All examples and published result counts are wholly invented. Actual input and experiment results require private retention under their own terms.",
+  "schema": "ORIGINAL_FIXED_PANEL_AUDIT_PROVENANCE_V1",
+  "source_scope_wording_correction": "Same-call fusion callback executes inside AP2 after popularity ordering and before later tier/dedup/final-list processing. R1 exact bytes and transport remain retained privately; final source differs only in one descriptive result constant. Prior invented controls bind unchanged logic; final CLI replay binds corrected bytes.",
+  "visual_qa": {
+    "author_pixel_review": "PASS_READABLE_NO_VISIBLE_CLIPPING",
+    "local_png_dimensions": [
+      1280,
+      820
+    ],
+    "scientific_plot": false,
+    "svg_xml": "PASS"
+  }
+}

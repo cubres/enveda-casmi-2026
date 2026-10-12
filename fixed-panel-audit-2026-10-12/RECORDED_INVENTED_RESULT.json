@@ -1,0 +1,30 @@
+{
+  "auxiliary_context": "STRUCTURAL_ONLY_NO_CAPTURED_TIER_CANDIDATE_CONTEXT",
+  "counts": {
+    "auxiliary_pairs": 0,
+    "changed_groups": 1,
+    "changed_slots": 2,
+    "constant_noop_groups": 0,
+    "control_preserved_groups": 1,
+    "declared_fallback_groups": 1,
+    "fixed_panel_size": 16,
+    "groups": 2,
+    "head_rank_l1_distance": 4,
+    "main_pairs": 1,
+    "no_main_pair_queries": 15,
+    "queries_with_rank_records": 1,
+    "scalar_bound_groups": 2,
+    "scalar_bound_main_pairs": 1,
+    "top1_changed": 1,
+    "unselected_pairs": 0
+  },
+  "evidence_kind": "WHOLLY_INVENTED_SOFTWARE_EXAMPLE_NOT_A_COMPETITION_RESULT",
+  "file_bytes_sha256_verified": true,
+  "missing_main_pairs": "ABSENCE_OF_CAPTURED_FUSION_NOT_PROOF_OF_NO_ELIGIBLE_EVIDENCE",
+  "official_score": null,
+  "producer_chronology_or_full_pair_directory_independently_authenticated": false,
+  "qualification": "PASS_FIXED_PANEL_STRUCTURAL_AUDIT_ONLY",
+  "real_results_publication": false,
+  "scalar_evidence": "ALL_MAIN_PAIRS_BOUND",
+  "scope": "Source-bound same-call fusion pairs before final-list processing; no final-control rerun, correctness, OOF or score."
+}
