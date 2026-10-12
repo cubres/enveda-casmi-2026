@@ -1,5 +1,11 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Latest measured experiment · 12 October
+
+[Native gate activation](native-gate-activation-2026-10-12/README.md) explains a completed negative result: **0 of 400 query groups activated the new ranking path**. Read the diagnosis, regenerate the figure, or reuse the original structural capture auditor. Ranking efficacy remains unmeasured; the next reference-library holdout is a separate experiment.
+
+![Native retrieval-gate activation](native-gate-activation-2026-10-12/native-gate-activation.svg)
+
 ## Earlier experiments worth reading
 
 Existing public campaign notebook: [Analog Propagation - CASMI 2026 baseline](https://www.kaggle.com/code/prvsiyan/analog-propagation-casmi-2026-baseline). This stable identity was observed public in the retained 11 October snapshot; the guide makes no current run-status or score claim.
