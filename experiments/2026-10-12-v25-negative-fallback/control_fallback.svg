@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+<title id="title">Four-group development pilot: control versus ICE fallback</title>
+<desc id="desc">All four native gates opened. ICE fallback activated in two groups. Eight separately executed final lists shared a frozen upstream base. Control MRR at 25 was 1.000; fallback MRR was 0.875, a change of minus 0.125. There were zero gains, one loss and three ties. Two sodium-adduct groups fell from 1.000 to 0.750; two proton-adduct controls remained at 1.000. The four exposed-development groups were deliberately selected for poor native library coverage; the perfect control score does not establish representative performance. Hold the fallback and verify a new baseline before more tuning.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#68788b" stroke-width="1.7"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#173047}.label{font-size:18px;font-weight:700;letter-spacing:1px}.body{font-size:20px}.small{font-size:18px;fill:#53687d}.metric{font-size:50px;font-weight:700}.edge{fill:none;stroke:#68788b;stroke-width:2.2;marker-end:url(#arrow)}</style>
+<rect width="1200" height="1200" fill="#f5f8fb"/>
+<text x="64" y="90" font-size="34" font-weight="700">Four-group development pilot</text>
+<text x="64" y="135" class="body">Deliberately selected poor-coverage sample · exposed development</text>
+<rect x="64" y="183" width="1072" height="135" rx="18" fill="#fff" stroke="#ced9e3"/>
+<text x="88" y="225" class="label">SHARED FROZEN UPSTREAM BASE</text>
+<rect x="826" y="199" width="283" height="38" rx="10" fill="#e9f0f6"/>
+<text x="967" y="225" text-anchor="middle" class="body" font-weight="700">Native gate: 4/4 open</text>
+<text x="88" y="282" class="body">4 exposed-development groups · 2 sodium-adduct + 2 proton-adduct controls</text>
+<path d="M600 318V356H322V386" class="edge"/><path d="M600 356H878V386" class="edge"/>
+<rect x="64" y="400" width="516" height="255" rx="20" fill="#e8f5f0" stroke="#8ac5ae"/>
+<text x="92" y="450" class="label">CONTROL</text>
+<text x="92" y="530" class="metric">1.000</text><text x="278" y="527" class="body">MRR@25</text>
+<text x="92" y="594" class="body">4 final lists</text>
+<rect x="620" y="400" width="516" height="255" rx="20" fill="#fcefee" stroke="#dda5a0"/>
+<text x="648" y="450" class="label">ICE FALLBACK</text>
+<text x="648" y="530" class="metric">0.875</text><text x="834" y="527" class="body">MRR@25</text>
+<text x="648" y="594" class="body">4 final lists · 2/4 fallback activations</text>
+<path d="M322 655V690H600V721" class="edge"/><path d="M878 655V690H600" fill="none" stroke="#68788b" stroke-width="2.2"/>
+<rect x="64" y="735" width="1072" height="128" rx="18" fill="#fff" stroke="#ced9e3"/>
+<text x="88" y="780" class="label">PAIRED RESULT</text><text x="345" y="784" font-size="29" font-weight="700" fill="#963e37">ΔMRR@25 = −0.125</text>
+<text x="88" y="832" class="body">0 gains · 1 loss · 3 ties</text><text x="675" y="832" class="small">8 final lists across the two arms</text>
+<rect x="64" y="900" width="516" height="101" rx="14" fill="#fff" stroke="#ced9e3"/>
+<text x="88" y="940" class="small">Sodium-adduct subgroup · 2 groups</text><text x="88" y="980" class="body" font-weight="700">MRR@25: 1.000 → 0.750</text>
+<rect x="620" y="900" width="516" height="101" rx="14" fill="#fff" stroke="#ced9e3"/>
+<text x="644" y="940" class="small">Proton-adduct controls · 2 groups</text><text x="644" y="980" class="body" font-weight="700">MRR@25: 1.000 → 1.000</text>
+<text x="64" y="1050" class="small">Exposed development only · no all-component OOF or unseen-accuracy claim</text>
+<text x="64" y="1085" class="small">Selection limits representative performance claims · no official score measured.</text>
+<text x="64" y="1148" class="body" font-weight="700">Hold the fallback. Verify a new baseline before more tuning.</text>
+</svg>

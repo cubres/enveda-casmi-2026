@@ -1,0 +1,37 @@
+{
+  "all_component_out_of_fold": false,
+  "control_mrr_at25": 1.0,
+  "fallback_activated_groups": 2,
+  "fallback_mrr_at25": 0.875,
+  "group_outcomes": {
+    "gains": 0,
+    "losses": 1,
+    "ties": 3
+  },
+  "groups": 4,
+  "interpretation": "Negative exposed-development result; no promotion",
+  "metric": "MRR@25",
+  "native_gate_open_groups": 4,
+  "next_step": "Establish and verify a new baseline before further tuning; hold the current fallback",
+  "official_score": null,
+  "paired_delta": -0.125,
+  "publication_status": "Prepared locally; not published",
+  "representative_performance_claim": false,
+  "schema": "PUBLIC_DEVELOPMENT_AGGREGATES_V1",
+  "scope": "Four groups deliberately selected for poor native library coverage; exposed development with known or unresolved prior fingerprint/ranker exposure",
+  "separately_executed_final_lists": 8,
+  "subgroups": {
+    "proton_adduct_controls": {
+      "control_mrr_at25": 1.0,
+      "fallback_mrr_at25": 1.0,
+      "groups": 2
+    },
+    "sodium_adduct": {
+      "control_mrr_at25": 1.0,
+      "fallback_mrr_at25": 0.75,
+      "groups": 2
+    }
+  },
+  "unseen_accuracy_claim": false,
+  "upstream_base_shared": true
+}
