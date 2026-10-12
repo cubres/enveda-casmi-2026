@@ -1,0 +1,135 @@
+{
+  "account": "prvsiyan",
+  "captured_receipt_scope": "SHA-256 identifiers bind locally captured qualification receipts. Raw authenticated responses and local private evidence are not bundled with this public publication record.",
+  "datasets": [
+    {
+      "captured_native_readback_receipt_sha256": "0cd382960aa7dae3f790f4b306bcc12310debb0bffb637f39908f0dc662ac0d0",
+      "dataset_ref": "prvsiyan/casmi-candidate-interop-kit",
+      "downloadable_file_count": 20,
+      "features": {
+        "fixture_row_identity": "Invented SYN IDs, not molecule identifiers",
+        "kind": "Original interoperability tools and invented NumPy fixtures",
+        "scientific_fixture_rows": 12,
+        "scope": "No chemical structures, real molecular fingerprints, spectra, model weights or competition records; numerical controls only.",
+        "utility": [
+          "Inclusive mass-window and explicit neutral/precursor conventions",
+          "Declared fingerprint width, bit order, padding, MACCS indexing and feature-contract checks",
+          "No-pickle loader and runnable local examples"
+        ]
+      },
+      "file_names_and_sizes_verified": true,
+      "local_payload_freeze_sha256": "0a6a081942df23b7c59c8444c57bee4fe2eb0d6df772adb3993879ad90b5dc52",
+      "native_dataset_id": 12541448,
+      "native_licence_display_name": "Other (specified in description)",
+      "native_readback_finished_utc": "2026-10-12T18:02:53.419538+00:00",
+      "payload_downloads_in_this_readback": 0,
+      "payload_licence_scope": "Original code, documentation, invented fixtures and diagrams: MIT; native licence is Other (specified in description).",
+      "processing_ready": true,
+      "public_ui_observed_utc": "2026-10-12T17:49:16.846Z",
+      "public_visibility_evidence_basis": "Exact native owner/ref/title/version plus the selected Public setting observed on the same canonical dataset; the missing raw privacy field and SDK defaults are not evidence.",
+      "public_visibility_verified": true,
+      "server_file_content_sha256_verified": false,
+      "title": "CASMI Candidate Interop Kit: Mass + Fingerprints",
+      "total_downloadable_bytes": 352243,
+      "url": "https://www.kaggle.com/datasets/prvsiyan/casmi-candidate-interop-kit",
+      "version_number": 1
+    },
+    {
+      "captured_native_readback_receipt_sha256": "45df324cf25645febdb6237e94c4772dc60e79745fa78c0acc6d8baa0f55f613",
+      "captured_separate_explicit_public_join_sha256": "42fcdc5fcb935c68ae2d9cb04c1a99228e550d6a72063d286a9fdd55de3840e8",
+      "dataset_ref": "prvsiyan/coconut-proton-ion-mass-index",
+      "downloadable_file_count": 20,
+      "features": {
+        "kind": "Real-source theoretical proton-ion mass index",
+        "scope": "Source position is not a molecule ID. Theoretical channels are not observed-ion assignments; chemical coverage, model performance and descriptor alignment remain unmeasured.",
+        "source_mass_rows": 436389,
+        "theoretical_ion_channels": 8,
+        "utility": [
+          "Explicit signed protonation/deprotonation, charge and homodimer channels",
+          "Aligned source-row lookup with inclusive ppm windows",
+          "Measured equal-mass multiplicity and mass-density summaries"
+        ]
+      },
+      "file_names_and_sizes_verified": true,
+      "local_payload_freeze_sha256": "84008524bf743ea36e18c5d89d05e31dcb5eff25a5bcc16dc1ada9af18a59973",
+      "native_dataset_id": 12541801,
+      "native_licence_display_name": "CC BY-NC-SA 4.0",
+      "native_readback_finished_utc": "2026-10-12T18:07:02.213328+00:00",
+      "payload_downloads_in_this_readback": 0,
+      "payload_licence_scope": "Data/compilation derivative: CC BY-NC-SA 4.0 with attribution. Original code, prose and schematic: MIT.",
+      "processing_ready": true,
+      "public_ui_observed_utc": "2026-10-12T18:06:15.432Z",
+      "public_visibility_evidence_basis": "Exact native owner/ref/title/version plus the selected Public setting observed on the same canonical dataset; the missing raw privacy field and SDK defaults are not evidence.",
+      "public_visibility_verified": true,
+      "server_file_content_sha256_verified": false,
+      "title": "COCONUT Proton Ion Atlas: 436k Mass Index",
+      "total_downloadable_bytes": 33288188,
+      "url": "https://www.kaggle.com/datasets/prvsiyan/coconut-proton-ion-mass-index",
+      "version_number": 1
+    },
+    {
+      "captured_native_readback_receipt_sha256": "d518a872f32352ec7023f2b621655eb7daf4126abd60261cb8b7976be80ab955",
+      "dataset_ref": "prvsiyan/casmi-reference-mass-ambiguity",
+      "downloadable_file_count": 19,
+      "features": {
+        "full_source_keys": 616,
+        "kind": "Real-source reference metadata and supplied-mass ambiguity",
+        "literal_CC0_reference_occurrences": 6951,
+        "ppm_windows": [
+          3,
+          10,
+          20
+        ],
+        "raw_condition_groups": 5814,
+        "scope": "Compilation/COCONUT derivative retains NC-SA4 despite the record CC0 labels. Reference neutral-mass basis, chemical overlap and descriptor/model calibration remain unqualified.",
+        "unmatched_source_keys": 0,
+        "utility": [
+          "Complete original record attribution and exact full-key evidence joins",
+          "Raw polarity/adduct/collision/institution multiplicity",
+          "Numerical COCONUT row counts at the supplied reference mass; standard-library readers and portable rebuild"
+        ]
+      },
+      "file_names_and_sizes_verified": true,
+      "local_payload_freeze_sha256": "032c8797e1aa555bf5e35c8d107eed1e7f2d6fa01d61f9ea37c86cd32e815072",
+      "native_dataset_id": 12542565,
+      "native_licence_display_name": "CC BY-NC-SA 4.0",
+      "native_readback_finished_utc": "2026-10-12T18:56:40.038958+00:00",
+      "payload_downloads_in_this_readback": 0,
+      "payload_licence_scope": "Data/compilation derivative: CC BY-NC-SA 4.0 with attribution. Original code, prose and schematic: MIT.",
+      "processing_ready": true,
+      "public_ui_observed_utc": "2026-10-12T18:47:46.992Z",
+      "public_visibility_evidence_basis": "Exact native owner/ref/title/version plus the selected Public setting observed on the same canonical dataset; the missing raw privacy field and SDK defaults are not evidence.",
+      "public_visibility_verified": true,
+      "server_file_content_sha256_verified": false,
+      "title": "MassBank x COCONUT: Reference Evidence Atlas",
+      "total_downloadable_bytes": 6711902,
+      "url": "https://www.kaggle.com/datasets/prvsiyan/casmi-reference-mass-ambiguity",
+      "version_number": 1
+    }
+  ],
+  "existing_coconut_source_documentation": {
+    "captured_exact_title_provenance_receipt_sha256": "5ced47d26b6c3ceaad8aaee15329e35f2934d0af4ce34f43a3949e18849b8126",
+    "coconut_source_href": "https://coconut.naturalproducts.net/",
+    "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+    "dataset_versions_created": 0,
+    "file_uploads": 0,
+    "notebook_mutations": 0,
+    "observed_utc": "2026-10-12T18:58:42.896Z",
+    "sources_and_collection_methodology_saved": true,
+    "title": "COCONUT 2.0 candidates + fingerprints (CASMI26)",
+    "url": "https://www.kaggle.com/datasets/prvsiyan/coconut-casmi26-candidates",
+    "version_number": 2
+  },
+  "publication_date_utc": "2026-10-12",
+  "schema": "public-casmi-dataset-publication-status-v1",
+  "scope": "Actual dataset publication/readback and existing source-description provenance. This record contains no competition evaluation or score claim.",
+  "verification_limits": {
+    "SDK_default_privacy_used_as_evidence": false,
+    "downloaded_payloads_for_readback": 0,
+    "existing_notebook_opening_art_changed_by_this_publication": false,
+    "local_freeze_hashes_are_not_remote_file_hashes": true,
+    "new_model_or_official_score": null,
+    "raw_authenticated_responses_and_private_paths_published": false,
+    "remote_content_hashes_verified": false
+  }
+}
