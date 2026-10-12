@@ -16,4 +16,4 @@ This small panel was deliberately selected for poor native library coverage and 
 
 **Next step:** establish and verify a new baseline before further tuning. Hold the current fallback.
 
-This source packet contains only authorized aggregates and original presentation assets. It has not been published. The presentation code and files are licensed under MIT; this license grants no rights to the underlying competition data.
+This public packet contains only authorized aggregates and original presentation assets. The presentation code and files are licensed under MIT; this license grants no rights to the underlying competition data.

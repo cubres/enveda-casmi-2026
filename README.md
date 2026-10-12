@@ -2,6 +2,12 @@
 
 ## Latest measured experiment · 12 October
 
+[Four-group fallback pilot](experiments/2026-10-12-v25-negative-fallback/README.md): **0 gains, 1 loss and 3 ties**, with MRR@25 changing from **1.000 to 0.875**. These four exposed development groups were deliberately selected for poor library coverage; this negative result supports holding the fallback and reproducing the stronger public baseline before more tuning.
+
+![Control and fallback comparison](experiments/2026-10-12-v25-negative-fallback/control_fallback.svg)
+
+## Earlier gate diagnosis · 12 October
+
 [Native gate activation](native-gate-activation-2026-10-12/README.md) explains a completed negative result: **0 of 400 query groups activated the new ranking path**. Read the diagnosis, regenerate the figure, or reuse the original structural capture auditor. Ranking efficacy remains unmeasured; the next reference-library holdout is a separate experiment.
 
 ![Native retrieval-gate activation](native-gate-activation-2026-10-12/native-gate-activation.svg)
