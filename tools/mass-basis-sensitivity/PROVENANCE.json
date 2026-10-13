@@ -1,0 +1,83 @@
+{
+  "schema": "original-mass-basis-companion-provenance-v1",
+  "artifact_kind": "original standard-library numerical tool and invented examples",
+  "original_material": {
+    "author_credit": "cubres",
+    "license": "MIT",
+    "license_file": "LICENSE",
+    "scope": "Original code, prose, synthetic CSV, synthetic SVG and synthetic control results in this packet.",
+    "third_party_source_code_copied": false,
+    "third_party_dataset_bytes_bundled": false
+  },
+  "invented_example": {
+    "file": "invented-masses.csv",
+    "source_row_count": 7,
+    "mass_values_da": [98.0, 100.0, 100.0, 199.0, 200.0, 201.0, 400.0],
+    "meaning": "Invented numerical values and zero-based positions; no molecular or reference-record identifiers.",
+    "duplicates_preserved": true
+  },
+  "physical_constant_convention": {
+    "quantity": "proton mass in unified atomic mass units, numerically used as Da",
+    "value": 1.0072764665789,
+    "source": "NIST CODATA 2022",
+    "url": "https://physics.nist.gov/cgi-bin/cuu/Value?mpu",
+    "meaning": "Fixed recommended central value, distinct from neutral atomic hydrogen mass. No uncertainty propagation or chemical feasibility claim."
+  },
+  "existing_public_companions": [
+    {
+      "title": "CASMI Candidate Interop Kit",
+      "url": "https://www.kaggle.com/datasets/prvsiyan/casmi-candidate-interop-kit",
+      "relationship": "Complementary invented fingerprint and mass-contract examples; no file copied here."
+    },
+    {
+      "title": "COCONUT Proton Ion Atlas",
+      "url": "https://www.kaggle.com/datasets/prvsiyan/coconut-proton-ion-mass-index",
+      "relationship": "Same eight declared proton channels; this packet implements conditional inverse windows with no candidate payload."
+    },
+    {
+      "title": "Reference Evidence and Mass Ambiguity",
+      "url": "https://www.kaggle.com/datasets/prvsiyan/casmi-reference-mass-ambiguity",
+      "relationship": "Motivates testing conditional mass interpretations. Its supplied exact_mass counts and UNQUALIFIED basis remain unchanged."
+    }
+  ],
+  "credited_dataset_lineage_not_bundled": [
+    {
+      "credit": "prvsiyan and the COCONUT team/contributors",
+      "source": "COCONUT 2.0 candidates + fingerprints (CASMI26)",
+      "url": "https://www.kaggle.com/datasets/prvsiyan/coconut-casmi26-candidates",
+      "upstream_url": "https://coconut.naturalproducts.net/",
+      "source_version_referenced_by_existing_atlas": 2,
+      "recorded_source_derivative_license": "CC BY-NC-SA 4.0",
+      "bytes_or_source_rows_read_by_this_tool_packet": false
+    },
+    {
+      "credit": "Samar Talwar, MassBank contributing institutions and each record's authors/publication/copyright",
+      "source": "CASMI 2026 Spectral Library (MassBank, harmonized)",
+      "url": "https://www.kaggle.com/datasets/samartalwar/casmi-2026-spectral-library-massbankharmonized",
+      "upstream_url": "https://github.com/MassBank/MassBank-data",
+      "source_version_referenced_by_existing_atlas": 1,
+      "recorded_compilation_derivative_license": "CC BY-NC-SA 4.0",
+      "per_record_qualification": "The related reference atlas admits literal CC0 record labels while retaining compilation/derivative NC-SA terms; this packet admits or redistributes no reference record.",
+      "bytes_or_reference_records_read_by_this_tool_packet": false
+    }
+  ],
+  "source_data_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "rights_boundary": "MIT applies to this original packet only. It grants no rights to separately downloaded or derived source data, competition data, model weights or fingerprints; retain their exact source terms and attribution.",
+  "excluded_material": [
+    "real candidate masses or molecular identities",
+    "keys, structures and fingerprints",
+    "reference records and spectra",
+    "training or private competition material",
+    "model weights and learned arrays",
+    "credentials, signed storage URLs and private carrier files",
+    "notebooks and notebook identity artifacts"
+  ],
+  "scientific_scope": {
+    "mass_basis_qualification": "UNQUALIFIED",
+    "candidate_identity_inferred": false,
+    "chemical_coverage_measured": false,
+    "model_evaluation_performed": false,
+    "competition_runtime_performed": false,
+    "official_score": null
+  }
+}

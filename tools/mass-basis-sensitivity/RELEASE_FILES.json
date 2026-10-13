@@ -1,0 +1,46 @@
+{
+  "candidate_payload_bundled": false,
+  "file_inventory_scope": "Files in this original source packet, excluding this inventory to avoid a self hash.",
+  "files": {
+    "LICENSE": {
+      "bytes": 1063,
+      "sha256": "eed854701ae3433dccb0da2fc34fb3a8b70460bb4cad7f9e1abb4145a6cdbf0e"
+    },
+    "PROVENANCE.json": {
+      "bytes": 4293,
+      "sha256": "6ae3163f117dc5dc30365880d74707ecf31972a9a591300c2c43501ef1092e6c"
+    },
+    "PUBLIC_VALIDATION.json": {
+      "bytes": 2857,
+      "sha256": "8a9cc9723650752b980491bc18ac2f3a1c0f74316a87b6df610417fbc84c76f1"
+    },
+    "README.md": {
+      "bytes": 8256,
+      "sha256": "3d89036c3a40546b5ac0c341e982af91f27f4aa81ae8f9c373ecd9a8969cf810"
+    },
+    "invented-masses.csv": {
+      "bytes": 85,
+      "sha256": "c2c144208cff5bcb24c3423b1acee939d4cb7b03bba6b7dd282bb04576fbb947"
+    },
+    "mass-basis-synthetic.svg": {
+      "bytes": 4105,
+      "sha256": "355948a0e1afee11437a349e3bdf07baabc5be2788ed1d25afd9885fbb42c004"
+    },
+    "mass_basis_sensitivity.py": {
+      "bytes": 11181,
+      "sha256": "d9f181324cb49d8a370c7ccd9c7ebaa719aa81b70947f9d279ae7082605816cd"
+    },
+    "render_mass_basis.py": {
+      "bytes": 4624,
+      "sha256": "e1f4bc15a24beef93615be35ebfeb6d40d36bc9824405e11544419ef6f729422"
+    },
+    "verify_synthetic.py": {
+      "bytes": 9534,
+      "sha256": "fcfd766eb2e9139f252559780ee001d8821d1372468ad431d1e1a3b0a64ea0ea"
+    }
+  },
+  "mass_basis_qualification": "UNQUALIFIED",
+  "official_score": null,
+  "reference_records_bundled": false,
+  "schema": "original-mass-basis-companion-release-files-v1"
+}

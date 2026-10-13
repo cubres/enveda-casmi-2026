@@ -1,0 +1,57 @@
+{
+  "schema": "original-mass-basis-companion-public-validation-v1",
+  "status": "PASS_R2_SYNTHETIC_NUMERICAL_CONTROLS_ONLY",
+  "tested_source": {
+    "mass_basis_sensitivity.py": {
+      "bytes": 11181,
+      "sha256": "d9f181324cb49d8a370c7ccd9c7ebaa719aa81b70947f9d279ae7082605816cd"
+    },
+    "verify_synthetic.py": {
+      "bytes": 9534,
+      "sha256": "fcfd766eb2e9139f252559780ee001d8821d1372468ad431d1e1a3b0a64ea0ea"
+    }
+  },
+  "completed_r2_execution": {
+    "execution_label": "root synthetic controls 2026-10-12",
+    "exit_code": 0,
+    "checks": 2068,
+    "high_precision_window_oracles": 384,
+    "positive_closed_window_direct_scan_oracles": 376,
+    "source_row_set_pair_oracles": 24,
+    "python": "3.12.14",
+    "process_cpu_seconds": 0.018449000000000007,
+    "timing_scope": "One observed process CPU measurement for these small synthetic controls; no dataset, hardware or speedup benchmark."
+  },
+  "control_methods": [
+    "50-digit Decimal affine-equation oracles using invented scalars across the eight declared channels and three interpretations",
+    "Direct closed-interval scans with duplicate endpoints and adjacent binary64 values",
+    "Independent set-based source-position intersections, unions and difference ranges",
+    "Unit-charge coincidence, dimer monomer semantics, negative channels, held inverse centers and empty unions",
+    "Malformed values, polarity conflicts, overflow, rejected lazy iterables, ownership detachment and row cap",
+    "Exclusive CLI JSON/CSV output preservation"
+  ],
+  "revision_boundary": {
+    "revision": "R2",
+    "change": "Require a built-in string for the basis enum and reject adversarial equality objects and None.",
+    "earlier_r1_scope": "An earlier synthetic run did not cover this malformed-basis case. Its source and receipts are preserved historically; they are not the final evidence for this packet.",
+    "valid_numerical_behavior_changed": false
+  },
+  "completed_renderer_and_verifier_guard_controls": {
+    "deterministic_svg_bytes": true,
+    "svg_parse": true,
+    "renderer_existing_output_refused_and_preserved": true,
+    "optimized_mode_refused_before_directory_creation": true,
+    "svg_sha256": "355948a0e1afee11437a349e3bdf07baabc5be2788ed1d25afd9885fbb42c004"
+  },
+  "diagram_scope": "Invented scalar and empty candidate bank; schematic equations and conditional windows, no real-record result or measured coverage.",
+  "reproduce": [
+    "python -B verify_synthetic.py --out a-new-control-directory",
+    "python -B render_mass_basis.py --output a-new-diagram.svg"
+  ],
+  "independent_peer_review_claimed": false,
+  "real_candidate_table_or_reference_record_read": false,
+  "mass_basis_qualification": "UNQUALIFIED",
+  "chemical_identity_or_coverage_measured": false,
+  "model_or_competition_runtime_evaluated": false,
+  "model_or_official_score": null
+}
