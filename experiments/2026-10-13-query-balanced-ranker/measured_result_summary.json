@@ -1,0 +1,353 @@
+{
+  "checkpoint_selection_exposure": "UNKNOWN",
+  "decision": "REJECT_QUERY_WEIGHTING_ARM_FOR_THIS_HISTORICAL_SCREEN",
+  "execution": {
+    "GPU_used": false,
+    "TPU_used": false,
+    "child_processes_created": 0,
+    "exit_and_stdout_evidence": "root coordinator attested actual process exit0 and matching finalstdout, result and seal",
+    "exit_code": 0,
+    "fit_calls": 4,
+    "math_threads": 1,
+    "peak_RSS_bytes": 548634624,
+    "process_CPU_seconds": 10.480522,
+    "wall_seconds_before_result_receipt": 11.914600542004337
+  },
+  "experiment": {
+    "arms": [
+      "original",
+      "query_balanced"
+    ],
+    "baseline_simulation_weights": [
+      0.3,
+      0.7
+    ],
+    "bootstrap": {
+      "percentiles": [
+        0.025,
+        0.975
+      ],
+      "repetitions": 5000,
+      "seed": 20261013,
+      "unit": "anonymous paired query"
+    },
+    "candidate_rows": 736788,
+    "features": 31,
+    "fit_params": {
+      "early_stopping": false,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.03,
+      "max_depth": 6,
+      "max_iter": 128,
+      "min_samples_leaf": 80,
+      "random_state": 0
+    },
+    "fit_roster_queries": 512,
+    "folds": 2,
+    "native_query_classes": 2963,
+    "observed_queries": 2965,
+    "original_caps": {
+      "child_processes": 0,
+      "fit_calls": 4,
+      "math_threads": 1,
+      "process_CPU_seconds": 180,
+      "sampled_peak_RSS_bytes": 2147483648,
+      "wall_seconds": 240
+    },
+    "primary": "Class2 expected MRR@25",
+    "query_simulation_groups": 5930,
+    "secondary": "Class1 expected MRR@25",
+    "single_treatment": "Inverse candidate-count row weights with one per-fold scalar matching baseline total training weight",
+    "tie_rule": "uniform exact-score tie expectation including zero RR beyond rank25"
+  },
+  "fits": [
+    {
+      "arm": "original",
+      "evaluation_queries": 1551,
+      "evaluation_rows": 388070,
+      "fold": 0,
+      "group_mass_min_max_by_simulation": [
+        [
+          0.3,
+          166.5000000000006
+        ],
+        [
+          0.7,
+          388.49999999999613
+        ]
+      ],
+      "iterations": 128,
+      "seconds": 2.239002750000509,
+      "train_queries": 231,
+      "train_rows": 54356,
+      "weight_sum": 27178.0,
+      "weight_sum_by_simulation": [
+        8153.399999999998,
+        19024.6
+      ],
+      "weighted_positive_prevalence": 0.008499521671940541
+    },
+    {
+      "arm": "query_balanced",
+      "evaluation_queries": 1551,
+      "evaluation_rows": 388070,
+      "fold": 0,
+      "group_mass_min_max_by_simulation": [
+        [
+          35.296103896103666,
+          35.29610389610421
+        ],
+        [
+          82.35757575757513,
+          82.35757575757616
+        ]
+      ],
+      "iterations": 128,
+      "seconds": 2.0825159169980907,
+      "train_queries": 231,
+      "train_rows": 54356,
+      "weight_sum": 27178.000000000004,
+      "weight_sum_by_simulation": [
+        8153.400000000001,
+        19024.600000000002
+      ],
+      "weighted_positive_prevalence": 0.03693687307951934
+    },
+    {
+      "arm": "original",
+      "evaluation_queries": 1414,
+      "evaluation_rows": 348718,
+      "fold": 1,
+      "group_mass_min_max_by_simulation": [
+        [
+          0.3,
+          150.9
+        ],
+        [
+          0.7,
+          352.0999999999967
+        ]
+      ],
+      "iterations": 128,
+      "seconds": 2.1186233749976964,
+      "train_queries": 281,
+      "train_rows": 74252,
+      "weight_sum": 37125.99999999999,
+      "weight_sum_by_simulation": [
+        11137.799999999997,
+        25988.199999999997
+      ],
+      "weighted_positive_prevalence": 0.00756881969509239
+    },
+    {
+      "arm": "query_balanced",
+      "evaluation_queries": 1414,
+      "evaluation_rows": 348718,
+      "fold": 1,
+      "group_mass_min_max_by_simulation": [
+        [
+          39.63629893238409,
+          39.636298932384584
+        ],
+        [
+          92.48469750889595,
+          92.48469750889761
+        ]
+      ],
+      "iterations": 128,
+      "seconds": 2.0618602500035195,
+      "train_queries": 281,
+      "train_rows": 74252,
+      "weight_sum": 37125.99999999999,
+      "weight_sum_by_simulation": [
+        11137.799999999997,
+        25988.19999999999
+      ],
+      "weighted_positive_prevalence": 0.027579619009816807
+    }
+  ],
+  "fresh_holdout": false,
+  "independent_recomputation": {
+    "checks_passed": 21,
+    "fresh_original_control_exact_prior_OOF_parity": true,
+    "genuine_receipt_sha256": "202784769adeb3e73816dc43e8efd75a3a04fd2a66943535fab955fa1880cc2f",
+    "reported_metric_max_abs_difference": 0.0,
+    "scope": "Independent data-only numeric and physical-pin recomputation; original process exit/stdout are root-attested",
+    "status": "PASS"
+  },
+  "known_original_omissions": {
+    "missing_mass": 1,
+    "retrieval_miss": 34,
+    "total": 35,
+    "zero_extended_MRR3000_scope": "aggregate count-only arithmetic; no new full-panel prediction join"
+  },
+  "limitations": [
+    "Sequential hypothesis on reused historical development data; prior model/checkpoint selection exposure is UNKNOWN.",
+    "Two native query alias pairs are same-fold; this exact roster has zero cross-fold native positive exposure, but this is not a fresh end-to-end validation.",
+    "Candidate metrics use anonymous pool positions and do not deduplicate candidate native identities.",
+    "Query bootstrap is not a native-class CI; 2965 queries contain2963 native classes.",
+    "35 omitted queries are count-only zero extension using known34retrieval+1mass omissions; not a new physical ordered full-panel prediction join.",
+    "Equal group mass changes weighted positive prevalence and leaf regularization/data ratios; it does not introduce an additional class-balancing treatment.",
+    "No trained-model export, native run, Kaggle submission, score claim or promotion is authorized by this source packet."
+  ],
+  "measured_date": "2026-10-13",
+  "native_score": null,
+  "official_score": null,
+  "pool_count_quantiles": {
+    "max": 689.0,
+    "median": 93.0,
+    "min": 1.0,
+    "p25": 41.0,
+    "p75": 174.0,
+    "p90": 272.0,
+    "p99": 472.72000000000025
+  },
+  "promotion_qualified": false,
+  "provenance_hashes": {
+    "actual_registration_sha256": "eda5f360f97a87dabe15e5c54d5a077f537085d9e6731e7d4652ab2877b53fb2",
+    "actual_result_sha256": "8d772aaa04df5fb1adb7a707b7822302547b74c763089da751c18d16853d18ce",
+    "actual_sealed_predictions_sha256": "6275b0e956ac7f0415c699aaa55f33f317e819dc7fd5dca655cf6100aa3f94de",
+    "actual_source_sha256": "05fae27c3f71f882fe0875c878004f5fb7dbfc1c9576d08221ac472516b07753",
+    "numeric_input_sha256": "085fe385803d33a76b62533300315e0dd722236f7895c7f9c6e9dcf1fb0fea88",
+    "prior_control_OOF_sha256": "05cf2f5bdcb50a52ff792a70a871e661d2210c13a2a2a26fdfb10d88e6f158bd"
+  },
+  "public_source_license": "MIT; not a dataset or model sublicense",
+  "redistributed_individual_predictions": false,
+  "redistributed_structures_or_native_keys": false,
+  "schema": "CASMI_PUBLIC_QUERY_BALANCED_HISTORICAL_SCREEN_V1",
+  "scope": "Reused historical anonymous candidate-ranking development only",
+  "summaries": [
+    {
+      "anonymous_queries": 2965,
+      "arms": {
+        "original": {
+          "conditional_expected_MRR25": 0.8152840805922839,
+          "count_only_zero_extended_expected_MRR3000": 0.8057724329853739,
+          "expected_top1_count": 2126.0,
+          "expected_top25_count": 2923.15,
+          "positive_prediction_tie_groups": 22
+        },
+        "query_balanced": {
+          "conditional_expected_MRR25": 0.8084526519885354,
+          "count_only_zero_extended_expected_MRR3000": 0.7990207043820025,
+          "expected_top1_count": 2098.5,
+          "expected_top25_count": 2914.291408264345,
+          "positive_prediction_tie_groups": 34
+        }
+      },
+      "endpoint_role": "secondary_Class1",
+      "losses": 281,
+      "native_class_CI_qualified": false,
+      "paired_delta_conditional_expected_MRR25": -0.006831428603748503,
+      "query_CI95": [
+        -0.012041081181936504,
+        -0.0017661158323370916
+      ],
+      "query_bootstrap_repetitions": 5000,
+      "simulation": 0,
+      "tied_prediction_metric": "uniform_exact_tie_expectation",
+      "ties": 2476,
+      "wins": 208
+    },
+    {
+      "anonymous_queries": 2965,
+      "arms": {
+        "original": {
+          "conditional_expected_MRR25": 0.9375759346516372,
+          "count_only_zero_extended_expected_MRR3000": 0.9266375487473681,
+          "expected_top1_count": 2705.0,
+          "expected_top25_count": 2937.190476190476,
+          "positive_prediction_tie_groups": 14
+        },
+        "query_balanced": {
+          "conditional_expected_MRR25": 0.9327823214149835,
+          "count_only_zero_extended_expected_MRR3000": 0.9218998609984754,
+          "expected_top1_count": 2687.0,
+          "expected_top25_count": 2932.28094849423,
+          "positive_prediction_tie_groups": 32
+        }
+      },
+      "endpoint_role": "primary_Class2",
+      "losses": 120,
+      "native_class_CI_qualified": false,
+      "paired_delta_conditional_expected_MRR25": -0.004793613236653799,
+      "query_CI95": [
+        -0.007956428004540949,
+        -0.001590728374649362
+      ],
+      "query_bootstrap_repetitions": 5000,
+      "simulation": 1,
+      "tied_prediction_metric": "uniform_exact_tie_expectation",
+      "ties": 2771,
+      "wins": 74
+    }
+  ],
+  "weight_mechanism_diagnostics": [
+    {
+      "baseline_group_mass_min_max_by_simulation": [
+        [
+          0.3,
+          166.5
+        ],
+        [
+          0.7,
+          388.5
+        ]
+      ],
+      "baseline_weight_sum": 27178.0,
+      "baseline_weighted_positive_prevalence": 0.008499521671940541,
+      "evaluation_fold": 0,
+      "query_balanced_group_mass_min_max_by_simulation": [
+        [
+          35.296103896103666,
+          35.29610389610421
+        ],
+        [
+          82.35757575757513,
+          82.35757575757616
+        ]
+      ],
+      "train_queries": 231,
+      "train_rows": 54356,
+      "training_pool_count_min_max": [
+        1,
+        555
+      ],
+      "treatment_weight_sum": 27178.000000000004,
+      "treatment_weighted_positive_prevalence": 0.03693687307951934
+    },
+    {
+      "baseline_group_mass_min_max_by_simulation": [
+        [
+          0.3,
+          150.9
+        ],
+        [
+          0.7,
+          352.09999999999997
+        ]
+      ],
+      "baseline_weight_sum": 37125.99999999999,
+      "baseline_weighted_positive_prevalence": 0.00756881969509239,
+      "evaluation_fold": 1,
+      "query_balanced_group_mass_min_max_by_simulation": [
+        [
+          39.63629893238409,
+          39.636298932384584
+        ],
+        [
+          92.48469750889595,
+          92.48469750889761
+        ]
+      ],
+      "train_queries": 281,
+      "train_rows": 74252,
+      "training_pool_count_min_max": [
+        1,
+        503
+      ],
+      "treatment_weight_sum": 37125.99999999999,
+      "treatment_weighted_positive_prevalence": 0.027579619009816807
+    }
+  ]
+}
