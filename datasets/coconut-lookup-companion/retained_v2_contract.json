@@ -1,0 +1,126 @@
+{
+  "current_votes": "UNVERIFIED",
+  "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+  "dataset_version": 2,
+  "documented_layout": {
+    "bitorder": "big",
+    "family_order": [
+      "Morgan-r2-4096",
+      "Morgan-r3-4096",
+      "RDKit-path-maxPath6-2048",
+      "MACCS-167"
+    ],
+    "full_columns": 10407,
+    "original_COCONUT_snapshot": "UNRESOLVED",
+    "packed_bytes_per_row": 867,
+    "padding_bits": 6,
+    "producer_RDKit_version": "UNRESOLVED",
+    "selected_bits": 6930
+  },
+  "evidence_is_historical": true,
+  "metadata_text_inventory_summary": {
+    "chemical_parse_calls": 0,
+    "completed_utc": "2026-10-04T14:20:54.452045+00:00",
+    "model_predictions": 0,
+    "official_score": null,
+    "rows": 436389,
+    "source_tags_present": false,
+    "unique_keys": 436389,
+    "unique_smiles_strings": 436389
+  },
+  "molecular_fingerprint_alignment_verified": false,
+  "new_official_score": null,
+  "numeric_headers": [
+    {
+      "checked_at_utc": "2026-10-07T20:34:42.358927+00:00",
+      "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+      "dataset_version": 2,
+      "file": "coco_fp.npy",
+      "inspected_bytes": 262144,
+      "npy_header": {
+        "dtype": "uint8",
+        "fortran_order": false,
+        "header_bytes": 128,
+        "shape": [
+          436389,
+          867
+        ]
+      },
+      "prefix_sha256": "c5de1196309ede5097994c3e0642b7d1991019029ab2e5fe6879baab7e1b566e",
+      "server_total_bytes": 378349391,
+      "value_payloads_inspected": false
+    },
+    {
+      "checked_at_utc": "2026-10-07T20:34:43.423893+00:00",
+      "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+      "dataset_version": 2,
+      "file": "coco_mass.npy",
+      "inspected_bytes": 262144,
+      "npy_header": {
+        "dtype": "float64",
+        "fortran_order": false,
+        "header_bytes": 128,
+        "shape": [
+          436389
+        ]
+      },
+      "prefix_sha256": "745b1b0b1639eb2b48f22fec4a46edb9287cad9a471433cf9bf0383adc9db32c",
+      "server_total_bytes": 3491240,
+      "value_payloads_inspected": false
+    },
+    {
+      "checked_at_utc": "2026-10-07T20:34:45.565306+00:00",
+      "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+      "dataset_version": 2,
+      "file": "fp_bits.npy",
+      "inspected_bytes": 55568,
+      "npy_header": {
+        "dtype": "int64",
+        "fortran_order": false,
+        "header_bytes": 128,
+        "shape": [
+          6930
+        ]
+      },
+      "prefix_sha256": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+      "server_total_bytes": 55568,
+      "value_payloads_inspected": false
+    }
+  ],
+  "numeric_small_file_receipts": [
+    {
+      "ascending": true,
+      "bytes": 3491240,
+      "checked_at_utc": "2026-10-07T20:36:46.618269+00:00",
+      "dtype": "float64",
+      "file": "coco_mass.npy",
+      "finite": true,
+      "labels_used": false,
+      "maximum_da": 1299.7599298120003,
+      "minimum_da": 100.009519128,
+      "sha256": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c",
+      "shape": [
+        436389
+      ],
+      "version": 2
+    },
+    {
+      "bytes": 55568,
+      "checked_at_utc": "2026-10-07T20:36:47.455171+00:00",
+      "dtype": "int64",
+      "file": "fp_bits.npy",
+      "labels_used": false,
+      "maximum_index": 10405,
+      "minimum_index": 2,
+      "sha256": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+      "shape": [
+        6930
+      ],
+      "unique": true,
+      "version": 2
+    }
+  ],
+  "row_level_source_terms_established": false,
+  "schema": "retained-coconut-v2-numerical-contract/1",
+  "whole_fingerprint_matrix_hashed": false
+}
