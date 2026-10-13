@@ -1,0 +1,278 @@
+{
+  "FP_native_checkpoint_exclusion_qualified": false,
+  "Full1_used": false,
+  "design": {
+    "bootstrap_samples": 5000,
+    "bootstrap_seed": 20261013,
+    "candidate_rows": 736788,
+    "fit_params": {
+      "early_stopping": false,
+      "l2_regularization": 1.0,
+      "learning_rate": 0.03,
+      "max_depth": 6,
+      "max_iter": 128,
+      "min_samples_leaf": 80,
+      "random_state": 0
+    },
+    "fit_roster_queries": 512,
+    "fold_unit": "anonymous positive pool identity; both simulations together",
+    "folds": 2,
+    "queries": 2965,
+    "query_simulation_groups": 5930,
+    "registered_caps": {
+      "child_processes": 0,
+      "fit_calls": 4,
+      "math_threads": 1,
+      "original_wall_seconds": 240.0,
+      "peak_RSS_bytes": 2147483648,
+      "process_CPU_seconds": 180.0
+    },
+    "weights": {
+      "class1": 0.3,
+      "class2": 0.7
+    }
+  },
+  "execution": {
+    "CPU_seconds": 11.901639,
+    "child_processes_created": 0,
+    "elapsed_before_receipt_seconds": 13.268057583001791,
+    "exit_code": 0,
+    "exit_code_observer": "root agent observed original session78988 final chunk b181c2",
+    "fit_calls": 4,
+    "peak_RSS_bytes": 642138112
+  },
+  "fresh_native_class_disjoint_endtoend_holdout_qualified": false,
+  "independent_result_recomputation": {
+    "every_aggregate_metric_and_bootstrap_interval_reproduced_exactly": true,
+    "model_fit_calls": 0,
+    "model_inference_calls": 0,
+    "peer_receipt_sha256": "4cca395a4739fcc27099b486c841193d0f85a149f25379dca8dc5c463ac8228b",
+    "status": "PASS"
+  },
+  "limitations": [
+    "Historical learned features and model-selection exposure remain; no fresh end-to-end holdout.",
+    "13 eligible checkpoint-even aliases are now exactly bound, but actual fingerprint checkpoint sampling is unknown.",
+    "Original raw-query bootstrap is not native-class bootstrap; original anonymous candidate ranks lack native-class deduplication.",
+    "35 original omission identities and statuses were recovered after fitting; no new predictions or native alias-aware retrieval outcomes were produced for them.",
+    "Original registration, runner and result are preserved unchanged; initial unknown-bridge fields are retained as registration-era evidence.",
+    "Current pool whole-file bytes differ and no historical original CW whole-file pin was found; original component candidate buffers corroborate all published candidate positions."
+  ],
+  "modern_Morgan_MACCS_parity_qualified": false,
+  "native_alias_disjoint_at_registration": false,
+  "native_score": null,
+  "official_score": null,
+  "original_result_limitations_preserved": [
+    "Two native alias pairs may cross anonymous folds; ordered class bridge absent.",
+    "13 odd query keys have checkpoint-even native aliases; actual FP checkpoint sampling unknown.",
+    "Historical feature/model-selection exposure; neither fresh end-to-end holdout nor modern2215 FP comparison.",
+    "Anonymous candidate MRR lacks native-class candidate deduplication.",
+    "Count-only35-failure zero extension is not an ordered physical full-panel join."
+  ],
+  "post_fit_tie_and_runtime_caveats": [
+    "Stable original candidate order resolves exact prediction ties in both arms; truth score ties occurred in36original and61treatment groups.",
+    "Sampled RSS is not a hard memory reservation; interpreter bootstrap precedes first explicit script clock."
+  ],
+  "post_run_identity_addendum": {
+    "alias_evaluations_with_fit_roster_counterpart": 0,
+    "alias_pairs": 2,
+    "all_catalog_bytewise_control_sha256": "2ec7a5a126311c5e8095816231e241c20fa7339be4ad47d7dcca3c34d2cab353",
+    "bridge_evidence_sha256": "e4f5af52bdc92a42792de321767731c74bd3958d02870e8e1eacf5446d8d4c4e",
+    "checkpoint_actual_sampling_qualified": false,
+    "checkpoint_even_alias_queries": 13,
+    "component_records_checked": 4000,
+    "creates_fresh_holdout": false,
+    "cross_registered_fold_alias_pairs": 0,
+    "historical_original_whole_pool_file_pin_found": false,
+    "model_calls": 0,
+    "native_query_classes": 2963,
+    "omission_status_counts": {
+      "SKIP_NO_MASS": 1,
+      "SKIP_TRUTH_OUTSIDE_WINDOW": 34
+    },
+    "ordered_candidate_positions_checked": 736788,
+    "ordered_pool_catalog_sha256": "cee65479d72ce20b28b072db4cee7f95f87f75b1b950d5837450e2da04ec0653",
+    "ordered_queries": 2965,
+    "original_omissions": 35,
+    "pool_catalog_bytewise_equality": true,
+    "pool_catalog_keys": 711705,
+    "pool_whole_file_byte_identity": false,
+    "ranker_positive_class_crossfold_fitting_exposures": 0,
+    "same_registered_fold_alias_pairs": 2,
+    "status": "PASS_DATA_ONLY_ORDERED_CANDIDATE_AND_NATIVE_IDENTITY_BRIDGE",
+    "structure_and_identity_rows_private": true,
+    "unpickling_calls": 0
+  },
+  "posthoc_prediction_tie_sensitivity": {
+    "checks_passed": 15,
+    "definitions": {
+      "a": "count(score > truth_score)",
+      "b": "count(score == truth_score), exact equality, no epsilon",
+      "expected_RR25": "sum(1/r for r in range(a+1, min(a+b,25)+1))/b",
+      "expected_top1": "1/b when a=0, otherwise0",
+      "expected_top25": "max(0,min(b,25-a))/b"
+    },
+    "evidence_sha256": "a80ee26cdbf33f2f147d8364381ff16770dc75daeadf22743fe6db72fa289def",
+    "independent_evidence_status": "PASS",
+    "model_fit_calls": 0,
+    "model_inference_calls": 0,
+    "scope": "Post hoc expected rank over equiprobable positions in exact prediction ties; registered stable results are unchanged",
+    "summaries": [
+      {
+        "arms": {
+          "original": {
+            "expected_MRR25": 0.8152840805922839,
+            "expected_count_only_zero_extended_MRR3000": 0.8057724329853739,
+            "expected_minus_stable_MRR25": -4.6655354812111176e-05,
+            "expected_top1_count": 2126.0,
+            "expected_top25_count": 2923.15,
+            "stable_registered_MRR25": 0.815330735947096,
+            "truth_tie_block_max_size": 24,
+            "truth_tied_groups": 22
+          },
+          "tie_neutral": {
+            "expected_MRR25": 0.8189136640752808,
+            "expected_count_only_zero_extended_MRR3000": 0.8093596713277358,
+            "expected_minus_stable_MRR25": -0.00012213736031355522,
+            "expected_top1_count": 2146.75,
+            "expected_top25_count": 2925.933650793651,
+            "stable_registered_MRR25": 0.8190358014355944,
+            "truth_tie_block_max_size": 45,
+            "truth_tied_groups": 35
+          }
+        },
+        "expected_delta_minus_registered_stable_delta": -7.54820055014439e-05,
+        "losses_expected_rr": 156,
+        "native_class_CI_qualified": false,
+        "observed_anonymous_queries": 2965,
+        "paired5000query_bootstrap_CI95": [
+          -2.804427248346136e-05,
+          0.007157803688975825
+        ],
+        "paired_delta_expected_MRR25": 0.0036295834829969563,
+        "simulation": 0,
+        "ties_expected_rr": 2613,
+        "wins_expected_rr": 196
+      },
+      {
+        "arms": {
+          "original": {
+            "expected_MRR25": 0.9375759346516372,
+            "expected_count_only_zero_extended_MRR3000": 0.9266375487473681,
+            "expected_minus_stable_MRR25": -4.874342730857138e-05,
+            "expected_top1_count": 2705.0,
+            "expected_top25_count": 2937.190476190476,
+            "stable_registered_MRR25": 0.937624678078946,
+            "truth_tie_block_max_size": 22,
+            "truth_tied_groups": 14
+          },
+          "tie_neutral": {
+            "expected_MRR25": 0.9388787110768467,
+            "expected_count_only_zero_extended_MRR3000": 0.9279251261142836,
+            "expected_minus_stable_MRR25": -3.430886319637883e-05,
+            "expected_top1_count": 2708.25,
+            "expected_top25_count": 2942.44696969697,
+            "stable_registered_MRR25": 0.9389130199400432,
+            "truth_tie_block_max_size": 43,
+            "truth_tied_groups": 26
+          }
+        },
+        "expected_delta_minus_registered_stable_delta": 1.4434564112192957e-05,
+        "losses_expected_rr": 55,
+        "native_class_CI_qualified": false,
+        "observed_anonymous_queries": 2965,
+        "paired5000query_bootstrap_CI95": [
+          -0.00099606316254508,
+          0.003609774470662223
+        ],
+        "paired_delta_expected_MRR25": 0.0013027764252094719,
+        "simulation": 1,
+        "ties_expected_rr": 2832,
+        "wins_expected_rr": 78
+      }
+    ],
+    "uniform_tie_assumption_is_competition_rule": false
+  },
+  "prediction_tie_scope": {
+    "groups_where_truth_score_ties_other_candidate_by_arm": [
+      36,
+      61
+    ],
+    "groups_with_any_prediction_ties_by_arm": [
+      5439,
+      5513
+    ],
+    "native_candidate_class_dedup_qualified": false,
+    "rule": "Independentlexsort bydescendingsealedscorethenoriginalcandidate-order index; samearm rule."
+  },
+  "primary_simulation": 1,
+  "promotion_qualified": false,
+  "provenance": {
+    "feature_sha256": "9d9f3ba18c8908bcfdcf5db1cd65fe9126be305de24747b104b3caccf88270fb",
+    "input_npz_sha256": "085fe385803d33a76b62533300315e0dd722236f7895c7f9c6e9dcf1fb0fea88",
+    "ordered_sidecar_sha256": "c52e4641fa5d237b7f8555b6063540626ec47c3b55645aca14e68bd6000d1286",
+    "prediction_sha256": "05cf2f5bdcb50a52ff792a70a871e661d2210c13a2a2a26fdfb10d88e6f158bd",
+    "registration_sha256": "8dc9fdfa535d15e1c48c93d00b11633c0a43e45b134a15962fc71b9e17b4c430",
+    "result_receipt_sha256": "c8c2da33ec45d8574a922eadd1054ab95e8631ea57f7df9aa418f18debce7165",
+    "source_sha256": "5b6ae4aebc01409a1807ed074e87a6932d6875f6ede52cd28c456ab0693e3f77"
+  },
+  "robust_ranking_gain_established": false,
+  "schema": "CASMI_PUBLIC_TIE_NEUTRAL_HISTORICAL_BENCHMARK_V1",
+  "scope": "Original anonymous historical candidate-ranking development, not native-class-disjoint holdout",
+  "secondary_simulation": 0,
+  "summaries": [
+    {
+      "anonymous_observed_queries": 2965,
+      "arms": {
+        "original": {
+          "conditional_MRR25": 0.815330735947096,
+          "count_only_zero_extended_MRR3000": 0.8058185440277132,
+          "top1_count": 2126,
+          "top25_count": 2923
+        },
+        "tie_neutral": {
+          "conditional_MRR25": 0.8190358014355944,
+          "count_only_zero_extended_MRR3000": 0.8094803837521791,
+          "top1_count": 2147,
+          "top25_count": 2926
+        }
+      },
+      "losses": 151,
+      "native_class_CI_qualified": false,
+      "paired_delta_conditional_MRR25": 0.0037050654884984,
+      "query_CI95": [
+        7.494025971261705e-05,
+        0.007249471882300164
+      ],
+      "simulation": 0,
+      "ties": 2617,
+      "wins": 197
+    },
+    {
+      "anonymous_observed_queries": 2965,
+      "arms": {
+        "original": {
+          "conditional_MRR25": 0.937624678078946,
+          "count_only_zero_extended_MRR3000": 0.9266857235013582,
+          "top1_count": 2705,
+          "top25_count": 2937
+        },
+        "tie_neutral": {
+          "conditional_MRR25": 0.9389130199400432,
+          "count_only_zero_extended_MRR3000": 0.9279590347074094,
+          "top1_count": 2708,
+          "top25_count": 2942
+        }
+      },
+      "losses": 54,
+      "native_class_CI_qualified": false,
+      "paired_delta_conditional_MRR25": 0.001288341861097279,
+      "query_CI95": [
+        -0.0009507930537172625,
+        0.003592202149494006
+      ],
+      "simulation": 1,
+      "ties": 2833,
+      "wins": 78
+    }
+  ]
+}
