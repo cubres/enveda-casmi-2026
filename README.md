@@ -1,6 +1,12 @@
 # Enveda CASMI 2026: experiments and public notebook
 
-## Latest measured experiment · 12 October
+## Latest runnable utility · 14 October
+
+[Packed Window Lab](tools/packed-window-lab/2026-10-14/README.md) checks inclusive mass windows, aligned candidate rows, explicit bit packing, dummy-bit masks and exact-score ties. The original NumPy package passed **all 14 synthetic controls** in one completed, bounded run. It includes portable source, examples, integration notes and two diagrams. No model was fitted; real producer eligibility and competition performance remain unmeasured.
+
+![The fingerprint row layout and its ignored positions](tools/packed-window-lab/2026-10-14/packing-layout.svg)
+
+## Earlier measured experiment · 12 October
 
 [Four-group fallback pilot](experiments/2026-10-12-v25-negative-fallback/README.md): **0 gains, 1 loss and 3 ties**, with MRR@25 changing from **1.000 to 0.875**. These four exposed development groups were deliberately selected for poor library coverage; this negative result supports holding the fallback and reproducing the stronger public baseline before more tuning.
 

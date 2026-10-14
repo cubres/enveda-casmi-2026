@@ -1,0 +1,53 @@
+{
+  "schema": "packed-window-lab-root-control-run-proposal/1",
+  "status": "SOURCE_ONLY_TESTS_NOT_EXECUTED",
+  "created_utc": "2026-10-13T20:35:47Z",
+  "registered_test_count": 14,
+  "registered_test_names": [
+    "test_inclusive_ppm_boundaries_duplicates_and_adjacent_floats",
+    "test_complete_aligned_interval",
+    "test_row_count_digest_and_duplicate_tokens_fail",
+    "test_unknown_producer_or_packing_strict_failure",
+    "test_vector_packed_parity_big_and_little",
+    "test_dummy_positions_cannot_contribute",
+    "test_nonzero_dummy_bits_rejected_for_both_packing_orders",
+    "test_empty_window_and_topk",
+    "test_exact_ties_cut_at_k_and_stable_tokens",
+    "test_zero_variance_and_singleton_scores_are_finite",
+    "test_finite_and_invalid_input_gates",
+    "test_invalid_packed_dtype_shape_values_and_cap",
+    "test_tiny_scale_block_scores_preserve_order",
+    "test_no_input_mutation"
+  ],
+  "caps": {
+    "complete_wall_seconds": 60,
+    "owned_process_cpu_seconds": 30,
+    "peak_rss_bytes": 536870912,
+    "math_threads": 1,
+    "owned_test_processes": 1,
+    "max_outgoing_network_requests": 0,
+    "fits": 0,
+    "max_test_output_bytes": 65536
+  },
+  "root_only_requirements": [
+    "Fresh physically pinned interpreter and installed NumPy runtime; no source installation.",
+    "Independent peer must fully read frozen source/controls before root execution.",
+    "Root reviewed controller must enforce wall/CPU/RSS/thread/output caps and collect actual exit status before claiming success.",
+    "Run only registered synthetic controls in a clean environment without API credentials or remote/model SDKs.",
+    "Keep complete failed/partial outputs intact; do not reroute guard-rejected workflows.",
+    "A controller declaration is not evidence of implemented or measured enforcement. Actual admitted controller is presently unbound."
+  ],
+  "example_command": [
+    "<root-admitted-python>",
+    "-B",
+    "-m",
+    "unittest",
+    "-v",
+    "test_window_lab.py"
+  ],
+  "working_directory": "this package directory",
+  "actual_runtime_binding": null,
+  "actual_result": null,
+  "score_or_chemical_quality": null,
+  "public_creation_or_github_publication": "root only, after physical source/readback/privacy/terms gates; no dataset or notebook identity is created here"
+}

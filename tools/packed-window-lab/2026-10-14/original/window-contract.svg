@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="350" viewBox="0 0 1000 350" role="img" aria-labelledby="title desc">
+<title id="title">Packed Window Lab: one checked interval, two declared blocks, visible ties</title>
+<desc id="desc">Original conceptual diagram. Synthetic mass axis and aligned rows enter an inclusive neutral-mass window. Explicit bit order and zero dummy positions precede scoring and top-k tie reporting. Unknown producer packing stops the flow. No measured scientific result is illustrated.</desc>
+<rect width="1000" height="350" rx="18" fill="#111d32"/>
+<text x="36" y="40" fill="#f8f4e8" font-family="sans-serif" font-size="23" font-weight="bold">Check the contract before scoring the window</text>
+<text x="36" y="66" fill="#b6c6db" font-family="sans-serif" font-size="14">Original synthetic mechanics · no chemistry, learned model or score claim</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#94b6ce"/></marker></defs>
+<g font-family="sans-serif" font-size="15" text-anchor="middle">
+<rect x="35" y="108" width="210" height="105" rx="12" fill="#23384c" stroke="#94b6ce"/>
+<text x="140" y="137" fill="#ffffff">Same row permutation</text><text x="140" y="163" fill="#c7d9e7">neutral masses · tokens · bits</text><text x="140" y="187" fill="#c7d9e7">trusted physical joins</text>
+<rect x="278" y="108" width="190" height="105" rx="12" fill="#23384c" stroke="#94b6ce"/>
+<text x="373" y="137" fill="#ffffff">Inclusive 10 ppm</text><text x="373" y="163" fill="#c7d9e7">one shared lo:hi slice</text><text x="373" y="187" fill="#c7d9e7">keep boundary duplicates</text>
+<rect x="501" y="108" width="218" height="105" rx="12" fill="#23384c" stroke="#94b6ce"/>
+<text x="610" y="137" fill="#ffffff">Declared 277-byte rows</text><text x="610" y="163" fill="#c7d9e7">Morgan 2048 · MACCS 167</text><text x="610" y="187" fill="#c7d9e7">key 0 + padding = zero</text>
+<rect x="752" y="108" width="213" height="105" rx="12" fill="#375a52" stroke="#9dc7b8"/>
+<text x="858" y="137" fill="#ffffff">Scores + top k</text><text x="858" y="163" fill="#d7ece3">true logits · exact ties</text><text x="858" y="187" fill="#d7ece3">full cut-tie size recorded</text>
+<rect x="501" y="253" width="218" height="55" rx="12" fill="#604333" stroke="#e3b488"/>
+<text x="610" y="275" fill="#ffffff">Unknown producer or packing</text><text x="610" y="296" fill="#ffe5c6">HOLD · never infer the format</text>
+</g>
+<g stroke="#94b6ce" stroke-width="2" marker-end="url(#arrow)"><path d="M245 160H276"/><path d="M468 160H499"/><path d="M719 160H750"/><path d="M610 214V250"/></g>
+<text x="36" y="320" fill="#b6c6db" font-family="sans-serif" font-size="13">Truth stays on a separate evaluation branch. Width and a digest alone do not prove chemistry or lawful reuse.</text>
+</svg>

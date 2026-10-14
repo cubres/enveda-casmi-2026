@@ -1,0 +1,86 @@
+{
+  "schema": "packed-window-lab-public-mechanics-result/1",
+  "status": "PASS_ACTUAL_14_SYNTHETIC_MECHANICS_CONTROLS_ONLY",
+  "receipt_observed_utc": "2026-10-14T00:24:44.374982+00:00",
+  "tests_run": 14,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "expected_failures": 0,
+  "unexpected_successes": 0,
+  "tests": [
+    {
+      "name": "test_inclusive_ppm_boundaries_duplicates_and_adjacent_floats",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_complete_aligned_interval",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_row_count_digest_and_duplicate_tokens_fail",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_unknown_producer_or_packing_strict_failure",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_vector_packed_parity_big_and_little",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_dummy_positions_cannot_contribute",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_nonzero_dummy_bits_rejected_for_both_packing_orders",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_empty_window_and_topk",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_exact_ties_cut_at_k_and_stable_tokens",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_zero_variance_and_singleton_scores_are_finite",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_finite_and_invalid_input_gates",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_invalid_packed_dtype_shape_values_and_cap",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_tiny_scale_block_scores_preserve_order",
+      "outcome": "PASS"
+    },
+    {
+      "name": "test_no_input_mutation",
+      "outcome": "PASS"
+    }
+  ],
+  "recorded_external_exit": 0,
+  "tested_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "platform": "macOS arm64"
+  },
+  "original_source_manifest_sha256": "7c2ddb6b0106894247c4cbe26bcffb1316b8442e4ebcb1b3f3425724bf520c3e",
+  "completed_run_receipt_sha256": "105bb245fd8c02cae522c4fe5b1c3e9705d2e8f822d9805a2425cabdf39feeed",
+  "fits": 0,
+  "real_data_loaded": false,
+  "producer_eligibility": "UNKNOWN",
+  "native_launches": 0,
+  "submissions": 0,
+  "competition_score": null,
+  "scientific_quality_claim": false,
+  "scope": "One completed run of invented array/interface controls. Does not validate external data, chemical identity, model quality, runtime portability or future monitor reliability.",
+  "sanitization": "Counts, original source commitment, completed receipt commitment and generic runtime only; no local paths, controller source, process IDs, runtime file inventories, SDK pins or credentials."
+}

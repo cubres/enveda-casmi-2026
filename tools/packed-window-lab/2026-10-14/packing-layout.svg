@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="420" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+  <title id="title">Declared packing contract: 277 bytes, 2216 positions</title>
+  <desc id="desc">Original conceptual diagram. Positions 0 through 2047 contain the declared Morgan block; position 2048 is unused MACCS key zero; positions 2049 through 2214 contain declared MACCS keys 1 through 166; position 2215 is final padding. Both unused positions must be zero. Bit order must be declared, and real producer eligibility remains unknown. This is not a measured result or a chemical definition.</desc>
+  <rect width="1120" height="420" rx="20" fill="#101d31"/>
+  <g font-family="sans-serif">
+    <text x="40" y="47" font-size="25" font-weight="bold" fill="#f5f2e7">277 bytes · 2,216 declared positions · 2,214 active bits</text>
+    <text x="40" y="77" font-size="15" fill="#bccbdf">A layout contract, not a fingerprint generator or proof of producer compatibility</text>
+    <rect x="40" y="116" width="520" height="86" rx="10" fill="#214c67"/>
+    <rect x="578" y="116" width="102" height="86" rx="10" fill="#77513a"/>
+    <rect x="698" y="116" width="258" height="86" rx="10" fill="#28574d"/>
+    <rect x="974" y="116" width="106" height="86" rx="10" fill="#77513a"/>
+    <g text-anchor="middle" fill="#ffffff">
+      <text x="300" y="147" font-size="20" font-weight="bold">Declared Morgan block</text>
+      <text x="300" y="178" font-size="16">positions 0:2048 · active</text>
+      <text x="629" y="147" font-size="17" font-weight="bold">Key 0</text>
+      <text x="629" y="177" font-size="16">2048 = 0</text>
+      <text x="827" y="147" font-size="19" font-weight="bold">MACCS keys 1–166</text>
+      <text x="827" y="178" font-size="16">2049:2215 · active</text>
+      <text x="1027" y="147" font-size="17" font-weight="bold">Padding</text>
+      <text x="1027" y="177" font-size="16">2215 = 0</text>
+    </g>
+    <text x="40" y="229" font-size="14" fill="#bccbdf">Blocks above are schematic, not drawn in proportion. Python ranges exclude the right endpoint.</text>
+    <rect x="40" y="256" width="502" height="93" rx="12" fill="#1b3047" stroke="#6087a4"/>
+    <text x="60" y="284" font-size="18" font-weight="bold" fill="#e5edf6">Explicit packing, never inferred</text>
+    <text x="60" y="309" font-size="14" fill="#c8d6e7">big: key 0 is byte 256 mask 0x80; padding byte 276 mask 0x01</text>
+    <text x="60" y="331" font-size="14" fill="#c8d6e7">little: key 0 is byte 256 mask 0x01; padding byte 276 mask 0x80</text>
+    <rect x="560" y="256" width="520" height="93" rx="12" fill="#1b3047" stroke="#6087a4"/>
+    <text x="580" y="284" font-size="18" font-weight="bold" fill="#e5edf6">One row order through the entire window</text>
+    <text x="580" y="309" font-size="14" fill="#c8d6e7">mass axis + unique tokens + packed rows → same inclusive slice</text>
+    <text x="580" y="331" font-size="14" fill="#c8d6e7">true logits → valid-bit scores → top k with complete tie sizes</text>
+    <text x="40" y="391" font-size="15" fill="#e5bf92">Unknown producer or packing: refuse use. Invented fixtures and passing mechanics controls establish no model-quality gain.</text>
+  </g>
+</svg>

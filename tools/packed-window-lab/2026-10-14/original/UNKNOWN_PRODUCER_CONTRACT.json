@@ -1,0 +1,14 @@
+{
+  "schema": "packed-window-lab-real-producer-admission/1",
+  "producer_status": "UNKNOWN",
+  "producer_id": "UNKNOWN",
+  "bitorder": null,
+  "layout": "morgan2048-maccs167-pad1",
+  "actual_generator_preprocessing_options_version": null,
+  "actual_candidate_mass_token_fingerprint_hashes": null,
+  "externally_trusted_common_row_manifest": null,
+  "actual_model_target_and_logit_aggregation_contract": null,
+  "molecular_identity_normalization": null,
+  "current_competition_and_publication_eligibility": "UNKNOWN",
+  "warning": "Deliberately refused. Do not fill fields by guessing from widths or filenames. Caller declarations are not independent physical or legal qualification."
+}

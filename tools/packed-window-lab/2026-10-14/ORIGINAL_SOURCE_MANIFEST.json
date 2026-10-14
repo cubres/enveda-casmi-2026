@@ -1,0 +1,74 @@
+{
+  "schema": "packed-window-lab-original-snapshot/1",
+  "original_source_manifest_sha256": "7c2ddb6b0106894247c4cbe26bcffb1316b8442e4ebcb1b3f3425724bf520c3e",
+  "source_file_count": 11,
+  "preservation": "All 11 files copied byte for byte; historical source-only/proposal text remains in the snapshot. Read the release README and MECHANICS_RESULT.json for the later completed synthetic control result.",
+  "files": [
+    {
+      "name": "LICENSE.txt",
+      "bytes": 1261,
+      "sha256": "8768b98eba7d38ce93c888e352299ee6b6380ebb18a3c4a1e909b1c3dc868270",
+      "path": "original/LICENSE.txt"
+    },
+    {
+      "name": "PUBLIC_ASSET_PROPOSAL.json",
+      "bytes": 496,
+      "sha256": "aa24b0cd14aaf5b2d5124f3618344ff2611ede95c6c90c590d12a8c397cb74e0",
+      "path": "original/PUBLIC_ASSET_PROPOSAL.json"
+    },
+    {
+      "name": "README.md",
+      "bytes": 7223,
+      "sha256": "6c63da61c6ce4fb1034edf29e75ea11d8bfd03f5ba6b8def68950c4482139ba0",
+      "path": "original/README.md"
+    },
+    {
+      "name": "ROOT_CONTROL_RUN_PLAN.json",
+      "bytes": 2298,
+      "sha256": "b0925ebc314464e0ce6c22f73debde11ed364c77c29ae9c37a485ece5445ebbd",
+      "path": "original/ROOT_CONTROL_RUN_PLAN.json"
+    },
+    {
+      "name": "SOURCES.md",
+      "bytes": 3437,
+      "sha256": "bc7c1859919bb64622f0b8f8328c0cd81361cc5c0d3ceee8f7ab9ddd4efeff21",
+      "path": "original/SOURCES.md"
+    },
+    {
+      "name": "UNKNOWN_PRODUCER_CONTRACT.json",
+      "bytes": 686,
+      "sha256": "008eeda976dd325d7f71f50598cd28c57adbfbc793ac80e4946376236e0a3aa8",
+      "path": "original/UNKNOWN_PRODUCER_CONTRACT.json"
+    },
+    {
+      "name": "block_balance_r2.py",
+      "bytes": 4714,
+      "sha256": "c37c77e2744512c0431a7e8360c5902b3b6cb8a7aa0a92cd29e0812d5e00a9e2",
+      "path": "original/block_balance_r2.py"
+    },
+    {
+      "name": "packed_window_lab.py",
+      "bytes": 10831,
+      "sha256": "6754b915d060e66d579e16d2c8efd7a9f35f6fa414e1a1d11ddb3caa0f6e448e",
+      "path": "original/packed_window_lab.py"
+    },
+    {
+      "name": "synthetic_demo.py",
+      "bytes": 2397,
+      "sha256": "0041ad257669f1e0d8855e3785f01002bfecb2e219233fdaa4112b7c50e7cc7c",
+      "path": "original/synthetic_demo.py"
+    },
+    {
+      "name": "test_window_lab.py",
+      "bytes": 6437,
+      "sha256": "891276834d6b103b96d4e165bcc4ea4e1a132b1c98a18b4633f3967fc4ae9537",
+      "path": "original/test_window_lab.py"
+    },
+    {
+      "name": "window-contract.svg",
+      "bytes": 2862,
+      "sha256": "f7f1ee3aae204310f363595451ce0d3d213d2715164c7217aab8efd336609567",
+      "path": "original/window-contract.svg"
+    }
+  ]
+}
