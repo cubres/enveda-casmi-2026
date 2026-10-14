@@ -1,0 +1,113 @@
+{
+  "record_kind": "one completed synthetic qualification; sanitized public record",
+  "scope": "original NumPy sampler mechanics on invented indices only; no training, inference or score evaluation",
+  "source_sha256": "d2edd84f6db5d0d9138b6576ccda94b6f322e04424fe7c2c2db448f045421ea6",
+  "plan_fixed_before_sampling": {
+    "seed": 20261014,
+    "draws": 24000,
+    "batch": 2,
+    "eligible_structure_ids": [
+      0,
+      3,
+      4
+    ],
+    "eligible_spectrum_ids": [
+      0,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "group_multiplicities": [
+      1,
+      2,
+      5
+    ],
+    "structure_probability_per_slot": 0.3333333333333333,
+    "structure_inclusion_probability_per_batch": 0.6666666666666666,
+    "conditional_spectrum_probability": "1/n",
+    "tolerance": "six binomial standard deviations, fixed before sampling",
+    "zero_variance_tolerance": 0,
+    "excluded_roles_and_invalid_positive_maps_never_sampled": true
+  },
+  "result": {
+    "status": "PASS_NEW_SYNTHETIC_SAMPLER_QUALIFICATION_ONLY",
+    "numpy_version": "2.2.6",
+    "checks": {
+      "literal_eligible_groups_and_role_exclusion": true,
+      "seed_reproducibility": true,
+      "singleton_and_distinct_structures": true,
+      "invalid_batches_and_eligibility_rejected": true,
+      "unbiased_structure_inclusion_and_conditional_spectra": true
+    },
+    "structure_counts": {
+      "0": 15881,
+      "3": 16015,
+      "4": 16104
+    },
+    "structure_expected_count": 16000.0,
+    "structure_six_sigma_tolerance": 438.17804600413285,
+    "conditional_counts": [
+      {
+        "structure": 0,
+        "rows": [
+          0
+        ],
+        "counts": [
+          15881
+        ],
+        "total": 15881,
+        "six_sigma_tolerance": 0.0
+      },
+      {
+        "structure": 3,
+        "rows": [
+          6,
+          7
+        ],
+        "counts": [
+          7953,
+          8062
+        ],
+        "total": 16015,
+        "six_sigma_tolerance": 379.6511556679368
+      },
+      {
+        "structure": 4,
+        "rows": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "counts": [
+          3171,
+          3159,
+          3271,
+          3292,
+          3211
+        ],
+        "total": 16104,
+        "six_sigma_tolerance": 304.5636879209339
+      }
+    ],
+    "baseline_per_slot_multiplicity_probabilities": [
+      0.125,
+      0.25,
+      0.625
+    ],
+    "candidate_per_slot_structure_probability": 0.3333333333333333,
+    "elapsed_seconds": 0.4123095409995585,
+    "observed_utc": "2026-10-14T14:57:53.541371+00:00",
+    "training_fits": 0,
+    "official_score": null,
+    "model_or_training_data_access": false,
+    "network": false,
+    "notebook_changes": false
+  },
+  "interpretation": "Observed counts passed predeclared six-sigma bounds on invented data; this is not a model-quality result or a proof of unbiasedness."
+}
