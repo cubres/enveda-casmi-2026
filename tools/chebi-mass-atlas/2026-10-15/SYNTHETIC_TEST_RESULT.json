@@ -1,0 +1,18 @@
+{
+  "status": "PASS_INVENTED_TEXT_ONLY",
+  "tests_run": 23,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "completed_at": "2026-10-15T12:52:35.602740+00:00",
+  "peak_rss_bytes": 34471936,
+  "scientific_imports": false,
+  "archive_or_real_record_read": false,
+  "model_or_array_loads": false,
+  "network_calls": 0,
+  "notebook_mutations": false,
+  "bank_qualified": false,
+  "scanner_sha256": "93128cf7d73794119223fe76236dde0d7be8d1b1627f05d4476bc9ed16c8da23",
+  "synthetic_tests_sha256": "f84f981d49dc32974137b88f5c722719fe785bbb4db1f556e8b7185bb1799bcf",
+  "scope": "Invented-text parser contract only; no chemical validity or full-bank evidence."
+}
