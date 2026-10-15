@@ -1,0 +1,54 @@
+{
+  "authors": "cubres contributors",
+  "competition_records_redistributed": false,
+  "existing_repository_evidence": {
+    "claim": "Existing repository identity only; this new packet has not been published.",
+    "path": "tools/sdf-envelope/2026-10-15",
+    "verified_previous_publication_commit": "efe101392c5d242dad8560c1b7b8069f028efdfc"
+  },
+  "fixtures": "Two invented IDs and hand-written candidate strings. All runtime observations and receipts in the demo are fabricated test values, not native execution evidence.",
+  "independent_source_review_sha256": "a0c7fb5ed5700129651e36dfd7bf06848d86ec32f77b884bb7e6f00b818cbd57",
+  "intended_existing_repository": "https://github.com/cubres/enveda-casmi-2026",
+  "license": "MIT",
+  "license_file": "CODE_LICENSE.txt",
+  "native_status": {
+    "native_canary_pass_claimed": false,
+    "root_reported_at_utc": "2026-10-15T17:17:00Z",
+    "status": "RUNNING",
+    "version": 35,
+    "worker_polled_native_status": false
+  },
+  "new_original_demo": {
+    "file": "demo_synthetic.py",
+    "sha256": "ddc59c5192dfeef2bed34e4c7bdd1fd9e87966329c83c91f02bfc6b4cb15a7bc",
+    "source": "Adapted from original four-case synthetic test helper; no third-party code or data."
+  },
+  "notebook_mutations": false,
+  "official_score_claimed": false,
+  "original_synthetic_four_case_receipt_sha256": "e61654665e214d126eebcca2700f261445db446f6a0e39661e1fd58bcd51d0a3",
+  "private_canary_rows_redistributed": false,
+  "proposed_additive_prefix": "tools/completed-output-validator/2026-10-15",
+  "public_demo_result": {
+    "cases": 4,
+    "file": "SYNTHETIC_DEMO_RESULT.json",
+    "native_evidence": false,
+    "sha256": "27067ff81e67a4e8d41631b9ead00a95fd7363888c91f7293312d9d5be0758a2",
+    "status": "PASS_SYNTHETIC_DEMO"
+  },
+  "publication_performed_by_packet_author": false,
+  "review_scope": "Original validator source and exact source-derived bindings; no actual native output qualification. New public demo receives separate artifact review.",
+  "schema": "casmi-v35-output-validator-public-provenance/1",
+  "scientific_assay_rerun": false,
+  "source_license_scope": "MIT covers this original tool/demo and documentation. Metadata references do not license referenced datasets, weights or notebooks.",
+  "unchanged_reviewed_files": {
+    "validate_completed_output.py": {
+      "bytes": 15407,
+      "sha256": "2d214f73a14935f1fcaa9877d6e05d1f668bd4fc2e9d0975933d34edc59e4d5e"
+    },
+    "validation_bindings.json": {
+      "sha256": "4175116ccd23f865f1a4abfc797ed6a39a7fba5b62ad8a784adce9ae42d0af02"
+    }
+  },
+  "weights_redistributed": false,
+  "year": 2026
+}
