@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Enveloped SGroup scope decision",
+  "type": "object",
+  "required": ["schema", "record_ordinal", "record_sha256", "record_bytes", "status", "reason", "envelope", "scope"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "enveloped-sgroup-scope/1"},
+    "record_ordinal": {"description": "Caller-supplied JSON-compatible ordinal; not database identity."},
+    "record_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "record_bytes": {"type": "integer", "minimum": 0},
+    "status": {"enum": ["hold", "admit_scope", "exclude_scope"]},
+    "reason": {"type": "string"},
+    "envelope": {
+      "type": "object",
+      "required": ["schema", "record_sha256", "record_bytes", "status", "reason", "inspection_complete", "molblock_end_line", "delimiter_line", "property_headers", "offending_line"],
+      "additionalProperties": false,
+      "properties": {
+        "schema": {"const": "strict-single-sdf-envelope/1"},
+        "record_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "record_bytes": {"type": "integer", "minimum": 0},
+        "status": {"enum": ["hold", "admit_envelope"]},
+        "reason": {"type": "string"},
+        "inspection_complete": {"type": "boolean"},
+        "molblock_end_line": {"type": ["integer", "null"], "minimum": 1},
+        "delimiter_line": {"type": ["integer", "null"], "minimum": 1},
+        "offending_line": {"type": ["integer", "null"], "minimum": 1},
+        "property_headers": {
+          "type": "array",
+          "items": {
+            "type": "object", "required": ["name", "line"], "additionalProperties": false,
+            "properties": {"name": {"type": "string", "minLength": 1}, "line": {"type": "integer", "minimum": 1}}
+          }
+        }
+      }
+    },
+    "scope": {"type": ["object", "null"], "description": "Unmodified raw-molblock-sgroup-scope/1 scanner result, or null when the envelope holds."}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"envelope": {"properties": {"status": {"const": "hold"}}}}},
+      "then": {"properties": {"status": {"const": "hold"}, "scope": {"type": "null"}}},
+      "else": {"properties": {"scope": {"type": "object"}}}
+    }
+  ]
+}

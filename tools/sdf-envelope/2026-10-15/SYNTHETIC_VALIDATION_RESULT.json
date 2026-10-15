@@ -1,0 +1,25 @@
+{
+  "schema": "synthetic-sdf-envelope-validation/1",
+  "status": "PASS",
+  "returncode": 0,
+  "wall_seconds": 0.126455334,
+  "peak_child_rss_bytes": 18874368,
+  "budget": {
+    "wall_seconds": 15,
+    "peak_child_rss_bytes": 134217728
+  },
+  "python": "3.9.6",
+  "platform": "Darwin",
+  "test_output": "test_content_or_second_delimiter_after_delimiter_held (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_crlf_hash_is_exact_and_differs_from_lf (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_ctab_and_header_strings_inside_value_are_literal (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_delimiter_and_trailing_blank_lines (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_delimiter_before_end_held (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_delimiter_ends_unterminated_value (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_duplicate_chebi_metadata_still_holds (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_empty_property_value (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_invalid_utf8_size_line_and_missing_end_limits_hold (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_malformed_and_empty_headers_hold (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_no_metadata_admits_scope_only (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_scanner_hold_is_not_relaxed (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_second_end_outside_property_held (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_str_and_bytes_equivalent (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_type_error_has_no_implicit_coercion (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_undelimited_second_ctab_was_ignored_now_held (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_unframed_group_property_was_ignored_now_held (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_valid_group_is_still_excluded_by_unchanged_scanner (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_valid_metadata_preserves_exact_old_decision (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\ntest_whitespace_value_does_not_create_false_header (test_strict_sdf_envelope.StrictEnvelopeTests) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.006s\n\nOK\n",
+  "fixture_scope": "newly invented CTAB text only; no real record, bank, controller, fingerprint, or notebook",
+  "original_scanner_sha256_before": "93128cf7d73794119223fe76236dde0d7be8d1b1627f05d4476bc9ed16c8da23",
+  "original_scanner_sha256_after": "93128cf7d73794119223fe76236dde0d7be8d1b1627f05d4476bc9ed16c8da23",
+  "vendored_scanner_sha256": "93128cf7d73794119223fe76236dde0d7be8d1b1627f05d4476bc9ed16c8da23",
+  "source_hashes": {
+    "test_strict_sdf_envelope.py": "59c10ff39e49b9419edf33c1ee61695302fe6fc46d31a3dbeb0dfee0dadad470",
+    "CODE_LICENSE.txt": "6e06c9c6e7133278d838cce8be8e54c0b49adb304be6270515072c23cacdd5a5",
+    "strict_sdf_envelope.py": "a13c57a5aef97793b5a664a90b5de61398d82dc3cf276a9c80d207b7bcab5d53",
+    "example_synthetic.py": "7bed404e8b8c8247d2688c2b75bf786f56cc278753df08302f2f55e6be85cbf4",
+    "raw_molblock_sgroup_scope.py": "93128cf7d73794119223fe76236dde0d7be8d1b1627f05d4476bc9ed16c8da23"
+  }
+}

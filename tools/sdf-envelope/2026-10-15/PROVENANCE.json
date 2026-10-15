@@ -1,0 +1,21 @@
+{
+  "schema": "sdf-envelope-source-provenance/1",
+  "authors": "cubres contributors",
+  "year": 2026,
+  "license": "MIT",
+  "license_file": "CODE_LICENSE.txt",
+  "new_original_files": ["strict_sdf_envelope.py", "test_strict_sdf_envelope.py", "test_v3000_envelope.py", "example_synthetic.py", "decision.schema.json", "README.md"],
+  "unchanged_dependency": {
+    "file": "raw_molblock_sgroup_scope.py",
+    "source_repository": "https://github.com/cubres/enveda-casmi-2026",
+    "source_commit": "62075aa71bb063a631a20423775ed453c43c347e",
+    "sha256": "93128cf7d73794119223fe76236dde0d7be8d1b1627f05d4476bc9ed16c8da23",
+    "license": "MIT",
+    "modified": false
+  },
+  "fixtures": "Newly invented zero-atom CTAB and metadata strings; parser tests only, not chemical validity examples.",
+  "data_redistributed": false,
+  "bank_qualified": false,
+  "real_record_evaluation": false,
+  "competition_score_claim": false
+}

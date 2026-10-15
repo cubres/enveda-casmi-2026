@@ -1,0 +1,20 @@
+{
+  "schema": "synthetic-sdf-envelope-validation/1",
+  "status": "PASS",
+  "returncode": 0,
+  "wall_seconds": 0.06541904200000001,
+  "peak_child_rss_bytes": 15892480,
+  "budget": {
+    "wall_seconds": 15,
+    "peak_child_rss_bytes": 134217728
+  },
+  "python": "3.9.6",
+  "platform": "Darwin",
+  "test_output": "test_empty_v3000_scope_equality (test_v3000_envelope.V3000EnvelopeTests) ... ok\ntest_sru_v3000_scope_equality (test_v3000_envelope.V3000EnvelopeTests) ... ok\ntest_undelimited_v3000_append_held (test_v3000_envelope.V3000EnvelopeTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n",
+  "fixture_scope": "three new invented V3000 text fixtures only; no prior test suite or consumed assay repeated",
+  "source_hashes": {
+    "strict_sdf_envelope.py": "a13c57a5aef97793b5a664a90b5de61398d82dc3cf276a9c80d207b7bcab5d53",
+    "test_v3000_envelope.py": "182b4640e4091ed8a450c2882158745b52feb28dc54af9c467ef1535d05df5e3",
+    "raw_molblock_sgroup_scope.py": "93128cf7d73794119223fe76236dde0d7be8d1b1627f05d4476bc9ed16c8da23"
+  }
+}
