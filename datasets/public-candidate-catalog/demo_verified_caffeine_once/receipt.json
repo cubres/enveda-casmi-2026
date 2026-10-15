@@ -1,0 +1,14 @@
+{
+  "schema": "chebi-small-candidate-schema-demo/1",
+  "source_url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/27732/",
+  "validated_utc": "2026-10-15T17:30:43.219927+00:00",
+  "input_mode": "existing_snapshot",
+  "bytes": 46861,
+  "sha256": "d7d96d4aaac053f52b78b4ddf52fb295d0b54edaaf00fc7510b4ee26c227c753",
+  "monthly_data_release": null,
+  "data_license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "ChEBI, EMBL-EBI; source URL and snapshot hash above; CC BY 4.0.",
+  "transformation": "Selected and renamed fields only; original decimal strings and structure identifiers retained.",
+  "scope": "Schema checks only. No chemical normalization, polymer qualification, fingerprint compatibility, model evaluation or competition score."
+}

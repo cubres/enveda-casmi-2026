@@ -1,0 +1,76 @@
+{
+  "status": "PASS_OFFLINE_SCHEMA_CHECKS_ONLY",
+  "observed_utc": "2026-10-15T17:34:18.109589+00:00",
+  "demo_sha256": "f1a0c29e6e76999232021ec25f9bff7538694215ebd7caa6fa7a218e983cac0d",
+  "snapshot_sha256": "d7d96d4aaac053f52b78b4ddf52fb295d0b54edaaf00fc7510b4ee26c227c753",
+  "checks": [
+    {
+      "name": "exact_public_caffeine_schema_and_distinct_mass_strings",
+      "passed": true
+    },
+    {
+      "name": "boolean_id",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "wrong_accession",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "unreleased",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "lower_curation",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "charged",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "missing_structure",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "nonfinite_mass",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "negative_mono_mass",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "invalid_inchikey",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "generic_r_group",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "duplicate_JSON_key",
+      "passed": true,
+      "expected": "reject"
+    },
+    {
+      "name": "nonfinite_JSON_number",
+      "passed": true,
+      "expected": "reject"
+    }
+  ],
+  "network_calls": 0,
+  "bulk_data_downloads": 0,
+  "scientific_calculations": 0,
+  "scope": "One retained public caffeine response and 12 invented invalid-input controls; not chemical, native runtime, or model qualification."
+}

@@ -1,0 +1,177 @@
+{
+  "schema": "casmi-public-candidate-catalog/1",
+  "observed_date": "2026-10-15",
+  "purpose": "Version, schema, rights and bounded reproducibility examples; no competition evaluation.",
+  "coconut": {
+    "dataset_ref": "prvsiyan/coconut-casmi26-candidates",
+    "dataset_id": 12039473,
+    "version": 2,
+    "version_url": "https://www.kaggle.com/datasets/prvsiyan/coconut-casmi26-candidates/versions/2",
+    "version_created_utc": "2026-09-15T19:42:45.477Z",
+    "public": true,
+    "published_license": "CC-BY-NC-SA-4.0",
+    "advertised_bytes": 423346355,
+    "metadata_snapshot": {
+      "path": "COCONUT_PUBLIC_METADATA.json",
+      "bytes": 22677,
+      "sha256": "c67159b1a74f0b1c8f4e141fb4706de0ec6bf12d01b1700501b3d94ee0d1a7e4",
+      "observed_utc": "2026-10-15T17:26:17.220696Z"
+    },
+    "files": [
+      {
+        "name": "coco_fp.npy",
+        "bytes": 378349391,
+        "shape": [
+          436389,
+          867
+        ],
+        "dtype": "|u1",
+        "fortran_order": false,
+        "evidence": "publisher card + existing local NPY header only",
+        "full_sha256": null,
+        "header_sha256": "69812d3daee8b8d4f13ae7ddda2625d7d9842e4f1d8dffca59fd8653022a90ad"
+      },
+      {
+        "name": "coco_mass.npy",
+        "bytes": 3491240,
+        "shape": [
+          436389
+        ],
+        "dtype": "<f8",
+        "fortran_order": false,
+        "evidence": "publisher card + existing local NPY header only",
+        "full_sha256": null,
+        "header_sha256": "e56ad6dda305b946c106dd9e745476f9fce0d37023a3962fed19502d6c7d6187"
+      },
+      {
+        "name": "fp_bits.npy",
+        "bytes": 55568,
+        "shape": [
+          6930
+        ],
+        "dtype": "int64",
+        "evidence": "publisher card only",
+        "full_sha256": null
+      },
+      {
+        "name": "coco_meta.pkl",
+        "bytes": 41450156,
+        "schema": "aligned identifiers/SMILES metadata",
+        "evidence": "publisher card and local build source; not deserialized",
+        "full_sha256": null
+      }
+    ],
+    "features": {
+      "selected_bits": 6930,
+      "packed_bytes_per_row": 867,
+      "padding_bits": 6,
+      "original_descriptor_bits": 10407,
+      "families": [
+        {
+          "name": "Morgan",
+          "radius": 2,
+          "bits": 4096
+        },
+        {
+          "name": "Morgan",
+          "radius": 3,
+          "bits": 4096
+        },
+        {
+          "name": "RDKit path",
+          "maxPath": 6,
+          "bits": 2048
+        },
+        {
+          "name": "MACCS",
+          "bits": 167
+        }
+      ],
+      "source": "publisher card; no recomputation"
+    },
+    "upstream": {
+      "current_download_url": "https://coconut.naturalproducts.net/download",
+      "current_advertised_release": "October 2026",
+      "current_advertised_license": "CC0",
+      "local_source_filename": "coconut_csv-09-2026.csv",
+      "source_release_sha256": null,
+      "derivation_manifest": null,
+      "constituent_rights_notice": "https://github.com/Steinbeck-Lab/coconut/blob/main/README.md",
+      "paper_doi": "https://doi.org/10.1093/nar/gkae1063"
+    },
+    "native_resolved_version": null,
+    "native_mount_path": null,
+    "v6_10395_feature_bank_compatibility": "Not interchangeable; different feature layout. No execution performed.",
+    "redistributed_data_files": [],
+    "numeric_companion_url": "https://github.com/cubres/enveda-casmi-2026/blob/51d3990f714318d828e199747f412a9421fbcd4e/datasets/coconut-lookup-companion/README.md"
+  },
+  "chebi": {
+    "publisher": "ChEBI, EMBL-EBI",
+    "data_license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "current_sdf_release": {
+      "release": 256,
+      "date": "2026-10-06",
+      "metadata": {
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/README",
+        "bytes": 1675,
+        "sha256": "30a6269c1bc36a9f89c747b20e9e7dff4b3c4edce9e323d5e11ffbab0bc2f596"
+      },
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/LICENSE",
+        "bytes": 18655,
+        "sha256": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+        "evidence": "SDF README license table and actual LICENSE agree. Older/current ontology README contains one conflicting ShareAlike sentence, recorded previously."
+      },
+      "fixed_archive": {
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel256/",
+        "status": 404,
+        "observed_utc": "2026-10-15T17:31:10.662684+00:00"
+      },
+      "artifact_sha256": null
+    },
+    "current_mutable_downloads": [
+      {
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/chebi.sdf.gz",
+        "bytes": 145904560,
+        "http_last_modified": "Tue, 06 Oct 2026 11:09:48 GMT",
+        "etag": "\"8b253b0-65d2a097349a5\"",
+        "sha256": null
+      },
+      {
+        "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/chebi_3_stars.sdf.gz",
+        "bytes": 59537165,
+        "http_last_modified": "Tue, 06 Oct 2026 11:09:48 GMT",
+        "etag": "\"38c770d-65d2a0973482f\"",
+        "sha256": null
+      }
+    ],
+    "release_caveat": "Current mutable SDF URLs and tiny release/LICENSE hashes do not bind archive bytes. ETags are not cryptographic hashes. No bulk artifact downloaded.",
+    "example": {
+      "accession": "CHEBI:27732",
+      "name": "caffeine",
+      "source_url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/27732/",
+      "retrieved_utc": "2026-10-15T17:24:46.023585+00:00",
+      "bytes": 46861,
+      "sha256": "d7d96d4aaac053f52b78b4ddf52fb295d0b54edaaf00fc7510b4ee26c227c753",
+      "source_path": "demo_verified_caffeine_once/source.json",
+      "candidate_path": "demo_verified_caffeine_once/candidate.json",
+      "monthly_data_release": null,
+      "api_schema_version": "2.0.0",
+      "attribution": "ChEBI, EMBL-EBI; CC BY 4.0; source URL, retrieval time and SHA256 above.",
+      "transformation": "Raw response retained; candidate fields selected and renamed. Decimal strings and chemical identifiers unchanged."
+    },
+    "api_schema_contract": "Observed JSON fields in this example; route documented but complete response schema absent from current OpenAPI.",
+    "api_docs_url": "https://www.ebi.ac.uk/chebi/backend/api/docs/",
+    "quality_filter": "Released, three-star, neutral records with explicit structures only; not chemical validation."
+  },
+  "code_license": "MIT; see LICENSE-CODE.txt. Does not relicense referenced or included data.",
+  "no_claims": [
+    "native compatibility",
+    "chemical normalization",
+    "fingerprint correctness",
+    "competition coverage",
+    "official score"
+  ]
+}

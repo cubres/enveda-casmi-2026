@@ -1,0 +1,12 @@
+{
+  "chebi_accession": "CHEBI:27732",
+  "name": "caffeine",
+  "formula": "C8H10N4O2",
+  "charge": 0,
+  "average_mass_da": "194.194",
+  "monoisotopic_mass_da": "194.08038",
+  "smiles": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+  "standard_inchi": "InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3",
+  "standard_inchi_key": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+  "source_modified_on": "2021-09-20T10:57:24Z"
+}

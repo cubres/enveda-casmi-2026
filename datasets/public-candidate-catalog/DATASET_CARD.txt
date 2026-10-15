@@ -1,0 +1,173 @@
+CASMI candidate data: COCONUT V2 and a small attributed ChEBI example
+Evidence checked 2026-10-15; no model evaluation or competition score claimed.
+
+WHAT THIS ADDS
+
+This catalog separates a public candidate bank from its upstream database and
+from an independently reproducible chemical-record example. The public COCONUT
+bank is useful for bounded mass-window retrieval. The ChEBI example is useful
+for testing a candidate-record schema without downloading a large bank or
+requiring RDKit, NumPy, credentials, or competition data.
+
+COCONUT: EXACT PUBLIC DATASET IDENTITY
+
+Kaggle: https://www.kaggle.com/datasets/prvsiyan/coconut-casmi26-candidates/versions/2
+Title: COCONUT 2.0 candidates + fingerprints (CASMI26)
+Dataset ID: 12039473. Version: 2, created 2026-09-15T19:42:45.477Z.
+Version note: add fingerprint bit-selection index.
+Published license: CC BY-NC-SA 4.0. Public visibility: true.
+Advertised uncompressed total: 423,346,355 bytes.
+
+The official public metadata response was captured on
+2026-10-15T17:26:17.220696Z; its 22,677-byte body has SHA-256
+c67159b1a74f0b1c8f4e141fb4706de0ec6bf12d01b1700501b3d94ee0d1a7e4.
+This binds the metadata and description, not the current data payload bytes.
+The fresh response returned an empty files array; the inventory below comes
+from the dataset's own card, with the two marked NPY headers independently
+inspected in an existing local copy. No pickle was opened or bulk data fetched.
+
+File             Shape / storage                 Bytes        Evidence
+coco_mass.npy    (436389,), little-endian f8      3,491,240    card + local header
+coco_fp.npy      (436389,867), u1               378,349,391    card + local header
+fp_bits.npy      (6930,), int64                     55,568    card only
+coco_meta.pkl    aligned keys/SMILES metadata    41,450,156    card / build source
+
+The card describes masses as sorted neutral monoisotopic masses in daltons.
+Each row uses 6,930 selected fingerprint bits, packed into 867 bytes with six
+padding bits. The selection indexes a 10,407-bit vector made from Morgan
+radius 2 (4096), Morgan radius 3 (4096), RDKit path (2048, maxPath 6), and
+MACCS (167). Row order must stay identical across mass, fingerprint, and
+identity arrays. A precursor m/z is not automatically a neutral mass.
+
+Use the existing version-pinned numeric companion for mass-window lookup:
+https://github.com/cubres/enveda-casmi-2026/blob/51d3990f714318d828e199747f412a9421fbcd4e/datasets/coconut-lookup-companion/README.md
+It preserves row indices, bounds decoding to 4096 rows, and avoids pickle.
+Its invented-data tests do not establish real-bank alignment or chemistry.
+
+The campaign's retained input metadata names this dataset without a version
+suffix. Advertised current V2 does not prove which version or absolute mount
+path a native job resolved. The V6 serving bank uses a different 10,395-feature
+layout: do not substitute this 6,930-feature bank or its bit selector into that
+model. This catalog does not change the notebook or its inputs.
+
+COCONUT: UPSTREAM PROVENANCE AND REUSE
+
+Upstream: https://coconut.naturalproducts.net/download
+Publication: https://doi.org/10.1093/nar/gkae1063
+Project provenance note: https://github.com/Steinbeck-Lab/coconut/blob/main/README.md
+
+The current upstream download page advertises October 2026 downloads as CC0.
+The local candidate build source names coconut_csv-09-2026.csv; an immutable
+upstream September release checksum and complete generation manifest were
+not recovered. The current October label does not relabel this September
+derived Kaggle bank. The upstream project also says its constituent sources
+have their own licenses. Older COCONUT documentation and the Kaggle card use
+CC BY labels. Those statements describe different artifacts or documentation;
+this packet does not resolve their historical provenance by assumption.
+
+For runtime use, preserve the exact dataset version, actual file hashes, row
+alignment, and fingerprint mapping. For redistribution, preserve applicable
+attribution and terms; the Kaggle bank is explicitly advertised under
+CC BY-NC-SA 4.0, while source rights and selected-bit provenance need their own
+evidence. This packet redistributes no COCONUT array or pickle and grants no
+new rights to them. The source code's MIT license is not a dataset license.
+
+CHEBI: ONE SMALL, ATTRIBUTED, ACTUAL EXAMPLE
+
+Source: ChEBI, EMBL-EBI, https://www.ebi.ac.uk/chebi/
+Data license: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://www.ebi.ac.uk/chebi/about
+https://ftp.ebi.ac.uk/pub/databases/chebi/ontology/LICENSE
+https://creativecommons.org/licenses/by/4.0/
+
+The included example is caffeine, CHEBI:27732, retrieved from
+https://www.ebi.ac.uk/chebi/backend/api/public/compound/27732/
+at 2026-10-15T17:24:46.023585Z. The unmodified JSON response is 46,861 bytes:
+SHA-256 d7d96d4aaac053f52b78b4ddf52fb295d0b54edaaf00fc7510b4ee26c227c753.
+It is included as demo_verified_caffeine_once/source.json. Its extracted
+candidate.json selects and renames fields; it preserves source decimal
+strings and structure identifiers. Attribution: ChEBI, EMBL-EBI; the source
+URL, timestamp, license, and change description above accompany this example.
+
+Observed example fields:
+  chebi_accession       CHEBI:27732
+  formula               C8H10N4O2
+  charge                0
+  average_mass_da       "194.194"
+  monoisotopic_mass_da   "194.08038"
+  standard_inchi_key    RYYVLZVUVIJVGH-UHFFFAOYSA-N
+  source_modified_on    2021-09-20T10:57:24Z
+
+Average mass and monoisotopic mass are different quantities. Neither field
+alone supplies a charge/adduct conversion or verifies an ion-mass formula.
+The source modification timestamp is not the API retrieval timestamp.
+
+The official SDF README identifies monthly release 256, dated 2026-10-06:
+https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/README
+Its LICENSE explicitly states CC BY 4.0:
+https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/LICENSE
+The inspected archive/rel256/ route returned 404. Current SDF download URLs
+are mutable and exposed no cryptographic content digest. No fixed release-256
+artifact URL/hash was established, and no bulk SDF was downloaded.
+The API response does not identify its monthly release, so this example is
+pinned by response bytes and observation time, with monthly_data_release null.
+API schema version 2.0.0 is an API version, not a chemical data release.
+The actual schema below is observed from this response; the current OpenAPI
+document documents the route but does not supply a complete response schema.
+
+  id: integer; chebi_accession: string; stars: integer; is_released: boolean
+  chemical_data: {formula: string, charge: integer,
+                  mass: decimal string, monoisotopic_mass: decimal string}
+  default_structure: {smiles: string, standard_inchi: string,
+                      standard_inchi_key: string, is_r_group: boolean}
+
+Release and license evidence, including any archive URL, is in catalog.json.
+One ontology README prose sentence says Attribution-ShareAlike 4.0; its
+license table, the actual LICENSE, ontology header, and About page say
+CC BY 4.0. This discrepancy is recorded rather than silently treating every
+text fragment as consistent.
+
+RUN THE DEMO
+
+Requires Python 3.9+ standard library only. Run from this packet's directory.
+The output directory must be new; existing outputs are never overwritten.
+
+Validate the included exact snapshot, offline:
+
+python3 chebi_candidate_demo.py \
+  --input demo_verified_caffeine_once/source.json \
+  --expected-sha256 d7d96d4aaac053f52b78b4ddf52fb295d0b54edaaf00fc7510b4ee26c227c753 \
+  --output caffeine_offline_check
+
+Retrieve one fresh public record and create its own snapshot:
+
+python3 chebi_candidate_demo.py --chebi-id 27732 --output caffeine_new_snapshot
+
+The downloader makes one GET, rejects redirects, accepts JSON only, caps the
+body at 256 KiB, and uses a 20-second socket timeout. It neither authenticates
+nor retries. The timeout is not a hard total wall-clock limit. A fresh API
+response may legitimately differ; it receives a new hash rather than silently
+replacing the included example. --expected-sha256 can require any known exact
+snapshot. Output files are source.json, candidate.json, and receipt.json.
+
+The validator deliberately accepts only released, three-star, neutral records
+with explicit structures, positive finite decimal masses, standard InChI and
+InChIKey syntax. Charged species, generic classes, and incomplete records may
+be valid ChEBI entries but fall outside this small demo. Schema acceptance is
+not proof of chemical correctness, absence of polymers, normalization policy,
+stereochemical equivalence, fingerprint compatibility, or model performance.
+There is no competition query, spectrum, label, split, or submission here.
+
+Data flow:
+  Official ChEBI HTTPS response -> bounded raw bytes -> SHA-256
+       -> explicit schema checks -> selected candidate fields + receipt
+  Included exact snapshot ------> same offline checks; no network
+
+EXISTING CAMPAIGN CONTEXT
+
+https://www.kaggle.com/code/prvsiyan/analog-propagation-casmi-2026-baseline
+https://github.com/cubres/enveda-casmi-2026
+
+This packet supplies documentation, a small licensed public example, and a
+reproducible tool. It does not attest a completed native run or an official
+leaderboard score and does not introduce or replace a dataset identity.

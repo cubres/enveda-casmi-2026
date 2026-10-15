@@ -1,0 +1,12 @@
+{
+  "url": "https://www.kaggle.com/api/v1/datasets/view/prvsiyan/coconut-casmi26-candidates",
+  "observed_utc": "2026-10-15T17:26:17.220696+00:00",
+  "method": "GET",
+  "credentials_sent": false,
+  "byte_cap": 1048576,
+  "status": 200,
+  "final_url": "https://www.kaggle.com/api/v1/datasets/view/prvsiyan/coconut-casmi26-candidates",
+  "content_type": "application/json",
+  "bytes": 22677,
+  "sha256": "c67159b1a74f0b1c8f4e141fb4706de0ec6bf12d01b1700501b3d94ee0d1a7e4"
+}

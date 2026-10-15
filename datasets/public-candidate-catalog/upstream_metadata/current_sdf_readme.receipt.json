@@ -1,0 +1,10 @@
+{
+  "name": "current_sdf_readme",
+  "url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/README",
+  "status": 200,
+  "final_url": "https://ftp.ebi.ac.uk/pub/databases/chebi/SDF/README",
+  "bytes": 1675,
+  "sha256": "30a6269c1bc36a9f89c747b20e9e7dff4b3c4edce9e323d5e11ffbab0bc2f596",
+  "observed_utc": "2026-10-15T17:31:10.665642+00:00",
+  "body": "***************************************************************************\n*\n* Title:                 ChEBI SDF data dumps\n*\n* ChEBI Release:         256\n*\n* Date of last update:   2026-10-06\n*\n***************************************************************************\n\nContents of this directory:\n---------------------------\n\nREADME                               This file\n\nLICENSE                              License data is released under:\n                                     Creative Commons Attribution 4.0 International License.\n\nchebi_lite.sdf.gz                    SDF format file for all compound structures. LITE variant includes 4 fields only:\n                                     molfile, chebi_id (e.g. CHEBI:15377), chebi_name (e.g. water) and star (e.g. 3)\n\nchebi_lite_3_stars.sdf.gz            SDF format file only for 3 stars compounds. Lite variant includes 4 fields\n                                     mentioned above.\n\nchebi.sdf.gz                         SDF format file for all compound structures. It has same information than the\n                                     LITE variant plus synonyms, manual curated cross-references (WIP), chemical data (charge,\n                                     mass, monoisotopicmass and formula), structure data (smiles, inchi and inchikey),\n                                     secondary ids, and WURCS for carbohydrates. It is the most complete sdf version.\n\nchebi_3_stars.sdf.gz                 Same than the above only for 3 stars compounds.\n\n\nFinal Notes:\n\nNote that all SDF files exclude any ontological information as ontological classes are not able to be represented as they do not\ncontain a structure.\n"
+}

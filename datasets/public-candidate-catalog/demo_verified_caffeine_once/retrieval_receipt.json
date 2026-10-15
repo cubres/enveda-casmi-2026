@@ -1,0 +1,29 @@
+{
+  "url": "https://www.ebi.ac.uk/chebi/backend/api/public/compound/27732/",
+  "status": 200,
+  "bytes": 46861,
+  "sha256": "d7d96d4aaac053f52b78b4ddf52fb295d0b54edaaf00fc7510b4ee26c227c753",
+  "observed_utc": "2026-10-15T17:24:46.023585+00:00",
+  "selected": {
+    "id": 27732,
+    "chebi_accession": "CHEBI:27732",
+    "name": "caffeine",
+    "stars": 3,
+    "chemical_data": {
+      "formula": "C8H10N4O2",
+      "charge": 0,
+      "mass": "194.194",
+      "monoisotopic_mass": "194.08038"
+    },
+    "default_structure": {
+      "id": 27932,
+      "smiles": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+      "standard_inchi": "InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3",
+      "standard_inchi_key": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+      "wurcs": null,
+      "is_r_group": false
+    },
+    "is_released": true
+  },
+  "monthly_release": null
+}
