@@ -1,0 +1,94 @@
+{
+  "schema": "casmi-local-paired-comparison-public/1",
+  "recorded_date": "2026-10-15",
+  "status": "COMPLETED_CONDITIONAL_PAIRED_SELECTION_ONLY",
+  "decision": "ADVANCE_TO_INTEGRATION_REVIEW",
+  "candidate": "V6 structure-uniform single-spectrum candidate",
+  "reference": "V4 cached full-spectrum reference",
+  "official_submission": false,
+  "official_score": null,
+  "integrated": false,
+  "final_test_used": false,
+  "protocol": {
+    "selection_role": "already-consulted role 2",
+    "untouched_holdout": false,
+    "role_3_sealed_and_unused": true,
+    "query_view": "single spectrum, at most 128 peaks; no augmentation or merge",
+    "candidates": "all original pool rows within plus or minus 10 ppm of true pool mass",
+    "primary_metric": "structure-weighted optimistic MRR@25",
+    "bootstrap_unit": "structure",
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20261014,
+    "confidence": 0.9,
+    "advance_rule": "optimistic delta >= 0.01, CI90 lower > 0, pessimistic mean delta > 0"
+  },
+  "summary": {
+    "all": {
+      "structures": 4096,
+      "candidate_mrr25": 0.7216304965143057,
+      "candidate_pessimistic_mrr25": 0.716458038375422,
+      "baseline_cached_mrr25": 0.7055815984980374,
+      "candidate_top1": 0.60986328125,
+      "candidate_recall25": 0.950927734375
+    },
+    "timsTOF": {
+      "structures": 2681,
+      "candidate_mrr25": 0.7271830778519796,
+      "candidate_pessimistic_mrr25": 0.7271830778519796,
+      "baseline_cached_mrr25": 0.7215620241289952,
+      "candidate_top1": 0.6195449459157031,
+      "candidate_recall25": 0.9444237224916077
+    },
+    "not_timsTOF": {
+      "structures": 1415,
+      "candidate_mrr25": 0.7111100226158578,
+      "candidate_pessimistic_mrr25": 0.6961373098689546,
+      "baseline_cached_mrr25": 0.6753034917018549,
+      "candidate_top1": 0.5915194346289753,
+      "candidate_recall25": 0.9632508833922262
+    }
+  },
+  "primary_delta_mrr25": 0.01604889801626839,
+  "primary_ci90": [0.010196811872932471, 0.02186383883150492],
+  "pessimistic_mean_delta": 0.0154767306869521,
+  "pessimistic_reference": "historical unpaired aggregate; no baseline pessimistic per-query cache",
+  "training_context": {
+    "driver_completed_successfully": true,
+    "sampling": "uniform role-0 structures, then one uniform eligible spectrum each",
+    "selected_checkpoint_step": 28000,
+    "checkpoint_selection_role": "role 1, even trainer structure index",
+    "checkpoint_structures": 2048,
+    "checkpoint_decoys_per_query": 63,
+    "checkpoint_sampled_decoy_mrr25": 0.7074749658368091,
+    "checkpoint_metric_comparable_to_paired_selection": false
+  },
+  "metadata_projection": {
+    "structure_rows": 275810,
+    "pool_rows": 711705,
+    "full_clean_structure_order_exact": true,
+    "full_clean_pool_order_exact": true,
+    "normalization": false,
+    "sorting": false,
+    "deduplication": false,
+    "models_or_numeric_arrays_loaded_by_projection": false,
+    "held_roles_evaluated_by_projection": false
+  },
+  "comparison_limits": {
+    "baseline_cache_binding": "retrospective bytes/schema/source/recorded model/aggregate binding; not originally hash-bound",
+    "fresh_baseline_inference": false,
+    "historical_numerical_parity": "unproved: historical MPS hardware, fallback and kernel details were not recorded",
+    "role_2_already_consulted": true,
+    "unknown_mass_retrieval_established": false,
+    "final_test_or_competition_performance_established": false
+  },
+  "evidence_sha256": {
+    "recorded_paired_result": "11e5863d8b8b7fac071dd19e2db259bce470420f08a9528970c4818fa57b4b4f",
+    "recorded_paired_protocol": "8906154d8a4920cba966eae1ea9a8d369d58f0bbbbd9d293bdc8eee1a7757108",
+    "recorded_projection_manifest": "3703d1849d4667cd061bac179d12d9e94090aaed0d3f553e9f2e5a8df7e632a5",
+    "recorded_training_driver_receipt": "50de5652237df11c9b52f0467fe3787aba218e7e7b81789f8b877bd0223cf2a4",
+    "recorded_selected_checkpoint_receipt": "7eaf7af618e67efc1c9bfcad6a0793933144711f57c76f810a0d82883ffe2cfb",
+    "recorded_checkpoint_validation_binding": "36c74fd62d37d8c84a956dc123ac47596a3f51fa31fca6f06d64a8519bcb0048",
+    "recorded_training_recipe": "d1daa2b89f6f1e564a2c7350cd11d69863bc9758d7c6d9c5c62a12d6dc2fbf9b"
+  },
+  "publication_scope": "Aggregate explanatory result only; no real structures, query IDs, spectra, prediction cache, weights, payloads, private paths or capability URLs."
+}
