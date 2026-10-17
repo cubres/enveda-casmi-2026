@@ -1,0 +1,48 @@
+{
+  "actual_result": {
+    "assay_repeated": false,
+    "data_or_weights_read": false,
+    "exact_historical_notebook_payload_match": true,
+    "import_names_found_by_ast": [
+      "__future__",
+      "argparse",
+      "base64",
+      "fpmodel",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "pickle",
+      "structure_uniform_sampler",
+      "subprocess",
+      "sys",
+      "time",
+      "torch",
+      "train_fp4",
+      "zlib"
+    ],
+    "scientific_modules_imported": false,
+    "source_files": 5,
+    "status": "PASS_SELECTED_V6_TRAINING_SOURCE_ONLY",
+    "training_launched": false
+  },
+  "assay_repeated": false,
+  "checks": {
+    "changed_archived_cell_rejected": true,
+    "changed_source_rejected": true,
+    "missing_source_rejected": true,
+    "original_sources_and_notebook_match": true
+  },
+  "contract_sha256": "092a0ad1b46dbdf369a78d70fde409395eb3db53f0027da6240bc62e0c8f75f6",
+  "data_arrays_or_weights_read": false,
+  "historical_cell_sha256": "38cf1161561afc82573992ee66fb89d63868847310ed05d66f40f91524b7dd97",
+  "native_models_or_training_run": false,
+  "notebook_generated_or_modified": false,
+  "original_source_count": 5,
+  "remote_calls": 0,
+  "scientific_packages_imported": false,
+  "status": "PASS_SOURCE_ONLY_ACTUAL_AND_TAMPER_FIXTURES",
+  "verifier_sha256": "8bfe384420a62fa0166f58f43d8800995be4226fff053a27efe80dd6b2afd88b"
+}

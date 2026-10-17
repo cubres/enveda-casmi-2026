@@ -1,0 +1,48 @@
+{
+  "native_id": 358388543,
+  "private_receipts_not_embedded": true,
+  "public_claims_extract_aggregate_fields_only": true,
+  "receipts": {
+    "best_checkpoint": {
+      "bytes": 134,
+      "evidence_scope": "retained original receipt bytes",
+      "sha256": "7eaf7af618e67efc1c9bfcad6a0793933144711f57c76f810a0d82883ffe2cfb"
+    },
+    "fixed_validation": {
+      "bytes": 504,
+      "evidence_scope": "retained original receipt bytes",
+      "sha256": "36c74fd62d37d8c84a956dc123ac47596a3f51fa31fca6f06d64a8519bcb0048"
+    },
+    "notebook_driver": {
+      "bytes": 713,
+      "evidence_scope": "retained original receipt bytes",
+      "sha256": "50de5652237df11c9b52f0467fe3787aba218e7e7b81789f8b877bd0223cf2a4"
+    },
+    "original_input_manifest": {
+      "bytes": 3347,
+      "evidence_scope": "original JSON artifact binding; arrays not read",
+      "sha256": "5b08ca4b830de1558be4ce568a10f0997b5fa2fe875a872dcd6a216f901fd9ef"
+    },
+    "rendered_training_receipt": {
+      "bytes": 2457,
+      "evidence_scope": "rendered native document transcription",
+      "sha256": "9b180f6b33ab094c63515b9acaca1f587ab8c80d5dc4a8eeccf3a2b3b6963d7d"
+    },
+    "selected_weight_byte_acquisition": {
+      "bytes": 4649,
+      "evidence_scope": "retained original receipt bytes",
+      "sha256": "d4dc64ae58fe351560fc87b59f1913632b5724631d11e5d6b6d60cab863a8e1c"
+    },
+    "source_binding": {
+      "bytes": 819,
+      "evidence_scope": "retained original receipt bytes",
+      "sha256": "cd50a9cd51dfdb8ddc5ca9b041e4d2b8b75ca501a104e908263eab6fa702c223"
+    },
+    "training_recipe": {
+      "bytes": 9148,
+      "evidence_scope": "retained original receipt bytes",
+      "sha256": "d1daa2b89f6f1e564a2c7350cd11d69863bc9758d7c6d9c5c62a12d6dc2fbf9b"
+    }
+  },
+  "version": 6
+}
