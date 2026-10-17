@@ -1,0 +1,338 @@
+{
+  "schema": "casmi-role-source-index/1",
+  "status": "STAGED_SOURCE_ONLY_NOT_EXECUTED",
+  "public_target": "reproduction/full-fingerprint-preparation/2026-10-18/role-sources/",
+  "source_files": [
+    {
+      "file": "metric_distinct.py",
+      "role": "canonical_equivalence",
+      "bytes": 2760,
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f",
+      "original_path": "/Users/cubres/Documents/Neurogolf/research/enveda_casmi26_20260930_metric_dedup_155344Z/metric_distinct.py",
+      "byte_identical_copy": true
+    },
+    {
+      "file": "partition_public.py",
+      "role": "canonical_partition_builder",
+      "bytes": 16105,
+      "sha256": "20302057f22303340ed339360d3c43ad2d9f7da2bccc9dcdc0b193af8073b9fc",
+      "original_path": "/Users/cubres/Documents/Neurogolf/research/enveda_glacier_partition_20260930T165020Z/partition_public.py",
+      "byte_identical_copy": true
+    },
+    {
+      "file": "filter_references.py",
+      "role": "spectrum_role_builder",
+      "bytes": 16867,
+      "sha256": "bb59acf365b49c094a1a27e4fd0348b261d545998b82bb0d03291d29a2192825",
+      "original_path": "/Users/cubres/Documents/Neurogolf/research/enveda_glacier_references_20260930T172626Z/filter_references.py",
+      "byte_identical_copy": true
+    },
+    {
+      "file": "make_role_table.py",
+      "role": "role_table_builder",
+      "bytes": 4684,
+      "sha256": "d8beeae50453da6b53cb2799079668844dcb70700d9a28b64f60ac00894c2c7d",
+      "original_path": "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/enveda/clean_fp_split_20261002T1652Z/make_role_table.py",
+      "byte_identical_copy": true
+    }
+  ],
+  "generation_order": [
+    "metric_distinct.py (imported grouping helper)",
+    "partition_public.py",
+    "filter_references.py",
+    "make_role_table.py"
+  ],
+  "direct_consumer": "The original full10395 trainer consumes the supplied roles_by_structure.b64 directly; regeneration is unnecessary for supplied-input training.",
+  "provided_role_file": {
+    "alignment": "275810 original fp_meta structure rows, not 711705 candidate pool rows.",
+    "codes": {
+      "0": "optimizer",
+      "1": "checkpoint_selection",
+      "2": "fusion_selection",
+      "3": "final_test, also default for structures without spectra"
+    },
+    "packing": "Two bits MSB-first per structure, np.packbits, zlib level9, base64.",
+    "decoded_uint8_sha256": "4d7b366293225a1ae67dfc0306480129b9ac1351a6d8581f0be40a269bdaff86",
+    "original_generated_b64_chars": 55912,
+    "staged_encoded_file_from_full_manifest": {
+      "bytes": 55913,
+      "sha256": "fe654a3f5f655df3897a344ca222e01a9f555a7dfd22a786e6cb32b126c76049"
+    },
+    "newline_distinction": "Role generator writes 55912 base64 characters; full builder writes that stripped text plus newline, so staged file is 55913 bytes. Encoded-file hash and decoded-role hash are distinct.",
+    "spectrum_role_artifact_from_retained_manifest": {
+      "name": "spectrum_role_codes.npy",
+      "bytes": "2334659",
+      "sha256": "ac83107a31c76f4b470d9e28341b1f2b0875961725a8e2400a26f78303cc05ab"
+    },
+    "data_bytes_freshly_verified": false
+  },
+  "input_metadata_origin": {
+    "partition_inputs": [
+      {
+        "path": "/Users/cubres/Documents/Neurogolf/research/enveda_glacier_cpu_20260930T163830Z/MassSpecGym1.5.tsv",
+        "bytes": "261197365",
+        "sha256": "50cfdd1d22f79543c59555f9ce43c6893bd788a19a42b21fb4e2e3a54673c06a"
+      },
+      {
+        "path": "/Users/cubres/Documents/Neurogolf/research/enveda_glacier_cpu_20260930T163830Z/sample_input.tsv",
+        "bytes": "238354",
+        "sha256": "bcc37257be5231efe192592b316bf51b6dbaa914be4d871e0006b67a81774cb3"
+      },
+      {
+        "path": "/Users/cubres/Documents/Neurogolf/research/enveda_casmi26_20260930_metric_dedup_155344Z/metric_distinct.py",
+        "bytes": "2760",
+        "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/up_train/fp_meta.pkl",
+        "bytes": "17095875",
+        "sha256": "d6ad0dd33bf66e92c5a85054b7f914b4ac538fc4b06c4aabca8d0df9f985b85b"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/up_train/split.pkl",
+        "bytes": "47965",
+        "sha256": "25e00a31cd8acfdd97e0dd40e9a43aa257fefabd74416a0813f4710f62aa4b1e"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/data/c2_np_recs2.pkl",
+        "bytes": "2562853",
+        "sha256": "550b2d4ba4c206558cb0313df87dae23cfbe8726d89c168a7354cc4cd4666a64"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/data/hard_feats.pkl",
+        "bytes": "3160208",
+        "sha256": "84e5d837a0d34e584a48b73f34109e674e2bfe3944b043ad973116d6abaeab73"
+      }
+    ],
+    "reference_inputs": [
+      {
+        "path": "/Users/cubres/Documents/Neurogolf/research/enveda_glacier_partition_20260930T165020Z/artifacts.tsv",
+        "bytes": "1350",
+        "sha256": "13930be94d0122a9de70f9dc9cae7f995a1a6f2d9c2c68e60d853306b3ed6ae6"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/up_train/spec.npz",
+        "bytes": "920788910",
+        "sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/up_train/fp_meta.pkl",
+        "bytes": "17095875",
+        "sha256": "d6ad0dd33bf66e92c5a85054b7f914b4ac538fc4b06c4aabca8d0df9f985b85b"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/data/struct_fp_meta.pkl",
+        "bytes": "17095875",
+        "sha256": "c2362f52eea6847b367e5b7be6cfe9769c4eae847764c7fb53e230d743f77b57"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/data/train_meta.parquet",
+        "bytes": "35724934",
+        "sha256": "69fc67b2974fc6fe651930eede166a2bb0aee76e55faab1fafe2203f5dbadff0"
+      },
+      {
+        "path": "/Users/cubres/Documents/Clauding/casmi_work/build_dataset.py",
+        "bytes": "4152",
+        "sha256": "ec90d3d9ef3ec9b1e45d2dc9e2e766439ef7431cce8f8388ccb96b0be96a517b"
+      }
+    ],
+    "role_input": "spectrum_role_codes.npy aligned with spec.npz six; is_val read for historical count comparison only.",
+    "upstream_availability_not_verified": "Input manifests supply original byte pins; these sources were not reread, downloaded or transformed in this review."
+  },
+  "partition_artifact_manifest": {
+    "sha256": "13930be94d0122a9de70f9dc9cae7f995a1a6f2d9c2c68e60d853306b3ed6ae6",
+    "bytes": 1350,
+    "rows": [
+      {
+        "name": "canonical_progress.tsv",
+        "bytes": "30997819",
+        "sha256": "0e7c1d95d4cde610b31cb7bff36177c0e6c1791b4ef38b3e5c637eb7f25eeaf8"
+      },
+      {
+        "name": "canonical_structures.tsv",
+        "bytes": "43679870",
+        "sha256": "1661d72258d246be72e20d95b1d71ed4f24b315f141b9298fb1ccda42a3b0c2b"
+      },
+      {
+        "name": "group_partitions.tsv",
+        "bytes": "41031260",
+        "sha256": "b7e7464088b5e18c98c25f0b57ac54b5c5918d0647daba90b2cd7f59fb44d5cc"
+      },
+      {
+        "name": "historical_query_keys.tsv",
+        "bytes": "12300",
+        "sha256": "c415cf79637ae83b1fa78e989680fa189031bdb293ce1a768cbbf6bd63102541"
+      },
+      {
+        "name": "inputs.tsv",
+        "bytes": "1084",
+        "sha256": "84e22248dd0c1c8cfe299a4ba03202161546c68a84d0661fa1e5de302a33dfd9"
+      },
+      {
+        "name": "msg_reference_exclusions.tsv",
+        "bytes": "4216925",
+        "sha256": "f142ced553f99c51e7c33f8710319fdfb50725cb083247b62b9a2cc7f5b2f7f4"
+      },
+      {
+        "name": "msg_spectrum_partitions.tsv",
+        "bytes": "41789835",
+        "sha256": "a6c0a30c772f48d10a0fd026df058ba46680fff0eb58effaa188ac9ff20e7b86"
+      },
+      {
+        "name": "own_corpus_partitions.tsv",
+        "bytes": "28487795",
+        "sha256": "4490f4e58c0092082d77717d826f96b8a3fee6882c7302aec20670e1bf1572b8"
+      },
+      {
+        "name": "partition_public.py",
+        "bytes": "16105",
+        "sha256": "20302057f22303340ed339360d3c43ad2d9f7da2bccc9dcdc0b193af8073b9fc"
+      },
+      {
+        "name": "prior_selection_keys.tsv",
+        "bytes": "41265",
+        "sha256": "c0474250076d4307c84fbe0bb8a5b5aca318452fe0cb5fcfd2542351bd9bbdac"
+      },
+      {
+        "name": "protocol.txt",
+        "bytes": "2011",
+        "sha256": "473f3512d6fdafecacba976e2bebf7bd8236e5787b227f3230ade43ef43fe8d6"
+      },
+      {
+        "name": "retrieval_reference_exclusions.tsv",
+        "bytes": "6040372",
+        "sha256": "b00d581b068679c9dd4c180b92b07dfba65a539be2baaf4745db0aaa0145a5cf"
+      },
+      {
+        "name": "summary.txt",
+        "bytes": "1524",
+        "sha256": "36f99d7bda66ede246afd5d52876461d6550a41ae8232dc42b0b9fb4d29b8444"
+      },
+      {
+        "name": "unique_input_strings.tsv",
+        "bytes": "14585620",
+        "sha256": "60b81f1080a2e84e27800636396843e5495c3ce9a39da95605d317a7bb5bba8c"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "file": "partition_public.py",
+      "command": "nice -n 5 python partition_public.py --seconds 1200 --workers 2",
+      "working_directory": "Fresh equivalent of enveda_glacier_partition_20260930T165020Z after reviewed path mapping.",
+      "outputs": [
+        "canonical_structures.tsv",
+        "group_partitions.tsv",
+        "own_corpus_partitions.tsv",
+        "msg_spectrum_partitions.tsv",
+        "retrieval_reference_exclusions.tsv",
+        "msg_reference_exclusions.tsv",
+        "historical_query_keys.tsv",
+        "prior_selection_keys.tsv",
+        "unique_input_strings.tsv",
+        "canonical_progress.tsv",
+        "inputs.tsv",
+        "protocol.txt",
+        "summary.txt",
+        "artifacts.tsv"
+      ]
+    },
+    {
+      "file": "filter_references.py",
+      "command": "nice -n 5 python filter_references.py",
+      "working_directory": "Fresh equivalent of enveda_glacier_references_20260930T172626Z after reviewed path mapping.",
+      "outputs": [
+        "spectrum_role_codes.npy",
+        "optimizer_spectrum_indices.npy",
+        "optimizer_source_indices.npy",
+        "optimizer_structure_indices.npy",
+        "excluded_spectrum_indices.npy",
+        "optimizer_observed_structures.tsv",
+        "blind_candidate_pool.tsv",
+        "role_counts.tsv",
+        "library_role_counts.tsv",
+        "array_authentication.tsv",
+        "inputs.tsv",
+        "protocol.txt",
+        "summary.txt",
+        "artifacts.tsv"
+      ]
+    },
+    {
+      "file": "make_role_table.py",
+      "command": "python make_role_table.py",
+      "working_directory": "Fresh equivalent of clean_fp_split_20261002T1652Z; this script writes to the current working directory.",
+      "outputs": [
+        "roles_by_structure.b64",
+        "roles_by_structure.sha256",
+        "receipt.json",
+        "trainer_patch.txt"
+      ]
+    }
+  ],
+  "partition_algorithm": {
+    "salt": "glacier-prospective-v1-20260930",
+    "bucket": "First 8 bytes big-endian of SHA256(salt + colon + group_id), modulo 10000.",
+    "default_ranges": {
+      "optimizer": "0..7999",
+      "checkpoint_selection": "8000..8999",
+      "fusion_selection": "9000..9499",
+      "final_test": "9500..9999"
+    },
+    "historical_override": "All groups matching historical819 queried keys become optimizer.",
+    "prior_selection_override": "Other groups in the prior2750 selection-key set remap final_test to optimizer.",
+    "massspecgym_original_fold": "Retained for audit; does not assign these new roles.",
+    "source_data_access_for_this_review": "No partition tables, historical key sets or role-array values were opened."
+  },
+  "scope_distinctions": {
+    "roles_author_derived_not_competition_provided": true,
+    "massspecgym_used_for_canonical_split_and_audit": true,
+    "massspecgym_spectra_added_to_training_archive_by_this_closure": false,
+    "massspecgym_queries_added_to_full_candidate_pool_by_this_closure": false,
+    "full_candidate_pool_origin": "Existing separate training/COCONUT pipeline, preserving its candidate order.",
+    "auxiliary_blind_candidate_table": "Own training catalogue only; not the full711705-row candidate pool.",
+    "training_role_table_rows": 275810,
+    "full_candidate_pool_rows": 711705,
+    "novel_candidate_rows": 436389
+  },
+  "dependencies": {
+    "enforced_rdkit": "2026.03.3",
+    "other_imported_packages": [
+      "numpy",
+      "pandas",
+      "pyarrow"
+    ],
+    "other_historical_package_versions_fully_pinned": false,
+    "trusted_pickle_reads_preserved": true
+  },
+  "source_and_data_rights": {
+    "source_scope": "Owner-authorized Apache-2.0 license applies only to the four original Python files listed in source_files.",
+    "spdx_license_identifier": "Apache-2.0",
+    "licensed_files": [
+      "metric_distinct.py",
+      "partition_public.py",
+      "filter_references.py",
+      "make_role_table.py"
+    ],
+    "license_file": "LICENSE-SOURCE",
+    "notice_file": "NOTICE",
+    "owner_attribution": "Copyright 2026 cubres",
+    "explicit_owner_authorization": true,
+    "original_source_bytes_and_notices_preserved": true,
+    "third_party_data_or_dependency_rights_granted": false,
+    "other_repository_files_covered": false,
+    "data_or_role_payload_included": false,
+    "official_license_text": {
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "unmodified_official_response_bytes": true
+    }
+  },
+  "preservation": {
+    "original_files_unchanged": true,
+    "original_paths_preserved": true,
+    "notebook_or_identity_mutation": false,
+    "source_execution": false
+  }
+}

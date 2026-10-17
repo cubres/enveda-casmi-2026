@@ -1,0 +1,23 @@
+CASMI full10395 role-generation source
+Copyright 2026 cubres
+
+The owner makes these four original source files available under the Apache
+License, Version 2.0, whose complete text is in LICENSE-SOURCE:
+
+  metric_distinct.py
+  partition_public.py
+  filter_references.py
+  make_role_table.py
+
+This notice applies to those four files only. It does not extend a license to
+third-party dependencies, upstream datasets, generated data or role assignments,
+or other repository files. Existing rights and terms for those materials remain
+separate. The original source bytes, headers and notices have been preserved.
+
+The metric helper contains an original implementation of the referenced CASMI
+metric specification and retains its attribution URL:
+https://www.kaggle.com/code/metric/casmi-mean-reciprocal-rank
+
+LICENSE-SOURCE was retrieved unchanged from the Apache Software Foundation:
+https://www.apache.org/licenses/LICENSE-2.0.txt
+SHA256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
