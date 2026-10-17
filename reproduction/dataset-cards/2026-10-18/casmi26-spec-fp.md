@@ -1,25 +1,58 @@
-# CASMI26 spectra tensors and selected fingerprints: preparation and rights boundary
+# CASMI26 prepared training spectra and selected fingerprints
 
-[Dataset V1](https://www.kaggle.com/datasets/prvsiyan/casmi26-spec-fp/versions/1), id **12036447**, was **private** on 18 October 2026. Its metadata currently says CC0 and its description is empty. This draft documents the inputs; it does not make them public or establish that the CC0 label is appropriate.
+This V1 dataset supplies the prepared inputs for the original 6,930-output FPNet training recipe: 2,334,531 spectra, 275,810 structure fingerprint rows, the exact selected fingerprint columns and the saved legacy split. It contains provided CASMI training-derived records and transformations. It contains no competition test data or model checkpoints.
 
-| File | Current V1 listed bytes | Role |
+[Exact dataset V1](https://www.kaggle.com/datasets/prvsiyan/casmi26-spec-fp/versions/1) · [Original preparation and training source](https://github.com/cubres/enveda-casmi-2026/tree/main/reproduction/legacy-v2) · [Existing competition notebook](https://www.kaggle.com/code/prvsiyan/analog-propagation-casmi-2026-baseline)
+
+## Files and integrity
+
+The file hashes below identify the actual existing V1 payload. Four files were acquired through the official version-bound API and matched to retained files on 18 October 2026; the mounted `spec.npz` hash was observed in the exact native run's input receipt. This metadata update does not replace or regenerate those files.
+
+| File | Bytes | Use |
 | --- | ---: | --- |
-| `spec.npz` | 920788910 | Flattened spectrum tensors and row/split indices |
-| `fp_sel.npy` | 239127398 | Packed selected structure fingerprints |
-| `fp_bits.npy` | 55568 | Ordered 6,930-bit selection vector |
-| `fp_meta.pkl` | 17095875 | Structure mapping and fingerprint metadata |
-| `split.pkl` | 47965 | Retained structure-role selection |
+| `spec.npz` | 920,788,910 | Prepared ragged spectra, metadata, source-row and structure indices, legacy `is_val` |
+| `fp_sel.npy` | 239,127,398 | Packed `uint8[275810,867]` selected fingerprints |
+| `fp_bits.npy` | 55,568 | Ordered `int64[6930]` indices into the original 10,407-bit fingerprint |
+| `fp_meta.pkl` | 17,095,875 | Ordered train structure keys and SMILES, `nbits=6930` |
+| `split.pkl` | 47,965 | Exact saved `VAL` and `forced` training-structure keys |
 
-This is the legacy selected-bit input, not the 10,395-bit full target bank. The retained trainer consumes `off,mz,it,prec,ad,ins,ce,mode,six,is_val` from `spec.npz`. Current file listings do not prove their content, original training-file version or alignment.
+After downloading V1 to a fresh directory, this standard-library check verifies its exact files without loading pickle contents:
 
-## Preparation source
+```python
+from pathlib import Path
+import hashlib
+root = Path("/path/to/casmi26-spec-fp-v1")
+expected = {
+    'spec.npz': (920788910, '99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500'),
+    'fp_sel.npy': (239127398, 'f7cb256a8351f9defd82e54b3eb4d8abdfa6a50beadc34e15214827e8ef6466f'),
+    'fp_bits.npy': (55568, 'a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013'),
+    'fp_meta.pkl': (17095875, 'd6ad0dd33bf66e92c5a85054b7f914b4ac538fc4b06c4aabca8d0df9f985b85b'),
+    'split.pkl': (47965, '25e00a31cd8acfdd97e0dd40e9a43aa257fefabd74416a0813f4710f62aa4b1e'),
+}
+for name, (size, digest) in expected.items():
+    path = root / name
+    assert path.is_file() and path.stat().st_size == size, name
+    h = hashlib.sha256()
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            h.update(block)
+    assert h.hexdigest() == digest, name
+print("All five V1 files match")
+```
 
-The [source release](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/README.md) provides original `speclib.py`, `fpmodel.py`, `build_fps.py`, `build_coconut.py`, `build_dataset.py` and `build_pool.py`. The explicit flat-cache/selected-bit export helper is a **new reconstruction** of missing standalone writers; it is not presented as a recovered historical exporter.
+`spec.npz` has eleven numeric arrays: `off:int64`, `mz,it,prec,ce,mode:float32`, `ad:int16`, `ins:int8`, `six:int32`, `is_val:bool`, and `src:int64`. `off` has 2,334,532 entries; `mz` and `it` each have 104,592,893 entries; the other arrays have one entry per spectrum. `six` indexes the ordered structure metadata and `src` indexes the retained original train file. These are actual data arrays, not aggregate statistics.
 
-Stage the files from `reproduction/legacy-v2/public_source/` in a new working directory, as described in its [preparation recipe](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/public_source/README.txt). After obtaining legally accessible `data/train.parquet` and the qualified historical COCONUT CSV at `db/coconut/coconut_csv-09-2026.csv`, the source-shaped command chain is:
+## Use the supplied preparation with the original trainers
+
+The exact [S2/M1 training commands](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/dataset-cards/2026-10-18/casmi26-fp-models-v2.md) and original `train_fp3.py`/`train_fp4.py` are public. Stage these prepared files in a new working directory as `ds/spec.npz`, `ds/split.pkl` and `up_train/{fp_meta.pkl,fp_sel.npy,fp_bits.npy}`. Preserve original source filenames and imports as described in the [source index](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/README.md).
+
+The original trainers also require the matching [6,930-bit candidate pool V1](https://www.kaggle.com/datasets/prvsiyan/casmi26-pool/versions/1): `pool_fp.npy`, `pool_mass.npy` and `pool_meta.pkl`. That is a separate dataset and access must be available before these commands can run. The 10,395-bit full fingerprint bank cannot substitute for it. The trainer consumes `is_val` directly; it does not read `split.pkl`, so reproducing the historical split-generation process is unnecessary when consuming these exact prepared bytes.
+
+For a new preparation from authorized raw inputs, the [complete preparation recipe](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/public_source/README.txt) uses the original builders plus an explicitly labelled reconstructed flat-cache/selected-export bridge. Start with an external immutable training file and a fresh output directory:
 
 ```bash
-python prepare_legacy_exports.py flat --train data/train.parquet --output data
+python prepare_legacy_exports.py flat --train /absolute/authorized/train.parquet --output data
+ln -s /absolute/authorized/train.parquet data/train.parquet
 python build_fps.py
 python build_coconut.py
 python build_dataset.py
@@ -27,18 +60,22 @@ python prepare_legacy_exports.py selected --data data --output up_train
 python build_pool.py
 ```
 
-The original scripts use this fixed working-directory layout. `build_dataset.py` writes `ds/spec.npz` and `ds/split.pkl`; the selected exporter writes `up_train/fp_bits.npy`, `up_train/fp_sel.npy` and `up_train/fp_meta.pkl`; `build_pool.py` writes the matching pool files. A packaging step must preserve these bytes and record their hashes. The command chain has not been run on real competition data in this repair. It does not prove byte-identical reconstruction of current V1.
+Place the qualified COCONUT CSV at the exact path required by that recipe before running its builder. This command chain documents source reconstruction; it is not a claim that the complete historical build was rerun in this release.
 
-## Split and model bindings
+## Provenance and checks
 
-The original preparation assigns validation by structure membership: Enveda natural-product examples are forced into validation, with up to 2,500 additional eligible structures sampled using NumPy seed 0. The source sorts eligible keys before sampling; exact filtering inputs, COCONUT membership and runtime still need binding. The inspected local cache has SHA256 `99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500`: 2,334,531 spectra, 273,983 observed structures and **zero structures spanning both roles**. This is evidence about those exact current cache bytes, not a historical build attestation or proof that every checkpoint used them.
+All 2,334,531 prepared source-row indices and their structure joins were checked against the retained provided training compilation. All 275,810 metadata key/SMILES pairs match training structures. All selected packed fingerprint rows and all 6,930 selected column indices match the retained original fingerprint matrix and its frequency selection. Thirty-two fixed, evenly spaced structure fingerprints were independently recomputed with RDKit 2026.03.3 and matched exactly.
 
-The invented preparation demo checks the forced split and serialization; its eligible random-sampling pool is empty. It does not verify reproduction of nonempty stochastic split selection.
+The original split forces eligible Enveda natural-product examples into validation and samples up to 2,500 other eligible training structures with NumPy seed 0 after sorting eligible keys. Cleaned COCONUT membership influences eligibility; these five payloads do not add novel COCONUT candidate structures or spectra. Every saved split identifier belongs to the training metadata, and the saved validation membership matches every `is_val` entry. The exact cache has 273,983 structures observed among its spectra and zero structures spanning both legacy roles.
 
-The legacy bit-frequency selection uses all prepared structures, rather than an optimizer-only role. Do not describe this selection as holdout-fitted. For the two six-layer, 6,930-output FPNet checkpoints, see the exact [S2/M1 training commands and limitations](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/dataset-cards/2026-10-18/casmi26-fp-models-v2.md). The merged trainer can use all rows sharing a structure; verify role consistency before using that behavior as an isolation claim.
+The original selected-bit frequency filter uses all retained training structures, not an optimizer-only population. All peak values were not recomputed in the bounded release audit; the checks above establish the stated lineage and alignment. No separately supplied NIST input is read by these preparation sources and no retained ingest-library name contains `nist`; this name check is not an independent audit of every underlying library record.
 
-## License correction before sharing
+The original trainers seed Torch after model initialization. Exact supplied inputs, code and commands make training inspectable and runnable once all dependencies are accessible, but do not promise byte-identical reproduction of historical S2/M1 checkpoint weights or resolve the separate historical ranker-cache producer question. No leaderboard score is claimed for this dataset.
 
-Competition-derived spectra are not made public-domain by assigning CC0 to a private tensor archive. The host's [training-data clarification](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/discussion/745072) permits qualifying artifacts from the open training compilation but does not waive every contributor's rights. The public release must state the applicable source terms and uploader-owned contribution scope, and correct unsupported metadata before changing visibility. No hidden test data belongs in this release.
+## License and attribution — Other (specified in description)
 
-Use [LICENSE-SCOPE.md](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/dataset-cards/2026-10-18/LICENSE-SCOPE.md) and [ATTRIBUTION.md](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/dataset-cards/2026-10-18/ATTRIBUTION.md). Public data access, lawful redistribution and original-training reproducibility are separate requirements. This draft grants no new license over third-party spectra and makes no performance claim.
+This is a compilation of transformed records from the competition-provided training data. The competition hosts' [training-data clarification](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/discussion/745072) permits qualifying artifacts derived from that open training compilation; the competition noncommercial provision was intended for test data. This release relies on that permission for the provided-train-derived artifacts. It does not apply a blanket CC0 dedication or grant new rights over every constituent source.
+
+Original library contributors retain their respective rights and applicable source terms. Consult the [competition training data](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/data) for source attribution and conditions, and preserve those notices when redistributing relevant material. The uploader's contributions here are preparation, numeric array organization, derived fingerprints, selected-column metadata and legacy split assignments; those contributions do not relicense the underlying spectra or molecular records. They are provided for reproducing this CASMI workflow within the host-permitted training-artifact scope. Software licenses on the published builders apply to software, not automatically to third-party data.
+
+COCONUT contributes membership information to the split recipe; credit its [original authors and CC0 dataset](https://coconut.naturalproducts.net/about). The separate candidate pool contains additional COCONUT structures and has its own provenance notice. See the campaign [component attribution](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/dataset-cards/2026-10-18/ATTRIBUTION.md) and [license-scope notice](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/dataset-cards/2026-10-18/LICENSE-SCOPE.md). Neither the dataset label nor publication waives contributor rights, permits proprietary source redistribution or includes hidden test data.
