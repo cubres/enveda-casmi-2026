@@ -1,0 +1,1085 @@
+{
+  "schema": "casmi-legacy-scoped-source-license-audit/2",
+  "status": "PASS_LOCAL_SCOPE_AND_HEADERS_AWAITING_INDEPENDENT_PEER_PUBLICATION",
+  "reviewed_release_allowlist_sha256": "cbf34c2e97f35377e622c5993d085019a3d1c45cee37c2592b435561f2b9ca06",
+  "reviewed_release_files": 42,
+  "qualified_source_paths": 29,
+  "distinct_qualified_python_byte_bodies": 21,
+  "scope_license": "Apache-2.0",
+  "owner_attribution": "Copyright 2026 cubres",
+  "owner_authorized_own_source_grant": true,
+  "licensed_paths": [
+    "public_source/build_coconut.py",
+    "public_source/build_dataset.py",
+    "public_source/build_fps.py",
+    "public_source/build_pool.py",
+    "public_source/demo_preparation_synthetic.py",
+    "public_source/fpmodel.py",
+    "public_source/prepare_legacy_exports.py",
+    "public_source/speclib.py",
+    "public_source/train_fp.py",
+    "full_fingerprint_lineage/build_clean_full_fingerprints.py",
+    "checkpoint_lineage/deterministic_training_launcher.py",
+    "checkpoint_lineage/original_sources/fpmodel.py",
+    "checkpoint_lineage/original_sources/train_fp3.py",
+    "checkpoint_lineage/original_sources/train_fp4.py",
+    "ranker_lineage/original_sources/build_dataset.py",
+    "ranker_lineage/original_sources/build_fps.py",
+    "ranker_lineage/original_sources/casmi_core.py",
+    "ranker_lineage/original_sources/fpmodel.py",
+    "ranker_lineage/original_sources/hard_logits_combo.py",
+    "ranker_lineage/original_sources/hard_logits_m1.py",
+    "ranker_lineage/original_sources/make_ranker3.py",
+    "ranker_lineage/original_sources/model_logits_hard.py",
+    "ranker_lineage/original_sources/rankfeat.py",
+    "ranker_lineage/original_sources/score_model.py",
+    "ranker_lineage/original_sources/train_fp.py",
+    "ranker_lineage/original_sources/train_fp3.py",
+    "ranker_lineage/ORIGINAL_LOCAL_RANKER_FIT_EXCERPT.txt",
+    "ranker_lineage/original_sources/engine.py",
+    "ranker_lineage/original_sources/speclib.py"
+  ],
+  "unknown_origin_sources_excluded": [],
+  "non_source_files_outside_grant": [
+    "README.md",
+    "public_source/OBSERVED_LEGACY_ARTIFACT_BINDINGS.json",
+    "public_source/README.txt",
+    "public_source/SYNTHETIC_PREPARATION_RESULT.json",
+    "public_source/requirements-demo.txt",
+    "full_fingerprint_lineage/FULL_FINGERPRINT_MANIFEST.json",
+    "full_fingerprint_lineage/README.txt",
+    "checkpoint_lineage/README.txt",
+    "checkpoint_lineage/PUBLIC_CHECKPOINT_BINDINGS.json",
+    "checkpoint_lineage/DETERMINISTIC_RECIPE.txt",
+    "ranker_lineage/README.txt",
+    "ranker_lineage/FEATURE_COLUMNS.json",
+    "ranker_lineage/RANKER_COMMANDS.txt"
+  ],
+  "reviewed_files": [
+    {
+      "path": "README.md",
+      "published_path": "reproduction/legacy-v2/README.md",
+      "bytes": 3278,
+      "sha256": "a7d4f594c5c57dca88c8e8291dc022ad1e41d092afb6bb30ab09078ab5da92e4",
+      "header_first_lines": [
+        "# CASMI legacy FP and ranker reproducibility",
+        "",
+        "This packet releases the recovered preparation, FPNet, S2/M1 training and ranker source, with exact retained artifact hashes and the gaps in historical reproducibility stated explicitly. It contains source and aggregate evidence; it contains no competition records, candidate structures, role assignments or weights."
+      ],
+      "existing_notice_or_attribution_matches": [
+        {
+          "line": 17,
+          "text": "Original sources contain trusted-pickle readers. Use only their reviewed, hash-bound inputs. The source files are preserved unchanged and no notebook identity or guard is included. Dataset rights, third-party attribution and access are documented separately in the dataset cards. Source publication does not make private data public or change its license."
+        }
+      ],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "public_source/OBSERVED_LEGACY_ARTIFACT_BINDINGS.json",
+      "published_path": "reproduction/legacy-v2/public_source/OBSERVED_LEGACY_ARTIFACT_BINDINGS.json",
+      "bytes": 3862,
+      "sha256": "fbd72b7e05afca210e373a833dd3c39576aa32ad1a3624a919451bf8e3a01dd5",
+      "header_first_lines": [
+        "{",
+        "  \"schema\": \"casmi-legacy-artifact-bindings/1\",",
+        "  \"observed_utc\": \"2026-10-17T22:24:47.399894+00:00\","
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "public_source/README.txt",
+      "published_path": "reproduction/legacy-v2/public_source/README.txt",
+      "bytes": 11189,
+      "sha256": "698b7e3e7731ab1af0305c37b9421b31becdc66dfde7c6a5a5eb08ab304063e1",
+      "header_first_lines": [
+        "CASMI legacy 6930-bit preparation and training source",
+        "",
+        "This release supplies the original preparation, FPNet, trainers and 31-column ranker builder, plus two clearly marked reconstructed export steps. No historical training or ranking assay was rerun to prepare this release. The retained checkpoint bytes and source recipes are bound separately; the launch commands alone do not prove which run produced a particular checkpoint."
+      ],
+      "existing_notice_or_attribution_matches": [
+        {
+          "line": 39,
+          "text": "OBSERVED_LEGACY_ARTIFACT_BINDINGS.json supplies exact byte lengths and SHA256 for the current retained old train, September2026 COCONUT CSV, intermediate arrays and outputs. These are observed local byte pins, not a signed upstream release checksum or a historical build attestation. In particular, the later current train.parquet has different bytes and rows; it must not silently substitute for the pinned legacy train. COCONUT must supply canonical_smiles, molecular_formula and np_likeness. The source normalizes the largest fragment and filters molecule size, charge and mass before sorting np_likeness and deduplicating connectivity keys. Rights and original source attribution are in the dataset cards; this source release does not redistribute spectra or third-party databases."
+        }
+      ],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "public_source/SYNTHETIC_PREPARATION_RESULT.json",
+      "published_path": "reproduction/legacy-v2/public_source/SYNTHETIC_PREPARATION_RESULT.json",
+      "bytes": 1081,
+      "sha256": "c5d74a0d79b57524d62d26bc91d5f0fc9dbf762fb4da3ee5350b63d6d257f648",
+      "header_first_lines": [
+        "{",
+        "  \"status\": \"PASS_INVENTED_PREPARATION_REBUILD_ONLY\",",
+        "  \"invented_spectra\": 4,"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "public_source/build_coconut.py",
+      "published_path": "reproduction/legacy-v2/public_source/build_coconut.py",
+      "bytes": 1974,
+      "sha256": "85ee0524d03fbd880e07a8637ea740fbb59c4cc280f9b56c2b633939c745b086",
+      "header_first_lines": [
+        "import pandas as pd, numpy as np, pickle, time",
+        "from multiprocessing import Pool",
+        "from rdkit import Chem, RDLogger"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": null,
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/build_coconut.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "public_source/build_dataset.py",
+      "published_path": "reproduction/legacy-v2/public_source/build_dataset.py",
+      "bytes": 4152,
+      "sha256": "ec90d3d9ef3ec9b1e45d2dc9e2e766439ef7431cce8f8388ccb96b0be96a517b",
+      "header_first_lines": [
+        "\"\"\"Turn the 2.5M-spectrum library into model-ready tensors + a structure-level split.\"\"\"",
+        "import numpy as np, pandas as pd, pickle, time, os, sys",
+        "import pyarrow.parquet as pq"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Turn the 2.5M-spectrum library into model-ready tensors + a structure-level split.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/build_dataset.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "public_source/build_fps.py",
+      "published_path": "reproduction/legacy-v2/public_source/build_fps.py",
+      "bytes": 2182,
+      "sha256": "6cd11e3910dc935ecda4a02f2f406c2bafb4c66e356f15dd88f635d5b993078c",
+      "header_first_lines": [
+        "\"\"\"Compute structure-level fingerprints for every unique training structure.\"\"\"",
+        "import numpy as np, pandas as pd, pickle, time, os",
+        "from multiprocessing import Pool"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Compute structure-level fingerprints for every unique training structure.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/build_fps.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "public_source/build_pool.py",
+      "published_path": "reproduction/legacy-v2/public_source/build_pool.py",
+      "bytes": 3316,
+      "sha256": "3be89299396ea87c25e38c60665c6c165756cba083f98e3d52972d3eb0c627c4",
+      "header_first_lines": [
+        "\"\"\"Candidate pool = train structures U COCONUT, selected-bit fingerprints + exact mass.\"\"\"",
+        "import numpy as np, pandas as pd, pickle, time, re",
+        "from multiprocessing import Pool"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Candidate pool = train structures U COCONUT, selected-bit fingerprints + exact mass.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/build_pool.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "public_source/demo_preparation_synthetic.py",
+      "published_path": "reproduction/legacy-v2/public_source/demo_preparation_synthetic.py",
+      "bytes": 8295,
+      "sha256": "10c5a87575d9576f61b620339bfdd0582701f8cc48d402a6c07d63c418a32036",
+      "header_first_lines": [
+        "\"\"\"Small deterministic reconstruction check using invented records only.",
+        "",
+        "Runs no model, training, assay or remote request. The only inputs read are the"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Small deterministic reconstruction check using invented records only.\n\nRuns no model, training, assay or remote request. The only inputs read are the\nadjacent pinned source files and synthetic files created by this invocation.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_NEW_RECONSTRUCTION_DEMO_OR_RECIPE",
+      "provenance_support": [
+        "Release README and module header explicitly distinguish new campaign source from historical code.",
+        "Exact source bytes bound by final42 allowlist and static publication review.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "public_source/fpmodel.py",
+      "published_path": "reproduction/legacy-v2/public_source/fpmodel.py",
+      "bytes": 5158,
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76",
+      "header_first_lines": [
+        "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\"",
+        "import numpy as np, torch, torch.nn as nn, torch.nn.functional as F, math",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [
+        {
+          "line": 1,
+          "text": "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\""
+        },
+        {
+          "line": 55,
+          "text": "    \"\"\"Log-spaced sinusoidal embedding for m/z values (Voronov et al.).\"\"\""
+        }
+      ],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/fpmodel.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ],
+      "preserved_method_attributions": [
+        {
+          "line": 1,
+          "text": "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\""
+        },
+        {
+          "line": 55,
+          "text": "    \"\"\"Log-spaced sinusoidal embedding for m/z values (Voronov et al.).\"\"\""
+        }
+      ]
+    },
+    {
+      "path": "public_source/prepare_legacy_exports.py",
+      "published_path": "reproduction/legacy-v2/public_source/prepare_legacy_exports.py",
+      "bytes": 4464,
+      "sha256": "8ccce8764cbf58d0ced0a361d2212b134e5332db653000687bc1853a5c76b544",
+      "header_first_lines": [
+        "\"\"\"Reconstructed export wrappers for retained legacy CASMI preparation code.",
+        "",
+        "These wrappers were written in 2026-10-18, not recovered historical launchers."
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Reconstructed export wrappers for retained legacy CASMI preparation code.\n\nThese wrappers were written in 2026-10-18, not recovered historical launchers.\nThey make the two missing serialization steps explicit. No training runs here.\nRun from the recipe workspace with the byte-pinned companion sources present.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_NEW_RECONSTRUCTION_DEMO_OR_RECIPE",
+      "provenance_support": [
+        "Release README and module header explicitly distinguish new campaign source from historical code.",
+        "Exact source bytes bound by final42 allowlist and static publication review.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "public_source/requirements-demo.txt",
+      "published_path": "reproduction/legacy-v2/public_source/requirements-demo.txt",
+      "bytes": 133,
+      "sha256": "41c21d2c5e384be624437e8839d2bf2ee1369c4a3870e3cfbf2ca05a28c638a2",
+      "header_first_lines": [
+        "# Tested synthetic preparation environment, not historical training pins.",
+        "# Python3.12.14",
+        "numpy==2.2.6"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "public_source/speclib.py",
+      "published_path": "reproduction/legacy-v2/public_source/speclib.py",
+      "bytes": 2959,
+      "sha256": "27e149dd8f705389a969f1b9232b7b2451c7f3189f5586f5a42160864ff403eb",
+      "header_first_lines": [
+        "\"\"\"Fast binary spectral library: flatten 2.5M spectra into contiguous float32 arrays.\"\"\"",
+        "import numpy as np, pyarrow.parquet as pq, pyarrow as pa, os, time, pickle",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Fast binary spectral library: flatten 2.5M spectra into contiguous float32 arrays.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/speclib.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "public_source/train_fp.py",
+      "published_path": "reproduction/legacy-v2/public_source/train_fp.py",
+      "bytes": 5626,
+      "sha256": "0fb873d9639bfd6a4104746b1df810468727ce2d24afe78951efff5c01f99b6d",
+      "header_first_lines": [
+        "import numpy as np, torch, torch.nn as nn, torch.nn.functional as F, time, pickle, os, sys, math",
+        "import fpmodel",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": null,
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/train_fp.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "full_fingerprint_lineage/FULL_FINGERPRINT_MANIFEST.json",
+      "published_path": "reproduction/legacy-v2/full_fingerprint_lineage/FULL_FINGERPRINT_MANIFEST.json",
+      "bytes": 3347,
+      "sha256": "5b08ca4b830de1558be4ce568a10f0997b5fa2fe875a872dcd6a216f901fd9ef",
+      "header_first_lines": [
+        "{",
+        "  \"preparation_receipt\": {",
+        "    \"status\": \"PASS_DATA_PREPARATION\","
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "full_fingerprint_lineage/README.txt",
+      "published_path": "reproduction/legacy-v2/full_fingerprint_lineage/README.txt",
+      "bytes": 1461,
+      "sha256": "726b19d238d6c38a65439291b1d545b12f68e391adae384a7175f7a8c4733efd",
+      "header_first_lines": [
+        "Original full10395 fingerprint builder, source-only release.",
+        "",
+        "This source is copied byte-for-byte and was not executed for this release. It is bound to the adjacent historical aggregate manifest, which reports RDKit2026.03.3,10407 raw bits,10395 optimizer-nonconstant selected bits,219470 optimizer structures and711705 candidates."
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "full_fingerprint_lineage/build_clean_full_fingerprints.py",
+      "published_path": "reproduction/legacy-v2/full_fingerprint_lineage/build_clean_full_fingerprints.py",
+      "bytes": 7217,
+      "sha256": "dcbdaeb7351d21ad46b1f01dda069f35b981ff8d88ee54ec7915cacc9a73ff90",
+      "header_first_lines": [
+        "\"\"\"Prepare private optimizer-selected full fingerprint targets with additive files.\"\"\"",
+        "import base64",
+        "import datetime"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Prepare private optimizer-selected full fingerprint targets with additive files.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Neurogolf/research/codex_campaign_20261003T1439Z/build_clean_full_fingerprints.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "checkpoint_lineage/README.txt",
+      "published_path": "reproduction/legacy-v2/checkpoint_lineage/README.txt",
+      "bytes": 2283,
+      "sha256": "058dfb0c5883f7e5a7aa1be1a0f008f9c25d188c4d779d4b2862dfeb729642c8",
+      "header_first_lines": [
+        "CASMI historical S2/M1 checkpoint lineage \u2014 source review, 2026-10-18",
+        "",
+        "Exact configured source recipes:"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "checkpoint_lineage/PUBLIC_CHECKPOINT_BINDINGS.json",
+      "published_path": "reproduction/legacy-v2/checkpoint_lineage/PUBLIC_CHECKPOINT_BINDINGS.json",
+      "bytes": 4344,
+      "sha256": "94b1f146abc4c9a8933276f39c9c40ed2e641cb8c4d5d588607ffb8bf2a39022",
+      "header_first_lines": [
+        "{",
+        "  \"status\": \"HISTORICAL_SOURCE_AND_RETAINED_BYTE_BINDING_NOT_COMPLETE_PRODUCER_ATTESTATION\",",
+        "  \"source_sha256\": {"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "checkpoint_lineage/deterministic_training_launcher.py",
+      "published_path": "reproduction/legacy-v2/checkpoint_lineage/deterministic_training_launcher.py",
+      "bytes": 5488,
+      "sha256": "eac6044a5958019adb5adb2ffe9baab436dd5d3abfea6abc40e78b58c0646601",
+      "header_first_lines": [
+        "\"\"\"NEW OPT-IN recipe, not the historical S2/M1 training invocation.",
+        "",
+        "Seeds initialization before the unchanged historical trainer, requests strict"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "NEW OPT-IN recipe, not the historical S2/M1 training invocation.\n\nSeeds initialization before the unchanged historical trainer, requests strict\nPyTorch deterministic kernels, and fails on unsupported operations. This does\nnot reproduce old weights or guarantee identical results across software/hardware.\nRequires a fresh Python process with PYTHONHASHSEED=<seed> and\nCUBLAS_WORKSPACE_CONFIG=:4096:8 set before startup. Original trainer arguments\nfollow -- and must include the same explicit --seed and a new --out path.\nThis file does not launch Kaggle, download inputs, or modify companion sources.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_NEW_RECONSTRUCTION_DEMO_OR_RECIPE",
+      "provenance_support": [
+        "Release README and module header explicitly distinguish new campaign source from historical code.",
+        "Exact source bytes bound by final42 allowlist and static publication review.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "checkpoint_lineage/DETERMINISTIC_RECIPE.txt",
+      "published_path": "reproduction/legacy-v2/checkpoint_lineage/DETERMINISTIC_RECIPE.txt",
+      "bytes": 3363,
+      "sha256": "5c32a1a19b5775be93d6e843c30078a250e451545aefa80f737ac7ac34f77566",
+      "header_first_lines": [
+        "NEW OPT-IN STRICT DETERMINISTIC-KERNEL TRAINING RECIPE",
+        "",
+        "This is a separate prospective recipe, not the historical S2/M1 invocation and"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "checkpoint_lineage/original_sources/fpmodel.py",
+      "published_path": "reproduction/legacy-v2/checkpoint_lineage/original_sources/fpmodel.py",
+      "bytes": 5158,
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76",
+      "header_first_lines": [
+        "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\"",
+        "import numpy as np, torch, torch.nn as nn, torch.nn.functional as F, math",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [
+        {
+          "line": 1,
+          "text": "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\""
+        },
+        {
+          "line": 55,
+          "text": "    \"\"\"Log-spaced sinusoidal embedding for m/z values (Voronov et al.).\"\"\""
+        }
+      ],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/fpmodel.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ],
+      "preserved_method_attributions": [
+        {
+          "line": 1,
+          "text": "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\""
+        },
+        {
+          "line": 55,
+          "text": "    \"\"\"Log-spaced sinusoidal embedding for m/z values (Voronov et al.).\"\"\""
+        }
+      ]
+    },
+    {
+      "path": "checkpoint_lineage/original_sources/train_fp3.py",
+      "published_path": "reproduction/legacy-v2/checkpoint_lineage/original_sources/train_fp3.py",
+      "bytes": 9631,
+      "sha256": "43bb618dd512def4ccb1119f813aabce2b9f9bcbfa681c9d2db5adfa05e66840",
+      "header_first_lines": [
+        "\"\"\"Spectrum->fingerprint training with BCE + hard-negative contrastive ranking loss.",
+        "   Ranking score is f_cand . z (exact Bayes log-likelihood up to a candidate-independent constant).\"\"\"",
+        "import numpy as np, torch, torch.nn as nn, torch.nn.functional as F, time, pickle, os, math, argparse"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Spectrum->fingerprint training with BCE + hard-negative contrastive ranking loss.\nRanking score is f_cand . z (exact Bayes log-likelihood up to a candidate-independent constant).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/train_fp3.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "checkpoint_lineage/original_sources/train_fp4.py",
+      "published_path": "reproduction/legacy-v2/checkpoint_lineage/original_sources/train_fp4.py",
+      "bytes": 11704,
+      "sha256": "e2eaef630c5f09f157eea3652095b8b9780cbe7fdffa6f0652ae5845d7b18c8a",
+      "header_first_lines": [
+        "\"\"\"Spectrum->fingerprint training with BCE + hard-negative contrastive ranking loss.",
+        "   Ranking score is f_cand . z (exact Bayes log-likelihood up to a candidate-independent constant).\"\"\"",
+        "import numpy as np, torch, torch.nn as nn, torch.nn.functional as F, time, pickle, os, math, argparse"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Spectrum->fingerprint training with BCE + hard-negative contrastive ranking loss.\nRanking score is f_cand . z (exact Bayes log-likelihood up to a candidate-independent constant).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/train_fp4.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/README.txt",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/README.txt",
+      "bytes": 1701,
+      "sha256": "4e7f7f78b5962ca0acbfa538e858fb1a5a509210357c7357d1eb9af91bcd6fbf",
+      "header_first_lines": [
+        "Recovered CASMI ranker source: review candidate only",
+        "",
+        "The untouched original make_ranker3.py is in original_sources/. Its direct feature"
+      ],
+      "existing_notice_or_attribution_matches": [
+        {
+          "line": 25,
+          "text": "or run against untrusted assets. No license or publication admission is granted"
+        }
+      ],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "ranker_lineage/FEATURE_COLUMNS.json",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/FEATURE_COLUMNS.json",
+      "bytes": 3108,
+      "sha256": "ce19c13b778a8d1b162465b464e9acecb6f89cb82f6313b8fe00aeac9b66c060",
+      "header_first_lines": [
+        "{",
+        "  \"source_sha256\": \"716e01b30f55ad89780d433dd81c683037bf60e759e710756a0b40f28c830c86\",",
+        "  \"indexing\": \"zero-based\","
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "ranker_lineage/original_sources/build_dataset.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/build_dataset.py",
+      "bytes": 4152,
+      "sha256": "ec90d3d9ef3ec9b1e45d2dc9e2e766439ef7431cce8f8388ccb96b0be96a517b",
+      "header_first_lines": [
+        "\"\"\"Turn the 2.5M-spectrum library into model-ready tensors + a structure-level split.\"\"\"",
+        "import numpy as np, pandas as pd, pickle, time, os, sys",
+        "import pyarrow.parquet as pq"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Turn the 2.5M-spectrum library into model-ready tensors + a structure-level split.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/build_dataset.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/build_fps.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/build_fps.py",
+      "bytes": 2182,
+      "sha256": "6cd11e3910dc935ecda4a02f2f406c2bafb4c66e356f15dd88f635d5b993078c",
+      "header_first_lines": [
+        "\"\"\"Compute structure-level fingerprints for every unique training structure.\"\"\"",
+        "import numpy as np, pandas as pd, pickle, time, os",
+        "from multiprocessing import Pool"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Compute structure-level fingerprints for every unique training structure.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/build_fps.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/casmi_core.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/casmi_core.py",
+      "bytes": 2977,
+      "sha256": "bc8011a1d5a3a0024c739e812b644a8649087e0e92acfbce289e5048a63259f2",
+      "header_first_lines": [
+        "\"\"\"Shared retrieval core: Class-1 library search + Class-2 pool retrieval + blending.\"\"\"",
+        "import numpy as np, pickle, math",
+        "import engine, speclib"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Shared retrieval core: Class-1 library search + Class-2 pool retrieval + blending.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/casmi_core.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/fpmodel.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/fpmodel.py",
+      "bytes": 5158,
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76",
+      "header_first_lines": [
+        "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\"",
+        "import numpy as np, torch, torch.nn as nn, torch.nn.functional as F, math",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [
+        {
+          "line": 1,
+          "text": "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\""
+        },
+        {
+          "line": 55,
+          "text": "    \"\"\"Log-spaced sinusoidal embedding for m/z values (Voronov et al.).\"\"\""
+        }
+      ],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/fpmodel.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ],
+      "preserved_method_attributions": [
+        {
+          "line": 1,
+          "text": "\"\"\"Spectrum -> molecular fingerprint model (CSI:FingerID-style neural ranker).\"\"\""
+        },
+        {
+          "line": 55,
+          "text": "    \"\"\"Log-spaced sinusoidal embedding for m/z values (Voronov et al.).\"\"\""
+        }
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/hard_logits_combo.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/hard_logits_combo.py",
+      "bytes": 2433,
+      "sha256": "7ca4eadf421c1faa266d0e68c00e957729f674b791a59bed0b22fd8e3c6f3ed9",
+      "header_first_lines": [
+        "\"\"\"Model channel for the 569 obscure molecules: m1 on MERGED input + s2 per-spectrum, averaged.",
+        "   Each model is fed the input distribution it was trained on (0.4904 vs 0.4799/0.4896 alone).\"\"\"",
+        "import numpy as np, pickle, time, libsearch, score_model, pyarrow.parquet as pq"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Model channel for the 569 obscure molecules: m1 on MERGED input + s2 per-spectrum, averaged.\nEach model is fed the input distribution it was trained on (0.4904 vs 0.4799/0.4896 alone).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/hard_logits_combo.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/hard_logits_m1.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/hard_logits_m1.py",
+      "bytes": 2016,
+      "sha256": "2605f39602a93e8862ae369397d28f903cb966f30d7b823a8de7f621e9798d7e",
+      "header_first_lines": [
+        "\"\"\"Model channel for the 569 obscure molecules: m1 (50k-step merge-trained) on MERGED input.",
+        "   m1 alone (0.5173) beats every combination that includes s2 (0.5112).\"\"\"",
+        "import numpy as np, pickle, time, libsearch, score_model, pyarrow.parquet as pq"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Model channel for the 569 obscure molecules: m1 (50k-step merge-trained) on MERGED input.\nm1 alone (0.5173) beats every combination that includes s2 (0.5112).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/hard_logits_m1.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/make_ranker3.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/make_ranker3.py",
+      "bytes": 4859,
+      "sha256": "e94e41a384ee78c027d8c9f3918708aa2d4a94b1eae8fee00c9a7bc5fa427532",
+      "header_first_lines": [
+        "\"\"\"Ranker trained on BOTH validation sets (250 common NPs + 569 obscure structures),",
+        "   optionally with the spectrum->fingerprint model channel. Selects W1 against the",
+        "   leaderboard-calibrated objective ExpectedLB = 0.162*c1 + 0.20*c2.\"\"\""
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Ranker trained on BOTH validation sets (250 common NPs + 569 obscure structures),\noptionally with the spectrum->fingerprint model channel. Selects W1 against the\nleaderboard-calibrated objective ExpectedLB = 0.162*c1 + 0.20*c2.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/make_ranker3.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/model_logits_hard.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/model_logits_hard.py",
+      "bytes": 1620,
+      "sha256": "0820ba8d9166ed79c86fa68f7e11acf14b4bb6896d1058dac3da20d244bba2c5",
+      "header_first_lines": [
+        "\"\"\"Model logits for the 569 obscure held-out molecules (same query-spectrum selection as",
+        "   gen_feats_hard.py, so rows line up with hard_feats.pkl).\"\"\"",
+        "import numpy as np, pickle, time, sys, libsearch, score_model, pyarrow.parquet as pq"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Model logits for the 569 obscure held-out molecules (same query-spectrum selection as\ngen_feats_hard.py, so rows line up with hard_feats.pkl).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/model_logits_hard.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/rankfeat.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/rankfeat.py",
+      "bytes": 3557,
+      "sha256": "716e01b30f55ad89780d433dd81c683037bf60e759e710756a0b40f28c830c86",
+      "header_first_lines": [
+        "\"\"\"Single source of truth for candidate ranking features (used by local fitting AND the notebook).",
+        "",
+        "Deliberately EXCLUDES any feature revealing pool provenance (src / np_likeness): in the Class-2"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Single source of truth for candidate ranking features (used by local fitting AND the notebook).\n\nDeliberately EXCLUDES any feature revealing pool provenance (src / np_likeness): in the Class-2\nsimulation the answer is always a training-library structure, so those columns leak.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/rankfeat.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/score_model.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/score_model.py",
+      "bytes": 2033,
+      "sha256": "8970ca52b11fe2490b861f6c29d54e316d96d2118349d1ea40afd1b501b8d2ea",
+      "header_first_lines": [
+        "\"\"\"Score candidates with the trained spectrum->fingerprint model: rank = fp_candidate . logits.\"\"\"",
+        "import numpy as np, torch, pickle, fpmodel",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Score candidates with the trained spectrum->fingerprint model: rank = fp_candidate . logits.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/score_model.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/train_fp.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/train_fp.py",
+      "bytes": 5626,
+      "sha256": "0fb873d9639bfd6a4104746b1df810468727ce2d24afe78951efff5c01f99b6d",
+      "header_first_lines": [
+        "import numpy as np, torch, torch.nn as nn, torch.nn.functional as F, time, pickle, os, sys, math",
+        "import fpmodel",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": null,
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/train_fp.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/train_fp3.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/train_fp3.py",
+      "bytes": 9631,
+      "sha256": "43bb618dd512def4ccb1119f813aabce2b9f9bcbfa681c9d2db5adfa05e66840",
+      "header_first_lines": [
+        "\"\"\"Spectrum->fingerprint training with BCE + hard-negative contrastive ranking loss.",
+        "   Ranking score is f_cand . z (exact Bayes log-likelihood up to a candidate-independent constant).\"\"\"",
+        "import numpy as np, torch, torch.nn as nn, torch.nn.functional as F, time, pickle, os, math, argparse"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Spectrum->fingerprint training with BCE + hard-negative contrastive ranking loss.\nRanking score is f_cand . z (exact Bayes log-likelihood up to a candidate-independent constant).",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/train_fp3.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/RANKER_COMMANDS.txt",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/RANKER_COMMANDS.txt",
+      "bytes": 3322,
+      "sha256": "8631e584dc42d8cf74eb0d422f40b1c972130321a8e2e7a41f3cec02466e9b05",
+      "header_first_lines": [
+        "Recovered original 31-column ranker build and fitting recipe",
+        "",
+        "Original source command (from a NEW prepared working directory):"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "NON_SOURCE_METADATA_DOCUMENTATION_OR_DEPENDENCY_LIST_EXCLUDED"
+    },
+    {
+      "path": "ranker_lineage/ORIGINAL_LOCAL_RANKER_FIT_EXCERPT.txt",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/ORIGINAL_LOCAL_RANKER_FIT_EXCERPT.txt",
+      "bytes": 2919,
+      "sha256": "8ffc51b55a5189ebeebea764d71050cf507c1cf91b58d4f9b0d1efba474a20e0",
+      "header_first_lines": [
+        "Original local push_public.py CFG and FITRANK excerpts; source-only, not fresh native notebook provenance.",
+        "",
+        "    # --- ranker ---------------------------------------------------------------------"
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "classification": "QUALIFIED_OWN_RETAINED_SOURCE_EXCERPT",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/push_public.py",
+      "retained_original_sha256": "491db2241225c229e7395b5bfb41197232d54e86d14ccc6176174ca6ec3754d3",
+      "provenance_support": [
+        "Excerpt header names retained local original source.",
+        "Independent V4 review binds exact CFG slice and FITRANK literal to retained original SHA.",
+        "Current original source hash matches that receipt.",
+        "Owner authorized Apache-2.0 grant for own source excerpt."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/engine.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/engine.py",
+      "bytes": 2770,
+      "sha256": "d589df473dc90b3a742f0ddb9851ae05b804f455a321022fb3d121be139e9359",
+      "header_first_lines": [
+        "import numpy as np, numba, pickle, time",
+        "from numba import njit, prange",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": null,
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/engine.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    },
+    {
+      "path": "ranker_lineage/original_sources/speclib.py",
+      "published_path": "reproduction/legacy-v2/ranker_lineage/original_sources/speclib.py",
+      "bytes": 2959,
+      "sha256": "27e149dd8f705389a969f1b9232b7b2451c7f3189f5586f5a42160864ff403eb",
+      "header_first_lines": [
+        "\"\"\"Fast binary spectral library: flatten 2.5M spectra into contiguous float32 arrays.\"\"\"",
+        "import numpy as np, pyarrow.parquet as pq, pyarrow as pa, os, time, pickle",
+        ""
+      ],
+      "existing_notice_or_attribution_matches": [],
+      "original_bytes_modified": false,
+      "existing_notices_removed_or_changed": false,
+      "module_docstring": "Fast binary spectral library: flatten 2.5M spectra into contiguous float32 arrays.",
+      "header_ast_parse": "PASS",
+      "classification": "QUALIFIED_OWN_RETAINED_CAMPAIGN_SOURCE",
+      "retained_original_path": "/Users/cubres/Documents/Clauding/casmi_work/speclib.py",
+      "retained_original_byte_parity": true,
+      "provenance_support": [
+        "Release documentation identifies retained original campaign source and its companion files.",
+        "Current byte equality with the exact retained original source.",
+        "Existing ranker/checkpoint source receipts and final42 publication review provide lineage.",
+        "Owner authorized Apache-2.0 grant for own campaign source."
+      ]
+    }
+  ],
+  "provenance_evidence": {
+    "final42_allowlist": {
+      "sha256": "cbf34c2e97f35377e622c5993d085019a3d1c45cee37c2592b435561f2b9ca06",
+      "bytes": 14179
+    },
+    "independent_v4_source_review": {
+      "sha256": "85b4e79424f0c000980f87230ece32a1e22d75e4c8b069a391f0633adb139e21",
+      "bytes": 2642
+    },
+    "ranker_excerpt": {
+      "FITRANK_literal_bytes": 1688,
+      "FITRANK_literal_sha256": "76b1b1d7755b7a4783c922632cd2b6625cf7dd687fe5a15d0a46161276721689",
+      "retained_push_public_source_sha256": "491db2241225c229e7395b5bfb41197232d54e86d14ccc6176174ca6ec3754d3",
+      "source_provenance": "Retained local source only; no newly attested native version or score"
+    },
+    "basis_limit": "Authorship classification uses owner authorization, campaign source lineage, preserved-source parity and existing reconstruction labels; absence of a third-party header alone is not treated as ownership proof."
+  },
+  "notice_findings": {
+    "third_party_copyright_or_license_block_identified_in_qualified_source": false,
+    "fpnet_method_context": "CSI:FingerID-style module header and Log-spaced sinusoidal embedding for m/z values (Voronov et al.) class docstring retained unchanged. These are method attributions; no third-party implementation or upstream grant is inferred.",
+    "historical_score_comments": "Preserved verbatim; no new verification or performance claim.",
+    "all_original_headers_and_notices_preserved": true,
+    "external_dependency_implementations_not_included_or_relicensed": true,
+    "no_blanket_repository_or_third_party_data_grant": true
+  },
+  "official_license_text": {
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "source": "Previously retrieved official text reused unchanged."
+  },
+  "actions": {
+    "original42_files_modified": false,
+    "source_or_model_execution": false,
+    "data_or_role_values_read": false,
+    "network": false,
+    "native_actions": false,
+    "publication": false,
+    "baseline42_files_modified_by_this_license_staging": false,
+    "separate_documentation_changes": "Independent warning updates may accompany this additive license delta; source bytes and source notices remain unchanged."
+  },
+  "revision": "Add explicit preserved Voronov et al. method attribution; distinguish reviewed 42-file baseline from independent post-baseline documentation changes.",
+  "review_observation_scope": "The 42 entries below record the exact reviewed original release baseline. All 29 licensed source paths remain byte-for-byte preserved. Separate documented README warning updates do not modify code or source notices; baseline documentation hashes are not claims about the final combined publication.",
+  "previous_local_audit_sha256": "822f3b80aac8ca024113caa829189ce5d9de76a3b8c7b8288aadea0740894d86"
+}

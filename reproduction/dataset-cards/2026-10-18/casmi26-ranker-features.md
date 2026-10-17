@@ -6,7 +6,7 @@
 
 These are candidate-level training features, not a held-out query set. Within-query ranks, maxima, z-scores and correlations depend on the whole candidate list. A training row cannot be shuffled independently for a valid ranking evaluation. `G` is a grouping array, not by itself proof of structure-disjoint validation or absence of initializer exposure.
 
-## Original builder and exact historical invocation
+## Recovered feature-builder contract
 
 The recovered source release contains [make_ranker3.py](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/ranker_lineage/original_sources/make_ranker3.py), [rankfeat.py](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/ranker_lineage/original_sources/rankfeat.py) and [casmi_core.py](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/ranker_lineage/original_sources/casmi_core.py). Stage these sources in a new working directory with the historical data layout described in the [ranker recipe](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/ranker_lineage/README.txt), then use:
 
@@ -14,9 +14,9 @@ The recovered source release contains [make_ranker3.py](https://github.com/cubre
 python make_ranker3.py --model
 ```
 
-The source writes `up_rank3/rank_train.npz` and `data/w1_v3.pkl`, not a fitted classifier. Without `--model`, twelve fingerprint-derived feature columns are zero, so omitting that flag does not reproduce this feature recipe. It fits cross-validation classifiers to choose the simulation-regime weight. Its data preparation and cache expectations are documented in the [source release](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/README.md).
+The source writes `up_rank3/rank_train.npz` and `data/w1_v3.pkl`, not a fitted classifier. The twelve fingerprint-derived columns (15–20 and 25–30, zero-based) depend on `data/val_model_logits_combo.npy` and `data/hard_model_logits.npy`. `--model` enables their optional loading; it does not identify either historical producer. If the flag is absent, or if the corresponding cache is missing, those twelve columns are silently zero for that query set. It fits cross-validation classifiers to choose the simulation-regime weight. Its data preparation and cache expectations are documented in the [source release](https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/README.md).
 
-**Current reproduction boundary:** this invocation requires precomputed spectral/analog features, pool arrays and fingerprint logits. The original A-cache producer (`val_model_logits_combo.npy`, 250 × 6930) is not yet bound. The B-cache (`hard_model_logits.npy`, 569 × 6930) has several historical writers, so a matching filename does not identify its model channel. Their generator source, checkpoint hashes, query ordering and cache hashes must be resolved before claiming complete regeneration of the published archive. Do not substitute an unrelated later cache.
+**Current reproduction boundary:** this invocation requires precomputed spectral/analog features, pool arrays and fingerprint logits. The original A-cache producer (`val_model_logits_combo.npy`, 250 × 6930) is not yet bound. The B-cache (`hard_model_logits.npy`, 569 × 6930) has several historical writers, so a matching filename does not identify its model channel. Their generator source, checkpoint hashes, query ordering and cache hashes must be resolved before claiming complete regeneration of the published archive. The command documents the recovered feature-builder contract, not a proven byte-exact historical invocation or regeneration. Do not substitute an unrelated later cache.
 
 A local folder named `up_rank6` contains a different 39-column artifact. Its name does not identify this public **dataset version 6**, and it must not replace this 31-column contract. Existing release notes also use internal labels such as “v5”; bind the actual Kaggle version and bytes.
 

@@ -22,5 +22,16 @@ provides all 31 zero-based column names and formulas. Cached logits have width
 Source copies contain local-path references and historical comments but no
 actual records, credentials, weight files or notebook identities. They retain
 unsafe trusted-pickle loading present in the originals and must not be imported
-or run against untrusted assets. No license or publication admission is granted
-by this packet. Preserve original sources, caches and every notebook identity.
+or run against untrusted assets. The scoped source license is now documented in ../NOTICE and ../LICENSE-SOURCE
+for the enumerated original/reconstructed source paths. This README grants no
+additional rights over upstream data or dependencies. Preserve original sources,
+caches and every notebook identity.
+
+FP-cache boundary: columns 15–20 and 25–30 require the two exact cache inputs
+`data/val_model_logits_combo.npy` (A) and `data/hard_model_logits.npy` (B).
+`--model` only enables optional loading; it does not identify their producers.
+A missing flag or missing cache silently yields twelve zero FP columns for the
+corresponding query set. The original A producer remains unknown and B has
+multiple writers. This release recovers the feature-builder contract; it does
+not establish a byte-exact historical invocation or regeneration. Original
+source files remain byte-for-byte preserved.
