@@ -1,0 +1,152 @@
+{
+  "status": "HISTORICAL_SOURCE_AND_RETAINED_BYTE_BINDING_NOT_COMPLETE_PRODUCER_ATTESTATION",
+  "source_sha256": {
+    "train_fp3.py": "43bb618dd512def4ccb1119f813aabce2b9f9bcbfa681c9d2db5adfa05e66840",
+    "train_fp4.py": "e2eaef630c5f09f157eea3652095b8b9780cbe7fdffa6f0652ae5845d7b18c8a",
+    "fpmodel.py": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76"
+  },
+  "recipes": [
+    {
+      "argv_symbolic": [
+        "<sys.executable>",
+        "-u",
+        "train_fp3.py",
+        "--spec",
+        "<D1>/spec.npz",
+        "--fpdir",
+        "<D1>",
+        "--pooldir",
+        "<D2>",
+        "--steps",
+        "24000",
+        "--bs",
+        "256",
+        "--lr",
+        "2e-4",
+        "--K",
+        "63",
+        "--lam",
+        "1.0",
+        "--seed",
+        "202",
+        "--d",
+        "512",
+        "--layers",
+        "6",
+        "--val_every",
+        "2000",
+        "--max_minutes",
+        "300",
+        "--out",
+        "/kaggle/working/fp_model_s2.pt"
+      ],
+      "command_provenance": "EXACT_RETAINED_NOTEBOOK_SOURCE",
+      "command_to_specific_checkpoint_producer_binding": "UNPROVEN",
+      "configured_max_steps": 24000,
+      "implicit_defaults": {
+        "dropout": 0.1,
+        "heads": 8,
+        "negative_ppm": 10.0,
+        "resume": "",
+        "warm": 2000
+      },
+      "input_dataset_refs": [
+        "prvsiyan/casmi26-spec-fp",
+        "prvsiyan/casmi26-pool"
+      ],
+      "input_dataset_versions": "UNKNOWN",
+      "input_resolution": "D1=dirname(shortest glob /kaggle/input/**/spec.npz), D2=dirname(shortest glob /kaggle/input/**/pool_fp.npy)",
+      "label": "single_s2",
+      "max_minutes": 300,
+      "merge_behavior": "single spectra; --merge_p not supported",
+      "merge_p_cli": null,
+      "output_name": "fp_model_s2.pt",
+      "seed_cli": 202
+    },
+    {
+      "argv_symbolic": [
+        "<sys.executable>",
+        "-u",
+        "train_fp4.py",
+        "--spec",
+        "<D1>/spec.npz",
+        "--fpdir",
+        "<D1>",
+        "--pooldir",
+        "<D2>",
+        "--steps",
+        "50000",
+        "--bs",
+        "256",
+        "--lr",
+        "2e-4",
+        "--K",
+        "63",
+        "--lam",
+        "1.0",
+        "--seed",
+        "404",
+        "--d",
+        "512",
+        "--layers",
+        "6",
+        "--merge_p",
+        "0.60",
+        "--val_every",
+        "2000",
+        "--max_minutes",
+        "420",
+        "--out",
+        "/kaggle/working/fp_model_m1.pt"
+      ],
+      "command_provenance": "EXACT_RETAINED_NOTEBOOK_SOURCE",
+      "command_to_specific_checkpoint_producer_binding": "UNPROVEN",
+      "configured_max_steps": 50000,
+      "implicit_defaults": {
+        "dropout": 0.1,
+        "heads": 8,
+        "negative_ppm": 10.0,
+        "resume": "",
+        "warm": 2000
+      },
+      "input_dataset_refs": [
+        "prvsiyan/casmi26-spec-fp",
+        "prvsiyan/casmi26-pool"
+      ],
+      "input_dataset_versions": "UNKNOWN",
+      "input_resolution": "D1=dirname(shortest glob /kaggle/input/**/spec.npz), D2=dirname(shortest glob /kaggle/input/**/pool_fp.npy)",
+      "label": "merged_m1",
+      "max_minutes": 420,
+      "merge_behavior": "per-anchor merge probability 0.60 in training and validation",
+      "merge_p_cli": 0.6,
+      "output_name": "fp_model_m1.pt",
+      "seed_cli": 404
+    }
+  ],
+  "checkpoint_records": [
+    {
+      "file": "fp_single_s2.pt",
+      "bytes": 144110255,
+      "sha256": "c19aa29016ed4d7a67bac38105b8fa5076c696c29eb66a504558c9b2e52b614a",
+      "selected_step": 20000,
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6
+    },
+    {
+      "file": "fp_merged_m1.pt",
+      "bytes": 144110255,
+      "sha256": "261529c823825cbe2028684bbf7214a95a7e631ca9f656336d577c507cce8294",
+      "selected_step": 24000,
+      "nbits": 6930,
+      "d": 512,
+      "layers": 6
+    }
+  ],
+  "public_dataset": "https://www.kaggle.com/datasets/prvsiyan/casmi26-fp-models-v2/versions/1",
+  "retained_declared_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "actual_training_package_versions": "UNKNOWN",
+  "actual_native_producer_version": "UNKNOWN",
+  "original_m1_export_chain": "UNPROVEN: current optimizer-bearing original-name bytes differ from retained v4 record",
+  "seed_after_model_initialization": true
+}

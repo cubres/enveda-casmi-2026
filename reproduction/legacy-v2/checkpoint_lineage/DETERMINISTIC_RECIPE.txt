@@ -1,0 +1,55 @@
+NEW OPT-IN STRICT DETERMINISTIC-KERNEL TRAINING RECIPE
+
+This is a separate prospective recipe, not the historical S2/M1 invocation and
+not a claim to regenerate the published checkpoint bytes. The launcher has had
+source-only review. It has not been run on a model or qualified on CPU/GPU.
+The unchanged historical sources remain in original_sources/ next to the
+launcher, and all three source SHA256 pins must match.
+
+Before a future authorized run:
+1. Use one fresh Python process in a fixed, recorded software/hardware image.
+   Record Python, NumPy, PyTorch, CUDA, cuDNN and driver versions. This recipe
+   supports CPU or CUDA; it rejects the historical MPS fallback. Unsupported
+   deterministic APIs or operations fail with no weaker fallback or retry.
+2. Rebuild/obtain the trusted legacy inputs in a separate recipe workspace:
+   ds/spec.npz, up_train/fp_meta.pkl, pool_meta.pkl, pool_mass.npy, pool_fp.npy.
+   Bind exact bytes and fingerprint column order. Pickles are trusted local
+   artifacts only. Relative paths below resolve from that recipe workspace.
+3. Keep the original_sources directory layout. Replace /PATH/TO in the commands
+   with this launcher's directory. Use a new --out file each time; existing
+   outputs and resume are rejected. Do not run the historical push wrappers.
+4. Set PYTHONHASHSEED and CUBLAS_WORKSPACE_CONFIG before Python starts. Do not
+   use -E or -I. Any TORCH_ALLOW_TF32_CUBLAS_OVERRIDE must be absent or zero.
+
+Example S2 (configured 24,000 steps, explicit seed 202):
+
+PYTHONHASHSEED=202 CUBLAS_WORKSPACE_CONFIG=:4096:8 python3 /PATH/TO/deterministic_training_launcher.py \
+  --trainer train_fp3.py --seed 202 -- \
+  --spec ds/spec.npz --fpdir up_train --pooldir . \
+  --steps 24000 --bs 256 --lr 2e-4 --K 63 --lam 1.0 --seed 202 \
+  --d 512 --layers 6 --val_every 2000 --max_minutes 300 --out new_s2_optin.pt
+
+Example M1 (configured 50,000 steps, explicit seed 404):
+
+PYTHONHASHSEED=404 CUBLAS_WORKSPACE_CONFIG=:4096:8 python3 /PATH/TO/deterministic_training_launcher.py \
+  --trainer train_fp4.py --seed 404 -- \
+  --spec ds/spec.npz --fpdir up_train --pooldir . \
+  --steps 50000 --bs 256 --lr 2e-4 --K 63 --lam 1.0 --seed 404 \
+  --d 512 --layers 6 --merge_p 0.60 --val_every 2000 --max_minutes 420 --out new_m1_optin.pt
+
+The unchanged default warmup is 2,000 steps. These examples deliberately retain
+the historical configured budgets. Math-only SDPA and deterministic kernels can
+change performance and memory use, so each future run needs its own meaningful
+small canary and resource qualification before full execution.
+
+The launcher seeds Python/NumPy/Torch before FPNet initialization, disables TF32
+and flash/memory-efficient/cuDNN SDPA, requests deterministic kernels with
+warn_only=False, and uses one Torch CPU/inter-op thread. Original training code
+then runs unchanged. Its later manual_seed call remains unchanged as well.
+
+The historical wall-clock stop and nonfinite-loss skipping remain. If the time
+cap binds, runs may finish different step counts even with deterministic kernels.
+Only compare repeatability for the same completed step budget, fixed inputs,
+environment, and device. Validation chooses a best checkpoint; its saved step
+can be less than the configured maximum even after all training steps finish.
+The source-only reviewer has neither run these commands nor published a model.

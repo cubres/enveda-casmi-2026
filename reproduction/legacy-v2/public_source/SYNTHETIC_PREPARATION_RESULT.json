@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INVENTED_PREPARATION_REBUILD_ONLY",
+  "invented_spectra": 4,
+  "invented_full_fingerprint_rows": 4,
+  "checks": [
+    "flat_float32_rounding",
+    "offsets_and_row_order",
+    "pure_peak_preprocessing",
+    "old_rounding_drift_fixture",
+    "original_structure_split_statements",
+    "single_split_per_structure",
+    "prepared_cache_roundtrip",
+    "original_frequency_selection",
+    "selected_column_order",
+    "zero_padding"
+  ],
+  "source_sha256": {
+    "speclib.py": "27e149dd8f705389a969f1b9232b7b2451c7f3189f5586f5a42160864ff403eb",
+    "fpmodel.py": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76",
+    "build_dataset.py": "ec90d3d9ef3ec9b1e45d2dc9e2e766439ef7431cce8f8388ccb96b0be96a517b"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "pandas": "3.0.3",
+    "pyarrow": "25.0.0"
+  },
+  "model_or_training_or_assay": false,
+  "real_competition_records_read": false,
+  "scope": "Toy serialization/selection/preprocessing/split checks only; no historical full cache or checkpoint byte reproduction claimed."
+}

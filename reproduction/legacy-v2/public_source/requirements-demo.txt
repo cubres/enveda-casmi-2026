@@ -1,0 +1,5 @@
+# Tested synthetic preparation environment, not historical training pins.
+# Python3.12.14
+numpy==2.2.6
+pandas==3.0.3
+pyarrow==25.0.0

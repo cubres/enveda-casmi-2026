@@ -1,0 +1,176 @@
+{
+  "historical_embedded_canonical_policy_sha256": "22324e109115a6a3a6d4709e92bf21d550ee24730bcf42e14382aacec3b8e8af",
+  "immutable_platform_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "inputs": {
+    "checkpoint": {
+      "bytes": 197739081,
+      "mount": "trainer",
+      "relative_path": "casmi_structure_uniform_20261014/training/full_spectrum/best_full_model.pt",
+      "sha256": "9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31"
+    },
+    "full_mask": {
+      "bytes": 83288,
+      "mount": "full_bank",
+      "relative_path": "fp_bits.npy",
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "pool_fp": {
+      "bytes": 925216628,
+      "mount": "full_bank",
+      "relative_path": "pool_fp.npy",
+      "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+    },
+    "pool_mass": {
+      "bytes": 5693768,
+      "mount": "full_bank",
+      "relative_path": "pool_mass.npy",
+      "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+    },
+    "pool_meta": {
+      "bytes": 64843052,
+      "mount": "full_bank",
+      "relative_path": "pool_meta.pkl",
+      "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+    },
+    "rdkit_wheel": {
+      "bytes": 37188323,
+      "mount": "rdkit",
+      "relative_path": "rdkit-2026.3.3-cp312-cp312-manylinux_2_28_x86_64.whl",
+      "sha256": "c69a40ad52a2489cf592d55b41f5f6fa482f028341c038f3ed7d6b46834d1d3d"
+    },
+    "spectrum_cache": {
+      "bytes": 920788910,
+      "mount": "spectra",
+      "relative_path": "spec.npz",
+      "sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500"
+    },
+    "structure_meta": {
+      "bytes": 17095875,
+      "mount": "full_bank",
+      "relative_path": "fp_meta.pkl",
+      "sha256": "88411e98cec6f862f7b121dbc27b807e5e18782416219fe2b11566deb3254132"
+    },
+    "structure_roles": {
+      "bytes": 55913,
+      "mount": "full_bank",
+      "relative_path": "roles_by_structure.b64",
+      "sha256": "fe654a3f5f655df3897a344ca222e01a9f555a7dfd22a786e6cb32b126c76049"
+    },
+    "train": {
+      "bytes": 3033286496,
+      "mount": "competition",
+      "relative_path": "train.parquet",
+      "sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98"
+    }
+  },
+  "mounts": {
+    "competition": {
+      "kind": "competition",
+      "ref": "enveda-CASMI26-molecule-id-mass-spectra"
+    },
+    "full_bank": {
+      "kind": "dataset",
+      "ref": "prvsiyan/casmi26-full-fingerprint-inputs",
+      "version": 1
+    },
+    "rdkit": {
+      "kind": "dataset",
+      "ref": "prvsiyan/rdkit-wheel-offline",
+      "version": 1
+    },
+    "spectra": {
+      "kind": "dataset",
+      "ref": "prvsiyan/casmi26-spec-fp",
+      "version": 1
+    },
+    "trainer": {
+      "kind": "kernel",
+      "native_id": 358388543,
+      "ref": "prvsiyan/casmi-fp-trainer-merged-spectra",
+      "version": 6
+    }
+  },
+  "notebook": {
+    "fresh_status_utc": "2026-10-17T22:16:00.293936+00:00",
+    "fresh_terminal_status": "ERROR",
+    "native_id_scope": "Root native-page observation; SDK capture independently binds V37 source and ERROR bracket.",
+    "native_version_id": 358768787,
+    "official_score_for_this_version": null,
+    "ref": "prvsiyan/analog-propagation-casmi-2026-baseline",
+    "source_bytes": 751048,
+    "source_sha256": "d8474b4b36c22c600b8ba1af0130a11cac69d3703a9a84baa3935042d0765b14",
+    "version": 37
+  },
+  "privacy_and_rights": {
+    "checkpoint": "Participant-produced selected full10395 checkpoint; distinct from historical fp_single_s2/fp_merged_m1. Training code and permitted input lineage must accompany any public weight release.",
+    "full_bank_and_spectrum_mounts": "Historically private; public availability and redistribution are not established by this record.",
+    "license_scope": "Dataset and weight terms are separate from source-code licensing; see the release license inventory.",
+    "public_redistribution_authorized_by_this_record": false
+  },
+  "reproduction_limits": [
+    "V37 is ERROR; no completed full-inference or V37 official-score claim.",
+    "Exact latest failure phase is pending native diagnostic inspection.",
+    "The complete portable full10395 preparation closure and participant-weight training/input lineage are not established by these serving sources alone.",
+    "A native run requires a newly reviewed configuration, current identity/status and rights evidence; historical consumed admission is not reusable.",
+    "The local completed V6 comparison and selected-role0 preprocessing proof are prior results, not rerun instructions."
+  ],
+  "schema": "casmi-selected-v6-serving-source-record/1",
+  "scientific_contract": {
+    "canary_spectrum_policy": "minimum_original_source_row_nonempty_optimizer_cache",
+    "canary_wall_seconds": 300,
+    "candidate_bank_policy": "exact_existing_full711705_bank_no_rebuild",
+    "candidate_canary_policy": "first_optimizer_structure_in_full_bank_order",
+    "candidate_policy": "observed_neutral_mass_median_10ppm_then_empty_30ppm",
+    "device": "cuda:0",
+    "fallback_policy": "valid_window_candidates_by_mass_distance_or_hold_if_none",
+    "mode": "PURE_FULL10395_SINGLE_VIEW",
+    "peak_rss_limit_bytes": 21474836480,
+    "spectrum_policy": "first_usable_in_original_test_row_order",
+    "tie_policy": "stable_original_full_bank_order",
+    "wall_seconds": 1800
+  },
+  "scope": "Historical V37 source; no arming policy, private records, data or weights included.",
+  "sources": {
+    "fpmodel.py": {
+      "bytes": 5158,
+      "retained_repository_path": "research/codex_casmi_structure_uniform_candidate_20261014/fpmodel.py",
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76"
+    },
+    "native_canary_and_infer.source.py": {
+      "bytes": 38585,
+      "retained_repository_path": "research/codex_casmi_v35_diagnostic_source_20261015/native_canary_and_infer.source.py",
+      "sha256": "612700a8a5caa8b3711a332a8894cbbf162821eca53b3e79d839e5aa29aca487"
+    },
+    "native_preflight.source.py": {
+      "bytes": 18644,
+      "retained_repository_path": "research/codex_casmi_v36_preprocessing_fix_20261015/native_preflight.source.py",
+      "sha256": "5c33e56a25475567eddbbd71fcd556f1525d3590791e1971715afe857c8502c1"
+    },
+    "preflight_launcher.source.py": {
+      "bytes": 14691,
+      "retained_repository_path": "research/codex_casmi_v35_diagnostic_source_20261015/preflight_launcher.source.py",
+      "sha256": "d706e954b7bd551e7662f223c90a12a4081ff686fa23b768b79cc9382c2b5cab"
+    },
+    "project_required_metadata_recovery_once.source.py": {
+      "bytes": 22533,
+      "retained_repository_path": "research/codex_casmi_v6_followthrough_20261014T2019Z/metadata_primitive_projection_recovery_source/project_required_metadata_recovery_once.source.py",
+      "sha256": "1f10d75ba7daa86e6979811ffb382f28c34bb04436c2291dd69eff2bb8f42294"
+    },
+    "v6_single_view_scoring.source.py": {
+      "bytes": 12371,
+      "retained_repository_path": "research/codex_casmi_v36_preprocessing_fix_20261015/v6_single_view_scoring.source.py",
+      "sha256": "7b5c7d8125b9f930927b2675926dfe4f444bea5cd5625338c03ef165e30ca6d3"
+    }
+  },
+  "training_source_reference": {
+    "files": [
+      "run_structure_uniform_single_view.py",
+      "train_full_fingerprint.py",
+      "structure_uniform_sampler.py",
+      "train_fp4.py",
+      "fpmodel.py"
+    ],
+    "folder": "research/codex_casmi_structure_uniform_candidate_20261014",
+    "scope": "Reference to retained source, not a claim that all original training/data lineage is already public."
+  }
+}

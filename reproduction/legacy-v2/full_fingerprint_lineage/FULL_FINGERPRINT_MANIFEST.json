@@ -1,0 +1,96 @@
+{
+  "preparation_receipt": {
+    "status": "PASS_DATA_PREPARATION",
+    "raw_bits": 10407,
+    "selected_bits": 10395,
+    "optimizer_structures": 219470,
+    "bit_selection": "nonconstant bits among optimizer structures only; no held-role frequencies",
+    "index_alignment": "model structure order joined to canonical groups by exact SMILES; observed roles verified",
+    "pool_rows": 711705,
+    "pool_order_preserved": true,
+    "known_train_rows": 275316,
+    "novel_structure_rows": 436389,
+    "sample_fingerprint_parity": 128,
+    "role_table_sha256": "4d7b366293225a1ae67dfc0306480129b9ac1351a6d8581f0be40a269bdaff86",
+    "structure_roles": {
+      "0": 219470,
+      "1": 27204,
+      "2": 13682,
+      "3": 15454
+    },
+    "rdkit": "2026.03.3",
+    "source_raw_sha256": "cd7325285f6f160d10b20dcea93cf967416a580d9a4f411306e21da245f309fe",
+    "files": {
+      "pool_fp.npy": {
+        "bytes": 925216628,
+        "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+      },
+      "fp_bits.npy": {
+        "bytes": 83288,
+        "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+      },
+      "pool_mass.npy": {
+        "bytes": 5693768,
+        "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+      },
+      "roles_by_structure.b64": {
+        "bytes": 55913,
+        "sha256": "fe654a3f5f655df3897a344ca222e01a9f555a7dfd22a786e6cb32b126c76049"
+      },
+      "spec.npz": {
+        "bytes": 920788910,
+        "sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500"
+      },
+      "optimizer_bit_counts.npy": {
+        "bytes": 83384,
+        "sha256": "4d874c910de699a0fa030a40d6bcded08d78c236f44aeefe0101f2ac20122193"
+      },
+      "fp_meta.pkl": {
+        "bytes": 17095875,
+        "sha256": "88411e98cec6f862f7b121dbc27b807e5e18782416219fe2b11566deb3254132"
+      },
+      "pool_meta.pkl": {
+        "bytes": 64843052,
+        "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+      }
+    },
+    "training_started": false,
+    "uploaded": false,
+    "public": false,
+    "seconds": 621.4
+  },
+  "input_files": {
+    "pool_fp.npy": {
+      "bytes": 925216628,
+      "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "fp_meta.pkl": {
+      "bytes": 17095875,
+      "sha256": "88411e98cec6f862f7b121dbc27b807e5e18782416219fe2b11566deb3254132"
+    },
+    "pool_meta.pkl": {
+      "bytes": 64843052,
+      "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+    },
+    "pool_mass.npy": {
+      "bytes": 5693768,
+      "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+    },
+    "roles_by_structure.b64": {
+      "bytes": 55913,
+      "sha256": "fe654a3f5f655df3897a344ca222e01a9f555a7dfd22a786e6cb32b126c76049"
+    },
+    "optimizer_bit_counts.npy": {
+      "bytes": 83384,
+      "sha256": "4d874c910de699a0fa030a40d6bcded08d78c236f44aeefe0101f2ac20122193"
+    }
+  },
+  "training_spectra_dataset": "prvsiyan/casmi26-spec-fp",
+  "training_spectra_sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500",
+  "new_raw_spectra_uploaded": false,
+  "private": true
+}

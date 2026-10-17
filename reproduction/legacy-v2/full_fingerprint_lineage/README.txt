@@ -1,0 +1,7 @@
+Original full10395 fingerprint builder, source-only release.
+
+This source is copied byte-for-byte and was not executed for this release. It is bound to the adjacent historical aggregate manifest, which reports RDKit2026.03.3,10407 raw bits,10395 optimizer-nonconstant selected bits,219470 optimizer structures and711705 candidates.
+
+This is not yet a portable one-command reproduction. Original paths require: data/struct_fp.npy + struct_fp_meta.pkl, up_train/fp_meta.pkl + spec.npz, up_pool/pool_meta.pkl + pool_mass.npy; canonical_structures.tsv and group_partitions.tsv from enveda_glacier_partition_20260930T165020Z; and roles_by_structure.b64 plus its decoded-role SHA from claude_campaign_20261002/enveda/clean_fp_split_20261002T1652Z. No role assignments or data are included here, and the exact original role-generation closure has not been released in this packet. Do not replace it with legacy is_val or infer role labels.
+
+The builder joins exact SMILES to canonical groups, confirms observed role alignment, selects nonconstant bits using optimizer structures only, uses train fingerprints for known candidate rows, computes novel COCONUT rows, and preserves the existing mass/candidate order. It includes128 evenly spaced fingerprint parity checks. It does not train a model. Original trusted pickle reads and local output paths remain unchanged; do not execute against arbitrary assets. Source publication alone grants no third-party data rights.

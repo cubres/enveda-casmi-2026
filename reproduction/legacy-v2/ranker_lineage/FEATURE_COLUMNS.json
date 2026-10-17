@@ -1,0 +1,145 @@
+{
+  "source_sha256": "716e01b30f55ad89780d433dd81c683037bf60e759e710756a0b40f28c830c86",
+  "indexing": "zero-based",
+  "width": 31,
+  "columns": [
+    {
+      "index": 0,
+      "name": "library_similarity"
+    },
+    {
+      "index": 1,
+      "name": "library_rank_norm"
+    },
+    {
+      "index": 2,
+      "name": "library_max"
+    },
+    {
+      "index": 3,
+      "name": "library_minus_max"
+    },
+    {
+      "index": 4,
+      "name": "library_positive"
+    },
+    {
+      "index": 5,
+      "name": "analog_cubic_max"
+    },
+    {
+      "index": 6,
+      "name": "analog_cubic_rank_norm"
+    },
+    {
+      "index": 7,
+      "name": "analog_cubic_max_over_candidates"
+    },
+    {
+      "index": 8,
+      "name": "analog_cubic_minus_max"
+    },
+    {
+      "index": 9,
+      "name": "analog_linear_max"
+    },
+    {
+      "index": 10,
+      "name": "best_analog_tanimoto"
+    },
+    {
+      "index": 11,
+      "name": "top_analog_tanimoto"
+    },
+    {
+      "index": 12,
+      "name": "analog_cubic_weighted_mean"
+    },
+    {
+      "index": 13,
+      "name": "top_analog_similarity"
+    },
+    {
+      "index": 14,
+      "name": "log_candidate_count"
+    },
+    {
+      "index": 15,
+      "name": "fp_raw_zscore"
+    },
+    {
+      "index": 16,
+      "name": "fp_raw_rank_norm"
+    },
+    {
+      "index": 17,
+      "name": "fp_raw_minus_max"
+    },
+    {
+      "index": 18,
+      "name": "fp_length_corrected_zscore"
+    },
+    {
+      "index": 19,
+      "name": "fp_length_corrected_rank_norm"
+    },
+    {
+      "index": 20,
+      "name": "fp_raw_is_max"
+    },
+    {
+      "index": 21,
+      "name": "fragment_score"
+    },
+    {
+      "index": 22,
+      "name": "fragment_rank_norm"
+    },
+    {
+      "index": 23,
+      "name": "fragment_minus_max"
+    },
+    {
+      "index": 24,
+      "name": "fragment_zscore"
+    },
+    {
+      "index": 25,
+      "name": "library_model_agreement"
+    },
+    {
+      "index": 26,
+      "name": "analog_model_agreement"
+    },
+    {
+      "index": 27,
+      "name": "library_best_model_rank_agreement"
+    },
+    {
+      "index": 28,
+      "name": "analog_best_model_rank_agreement"
+    },
+    {
+      "index": 29,
+      "name": "library_best_agreement_times_library_max"
+    },
+    {
+      "index": 30,
+      "name": "library_vs_negative_model_rank_correlation"
+    }
+  ],
+  "formulas": {
+    "cf": "candidate bits cast float32",
+    "z": "FPNet raw logits; sigmoid is not applied",
+    "raw": "cf @ z",
+    "cs": "cf.sum(axis=1)",
+    "nrm": "raw / sqrt(max(cs,1))",
+    "rank_norm": "Descending np.argsort rank divided by max(1,n_candidates-1); smaller is better; unspecified default sort tie order",
+    "zscore": "(x-mean(x))/std(x) if std>1e-9 else zeros",
+    "analog_weights": "max(analog_sim,0); first80 recognized analog candidates, cubic power3",
+    "fp_direct_columns": "15 through20",
+    "fragment_columns": "21 through24",
+    "fp_cross_channel_columns": "25 through30"
+  },
+  "absence_behavior": "If model_logits is None, all12 direct/cross model columns are zeros. Missing frag makes4fragment columns zeros. No source-provenance columns."
+}

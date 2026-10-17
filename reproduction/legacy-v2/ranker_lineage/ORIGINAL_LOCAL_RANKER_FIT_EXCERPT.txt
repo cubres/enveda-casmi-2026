@@ -1,0 +1,47 @@
+Original local push_public.py CFG and FITRANK excerpts; source-only, not fresh native notebook provenance.
+
+    # --- ranker ---------------------------------------------------------------------
+    W1_PRIORS    = (0.30, 0.60)  # REVERTED. A narrow plateau (.40,.45,.50) scored 0.3789 in my
+                          # own sweep and then LOST on the leaderboard (0.335 -> 0.330). The sweep
+                          # was in-sample: it trained on all 819 query groups and evaluated on 250
+                          # of them. See the ranker section -- hold out BY QUERY or you are just
+                          # measuring capacity to memorise your own evaluation set.
+    SEEDS        = (0, 1, 2, 3)  # seed alone moves the LB by ~0.006; bag several.
+    W1           = 0.50   # weight on the Class-1 simulation. NOT the class share (0.16) --
+                          # it is the leaderboard-calibrated value, chosen by 5-fold CV held out
+                          # by query in make_ranker3.py.
+    GBM = dict(max_depth=6, max_iter=500, learning_rate=0.03,
+               min_samples_leaf=80, l2_regularization=1.0)
+               # Depth 6. Two sweeps said otherwise and both were wrong on the leaderboard:
+
+FITRANK = r'''
+# ===================================================================================
+#  Calibrated ranker.  Fitted here, in-notebook, from shipped simulation features so
+#  the whole thing is reproducible and you can retune W1 in one line.
+# ===================================================================================
+from sklearn.ensemble import HistGradientBoostingClassifier
+z = np.load(find('rank_train.npz'))
+NFEAT = z['X'].shape[1]
+
+# ---------------------------------------------------------------------------------
+#  ⚠️  HistGradientBoostingClassifier defaults to random_state=None.
+#  I submitted the SAME notebook version twice and got 0.292 and 0.298 -- a 0.006
+#  spread from the ranker's seed alone (5 local seeds span 0.2961-0.3033). If you are
+#  chasing a 0.005 leaderboard difference in this competition, you may be chasing noise.
+#  Fix: pin the seed AND average over several, which removes the variance and lifts the mean.
+# ---------------------------------------------------------------------------------
+RANKERS = []
+for w1 in CFG.W1_PRIORS:                  # a NARROW plateau around the swept peak -- see CFG
+    W = np.where(z['M'] == 0, w1, 1.0 - w1)
+    for sd in CFG.SEEDS:
+        m = HistGradientBoostingClassifier(random_state=sd, **CFG.GBM)
+        m.fit(z['X'], z['Y'], sample_weight=W)
+        RANKERS.append(m)
+
+def rank_proba(X):
+    """Averaged over seeds and class priors -> deterministic and lower variance."""
+    return np.mean([m.predict_proba(X)[:, 1] for m in RANKERS], axis=0)
+
+print(f'ranker: {len(RANKERS)} GBMs ({len(CFG.W1_PRIORS)} priors x {len(CFG.SEEDS)} seeds) '
+      f'on {z["X"].shape[0]:,} rows x {NFEAT} features')
+'''

@@ -1,0 +1,133 @@
+{
+  "schema": "casmi-legacy-artifact-bindings/1",
+  "observed_utc": "2026-10-17T22:24:47.399894+00:00",
+  "status": "CURRENT_LOCAL_BYTES_OBSERVED_NOT_HISTORICAL_BUILD_ATTESTATION",
+  "artifacts": [
+    {
+      "logical_path": "data/train.parquet",
+      "bytes": 3033205873,
+      "sha256": "e670fc8fcd97e35e87018ee0adf5d6b925409c811c29a4c23929e672fab77784"
+    },
+    {
+      "logical_path": "data/struct_fp.npy",
+      "bytes": 358828938,
+      "sha256": "cd7325285f6f160d10b20dcea93cf967416a580d9a4f411306e21da245f309fe",
+      "array_header": {
+        "shape": [
+          275810,
+          1301
+        ],
+        "dtype": "uint8",
+        "fortran_order": false
+      }
+    },
+    {
+      "logical_path": "data/struct_fp_meta.pkl",
+      "bytes": 17095875,
+      "sha256": "c2362f52eea6847b367e5b7be6cfe9769c4eae847764c7fb53e230d743f77b57"
+    },
+    {
+      "logical_path": "data/struct_fp_freq.npy",
+      "bytes": 83384,
+      "sha256": "334eb558ec1aab6c11485c62d1068ec03585221974870c4babbe11ac27e0b883",
+      "array_header": {
+        "shape": [
+          10407
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      }
+    },
+    {
+      "logical_path": "up_train/fp_sel.npy",
+      "bytes": 239127398,
+      "sha256": "f7cb256a8351f9defd82e54b3eb4d8abdfa6a50beadc34e15214827e8ef6466f",
+      "array_header": {
+        "shape": [
+          275810,
+          867
+        ],
+        "dtype": "uint8",
+        "fortran_order": false
+      }
+    },
+    {
+      "logical_path": "up_train/fp_bits.npy",
+      "bytes": 55568,
+      "sha256": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+      "array_header": {
+        "shape": [
+          6930
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      }
+    },
+    {
+      "logical_path": "up_train/fp_meta.pkl",
+      "bytes": 17095875,
+      "sha256": "d6ad0dd33bf66e92c5a85054b7f914b4ac538fc4b06c4aabca8d0df9f985b85b"
+    },
+    {
+      "logical_path": "ds/spec.npz",
+      "bytes": 920788910,
+      "sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500"
+    },
+    {
+      "logical_path": "ds/split.pkl",
+      "bytes": 47965,
+      "sha256": "25e00a31cd8acfdd97e0dd40e9a43aa257fefabd74416a0813f4710f62aa4b1e"
+    },
+    {
+      "logical_path": "pool_fp.npy",
+      "bytes": 617048363,
+      "sha256": "7e41ed56d1e74d7eeb1411135d78e43dcf9fc6d4c61ce9cef3e49fb97c6f6768",
+      "array_header": {
+        "shape": [
+          711705,
+          867
+        ],
+        "dtype": "uint8",
+        "fortran_order": false
+      }
+    },
+    {
+      "logical_path": "pool_mass.npy",
+      "bytes": 5693768,
+      "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e",
+      "array_header": {
+        "shape": [
+          711705
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      }
+    },
+    {
+      "logical_path": "pool_meta.pkl",
+      "bytes": 64843052,
+      "sha256": "069c01f0d42affd7b46c5d5b7c56b7eb20e4ca0a8806a0b2e0772c4b1de049f5"
+    },
+    {
+      "logical_path": "db/coconut/coconut_csv-09-2026.csv",
+      "bytes": 699943510,
+      "sha256": "1360a7f38a134328c8759aa8a6762a24cccdc974d6fce51db710dd1283d9da75"
+    },
+    {
+      "logical_path": "db/coconut_clean.parquet",
+      "bytes": 26701796,
+      "sha256": "7bbc682c4e99f2df837be66de3ad1effb5e5c3c452c467c7c5fc07481c28b7b5"
+    }
+  ],
+  "legacy_split_consistency": {
+    "cache_sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500",
+    "spectrum_rows": 2334531,
+    "distinct_observed_structures": 273983,
+    "structures_with_both_train_and_validation_spectra": 0,
+    "all_spectra_of_structure_share_legacy_split": true,
+    "values_or_ids_exported": false,
+    "scientific_labels_or_sealed_four_role_split_read": false
+  },
+  "no_model_or_assay": true,
+  "seconds": 8.012781082998117
+}

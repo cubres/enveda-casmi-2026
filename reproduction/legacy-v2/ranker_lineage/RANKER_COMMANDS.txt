@@ -1,0 +1,23 @@
+Recovered original 31-column ranker build and fitting recipe
+
+Original source command (from a NEW prepared working directory):
+  RANK_SOURCE=/absolute/release/ranker_lineage/original_sources
+  python -u "$RANK_SOURCE/make_ranker3.py" --model
+
+This is a source recipe, NOT a validated complete rebuild command. The adjacent original engine.py and speclib.py are included because casmi_core imports them at module load; this route additionally requires NumPy, Numba, Pandas, PyArrow and scikit-learn, with historical versions UNKNOWN. Before execution bind and provide all of these original trusted-input prerequisites:
+  pool_fp.npy, pool_mass.npy, pool_meta.pkl
+  data/c2_np_recs2.pkl                     250-query A metadata, candidates and spectra
+  data/feat2_c1.pkl, data/feat_c2.pkl       A class1/class2 library and analog features
+  data/c2_fragscores.pkl                  A fragmentation scores
+  data/hard_feats.pkl                     569-query B metadata/c1/c2/fragment channels
+  data/val_model_logits_combo.npy         A250x6930 raw FP logits
+  data/hard_model_logits.npy              B569x6930 raw FP logits
+Do not run without both FP cache files: the original optional _ens loader silently returns None when a file is absent, even with --model, and the corresponding FP features become zero. A file name alone does not identify the checkpoint producer. The exact historical A-combo writer and unique B cache producer are unresolved. Do not fill these gaps with arbitrary substitute caches and call the result historical reproduction.
+
+Outputs: up_rank3/rank_train.npz (X,Y,M,G), data/w1_v3.pkl. It performs5-fold query-index-modulo5 CV for w1 values0.42 and0.50, with historical objective0.162*c1+0.271*c2. It evaluates only A; B contributes training rows. This is leaderboard-calibrated retrospective selection, not independent blind evaluation. No new CV or fitting was performed for the release. Original CV HGB(max_depth6,max_iter500,learning_rate0.03,min_samples_leaf80,l2_regularization1.0) leaves random_state unspecified.
+
+Original later serving fit is preserved verbatim in ORIGINAL_LOCAL_RANKER_FIT_EXCERPT.txt (from retained local push_public.py, not a newly attested native notebook). Its executable FITRANK body consumes rank_train.npz and fits8 HistGradientBoostingClassifier models: w1_priors=(0.30,0.60), seeds=(0,1,2,3), with the same five GBM hyperparameters. Each sample weight is w1 for M==0 and1-w1 otherwise, and inference averages the8 predict_proba[:,1] values. The source comments contain historical claims; they are not newly verified scores. The original W1 selection artifact does not change these later two serving priors automatically.
+
+Retained local public rank_train.npz: SHA25641ccec87fba5f8ab255aaf5a723567f25bd766064265c5cc2b83ba2cf15f57f8,9553020bytes,Xshape142762x31float32,Y/Mfloat64,Gint64. The local up_rank3 and up_rank_pub copies are byte-identical. No exact historical cache producer/runtime is inferred from those bytes.
+
+A separately labeled fresh cache builder may be added later with explicit checkpoint, query-order and feature-order pins. It must write a new path and produce a fresh manifest; that cannot retroactively establish the historical producer. This release preserves the original source and reports the missing evidence rather than inventing it.
