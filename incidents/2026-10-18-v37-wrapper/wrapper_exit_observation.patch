@@ -1,0 +1,22 @@
+--- frozen_v37/preflight_launcher.source.py
++++ proposed/preflight_launcher.source.py
+@@ -147,7 +147,19 @@
+             group, threads, start, virtual, resident = (int(fields[i]) for i in (2,17,19,20,21))
+             _v6_need(group == pgid and start > 0, 'NATIVE_RSS_EVIDENCE_REQUIRED')
+             return (member, group, start), (fields[0], threads, virtual, resident)
++        def owned_exit_observed():
++            # Popen.poll corroborates only this wrapper's original child.
++            # Observing exit never rescues an expired local/global deadline;
++            # the caller still requires the final wait() exit code to be zero.
++            check()
++            _v6_need(_v6_child is not None and _v6_child.pid == member == pgid,
++                 'NATIVE_RSS_EVIDENCE_REQUIRED')
++            exited = _v6_child.poll() is not None
++            check()
++            return exited
+         for attempt in range(11):
++            if owned_exit_observed():
++                return 0
+             try:
+                 before, a = stat()
+                 _v6_need(identity is None or identity == before, 'NATIVE_RSS_EVIDENCE_REQUIRED')

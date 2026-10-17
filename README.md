@@ -6,6 +6,8 @@ The [reproducibility release](reproduction/legacy-v2/README.md) publishes the or
 
 The [dataset cards and license scope](reproduction/dataset-cards/2026-10-18/README.md) separate uploader contributions from upstream rights and identify private inputs and unresolved provenance. The [fingerprint contract checker](tools/fingerprint-contract/README.md) runs with the Python standard library and includes reproducible invented 6,930-bit and 10,395-bit fixtures; all eight adversarial controls passed. Layout checks do not certify chemical parity or model quality.
 
+The [V37 incident analysis and portable supervisor tests](incidents/2026-10-18-v37-wrapper/README.md) reproduce sixteen process-observation boundary cases. The proposed observer fix preserves all original limits; its effect on the actual native incident remains unverified.
+
 The [selected V6 serving sources](reproduction/selected-v6-serving/README.md) are pinned to the actual public V37 source. V37's driver reported completion for 400 molecules, but its process/RSS supervisor failed: the notebook is **ERROR and ineligible for submission**. No official V6 score is claimed. Legacy 6,930-bit and later 10,395-bit fingerprint coordinates are distinct.
 
 ```mermaid

@@ -1,0 +1,31 @@
+{
+  "schema": "casmi-v37-wrapper-exit-source-peer/1",
+  "status": "PASS_SOURCE_ONLY_NARROW_EXIT_OBSERVATION",
+  "reviewed_utc": "2026-10-17T22:35:02.124198+00:00",
+  "reviewer": "/root/casmi_serving/driver_review",
+  "baseline_wrapper_sha256": "d706e954b7bd551e7662f223c90a12a4081ff686fa23b768b79cc9382c2b5cab",
+  "candidate_wrapper_sha256": "ccd269209b64155602c333c55532f77af01befcb65e1455ffefd04079c45b126",
+  "source_file": "preflight_launcher.source.py",
+  "checks": {
+    "baseline_preserved": true,
+    "syntax_compile_no_execution": true,
+    "ast_identical_after_removing_only_new_poll_helper_and_loop_prefix": true,
+    "poll_targets_same_owned_popen_pid_member_pgid": true,
+    "clock_checks_before_and_after_nonblocking_poll": true,
+    "none_return_preserves_existing_strict_proc_checks": true,
+    "observed_exit_zeroes_only_current_rss": true,
+    "unchanged_final_wait_requires_zero_exit_code": true,
+    "unchanged_canary_total_outer_deadlines_and_100ms_window": true,
+    "unchanged_20gib_rss_cap_canary_checks_once_policies_and_scientific_payloads": true
+  },
+  "blockers": [],
+  "analysis": "Popen.poll can corroborate exit of the originally owned child before the next /proc sample. Any observed exit is zero current RSS; nonzero completion remains rejected by unchanged final wait. An expired local or absolute deadline still rejects, including an exit observed too late.",
+  "incident_evidence_scope": "Parent reports root native logs for V37 native 358768787 failed NATIVE_RSS_EVIDENCE_REQUIRED at about 113.1 seconds, and root separately verified CANARY mechanics PASS and RESULT complete pure V6 inference/no score. This source review does not independently fetch native evidence. The historical failure receipt records child exit after optional SIGKILL/wait and therefore cannot establish natural exit code.",
+  "native_fix_verified": false,
+  "scientific_or_model_execution": false,
+  "payload_import_or_execution": false,
+  "synthetic_behavior_tests_performed_by_this_review": false,
+  "network_calls": 0,
+  "notebook_mutations": 0,
+  "scope": "Source-only peer review. No new launch, retry, submission, guard change or historical attempt reuse is authorized."
+}

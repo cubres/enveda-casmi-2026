@@ -1,0 +1,20 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "created_at_utc": "2026-10-17T22:37:37.549655+00:00",
+  "tests_run": 16,
+  "failures": 0,
+  "errors": 0,
+  "old_wrapper_sha256": "d706e954b7bd551e7662f223c90a12a4081ff686fa23b768b79cc9382c2b5cab",
+  "new_wrapper_sha256": "ccd269209b64155602c333c55532f77af01befcb65e1455ffefd04079c45b126",
+  "test_source_sha256": "421332c2ea45fe4a72e73557acf2452f0759ae184ddfc2382637c1fafe305c76",
+  "sources_unchanged": true,
+  "execution_scope": "Only actual extracted helper and cap/final-wait AST with invented in-memory proc, clock, child; no launcher/module import/main execution.",
+  "real_processes_started": 0,
+  "native_calls": 0,
+  "competition_data_read": false,
+  "model_or_scientific_code_executed": false,
+  "notebook_candidate_created": false,
+  "launch_or_submission_qualified": false,
+  "official_score_claimed": false,
+  "test_output": "test_already_expired_global_deadline_prevents_poll (__main__.WrapperExitTests) ... ok\ntest_exact_source_pins_and_only_narrow_delta (__main__.WrapperExitTests) ... ok\ntest_existing_proc_disappearance_and_zombie_evidence_unchanged (__main__.WrapperExitTests) ... ok\ntest_exit_during_reobservation_before_next_proc_sample (__main__.WrapperExitTests) ... ok\ntest_none_live_absence_still_fails_within_bound (__main__.WrapperExitTests) ... ok\ntest_none_poll_keeps_pid_group_start_and_malformed_rss_checks (__main__.WrapperExitTests) ... ok\ntest_none_poll_retains_valid_rss_recovery (__main__.WrapperExitTests) ... ok\ntest_nonzero_exit_before_proc_still_fails_final_wait (__main__.WrapperExitTests) ... ok\ntest_old_helper_fails_same_known_exit_fixture_new_helper_passes (__main__.WrapperExitTests) ... ok\ntest_over_cap_recovery_rejected_by_actual_unchanged_call_site (__main__.WrapperExitTests) ... ok\ntest_owned_exit_cannot_erase_prior_peak_over_cap (__main__.WrapperExitTests) ... ok\ntest_poll_crossing_global_deadline_cannot_rescue_exit (__main__.WrapperExitTests) ... ok\ntest_poll_crossing_local_deadline_cannot_rescue_exit (__main__.WrapperExitTests) ... ok\ntest_slow_proc_crossing_local_or_global_deadline_still_fails (__main__.WrapperExitTests) ... ok\ntest_wrong_child_or_group_rejected_before_poll (__main__.WrapperExitTests) ... ok\ntest_zero_exit_before_proc_samples (__main__.WrapperExitTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.161s\n\nOK\n"
+}

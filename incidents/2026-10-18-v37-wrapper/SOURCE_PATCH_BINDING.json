@@ -1,0 +1,16 @@
+{
+  "baseline_repository_path": "research/codex_casmi_v35_diagnostic_source_20261015/preflight_launcher.source.py",
+  "baseline_source_sha256": "d706e954b7bd551e7662f223c90a12a4081ff686fa23b768b79cc9382c2b5cab",
+  "canary_seconds": 300,
+  "deadlines_caps_and_scientific_sources_unchanged": true,
+  "delta": "Clock-checked same-owned Popen.poll before each missing-RSS sample; final zero-exit check remains unchanged.",
+  "local_observation_seconds": 0.1,
+  "native_failure_repaired": false,
+  "outer_seconds": 1860,
+  "proposed_source_sha256": "ccd269209b64155602c333c55532f77af01befcb65e1455ffefd04079c45b126",
+  "remote_mutation": false,
+  "rss_limit_bytes": 21474836480,
+  "scientific_execution": false,
+  "status": "SOURCE_ONLY_PATCH_PENDING_TEST_AND_PEER",
+  "total_seconds": 1800
+}
