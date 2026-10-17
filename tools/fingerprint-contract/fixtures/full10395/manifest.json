@@ -1,0 +1,10 @@
+{
+  "base_bits": 10407,
+  "bitorder": "big",
+  "indices_sha256": "9ad2a4f5481cfaa6ded5247eb7621b65a9adea30564170fc4401dbc7e6f30175",
+  "packed_sha256": "c01087b0122d2658ad2334ac39d7df3190e20fa23cce13ff84bc98ea9da80100",
+  "rows": 2,
+  "schema": "casmi-fingerprint-contract/1",
+  "selected_bits": 10395,
+  "synthetic": true
+}
