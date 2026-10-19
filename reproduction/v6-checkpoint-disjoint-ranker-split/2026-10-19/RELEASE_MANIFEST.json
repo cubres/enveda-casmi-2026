@@ -1,0 +1,118 @@
+{
+  "actual_public_input_full_rebuild_verified": true,
+  "all_payload_files_flat": true,
+  "files": {
+    "DATA-LICENSE.md": {
+      "bytes": 1526,
+      "sha256": "f79daf39b019f6a303a9edc2e9f13c786f5f78b137e1cc53f8bf9f005f58b41f"
+    },
+    "DATA_SCHEMA.json": {
+      "bytes": 2306,
+      "sha256": "8be49116ab6f2d7e691c5fa3daf57bd6d792121e5f65e927fcd68fe3b4bd903c"
+    },
+    "FULL_REBUILD_RECEIPT_PUBLIC.json": {
+      "bytes": 5932,
+      "sha256": "a851b88bb9690ba5b6d72eaa22ca238afaac1a9faf65105471d43ad693200dc4"
+    },
+    "GROUP_AUDIT_RECEIPT_PUBLIC.json": {
+      "bytes": 9240,
+      "sha256": "3776b5bd8a748944e6b8d91105be5879e25acdcd32672ec95752fd420a010eba"
+    },
+    "LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "ORIGINAL_SOURCE_NOTICE.md": {
+      "bytes": 1260,
+      "sha256": "24c838eac76ed588e2396d921d480664e0e9b34e500e7db35bd40a0f29992164"
+    },
+    "PORTABLE_REBUILD_OUTPUT_VERIFICATION.json": {
+      "bytes": 3888,
+      "sha256": "a0b297b4b74a712c1fc351c24c4d41ae7f7af8f31ec16940748e5b32e1ef26a1"
+    },
+    "README.md": {
+      "bytes": 8892,
+      "sha256": "3dad4d5ec58529f287f0ff197d63b7ab35a38af9a0e45f41d355dbfd49bd3b99"
+    },
+    "SOURCE_CONTRACT.json": {
+      "bytes": 8213,
+      "sha256": "2766fa7c6c9a9b73c93881c4fdc94fe8f4f904f0338a9abbfb4b9933c613736a"
+    },
+    "all_cache_exclusion_reason.npy": {
+      "bytes": 2172768,
+      "sha256": "f03a63aa617ce5de27686e1f61b4e1885cd2e673efe37df04e0d4327f23009a9"
+    },
+    "cache_query_rows.npy": {
+      "bytes": 108224,
+      "sha256": "7f3b442fe4aafd89b4057221390c94eb2ef005c0d8086437984e9a9255f82a92"
+    },
+    "canonical_group_ids.npy": {
+      "bytes": 3459200,
+      "sha256": "445c1ee8b5bf6744c0a970643a037a20eb00b0fe6c32586349208097de9e4288"
+    },
+    "group_identity.py": {
+      "bytes": 580,
+      "sha256": "dd4c1750cf4816cdc3d880df837bdffec6a2beb62f3b676cc5ca663107ee042d"
+    },
+    "inspect_group_split.py": {
+      "bytes": 2482,
+      "sha256": "3c994f311f36fb846ccc11ce62b511683c5a3a33ed480b06608c9eddd5983db8"
+    },
+    "metric_distinct.py": {
+      "bytes": 2760,
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+    },
+    "rebuild_canonical_split.py": {
+      "bytes": 14101,
+      "sha256": "0f5099865aee7c9c5179cd9ec943bf45b7cfdf9f8f4952c77efb3e609ccf7b9e"
+    },
+    "requirements-rebuild.txt": {
+      "bytes": 29,
+      "sha256": "e873ab4d702c70e5b1b6143c9f58327b342d35129802faad9d477694d63f2eac"
+    },
+    "role01_canonical_group_ids.npy": {
+      "bytes": 63148672,
+      "sha256": "680232954b7ffdd70e36d3fe6c57bdd3ca2b54d1308602ffb265225352253884"
+    },
+    "role01_trainer_structure_indices.npy": {
+      "bytes": 1973520,
+      "sha256": "f0f7046c107d8f2641e0ff93706a38e0dd78f0ffbf8c27541699cf5300b2220c"
+    },
+    "split_buckets.npy": {
+      "bytes": 27152,
+      "sha256": "bebf14e37d8d29704dceeafdc3f2e783d99b669a983ff4ed4409791cbfc06a71"
+    },
+    "split_flow.svg": {
+      "bytes": 2877,
+      "sha256": "314591a2caadb8abdc722654e4a53ea40cc73c0211268cff9cf0f6993bc72744"
+    },
+    "split_train0_development1.npy": {
+      "bytes": 13640,
+      "sha256": "414b7bd6f4227b0459bafb901eeb1a191fce1c1b46fa1fb7526789248482a57b"
+    },
+    "structure_indices.npy": {
+      "bytes": 108760,
+      "sha256": "600e5b6d56cfc4884b51ad6ea2dd31c3030d393f43a77d44de5140a147c9b168"
+    },
+    "structure_keys.npy": {
+      "bytes": 760552,
+      "sha256": "b5b2db064052c00cb616000a0f4f7b92b38b6455c6e199fd6bdf2fe38e5728b8"
+    },
+    "trainer_structure_indices.npy": {
+      "bytes": 108224,
+      "sha256": "4a1399ef1ef8abc42b5c0d56c3b8143c460006df1c9ea83ed5f5df659b59ad56"
+    }
+  },
+  "full_rebuild_source_sha256": "0f5099865aee7c9c5179cd9ec943bf45b7cfdf9f8f4952c77efb3e609ccf7b9e",
+  "identity": {
+    "id": "prvsiyan/casmi26-v6-checkpoint-disjoint-ranker-split",
+    "title": "CASMI V6 Checkpoint-Disjoint Ranker Split"
+  },
+  "metadata_file_excluded_from_payload_hash_manifest": "dataset-metadata.json",
+  "model_training_or_evaluation_performed": false,
+  "official_score": null,
+  "payload_bytes_excluding_this_manifest": 71956156,
+  "payload_file_count_excluding_this_manifest": 25,
+  "purpose": "NEW checkpoint-disjoint split/universe metadata; not a retry or replacement of the previously uncreated raw-logit cache dataset",
+  "schema": "casmi-checkpoint-disjoint-split-public-release/1"
+}

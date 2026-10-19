@@ -1,0 +1,158 @@
+{
+  "actual_process_exit_code": 0,
+  "all_eight_released_arrays_byte_and_numeric_exact": true,
+  "cache_queries": 13579,
+  "canonical_group_overlap": {
+    "survivors_vs_checkpoint_even": 0,
+    "survivors_vs_optimizer": 0,
+    "train_vs_development": 0
+  },
+  "canonicalization_unique_smiles": 246674,
+  "checkpoint_even_canonical_groups": 13562,
+  "checkpoint_even_structure_count": 13614,
+  "conservative_exclusion_universes": {
+    "actual_optimizer_eligible_subset": 219140,
+    "actually_sampled_checkpoint_query_subset": 2048,
+    "role0_all_structures": 219470,
+    "role1_even_all_structures": 13614,
+    "scope": "Every canonical group in the broader role sets is excluded; counts do not claim every structure was sampled."
+  },
+  "development_canonical_groups": 2650,
+  "development_queries": 2653,
+  "environment": {
+    "numpy": "2.2.6",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "rdkit": "2026.03.3",
+    "workers": 2
+  },
+  "exclusion_counts": {
+    "checkpoint_overlap": 67,
+    "survives": 13512
+  },
+  "finished_utc": "2026-10-19T20:25:09.709380+00:00",
+  "full_recompute_recipe": true,
+  "independent_actual_output_review_sha256": "3a8450f4178b0310e7f66645bee4e154f42567046f0bf445d166aa8cdb8b39e8",
+  "inputs": {
+    "fp_meta": {
+      "bytes": 17095875,
+      "path": "public-bank-v1/fp_meta.pkl",
+      "sha256": "88411e98cec6f862f7b121dbc27b807e5e18782416219fe2b11566deb3254132"
+    },
+    "group_identity_source": {
+      "bytes": 580,
+      "path": "group_identity.py",
+      "sha256": "dd4c1750cf4816cdc3d880df837bdffec6a2beb62f3b676cc5ca663107ee042d"
+    },
+    "metric_source": {
+      "bytes": 2760,
+      "path": "metric_distinct.py",
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+    },
+    "roles_file": {
+      "bytes": 55913,
+      "path": "public-bank-v1/roles_by_structure.b64",
+      "sha256": "fe654a3f5f655df3897a344ca222e01a9f555a7dfd22a786e6cb32b126c76049"
+    },
+    "structure_indices.npy": {
+      "bytes": 108760,
+      "path": "structure_indices.npy",
+      "sha256": "600e5b6d56cfc4884b51ad6ea2dd31c3030d393f43a77d44de5140a147c9b168"
+    },
+    "structure_keys.npy": {
+      "bytes": 760552,
+      "path": "structure_keys.npy",
+      "sha256": "b5b2db064052c00cb616000a0f4f7b92b38b6455c6e199fd6bdf2fe38e5728b8"
+    }
+  },
+  "invalid_role0_or_role1_structures": 0,
+  "limits": {
+    "parent_rss_bytes": 2147483648,
+    "wall_seconds": 1800,
+    "worker_rss_bytes": 1073741824,
+    "workers": 2
+  },
+  "metadata_canary": {
+    "all_valid": true,
+    "forecast_seconds": 1551.0134053679867,
+    "seconds": 1.031589417001669,
+    "strings": 256
+  },
+  "method": "Complete fresh canonicalization of every role0/1 public metadata structure, using only exact public V1 fp_meta/roles plus the two included public V7 cache join arrays and bundled exact grouping sources. No historical canonical map was read.",
+  "official_score": null,
+  "optimizer_canonical_groups": 218170,
+  "optimizer_structure_count": 219470,
+  "outputs": {
+    "all_cache_exclusion_reason.npy": {
+      "bytes": 2172768,
+      "sha256": "f03a63aa617ce5de27686e1f61b4e1885cd2e673efe37df04e0d4327f23009a9"
+    },
+    "cache_query_rows.npy": {
+      "bytes": 108224,
+      "sha256": "7f3b442fe4aafd89b4057221390c94eb2ef005c0d8086437984e9a9255f82a92"
+    },
+    "canonical_group_ids.npy": {
+      "bytes": 3459200,
+      "sha256": "445c1ee8b5bf6744c0a970643a037a20eb00b0fe6c32586349208097de9e4288"
+    },
+    "role01_canonical_group_ids.npy": {
+      "bytes": 63148672,
+      "sha256": "680232954b7ffdd70e36d3fe6c57bdd3ca2b54d1308602ffb265225352253884"
+    },
+    "role01_trainer_structure_indices.npy": {
+      "bytes": 1973520,
+      "sha256": "f0f7046c107d8f2641e0ff93706a38e0dd78f0ffbf8c27541699cf5300b2220c"
+    },
+    "split_buckets.npy": {
+      "bytes": 27152,
+      "sha256": "bebf14e37d8d29704dceeafdc3f2e783d99b669a983ff4ed4409791cbfc06a71"
+    },
+    "split_train0_development1.npy": {
+      "bytes": 13640,
+      "sha256": "414b7bd6f4227b0459bafb901eeb1a191fce1c1b46fa1fb7526789248482a57b"
+    },
+    "trainer_structure_indices.npy": {
+      "bytes": 108224,
+      "sha256": "4a1399ef1ef8abc42b5c0d56c3b8143c460006df1c9ea83ed5f5df659b59ad56"
+    }
+  },
+  "peak_parent_rss_bytes": 236437504,
+  "peak_worker_rss_bytes": 327024640,
+  "public_proof_schema": "casmi-public-input-portable-full-rebuild/1",
+  "qualification": "Group-excluded public V7 logits metadata. No new ranker, OOF claim, accuracy metric, or official score.",
+  "raw_runtime_receipt_sha256": "273d151ef22578a622735fd51ba6ee6cc7b143ddf9406afa278d78429fc9d974",
+  "receipt_projection_scope": "Only operational input paths were replaced by public relative names; input hashes, output hashes, counts, environment, canary, limits and resource observations are unchanged.",
+  "role_structure_counts": {
+    "0": 219470,
+    "1": 27204,
+    "2": 13682,
+    "3": 15454
+  },
+  "schema": "casmi-v7-canonical-reserved-group-audit/1",
+  "scope": {
+    "fingerprints_read": false,
+    "fp_meta_all_structure_metadata_loaded": true,
+    "logits_read": false,
+    "metadata_only": true,
+    "model_evaluation": false,
+    "model_or_ranker_training": false,
+    "old_assay_repeated": false,
+    "role2_or_role3_canonicalized": false,
+    "role2_or_role3_queries_loaded": false,
+    "spectra_read": false,
+    "weights_read": false
+  },
+  "seconds": 954.2579874160001,
+  "source_sha256": "0f5099865aee7c9c5179cd9ec943bf45b7cfdf9f8f4952c77efb3e609ccf7b9e",
+  "split": {
+    "development": "8000..9999",
+    "hash": "sha256(salt+\":\"+group_id), first8bytes big-endian mod10000",
+    "salt": "casmi-v6-role1odd-ranker-group-v1-20261019",
+    "train": "0..7999"
+  },
+  "started_utc": "2026-10-19T20:09:15.482287+00:00",
+  "status": "COMPLETE_METADATA_GROUP_AUDIT",
+  "surviving_canonical_groups": 13478,
+  "surviving_queries": 13512,
+  "train_canonical_groups": 10828,
+  "train_queries": 10859
+}

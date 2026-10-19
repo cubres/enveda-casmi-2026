@@ -1,0 +1,131 @@
+{
+  "actual_raw_receipt_sha256": "273d151ef22578a622735fd51ba6ee6cc7b143ddf9406afa278d78429fc9d974",
+  "actual_source_sha256": "0f5099865aee7c9c5179cd9ec943bf45b7cfdf9f8f4952c77efb3e609ccf7b9e",
+  "arrays": {
+    "all_cache_exclusion_reason.npy": {
+      "byte_and_numeric_exact": true,
+      "bytes": 2172768,
+      "dtype": "<U40",
+      "sha256": "f03a63aa617ce5de27686e1f61b4e1885cd2e673efe37df04e0d4327f23009a9",
+      "shape": [
+        13579
+      ]
+    },
+    "cache_query_rows.npy": {
+      "byte_and_numeric_exact": true,
+      "bytes": 108224,
+      "dtype": "int64",
+      "sha256": "7f3b442fe4aafd89b4057221390c94eb2ef005c0d8086437984e9a9255f82a92",
+      "shape": [
+        13512
+      ]
+    },
+    "canonical_group_ids.npy": {
+      "byte_and_numeric_exact": true,
+      "bytes": 3459200,
+      "dtype": "<U64",
+      "sha256": "445c1ee8b5bf6744c0a970643a037a20eb00b0fe6c32586349208097de9e4288",
+      "shape": [
+        13512
+      ]
+    },
+    "role01_canonical_group_ids.npy": {
+      "byte_and_numeric_exact": true,
+      "bytes": 63148672,
+      "dtype": "<U64",
+      "sha256": "680232954b7ffdd70e36d3fe6c57bdd3ca2b54d1308602ffb265225352253884",
+      "shape": [
+        246674
+      ]
+    },
+    "role01_trainer_structure_indices.npy": {
+      "byte_and_numeric_exact": true,
+      "bytes": 1973520,
+      "dtype": "int64",
+      "sha256": "f0f7046c107d8f2641e0ff93706a38e0dd78f0ffbf8c27541699cf5300b2220c",
+      "shape": [
+        246674
+      ]
+    },
+    "split_buckets.npy": {
+      "byte_and_numeric_exact": true,
+      "bytes": 27152,
+      "dtype": "int16",
+      "sha256": "bebf14e37d8d29704dceeafdc3f2e783d99b669a983ff4ed4409791cbfc06a71",
+      "shape": [
+        13512
+      ]
+    },
+    "split_train0_development1.npy": {
+      "byte_and_numeric_exact": true,
+      "bytes": 13640,
+      "dtype": "uint8",
+      "sha256": "414b7bd6f4227b0459bafb901eeb1a191fce1c1b46fa1fb7526789248482a57b",
+      "shape": [
+        13512
+      ]
+    },
+    "trainer_structure_indices.npy": {
+      "byte_and_numeric_exact": true,
+      "bytes": 108224,
+      "dtype": "int64",
+      "sha256": "4a1399ef1ef8abc42b5c0d56c3b8143c460006df1c9ea83ed5f5df659b59ad56",
+      "shape": [
+        13512
+      ]
+    }
+  },
+  "blockers": [],
+  "counts": {
+    "cache_queries": 13579,
+    "development_canonical_groups": 2650,
+    "development_queries": 2653,
+    "exclusion_counts": {
+      "checkpoint_overlap": 67,
+      "survives": 13512
+    },
+    "surviving_canonical_groups": 13478,
+    "surviving_queries": 13512,
+    "train_canonical_groups": 10828,
+    "train_queries": 10859
+  },
+  "environment": {
+    "numpy": "2.2.6",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "rdkit": "2026.03.3",
+    "workers": 2
+  },
+  "limits": {
+    "parent_rss_bytes": 2147483648,
+    "wall_seconds": 1800,
+    "worker_rss_bytes": 1073741824,
+    "workers": 2
+  },
+  "metadata_canary": {
+    "all_valid": true,
+    "forecast_seconds": 1551.0134053679867,
+    "seconds": 1.031589417001669,
+    "strings": 256
+  },
+  "new_model_or_optimizer_or_assay_executed": false,
+  "observed_full_rebuild_process_exit_code": 0,
+  "original_independent_review_sha256": "3a8450f4178b0310e7f66645bee4e154f42567046f0bf445d166aa8cdb8b39e8",
+  "peak_parent_rss_bytes": 236437504,
+  "peak_worker_rss_bytes": 327024640,
+  "runtime_seconds": 954.2579874160001,
+  "schema": "casmi-portable-full-rebuild-actual-output-review/1",
+  "scope": {
+    "fingerprints_read": false,
+    "fp_meta_all_structure_metadata_loaded": true,
+    "logits_read": false,
+    "metadata_only": true,
+    "model_evaluation": false,
+    "model_or_ranker_training": false,
+    "old_assay_repeated": false,
+    "role2_or_role3_canonicalized": false,
+    "role2_or_role3_queries_loaded": false,
+    "spectra_read": false,
+    "weights_read": false
+  },
+  "status": "PASS_ALL_EIGHT_ACTUAL_ARRAY_BYTES_AND_NUMERICS"
+}

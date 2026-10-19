@@ -1,0 +1,93 @@
+{
+  "arrays": {
+    "all_cache_exclusion_reason.npy": {
+      "allow_pickle": false,
+      "dtype": "<U40",
+      "memory_mappable": true,
+      "shape": [
+        13579
+      ]
+    },
+    "cache_query_rows.npy": {
+      "allow_pickle": false,
+      "dtype": "int64",
+      "memory_mappable": true,
+      "shape": [
+        13512
+      ]
+    },
+    "canonical_group_ids.npy": {
+      "allow_pickle": false,
+      "dtype": "<U64",
+      "memory_mappable": true,
+      "shape": [
+        13512
+      ]
+    },
+    "role01_canonical_group_ids.npy": {
+      "allow_pickle": false,
+      "dtype": "<U64",
+      "memory_mappable": true,
+      "shape": [
+        246674
+      ]
+    },
+    "role01_trainer_structure_indices.npy": {
+      "allow_pickle": false,
+      "dtype": "int64",
+      "memory_mappable": true,
+      "shape": [
+        246674
+      ]
+    },
+    "split_buckets.npy": {
+      "allow_pickle": false,
+      "dtype": "int16",
+      "memory_mappable": true,
+      "shape": [
+        13512
+      ]
+    },
+    "split_train0_development1.npy": {
+      "allow_pickle": false,
+      "dtype": "uint8",
+      "memory_mappable": true,
+      "shape": [
+        13512
+      ]
+    },
+    "structure_indices.npy": {
+      "allow_pickle": false,
+      "dtype": "int64",
+      "memory_mappable": true,
+      "shape": [
+        13579
+      ]
+    },
+    "structure_keys.npy": {
+      "allow_pickle": false,
+      "dtype": "<U14",
+      "memory_mappable": true,
+      "shape": [
+        13579
+      ]
+    },
+    "trainer_structure_indices.npy": {
+      "allow_pickle": false,
+      "dtype": "int64",
+      "memory_mappable": true,
+      "shape": [
+        13512
+      ]
+    }
+  },
+  "group_id_definition": "64 lowercase hex SHA256 of compact JSON metric composition+tautomer-canonical InChIKey14",
+  "layout": "All files flat at the dataset root. Original V7 inputs structure_indices.npy and structure_keys.npy do not collide with retained trainer_structure_indices.npy.",
+  "query_axis_order": "exact-V7 cache row order after exclusions; all retained arrays align by position",
+  "role01_axis_order": "strictly increasing original trainer structure index, roles0/1 only",
+  "schema": "casmi-checkpoint-disjoint-split-array-schema/1",
+  "split_values": {
+    "0": "ranker training",
+    "1": "new development"
+  }
+}

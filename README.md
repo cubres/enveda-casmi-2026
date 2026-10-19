@@ -1,5 +1,13 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Verified public split · 19 October
+
+The [public V1 dataset](https://www.kaggle.com/datasets/prvsiyan/casmi26-v6-checkpoint-disjoint-ranker-split/versions/1) excludes 67 checkpoint-overlapping queries and retains 10,859 training / 2,653 development queries with zero canonical-group overlap. A full public-input rebuild reproduced all eight arrays in 954.258 seconds. Anonymous downloads matched every one of the 26 published files (71,960,601 bytes).
+
+[Run the rebuild and NumPy demo](reproduction/v6-checkpoint-disjoint-ranker-split/2026-10-19/README.md), or [audit the downloaded files and joins](reproduction/v6-checkpoint-disjoint-ranker-split/2026-10-19/publication-verification/README.md). Source, split rules, measured proof and component licenses are included. This release claims no new model accuracy or official score.
+
+![Verified checkpoint-disjoint split](reproduction/v6-checkpoint-disjoint-ranker-split/2026-10-19/split_flow.png)
+
 ## Recovered training and preparation sources · 18 October
 
 The [reproducibility release](reproduction/legacy-v2/README.md) publishes the original spectrum preparation, FPNet, S2/M1 training recipes and `make_ranker3.py`, with checkpoint hashes, all 31 ranker feature definitions and runnable invented-data examples. Configured training limits and selected checkpoint steps are documented separately. Historical initialization was seeded late, and the exact producer of the retained ranker FP caches remains unresolved; this is a transparent source release with stated gaps, not a claim of complete historical weight reproduction.
