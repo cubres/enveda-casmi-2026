@@ -1,0 +1,22 @@
+{
+  "core_sha256_after": "b8a5a0738c51af4fc01560242981e12216746dc1b3803ac683fc697246ee6aa8",
+  "core_sha256_before": "b8a5a0738c51af4fc01560242981e12216746dc1b3803ac683fc697246ee6aa8",
+  "data_scope": "Tiny invented in-memory arrays only; largest fixture is 300x1300 uint8",
+  "errors": 0,
+  "failures": 0,
+  "fixture_sha256": "da76904ab0218b01f01a25a18ba22c891fc0c399b30017cbde33cfb384e9f95d",
+  "limitations": "Core mechanics only; does not measure real coverage, resource use, producer output completeness or score",
+  "not_performed": [
+    "real-array read/hash",
+    "producer/wrapper execution",
+    "PyArrow import",
+    "model loading",
+    "inference/training/assay",
+    "network/native action"
+  ],
+  "numpy": "2.2.6",
+  "python": "3.12.14",
+  "seconds": 0.04767579200051841,
+  "status": "PASS_INVENTED_CORE_MECHANICS_ONLY",
+  "tests": 16
+}

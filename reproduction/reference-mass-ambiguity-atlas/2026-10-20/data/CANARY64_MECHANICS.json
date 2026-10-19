@@ -1,0 +1,13 @@
+{
+  "accuracy_or_scoring_evidence": false,
+  "blind_reference_query_rows": 64,
+  "forecast_limit_seconds": 85.0,
+  "forecast_scope": "64 fixed reference queries extrapolated with 1.5 factor and 8-second reserve; remainder density/compression cost may differ, so hard full-run caps remain binding",
+  "independent_integer_fingerprint_pairs": 64,
+  "peak_RSS_bytes": 127303680,
+  "projected_total_seconds_with_reserve": 9.988021250032034,
+  "query_selection": "first 64 fixed public shard rows; no labels or score-based selection",
+  "seconds": 0.016695250000339,
+  "selected_candidate_pairs_computed_and_CSV_formatted": 67,
+  "status": "PASS_MECHANICS_ONLY"
+}

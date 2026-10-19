@@ -1,0 +1,49 @@
+{
+  "completion": "COMPLETE_REFERENCE_ATLAS_ONLY",
+  "files": {
+    "ATLAS_COMPLETE.json": {
+      "bytes": 2460,
+      "sha256": "440e0140dfdfa615db9ab61fc4bef9496b726f10a15bd0964c698ce4b10e0444"
+    },
+    "CANARY64_MECHANICS.json": {
+      "bytes": 659,
+      "sha256": "7995a7a60a8f2e85f35475505b58339347b1200923d43e076bebd1947bb91a7e"
+    },
+    "DATA-LICENSE.md": {
+      "bytes": 1437,
+      "sha256": "a0eac8debb4e64f381a39ff7d872650d8238dd11354caa9a4f739caaef1a6713"
+    },
+    "LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "README.md": {
+      "bytes": 1762,
+      "sha256": "1603b3375dc6d05879e3553e75c666572b035bf5b251c5cfd5af8aa47a986046"
+    },
+    "REFERENCE_INPUTS.json": {
+      "bytes": 1660,
+      "sha256": "02a53bf0722c751c0c2a75773be3dcd0b929ac126bb23ed639b55a64ec475862"
+    },
+    "SOURCE_ATTRIBUTION.md": {
+      "bytes": 2428,
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    "SOURCE_COMPONENT_LICENSE.md": {
+      "bytes": 3175,
+      "sha256": "156994f6e1c288d65ed68d0b83d0bc8cb6ddd901a7073038cd839b483ee71871"
+    },
+    "demo_atlas.py": {
+      "bytes": 3578,
+      "sha256": "da986efd52884b156edd9aec98808261e7cf6bb14d660573fb78ac76daa095ac"
+    },
+    "pairs.csv.gz": {
+      "bytes": 128754,
+      "sha256": "e4ecce02e55f52aa3d10bd05203728cf2211498581fc9e577e56052e73e58ed0"
+    },
+    "query_rows.csv": {
+      "bytes": 618234,
+      "sha256": "e8f1e2dbce50f5f24e31b640efe8c2f64bc83f17d80bdf88de1430787f6803ef"
+    }
+  }
+}

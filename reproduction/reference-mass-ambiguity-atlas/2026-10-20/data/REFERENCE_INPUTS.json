@@ -1,0 +1,40 @@
+{
+  "bits": 10395,
+  "canonical_group_scope": "Only public canonical_group column in the source Parquet; no private canonical maps or chemistry recomputation.",
+  "canonical_groups": 4092,
+  "commit": "9cb4a4a6bc9ce2e97ce7dfcbaca1419bbb5bbb34",
+  "files": {
+    "external_chebi3_4096.parquet": {
+      "bytes": 435905,
+      "sha256": "0e93055e6f38da092dd0c7594a82ad2ac549f94f5091a002e084fc51c8f6048a"
+    },
+    "external_fp.npy": {
+      "bytes": 5324928,
+      "sha256": "bf054278a885292b95391aeaa6778b13c5f05e4705638ef582eef566dcf6af57"
+    },
+    "external_mass.npy": {
+      "bytes": 32896,
+      "sha256": "7384fe0d64567897ab3e0b1f5551e3d9822fe4858042a121c876f1a858810f72"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "mass_order.npy": {
+      "bytes": 32896,
+      "sha256": "0ed70381d7fa127cde48f4f39e69dba8dfd494e58198f7c3e8b36387dd652b67"
+    },
+    "original_source_rows.npy": {
+      "bytes": 32896,
+      "sha256": "9f0a37c5967d479bd6b44d0aeef40e994a30f2765cdfe4baef80e6dc30248790"
+    }
+  },
+  "mass_scope": "Molecular reference exact masses; no observed MS2 precursor masses or competition targets.",
+  "packed_bytes": 1300,
+  "repository": "cubres/enveda-casmi-2026",
+  "rows": 4096,
+  "schema": "casmi-reference-exact-mass-atlas-inputs/1",
+  "source_manifest_sha256": "5bfef8907e914a9fdf83fa9441d73ad05ac92e5f48bfcfb79badb59774c66ba5",
+  "subtree": "reproduction/chebi3-fullfp-shard/2026-10-20",
+  "url": "https://github.com/cubres/enveda-casmi-2026/tree/9cb4a4a6bc9ce2e97ce7dfcbaca1419bbb5bbb34/reproduction/chebi3-fullfp-shard/2026-10-20"
+}

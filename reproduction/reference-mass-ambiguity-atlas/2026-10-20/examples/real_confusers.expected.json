@@ -1,0 +1,104 @@
+{
+  "atlas_completion_sha256": "440e0140dfdfa615db9ab61fc4bef9496b726f10a15bd0964c698ce4b10e0444",
+  "basis": "Direct inspection of exact frozen CSV outputs, not execution of the demo by the release worker.",
+  "cases": [
+    {
+      "expected_result": {
+        "display_limit_only": 5,
+        "displayed_pairs": [
+          {
+            "binary_cosine": "0.74598930949797393",
+            "candidate_on_bits": "257",
+            "candidate_row": "774",
+            "intersection_on_bits": "167",
+            "jaccard": "0.5859649122807018",
+            "query_on_bits": "195",
+            "query_row": "6",
+            "selected_ppm": "10",
+            "signed_ppm": "0",
+            "union_on_bits": "285"
+          },
+          {
+            "binary_cosine": "0.78948272117441998",
+            "candidate_on_bits": "224",
+            "candidate_row": "3999",
+            "intersection_on_bits": "165",
+            "jaccard": "0.64960629921259838",
+            "query_on_bits": "195",
+            "query_row": "6",
+            "selected_ppm": "10",
+            "signed_ppm": "0",
+            "union_on_bits": "254"
+          }
+        ],
+        "query": {
+          "canonical_group": "b3b8968d1c5a5e9ef8e59351788b1d67210bd9099dbbd3a0879c9c2aa6fca598",
+          "fallback_used": "False",
+          "groups_10ppm": "2",
+          "groups_30ppm": "2",
+          "inchikey14": "AFDWAIQLYHEUIW",
+          "original_source_row": "7704",
+          "query_row": "6",
+          "reference_exact_mass_da": "218.032756672",
+          "rows_10ppm": "2",
+          "rows_30ppm": "2",
+          "selected_groups": "2",
+          "selected_on_bits": "195",
+          "selected_ppm": "10",
+          "selected_rows": "2",
+          "source": "ChEBI",
+          "source_id": "CHEBI:50645"
+        },
+        "query_origin": "public reference structure",
+        "scope": "reference ambiguity, not MS2 retrieval or validation",
+        "total_directional_confusers": 2
+      },
+      "limit": 5,
+      "query_row": 6
+    },
+    {
+      "expected_result": {
+        "display_limit_only": 5,
+        "displayed_pairs": [
+          {
+            "binary_cosine": "0.41351784429739885",
+            "candidate_on_bits": "592",
+            "candidate_row": "3548",
+            "intersection_on_bits": "240",
+            "jaccard": "0.26058631921824105",
+            "query_on_bits": "569",
+            "query_row": "14",
+            "selected_ppm": "30",
+            "signed_ppm": "-20.674942517065723",
+            "union_on_bits": "921"
+          }
+        ],
+        "query": {
+          "canonical_group": "222e4f3cd9f789f6b6f2d9b7fd5e13d7119409d9e02174c42d1e60475db6eb60",
+          "fallback_used": "True",
+          "groups_10ppm": "0",
+          "groups_30ppm": "1",
+          "inchikey14": "ABZLKHKQJHEPAX",
+          "original_source_row": "8201",
+          "query_row": "14",
+          "reference_exact_mass_da": "387.17031901609005",
+          "rows_10ppm": "0",
+          "rows_30ppm": "1",
+          "selected_groups": "1",
+          "selected_on_bits": "569",
+          "selected_ppm": "30",
+          "selected_rows": "1",
+          "source": "ChEBI",
+          "source_id": "CHEBI:52281"
+        },
+        "query_origin": "public reference structure",
+        "scope": "reference ambiguity, not MS2 retrieval or validation",
+        "total_directional_confusers": 1
+      },
+      "limit": 5,
+      "query_row": 14
+    }
+  ],
+  "demo_sha256": "da986efd52884b156edd9aec98808261e7cf6bb14d660573fb78ac76daa095ac",
+  "schema": "reference-atlas-real-example-expectations/1"
+}

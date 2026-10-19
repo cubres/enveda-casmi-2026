@@ -1,0 +1,17 @@
+{
+  "attempt_remains_consumed": true,
+  "child_completion": "COMPLETE_REFERENCE_ATLAS_ONLY",
+  "child_returncode": 0,
+  "conservative_sum_of_RSS_peaks_bytes": 151011328,
+  "no_GPU_model_spectra_or_labels": true,
+  "owned_process_group_clean": true,
+  "peak_child_RSS_bytes": 128679936,
+  "peak_wrapper_RSS_bytes": 22331392,
+  "reason": null,
+  "seconds": 0.7520639169997594,
+  "source_hashes_unchanged": true,
+  "source_manifest_sha256": "9d6083e32b2629f0dca5c7ea2546983dc95b2930af24f7cdacc649af1db6544b",
+  "status": "PASS_COMPLETE_REFERENCE_ATLAS_NO_QUALITY_CLAIM",
+  "whole_RSS_bytes": 536870912,
+  "wrapper_seconds": 120.0
+}

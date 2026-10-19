@@ -1,0 +1,62 @@
+{
+  "accuracy_score_recall_or_validation_claim": null,
+  "all_input_hashes_unchanged": true,
+  "canonical_groups": 4092,
+  "chemistry_recomputed": false,
+  "directional_pair_rows": 3800,
+  "fallback_policy": "all different-group rows in closed 10ppm window; only if none, all in closed 30ppm window",
+  "fingerprint_scope": "10395 selected MSB-first bits; five low padding bits zero; binary-set similarity",
+  "input_files": {
+    "external_chebi3_4096.parquet": {
+      "bytes": 435905,
+      "sha256": "0e93055e6f38da092dd0c7594a82ad2ac549f94f5091a002e084fc51c8f6048a"
+    },
+    "external_fp.npy": {
+      "bytes": 5324928,
+      "sha256": "bf054278a885292b95391aeaa6778b13c5f05e4705638ef582eef566dcf6af57"
+    },
+    "external_mass.npy": {
+      "bytes": 32896,
+      "sha256": "7384fe0d64567897ab3e0b1f5551e3d9822fe4858042a121c876f1a858810f72"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "mass_order.npy": {
+      "bytes": 32896,
+      "sha256": "0ed70381d7fa127cde48f4f39e69dba8dfd494e58198f7c3e8b36387dd652b67"
+    },
+    "original_source_rows.npy": {
+      "bytes": 32896,
+      "sha256": "9f0a37c5967d479bd6b44d0aeef40e994a30f2765cdfe4baef80e6dc30248790"
+    }
+  },
+  "mass_scope": "Molecular reference exact masses, not observed MS2 precursor measurements",
+  "maximum_selected_candidate_rows": 12,
+  "no_spectra_models_labels_or_competition_targets": true,
+  "numpy": "2.2.6",
+  "peak_RSS_bytes": 128679936,
+  "ppm_denominator": "query reference exact mass; directed and not necessarily symmetric",
+  "pyarrow": "25.0.0",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "queries_using_30ppm_fallback": 359,
+  "queries_with_10ppm_confusers": 1262,
+  "queries_with_at_least_two_selected_confuser_groups": 644,
+  "queries_with_no_different_group_confuser_at_30ppm": 2475,
+  "resource_limits": {
+    "CPU_thread_limit": 2,
+    "pair_row_cap_fail_closed": 1000000,
+    "producer_RSS_bytes": 469762048,
+    "producer_seconds": 100,
+    "whole_RSS_bytes": 536870912,
+    "wrapper_seconds": 120
+  },
+  "rows": 4096,
+  "schema": "reference-exact-mass-ambiguity-atlas/1",
+  "seconds": 0.6328313750018424,
+  "status": "COMPLETE_REFERENCE_ATLAS_ONLY",
+  "undefined_binary_cosine_rows": 0,
+  "undefined_jaccard_rows": 0,
+  "undefined_similarity_policy": "empty union or zero cosine norm is an empty CSV field, not a fabricated zero/one"
+}

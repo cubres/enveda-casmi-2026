@@ -1,0 +1,44 @@
+{
+  "all_original_manifest_entries_verified_before_after": 11,
+  "closed_windows_fallback_pair_order_and_all_counts_reconstructed_from_exported_reference_rows": true,
+  "completion_sha256": "440e0140dfdfa615db9ab61fc4bef9496b726f10a15bd0964c698ce4b10e0444",
+  "coverage": {
+    "maximum_selected_candidate_rows": 12,
+    "queries_using_30ppm_fallback": 359,
+    "queries_with_10ppm_confusers": 1262,
+    "queries_with_at_least_two_selected_confuser_groups": 644,
+    "queries_with_no_different_group_confuser_at_30ppm": 2475
+  },
+  "demo_execution_by_release_worker": false,
+  "directed_pairs": 3800,
+  "duplicate_pairs": 0,
+  "equal_public_canonical_groups_excluded": true,
+  "limitations": [
+    "Reference exact masses, not observed MS2 precursors.",
+    "No spectra, targets, labels, model, training, prediction, old assay or official score.",
+    "Post-run peer reconstructed all pair policy and ratio identities from exported metadata/counts, but did not reopen source fingerprints or recompute their intersections.",
+    "No chemical novelty, validation recall or hidden-answer coverage is established."
+  ],
+  "original_full_review_sha256": "44455e7e79fc19270ca0540adec66ef29cd3f2adabed63534533e22793069f59",
+  "outer_resource_result_sha256": "07497edb6566aca1ecac014330b6044ff392800a8c27789564e15b5695e798e6",
+  "post_review_recomputed_fingerprint_intersections_from_source_arrays": false,
+  "query_rows": 4096,
+  "resource": {
+    "child_returncode": 0,
+    "conservative_sum_of_RSS_peaks_bytes": 151011328,
+    "owned_process_group_clean": true,
+    "seconds": 0.7520639169997594,
+    "source_hashes_unchanged": true,
+    "status": "PASS_COMPLETE_REFERENCE_ATLAS_NO_QUALITY_CLAIM"
+  },
+  "root_real_mechanics_canary": {
+    "independent_bigint_pairs": 64,
+    "passed": true,
+    "reference_rows": 64,
+    "selected_candidate_pairs": 67
+  },
+  "schema": "reference-mass-ambiguity-completed-output-public-review/1",
+  "signed_ppm_integer_union_and_similarity_ratio_identities_checked_for_every_pair": true,
+  "source_manifest_sha256": "9d6083e32b2629f0dca5c7ea2546983dc95b2930af24f7cdacc649af1db6544b",
+  "status": "PASS_COMPLETED_OUTPUT_INTERNAL_CONSISTENCY_AND_RESOURCE_REVIEW"
+}

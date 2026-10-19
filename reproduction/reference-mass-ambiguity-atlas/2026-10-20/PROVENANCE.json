@@ -1,0 +1,20 @@
+{
+  "actual_numbers_from": "data/ATLAS_COMPLETE.json; verification/RESOURCE_RESULT.json",
+  "code_scope": "Apache-2.0 for uploader-authored code where marked; retained notices apply.",
+  "data_scope": "CC BY 4.0 ChEBI records and derived representations plus separate frozen-mask component terms; see DATA-LICENSE.md and SOURCE_COMPONENT_LICENSE.md. Aggregate Other/component terms.",
+  "frozen_original_data_manifest_entries": 11,
+  "frozen_original_source_files": 11,
+  "new_outputs_were_not_generated_or_recomputed_by_release_worker": true,
+  "new_public_README_is_separate_from_original_output_and_source_READMEs": true,
+  "no_competition_targets_spectra_models_predictions_or_private_canonical_maps": true,
+  "original_output_manifest": "data/OUTPUT_MANIFEST.json",
+  "original_output_manifest_sha256": "321b70493ebf25d44a19ace0d2f4a1b3828bc36e52774d350d5c43f39aa1ee31",
+  "original_resource_result": "verification/RESOURCE_RESULT.json",
+  "resource_result_byte_exact": true,
+  "schema": "reference-mass-ambiguity-atlas-public-provenance/1",
+  "source_input_contract": "source/REFERENCE_INPUTS.json",
+  "source_manifest": "source/SOURCE_MANIFEST.json",
+  "source_manifest_sha256": "9d6083e32b2629f0dca5c7ea2546983dc95b2930af24f7cdacc649af1db6544b",
+  "source_reference_commit": "9cb4a4a6bc9ce2e97ce7dfcbaca1419bbb5bbb34",
+  "source_reference_url": "https://github.com/cubres/enveda-casmi-2026/tree/9cb4a4a6bc9ce2e97ce7dfcbaca1419bbb5bbb34/reproduction/chebi3-fullfp-shard/2026-10-20"
+}

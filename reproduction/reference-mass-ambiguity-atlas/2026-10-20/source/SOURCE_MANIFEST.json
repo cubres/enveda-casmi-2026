@@ -1,0 +1,49 @@
+{
+  "files": {
+    "DATA-LICENSE.md": {
+      "bytes": 1437,
+      "sha256": "a0eac8debb4e64f381a39ff7d872650d8238dd11354caa9a4f739caaef1a6713"
+    },
+    "LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "README.md": {
+      "bytes": 6577,
+      "sha256": "09bfb4e47722930fd2fc60af0d22b64c4ea02bd199fdcbe058c9d1f6e608c072"
+    },
+    "REFERENCE_INPUTS.json": {
+      "bytes": 1660,
+      "sha256": "02a53bf0722c751c0c2a75773be3dcd0b929ac126bb23ed639b55a64ec475862"
+    },
+    "SOURCE_ATTRIBUTION.md": {
+      "bytes": 2428,
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    "SOURCE_COMPONENT_LICENSE.md": {
+      "bytes": 3175,
+      "sha256": "156994f6e1c288d65ed68d0b83d0bc8cb6ddd901a7073038cd839b483ee71871"
+    },
+    "atlas_core.py": {
+      "bytes": 4614,
+      "sha256": "b8a5a0738c51af4fc01560242981e12216746dc1b3803ac683fc697246ee6aa8"
+    },
+    "build_atlas.py": {
+      "bytes": 18045,
+      "sha256": "713770dc414918cd5a54fd5b9cbf0f9327efa20ccd4458a9f18a5ea26683a9df"
+    },
+    "demo_atlas.py": {
+      "bytes": 3578,
+      "sha256": "da986efd52884b156edd9aec98808261e7cf6bb14d660573fb78ac76daa095ac"
+    },
+    "requirements.txt": {
+      "bytes": 29,
+      "sha256": "dc2a559b4f2133bedaf2b8ab28bec6c4641ebf0a8dd263a5ec0f7de797c7b1bb"
+    },
+    "run_owned_atlas.py": {
+      "bytes": 7540,
+      "sha256": "c8ca05b1288f978b51004ef3f50bdf63a5a00d211a04e59ef2cded4c7731b6fc"
+    }
+  },
+  "schema": "casmi-reference-atlas-source-manifest/1"
+}

@@ -1,0 +1,196 @@
+{
+  "files": [
+    {
+      "bytes": 1437,
+      "file": "DATA-LICENSE.md",
+      "sha256": "a0eac8debb4e64f381a39ff7d872650d8238dd11354caa9a4f739caaef1a6713"
+    },
+    {
+      "bytes": 11358,
+      "file": "LICENSE-SOURCE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 1491,
+      "file": "PROVENANCE.json",
+      "sha256": "4b2292edcb9a8846f1983a8591fa1fff5244983031f951827cd1fc06e03e4812"
+    },
+    {
+      "bytes": 7601,
+      "file": "README.md",
+      "sha256": "d3e3bc0377eb8a5de1bbae57bb7bbd135884c5fe9ccf970dce63a9b063ef2eec"
+    },
+    {
+      "bytes": 2428,
+      "file": "SOURCE_ATTRIBUTION.md",
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    {
+      "bytes": 3175,
+      "file": "SOURCE_COMPONENT_LICENSE.md",
+      "sha256": "156994f6e1c288d65ed68d0b83d0bc8cb6ddd901a7073038cd839b483ee71871"
+    },
+    {
+      "bytes": 3793,
+      "file": "assets/reference-atlas.svg",
+      "sha256": "e603ab022e3c743ff82937d1bac18d6b6b330df856c5b19ed15db44854e48f3a"
+    },
+    {
+      "bytes": 2460,
+      "file": "data/ATLAS_COMPLETE.json",
+      "sha256": "440e0140dfdfa615db9ab61fc4bef9496b726f10a15bd0964c698ce4b10e0444"
+    },
+    {
+      "bytes": 659,
+      "file": "data/CANARY64_MECHANICS.json",
+      "sha256": "7995a7a60a8f2e85f35475505b58339347b1200923d43e076bebd1947bb91a7e"
+    },
+    {
+      "bytes": 1437,
+      "file": "data/DATA-LICENSE.md",
+      "sha256": "a0eac8debb4e64f381a39ff7d872650d8238dd11354caa9a4f739caaef1a6713"
+    },
+    {
+      "bytes": 11358,
+      "file": "data/LICENSE-SOURCE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 1592,
+      "file": "data/OUTPUT_MANIFEST.json",
+      "sha256": "321b70493ebf25d44a19ace0d2f4a1b3828bc36e52774d350d5c43f39aa1ee31"
+    },
+    {
+      "bytes": 1762,
+      "file": "data/README.md",
+      "sha256": "1603b3375dc6d05879e3553e75c666572b035bf5b251c5cfd5af8aa47a986046"
+    },
+    {
+      "bytes": 1660,
+      "file": "data/REFERENCE_INPUTS.json",
+      "sha256": "02a53bf0722c751c0c2a75773be3dcd0b929ac126bb23ed639b55a64ec475862"
+    },
+    {
+      "bytes": 2428,
+      "file": "data/SOURCE_ATTRIBUTION.md",
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    {
+      "bytes": 3175,
+      "file": "data/SOURCE_COMPONENT_LICENSE.md",
+      "sha256": "156994f6e1c288d65ed68d0b83d0bc8cb6ddd901a7073038cd839b483ee71871"
+    },
+    {
+      "bytes": 3578,
+      "file": "data/demo_atlas.py",
+      "sha256": "da986efd52884b156edd9aec98808261e7cf6bb14d660573fb78ac76daa095ac"
+    },
+    {
+      "bytes": 128754,
+      "file": "data/pairs.csv.gz",
+      "sha256": "e4ecce02e55f52aa3d10bd05203728cf2211498581fc9e577e56052e73e58ed0"
+    },
+    {
+      "bytes": 618234,
+      "file": "data/query_rows.csv",
+      "sha256": "e8f1e2dbce50f5f24e31b640efe8c2f64bc83f17d80bdf88de1430787f6803ef"
+    },
+    {
+      "bytes": 3578,
+      "file": "demo_atlas.py",
+      "sha256": "da986efd52884b156edd9aec98808261e7cf6bb14d660573fb78ac76daa095ac"
+    },
+    {
+      "bytes": 3575,
+      "file": "examples/real_confusers.expected.json",
+      "sha256": "6257943c9479e97f1adaec2a2cf2aa5b7e00af5192cfac86fb44c6789391ab58"
+    },
+    {
+      "bytes": 11062,
+      "file": "independent_test_atlas_core.py",
+      "sha256": "da76904ab0218b01f01a25a18ba22c891fc0c399b30017cbde33cfb384e9f95d"
+    },
+    {
+      "bytes": 1437,
+      "file": "source/DATA-LICENSE.md",
+      "sha256": "a0eac8debb4e64f381a39ff7d872650d8238dd11354caa9a4f739caaef1a6713"
+    },
+    {
+      "bytes": 11358,
+      "file": "source/LICENSE-SOURCE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 6577,
+      "file": "source/README.md",
+      "sha256": "09bfb4e47722930fd2fc60af0d22b64c4ea02bd199fdcbe058c9d1f6e608c072"
+    },
+    {
+      "bytes": 1660,
+      "file": "source/REFERENCE_INPUTS.json",
+      "sha256": "02a53bf0722c751c0c2a75773be3dcd0b929ac126bb23ed639b55a64ec475862"
+    },
+    {
+      "bytes": 2428,
+      "file": "source/SOURCE_ATTRIBUTION.md",
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    {
+      "bytes": 3175,
+      "file": "source/SOURCE_COMPONENT_LICENSE.md",
+      "sha256": "156994f6e1c288d65ed68d0b83d0bc8cb6ddd901a7073038cd839b483ee71871"
+    },
+    {
+      "bytes": 1587,
+      "file": "source/SOURCE_MANIFEST.json",
+      "sha256": "9d6083e32b2629f0dca5c7ea2546983dc95b2930af24f7cdacc649af1db6544b"
+    },
+    {
+      "bytes": 4614,
+      "file": "source/atlas_core.py",
+      "sha256": "b8a5a0738c51af4fc01560242981e12216746dc1b3803ac683fc697246ee6aa8"
+    },
+    {
+      "bytes": 18045,
+      "file": "source/build_atlas.py",
+      "sha256": "713770dc414918cd5a54fd5b9cbf0f9327efa20ccd4458a9f18a5ea26683a9df"
+    },
+    {
+      "bytes": 3578,
+      "file": "source/demo_atlas.py",
+      "sha256": "da986efd52884b156edd9aec98808261e7cf6bb14d660573fb78ac76daa095ac"
+    },
+    {
+      "bytes": 29,
+      "file": "source/requirements.txt",
+      "sha256": "dc2a559b4f2133bedaf2b8ab28bec6c4641ebf0a8dd263a5ec0f7de797c7b1bb"
+    },
+    {
+      "bytes": 7540,
+      "file": "source/run_owned_atlas.py",
+      "sha256": "c8ca05b1288f978b51004ef3f50bdf63a5a00d211a04e59ef2cded4c7731b6fc"
+    },
+    {
+      "bytes": 2192,
+      "file": "verification/COMPLETED_OUTPUT_REVIEW.json",
+      "sha256": "789a3dff44226f9d3eb1905db8d914a10ee51325d45f0d5a9a4fc6f0bfed2417"
+    },
+    {
+      "bytes": 629,
+      "file": "verification/RESOURCE_RESULT.json",
+      "sha256": "07497edb6566aca1ecac014330b6044ff392800a8c27789564e15b5695e798e6"
+    },
+    {
+      "bytes": 853,
+      "file": "verification/SYNTHETIC_CONTROLS.json",
+      "sha256": "7d93ecf493412748eb4d56efafa1dd506b80a3eae16e976faf6d9d639f7eb9a5"
+    },
+    {
+      "bytes": 1424,
+      "file": "verify_release.py",
+      "sha256": "ce7dffee788ad81aeca76857dddc1b1de7c809e0049d1b5291041d8fa730c746"
+    }
+  ],
+  "schema": "reference-atlas-public-release-files/1",
+  "self_excluded": true
+}
