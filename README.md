@@ -1,5 +1,9 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Verified ChEBI fingerprint shard · 20 October
+
+The [producer, numerical checks and runnable retrieval demo](reproduction/chebi3-fullfp-shard/2026-10-20/README.md) cover 4,096 ChEBI three-star records absent by raw key and exact SMILES from our older candidate bank. All 45 producer outputs passed their hash and numerical checks; the shard contains 4,092 canonical groups. [The pipeline diagram](reproduction/chebi3-fullfp-shard/2026-10-20/assets/pipeline.png) shows the row and fingerprint contracts. Kaggle packaging is pending; score improvement and canonical novelty against the entire old bank remain unmeasured.
+
 ## Verified public split · 19 October
 
 The [public V1 dataset](https://www.kaggle.com/datasets/prvsiyan/casmi26-v6-checkpoint-disjoint-ranker-split/versions/1) excludes 67 checkpoint-overlapping queries and retains 10,859 training / 2,653 development queries with zero canonical-group overlap. A full public-input rebuild reproduced all eight arrays in 954.258 seconds. Anonymous downloads matched every one of the 26 published files (71,960,601 bytes).

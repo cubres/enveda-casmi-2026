@@ -1,0 +1,17 @@
+{
+  "aggregate_cpu_seconds": 59.437386352000004,
+  "canary_receipt_sha256": "48897a3fe1bc63fc4ef8b814e9c5e2629f14ea33204394bf3905ba9b768e12d6",
+  "child_returncode": 0,
+  "cpu_affinity_not_supported_on_macos": true,
+  "full_continuation": false,
+  "model_or_training_or_assay": false,
+  "output_bytes_before_final_receipt": 901554,
+  "reason": null,
+  "remaining_owned_group_pids": [],
+  "root_input_identity_after_verified_by_child": true,
+  "rss_sampling_seconds": 0.1,
+  "seconds": 34.15789104199939,
+  "source_manifest_sha256": "5f9537852f0091ce3fb808fc4daa8af17b102793866a79c000f6f60c99432ce8",
+  "status": "COMPLETE_MAC_CANARY_ONLY",
+  "sum_observed_rss_peak_bytes": 1165148160
+}

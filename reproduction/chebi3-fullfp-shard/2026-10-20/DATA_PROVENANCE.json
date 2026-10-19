@@ -1,0 +1,37 @@
+{
+  "actual_producer_outputs_copied_byte_exact": 45,
+  "canonical_groups_within_shard": 4092,
+  "code_terms": "Apache-2.0, with original notices preserved",
+  "data_terms": "CC-BY-4.0 molecular records plus separate frozen-mask component terms; see DATA-LICENSE.md",
+  "hidden_answer_coverage": "NOT_MEASURED",
+  "image_publication": "README template is separate and nonfinal; root must publish/verify the PNG at an exact public Git commit before creating a Kaggle dataset.",
+  "metric_novelty_vs_entire_old_bank": "NOT_MEASURED",
+  "not_included": [
+    "old711705 fingerprint bank",
+    "old pool metadata pickle or mass bank",
+    "training labels",
+    "model weights",
+    "signed URLs or credentials",
+    "operational consumed markers, handles, logs or launch recipes"
+  ],
+  "numeric_audit_sha256": "b3f89a310ff56e7ec464b4359c6abd052a56be23ca96f3590b418a4c2cebfa21",
+  "observed_utc": "2026-10-19T21:12:21.453085+00:00",
+  "old_bank_mask_input": {
+    "id": 12350648,
+    "ref": "prvsiyan/casmi26-full-fingerprint-inputs",
+    "version": 1
+  },
+  "producer_build_receipt_sha256": "01f0b7e8fd0d963975f6976c605180e40ea806d4bfa49cbfb87949295a5f823a",
+  "producer_source_manifest_sha256": "f14c9513f514743f785decddc6bbfc99306f547959331543252904f60a8a1c22",
+  "protocol_audit_sha256": "25fbc7c886cf67d487dfe49870710bd7282910f5eec52c32a4460db8e6fcfca6",
+  "public_source": {
+    "id": 12431882,
+    "ref": "sergiomalv/casmi-chebi-lmsd-structures",
+    "version": 1
+  },
+  "raw_keys_and_exact_smiles_new_vs_old711705": 4096,
+  "reproduction": "producer/ retains exact source and the small pinned old512 scientific proof; obtain the two public input datasets and follow producer/README.md. Demo is portable and needs NumPy/PyArrow only.",
+  "rows": 4096,
+  "score_improvement": "NOT_MEASURED",
+  "status": "STAGED_SCIENTIFIC_PAYLOAD_NOT_PUBLISHED"
+}

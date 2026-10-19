@@ -1,0 +1,49 @@
+{
+  "files": {
+    "DATA-LICENSE.md": {
+      "bytes": 2517,
+      "sha256": "2188c5bb6a8c470d765ae7828d68d2e70d6f5dfbd8ee5aa4d2dc941c686b077d"
+    },
+    "DOWNLOAD_PLAN.json": {
+      "bytes": 2174,
+      "sha256": "5071818a780c4e7b0cde8fbfe1b122727bdcabbf702dc7d42db7a2638b188423"
+    },
+    "LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "PUBLIC_SOURCE_BINDINGS.json": {
+      "bytes": 3254,
+      "sha256": "33a626d19d010ed0c0a4e4b8b326e7904db465564b757d212c3c34f262c7c5fa"
+    },
+    "README.md": {
+      "bytes": 3934,
+      "sha256": "2e455b28b3fcf6e4a254f39e13d7bd6a186335f9d6c81f11f719658fa7b8e77b"
+    },
+    "build_external_fp_shard.py": {
+      "bytes": 20990,
+      "sha256": "0d25816ad0de134d9c4a790530b15e3a89285332aef90f3252bc263ca48ed092"
+    },
+    "canary_macos.py": {
+      "bytes": 10850,
+      "sha256": "d7053e4013f8d55845698053c72dbf21d2b49a002089b52fec585ee4cf15f5d0"
+    },
+    "group_identity.py": {
+      "bytes": 580,
+      "sha256": "dd4c1750cf4816cdc3d880df837bdffec6a2beb62f3b676cc5ca663107ee042d"
+    },
+    "metric_distinct.py": {
+      "bytes": 2760,
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+    },
+    "run_owned_macos_canary.py": {
+      "bytes": 9561,
+      "sha256": "b93fe5f18ec058756485cee51b6fc06a4e03046da82caa4d8eac7226e72d2bb4"
+    },
+    "test_macos_admission.py": {
+      "bytes": 5398,
+      "sha256": "23a40888caf37e9592d296ab70994f9d99fcc265a5e8734eef8cd724e7f2160d"
+    }
+  },
+  "scope": "Distinct Mac-only512old+512new canary R2; protected child lifecycle; no full continuation/model/assay/download"
+}

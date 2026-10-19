@@ -1,0 +1,57 @@
+{
+  "files": {
+    "DATA-LICENSE.md": {
+      "bytes": 3399,
+      "sha256": "cccf1dfa76ec5b5580211858a8cb8611f8ceade88d1a961642b692c3e5e6e4ec"
+    },
+    "LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "PUBLIC_SOURCE_BINDINGS.json": {
+      "bytes": 3254,
+      "sha256": "33a626d19d010ed0c0a4e4b8b326e7904db465564b757d212c3c34f262c7c5fa"
+    },
+    "README.md": {
+      "bytes": 8416,
+      "sha256": "65ded0f0cb60b8d04eab8693eefad5ed52962880ae4e7605f72c2f7275f0f199"
+    },
+    "build_chebi3_shard.py": {
+      "bytes": 21501,
+      "sha256": "0350a30deaadb6222d7a38d360006f8e1db267a86f25be014d9d7d53324198b3"
+    },
+    "build_external_fp_shard.py": {
+      "bytes": 20990,
+      "sha256": "0d25816ad0de134d9c4a790530b15e3a89285332aef90f3252bc263ca48ed092"
+    },
+    "group_identity.py": {
+      "bytes": 580,
+      "sha256": "dd4c1750cf4816cdc3d880df837bdffec6a2beb62f3b676cc5ca663107ee042d"
+    },
+    "metric_distinct.py": {
+      "bytes": 2760,
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+    },
+    "requirements.txt": {
+      "bytes": 59,
+      "sha256": "6cffff515b1188afae8c4740faa6caddae9eedc0b50fac1e009d8bde6ca1d9e4"
+    },
+    "run_owned_chebi3_shard.py": {
+      "bytes": 10682,
+      "sha256": "847aaef66077db759752ce624386c625f14d40832f20157837570362f727db70"
+    },
+    "selection_and_budget.py": {
+      "bytes": 9869,
+      "sha256": "fcecd42566dab22f29f9a48f6fa15ce48cc83ab92f6e9da73202a7f1617c324d"
+    },
+    "test_owned_chebi3_admission.py": {
+      "bytes": 6659,
+      "sha256": "b134b3ce60dd5094c4ab14266501f6bb577e21e0beea53db2326cb5be340105c"
+    },
+    "test_selection_and_budget.py": {
+      "bytes": 7740,
+      "sha256": "0e2ff98db137daf25cfaa16c06998692c71c0943839e8fc2556c2734c93eed9b"
+    }
+  },
+  "scope": "Distinct source-only Mac4096 ChEBI3 raw-new shard; selected64 exact numeric/reload/forecast gate; root sole executor; no model, assay, notebook action or publication"
+}

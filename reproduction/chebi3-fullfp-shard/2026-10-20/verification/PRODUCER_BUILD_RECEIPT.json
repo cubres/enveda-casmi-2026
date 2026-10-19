@@ -1,0 +1,259 @@
+{
+  "actual_selected_raw_key_new": 4096,
+  "all_numeric_and_parquet_reloads_exact": true,
+  "canary_rows": 64,
+  "canonical_groups_selected": 4092,
+  "eligible_raw_key_new_chebi3_rows": 8895,
+  "fingerprints_from_unchanged_baseline_only": true,
+  "input_hashes_before_and_after": {
+    "ATTRIBUTION.md": {
+      "bytes": 2428,
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    "bio_structures.parquet": {
+      "bytes": 5407545,
+      "sha256": "6bef7106d640ed370046e79d67b86932ba26da3a3632e6901e3b040fad56aa88"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "pool_fp.npy": {
+      "bytes": 925216628,
+      "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+    },
+    "pool_mass.npy": {
+      "bytes": 5693768,
+      "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+    },
+    "pool_meta.pkl": {
+      "bytes": 64843052,
+      "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+    },
+    "stats.json": {
+      "bytes": 608,
+      "sha256": "dd0d5686dd54824a40857b75338ed03dc922a2580031d246bf1995b43af57a5e"
+    }
+  },
+  "metric_novelty_vs_old711705": "NOT_MEASURED",
+  "no_model_training_assay_hidden_test": true,
+  "old512_proof_reused": {
+    "child_receipt_sha256": "48897a3fe1bc63fc4ef8b814e9c5e2629f14ea33204394bf3905ba9b768e12d6",
+    "current_input_hashes_identical": true,
+    "executed_source_manifest_sha256": "5f9537852f0091ce3fb808fc4daa8af17b102793866a79c000f6f60c99432ce8",
+    "fp_group_sources_identical": true,
+    "old512_chemistry_repeated": false,
+    "old_phase_sha256": "f089f64b3bb77550616b3ac5f5423315fdc12b3c1e49e39171642074e09699b5",
+    "result_sha256": "af4bd30904f66f57031d63f6548e9b2b710fbca7196c4bc79d68860aade7a700",
+    "rows": 512,
+    "runtime_identical": {
+      "numpy": "2.2.6",
+      "python": "3.12.14",
+      "rdkit": "2026.03.3"
+    },
+    "scope": "Deterministic FP/mass integrity only; no new-subset quality or score qualification.",
+    "status": "REUSED_EXACT_OLD512_INTEGRITY_PROOF"
+  },
+  "output_bytes": 6425081,
+  "outputs": {
+    "CANARY64_GATE.json": {
+      "bytes": 53074,
+      "sha256": "abb25af9cec68ea043b9fe0f665e8088b44ceada5a03fe772cbec8dac9816f35"
+    },
+    "DATA-LICENSE.md": {
+      "bytes": 3399,
+      "sha256": "cccf1dfa76ec5b5580211858a8cb8611f8ceade88d1a961642b692c3e5e6e4ec"
+    },
+    "LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "OLD512_PROOF_REUSE.json": {
+      "bytes": 763,
+      "sha256": "f17539cff04faa371c42b5ce14c56fc1e7ffbc5e1c868ed1f31523c616771156"
+    },
+    "PUBLIC_SOURCE_BINDINGS.json": {
+      "bytes": 3254,
+      "sha256": "33a626d19d010ed0c0a4e4b8b326e7904db465564b757d212c3c34f262c7c5fa"
+    },
+    "README.md": {
+      "bytes": 8416,
+      "sha256": "65ded0f0cb60b8d04eab8693eefad5ed52962880ae4e7605f72c2f7275f0f199"
+    },
+    "SELECTION_MANIFEST.json": {
+      "bytes": 46719,
+      "sha256": "5cf38884d8aac1d3fd538c24bef4f54e4892a0e514ca9f7a04c08584d6ac6de7"
+    },
+    "SOURCE_ATTRIBUTION.md": {
+      "bytes": 2428,
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    "SOURCE_MANIFEST.json": {
+      "bytes": 2043,
+      "sha256": "f14c9513f514743f785decddc6bbfc99306f547959331543252904f60a8a1c22"
+    },
+    "SOURCE_stats.json": {
+      "bytes": 608,
+      "sha256": "dd0d5686dd54824a40857b75338ed03dc922a2580031d246bf1995b43af57a5e"
+    },
+    "build_chebi3_shard.py": {
+      "bytes": 21501,
+      "sha256": "0350a30deaadb6222d7a38d360006f8e1db267a86f25be014d9d7d53324198b3"
+    },
+    "build_external_fp_shard.py": {
+      "bytes": 20990,
+      "sha256": "0d25816ad0de134d9c4a790530b15e3a89285332aef90f3252bc263ca48ed092"
+    },
+    "canary64_fp.npy": {
+      "bytes": 83328,
+      "sha256": "4dee8c8790ce4bfed34614a896dee3c868b9a6b08a4ce4e4d5a2897460c72ae2"
+    },
+    "canary64_mass.npy": {
+      "bytes": 640,
+      "sha256": "37c84e3a46c7429c29bf0bbb94d7298a4ed894c3e2ff6f9dfd169bdae1c06dde"
+    },
+    "canary64_source.parquet": {
+      "bytes": 10814,
+      "sha256": "60ae42761e27e7618b5300ef81e850557db957d2d3a700546865f828b2ec3d8a"
+    },
+    "canary64_source_rows.npy": {
+      "bytes": 640,
+      "sha256": "8c790e3bbcc3f7cde2e6ed0bbb8f430bfda93b809463b6c4fc35e8bdf61fe5e2"
+    },
+    "completion_bitmap.npy": {
+      "bytes": 4224,
+      "sha256": "0eb60eefaeb410d873690380c29d88417cec5684124ea314a7bbd63cb33b5cfd"
+    },
+    "external_chebi3_4096.parquet": {
+      "bytes": 435905,
+      "sha256": "0e93055e6f38da092dd0c7594a82ad2ac549f94f5091a002e084fc51c8f6048a"
+    },
+    "external_fp.npy": {
+      "bytes": 5324928,
+      "sha256": "bf054278a885292b95391aeaa6778b13c5f05e4705638ef582eef566dcf6af57"
+    },
+    "external_mass.npy": {
+      "bytes": 32896,
+      "sha256": "7384fe0d64567897ab3e0b1f5551e3d9822fe4858042a121c876f1a858810f72"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "group_identity.py": {
+      "bytes": 580,
+      "sha256": "dd4c1750cf4816cdc3d880df837bdffec6a2beb62f3b676cc5ca663107ee042d"
+    },
+    "mass_order.npy": {
+      "bytes": 32896,
+      "sha256": "0ed70381d7fa127cde48f4f39e69dba8dfd494e58198f7c3e8b36387dd652b67"
+    },
+    "metric_distinct.py": {
+      "bytes": 2760,
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+    },
+    "old512_proof/DATA-LICENSE.md": {
+      "bytes": 2517,
+      "sha256": "2188c5bb6a8c470d765ae7828d68d2e70d6f5dfbd8ee5aa4d2dc941c686b077d"
+    },
+    "old512_proof/DOWNLOAD_PLAN.json": {
+      "bytes": 2174,
+      "sha256": "5071818a780c4e7b0cde8fbfe1b122727bdcabbf702dc7d42db7a2638b188423"
+    },
+    "old512_proof/LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "old512_proof/PUBLIC_SOURCE_BINDINGS.json": {
+      "bytes": 3254,
+      "sha256": "33a626d19d010ed0c0a4e4b8b326e7904db465564b757d212c3c34f262c7c5fa"
+    },
+    "old512_proof/README.md": {
+      "bytes": 3934,
+      "sha256": "2e455b28b3fcf6e4a254f39e13d7bd6a186335f9d6c81f11f719658fa7b8e77b"
+    },
+    "old512_proof/SOURCE_MANIFEST.json": {
+      "bytes": 1685,
+      "sha256": "5f9537852f0091ce3fb808fc4daa8af17b102793866a79c000f6f60c99432ce8"
+    },
+    "old512_proof/build_external_fp_shard.py": {
+      "bytes": 20990,
+      "sha256": "0d25816ad0de134d9c4a790530b15e3a89285332aef90f3252bc263ca48ed092"
+    },
+    "old512_proof/canary_macos.py": {
+      "bytes": 10850,
+      "sha256": "d7053e4013f8d55845698053c72dbf21d2b49a002089b52fec585ee4cf15f5d0"
+    },
+    "old512_proof/group_identity.py": {
+      "bytes": 580,
+      "sha256": "dd4c1750cf4816cdc3d880df837bdffec6a2beb62f3b676cc5ca663107ee042d"
+    },
+    "old512_proof/metric_distinct.py": {
+      "bytes": 2760,
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+    },
+    "old512_proof/run/RESULT.json": {
+      "bytes": 686,
+      "sha256": "af4bd30904f66f57031d63f6548e9b2b710fbca7196c4bc79d68860aade7a700"
+    },
+    "old512_proof/run/data/CANARY_COMPLETE_AWAITING_WRAPPER.json": {
+      "bytes": 3324,
+      "sha256": "48897a3fe1bc63fc4ef8b814e9c5e2629f14ea33204394bf3905ba9b768e12d6"
+    },
+    "old512_proof/run/data/OLD_512_CANARY.json": {
+      "bytes": 90653,
+      "sha256": "f089f64b3bb77550616b3ac5f5423315fdc12b3c1e49e39171642074e09699b5"
+    },
+    "old512_proof/run_owned_macos_canary.py": {
+      "bytes": 9561,
+      "sha256": "b93fe5f18ec058756485cee51b6fc06a4e03046da82caa4d8eac7226e72d2bb4"
+    },
+    "old512_proof/test_macos_admission.py": {
+      "bytes": 5398,
+      "sha256": "23a40888caf37e9592d296ab70994f9d99fcc265a5e8734eef8cd724e7f2160d"
+    },
+    "original_source_rows.npy": {
+      "bytes": 32896,
+      "sha256": "9f0a37c5967d479bd6b44d0aeef40e994a30f2765cdfe4baef80e6dc30248790"
+    },
+    "requirements.txt": {
+      "bytes": 59,
+      "sha256": "6cffff515b1188afae8c4740faa6caddae9eedc0b50fac1e009d8bde6ca1d9e4"
+    },
+    "run_owned_chebi3_shard.py": {
+      "bytes": 10682,
+      "sha256": "847aaef66077db759752ce624386c625f14d40832f20157837570362f727db70"
+    },
+    "selection_and_budget.py": {
+      "bytes": 9869,
+      "sha256": "fcecd42566dab22f29f9a48f6fa15ce48cc83ab92f6e9da73202a7f1617c324d"
+    },
+    "test_owned_chebi3_admission.py": {
+      "bytes": 6659,
+      "sha256": "b134b3ce60dd5094c4ab14266501f6bb577e21e0beea53db2326cb5be340105c"
+    },
+    "test_selection_and_budget.py": {
+      "bytes": 7740,
+      "sha256": "0e2ff98db137daf25cfaa16c06998692c71c0943839e8fc2556c2734c93eed9b"
+    }
+  },
+  "phase_seconds": {
+    "canary64_numeric_and_parquet_disk_reload": 0.03329149999990477,
+    "full_output_reload_proof_input_reverification_and_output_hashes": 0.7506947910005692,
+    "input_sha256_verification": 0.8367026670021005,
+    "metadata_load_and_deterministic_selection": 1.1550692500022706,
+    "old512_proof_and_executed_source_verification": 0.0021285000002535526,
+    "original64_fresh_two_worker_pool": 4.133064875000855,
+    "profile64_fresh_two_worker_pool_and_shutdown": 3.710774749997654,
+    "remaining4032_original_and_pool_shutdown": 134.8275147079985
+  },
+  "pyarrow_version": "25.0.0",
+  "rows": 4096,
+  "runtime": {
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "rdkit": "2026.03.3"
+  },
+  "seconds": 145.55588562499906,
+  "status": "COMPLETE_4096_AWAITING_WRAPPER"
+}

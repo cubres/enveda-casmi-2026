@@ -1,0 +1,50 @@
+{
+  "actual_run_bytes_including_final_receipts": 6438129,
+  "blockers": [],
+  "checks": [
+    "All13 source pins/current source peer exact; copied producer/source/proof manifests match original frozen bytes.",
+    "ADMISSION/CONSUMED/HANDLE/RESULT bind the same source and ownedPID; retry false; RESULT=COMPLETE, child0, no reason, empty group.",
+    "Actual reported145.848s/284.545CPU-s/923795456sampledRSS and declaredoutput bytes pass all wrapperlimits.",
+    "All declared output files independently byte/SHA256 verified; exact output inventory equals child manifest plus child receipt.",
+    "Selected64 fresh-pool instrumentation records64unique ordered rows, zero metriccachehits/one miss each, finite stages and exact-parity PASS receipt.",
+    "Independent forecast arithmetic1241.652330791785s admits4032remaining below1760;8original8-row timing chunks only; phase elapsed accounting consistent.",
+    "Selection metadata4096unique positions/64canary/8895eligible/exclusion/bin counts reconcile;64canary coversall64massbins.",
+    "Child declares4096completed/raw-new,4092canonicalgroups, exactreloads and seven currentinputpinmetadata matching source; no full-old-bank metric novelty claim.",
+    "Old512 proof reused with exact source/input/runtime bindings and copiedprooffile hashes; no old512 chemistry rerun."
+  ],
+  "chemistry_or_training_or_assay_or_launch_or_submission_or_publication_executed": false,
+  "child_receipt_sha256": "01f0b7e8fd0d963975f6976c605180e40ea806d4bfa49cbfb87949295a5f823a",
+  "metrics": {
+    "aggregate_cpu_seconds": 284.545278168,
+    "canary_forecast_total_seconds": 1241.652330791785,
+    "canonical_groups_selected_reported": 4092,
+    "instrumented64_cumulative_stage_seconds": {
+      "MACCS_167": 0.08585241400942323,
+      "Morgan_r2_4096": 0.004808454988960875,
+      "Morgan_r3_4096": 0.004434375008713687,
+      "RDKit_path6_2048": 0.05955487098253798,
+      "concatenate_mask_pack": 0.0016402149922214448,
+      "exact_mass_and_raw_InChIKey": 0.0213934989842528,
+      "parse": 0.010142002003703965,
+      "unchanged_group_identity_hash": 0.0017114630099968053,
+      "unchanged_metric_equivalence_key": 5.396120708988747
+    },
+    "sampled_summed_rss_peak_bytes": 923795456,
+    "wrapper_seconds": 145.84805137500007
+  },
+  "observed_utc": "2026-10-19T21:05:29.924731+00:00",
+  "result_sha256": "ab235c4091792761413c289aff0cff619cce6a36fc239c21d4f5f8ef66d707ce",
+  "reviewer": "/root/casmi_frontier/baseline_review",
+  "scope_limits": [
+    "No chemistry/model/assay or jobs rerun. No ndarray or Parquet numeric load performed by this protocol reviewer; parent separately audits actual numeric joins/packing/inputbytes.",
+    "Current seven input pin metadata verified here; parent independently hashes actual input files.",
+    "Owned-group cleanup and resource results independently contract-checked from exact reviewed source and terminal receipts; no historical live-process observation claimed.",
+    "Root capacity/prior-job-terminal authorization is separate evidence. Publication sanitization, rights and serving/score qualification remain separate gates.",
+    "4096raw-new records include4092metricgroups within this subset; novelty against all711705old metricgroups and score gain remain unmeasured."
+  ],
+  "source_manifest_sha256": "f14c9513f514743f785decddc6bbfc99306f547959331543252904f60a8a1c22",
+  "source_peer_sha256": "ad71dafd7dc108e818b990d7f39f5d17f5e4a1a7dd060a0a436480019a944c26",
+  "status": "PASS_COMPLETED_4096_SOURCE_PROTOCOL_HASH_AUDIT",
+  "verified_declared_output_bytes": 6425081,
+  "verified_output_file_count": 45
+}

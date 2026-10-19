@@ -1,0 +1,56 @@
+{
+  "scope": "Independent external-only structure preparation; no stopped baseline notebook review is reused",
+  "upstream_source_definition": [
+    {
+      "url": "https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/public_source/build_fps.py",
+      "git_blob_sha": "eeb07246ba893fbecf6e3ef587250ac9f0a83b94",
+      "definition": "Morgan radius2/4096, Morgan radius3/4096, RDKit maxPath6/2048, MACCS167, concatenate in this order"
+    },
+    {
+      "url": "https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/full_fingerprint_lineage/build_clean_full_fingerprints.py",
+      "git_blob_sha": "a461398c74ed16ac8762ff6657f640c8ce671086",
+      "definition": "Select the frozen ordered optimizer-only mask, np.packbits MSB first; preserve original pool order"
+    },
+    {
+      "url": "https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/full_fingerprint_lineage/FULL_FINGERPRINT_MANIFEST.json",
+      "git_blob_sha": "1d9295705a22027f9a01ea658af58c6069e802a9",
+      "rdkit": "2026.03.3",
+      "raw_bits": 10407,
+      "selected_bits": 10395
+    },
+    {
+      "url": "https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/legacy-v2/public_source/build_pool.py",
+      "git_blob_sha": "0b94808665800c5fab4052957bfb346c55be7164",
+      "mass_definition": "RDKit ExactMolWt; original pool keeps finite masses from80to1400Da and sorts by mass"
+    },
+    {
+      "url": "https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/full-fingerprint-preparation/2026-10-18/role-sources/metric_distinct.py",
+      "git_blob_sha": "1636068047e15309f74afabcebef4fee9a311c43",
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f",
+      "predicate_unchanged": true
+    },
+    {
+      "url": "https://github.com/cubres/enveda-casmi-2026/blob/main/reproduction/full-fingerprint-preparation/2026-10-18/role-sources/partition_public.py",
+      "complete_source_sha256": "20302057f22303340ed339360d3c43ad2d9f7da2bccc9dcdc0b193af8073b9fc",
+      "extracted_pure_group_helper_sha256": "dd4c1750cf4816cdc3d880df837bdffec6a2beb62f3b676cc5ca663107ee042d"
+    }
+  ],
+  "public_data": [
+    {"ref": "prvsiyan/casmi26-full-fingerprint-inputs", "version": 1, "dataset_id": 12350648, "use": "Old bank integrity, raw-key overlap, frozen selected bits; no old bank redistribution"},
+    {"ref": "sergiomalv/casmi-chebi-lmsd-structures", "version": 1, "dataset_id": 12431882, "use": "Only source Parquet, original attribution and stats; no publisher pickle or6930bit arrays"}
+  ],
+  "rights": {
+    "new_code": "Apache-2.0",
+    "chebi_lmsd_records": "CC-BY-4.0 with original publishers, citations, versions and transformation attribution",
+    "frozen_v6_mask": "Separate existing competition-training-derived component terms; no blanket relabeling",
+    "suggested_bundle_metadata": "Other/component terms",
+    "pubchemlite_included": false
+  },
+  "limits": {
+    "rows_advertised_not_in_coconut": 98433,
+    "rows_new_vs_full_old_bank": "UNKNOWN_BEFORE_BUILD; raw-key count reported by completed output only",
+    "complete_metric_novelty_vs_old_bank": "NOT_MEASURED",
+    "hidden_test_or_completed_assay_used": false,
+    "score_claim": false
+  }
+}

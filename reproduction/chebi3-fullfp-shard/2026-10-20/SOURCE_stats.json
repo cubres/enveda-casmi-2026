@@ -1,0 +1,34 @@
+{
+ "chebi_release": "255",
+ "chebi_date": "2026-09-09",
+ "rdkit": "2026.03.3",
+ "drops": {
+  "dummy/R-group": 11473,
+  "no carbon": 1677,
+  "no inchikey": 92,
+  "isotope": 776,
+  "ChEBI parse": 112,
+  "standardise": 6,
+  "reparse": 1,
+  "empty": 415
+ },
+ "standardised_chebi": 185793,
+ "standardised_lmsd": 49847,
+ "unique": 162180,
+ "chebi_stars": [
+  "1",
+  "2",
+  "3"
+ ],
+ "new_vs_coconut_all_stars": 98433,
+ "new_vs_coconut": 98433,
+ "new_chebi": 77997,
+ "new_lmsd": 20436,
+ "new_chebi_all_stars": 77997,
+ "coconut_key_match": [
+  2000,
+  2000
+ ],
+ "built_utc": "2026-10-03 19:13:02",
+ "written": 98433
+}

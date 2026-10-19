@@ -1,0 +1,30 @@
+{
+  "actual_numeric_audit_sha256": "b3f89a310ff56e7ec464b4359c6abd052a56be23ca96f3590b418a4c2cebfa21",
+  "audit_source": {
+    "bytes": 10982,
+    "file": "audit_completed_shard.py",
+    "sha256": "19d2005cb440d0763a5d371c3ec9c0fe7f7c2a7eb434bbf7cb1777c2b18be747"
+  },
+  "blockers": [],
+  "completed_build_receipt_sha256": "01f0b7e8fd0d963975f6976c605180e40ea806d4bfa49cbfb87949295a5f823a",
+  "completed_source_manifest_sha256": "f14c9513f514743f785decddc6bbfc99306f547959331543252904f60a8a1c22",
+  "observed_utc": "2026-10-19T21:09:21.291641+00:00",
+  "review_scope_limits": [
+    "Reviewed audit source and exact completed JSON, AST-parsed source and compared metadata to completed receipts; did not rerun audit or rehash1GB inputs.",
+    "Parent numerical audit supplies independent actual input hashing and numeric/Parquet reload; this review assesses whether source covers its claims.",
+    "No new chemistry, fingerprint generation, model, assay, job, publication, notebook action or submission executed.",
+    "Full-old-bank metric novelty and score improvement remain unmeasured;4096raw-new rows include four within-shard metric duplicatepairs."
+  ],
+  "reviewer": "/root/casmi_frontier/baseline_review",
+  "status": "PASS_NUMERIC_AUDIT_SOURCE_AND_RESULT_REVIEW",
+  "verified_source_coverage": [
+    "Exact source13/declaredoutput45/file inventory/build receipt/source copy identities checked before data use.",
+    "All seven actual inputs rehashed through frozen producer.verify_inputs before the own public metadata pickle load; no publisher pickle.",
+    "Deterministic selection replay,4096FPuint8x1300/mass/source-row/order/bitmap/mask schemas, allzero5paddingbits and maskidentity.",
+    "Every sourceParquetcolumn exact join;4096sourcequality/rawkey+exactSMILESabsence/mass-array joins/digestformats and uniqueness.",
+    "Stable exact mass-order permutation; completebitmap;64FP/mass/row/Parquet prefix equality.",
+    "64profilemass/rawkey/group joins and pure selected64forecast arithmetic recomputed; no chemistry-dependent predicate called.",
+    "Frozen old512proof and group/producer bytes bind molecular semantic provenance; result explicitly states no independent molecular recomputation.",
+    "Result group histogram4088singletons+4pairs sums4092groups/4096rows and agrees with independently reviewed completedprotocol."
+  ]
+}

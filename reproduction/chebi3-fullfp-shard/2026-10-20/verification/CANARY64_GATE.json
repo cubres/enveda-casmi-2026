@@ -1,0 +1,1330 @@
+{
+  "baseline_original_chunk_seconds": [
+    0.014233666999643901,
+    0.033580584000446834,
+    0.07091145800222876,
+    0.436765957998432,
+    0.8456955829969957,
+    1.404072500001348,
+    0.6803595000019413,
+    2.940943583002081
+  ],
+  "forecast": {
+    "chunk_rows": 8,
+    "completed_rows": 64,
+    "driver_budget_seconds": 1760.0,
+    "elapsed_seconds": 9.97565641699839,
+    "forecast_total_seconds": 1241.652330791785,
+    "io_reserve_seconds": 120.0,
+    "measured_chunk_count": 8,
+    "measurement_scope": "caller-bound current selected-shard canary and rolling chunks only",
+    "median_chunk_seconds": 0.5585627290001867,
+    "p90_chunk_seconds": 2.940943583002081,
+    "p90_method": "nearest rank, ceil(0.9*n)-1 in ascending order",
+    "passes": true,
+    "recent_chunk_count": 8,
+    "remaining_chunks": 504,
+    "remaining_compute_seconds": 1111.6766743747867,
+    "remaining_rows": 4032,
+    "remaining_waves": 252,
+    "safety_factor": 1.5,
+    "seconds_per_parallel_wave": 4.411415374503122,
+    "workers": 2,
+    "wrapper_budget_seconds": 1800.0
+  },
+  "full_continuation_admitted": true,
+  "instrumented_stage_records": [
+    {
+      "group": "eeeaa85f9d44aa03e1bc1973ae18397f9a3c7158162a843d553eab7d5b00a70c",
+      "mass": 96.057514876,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AABTWRKUKUPMJG",
+      "row": 0,
+      "stage_seconds": {
+        "MACCS_167": 0.0014238750009099022,
+        "Morgan_r2_4096": 4.4666998292086646e-05,
+        "Morgan_r3_4096": 1.983399852178991e-05,
+        "RDKit_path6_2048": 6.587499956367537e-05,
+        "concatenate_mask_pack": 3.0625000363215804e-05,
+        "exact_mass_and_raw_InChIKey": 0.00020804199812118895,
+        "parse": 8.508400060236454e-05,
+        "unchanged_group_identity_hash": 2.7416001103119925e-05,
+        "unchanged_metric_equivalence_key": 0.0003970420002588071
+      },
+      "total_seconds": 0.002315707999514416
+    },
+    {
+      "group": "a14fbf9753695e93670963c26bbc2e4ff49c0f1f3b382c13feaa81ae7b166c58",
+      "mass": 118.008850432,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AFOSIXZFDONLBT",
+      "row": 1,
+      "stage_seconds": {
+        "MACCS_167": 0.00037487500230781734,
+        "Morgan_r2_4096": 2.3042000975692645e-05,
+        "Morgan_r3_4096": 1.7082998965634033e-05,
+        "RDKit_path6_2048": 3.887499769916758e-05,
+        "concatenate_mask_pack": 1.4708999515278265e-05,
+        "exact_mass_and_raw_InChIKey": 7.970899969222955e-05,
+        "parse": 2.1709001885028556e-05,
+        "unchanged_group_identity_hash": 1.3875000149710104e-05,
+        "unchanged_metric_equivalence_key": 0.00015529099982813932
+      },
+      "total_seconds": 0.0007467920004273765
+    },
+    {
+      "group": "c1d20b1257045000af904ec6925abe379d14bb8a44330cb467fa379769b10090",
+      "mass": 131.02185764,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ABZHGLSYGDUSDL",
+      "row": 2,
+      "stage_seconds": {
+        "MACCS_167": 0.0003893749999406282,
+        "Morgan_r2_4096": 2.162500095437281e-05,
+        "Morgan_r3_4096": 2.0625000615837052e-05,
+        "RDKit_path6_2048": 5.325000165612437e-05,
+        "concatenate_mask_pack": 1.3707998732570559e-05,
+        "exact_mass_and_raw_InChIKey": 9.862499791779555e-05,
+        "parse": 2.28749995585531e-05,
+        "unchanged_group_identity_hash": 1.6583002434344962e-05,
+        "unchanged_metric_equivalence_key": 0.0008748340005695354
+      },
+      "total_seconds": 0.001517832999525126
+    },
+    {
+      "group": "31a7df855a2e85f7cbf0ccbfe9ed218de6abc3d56df91cdf3afedbe367356311",
+      "mass": 158.094294308,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AADJJWDBCQRALD",
+      "row": 3,
+      "stage_seconds": {
+        "MACCS_167": 0.000509375000547152,
+        "Morgan_r2_4096": 2.695800139917992e-05,
+        "Morgan_r3_4096": 2.2415999410441145e-05,
+        "RDKit_path6_2048": 0.0001189579998026602,
+        "concatenate_mask_pack": 1.4625002222601324e-05,
+        "exact_mass_and_raw_InChIKey": 9.662500087870285e-05,
+        "parse": 3.2208001357503235e-05,
+        "unchanged_group_identity_hash": 7.958002242958173e-06,
+        "unchanged_metric_equivalence_key": 0.00038745799975004047
+      },
+      "total_seconds": 0.0012222920013300609
+    },
+    {
+      "group": "c3364660188bd6cbd76158cd5dec0e54a38adce6f2ab0462deafeab4c9a0160e",
+      "mass": 168.068748256,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAQTWLBJPNLKHT",
+      "row": 4,
+      "stage_seconds": {
+        "MACCS_167": 0.0008177499985322356,
+        "Morgan_r2_4096": 2.5749999622348696e-05,
+        "Morgan_r3_4096": 2.8041999030392617e-05,
+        "RDKit_path6_2048": 0.000276708000455983,
+        "concatenate_mask_pack": 1.3374999980442226e-05,
+        "exact_mass_and_raw_InChIKey": 0.00011366599937900901,
+        "parse": 5.983300070511177e-05,
+        "unchanged_group_identity_hash": 8.291000995086506e-06,
+        "unchanged_metric_equivalence_key": 0.0004087080014869571
+      },
+      "total_seconds": 0.0017575829988345504
+    },
+    {
+      "group": "e13c89ffac3b7a42bf54974bf4e73c867db82515747303f6ac1c494c6c362167",
+      "mass": 188.127325752,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AATIXZODJZMQQA",
+      "row": 5,
+      "stage_seconds": {
+        "MACCS_167": 0.0004405409999890253,
+        "Morgan_r2_4096": 2.516699896659702e-05,
+        "Morgan_r3_4096": 2.341700019314885e-05,
+        "RDKit_path6_2048": 8.099999831756577e-05,
+        "concatenate_mask_pack": 1.300000076298602e-05,
+        "exact_mass_and_raw_InChIKey": 9.908299762173556e-05,
+        "parse": 3.258400101913139e-05,
+        "unchanged_group_identity_hash": 8.457998774247244e-06,
+        "unchanged_metric_equivalence_key": 0.0016303750016959384
+      },
+      "total_seconds": 0.002358749999984866
+    },
+    {
+      "group": "b3b8968d1c5a5e9ef8e59351788b1d67210bd9099dbbd3a0879c9c2aa6fca598",
+      "mass": 218.032756672,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AFDWAIQLYHEUIW",
+      "row": 6,
+      "stage_seconds": {
+        "MACCS_167": 0.0006363749998854473,
+        "Morgan_r2_4096": 2.7958001737715676e-05,
+        "Morgan_r3_4096": 2.712499917834066e-05,
+        "RDKit_path6_2048": 0.00022904200159246102,
+        "concatenate_mask_pack": 1.2209002306917682e-05,
+        "exact_mass_and_raw_InChIKey": 0.00010566699711489491,
+        "parse": 6.125000072643161e-05,
+        "unchanged_group_identity_hash": 7.4590025178622454e-06,
+        "unchanged_metric_equivalence_key": 0.00028491700140875764
+      },
+      "total_seconds": 0.0013967919985589106
+    },
+    {
+      "group": "b598816e039da833f50ebcdb77cd7a88880d09ac535c7aceaa2153a904717eac",
+      "mass": 244.125200512,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAAQKTZKLRYKHR",
+      "row": 7,
+      "stage_seconds": {
+        "MACCS_167": 0.0005691660007869359,
+        "Morgan_r2_4096": 2.8375001420499757e-05,
+        "Morgan_r3_4096": 2.9708000511163846e-05,
+        "RDKit_path6_2048": 0.00026304099810658954,
+        "concatenate_mask_pack": 1.2332999176578596e-05,
+        "exact_mass_and_raw_InChIKey": 0.0001286249971599318,
+        "parse": 6.437499905587174e-05,
+        "unchanged_group_identity_hash": 2.1666997781721875e-05,
+        "unchanged_metric_equivalence_key": 0.0006732500005455222
+      },
+      "total_seconds": 0.0017997920003836043
+    },
+    {
+      "group": "ebcfec70b45ffece0f635191a2d3495f383236f7b887e503f764a41807f995c7",
+      "mass": 263.10050188400004,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ABCIYWCIWZHVKW",
+      "row": 8,
+      "stage_seconds": {
+        "MACCS_167": 0.0012490830013121013,
+        "Morgan_r2_4096": 5.8082998293684795e-05,
+        "Morgan_r3_4096": 3.5082997783320025e-05,
+        "RDKit_path6_2048": 0.00030279099883046,
+        "concatenate_mask_pack": 2.5042001652764156e-05,
+        "exact_mass_and_raw_InChIKey": 0.0002242500013380777,
+        "parse": 0.00018245799947180785,
+        "unchanged_group_identity_hash": 2.1749998268205673e-05,
+        "unchanged_metric_equivalence_key": 0.0010158750010305084
+      },
+      "total_seconds": 0.0031288330028473865
+    },
+    {
+      "group": "330315e8f1b61a79317e1556b9bad8e0f75a2c4effac2c62a9a1500bb9e6fe9c",
+      "mass": 280.96612449599996,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAKROHZJMPGWQF",
+      "row": 9,
+      "stage_seconds": {
+        "MACCS_167": 0.0005411659985838924,
+        "Morgan_r2_4096": 2.7207999664824456e-05,
+        "Morgan_r3_4096": 2.4500001018168405e-05,
+        "RDKit_path6_2048": 0.0001360829992336221,
+        "concatenate_mask_pack": 1.966700074262917e-05,
+        "exact_mass_and_raw_InChIKey": 0.00016320800204994157,
+        "parse": 5.729199983761646e-05,
+        "unchanged_group_identity_hash": 2.2333002561936155e-05,
+        "unchanged_metric_equivalence_key": 0.0022493330034194514
+      },
+      "total_seconds": 0.003252165999583667
+    },
+    {
+      "group": "b0364834093f814fda4bd6f69907965110bc1ab36af2b7566b1bc18c71261e81",
+      "mass": 287.18450628000005,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAKRWBIIGKPOKQ",
+      "row": 10,
+      "stage_seconds": {
+        "MACCS_167": 0.0005168750030861702,
+        "Morgan_r2_4096": 3.920800008927472e-05,
+        "Morgan_r3_4096": 3.199999991920777e-05,
+        "RDKit_path6_2048": 0.00018483299936633557,
+        "concatenate_mask_pack": 1.4749999536434188e-05,
+        "exact_mass_and_raw_InChIKey": 0.0001363749979645945,
+        "parse": 4.804199852515012e-05,
+        "unchanged_group_identity_hash": 2.000000313273631e-05,
+        "unchanged_metric_equivalence_key": 0.008503624998411397
+      },
+      "total_seconds": 0.009506582999165403
+    },
+    {
+      "group": "3adbbff7001c26b00dadcf5cdd6a72c36bc5e11096795de7b59d5b64a686d63f",
+      "mass": 327.18557515609,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AGJZCWVTGOVGBS",
+      "row": 11,
+      "stage_seconds": {
+        "MACCS_167": 0.0009222910011885688,
+        "Morgan_r2_4096": 4.095899930689484e-05,
+        "Morgan_r3_4096": 4.191600237390958e-05,
+        "RDKit_path6_2048": 0.0005510410010174382,
+        "concatenate_mask_pack": 1.687500116531737e-05,
+        "exact_mass_and_raw_InChIKey": 0.00016024999786168337,
+        "parse": 0.00010208399908151478,
+        "unchanged_group_identity_hash": 9.374998626299202e-06,
+        "unchanged_metric_equivalence_key": 0.0004198749993520323
+      },
+      "total_seconds": 0.002271541001391597
+    },
+    {
+      "group": "ec936396a3bbe8590293fa4a562080842f7b4222bbf383846fa3a798fef56812",
+      "mass": 337.19105446009,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ACCBCPVKNNSQGL",
+      "row": 12,
+      "stage_seconds": {
+        "MACCS_167": 0.0022775840006943326,
+        "Morgan_r2_4096": 3.783400097745471e-05,
+        "Morgan_r3_4096": 3.983300121035427e-05,
+        "RDKit_path6_2048": 0.0011982920004811604,
+        "concatenate_mask_pack": 2.3125001462176442e-05,
+        "exact_mass_and_raw_InChIKey": 0.00021550000019487925,
+        "parse": 8.625000191386789e-05,
+        "unchanged_group_identity_hash": 1.7250000382773578e-05,
+        "unchanged_metric_equivalence_key": 0.0014550829982908908
+      },
+      "total_seconds": 0.005359791000955738
+    },
+    {
+      "group": "101a72854c3bce62b80f303700bd7e057ef6af111454e84d5a63c2eb7fef2b60",
+      "mass": 365.025534384,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ACDZDIIWZVQMIX",
+      "row": 13,
+      "stage_seconds": {
+        "MACCS_167": 0.0006236250010260846,
+        "Morgan_r2_4096": 3.783400097745471e-05,
+        "Morgan_r3_4096": 3.420800203457475e-05,
+        "RDKit_path6_2048": 0.0004153750014666002,
+        "concatenate_mask_pack": 1.3084001693641767e-05,
+        "exact_mass_and_raw_InChIKey": 0.0001266250001208391,
+        "parse": 6.725000275764614e-05,
+        "unchanged_group_identity_hash": 1.1083000572398305e-05,
+        "unchanged_metric_equivalence_key": 0.0005493329990713391
+      },
+      "total_seconds": 0.0018842909994418733
+    },
+    {
+      "group": "222e4f3cd9f789f6b6f2d9b7fd5e13d7119409d9e02174c42d1e60475db6eb60",
+      "mass": 387.17031901609005,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ABZLKHKQJHEPAX",
+      "row": 14,
+      "stage_seconds": {
+        "MACCS_167": 0.0010813750013767276,
+        "Morgan_r2_4096": 3.8624999433523044e-05,
+        "Morgan_r3_4096": 4.025000089313835e-05,
+        "RDKit_path6_2048": 0.0006683329993393272,
+        "concatenate_mask_pack": 1.2625001545529813e-05,
+        "exact_mass_and_raw_InChIKey": 0.00018195899974671192,
+        "parse": 9.441700240131468e-05,
+        "unchanged_group_identity_hash": 8.709001122042537e-06,
+        "unchanged_metric_equivalence_key": 0.0006237499983399175
+      },
+      "total_seconds": 0.0027550830018299166
+    },
+    {
+      "group": "e924c35aeb1200a1e798639e2056b7aff8f5b26af4480ff98d8c2572681583e8",
+      "mass": 402.349780712,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AFBVMKBXEPWMLL",
+      "row": 15,
+      "stage_seconds": {
+        "MACCS_167": 0.0016090839999378659,
+        "Morgan_r2_4096": 3.866699989885092e-05,
+        "Morgan_r3_4096": 4.162500044913031e-05,
+        "RDKit_path6_2048": 0.0009746659998199902,
+        "concatenate_mask_pack": 2.5958001060644165e-05,
+        "exact_mass_and_raw_InChIKey": 0.0002346660003240686,
+        "parse": 8.458299998892471e-05,
+        "unchanged_group_identity_hash": 2.5749999622348696e-05,
+        "unchanged_metric_equivalence_key": 0.0010842089977813885
+      },
+      "total_seconds": 0.004131250003410969
+    },
+    {
+      "group": "e1c7281e8ac555facf61db022b7bc6ee5e4d504047b709cfc096674668db7dc1",
+      "mass": 420.19615426,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ACGBFWCBVIXTPZ",
+      "row": 16,
+      "stage_seconds": {
+        "MACCS_167": 0.0009399169975949917,
+        "Morgan_r2_4096": 5.629100269288756e-05,
+        "Morgan_r3_4096": 4.774999979417771e-05,
+        "RDKit_path6_2048": 0.000465375000203494,
+        "concatenate_mask_pack": 2.391700036241673e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003101250003965106,
+        "parse": 0.00012425000022631139,
+        "unchanged_group_identity_hash": 2.8166999982204288e-05,
+        "unchanged_metric_equivalence_key": 0.009793917000934016
+      },
+      "total_seconds": 0.01180575000034878
+    },
+    {
+      "group": "7dcabaff1771ee95399067f936989ad1a7abbd3964c31c10a1d174382ac62405",
+      "mass": 440.093912956,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ADDQHLREJDZPMT",
+      "row": 17,
+      "stage_seconds": {
+        "MACCS_167": 0.0008878750013536774,
+        "Morgan_r2_4096": 5.8499997976468876e-05,
+        "Morgan_r3_4096": 4.68340003862977e-05,
+        "RDKit_path6_2048": 0.0005439159976958763,
+        "concatenate_mask_pack": 2.0707997464342043e-05,
+        "exact_mass_and_raw_InChIKey": 0.0001760829982231371,
+        "parse": 0.00012216699906275608,
+        "unchanged_group_identity_hash": 1.312500171479769e-05,
+        "unchanged_metric_equivalence_key": 0.0008362089974980336
+      },
+      "total_seconds": 0.0027146659995196387
+    },
+    {
+      "group": "eacd5b020d1fbde201d07e91b7819ca52c930fdef76ff6db2630cbbf9783abe0",
+      "mass": 471.39237379599996,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ACXPNSWGVZLPRG",
+      "row": 18,
+      "stage_seconds": {
+        "MACCS_167": 0.0009562500017636921,
+        "Morgan_r2_4096": 4.366599750937894e-05,
+        "Morgan_r3_4096": 4.491700019570999e-05,
+        "RDKit_path6_2048": 0.00019816699932562187,
+        "concatenate_mask_pack": 0.0001269169988518115,
+        "exact_mass_and_raw_InChIKey": 0.00023129200053517707,
+        "parse": 6.108399975346401e-05,
+        "unchanged_group_identity_hash": 1.9750001229112968e-05,
+        "unchanged_metric_equivalence_key": 0.0012230419997649733
+      },
+      "total_seconds": 0.0029159580008126795
+    },
+    {
+      "group": "68abde9bbfeb441c383dbd5bed2b2a93c87ba5aee004ef354a6854a4cb3a293c",
+      "mass": 474.37091007999993,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAXANNQJCBNQMB",
+      "row": 19,
+      "stage_seconds": {
+        "MACCS_167": 0.002911625000706408,
+        "Morgan_r2_4096": 5.275000148685649e-05,
+        "Morgan_r3_4096": 4.8791996960062534e-05,
+        "RDKit_path6_2048": 0.0016424589994130656,
+        "concatenate_mask_pack": 2.316699828952551e-05,
+        "exact_mass_and_raw_InChIKey": 0.0002345829998375848,
+        "parse": 0.00011308299872325733,
+        "unchanged_group_identity_hash": 1.4375000318977982e-05,
+        "unchanged_metric_equivalence_key": 0.0006662499981757719
+      },
+      "total_seconds": 0.0057185420009773225
+    },
+    {
+      "group": "5b1bd7caf7580413f142f6a1503da2f567081fafbdc39c4f1b7ae874b462ee61",
+      "mass": 502.15472227199984,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ACEVZSZSKUVYND",
+      "row": 20,
+      "stage_seconds": {
+        "MACCS_167": 0.0009805000008782372,
+        "Morgan_r2_4096": 5.1250000979052857e-05,
+        "Morgan_r3_4096": 4.9957998271565884e-05,
+        "RDKit_path6_2048": 0.00081487499846844,
+        "concatenate_mask_pack": 3.0209001124603674e-05,
+        "exact_mass_and_raw_InChIKey": 0.0002874160018109251,
+        "parse": 0.00010504199963179417,
+        "unchanged_group_identity_hash": 2.5334000383736566e-05,
+        "unchanged_metric_equivalence_key": 0.006855125000583939
+      },
+      "total_seconds": 0.009215791000315221
+    },
+    {
+      "group": "280413ba72c004025d89f204c8598b4b427a5a645793b85fa453bffdb1846e11",
+      "mass": 513.2057547999998,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAJCMLMPKXXXJD",
+      "row": 21,
+      "stage_seconds": {
+        "MACCS_167": 0.0011982910000369884,
+        "Morgan_r2_4096": 5.6959001085488126e-05,
+        "Morgan_r3_4096": 4.6749999455641955e-05,
+        "RDKit_path6_2048": 0.0006780409967177548,
+        "concatenate_mask_pack": 3.4791999496519566e-05,
+        "exact_mass_and_raw_InChIKey": 0.00023679200239712372,
+        "parse": 0.00010879199908231385,
+        "unchanged_group_identity_hash": 2.3584001610288396e-05,
+        "unchanged_metric_equivalence_key": 0.0013712910003960133
+      },
+      "total_seconds": 0.0037698750020354055
+    },
+    {
+      "group": "1abf36536d9881a4589746b2df9b19467b1e5a466d96a13300dd126bc41cd657",
+      "mass": 547.0477933839999,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ACOOAEDFQKSZTC",
+      "row": 22,
+      "stage_seconds": {
+        "MACCS_167": 0.0010799170013342518,
+        "Morgan_r2_4096": 5.4459000239148736e-05,
+        "Morgan_r3_4096": 5.191600212128833e-05,
+        "RDKit_path6_2048": 0.0007048330007819459,
+        "concatenate_mask_pack": 2.7541002054931596e-05,
+        "exact_mass_and_raw_InChIKey": 0.0002883749984903261,
+        "parse": 0.0001293340028496459,
+        "unchanged_group_identity_hash": 2.9499999072868377e-05,
+        "unchanged_metric_equivalence_key": 0.002974999999423744
+      },
+      "total_seconds": 0.005357208003260894
+    },
+    {
+      "group": "ffad40c93451425850808283946bcd259e17784b7cd759bbf077941cfdf2fc46",
+      "mass": 571.071673676,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ACAXSHCRYZSKNE",
+      "row": 23,
+      "stage_seconds": {
+        "MACCS_167": 0.0009867500011750963,
+        "Morgan_r2_4096": 5.9541998780332506e-05,
+        "Morgan_r3_4096": 5.5791999329812825e-05,
+        "RDKit_path6_2048": 0.0008578750021115411,
+        "concatenate_mask_pack": 1.912500010803342e-05,
+        "exact_mass_and_raw_InChIKey": 0.00027220899937674403,
+        "parse": 0.00016541600052732974,
+        "unchanged_group_identity_hash": 3.5291999665787444e-05,
+        "unchanged_metric_equivalence_key": 0.026615708997269394
+      },
+      "total_seconds": 0.029085833000863204
+    },
+    {
+      "group": "bf05e6d251e1654387938329b8b211294695f56a3659745cd30eadb10fdfbdfd",
+      "mass": 586.2221331359999,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AULDNGHDBFNGGC",
+      "row": 24,
+      "stage_seconds": {
+        "MACCS_167": 0.0010141249986190815,
+        "Morgan_r2_4096": 6.358299651765265e-05,
+        "Morgan_r3_4096": 5.5917000281624496e-05,
+        "RDKit_path6_2048": 0.0007684579977649264,
+        "concatenate_mask_pack": 1.7957998352358118e-05,
+        "exact_mass_and_raw_InChIKey": 0.00021116599964443594,
+        "parse": 0.00011641600212897174,
+        "unchanged_group_identity_hash": 2.6249999791616574e-05,
+        "unchanged_metric_equivalence_key": 0.004854583999986062
+      },
+      "total_seconds": 0.007140125002479181
+    },
+    {
+      "group": "48d9b105c5f71d298bef9940a44b133588e2f862879e51f638fe1f05fe82b551",
+      "mass": 609.1574842799998,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ABZKLZZRLAPTDK",
+      "row": 25,
+      "stage_seconds": {
+        "MACCS_167": 0.00105749999784166,
+        "Morgan_r2_4096": 6.679199941572733e-05,
+        "Morgan_r3_4096": 5.416700150817633e-05,
+        "RDKit_path6_2048": 0.0008200829979614355,
+        "concatenate_mask_pack": 3.029200161108747e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003113330021733418,
+        "parse": 0.00012466699990909547,
+        "unchanged_group_identity_hash": 2.8624999686144292e-05,
+        "unchanged_metric_equivalence_key": 0.0016042089991969988
+      },
+      "total_seconds": 0.0041144579990941565
+    },
+    {
+      "group": "33fbd356cd9ae1bc5d4fc0f7fbad7f2a644277128930cbbb6ec4be0c381b1850",
+      "mass": 629.2894844239999,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AEOBUFNXUTWQNT",
+      "row": 26,
+      "stage_seconds": {
+        "MACCS_167": 0.0011241659994993825,
+        "Morgan_r2_4096": 6.85419981891755e-05,
+        "Morgan_r3_4096": 6.966699947952293e-05,
+        "RDKit_path6_2048": 0.0008239579983637668,
+        "concatenate_mask_pack": 2.6749999960884452e-05,
+        "exact_mass_and_raw_InChIKey": 0.00024933399981819093,
+        "parse": 0.00015341699690907262,
+        "unchanged_group_identity_hash": 2.5707999157020822e-05,
+        "unchanged_metric_equivalence_key": 0.0015319999984058086
+      },
+      "total_seconds": 0.004091874998266576
+    },
+    {
+      "group": "cac109d101726b851c367d5f28ec8d322382f22428643b886975c9ade82182f2",
+      "mass": 639.131663456,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AKXIYZBZYOTHPH",
+      "row": 27,
+      "stage_seconds": {
+        "MACCS_167": 0.0009454999999434222,
+        "Morgan_r2_4096": 6.483299875981174e-05,
+        "Morgan_r3_4096": 7.362500036833808e-05,
+        "RDKit_path6_2048": 0.0008737500029383227,
+        "concatenate_mask_pack": 1.9916999008273706e-05,
+        "exact_mass_and_raw_InChIKey": 0.00022408299992093816,
+        "parse": 0.00013324999963515438,
+        "unchanged_group_identity_hash": 2.1208001271588728e-05,
+        "unchanged_metric_equivalence_key": 0.003849166998406872
+      },
+      "total_seconds": 0.00621691700143856
+    },
+    {
+      "group": "054d92747563ef9ce321446dfc1bc458161e20d62f6a77518501956882e5238f",
+      "mass": 663.6165600719999,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AEJPDHWODCHVKB",
+      "row": 28,
+      "stage_seconds": {
+        "MACCS_167": 0.000888999999006046,
+        "Morgan_r2_4096": 6.112499977461994e-05,
+        "Morgan_r3_4096": 5.8374997024657205e-05,
+        "RDKit_path6_2048": 0.0004381660000944976,
+        "concatenate_mask_pack": 2.5208999431924894e-05,
+        "exact_mass_and_raw_InChIKey": 0.00027829200189444236,
+        "parse": 9.495800259173848e-05,
+        "unchanged_group_identity_hash": 2.037499871221371e-05,
+        "unchanged_metric_equivalence_key": 0.0019314579985802993
+      },
+      "total_seconds": 0.0038081669990788214
+    },
+    {
+      "group": "62acb36d609e11852511c14ef1256da0c3a8ca5e96ffe9ffff8c6dc2f1487377",
+      "mass": 678.3197488963601,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ABCGFHPGHXSVKI",
+      "row": 29,
+      "stage_seconds": {
+        "MACCS_167": 0.0019955409989051986,
+        "Morgan_r2_4096": 6.362500062095933e-05,
+        "Morgan_r3_4096": 6.579099863301963e-05,
+        "RDKit_path6_2048": 0.0012063340000167955,
+        "concatenate_mask_pack": 1.8250000721309334e-05,
+        "exact_mass_and_raw_InChIKey": 0.0008138329976645764,
+        "parse": 0.00018583299970487133,
+        "unchanged_group_identity_hash": 2.7375001081964e-05,
+        "unchanged_metric_equivalence_key": 0.004686542000854388
+      },
+      "total_seconds": 0.009081416999833891
+    },
+    {
+      "group": "21633d26f57b2ffecda01447a2b056305a154671151fd35ba950545a46661782",
+      "mass": 700.4020440040001,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "BAVWXCNIABBHLQ",
+      "row": 30,
+      "stage_seconds": {
+        "MACCS_167": 0.0012574169995787088,
+        "Morgan_r2_4096": 7.654200089746155e-05,
+        "Morgan_r3_4096": 7.487499897251837e-05,
+        "RDKit_path6_2048": 0.0007487090006179642,
+        "concatenate_mask_pack": 2.9333998099900782e-05,
+        "exact_mass_and_raw_InChIKey": 0.00037716700171586126,
+        "parse": 0.00016995800251606852,
+        "unchanged_group_identity_hash": 3.429199932725169e-05,
+        "unchanged_metric_equivalence_key": 0.37372141699961503
+      },
+      "total_seconds": 0.3765134160021262
+    },
+    {
+      "group": "2beb9e418a9cb7dca845e5f530dbd088c34d155c5c9b88c098ad93da9aff17b1",
+      "mass": 737.2748934159999,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ANZJBCHSOXCCRQ",
+      "row": 31,
+      "stage_seconds": {
+        "MACCS_167": 0.0018490000002202578,
+        "Morgan_r2_4096": 8.312499994644895e-05,
+        "Morgan_r3_4096": 6.866699914098717e-05,
+        "RDKit_path6_2048": 0.0010349589974794071,
+        "concatenate_mask_pack": 3.2708998332964256e-05,
+        "exact_mass_and_raw_InChIKey": 0.00041104200136032887,
+        "parse": 0.00018500000078347512,
+        "unchanged_group_identity_hash": 4.491700019570999e-05,
+        "unchanged_metric_equivalence_key": 0.01571058300032746
+      },
+      "total_seconds": 0.01944612500301446
+    },
+    {
+      "group": "697421d38abd80bd7f697eeca873b6f096fca35ed7c8ae134bc5460f17701a42",
+      "mass": 743.2435360100001,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AESOTKGVNHBIMQ",
+      "row": 32,
+      "stage_seconds": {
+        "MACCS_167": 0.001076791999366833,
+        "Morgan_r2_4096": 7.929099956527352e-05,
+        "Morgan_r3_4096": 6.587499956367537e-05,
+        "RDKit_path6_2048": 0.0007514579992857762,
+        "concatenate_mask_pack": 2.68340008915402e-05,
+        "exact_mass_and_raw_InChIKey": 0.000365249998139916,
+        "parse": 0.00016145900008268654,
+        "unchanged_group_identity_hash": 3.0250001145759597e-05,
+        "unchanged_metric_equivalence_key": 0.0010914579979726113
+      },
+      "total_seconds": 0.0036638329984270968
+    },
+    {
+      "group": "4c964fe69ffb286359ffcdc35857adffd1cd702dcdacc49770a09d0e6ef088cc",
+      "mass": 770.2058143760001,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AINGNBRUWGABST",
+      "row": 33,
+      "stage_seconds": {
+        "MACCS_167": 0.0012684579996857792,
+        "Morgan_r2_4096": 7.900000127847306e-05,
+        "Morgan_r3_4096": 7.60000002628658e-05,
+        "RDKit_path6_2048": 0.0012517920004029293,
+        "concatenate_mask_pack": 2.0957999367965385e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003015000002051238,
+        "parse": 0.00021399999968707561,
+        "unchanged_group_identity_hash": 4.170800093561411e-05,
+        "unchanged_metric_equivalence_key": 0.3146279169995978
+      },
+      "total_seconds": 0.31790025000009337
+    },
+    {
+      "group": "0ee7d573dc043a79d150cc44cb3c944e95447aeebf80ab76b751c9a8ed9a0b8e",
+      "mass": 786.5803427080001,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ARDMSUOMORZJEN",
+      "row": 34,
+      "stage_seconds": {
+        "MACCS_167": 0.0009546669971314259,
+        "Morgan_r2_4096": 7.883299986133352e-05,
+        "Morgan_r3_4096": 6.30409995210357e-05,
+        "RDKit_path6_2048": 0.0005289159998937976,
+        "concatenate_mask_pack": 2.6083002012455836e-05,
+        "exact_mass_and_raw_InChIKey": 0.00031458400189876556,
+        "parse": 0.0001267079969693441,
+        "unchanged_group_identity_hash": 3.3125001209555194e-05,
+        "unchanged_metric_equivalence_key": 0.34185304200218525
+      },
+      "total_seconds": 0.3440025419986341
+    },
+    {
+      "group": "8c3a382d2ac726658c4c58bb7d22ee1c95c2bf81379f714163655080dce52eaa",
+      "mass": 804.3905358519999,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AFQNEJIPKKLOCL",
+      "row": 35,
+      "stage_seconds": {
+        "MACCS_167": 0.0011411669984227046,
+        "Morgan_r2_4096": 8.362500011571683e-05,
+        "Morgan_r3_4096": 7.270900096045807e-05,
+        "RDKit_path6_2048": 0.0005419160006567836,
+        "concatenate_mask_pack": 2.4791999749140814e-05,
+        "exact_mass_and_raw_InChIKey": 0.0002857089966710191,
+        "parse": 0.00016845800200826488,
+        "unchanged_group_identity_hash": 3.5291999665787444e-05,
+        "unchanged_metric_equivalence_key": 0.05863224999848171
+      },
+      "total_seconds": 0.061006166997685796
+    },
+    {
+      "group": "e57d09cc33e40bab1ac03524df4ee00223608369f2d09b65159675ae1386bde6",
+      "mass": 837.3114016400001,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAKHDGZVKNZPFG",
+      "row": 36,
+      "stage_seconds": {
+        "MACCS_167": 0.0011960410010942724,
+        "Morgan_r2_4096": 8.370800060220063e-05,
+        "Morgan_r3_4096": 6.991700138314627e-05,
+        "RDKit_path6_2048": 0.0011328749969834462,
+        "concatenate_mask_pack": 2.7916998078580946e-05,
+        "exact_mass_and_raw_InChIKey": 0.00029141699997126125,
+        "parse": 0.00017120900156442076,
+        "unchanged_group_identity_hash": 2.620899977046065e-05,
+        "unchanged_metric_equivalence_key": 0.002073166997433873
+      },
+      "total_seconds": 0.005087083001853898
+    },
+    {
+      "group": "fe06ebe9e66dc67f185af5c29ea4cb4f35b0ef78004d705f57a374bd36610ffc",
+      "mass": 852.0431798159998,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAOPLQLDGHSOGE",
+      "row": 37,
+      "stage_seconds": {
+        "MACCS_167": 0.001295458001550287,
+        "Morgan_r2_4096": 7.991600068635307e-05,
+        "Morgan_r3_4096": 6.97920004313346e-05,
+        "RDKit_path6_2048": 0.001270791999559151,
+        "concatenate_mask_pack": 2.4375000066356733e-05,
+        "exact_mass_and_raw_InChIKey": 0.0004129169974476099,
+        "parse": 0.00018754199845716357,
+        "unchanged_group_identity_hash": 3.670799924293533e-05,
+        "unchanged_metric_equivalence_key": 0.0534216660016682
+      },
+      "total_seconds": 0.056824874998710584
+    },
+    {
+      "group": "4c279b79e23344c4f321ad8e72ed8a244429ce2639766b55ea5f66663773e9f3",
+      "mass": 883.354603844,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AIJDATRLNIAFCU",
+      "row": 38,
+      "stage_seconds": {
+        "MACCS_167": 0.0012530420026450884,
+        "Morgan_r2_4096": 8.562500079278834e-05,
+        "Morgan_r3_4096": 7.2750000981614e-05,
+        "RDKit_path6_2048": 0.0012691250012721866,
+        "concatenate_mask_pack": 2.508300167392008e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003814999981841538,
+        "parse": 0.00018520799858379178,
+        "unchanged_group_identity_hash": 3.058400034205988e-05,
+        "unchanged_metric_equivalence_key": 0.02995833399836556
+      },
+      "total_seconds": 0.03328341700034798
+    },
+    {
+      "group": "42d4138799b8c0154c79438c4c2b29825681df802c14eadee639791f41500e38",
+      "mass": 897.7632838760002,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ALFONRPZUQLTFA",
+      "row": 39,
+      "stage_seconds": {
+        "MACCS_167": 0.0010477499999979045,
+        "Morgan_r2_4096": 8.187499770428985e-05,
+        "Morgan_r3_4096": 7.337499846471474e-05,
+        "RDKit_path6_2048": 0.0004973329996573739,
+        "concatenate_mask_pack": 2.162500095437281e-05,
+        "exact_mass_and_raw_InChIKey": 0.00023154099835664965,
+        "parse": 0.00014591700164601207,
+        "unchanged_group_identity_hash": 1.2333999620750546e-05,
+        "unchanged_metric_equivalence_key": 0.0018324590018892195
+      },
+      "total_seconds": 0.003953416999138426
+    },
+    {
+      "group": "473643a523cb1e21737fbad6fab01389bf57ba1bd7cddb9d37b02d936da55da1",
+      "mass": 909.799669384,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "BCHXWZQXEKOXKQ",
+      "row": 40,
+      "stage_seconds": {
+        "MACCS_167": 0.0012170419977337588,
+        "Morgan_r2_4096": 0.00011387499762349762,
+        "Morgan_r3_4096": 8.320800043293275e-05,
+        "RDKit_path6_2048": 0.0005001250028726645,
+        "concatenate_mask_pack": 3.0290997528936714e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003267499996582046,
+        "parse": 0.00019704200167325325,
+        "unchanged_group_identity_hash": 3.0333001632243395e-05,
+        "unchanged_metric_equivalence_key": 0.00204295900039142
+      },
+      "total_seconds": 0.004557500000373693
+    },
+    {
+      "group": "0651844302e9c9a456556590f23430690d7d70b138ff9b8b9ec6cbb62121a7ed",
+      "mass": 945.2509741580001,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ARQUZFJQPYWSSL",
+      "row": 41,
+      "stage_seconds": {
+        "MACCS_167": 0.0011572080002224538,
+        "Morgan_r2_4096": 8.13329970696941e-05,
+        "Morgan_r3_4096": 7.754100079182535e-05,
+        "RDKit_path6_2048": 0.0009411660030309577,
+        "concatenate_mask_pack": 2.0540999685181305e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003530409994709771,
+        "parse": 0.00017558399849804118,
+        "unchanged_group_identity_hash": 4.1332998080179095e-05,
+        "unchanged_metric_equivalence_key": 0.2264663339992694
+      },
+      "total_seconds": 0.2293319159980456
+    },
+    {
+      "group": "b2e39d9baa4ea0ffd8f58db5f730181af5d2878b35c9bad4dafaa953a108b0dd",
+      "mass": 951.3543290720002,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAVBGOWCCULUNQ",
+      "row": 42,
+      "stage_seconds": {
+        "MACCS_167": 0.0012895410000055563,
+        "Morgan_r2_4096": 9.36659998842515e-05,
+        "Morgan_r3_4096": 8.283300121547654e-05,
+        "RDKit_path6_2048": 0.0013277079997351393,
+        "concatenate_mask_pack": 2.0916999346809462e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003014590001839679,
+        "parse": 0.0002140420001524035,
+        "unchanged_group_identity_hash": 3.5708999348571524e-05,
+        "unchanged_metric_equivalence_key": 0.02754862499932642
+      },
+      "total_seconds": 0.030935250000766246
+    },
+    {
+      "group": "af3be18bd97b62b4a5d65d0362be95ad8ca0de50d1c5a482716c723c8fba0b44",
+      "mass": 974.3325905840003,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ADWOSWQBPVDQRO",
+      "row": 43,
+      "stage_seconds": {
+        "MACCS_167": 0.0013807909999741241,
+        "Morgan_r2_4096": 9.591600246494636e-05,
+        "Morgan_r3_4096": 8.141700163832866e-05,
+        "RDKit_path6_2048": 0.0014547499995387625,
+        "concatenate_mask_pack": 3.2916999771259725e-05,
+        "exact_mass_and_raw_InChIKey": 0.000554374997591367,
+        "parse": 0.00020987499738112092,
+        "unchanged_group_identity_hash": 3.004199970746413e-05,
+        "unchanged_metric_equivalence_key": 0.001097750002372777
+      },
+      "total_seconds": 0.00496108299921616
+    },
+    {
+      "group": "e1a1c041a30f7a704bc12aeb9e247897cbddea7697d8f9dbae654d3c22199156",
+      "mass": 989.2408033980003,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AKNIQSRWPADUMX",
+      "row": 44,
+      "stage_seconds": {
+        "MACCS_167": 0.0014614589999837335,
+        "Morgan_r2_4096": 9.570799738867208e-05,
+        "Morgan_r3_4096": 8.65420006448403e-05,
+        "RDKit_path6_2048": 0.0012425420027284417,
+        "concatenate_mask_pack": 2.8875001589767635e-05,
+        "exact_mass_and_raw_InChIKey": 0.00045120800132281147,
+        "parse": 0.0002096659991366323,
+        "unchanged_group_identity_hash": 3.7292000342858955e-05,
+        "unchanged_metric_equivalence_key": 0.29488162499910686
+      },
+      "total_seconds": 0.2985158750016126
+    },
+    {
+      "group": "2a4c7c15331d783c22a6a159666131626bb0b9a5d3187cc1f5d7889da91cb926",
+      "mass": 1015.4532127480002,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AIIXNACKMPLCQK",
+      "row": 45,
+      "stage_seconds": {
+        "MACCS_167": 0.001467958001740044,
+        "Morgan_r2_4096": 0.00016883299758774228,
+        "Morgan_r3_4096": 9.812500138650648e-05,
+        "RDKit_path6_2048": 0.0009055839982465841,
+        "concatenate_mask_pack": 3.137499879812822e-05,
+        "exact_mass_and_raw_InChIKey": 0.0004737920025945641,
+        "parse": 0.0002030829964496661,
+        "unchanged_group_identity_hash": 3.4083001082763076e-05,
+        "unchanged_metric_equivalence_key": 0.5663593329991272
+      },
+      "total_seconds": 0.5697638749988982
+    },
+    {
+      "group": "5b7dd8b7b16d9cb9c76cb53a7ce61b5db0196e0209de490dc4eb3ccb042b8282",
+      "mass": 1040.3907741560004,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ANBQYFIVLNNZCU",
+      "row": 46,
+      "stage_seconds": {
+        "MACCS_167": 0.001845292001235066,
+        "Morgan_r2_4096": 0.0001114999977289699,
+        "Morgan_r3_4096": 9.079200026462786e-05,
+        "RDKit_path6_2048": 0.0015208749973680824,
+        "concatenate_mask_pack": 3.4374999813735485e-05,
+        "exact_mass_and_raw_InChIKey": 0.0004119590012123808,
+        "parse": 0.00022166599956108257,
+        "unchanged_group_identity_hash": 3.2291998650180176e-05,
+        "unchanged_metric_equivalence_key": 0.008115625001664739
+      },
+      "total_seconds": 0.012408124999637948
+    },
+    {
+      "group": "62dfec5bfba367501057ec6677c5629b4cc668cad052b574a44d900650f12a96",
+      "mass": 1066.3651672620003,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ANWDJXLBHJBVLO",
+      "row": 47,
+      "stage_seconds": {
+        "MACCS_167": 0.0012799579999409616,
+        "Morgan_r2_4096": 9.341700206277892e-05,
+        "Morgan_r3_4096": 8.650000017951243e-05,
+        "RDKit_path6_2048": 0.0013828750015818514,
+        "concatenate_mask_pack": 2.2208998416317627e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003099170025961939,
+        "parse": 0.00020004200268886052,
+        "unchanged_group_identity_hash": 5.212500036577694e-05,
+        "unchanged_metric_equivalence_key": 0.0012319170018599834
+      },
+      "total_seconds": 0.004676166001445381
+    },
+    {
+      "group": "9057787deb3fc7ba8ece0f6d610ce52a7b2ff55618e4c2d6ba743906ca7be6c7",
+      "mass": 1073.37108929,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ASKKPQKSCFYPPP",
+      "row": 48,
+      "stage_seconds": {
+        "MACCS_167": 0.0011864170010085218,
+        "Morgan_r2_4096": 8.53750025271438e-05,
+        "Morgan_r3_4096": 9.020800280268304e-05,
+        "RDKit_path6_2048": 0.0009559579993947409,
+        "concatenate_mask_pack": 1.5166999219218269e-05,
+        "exact_mass_and_raw_InChIKey": 0.00048345799950766377,
+        "parse": 0.0001809999994293321,
+        "unchanged_group_identity_hash": 3.4374999813735485e-05,
+        "unchanged_metric_equivalence_key": 0.319805750001251
+      },
+      "total_seconds": 0.32285612499981653
+    },
+    {
+      "group": "c219ff7edeb6bc7cfc3efc31c49f4992343cd143590e9389de391f73713d0a64",
+      "mass": 1093.3245330220002,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AGJNHWXQEDNTLB",
+      "row": 49,
+      "stage_seconds": {
+        "MACCS_167": 0.0012965839996468276,
+        "Morgan_r2_4096": 0.00010620799730531871,
+        "Morgan_r3_4096": 9.54589995671995e-05,
+        "RDKit_path6_2048": 0.0010792499997478444,
+        "concatenate_mask_pack": 2.6708999939728528e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003852080008073244,
+        "parse": 0.00021904199820710346,
+        "unchanged_group_identity_hash": 2.7166999643668532e-05,
+        "unchanged_metric_equivalence_key": 0.07067079199987347
+      },
+      "total_seconds": 0.0739250410006207
+    },
+    {
+      "group": "7202e11b9d8f147dc56585fae1852b2bb67d4e36d6f00214a0370980ccf3c9ba",
+      "mass": 1113.4071524920003,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ATEDCNALCVWYRV",
+      "row": 50,
+      "stage_seconds": {
+        "MACCS_167": 0.001494000000093365,
+        "Morgan_r2_4096": 9.49159984884318e-05,
+        "Morgan_r3_4096": 9.020900324685499e-05,
+        "RDKit_path6_2048": 0.0015988750019459985,
+        "concatenate_mask_pack": 2.6958998205373064e-05,
+        "exact_mass_and_raw_InChIKey": 0.0003922500000044238,
+        "parse": 0.0002268329990329221,
+        "unchanged_group_identity_hash": 3.4583001252030954e-05,
+        "unchanged_metric_equivalence_key": 0.031203332997392863
+      },
+      "total_seconds": 0.035183791998861125
+    },
+    {
+      "group": "3b7ec52dacb31a45b99248547d8e6ec92d2d4b5164ba38116fb315143b87c815",
+      "mass": 1143.7773524380002,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "CWEXLYXSENWVHM",
+      "row": 51,
+      "stage_seconds": {
+        "MACCS_167": 0.0012212080000608694,
+        "Morgan_r2_4096": 0.00010237499736831523,
+        "Morgan_r3_4096": 0.00011912500121979974,
+        "RDKit_path6_2048": 0.000832375000754837,
+        "concatenate_mask_pack": 2.3249998776009306e-05,
+        "exact_mass_and_raw_InChIKey": 0.00030462499853456393,
+        "parse": 0.00020095799845876172,
+        "unchanged_group_identity_hash": 3.3624997740844265e-05,
+        "unchanged_metric_equivalence_key": 0.003943457999412203
+      },
+      "total_seconds": 0.006799666000006255
+    },
+    {
+      "group": "c290e8a8b2094ee2173f2a3afa07786b49e3d274ed61b13b021f400e662abd55",
+      "mass": 1161.4387749259997,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ALJKNJFIRAHTKQ",
+      "row": 52,
+      "stage_seconds": {
+        "MACCS_167": 0.0014197079981386196,
+        "Morgan_r2_4096": 0.0001236669995705597,
+        "Morgan_r3_4096": 0.0001038330010487698,
+        "RDKit_path6_2048": 0.0010220000003755558,
+        "concatenate_mask_pack": 2.9791997803840786e-05,
+        "exact_mass_and_raw_InChIKey": 0.000491833001433406,
+        "parse": 0.0002953750008600764,
+        "unchanged_group_identity_hash": 3.320900214021094e-05,
+        "unchanged_metric_equivalence_key": 0.07307620799838332
+      },
+      "total_seconds": 0.07662195800003246
+    },
+    {
+      "group": "f5ecdb697b35ee4602dddb8845e627d4401ba060ca4616104ca783c910c58aaf",
+      "mass": 1182.52534470409,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AXZSUSWNAXMBBB",
+      "row": 53,
+      "stage_seconds": {
+        "MACCS_167": 0.0067763750012090895,
+        "Morgan_r2_4096": 0.00011008299770765007,
+        "Morgan_r3_4096": 0.00010454099901835434,
+        "RDKit_path6_2048": 0.005233708998275688,
+        "concatenate_mask_pack": 2.9167000320740044e-05,
+        "exact_mass_and_raw_InChIKey": 0.0011819999999715947,
+        "parse": 0.00028374999965308234,
+        "unchanged_group_identity_hash": 2.779100032057613e-05,
+        "unchanged_metric_equivalence_key": 0.6392712910019327
+      },
+      "total_seconds": 0.6530439160014794
+    },
+    {
+      "group": "5295552af335e5c6c8f1ae7473d0759fe99544c240f1a07e4ee65bf14092d213",
+      "mass": 1203.4493396099997,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "BFUZZODUNWZTTG",
+      "row": 54,
+      "stage_seconds": {
+        "MACCS_167": 0.0015473329985979944,
+        "Morgan_r2_4096": 0.00014379200001712888,
+        "Morgan_r3_4096": 0.0001110419980250299,
+        "RDKit_path6_2048": 0.0013644579994434025,
+        "concatenate_mask_pack": 2.5875000574160367e-05,
+        "exact_mass_and_raw_InChIKey": 0.0005234159980318509,
+        "parse": 0.0003275419985584449,
+        "unchanged_group_identity_hash": 3.4583001252030954e-05,
+        "unchanged_metric_equivalence_key": 0.37070254100035527
+      },
+      "total_seconds": 0.3748092909991101
+    },
+    {
+      "group": "7653756c8248174b645186eb682ef2428fcaa81de56b9bf20690c63e7d46923e",
+      "mass": 1230.4626722999997,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ABOIXMVAWMJIMU",
+      "row": 55,
+      "stage_seconds": {
+        "MACCS_167": 0.002875375001167413,
+        "Morgan_r2_4096": 0.00011929200263693929,
+        "Morgan_r3_4096": 0.00020562500139931217,
+        "RDKit_path6_2048": 0.0020725840004161,
+        "concatenate_mask_pack": 2.4874996597645804e-05,
+        "exact_mass_and_raw_InChIKey": 0.0008876659994712099,
+        "parse": 0.0003205419998266734,
+        "unchanged_group_identity_hash": 3.245900006731972e-05,
+        "unchanged_metric_equivalence_key": 0.8999492080001801
+      },
+      "total_seconds": 0.9065096249978524
+    },
+    {
+      "group": "9363c88836d2b82d1c1f333a1fc819ab4cd9f2d4110ee675997d3f26ecd195c0",
+      "mass": 1253.294263856,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AAIWMXAOKUXQTP",
+      "row": 56,
+      "stage_seconds": {
+        "MACCS_167": 0.001303207998716971,
+        "Morgan_r2_4096": 9.654200039221905e-05,
+        "Morgan_r3_4096": 0.0001022079995891545,
+        "RDKit_path6_2048": 0.0003816659991571214,
+        "concatenate_mask_pack": 2.274999860674143e-05,
+        "exact_mass_and_raw_InChIKey": 0.00033754199830582365,
+        "parse": 0.0001777910001692362,
+        "unchanged_group_identity_hash": 2.9249997169245034e-05,
+        "unchanged_metric_equivalence_key": 0.0032206249998125713
+      },
+      "total_seconds": 0.005697083000995917
+    },
+    {
+      "group": "24448ad61adef833b2a73e58d31da9392e5dc2e59c208a6662468286ba07661b",
+      "mass": 1271.5483253739997,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AXFJADSOKDNKNX",
+      "row": 57,
+      "stage_seconds": {
+        "MACCS_167": 0.0014400000000023283,
+        "Morgan_r2_4096": 0.00010704099986469373,
+        "Morgan_r3_4096": 0.00010516700058360584,
+        "RDKit_path6_2048": 0.0011217920000490267,
+        "concatenate_mask_pack": 2.0958003005944192e-05,
+        "exact_mass_and_raw_InChIKey": 0.0004840000001422595,
+        "parse": 0.00022375000116880983,
+        "unchanged_group_identity_hash": 3.220899816369638e-05,
+        "unchanged_metric_equivalence_key": 0.08210645800136263
+      },
+      "total_seconds": 0.08566137500019977
+    },
+    {
+      "group": "e6076c41078af394c1044acfd2b5607e601099f8391eb8fb3206f59f08752abf",
+      "mass": 1279.6156887039997,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "ARKDJZHBBZECNE",
+      "row": 58,
+      "stage_seconds": {
+        "MACCS_167": 0.001522792001196649,
+        "Morgan_r2_4096": 0.00011408400314394385,
+        "Morgan_r3_4096": 0.00010654099969542585,
+        "RDKit_path6_2048": 0.0017392919980920851,
+        "concatenate_mask_pack": 2.5124998501269147e-05,
+        "exact_mass_and_raw_InChIKey": 0.00040833300226950087,
+        "parse": 0.00021691599977202713,
+        "unchanged_group_identity_hash": 3.275000199209899e-05,
+        "unchanged_metric_equivalence_key": 0.011386833000869956
+      },
+      "total_seconds": 0.015572749998682411
+    },
+    {
+      "group": "13bac99fb6f6faad52e8b8a480e60464e097424e2851fe868327b6580dbdb535",
+      "mass": 1312.8430030719999,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "BPSMYQFMCXXNPC",
+      "row": 59,
+      "stage_seconds": {
+        "MACCS_167": 0.0016690419979568105,
+        "Morgan_r2_4096": 0.00011791699944296852,
+        "Morgan_r3_4096": 0.00011354100206517614,
+        "RDKit_path6_2048": 0.0010527499980526045,
+        "concatenate_mask_pack": 6.0874997870996594e-05,
+        "exact_mass_and_raw_InChIKey": 0.0004785409983014688,
+        "parse": 0.0002311669995833654,
+        "unchanged_group_identity_hash": 3.237499913666397e-05,
+        "unchanged_metric_equivalence_key": 0.030990957999165403
+      },
+      "total_seconds": 0.03477108299921383
+    },
+    {
+      "group": "9803f3b643a4c7f4d4ea2a3c36215ec93376d82e11de99ee60484e82cecf7c22",
+      "mass": 1319.6058402499998,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "AHHDQEJMPXMIQP",
+      "row": 60,
+      "stage_seconds": {
+        "MACCS_167": 0.0017242499998246785,
+        "Morgan_r2_4096": 0.0001149159979831893,
+        "Morgan_r3_4096": 0.00010945900066872127,
+        "RDKit_path6_2048": 0.0010091249969264027,
+        "concatenate_mask_pack": 2.7499998395796865e-05,
+        "exact_mass_and_raw_InChIKey": 0.0005070410006737802,
+        "parse": 0.00023525000142399222,
+        "unchanged_group_identity_hash": 3.2083000405691564e-05,
+        "unchanged_metric_equivalence_key": 0.41769279100117274
+      },
+      "total_seconds": 0.4214729580016865
+    },
+    {
+      "group": "c008c4c718a8ebcef40580416b2107083de341e54b3a39d7db984c95b931272a",
+      "mass": 1342.3916811559995,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "CBIBZCKSXAHRFP",
+      "row": 61,
+      "stage_seconds": {
+        "MACCS_167": 0.001636000000871718,
+        "Morgan_r2_4096": 0.00011025000276276842,
+        "Morgan_r3_4096": 0.00010358299914514646,
+        "RDKit_path6_2048": 0.001918082998599857,
+        "concatenate_mask_pack": 2.5875000574160367e-05,
+        "exact_mass_and_raw_InChIKey": 0.00045574999967357144,
+        "parse": 0.0002840410015778616,
+        "unchanged_group_identity_hash": 3.22499981848523e-05,
+        "unchanged_metric_equivalence_key": 0.007274833998963004
+      },
+      "total_seconds": 0.011861457998747937
+    },
+    {
+      "group": "2cb93d64ccef40d127538e6a48ba0af8e840d84c6acd8436165a772d70126035",
+      "mass": 1364.4964209959996,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "BAYTZKVVBAFFRZ",
+      "row": 62,
+      "stage_seconds": {
+        "MACCS_167": 0.0017129170009866357,
+        "Morgan_r2_4096": 0.00011429100050008856,
+        "Morgan_r3_4096": 0.00011012499817297794,
+        "RDKit_path6_2048": 0.0018838340001821052,
+        "concatenate_mask_pack": 2.5749999622348696e-05,
+        "exact_mass_and_raw_InChIKey": 0.0005431669997051358,
+        "parse": 0.00024983299954328686,
+        "unchanged_group_identity_hash": 2.8333997761365026e-05,
+        "unchanged_metric_equivalence_key": 0.010918415999185527
+      },
+      "total_seconds": 0.015606542001478374
+    },
+    {
+      "group": "70453ae96029361ba11231d43c455daf38e1c90a06738d280b4ffd9294f0d1fe",
+      "mass": 1380.7805692119998,
+      "metric_cache_hits": 0,
+      "metric_cache_misses": 1,
+      "raw_key": "CSINLULLXMOZES",
+      "row": 63,
+      "stage_seconds": {
+        "MACCS_167": 0.0026387920006527565,
+        "Morgan_r2_4096": 0.00011804099995060824,
+        "Morgan_r3_4096": 0.00012183400031062774,
+        "RDKit_path6_2048": 0.0015911670016066637,
+        "concatenate_mask_pack": 2.7916001272387803e-05,
+        "exact_mass_and_raw_InChIKey": 0.00047574999916832894,
+        "parse": 0.00028174999897601083,
+        "unchanged_group_identity_hash": 2.9167000320740044e-05,
+        "unchanged_metric_equivalence_key": 0.01373329099806142
+      },
+      "total_seconds": 0.019040291997953318
+    }
+  ],
+  "numeric_and_disk_parity": "PASS",
+  "old512_reused_not_repeated": true,
+  "phase_seconds_before_gate": {
+    "canary64_numeric_and_parquet_disk_reload": 0.03329149999990477,
+    "input_sha256_verification": 0.8367026670021005,
+    "metadata_load_and_deterministic_selection": 1.1550692500022706,
+    "old512_proof_and_executed_source_verification": 0.0021285000002535526,
+    "original64_fresh_two_worker_pool": 4.133064875000855,
+    "profile64_fresh_two_worker_pool_and_shutdown": 3.710774749997654
+  },
+  "reference_pool_fresh_after_profile_pool_closed": true,
+  "rows": 64
+}

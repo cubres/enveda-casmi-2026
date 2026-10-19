@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820" role="img" aria-labelledby="title desc">
+<title id="title">ChEBI 4,096-row fingerprint shard pipeline</title>
+<desc id="desc">Public ChEBI source rows become exact packed full fingerprints with verified retrieval joins. No score or whole-bank metric novelty is claimed.</desc>
+<rect x="0" y="0" width="1600" height="820" rx="0" fill="#f3f7f7"/>
+<rect x="68" y="52" width="176" height="32" rx="16" fill="#dcefee"/>
+<text x="83" y="72.2" font-family="Arial,DejaVu Sans,sans-serif" font-size="15" font-weight="700" fill="#087f83">CASMI / OPEN DATA</text>
+<text x="68" y="151.12" font-family="Arial,DejaVu Sans,sans-serif" font-size="49" font-weight="700" fill="#142c3b">4,096 structures. One exact fingerprint contract.</text>
+<text x="70" y="194.36" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" font-weight="400" fill="#536b76">A compact ChEBI three-star bank with source identifiers, verified joins and a runnable retrieval demo.</text>
+<rect x="71" y="245" width="450" height="357" rx="22" fill="#e3ecec"/>
+<rect x="68" y="239" width="450" height="357" rx="22" fill="#ffffff" stroke="#d6e3e4"/>
+<text x="96" y="281.96" font-family="Arial,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#087f83">01</text>
+<text x="96" y="325.64" font-family="Arial,DejaVu Sans,sans-serif" font-size="28" font-weight="700" fill="#142c3b">Public source</text>
+<rect x="578" y="245" width="450" height="357" rx="22" fill="#e3ecec"/>
+<rect x="575" y="239" width="450" height="357" rx="22" fill="#ffffff" stroke="#d6e3e4"/>
+<text x="603" y="281.96" font-family="Arial,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#087f83">02</text>
+<text x="603" y="325.64" font-family="Arial,DejaVu Sans,sans-serif" font-size="28" font-weight="700" fill="#142c3b">Exact fingerprint bits</text>
+<rect x="1085" y="245" width="450" height="357" rx="22" fill="#e3ecec"/>
+<rect x="1082" y="239" width="450" height="357" rx="22" fill="#ffffff" stroke="#d6e3e4"/>
+<text x="1110" y="281.96" font-family="Arial,DejaVu Sans,sans-serif" font-size="17" font-weight="700" fill="#087f83">03</text>
+<text x="1110" y="325.64" font-family="Arial,DejaVu Sans,sans-serif" font-size="28" font-weight="700" fill="#142c3b">Use the aligned rows</text>
+<line x1="535" y1="414" x2="560" y2="414" stroke="#087f83" stroke-width="4"/>
+<line x1="551" y1="405" x2="560" y2="414" stroke="#087f83" stroke-width="4"/>
+<line x1="551" y1="423" x2="560" y2="414" stroke="#087f83" stroke-width="4"/>
+<line x1="1042" y1="414" x2="1067" y2="414" stroke="#087f83" stroke-width="4"/>
+<line x1="1058" y1="405" x2="1067" y2="414" stroke="#087f83" stroke-width="4"/>
+<line x1="1058" y1="423" x2="1067" y2="414" stroke="#087f83" stroke-width="4"/>
+<text x="96" y="407.92" font-family="Arial,DejaVu Sans,sans-serif" font-size="59" font-weight="700" fill="#087f83">4,096</text>
+<text x="96" y="448.12" font-family="Arial,DejaVu Sans,sans-serif" font-size="24" font-weight="700" fill="#142c3b">raw-key-new records</text>
+<text x="96" y="494.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">ChEBI release 255 / public mirror V1</text>
+<text x="96" y="531.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">64 mass bins; deterministic selection</text>
+<text x="96" y="568.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">Original attribution and IDs retained</text>
+<text x="603" y="407.92" font-family="Arial,DejaVu Sans,sans-serif" font-size="59" font-weight="700" fill="#087f83">10,395</text>
+<text x="603" y="446.36" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#142c3b">selected bits / 1,300 bytes per row</text>
+<text x="603" y="494.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">Morgan r2 + r3 / path6 / MACCS</text>
+<text x="603" y="531.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">Frozen mask from 10,407 raw bits</text>
+<text x="603" y="568.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">MSB first; five zero padding bits</text>
+<text x="1110" y="404.84" font-family="Arial,DejaVu Sans,sans-serif" font-size="43" font-weight="700" fill="#087f83">80–1,400 Da</text>
+<text x="1110" y="446.36" font-family="Arial,DejaVu Sans,sans-serif" font-size="22" font-weight="700" fill="#142c3b">neutral-mass candidate windows</text>
+<text x="1110" y="494.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">Stable mass-order index</text>
+<text x="1110" y="531.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">Packed FP / SMILES / source-row joins</text>
+<text x="1110" y="568.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">Read-only NumPy + PyArrow demo</text>
+<rect x="68" y="637" width="1464" height="103" rx="19" fill="#e0efec"/>
+<text x="96" y="672.2" font-family="Arial,DejaVu Sans,sans-serif" font-size="15" font-weight="700" fill="#087f83">PRODUCER OUTPUTS</text>
+<text x="96" y="711.24" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#142c3b">45 file hashes checked</text>
+<text x="456" y="672.2" font-family="Arial,DejaVu Sans,sans-serif" font-size="15" font-weight="700" fill="#087f83">NUMERIC GATE</text>
+<text x="456" y="711.24" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#142c3b">64-row canary passed</text>
+<text x="816" y="672.2" font-family="Arial,DejaVu Sans,sans-serif" font-size="15" font-weight="700" fill="#087f83">WITHIN THIS SHARD</text>
+<text x="816" y="711.24" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#142c3b">4,092 canonical groups</text>
+<text x="1176" y="672.2" font-family="Arial,DejaVu Sans,sans-serif" font-size="15" font-weight="700" fill="#087f83">RECORDED CPU BUILD</text>
+<text x="1176" y="711.24" font-family="Arial,DejaVu Sans,sans-serif" font-size="23" font-weight="700" fill="#142c3b">145.85 seconds</text>
+<text x="70" y="788.6" font-family="Arial,DejaVu Sans,sans-serif" font-size="20" font-weight="400" fill="#536b76">Canonical novelty versus the old bank, hidden-answer coverage and score improvement remain unmeasured.</text>
+</svg>

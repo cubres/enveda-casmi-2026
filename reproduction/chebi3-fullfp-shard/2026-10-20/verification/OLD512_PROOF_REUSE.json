@@ -1,0 +1,17 @@
+{
+  "child_receipt_sha256": "48897a3fe1bc63fc4ef8b814e9c5e2629f14ea33204394bf3905ba9b768e12d6",
+  "current_input_hashes_identical": true,
+  "executed_source_manifest_sha256": "5f9537852f0091ce3fb808fc4daa8af17b102793866a79c000f6f60c99432ce8",
+  "fp_group_sources_identical": true,
+  "old512_chemistry_repeated": false,
+  "old_phase_sha256": "f089f64b3bb77550616b3ac5f5423315fdc12b3c1e49e39171642074e09699b5",
+  "result_sha256": "af4bd30904f66f57031d63f6548e9b2b710fbca7196c4bc79d68860aade7a700",
+  "rows": 512,
+  "runtime_identical": {
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "rdkit": "2026.03.3"
+  },
+  "scope": "Deterministic FP/mass integrity only; no new-subset quality or score qualification.",
+  "status": "REUSED_EXACT_OLD512_INTEGRITY_PROOF"
+}

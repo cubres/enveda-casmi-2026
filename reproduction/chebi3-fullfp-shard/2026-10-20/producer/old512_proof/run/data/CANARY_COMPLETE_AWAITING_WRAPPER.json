@@ -1,0 +1,104 @@
+{
+  "actual_full_metric_novelty": "NOT_MEASURED",
+  "actual_full_new_keys_vs_old_bank": "NOT_MEASURED",
+  "full_continuation": false,
+  "full_forecast_current_macos_runtime_only": {
+    "budget_seconds": 1680.0,
+    "chunk_p90_seconds": 9.206600875000731,
+    "forecast_total_seconds": 21296.949733439178,
+    "io_reserve_seconds": 120.0,
+    "passes": false,
+    "remaining_compute_seconds": 21142.958909439178,
+    "safety_factor": 1.5
+  },
+  "full_native_admission": false,
+  "model_or_training_or_assay_or_hidden_test": false,
+  "new_chunk_seconds": [
+    0.4982712079981866,
+    0.8983949159992335,
+    0.1602064580001752,
+    0.12708979200033355,
+    0.15547870899899863,
+    5.0691488750017015,
+    9.206600875000731,
+    1.6463414169993484,
+    0.8130040830001235,
+    1.2367800419997366,
+    10.912605459001497,
+    4.017390749999322,
+    0.23523583299902384,
+    0.23219299999982468,
+    1.0175406250018568,
+    5.81600950000211
+  ],
+  "new_rows": 512,
+  "new_structure_seconds": 23.70709295800043,
+  "numpy": "2.2.6",
+  "old_bank_unchanged_before_after": {
+    "ATTRIBUTION.md": {
+      "bytes": 2428,
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    "bio_structures.parquet": {
+      "bytes": 5407545,
+      "sha256": "6bef7106d640ed370046e79d67b86932ba26da3a3632e6901e3b040fad56aa88"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "pool_fp.npy": {
+      "bytes": 925216628,
+      "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+    },
+    "pool_mass.npy": {
+      "bytes": 5693768,
+      "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+    },
+    "pool_meta.pkl": {
+      "bytes": 64843052,
+      "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+    },
+    "stats.json": {
+      "bytes": 608,
+      "sha256": "dd0d5686dd54824a40857b75338ed03dc922a2580031d246bf1995b43af57a5e"
+    }
+  },
+  "old_rows": 512,
+  "outputs": {
+    "OLD_512_CANARY.json": {
+      "bytes": 90653,
+      "sha256": "f089f64b3bb77550616b3ac5f5423315fdc12b3c1e49e39171642074e09699b5"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "new_512_fp.npy": {
+      "bytes": 665728,
+      "sha256": "159c5e2972202d51b9f691824877107fca93d0b41e18c91e69251b9f76e8fc44"
+    },
+    "new_512_mass.npy": {
+      "bytes": 4224,
+      "sha256": "992a886993968b3b66ddb8e11457136de92febec4868da69401f41a3119822a7"
+    },
+    "new_512_source.parquet": {
+      "bytes": 48853,
+      "sha256": "2c278b600febd4a4e02e90b297757ffb1f99532e1ff758247ee68e8f14218cad"
+    },
+    "new_512_source_rows.npy": {
+      "bytes": 4224,
+      "sha256": "0b2a07c790baaf7760adc532fcf67c879882f74c4ad33d90dcd76f2964a1bead"
+    }
+  },
+  "python": "3.12.14",
+  "rdkit": "2026.03.3",
+  "seconds": 33.99082400000043,
+  "source_star_card_statistics_discrepancy": "Original card describes 2/3-star; source stats lists 1/2/3. Actual counts reported without silent filtering.",
+  "source_star_counts_full_metadata_only": {
+    "ChEBI|2": 59770,
+    "ChEBI|3": 18227,
+    "LIPID MAPS LMSD|": 20436
+  },
+  "status": "MAC_512_OLD_512_NEW_COMPLETE_AWAITING_WRAPPER"
+}

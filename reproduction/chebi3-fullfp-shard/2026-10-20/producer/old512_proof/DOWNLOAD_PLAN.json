@@ -1,0 +1,58 @@
+{
+  "all_inputs_total_bytes": 1001247317,
+  "external_files_total_bytes": 5410581,
+  "external_public_dataset": {
+    "dataset_id": 12431882,
+    "ref": "sergiomalv/casmi-chebi-lmsd-structures",
+    "version": 1
+  },
+  "files": {
+    "ATTRIBUTION.md": {
+      "bytes": 2428,
+      "dataset": "sergiomalv/casmi-chebi-lmsd-structures/1",
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    "bio_structures.parquet": {
+      "bytes": 5407545,
+      "dataset": "sergiomalv/casmi-chebi-lmsd-structures/1",
+      "sha256": "6bef7106d640ed370046e79d67b86932ba26da3a3632e6901e3b040fad56aa88"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "dataset": "prvsiyan/casmi26-full-fingerprint-inputs/1",
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "pool_fp.npy": {
+      "bytes": 925216628,
+      "dataset": "prvsiyan/casmi26-full-fingerprint-inputs/1",
+      "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+    },
+    "pool_mass.npy": {
+      "bytes": 5693768,
+      "dataset": "prvsiyan/casmi26-full-fingerprint-inputs/1",
+      "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+    },
+    "pool_meta.pkl": {
+      "bytes": 64843052,
+      "dataset": "prvsiyan/casmi26-full-fingerprint-inputs/1",
+      "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+    },
+    "stats.json": {
+      "bytes": 608,
+      "dataset": "sergiomalv/casmi-chebi-lmsd-structures/1",
+      "sha256": "dd0d5686dd54824a40857b75338ed03dc922a2580031d246bf1995b43af57a5e"
+    }
+  },
+  "intended_additional_download_bytes": 0,
+  "large_download_started_by_this_task": false,
+  "old_files_total_bytes": 995836736,
+  "old_public_dataset": {
+    "dataset_id": 12350648,
+    "ref": "prvsiyan/casmi26-full-fingerprint-inputs",
+    "version": 1
+  },
+  "root_coordination_required_before_any_additional_download_above_bytes": 200000000,
+  "scope": "Root-only read-only public input acquisition plan; no downloader in this adapter",
+  "source_data_deserialization_performed_in_preparation": false,
+  "verified_local_cache_available": true
+}

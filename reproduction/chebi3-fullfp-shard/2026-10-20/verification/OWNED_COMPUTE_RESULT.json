@@ -1,0 +1,18 @@
+{
+  "aggregate_cpu_seconds": 284.545278168,
+  "build_receipt_sha256": "01f0b7e8fd0d963975f6976c605180e40ea806d4bfa49cbfb87949295a5f823a",
+  "child_returncode": 0,
+  "cpu_affinity_not_supported_on_macos": true,
+  "model_or_training_or_assay": false,
+  "output_bytes_before_final_receipt": 6436647,
+  "psutil_version": "7.2.2",
+  "reason": null,
+  "remaining_owned_group_pids": [],
+  "root_input_identity_after_verified_by_child": true,
+  "rss_sampling_seconds": 0.1,
+  "seconds": 145.84805137500007,
+  "selected64_canary_then_conditional4096_same_job": true,
+  "source_manifest_sha256": "f14c9513f514743f785decddc6bbfc99306f547959331543252904f60a8a1c22",
+  "status": "COMPLETE_CHEBI3_4096_SHARD",
+  "sum_observed_rss_peak_bytes": 923795456
+}

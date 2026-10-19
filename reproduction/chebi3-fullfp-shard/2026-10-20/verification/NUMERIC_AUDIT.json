@@ -1,0 +1,75 @@
+{
+  "actual_resources": {
+    "aggregate_cpu_seconds": 284.545278168,
+    "output_bytes_before_final_receipt": 6436647,
+    "seconds": 145.84805137500007,
+    "sum_observed_rss_peak_bytes": 923795456
+  },
+  "all4096_source_metadata_mass_rawkey_group_format_joins": true,
+  "audit_seconds": 1.754908584000077,
+  "build_receipt_sha256": "01f0b7e8fd0d963975f6976c605180e40ea806d4bfa49cbfb87949295a5f823a",
+  "canary64_fp_mass_source_exact_full_prefix": true,
+  "canonical_group_digest_count": 4092,
+  "canonical_group_size_histogram": {
+    "1": 4088,
+    "2": 4
+  },
+  "chemistry_model_assay_upload_push_or_native_submission": false,
+  "current_input_pins": {
+    "ATTRIBUTION.md": {
+      "bytes": 2428,
+      "sha256": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7"
+    },
+    "bio_structures.parquet": {
+      "bytes": 5407545,
+      "sha256": "6bef7106d640ed370046e79d67b86932ba26da3a3632e6901e3b040fad56aa88"
+    },
+    "fp_bits.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "pool_fp.npy": {
+      "bytes": 925216628,
+      "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+    },
+    "pool_mass.npy": {
+      "bytes": 5693768,
+      "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+    },
+    "pool_meta.pkl": {
+      "bytes": 64843052,
+      "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+    },
+    "stats.json": {
+      "bytes": 608,
+      "sha256": "dd0d5686dd54824a40857b75338ed03dc922a2580031d246bf1995b43af57a5e"
+    }
+  },
+  "declared_output_bytes": 6425081,
+  "declared_outputs_verified": 45,
+  "exact_smiles_absent_old711705": 4096,
+  "full4096_fp_array_schema_and_zero_padding": true,
+  "mass_order_is_stable_exact_permutation": true,
+  "observed_utc": "2026-10-19T21:07:19.810232+00:00",
+  "old512_proof_reused_with_all_current_source_input_runtime_pins": true,
+  "owned_result_sha256": "ab235c4091792761413c289aff0cff619cce6a36fc239c21d4f5f8ef66d707ce",
+  "psutil_version": "7.2.2",
+  "pyarrow_version": "25.0.0",
+  "raw_keys_unique_and_absent_old711705": 4096,
+  "rows": 4096,
+  "runtime": {
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "rdkit": "2026.03.3"
+  },
+  "scientific_limits": [
+    "No fingerprint or molecule chemistry was rerun by this audit; all4096 FP semantics bind to original frozen executed producer and passed64 exact-reference gate",
+    "Canonical-group molecular semantics bind to the unchanged executed metric/group sources; this audit checks every exported digest and rowjoin but does not recompute chemistry",
+    "Metric novelty versus entire old711705 bank is not measured",
+    "No training, completed assay, hidden-test coverage or score improvement is established"
+  ],
+  "selected64_forecast_seconds": 1241.652330791785,
+  "source_files_verified": 13,
+  "source_manifest_sha256": "f14c9513f514743f785decddc6bbfc99306f547959331543252904f60a8a1c22",
+  "status": "PASS_READ_ONLY_ALL4096_HASH_NUMERIC_AND_SOURCE_JOIN_AUDIT"
+}
