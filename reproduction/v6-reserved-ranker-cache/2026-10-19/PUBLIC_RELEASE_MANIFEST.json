@@ -1,0 +1,124 @@
+{
+  "schema": "casmi-v6-reserved-ranker-public-release/1",
+  "status": "ACTUAL_NATIVE_NUMERIC_OUTPUTS_VERIFIED",
+  "native_version": 7,
+  "native_run_id": 359867655,
+  "source_sha256": "de68bd81c5d5c702c874035072ae0fec53fc648bdfed83ed98991792c641db36",
+  "queries": 13579,
+  "feature_version": "v6-step28000-single-view-raw-logits-f32-v1",
+  "npz_duplicate_included": false,
+  "canonical_group_overlap_audited": false,
+  "clean_group_oof_claimed": false,
+  "ranker_fit_performed": false,
+  "files": {
+    "CACHE_MANIFEST.json": {
+      "bytes": 6901,
+      "sha256": "c1e086b6233c3178ec754e39bfd6aa2acdc8ed2ef6822f7e21d12dfc481b55b1"
+    },
+    "DATA-LICENSE.md": {
+      "bytes": 2489,
+      "sha256": "f99482f75f369709e3560fcc917638ba033795da5d3737ece95859f8ffc6ebdb"
+    },
+    "INTEGRITY_SCOPE.json": {
+      "bytes": 1268,
+      "sha256": "796d326d330005571e44a6b5d0d5db616a5a233276518c75a8c730e8e2d0b37d"
+    },
+    "LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "LICENSE-WEIGHTS.md": {
+      "bytes": 1673,
+      "sha256": "e4d40b59c2414619baf7a1c06c8687740c5363387a9eeae76c34c0778a34380f"
+    },
+    "ORIGINAL_SOURCE_NOTICE.md": {
+      "bytes": 1416,
+      "sha256": "5cb3c2f31322b630c373375f7d1f6d87b4b91204f721634bd3733532a81eaeff"
+    },
+    "PRODUCER_README.md": {
+      "bytes": 8804,
+      "sha256": "7306d4377d2f81b8451b0af4c14125ebb49db6050967155e4ec0202f6334b01f"
+    },
+    "README.md": {
+      "bytes": 7021,
+      "sha256": "d21e7ac711a806d42d2e0bca63787f92146d8ef3f629e0f51802c63df7b3cbd6"
+    },
+    "TRAINING_CONTRACT.json": {
+      "bytes": 9549,
+      "sha256": "092a0ad1b46dbdf369a78d70fde409395eb3db53f0027da6240bc62e0c8f75f6"
+    },
+    "TRAINING_README.md": {
+      "bytes": 8000,
+      "sha256": "7d1cc50aa43cc4e1d0533263a48e82017de1185f2827b3d467b482e9de44094c"
+    },
+    "WRAPPER_RECEIPT.json": {
+      "bytes": 312,
+      "sha256": "359c31f6b6c49552d56775db0e33f6cd4dab3e0b99a6b3eddd043231bd9f149e"
+    },
+    "build_v6_ranker_cache.py": {
+      "bytes": 19075,
+      "sha256": "984c4f13126f5eb9a13f28f43902299ee16161b3c17f76b09baefb8167a3cd88"
+    },
+    "canary_gate.json": {
+      "bytes": 1095,
+      "sha256": "02322b1027dbaafeae121abc4dc57503380f08d410194d2724082dfa0e8557f5"
+    },
+    "completion_bitmap.npy": {
+      "bytes": 13707,
+      "sha256": "88553fef8516e0ed12df723f07bdd2295d37caca1646ed3faef038697108f4d6"
+    },
+    "fp_bit_indices.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "fpmodel.py": {
+      "bytes": 5158,
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76"
+    },
+    "inspect_public_cache.py": {
+      "bytes": 2399,
+      "sha256": "81a74502f59601fa3bae9ebcf1762de0121ddc9121bc7f255292e88e87933597"
+    },
+    "positive_pool_indices.npy": {
+      "bytes": 108760,
+      "sha256": "1847e2b849fd16aedf2b6687380ebf9ddb6f873146df71a16a7a3ac40e68cb04"
+    },
+    "query_logits.npy": {
+      "bytes": 564614948,
+      "sha256": "5d86c23e8dac62bd77eac1774385697d40fef9f6f7b072f2dd3198171f196025"
+    },
+    "source_rows.npy": {
+      "bytes": 108760,
+      "sha256": "e9908872455cb9079cbb51d410dbf022d0e14c03df2e9c2a7fc3ab0ad060500a"
+    },
+    "spectrum_indices.npy": {
+      "bytes": 108760,
+      "sha256": "ec7299b6e5dbc30d32270b3b952cf6f0c9e4a5d2919a585f005f3f1994ab1fe5"
+    },
+    "structure_indices.npy": {
+      "bytes": 108760,
+      "sha256": "600e5b6d56cfc4884b51ad6ea2dd31c3030d393f43a77d44de5140a147c9b168"
+    },
+    "structure_keys.npy": {
+      "bytes": 760552,
+      "sha256": "b5b2db064052c00cb616000a0f4f7b92b38b6455c6e199fd6bdf2fe38e5728b8"
+    },
+    "structure_uniform_sampler.py": {
+      "bytes": 4511,
+      "sha256": "d2edd84f6db5d0d9138b6576ccda94b6f322e04424fe7c2c2db448f045421ea6"
+    },
+    "train_fp4.py": {
+      "bytes": 5977,
+      "sha256": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0"
+    },
+    "train_full_fingerprint.py": {
+      "bytes": 16064,
+      "sha256": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e"
+    },
+    "truth_fp_packed.npy": {
+      "bytes": 17652828,
+      "sha256": "ca8c7fae1e457c8e40a3bbc709c44cd4d1259b7bc429cbc002c3ffaa9e029789"
+    }
+  },
+  "operational_metadata_not_payload": "dataset-metadata.json is consumed by Kaggle API and intentionally excluded from public payload inventory"
+}

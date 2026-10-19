@@ -1,0 +1,231 @@
+{
+  "bindings": {
+    "bank_files": {
+      "fp_bits.npy": {
+        "bytes": 83288,
+        "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+      },
+      "fp_meta.pkl": {
+        "bytes": 17095875,
+        "sha256": "88411e98cec6f862f7b121dbc27b807e5e18782416219fe2b11566deb3254132"
+      },
+      "optimizer_bit_counts.npy": {
+        "bytes": 83384,
+        "sha256": "4d874c910de699a0fa030a40d6bcded08d78c236f44aeefe0101f2ac20122193"
+      },
+      "pool_fp.npy": {
+        "bytes": 925216628,
+        "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+      },
+      "pool_mass.npy": {
+        "bytes": 5693768,
+        "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+      },
+      "pool_meta.pkl": {
+        "bytes": 64843052,
+        "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+      },
+      "roles_by_structure.b64": {
+        "bytes": 55913,
+        "sha256": "fe654a3f5f655df3897a344ca222e01a9f555a7dfd22a786e6cb32b126c76049"
+      }
+    },
+    "bank_manifest_sha256": "5b08ca4b830de1558be4ce568a10f0997b5fa2fe875a872dcd6a216f901fd9ef",
+    "checkpoint": {
+      "bytes": 197739081,
+      "sha256": "9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31"
+    },
+    "spectra": {
+      "bytes": 920788910,
+      "sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500"
+    }
+  },
+  "builder_sha256": "984c4f13126f5eb9a13f28f43902299ee16161b3c17f76b09baefb8167a3cd88",
+  "canary_gate": {
+    "all_finite": true,
+    "disk_reload_exact": true,
+    "forecast_seconds_including_3x_compute_and_180s_io": 468.25808605220516,
+    "full_batch_size": 64,
+    "native_process_peak_rss_bytes": 2960875520,
+    "queries": 64,
+    "query_rows": [
+      0,
+      2,
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      36,
+      37,
+      41,
+      50,
+      121,
+      134,
+      144,
+      152,
+      165,
+      169,
+      181,
+      205,
+      374,
+      390,
+      411,
+      489,
+      491,
+      500,
+      505,
+      720,
+      857,
+      892,
+      1069,
+      1161,
+      1175,
+      1348,
+      1387,
+      1417,
+      1496,
+      1619,
+      1811,
+      2135,
+      2212,
+      2347,
+      2594,
+      2710,
+      3267,
+      3322,
+      3803,
+      3970,
+      4026,
+      4095,
+      4348,
+      4350,
+      4796,
+      5452,
+      5643,
+      6004,
+      6760,
+      7174,
+      7300,
+      7443,
+      7446,
+      7932,
+      9037,
+      11786
+    ],
+    "repeat_tolerance": {
+      "atol": 0.003,
+      "rtol": 0.001
+    },
+    "same_batch_repeat_max_absolute_error": 0.0,
+    "seconds_for_two_forwards": 0.9057376589999819,
+    "shape": [
+      64,
+      10395
+    ],
+    "status": "PASS",
+    "torch_peak_allocated_bytes": 1369720832
+  },
+  "complete_query_rows": 13579,
+  "completed_assay_repeated": false,
+  "environment": {
+    "cuda": "12.8",
+    "device": "Tesla T4",
+    "num_threads": 2,
+    "numpy": "2.0.2",
+    "precision": "FP32 model and inputs; CUDA FP16 autocast; raw logits saved as FP32",
+    "provider_allocation": "root records whole actual allocation separately",
+    "python": "3.12.13",
+    "torch": "2.10.0+cu128",
+    "used_devices": 1
+  },
+  "feature_version": "v6-step28000-single-view-raw-logits-f32-v1",
+  "historical_ranker_cache_reconstructed": false,
+  "limits": {
+    "native_rss_bytes": 21474836480,
+    "output_bytes": 3221225472,
+    "torch_allocated_gpu_bytes": 13958643712,
+    "wall_seconds": 1800
+  },
+  "model_training_performed": false,
+  "native_process_peak_rss_bytes": 4321251328,
+  "official_score": null,
+  "outputs": {
+    "canary_gate.json": {
+      "bytes": 1095,
+      "sha256": "02322b1027dbaafeae121abc4dc57503380f08d410194d2724082dfa0e8557f5"
+    },
+    "completion_bitmap.npy": {
+      "bytes": 13707,
+      "sha256": "88553fef8516e0ed12df723f07bdd2295d37caca1646ed3faef038697108f4d6"
+    },
+    "fp_bit_indices.npy": {
+      "bytes": 83288,
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "positive_pool_indices.npy": {
+      "bytes": 108760,
+      "sha256": "1847e2b849fd16aedf2b6687380ebf9ddb6f873146df71a16a7a3ac40e68cb04"
+    },
+    "query_logits.npy": {
+      "bytes": 564614948,
+      "sha256": "5d86c23e8dac62bd77eac1774385697d40fef9f6f7b072f2dd3198171f196025"
+    },
+    "ranker_cache.npz": {
+      "bytes": 583561595,
+      "sha256": "d0f0bb9afc6772f6da63f657ea9c4f84ae39a9c3a5a12bd8c183051bf9b239e8"
+    },
+    "source_rows.npy": {
+      "bytes": 108760,
+      "sha256": "e9908872455cb9079cbb51d410dbf022d0e14c03df2e9c2a7fc3ab0ad060500a"
+    },
+    "spectrum_indices.npy": {
+      "bytes": 108760,
+      "sha256": "ec7299b6e5dbc30d32270b3b952cf6f0c9e4a5d2919a585f005f3f1994ab1fe5"
+    },
+    "structure_indices.npy": {
+      "bytes": 108760,
+      "sha256": "600e5b6d56cfc4884b51ad6ea2dd31c3030d393f43a77d44de5140a147c9b168"
+    },
+    "structure_keys.npy": {
+      "bytes": 760552,
+      "sha256": "b5b2db064052c00cb616000a0f4f7b92b38b6455c6e199fd6bdf2fe38e5728b8"
+    },
+    "truth_fp_packed.npy": {
+      "bytes": 17652828,
+      "sha256": "ca8c7fae1e457c8e40a3bbc709c44cd4d1259b7bc429cbc002c3ffaa9e029789"
+    }
+  },
+  "public_inputs": {
+    "bank": "prvsiyan/casmi26-full-fingerprint-inputs/versions/1",
+    "checkpoint": "prvsiyan/casmi26-v6-structure-uniform-checkpoint/versions/1",
+    "spectra": "prvsiyan/casmi26-spec-fp/versions/1"
+  },
+  "role2_or_role3_queries_used": false,
+  "role_table_sha256": "4d7b366293225a1ae67dfc0306480129b9ac1351a6d8581f0be40a269bdaff86",
+  "schema": "casmi-v6-reserved-ranker-logits/1",
+  "scope": "new raw FP logits and exact public training joins; no score/ranker/full feature pipeline claim",
+  "seconds": 44.874113170000015,
+  "seed": 20261019,
+  "source_sha256": {
+    "fpmodel.py": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76",
+    "structure_uniform_sampler.py": "d2edd84f6db5d0d9138b6576ccda94b6f322e04424fe7c2c2db448f045421ea6",
+    "train_fp4.py": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0",
+    "train_full_fingerprint.py": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e"
+  },
+  "split": {
+    "canonical_group_overlap_audited": false,
+    "checkpoint_selection_role": "role1 even; may share metric-equivalence groups with role1 odd",
+    "optimizer_query_role": 0,
+    "qualification": "reserved raw-structure queries excluded from V6 optimizer; not claimed clean group OOF",
+    "queries": 13579,
+    "query_role": 1,
+    "query_trainer_structure_index_parity": "odd",
+    "ranker_fit_performed": false,
+    "reason_no_ranker_fit": "group-disjoint ranker train/validation audit is not in these public input artifacts",
+    "representative": "lowest original cached spectrum index per eligible structure"
+  },
+  "status": "COMPLETE_RESERVED_RANKER_CACHE",
+  "torch_peak_allocated_bytes": 1369720832
+}

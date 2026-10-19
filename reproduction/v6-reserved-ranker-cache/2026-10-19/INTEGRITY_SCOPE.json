@@ -1,0 +1,27 @@
+{
+  "current_version": 7,
+  "native_run_id": 359867655,
+  "source_sha256": "de68bd81c5d5c702c874035072ae0fec53fc648bdfed83ed98991792c641db36",
+  "source_bytes": 159732,
+  "complete_query_rows": 13579,
+  "raw_logits_all_finite": true,
+  "bitmap_all_complete": true,
+  "independent_public_train_and_pool_key_joins_match": true,
+  "roles_scope": "odd raw structure eligibility plus exact bound producer/decoded role SHA; independent role-array decode not repeated",
+  "precision": "FP32 model and inputs; CUDA FP16 autocast; raw logits saved as FP32",
+  "npz_duplicate_downloaded": false,
+  "npz_independently_rehashed": false,
+  "npz_native_builder_certificate": {
+    "bytes": 583561595,
+    "sha256": "d0f0bb9afc6772f6da63f657ea9c4f84ae39a9c3a5a12bd8c183051bf9b239e8"
+  },
+  "npz_scope": "exact native builder verified complete NPZ reload parity/hash; duplicate bytes not acquired or independently rehashed",
+  "model_loaded": false,
+  "gpu_used": false,
+  "assay_repeated": false,
+  "metrics_computed": false,
+  "status": "ACTUAL_NATIVE_NUMERIC_OUTPUTS_VERIFIED",
+  "independent_peer_receipt_sha256": "39aad3bd4d30d8eed716c71f5a508b37b6603f40f4bd21b20ecabbc7ecb0e2aa",
+  "all_native_urls_bound_to": 359867655,
+  "before_after_exact_v7_source_full17_complete": true
+}

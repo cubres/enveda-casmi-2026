@@ -1,0 +1,10 @@
+{
+  "status": "PASS_CHILD_EXIT_AND_CLEANUP",
+  "child_returncode": 0,
+  "child_process_group_clean": true,
+  "timeout": false,
+  "seconds": 48.32381817700002,
+  "cache_builder_sha256": "984c4f13126f5eb9a13f28f43902299ee16161b3c17f76b09baefb8167a3cd88",
+  "official_score": null,
+  "submission_performed": false
+}
