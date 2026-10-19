@@ -1,0 +1,157 @@
+{
+  "all_18_other_original_payloads_byte_identical": true,
+  "changed_original_payloads_only": [
+    "README.md",
+    "REPRODUCE.md"
+  ],
+  "exact_executed_core_sha256": "0adb6e45dfa947d556c3918192329dd9bd051d0c6bbd02e262da74e14f32b1d8",
+  "files": {
+    "DATA-AND-WEIGHTS.md": {
+      "bytes": 1210,
+      "sha256": "f2d2897494c8f7312d5345fc3a441b5faf528237f09910d8873df271182b6fee"
+    },
+    "LICENSE-SOURCE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "NOTICE.md": {
+      "bytes": 1106,
+      "sha256": "61bb74c956fe396df8ae07560d83460d5f677bd0663f53784b1772533f3cfe7a"
+    },
+    "PUBLIC_INPUT_PINS.json": {
+      "bytes": 7920,
+      "sha256": "08c6a2952af01edf127594b377e3fee7797fc5484f76f96cc5ac4ffe755aae2f"
+    },
+    "PUBLIC_RESULT.json": {
+      "bytes": 3247,
+      "sha256": "ea39ef47cafbee0c3597cb22023b24723f577f88e62e4f341557981435b7fa67"
+    },
+    "README.md": {
+      "bytes": 3736,
+      "sha256": "e1e27221c14b9cf71abf7ab78767c358234fca6a6c1792f10a9bb546bf906777"
+    },
+    "REPRODUCE.md": {
+      "bytes": 3991,
+      "sha256": "408e1456a2b1a65b75d9a53fb0a8b11c06774b7dd7e3fb618491cc7b28ab858f"
+    },
+    "build_public_inputs.py": {
+      "bytes": 4201,
+      "sha256": "2461754da32c926f5b473b8a344336362c7feb5569e7fd3e2f03407a8699dbd6"
+    },
+    "figures/local_effect_size.png": {
+      "bytes": 118288,
+      "sha256": "0e5c28d1cc0ec6bf889955117797896f6bf3adc787007e32328a71e0c8934198"
+    },
+    "figures/local_effect_size.svg": {
+      "bytes": 15375,
+      "sha256": "74b177054c4b974d8590e3c45d056da7182ec6d6edfe405a171a5947a3ba0a66"
+    },
+    "plot_effect_size.py": {
+      "bytes": 3598,
+      "sha256": "304ba17a23c042fe0989c4de2bab358bc39b7071fe7dc74d55d40a1abfd44010"
+    },
+    "requirements-cpu.txt": {
+      "bytes": 77,
+      "sha256": "5293815c1d81295bf058af8eb098ac33cd8119cecb7ec84288c46239a5be0c62"
+    },
+    "results/group_rr.npy": {
+      "bytes": 42528,
+      "sha256": "2f33c3ff322ce07556065a9c7584f5a0047fe32e0d027c4111edb44b9fb813cb"
+    },
+    "results/per_query_rr.npy": {
+      "bytes": 42576,
+      "sha256": "8c61170d65df36300a8a0affcc2dc3ec070bf153691b2aa3602071764ca619d5"
+    },
+    "source/SPEC_INPUT_HEADER_METADATA_ONLY.json": {
+      "bytes": 2823,
+      "sha256": "4c8db4e46b0bceef8bcf80310d09e371988501ea5d35c1f208dd2ccc3db5a8d4"
+    },
+    "source/fpmodel.py": {
+      "bytes": 5158,
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76"
+    },
+    "source/inputs_only.py": {
+      "bytes": 6407,
+      "sha256": "e21b232936e63236241fb28534e1a24a41056a161d4dba41b7a8e056688b0316"
+    },
+    "source/metric_distinct.py": {
+      "bytes": 2760,
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+    },
+    "source/neutral_mass_public_source.py": {
+      "bytes": 38585,
+      "sha256": "612700a8a5caa8b3711a332a8894cbbf162821eca53b3e79d839e5aa29aca487"
+    },
+    "source/train_fp4.py": {
+      "bytes": 5977,
+      "sha256": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0"
+    },
+    "source/train_full_fingerprint.py": {
+      "bytes": 16064,
+      "sha256": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e"
+    },
+    "source/v9_cpu_fixedblend_schema_successor.py": {
+      "bytes": 22329,
+      "sha256": "0adb6e45dfa947d556c3918192329dd9bd051d0c6bbd02e262da74e14f32b1d8"
+    },
+    "verify_saved_result.py": {
+      "bytes": 1651,
+      "sha256": "bb9cf00dca99b33d60efa6af640f8e164e44a89ba22024620ec04b723f305125"
+    }
+  },
+  "independent_completed_output_review_sha256": "126a190e69c4cde0603a771a3c0b81d26b9480585b1311f92990af8f49c6a4f0",
+  "independent_preexecution_public_source_review_sha256": "2c57c2191ebe33aa47c7ff54593771172d84c4db40d96d2d5523026d7fb294f5",
+  "native_serving_qualified": false,
+  "official_score": null,
+  "payload_bytes_excluding_this_manifest": 360965,
+  "payload_file_count_excluding_this_manifest": 23,
+  "plot": {
+    "matplotlib": "3.11.0",
+    "no_bootstrap_model_or_alpha_execution": true,
+    "source": "PUBLIC_RESULT.json",
+    "type": "Display-only saved summary effect size and exact means",
+    "visual_inspection": "PNG rendered and inspected; labels, zero line, CI and exact saved mean table readable."
+  },
+  "portable_metadata_adapter": {
+    "canonical_groups": 2650,
+    "derived_arrays_byte_exact": {
+      "eligible_cache_rows": {
+        "bytes": 21352,
+        "sha256": "d9ca2b5c968a77a11ad3f4304c204934d523dad628509b8b6558c088853423cc"
+      },
+      "eligible_groups": {
+        "bytes": 679296,
+        "sha256": "14e9388906f461bdb2044a33ade5d6705c080d8d0b547f4f30e46db978fd870c"
+      },
+      "eligible_spectrum_indices": {
+        "bytes": 21352,
+        "sha256": "b59b5c8201ce6018df76e494294b30e417f5da5ae2257e9d7dd2d2fdf5db5d75"
+      },
+      "eligible_trainer_indices": {
+        "bytes": 21352,
+        "sha256": "6f737e3d250d61c5510df0fe4ad15e9f89de856fc2ca1bc0212476821bb9056c"
+      }
+    },
+    "exact_source_sha256": "2461754da32c926f5b473b8a344336362c7feb5569e7fd3e2f03407a8699dbd6",
+    "execution_count": 1,
+    "exit_code": 0,
+    "new_model_or_candidate_scoring_executed": false,
+    "no_private_historical_map_required": true,
+    "public_input_records": 29,
+    "queries": 2653,
+    "raw_operational_receipt_published": false
+  },
+  "preserved_proposal_manifest_sha256": "60c3126f4c515ff0ae34d8a685fad7dbaf4ede9fdd3818c34ca7cb412e06e9f8",
+  "privacy": "Only sanitized public source/results, RR arrays and display assets. No author paths, signed URLs, private map or raw operational captures.",
+  "repository_directory": "reproduction/v9-cpu-fixedblend/2026-10-20",
+  "saved_result_verifier": {
+    "exact_source_sha256": "bb9cf00dca99b33d60efa6af640f8e164e44a89ba22024620ec04b723f305125",
+    "execution_count": 1,
+    "exit_code": 0,
+    "scope": "Previously completed RR outputs and fixed seeded summary CI only; no new inference or alpha."
+  },
+  "schema": "casmi-v9-fixedblend-final-public-release/1",
+  "statistical_interpretation": "Small positive local estimate; 95% paired-group interval includes zero. CPUFP32 candidate versus cached CUDAFP16 control is a joint model/backend comparison.",
+  "status": "VERIFIED_COMPLETED_LOCAL_RESULT_AND_PUBLIC_METADATA_REPRODUCTION",
+  "target_repository": "cubres/enveda-casmi-2026"
+}

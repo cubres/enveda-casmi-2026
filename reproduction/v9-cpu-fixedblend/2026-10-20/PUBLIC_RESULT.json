@@ -1,0 +1,93 @@
+{
+  "V6_forward_calls": 0,
+  "artifacts": {
+    "canary_indices.npy": {
+      "bytes": 640,
+      "sha256": "595196bb53b2fb47daf870494c847e0d148af466b51b613aea57e54d1ca3ae66"
+    },
+    "completion_bitmap.npy": {
+      "bytes": 2781,
+      "sha256": "42f5d7f9680036138945299d6db94f96c7b17076bc22e95b30eb5e6ba7cd12bd"
+    },
+    "group_rr.npy": {
+      "bytes": 42528,
+      "sha256": "2f33c3ff322ce07556065a9c7584f5a0047fe32e0d027c4111edb44b9fb813cb"
+    },
+    "per_query_rr.npy": {
+      "bytes": 42576,
+      "sha256": "8c61170d65df36300a8a0affcc2dc3ec070bf153691b2aa3602071764ca619d5"
+    },
+    "ranked_group_ids.npy": {
+      "bytes": 33958528,
+      "sha256": "565392e7be223952e787e11598a2710506c5fc8213802f41e43ed0b84e1edf05"
+    },
+    "raw_logits.npy": {
+      "bytes": 110311868,
+      "sha256": "654dbbdf998861c019f5251cbfbc7ee7c69e04ebe5cb05a9283b767a1ea58354"
+    },
+    "window_bounds.npy": {
+      "bytes": 85024,
+      "sha256": "ca03bf3c7bdb4e553524e35b223ce2b0c73f57aebb34f09b56774a5a95a38f9a"
+    }
+  },
+  "assay_repeated": false,
+  "bootstrap_group_delta_95pct": [
+    -0.0007474392483178043,
+    0.001695832356261182
+  ],
+  "bootstrap_repetitions": 2000,
+  "candidate_rows": 314277,
+  "canonical_group_MRR25": [
+    0.6629186735412826,
+    0.6633885166632025
+  ],
+  "canonical_group_delta": 0.00046984312191988874,
+  "child_exit_code": 0,
+  "completed_child_receipt_sha256": "bb872c57738120f86f5d7aac0776ebc356ed6c74eead54c986bf22a498b44db6",
+  "completed_parent_receipt_sha256": "da4b898d9fa5e047ae246e685a53a98502f6f68c8eb70382e2cadd94e006e959",
+  "device": "cpu",
+  "empty_or_rejected_window_policy": "RR0 retained in all2653 denominator; no fallback/truth insertion/truncation",
+  "full_completion": true,
+  "groups": 2650,
+  "independent_completed_output_review_sha256": "126a190e69c4cde0603a771a3c0b81d26b9480585b1311f92990af8f49c6a4f0",
+  "maximum_aggregate_child_plus_parent_rss_bytes": 3476078592,
+  "native_serving_qualified": false,
+  "numpy": "2.2.6",
+  "official_score": null,
+  "optimizer_steps": 0,
+  "owned_group_closed": true,
+  "owned_parent_seconds": 213.36060695800188,
+  "peak_rss_bytes": 3435823104,
+  "precision_confound": "CUDAFP16-autocast V6 cache vs CPUFP32 V9; joint model/backend change, not isolated training ablation",
+  "raw_logits_shape": [
+    2653,
+    10395
+  ],
+  "rdkit": "2026.03.3",
+  "role2_or3_forward_calls": 0,
+  "rows": 2653,
+  "schema": "casmi-v9-fixed90-10-actual-public-result/1",
+  "score_ties": [
+    1412,
+    1412
+  ],
+  "seconds": 212.75719112500155,
+  "source_observations": "Exact executed core included unchanged. Independent output-only review recomputed metrics and seeded bootstrap from completed RR; no inference rerun or additional alpha.",
+  "source_sha256": "0adb6e45dfa947d556c3918192329dd9bd051d0c6bbd02e262da74e14f32b1d8",
+  "statistical_interpretation": "Small positive local estimate; 95% paired-group interval includes zero. No established improvement or official-score claim.",
+  "status": "COMPLETE_NEW_V9_FIXED_BLEND_CPU_MEASUREMENT",
+  "threads": 2,
+  "torch": "2.8.0",
+  "unconditional_query_MRR25": [
+    0.6630171446982289,
+    0.6634864565237424
+  ],
+  "weights": [
+    0.9,
+    0.1
+  ],
+  "window_status_counts": {
+    "0": 2650,
+    "1": 3
+  }
+}

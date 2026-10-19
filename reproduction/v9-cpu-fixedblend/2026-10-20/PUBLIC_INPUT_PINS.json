@@ -1,0 +1,284 @@
+{
+  "files": {
+    "eligible_cache_rows": {
+      "bytes": 21352,
+      "location": [
+        "derived",
+        "eligible_cache_query_rows.npy"
+      ],
+      "sha256": "d9ca2b5c968a77a11ad3f4304c204934d523dad628509b8b6558c088853423cc"
+    },
+    "eligible_groups": {
+      "bytes": 679296,
+      "location": [
+        "derived",
+        "eligible_canonical_group_ids.npy"
+      ],
+      "sha256": "14e9388906f461bdb2044a33ade5d6705c080d8d0b547f4f30e46db978fd870c"
+    },
+    "eligible_spectrum_indices": {
+      "bytes": 21352,
+      "location": [
+        "derived",
+        "eligible_spectrum_indices.npy"
+      ],
+      "sha256": "b59b5c8201ce6018df76e494294b30e417f5da5ae2257e9d7dd2d2fdf5db5d75"
+    },
+    "eligible_trainer_indices": {
+      "bytes": 21352,
+      "location": [
+        "derived",
+        "eligible_trainer_structure_indices.npy"
+      ],
+      "sha256": "6f737e3d250d61c5510df0fe4ad15e9f89de856fc2ca1bc0212476821bb9056c"
+    },
+    "fp_bits": {
+      "bytes": 83288,
+      "location": [
+        "bank",
+        "fp_bits.npy"
+      ],
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "fp_meta": {
+      "bytes": 17095875,
+      "location": [
+        "bank",
+        "fp_meta.pkl"
+      ],
+      "sha256": "88411e98cec6f862f7b121dbc27b807e5e18782416219fe2b11566deb3254132"
+    },
+    "fpmodel": {
+      "bytes": 5158,
+      "location": [
+        "source",
+        "fpmodel.py"
+      ],
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76"
+    },
+    "input_helper": {
+      "bytes": 6407,
+      "location": [
+        "source",
+        "inputs_only.py"
+      ],
+      "sha256": "e21b232936e63236241fb28534e1a24a41056a161d4dba41b7a8e056688b0316"
+    },
+    "mass_source": {
+      "bytes": 38585,
+      "location": [
+        "source",
+        "neutral_mass_public_source.py"
+      ],
+      "sha256": "612700a8a5caa8b3711a332a8894cbbf162821eca53b3e79d839e5aa29aca487"
+    },
+    "metric_source": {
+      "bytes": 2760,
+      "location": [
+        "source",
+        "metric_distinct.py"
+      ],
+      "sha256": "b4c0bbbafca0d821d872733d28f39518f41be53004970a9eeb725aef94a47b4f"
+    },
+    "pool_fp": {
+      "bytes": 925216628,
+      "location": [
+        "bank",
+        "pool_fp.npy"
+      ],
+      "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+    },
+    "pool_mass": {
+      "bytes": 5693768,
+      "location": [
+        "bank",
+        "pool_mass.npy"
+      ],
+      "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+    },
+    "pool_meta": {
+      "bytes": 64843052,
+      "location": [
+        "bank",
+        "pool_meta.pkl"
+      ],
+      "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+    },
+    "public_split_receipt": {
+      "bytes": 9240,
+      "location": [
+        "split",
+        "GROUP_AUDIT_RECEIPT_PUBLIC.json"
+      ],
+      "sha256": "3776b5bd8a748944e6b8d91105be5879e25acdcd32672ec95752fd420a010eba"
+    },
+    "role01_groups": {
+      "bytes": 63148672,
+      "location": [
+        "split",
+        "role01_canonical_group_ids.npy"
+      ],
+      "sha256": "680232954b7ffdd70e36d3fe6c57bdd3ca2b54d1308602ffb265225352253884"
+    },
+    "role01_indices": {
+      "bytes": 1973520,
+      "location": [
+        "split",
+        "role01_trainer_structure_indices.npy"
+      ],
+      "sha256": "f0f7046c107d8f2641e0ff93706a38e0dd78f0ffbf8c27541699cf5300b2220c"
+    },
+    "spec": {
+      "bytes": 920788910,
+      "location": [
+        "spectra",
+        ""
+      ],
+      "sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500"
+    },
+    "spec_header_receipt": {
+      "bytes": 2823,
+      "location": [
+        "source",
+        "SPEC_INPUT_HEADER_METADATA_ONLY.json"
+      ],
+      "sha256": "4c8db4e46b0bceef8bcf80310d09e371988501ea5d35c1f208dd2ccc3db5a8d4"
+    },
+    "train_fp4": {
+      "bytes": 5977,
+      "location": [
+        "source",
+        "train_fp4.py"
+      ],
+      "sha256": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0"
+    },
+    "train_full_fingerprint": {
+      "bytes": 16064,
+      "location": [
+        "source",
+        "train_full_fingerprint.py"
+      ],
+      "sha256": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e"
+    },
+    "v7_completion": {
+      "bytes": 13707,
+      "location": [
+        "cache",
+        "completion_bitmap.npy"
+      ],
+      "sha256": "88553fef8516e0ed12df723f07bdd2295d37caca1646ed3faef038697108f4d6"
+    },
+    "v7_fp_bits": {
+      "bytes": 83288,
+      "location": [
+        "cache",
+        "fp_bit_indices.npy"
+      ],
+      "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+    },
+    "v7_logits": {
+      "bytes": 564614948,
+      "location": [
+        "cache",
+        "query_logits.npy"
+      ],
+      "sha256": "5d86c23e8dac62bd77eac1774385697d40fef9f6f7b072f2dd3198171f196025"
+    },
+    "v7_manifest": {
+      "bytes": 6901,
+      "location": [
+        "cache",
+        "CACHE_MANIFEST.json"
+      ],
+      "sha256": "c1e086b6233c3178ec754e39bfd6aa2acdc8ed2ef6822f7e21d12dfc481b55b1"
+    },
+    "v7_sources": {
+      "bytes": 108760,
+      "location": [
+        "cache",
+        "source_rows.npy"
+      ],
+      "sha256": "e9908872455cb9079cbb51d410dbf022d0e14c03df2e9c2a7fc3ab0ad060500a"
+    },
+    "v7_spectra": {
+      "bytes": 108760,
+      "location": [
+        "cache",
+        "spectrum_indices.npy"
+      ],
+      "sha256": "ec7299b6e5dbc30d32270b3b952cf6f0c9e4a5d2919a585f005f3f1994ab1fe5"
+    },
+    "v7_structures": {
+      "bytes": 108760,
+      "location": [
+        "cache",
+        "structure_indices.npy"
+      ],
+      "sha256": "600e5b6d56cfc4884b51ad6ea2dd31c3030d393f43a77d44de5140a147c9b168"
+    },
+    "v9_checkpoint": {
+      "bytes": 197740262,
+      "location": [
+        "v9",
+        "complementary_full_model.pt"
+      ],
+      "sha256": "c1c7650411d507f395e3077e90db72a8b1d692493e91c7f13ba6f55e6359b286"
+    },
+    "v9_training_config": {
+      "bytes": 11314,
+      "location": [
+        "v9",
+        "training_config.json"
+      ],
+      "sha256": "4e766f7d2d9b17b809c1aece155be43e55e0eebe75cfe7e7a7adf030800c06a0"
+    }
+  },
+  "historical_private_map_needed_to_rebuild_public_test": false,
+  "original_public_development_mask_preserved": true,
+  "split_derivation_files": {
+    "cache_query_rows.npy": {
+      "bytes": 108224,
+      "sha256": "7f3b442fe4aafd89b4057221390c94eb2ef005c0d8086437984e9a9255f82a92"
+    },
+    "canonical_group_ids.npy": {
+      "bytes": 3459200,
+      "sha256": "445c1ee8b5bf6744c0a970643a037a20eb00b0fe6c32586349208097de9e4288"
+    },
+    "split_train0_development1.npy": {
+      "bytes": 13640,
+      "sha256": "414b7bd6f4227b0459bafb901eeb1a191fce1c1b46fa1fb7526789248482a57b"
+    },
+    "trainer_structure_indices.npy": {
+      "bytes": 108224,
+      "sha256": "4a1399ef1ef8abc42b5c0d56c3b8143c460006df1c9ea83ed5f5df659b59ad56"
+    }
+  },
+  "status": "PUBLIC_PORTABLE_INPUT_BINDINGS_SOURCE_ADAPTER_NOT_EXECUTED",
+  "versions": {
+    "public_full_bank": {
+      "dataset_id": 12350648,
+      "version": 1
+    },
+    "public_group_split": {
+      "dataset_id": 12716429,
+      "github_commit": "77dba43f7c7e887b97048e3d1c8586cb178b5ccb",
+      "version": 1
+    },
+    "public_spectra": {
+      "dataset_id": 12036447,
+      "version": 1
+    },
+    "v7_control": {
+      "logits_sha256": "5d86c23e8dac62bd77eac1774385697d40fef9f6f7b072f2dd3198171f196025",
+      "native": 359867655,
+      "url": "https://www.kaggle.com/code/prvsiyan/casmi-fp-trainer-merged-spectra?scriptVersionId=359867655",
+      "version": 7
+    },
+    "v9": {
+      "checkpoint_sha256": "c1c7650411d507f395e3077e90db72a8b1d692493e91c7f13ba6f55e6359b286",
+      "native": 360180749,
+      "url": "https://www.kaggle.com/code/prvsiyan/casmi-fp-trainer-merged-spectra?scriptVersionId=360180749",
+      "version": 9
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "data_scope": "Wholefile rawbyteSHA then only10NPYheaders usingstdlibzip/struct/ast; no arraypayload, peakvalues, fingerprints, predictions, model, metric, chemistry or assay.",
+  "file_bytes": 920788910,
+  "member_headers": {
+    "ad": {
+      "descr": "<i2",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        2334531
+      ]
+    },
+    "ce": {
+      "descr": "<f4",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        2334531
+      ]
+    },
+    "ins": {
+      "descr": "|i1",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        2334531
+      ]
+    },
+    "it": {
+      "descr": "<f4",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        104592893
+      ]
+    },
+    "mode": {
+      "descr": "<f4",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        2334531
+      ]
+    },
+    "mz": {
+      "descr": "<f4",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        104592893
+      ]
+    },
+    "off": {
+      "descr": "<i8",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        2334532
+      ]
+    },
+    "prec": {
+      "descr": "<f4",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        2334531
+      ]
+    },
+    "six": {
+      "descr": "<i4",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        2334531
+      ]
+    },
+    "src": {
+      "descr": "<i8",
+      "fortran_order": false,
+      "header_bytes": 118,
+      "no_array_values_read": true,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        2334531
+      ]
+    }
+  },
+  "public_ref": "prvsiyan/casmi26-spec-fp/versions/1",
+  "scientific_packages_imported": false,
+  "sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500",
+  "status": "PASS_PINNED_PUBLIC_SPEC_INPUT_HEADERS_ONLY_NO_ARRAY_VALUES",
+  "utc": "2026-10-19T22:02:48.463547+00:00"
+}
