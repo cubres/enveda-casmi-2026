@@ -12,6 +12,10 @@ The [public V1 dataset](https://www.kaggle.com/datasets/prvsiyan/casmi26-v6-chec
 
 ![Verified checkpoint-disjoint split](reproduction/v6-checkpoint-disjoint-ranker-split/2026-10-19/split_flow.png)
 
+## Completed complementary training · 20 October
+
+The [V9 reproducibility release](reproduction/v9-complementary-training/2026-10-20/README.md) records 3,000 completed role-0 FPNet updates after a 64-update canary, with the exact source, public V1 inputs, recipe, runtime and independent CPU artifact checks. Its 197.7 MB checkpoint and 395.5 MB optimizer state remain in [the exact public V9 Output](https://www.kaggle.com/code/prvsiyan/casmi-fp-trainer-merged-spectra?scriptVersionId=360180749); version-specific download instructions and hashes prevent a silent latest-version substitution. Quality and serving remain unmeasured, and historical S2/M1/ranker-cache provenance gaps are still stated explicitly.
+
 ## Recovered training and preparation sources · 18 October
 
 The [reproducibility release](reproduction/legacy-v2/README.md) publishes the original spectrum preparation, FPNet, S2/M1 training recipes and `make_ranker3.py`, with checkpoint hashes, all 31 ranker feature definitions and runnable invented-data examples. Configured training limits and selected checkpoint steps are documented separately. Historical initialization was seeded late, and the exact producer of the retained ranker FP caches remains unresolved; this is a transparent source release with stated gaps, not a claim of complete historical weight reproduction.

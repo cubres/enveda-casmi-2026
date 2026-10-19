@@ -1,0 +1,49 @@
+{
+  "accuracy_claim": null,
+  "actual_optimizer_steps": 3000,
+  "assay_repeated": false,
+  "cache_promotability_reason": "New checkpoint has no raw-logit cache or distinct approved evaluation",
+  "cache_promotable": false,
+  "canary_steps": 64,
+  "checkpoint_selection": "final optimizer step only; no label-based selection",
+  "cuda_limit_bytes": 13958643712,
+  "final_parameter_sha256": "8b6a8d77f0323ec65f2cf96e34febdecbba782088ce49b366ede9866aed0d3d6",
+  "initial_parameter_sha256": "0218201c335e64ca9be423de43ccf2d9c073eddfa09131c999be14c91c8b6c8e",
+  "input_verification_seconds": 103.635,
+  "max_seconds": 2700,
+  "negative_candidates": "Original shared mass-filtered fingerprint pool; spectrum-role embargo applies to queries and positive labels",
+  "official_score": null,
+  "outputs": {
+    "complementary_full_model.pt": {
+      "bytes": 197740262,
+      "sha256": "c1c7650411d507f395e3077e90db72a8b1d692493e91c7f13ba6f55e6359b286"
+    },
+    "optimizer_state.pt": {
+      "bytes": 395501971,
+      "sha256": "1d2e957ab715b6de6a8f350586327f48a8050e88feb3938b6fd2c2099387a201"
+    },
+    "training_config.json": {
+      "bytes": 11314,
+      "sha256": "4e766f7d2d9b17b809c1aece155be43e55e0eebe75cfe7e7a7adf030800c06a0"
+    }
+  },
+  "peak_cuda_allocated_bytes": 3525609472,
+  "peak_cuda_reserved_bytes": 3877634048,
+  "peak_rss_bytes": 3115237376,
+  "phase": "serialization",
+  "requested_optimizer_steps": 3000,
+  "role0_optimizer_only": true,
+  "role1_spectrum_queries": 0,
+  "role2_spectrum_queries": 0,
+  "role3_spectrum_queries": 0,
+  "rss_limit_bytes": 21474836480,
+  "schema": "casmi-complementary-fp-runtime/1",
+  "seconds": 1736.957,
+  "serialization_reserve_seconds": 120,
+  "source_only_result_is_not_training_evidence": false,
+  "starting_checkpoint_bytes": 197739081,
+  "starting_checkpoint_sha256": "9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31",
+  "status": "COMPLETE_OPTIMIZER_TRAINING_NO_ACCURACY_CLAIM",
+  "training_run": true,
+  "validation_spectrum_queries": 0
+}

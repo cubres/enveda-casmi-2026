@@ -1,0 +1,80 @@
+{
+  "GPU_visibility": "Native profile T4x2; wrapper CUDA_VISIBLE_DEVICES=0, one visible device/RNG state. Do not infer billing from CUDA visibility.",
+  "account": "prvsiyan",
+  "artifact_distribution": "Large .pt artifacts and sampler arrays remain in exact native V9 output; they are not Git blobs in this directory.",
+  "independent_cpu_review_report_sha256": "8ea8ac604dbc99d203c6b14a9c713678fa90a251154e6d25db8f9bdb6de1967f",
+  "limits": {
+    "CUDA_bytes": 13958643712,
+    "RSS_bytes": 21474836480,
+    "driver_seconds": 2700,
+    "serialization_reserve_seconds": 120,
+    "wrapper_seconds": 3000
+  },
+  "model": {
+    "bytes": 197740262,
+    "continuation_optimizer_steps": 3000,
+    "d": 512,
+    "file": "complementary_full_model.pt",
+    "layers": 8,
+    "nbits": 10395,
+    "parameters": 49424027,
+    "parent_checkpoint_sha256": "9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31",
+    "parent_selected_step": 28000,
+    "sha256": "c1c7650411d507f395e3077e90db72a8b1d692493e91c7f13ba6f55e6359b286",
+    "state_entries": 111,
+    "trainable_tensors": 108
+  },
+  "native_run_id": 360180749,
+  "native_status": "COMPLETE",
+  "native_status_basis": "Exact native acquisition reports COMPLETE before and after, with 33 URLs bound to run 360180749; independent CPU content review validated all 33 hashes before and after. Input provenance and publication permission require separate admission.",
+  "observed": {
+    "CPU_review_peak_RSS_bytes": 916062208,
+    "CPU_review_seconds": 1.93690175,
+    "canary_continued_without_reset": true,
+    "canary_optimizer_steps": 64,
+    "completed_checkpoint_runtime_and_adamw_steps": 3000,
+    "driver_seconds": 1736.957,
+    "last_periodic_history_step": 2992,
+    "periodic_history_records": 187,
+    "wrapper_exit0_process_group_clean": true,
+    "wrapper_seconds": 1742.612875877
+  },
+  "optimizer_state": {
+    "bytes": 395501971,
+    "every_parameter_step": 3000,
+    "file": "optimizer_state.pt",
+    "parameter_states": 108,
+    "sha256": "1d2e957ab715b6de6a8f350586327f48a8050e88feb3938b6fd2c2099387a201"
+  },
+  "permissions": "See LICENSE-DERIVED-PARAMETERS.md for the new parameter/state permission; original parent, source and input notices remain in source/. Apache 2.0 source permission does not relicense input data.",
+  "public_notebook": "https://www.kaggle.com/code/prvsiyan/casmi-fp-trainer-merged-spectra?scriptVersionId=360180749",
+  "public_version": 9,
+  "publication_status": "SOURCE_RELEASE_WITH_NATIVE_ARTIFACT_LINKS",
+  "recipe": {
+    "batch_size": 256,
+    "learning_rate": 2e-05,
+    "merge_probability": 0.5,
+    "micro_batch_size": 64,
+    "optimizer": "Fresh AdamW; no old optimizer state is loaded.",
+    "role0_only": true,
+    "seed": 20261019,
+    "selection": "Final step only; no evaluated checkpoint selection.",
+    "warmup_steps": 128
+  },
+  "reviewer_source_sha256": "0ca466e36df02dca7c9fc160d775574086ecbb618867ffc948b557d8106e40df",
+  "root_acquisition_receipt_sha256": "149ddd25be4e9f69b532d1f42441855e1c9c8101925942adb48288eb8ab84875",
+  "schema": "casmi-v9-complementary-training-public-result/1",
+  "scientific_limits": {
+    "accuracy_or_MRR": null,
+    "bit_identical_CUDA_rerun_established": false,
+    "completed_assay_repeated": false,
+    "no_role1_2_3_spectrum_queries": true,
+    "no_validation": true,
+    "official_score": null,
+    "raw_logit_cache_qualified": false,
+    "role_membership_independently_reconstructed_from_output_arrays": false,
+    "sampler_grouped_spectrum_hash_independently_reconstructed": false,
+    "serving_or_blend_qualified": false
+  },
+  "status": "COMPLETED_UNEVALUATED_TRAINING_ARTIFACT"
+}

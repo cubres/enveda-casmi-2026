@@ -1,0 +1,22 @@
+{
+  "schema": "casmi-complementary-fp-permission-scope/1",
+  "new_source": "train_complementary_fp.py is uploader-authored continuation orchestration under Apache-2.0 within LICENSE-SOURCE scope",
+  "original_source": "Four byte-identical original selected-V6 Python modules retain NOTICE.md and LICENSE-SOURCE; conceptual attribution in fpmodel.py is preserved",
+  "starting_parameters": "Exact original checkpoint 9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31 is covered only by LICENSE-WEIGHTS.md scoped parameter permission",
+  "derived_parameters": "A completed derivative must retain original checkpoint/source/input-provenance attribution; it must not be represented as the original SHA-bound checkpoint",
+  "optimizer_state": "New role-0 optimizer state is an experiment artifact; no separate accuracy or eligibility implication",
+  "data": {
+    "bank": "prvsiyan/casmi26-full-fingerprint-inputs",
+    "spectra": "prvsiyan/casmi26-spec-fp",
+    "redistribution_grant": false,
+    "qualification": "Prepared spectra, molecular records, fingerprints and role assignments retain original terms; public source/weight permission does not establish data redistribution or competition eligibility",
+    "published_in_this_source_packet": false
+  },
+  "third_party_dependencies": "NumPy, PyTorch, CUDA and Kaggle image retain their own terms",
+  "notebook_mutations_by_this_source_packet": false,
+  "assay_repeated": false,
+  "accuracy_claim": null,
+  "official_score": null,
+  "cache_promotable": false,
+  "cache_promotability_reason": "New complementary-view hypothesis requires a separately reviewed raw-logit cache and distinct approved evaluation before promotion; no role-1/2/3 spectrum query is run here"
+}

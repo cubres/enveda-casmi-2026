@@ -1,0 +1,48 @@
+{
+  "schema": "casmi-complementary-original-source-binding/1",
+  "files": {
+    "fpmodel.py": {
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76",
+      "bytes": 5158,
+      "source_path": "research/codex_casmi_v6_checkpoint_public_release_20261018/dataset/fpmodel.py"
+    },
+    "train_fp4.py": {
+      "sha256": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0",
+      "bytes": 5977,
+      "source_path": "research/codex_casmi_v6_checkpoint_public_release_20261018/dataset/train_fp4.py"
+    },
+    "structure_uniform_sampler.py": {
+      "sha256": "d2edd84f6db5d0d9138b6576ccda94b6f322e04424fe7c2c2db448f045421ea6",
+      "bytes": 4511,
+      "source_path": "research/codex_casmi_v6_checkpoint_public_release_20261018/dataset/structure_uniform_sampler.py"
+    },
+    "train_full_fingerprint.py": {
+      "sha256": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e",
+      "bytes": 16064,
+      "source_path": "research/codex_casmi_v6_checkpoint_public_release_20261018/dataset/train_full_fingerprint.py"
+    },
+    "TRAINING_CONTRACT.json": {
+      "sha256": "092a0ad1b46dbdf369a78d70fde409395eb3db53f0027da6240bc62e0c8f75f6",
+      "bytes": 9549,
+      "source_path": "research/codex_casmi_v6_checkpoint_public_release_20261018/dataset/TRAINING_CONTRACT.json"
+    },
+    "LICENSE-SOURCE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "source_path": "research/codex_casmi_v6_checkpoint_public_release_20261018/dataset/LICENSE-SOURCE"
+    },
+    "NOTICE.md": {
+      "sha256": "5cb3c2f31322b630c373375f7d1f6d87b4b91204f721634bd3733532a81eaeff",
+      "bytes": 1416,
+      "source_path": "research/codex_casmi_v6_checkpoint_public_release_20261018/dataset/NOTICE.md"
+    },
+    "LICENSE-WEIGHTS.md": {
+      "sha256": "e4d40b59c2414619baf7a1c06c8687740c5363387a9eeae76c34c0778a34380f",
+      "bytes": 1673,
+      "source_path": "research/codex_casmi_v6_checkpoint_public_release_20261018/dataset/LICENSE-WEIGHTS.md"
+    }
+  },
+  "original_files_modified": false,
+  "scientific_modules_imported": false,
+  "training_run": false
+}

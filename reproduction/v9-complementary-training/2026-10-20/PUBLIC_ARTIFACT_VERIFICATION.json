@@ -1,0 +1,63 @@
+{
+  "CPU_reader_versions": {
+    "numpy": "2.0.2",
+    "torch": "2.8.0"
+  },
+  "acquired_native_bytes": 596103854,
+  "acquired_native_files": 33,
+  "actual_optimizer_updates": 3000,
+  "admission_limit": "This content review does not replace separate public-input provenance, component permission or competition eligibility review. It does not retroactively resolve historical legacy S2/M1 or retained ranker-cache provenance gaps.",
+  "all_33_native_files_hashes_unchanged_before_after": true,
+  "assay_repeated": false,
+  "bit_identical_CUDA_retraining_proved": false,
+  "content_contract_passed": true,
+  "driver_seconds": 1736.957,
+  "exact_version_url": "https://www.kaggle.com/code/prvsiyan/casmi-fp-trainer-merged-spectra?scriptVersionId=360180749",
+  "finite_tensor_and_dtype_contract_checked": true,
+  "full_private_receipt_sha256": "8ea8ac604dbc99d203c6b14a9c713678fa90a251154e6d25db8f9bdb6de1967f",
+  "history_records": 187,
+  "independent_acquisition_report_peer_sha256": "3924a407e658e3a39dfe70b16273db4bbafd389f29c47fe632868576f722f3c7",
+  "independently_reconstructed_grouped_spectrum_hash": false,
+  "independently_reconstructed_role_membership": false,
+  "last_periodic_history_step": 2992,
+  "model_forward_training_or_CUDA_execution": false,
+  "model_parameter_elements": 49424027,
+  "model_state_entries": 111,
+  "native_run_id": 360180749,
+  "new_accuracy_or_score": null,
+  "observed_utc": "2026-10-19T21:22:23.133190+00:00",
+  "optimizer_review": {
+    "actual_cuda_rng_restore_performed": false,
+    "cpu_rng_bytes": 5056,
+    "cuda_rng_bytes": 16,
+    "final_lr": 4.000058630947279e-07,
+    "grad_scaler": {
+      "_growth_tracker": 1000,
+      "backoff_factor": 0.5,
+      "growth_factor": 2.0,
+      "growth_interval": 2000,
+      "scale": 2048.0
+    },
+    "optimizer_parameter_states": 108,
+    "visible_cuda_rng_states": 1
+  },
+  "peak_CPU_RSS_bytes": 916062208,
+  "public_version": 9,
+  "review_seconds": 1.93690175,
+  "root_exact_native_acquisition_receipt_sha256": "149ddd25be4e9f69b532d1f42441855e1c9c8101925942adb48288eb8ab84875",
+  "safe_loader_extra_globals": {
+    "model": [],
+    "optimizer": [
+      "torch.torch_version.TorchVersion"
+    ]
+  },
+  "schema": "casmi-v9-sanitized-completed-artifact-verification/1",
+  "serving_or_blend_qualified": false,
+  "source_and_original_notices_byte_exact": true,
+  "status": "PASS_CPU_CONTENT_REVIEW_NO_QUALITY_OR_ELIGIBILITY_CLAIM",
+  "trainable_parameter_tensors": 108,
+  "validator_sha256": "0ca466e36df02dca7c9fc160d775574086ecbb618867ffc948b557d8106e40df",
+  "weights_only_loader": true,
+  "wrapper_exit0_and_clean": true,
+  "wrapper_seconds": 1742.612875877
+}

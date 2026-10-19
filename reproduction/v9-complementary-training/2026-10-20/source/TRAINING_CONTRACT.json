@@ -1,0 +1,274 @@
+{
+  "checkpoint_validation": {
+    "baseline_source_sha256": "d844db07e729768ff1f47a3651dd7861295f0eaceda801f9714c9105bc2e53c0",
+    "checkpoint_structures": 2048,
+    "decoy_seed": 20261005,
+    "decoys": 63,
+    "file_sha256": {
+      "checkpoint_decoy_indices.npy": "2714697b0d21c956b883e5d4860bd67cae4d7b5a2f2a689edd198321ba3647ea",
+      "checkpoint_spectrum_ids.npy": "b16cc570c4db9716cfe4cb8a19efb73185b5f663c136d3ed75e2c2c13cc9112a"
+    },
+    "role": "role 1 with even trainer fp_meta structure index",
+    "spectrum_selection_seed": 20261004
+  },
+  "environment": {
+    "device_allocation": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "environment_variables": {
+      "MKL_NUM_THREADS": "2",
+      "OMP_NUM_THREADS": "2",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONUNBUFFERED": "1"
+    },
+    "exact_package_freeze_available": false,
+    "image_pinned_and_post_metadata_verified": true,
+    "immutable_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "no_dependency_install_in_selected_training_cell": true,
+    "numpy_version_logged_at_training": null,
+    "package_dependencies": [
+      "numpy",
+      "torch"
+    ],
+    "python_version_logged_at_training": null,
+    "torch_version_logged_at_training": null,
+    "used_device": "CUDA_VISIBLE_DEVICES=0",
+    "used_workers": 1
+  },
+  "execution_for_this_release": {
+    "assay_repeated": false,
+    "data_or_role_array_read": false,
+    "model_loaded": false,
+    "scientific_modules_imported": false,
+    "source_hash_and_compile_only": true,
+    "training_run": false
+  },
+  "historical_argv": {
+    "executable": "sys.executable; exact executable path not separately logged",
+    "full_trainer": [
+      "-u",
+      "/kaggle/working/casmi_structure_uniform_20261014/train_full_fingerprint.py",
+      "--data",
+      "/kaggle/input/casmi26-full-fingerprint-inputs",
+      "--spec",
+      "/kaggle/input/casmi26-spec-fp/spec.npz",
+      "--out",
+      "/kaggle/working/casmi_structure_uniform_20261014/training/full_spectrum",
+      "--seed",
+      "20261003",
+      "--merge-probability",
+      "0",
+      "--steps",
+      "30000",
+      "--max-minutes",
+      "330",
+      "--batch-size",
+      "256",
+      "--micro-batch-size",
+      "128",
+      "--layers",
+      "8",
+      "--validation-every",
+      "2000"
+    ],
+    "notebook_driver": [
+      "-u",
+      "/kaggle/working/casmi_structure_uniform_20261014/run_structure_uniform_single_view.py",
+      "--out",
+      "/kaggle/working/casmi_structure_uniform_20261014/training"
+    ],
+    "probe_checkpoint_continued": false,
+    "probe_trainer": [
+      "-u",
+      "/kaggle/working/casmi_structure_uniform_20261014/train_full_fingerprint.py",
+      "--data",
+      "/kaggle/input/casmi26-full-fingerprint-inputs",
+      "--spec",
+      "/kaggle/input/casmi26-spec-fp/spec.npz",
+      "--out",
+      "/kaggle/working/casmi_structure_uniform_20261014/training/probe_spectrum",
+      "--seed",
+      "20261003",
+      "--merge-probability",
+      "0",
+      "--steps",
+      "30000",
+      "--max-minutes",
+      "15",
+      "--batch-size",
+      "256",
+      "--micro-batch-size",
+      "128",
+      "--layers",
+      "8",
+      "--validation-every",
+      "2000",
+      "--probe-only"
+    ]
+  },
+  "historical_native_runtime": {
+    "actual_steps": 30000,
+    "best_checkpoint_mrr25": 0.7074749658368091,
+    "final_test_used": false,
+    "measured_device": "Tesla T4",
+    "median_step_seconds": 0.5068466909997369,
+    "nonfinite_steps": 0,
+    "peak_gpu_bytes": 5195437568,
+    "projected_30000_step_hours": 4.223722424997807,
+    "seconds": 15237.6,
+    "status": "COMPLETE_TRAINING",
+    "weight_bytes": 197739081,
+    "weight_sha256": "9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31"
+  },
+  "historical_probe_runtime": {
+    "actual_steps": 64,
+    "best_checkpoint_mrr25": null,
+    "final_test_used": false,
+    "measured_device": "Tesla T4",
+    "median_step_seconds": 0.4834739209999839,
+    "nonfinite_steps": 0,
+    "peak_gpu_bytes": 5195437568,
+    "projected_30000_step_hours": 4.028949341666532,
+    "seconds": 40.6,
+    "status": "PASS_PROBE"
+  },
+  "important_distinction": {
+    "baseline_trainer_sha256": "d844db07e729768ff1f47a3651dd7861295f0eaceda801f9714c9105bc2e53c0",
+    "selected_train_fp4_sha256": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0",
+    "selected_trainer_sha256": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e"
+  },
+  "inputs": {
+    "bank_dataset_ref": "prvsiyan/casmi26-full-fingerprint-inputs",
+    "bank_expected_mount": "/kaggle/input/casmi26-full-fingerprint-inputs",
+    "bank_files": {
+      "fp_bits.npy": {
+        "bytes": 83288,
+        "sha256": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6"
+      },
+      "fp_meta.pkl": {
+        "bytes": 17095875,
+        "sha256": "88411e98cec6f862f7b121dbc27b807e5e18782416219fe2b11566deb3254132"
+      },
+      "optimizer_bit_counts.npy": {
+        "bytes": 83384,
+        "sha256": "4d874c910de699a0fa030a40d6bcded08d78c236f44aeefe0101f2ac20122193"
+      },
+      "pool_fp.npy": {
+        "bytes": 925216628,
+        "sha256": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0"
+      },
+      "pool_mass.npy": {
+        "bytes": 5693768,
+        "sha256": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e"
+      },
+      "pool_meta.pkl": {
+        "bytes": 64843052,
+        "sha256": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324"
+      },
+      "roles_by_structure.b64": {
+        "bytes": 55913,
+        "sha256": "fe654a3f5f655df3897a344ca222e01a9f555a7dfd22a786e6cb32b126c76049"
+      }
+    },
+    "manifest_name": "FULL_FINGERPRINT_MANIFEST.json",
+    "manifest_sha256": "5b08ca4b830de1558be4ce568a10f0997b5fa2fe875a872dcd6a216f901fd9ef",
+    "preparation_and_data_release_qualification": "separate evidence; source release does not certify public availability or rights",
+    "spectra_bytes": 920788910,
+    "spectra_dataset_ref": "prvsiyan/casmi26-spec-fp",
+    "spectra_file": "spec.npz",
+    "spectra_sha256": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500"
+  },
+  "loss_optimizer": {
+    "autocast": "CUDA float16; loss/logits float32; GradScaler",
+    "betas": [
+      0.9,
+      0.98
+    ],
+    "gradient_clip_norm": 1.0,
+    "learning_rate": 0.0002,
+    "negative_sampler": "with replacement inside \u00b110ppm; original positive redirection; global with-replacement fallback if window size<=1",
+    "objective": "BCEWithLogits(full10395) + cross_entropy(positive-and-63-decoy centered fingerprint-dot-logits / sqrt(10395))",
+    "optimizer": "AdamW",
+    "schedule": "linear warmup then cosine to 2% of base rate",
+    "warmup_steps": 2000,
+    "weight_decay": 0.01
+  },
+  "model": {
+    "d": 512,
+    "dropout": 0.1,
+    "family": "FPNet",
+    "heads": 8,
+    "layers": 8,
+    "max_peaks": 128,
+    "nbits": 10395,
+    "parameter_count_source": "native training_recipe.json; corroborated by static architecture",
+    "parameters": 49424027,
+    "seed": 20261003
+  },
+  "native_fit": {
+    "historical_tpu_probe_enabled": false,
+    "native_id": 358388543,
+    "notebook_ref": "prvsiyan/casmi-fp-trainer-merged-spectra",
+    "outer_timeout_seconds": 22500,
+    "source_sha256": "6fc4f8604b987e3585d8cce7974cdf7e8f7cfcdb70c1a5e4edbf947a2dd007e8",
+    "training_cell_index": 5,
+    "training_cell_sha256": "38cf1161561afc82573992ee66fb89d63868847310ed05d66f40f91524b7dd97",
+    "version": 6
+  },
+  "official_score": null,
+  "sampler": {
+    "construction_consumes_rng": false,
+    "distribution": "256 distinct eligible role-0 structures uniformly without replacement; one eligible spectrum uniformly per structure",
+    "merge_probability": 0.0,
+    "optimizer_spectra": 1886521,
+    "optimizer_structures": 219140
+  },
+  "schema": "selected-casmi-v6-training-source-contract/1",
+  "selected_checkpoint": {
+    "body_hash_verified": true,
+    "bytes": 197739081,
+    "full_training_steps": 30000,
+    "name": "best_full_model.pt",
+    "relative_output": "training/full_spectrum/best_full_model.pt",
+    "selected_step": 28000,
+    "selection_metric": "fixed 2048-structure role-1-even sampled-63-decoy MRR@25; not official score",
+    "selection_mrr25": 0.7074749658368091,
+    "sha256": "9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31",
+    "training_rerun_performed_for_this_release": false
+  },
+  "source_files": {
+    "fpmodel.py": {
+      "bytes": 5158,
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76"
+    },
+    "run_structure_uniform_single_view.py": {
+      "bytes": 9333,
+      "sha256": "75846356fc0305397478dbeaa0b1d011ec86c66b6cd8e556e19723ea25d53409"
+    },
+    "structure_uniform_sampler.py": {
+      "bytes": 4511,
+      "sha256": "d2edd84f6db5d0d9138b6576ccda94b6f322e04424fe7c2c2db448f045421ea6"
+    },
+    "train_fp4.py": {
+      "bytes": 5977,
+      "sha256": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0"
+    },
+    "train_full_fingerprint.py": {
+      "bytes": 16064,
+      "sha256": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e"
+    }
+  },
+  "status": "EXACT_ORIGINAL_CODE_AND_HISTORICAL_RECEIPT_BINDING_NOT_NEW_EXECUTION",
+  "training": {
+    "batch_size": 256,
+    "layers": 8,
+    "max_minutes": 330.0,
+    "merge_probability": 0.0,
+    "micro_batch_size": 128,
+    "probe_only": false,
+    "seed": 20261003,
+    "steps": 30000,
+    "validation_every": 2000
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "input_file_hashes": "training_config.json:input_sha256; original historical preparation/parent contract in source/TRAINING_CONTRACT.json",
+  "inputs": [
+    {
+      "id": 12350648,
+      "license_selection": "Other (specified in description)",
+      "metadata_evidence_sha256": "9cb7e151b0c95a1e0286d185f7a34b2b670fac54681180e712560ecd9fb83e64",
+      "public_observed": true,
+      "ref": "prvsiyan/casmi26-full-fingerprint-inputs",
+      "url": "https://www.kaggle.com/datasets/prvsiyan/casmi26-full-fingerprint-inputs/versions/1",
+      "version": 1
+    },
+    {
+      "id": 12036447,
+      "license_selection": "Other (specified in description)",
+      "metadata_evidence_sha256": "5e29fe4d7e0c0ef1051d2470d4b9ef02532d56fc3180e9d820b1aad70d2b2e16",
+      "public_observed": true,
+      "ref": "prvsiyan/casmi26-spec-fp",
+      "url": "https://www.kaggle.com/datasets/prvsiyan/casmi26-spec-fp/versions/1",
+      "version": 1
+    },
+    {
+      "id": 12667280,
+      "license_selection": "Other (specified in description)",
+      "metadata_evidence_sha256": "712b50207055b578b35529d330861da0de49b5b49d91160dea440333413df714",
+      "public_observed": true,
+      "ref": "prvsiyan/casmi26-v6-structure-uniform-checkpoint",
+      "url": "https://www.kaggle.com/datasets/prvsiyan/casmi26-v6-structure-uniform-checkpoint/versions/1",
+      "version": 1
+    }
+  ],
+  "metadata_observed_utc": "2026-10-19T21:12:59Z",
+  "original_selected_v6_source_url": "https://github.com/cubres/enveda-casmi-2026/tree/6987d48bab9e6ea36ce07db322d64e282463c838/reproduction/selected-v6-training/2026-10-18",
+  "schema": "casmi-v9-public-reproduction-inputs/1",
+  "terms": "Component terms apply. Other is not a blanket CC0 or blanket noncommercial license. The code/parameter grants do not relicense data or third-party libraries.",
+  "version_binding_scope": "Public V1 metadata observations plus exact file hashes in training_config.json; no datasetVersionId or native input-UI receipt is invented."
+}

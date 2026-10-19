@@ -1,0 +1,11 @@
+{
+  "status": "PASS_CHILD_EXIT_AND_CLEANUP",
+  "child_returncode": 0,
+  "child_process_group_clean": true,
+  "timeout": false,
+  "seconds": 1742.612875877,
+  "driver_sha256": "6cb6a26a0e5a0323d6332d9ffdb9afdfddfc85803ca2cef1636566265566f058",
+  "training_run": true,
+  "official_score": null,
+  "submission_performed": false
+}

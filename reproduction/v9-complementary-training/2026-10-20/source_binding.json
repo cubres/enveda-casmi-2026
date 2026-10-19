@@ -1,0 +1,46 @@
+{
+  "LICENSE-SOURCE": {
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "LICENSE-WEIGHTS.md": {
+    "bytes": 1673,
+    "sha256": "e4d40b59c2414619baf7a1c06c8687740c5363387a9eeae76c34c0778a34380f"
+  },
+  "NOTICE.md": {
+    "bytes": 1416,
+    "sha256": "5cb3c2f31322b630c373375f7d1f6d87b4b91204f721634bd3733532a81eaeff"
+  },
+  "ORIGINAL_SOURCE_BINDING.json": {
+    "bytes": 2164,
+    "sha256": "0d645476c86de5afc2f2f5cb75697965ff20c367c6cb6ed5f635547fb9a23a96"
+  },
+  "PERMISSION_SCOPE.json": {
+    "bytes": 1734,
+    "sha256": "a50a2bc10be38f0e51850bddb217abe175143aa29aa0d20ba591b5d70d94d0ac"
+  },
+  "TRAINING_CONTRACT.json": {
+    "bytes": 9549,
+    "sha256": "092a0ad1b46dbdf369a78d70fde409395eb3db53f0027da6240bc62e0c8f75f6"
+  },
+  "fpmodel.py": {
+    "bytes": 5158,
+    "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76"
+  },
+  "structure_uniform_sampler.py": {
+    "bytes": 4511,
+    "sha256": "d2edd84f6db5d0d9138b6576ccda94b6f322e04424fe7c2c2db448f045421ea6"
+  },
+  "train_complementary_fp.py": {
+    "bytes": 18518,
+    "sha256": "6cb6a26a0e5a0323d6332d9ffdb9afdfddfc85803ca2cef1636566265566f058"
+  },
+  "train_fp4.py": {
+    "bytes": 5977,
+    "sha256": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0"
+  },
+  "train_full_fingerprint.py": {
+    "bytes": 16064,
+    "sha256": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e"
+  }
+}

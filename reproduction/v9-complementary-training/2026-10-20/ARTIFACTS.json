@@ -1,0 +1,28 @@
+{
+  "account": "prvsiyan",
+  "accuracy_or_score_claim": null,
+  "download_method": "Open exact_version_url, verify Version 9 / successful native run, select Output, and download each named file from output_directory. Save both into a fresh local directory. Use verify_v9_artifacts.py before model loading.",
+  "exact_version_url": "https://www.kaggle.com/code/prvsiyan/casmi-fp-trainer-merged-spectra?scriptVersionId=360180749",
+  "files": [
+    {
+      "bytes": 197740262,
+      "file": "complementary_full_model.pt",
+      "native_output_relative_path": "casmi_complementary_fp_3000_training_20261019/complementary_full_model.pt",
+      "sha256": "c1c7650411d507f395e3077e90db72a8b1d692493e91c7f13ba6f55e6359b286"
+    },
+    {
+      "bytes": 395501971,
+      "file": "optimizer_state.pt",
+      "native_output_relative_path": "casmi_complementary_fp_3000_training_20261019/optimizer_state.pt",
+      "sha256": "1d2e957ab715b6de6a8f350586327f48a8050e88feb3938b6fd2c2099387a201"
+    }
+  ],
+  "native_run_id": 360180749,
+  "not_a_pinned_download_method": "kaggle kernels output by notebook ref alone follows latest output; it is not an immutable V9 guarantee.",
+  "notebook_ref": "prvsiyan/casmi-fp-trainer-merged-spectra",
+  "output_directory": "casmi_complementary_fp_3000_training_20261019",
+  "public_version": 9,
+  "schema": "casmi-v9-exact-native-artifacts/1",
+  "signed_urls_included": false,
+  "weights_or_optimizer_in_git": false
+}

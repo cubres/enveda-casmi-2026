@@ -1,0 +1,146 @@
+{
+  "files": [
+    {
+      "bytes": 1440,
+      "file": "ARTIFACTS.json",
+      "sha256": "cb18d7b2809f2b2652809f459f167f4fa67fa6513425c2473219565d3476b556"
+    },
+    {
+      "bytes": 1989,
+      "file": "INPUTS_V1.json",
+      "sha256": "91506a983c9633c444930d9b215253f3c3d76b6484f19d0044f28481809863dc"
+    },
+    {
+      "bytes": 1823,
+      "file": "LICENSE-DERIVED-PARAMETERS.md",
+      "sha256": "b9e29523f2500e17c347363aac03cd3a161801d5e729895b6ff3fc0e95ddd0f1"
+    },
+    {
+      "bytes": 4163,
+      "file": "MODEL_CARD.md",
+      "sha256": "3b807f7032af6d84e62c1343a21b2aef9fd316cd4dd2b1a694e5e4ade513e6cb"
+    },
+    {
+      "bytes": 2646,
+      "file": "PUBLIC_ARTIFACT_VERIFICATION.json",
+      "sha256": "4eafffba4b3be5a1517fb1c7bb8ac623ef503dc43dc58c02ad988c6eaba78dd4"
+    },
+    {
+      "bytes": 4790,
+      "file": "README.md",
+      "sha256": "943caf52694339b227dd5cc59414376b0e43780ba99399f3aca51b46a636d55e"
+    },
+    {
+      "bytes": 4071,
+      "file": "REPRODUCE.md",
+      "sha256": "f075fea239a412e27ae4f8c0f62fcd37e0c16273dc6c2cac51f011f6397df982"
+    },
+    {
+      "bytes": 3640,
+      "file": "TRAINING_RESULT.json",
+      "sha256": "00e166e657d8cce5d74f738774cb707d55424c136d20f801c6c8db1a1eed9399"
+    },
+    {
+      "bytes": 2011,
+      "file": "canary_gate.json",
+      "sha256": "115a30a33444e26c9b8ac178e1a4f63f8e6448ef40dbf0eb0b777c63e06ab54a"
+    },
+    {
+      "bytes": 331,
+      "file": "progress.json",
+      "sha256": "532881f9f2571f83f0727c47178a72b2611defc6383c75cd8493a865e2cc48a3"
+    },
+    {
+      "bytes": 2012,
+      "file": "runtime_receipt.json",
+      "sha256": "563c7ff2d0ec0d156628bc9457447607eab2b4fe07d1bcaf6b4ef17dd53dc34a"
+    },
+    {
+      "bytes": 11358,
+      "file": "source/LICENSE-SOURCE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "bytes": 1673,
+      "file": "source/LICENSE-WEIGHTS.md",
+      "sha256": "e4d40b59c2414619baf7a1c06c8687740c5363387a9eeae76c34c0778a34380f"
+    },
+    {
+      "bytes": 1416,
+      "file": "source/NOTICE.md",
+      "sha256": "5cb3c2f31322b630c373375f7d1f6d87b4b91204f721634bd3733532a81eaeff"
+    },
+    {
+      "bytes": 2164,
+      "file": "source/ORIGINAL_SOURCE_BINDING.json",
+      "sha256": "0d645476c86de5afc2f2f5cb75697965ff20c367c6cb6ed5f635547fb9a23a96"
+    },
+    {
+      "bytes": 1734,
+      "file": "source/PERMISSION_SCOPE.json",
+      "sha256": "a50a2bc10be38f0e51850bddb217abe175143aa29aa0d20ba591b5d70d94d0ac"
+    },
+    {
+      "bytes": 9549,
+      "file": "source/TRAINING_CONTRACT.json",
+      "sha256": "092a0ad1b46dbdf369a78d70fde409395eb3db53f0027da6240bc62e0c8f75f6"
+    },
+    {
+      "bytes": 5158,
+      "file": "source/fpmodel.py",
+      "sha256": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76"
+    },
+    {
+      "bytes": 4511,
+      "file": "source/structure_uniform_sampler.py",
+      "sha256": "d2edd84f6db5d0d9138b6576ccda94b6f322e04424fe7c2c2db448f045421ea6"
+    },
+    {
+      "bytes": 18518,
+      "file": "source/train_complementary_fp.py",
+      "sha256": "6cb6a26a0e5a0323d6332d9ffdb9afdfddfc85803ca2cef1636566265566f058"
+    },
+    {
+      "bytes": 5977,
+      "file": "source/train_fp4.py",
+      "sha256": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0"
+    },
+    {
+      "bytes": 16064,
+      "file": "source/train_full_fingerprint.py",
+      "sha256": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e"
+    },
+    {
+      "bytes": 1461,
+      "file": "source_binding.json",
+      "sha256": "3797c232ce0f8911c6d3a0b779803d12f259f9cf34261ddcfba4203b4b38f6f0"
+    },
+    {
+      "bytes": 11314,
+      "file": "training_config.json",
+      "sha256": "4e766f7d2d9b17b809c1aece155be43e55e0eebe75cfe7e7a7adf030800c06a0"
+    },
+    {
+      "bytes": 57986,
+      "file": "training_history.jsonl",
+      "sha256": "1513f2d99372afbabbe1dc1604281674d00072261c5aef389ddb1c034001f573"
+    },
+    {
+      "bytes": 1459,
+      "file": "verify_file_manifest.py",
+      "sha256": "c5f0a0670cc72f6a98fc87ef2adc7da6a9643c8c7546ac021f661ac904671f43"
+    },
+    {
+      "bytes": 1635,
+      "file": "verify_v9_artifacts.py",
+      "sha256": "ced62554060e335b3b7c2cb675e249384e4c80a6840177885a80cfabecba021e"
+    },
+    {
+      "bytes": 326,
+      "file": "wrapper_receipt.json",
+      "sha256": "69d422128a39aa759f6d7bc23072eb0f567d0a6f3c14cab35161cac8028ad178"
+    }
+  ],
+  "schema": "casmi-v9-github-source-manifest/1",
+  "scope": "Only the small files in this Git source release. No .pt/.npy files; native artifacts have a separate ARTIFACTS.json contract."
+}
