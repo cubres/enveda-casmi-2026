@@ -1,0 +1,65 @@
+{
+  "schema": "casmi-public-notebook-source-binding/1",
+  "notebook": {
+    "ref": "guhongbin/casmi26-v465-v15-pop015",
+    "id_no": 139459847,
+    "title": "casmi26 v465 v15 pop015",
+    "code_file": "casmi26-v465-v15-pop015.ipynb",
+    "script_version_id": 359783615,
+    "source_sha256": "8ce4f69e6f8a6e38c0d7ee4ffec151cc2b7454699abb0f53b1e16fd592852e29",
+    "source_bytes": 246757,
+    "cell_count": 35,
+    "observed_public_score": 0.456,
+    "score_url": "https://www.kaggle.com/code/guhongbin/casmi26-v465-v15-pop015?scriptVersionId=359783615",
+    "score_scope": "Kaggle notebook page public score badge; not the competition leaderboard top score"
+  },
+  "competition_sources": [
+    "enveda-CASMI26-molecule-id-mass-spectra"
+  ],
+  "dataset_sources": [
+    "prvsiyan/casmi26-ranker-features",
+    "prvsiyan/casmi26-fp-models-v2",
+    "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+    "franciscoangulo/casmi26-pubchemlite-cc0-candidate-fingerprints",
+    "megayak/casmi26-simulated-ranker-rows",
+    "ahmedberatozer/casmi26-fpnet-full1",
+    "ahmedberatozer/casmi26-glacier",
+    "ahmedberatozer/casmi26-iceberg",
+    "ahmedberatozer/casmi26-pubchem-tier",
+    "ahmedberatozer/casmi26-v2-pool",
+    "ahmedberatozer/casmi26-v3-models",
+    "ahmedberatozer/casmi26-v4b-models",
+    "sergiomalv/casmi-chebi-lmsd-structures",
+    "prvsiyan/coconut-casmi26-candidates",
+    "metric/rdkit-2026-3-3-wheel"
+  ],
+  "supporting_readme_pins": [
+    {
+      "file": "casmi26-simulated-ranker-rows.README.md",
+      "dataset_ref": "megayak/casmi26-simulated-ranker-rows",
+      "version": 4,
+      "bytes": 1879,
+      "sha256": "89757d07af932c35e4d73e505bfc4a0e81655d04a5722903e879b026563336b4"
+    },
+    {
+      "file": "casmi26-glacier.README.md",
+      "dataset_ref": "ahmedberatozer/casmi26-glacier",
+      "version": 1,
+      "bytes": 2423,
+      "sha256": "430b17c774e84f76204aa83b2672d39d31de9f1479eff8a2a3663bcc8ce000ac"
+    },
+    {
+      "file": "casmi26-iceberg.README.md",
+      "dataset_ref": "ahmedberatozer/casmi26-iceberg",
+      "version": 1,
+      "bytes": 3879,
+      "sha256": "1a36864cb19161b84742f9cb8f323f795b5b3e8e1d739474b7b205acd2d8601f"
+    }
+  ],
+  "known_gaps": [
+    "kernel-metadata.json records dataset slugs but not dataset version identifiers; this checker does not infer historical mounted versions",
+    "dataset license metadata and upstream rights are not checked by this script",
+    "the public score badge is an external observation and is not reproducible from source hashes",
+    "the complete hidden competition rerun is not reproduced by this source-only check"
+  ]
+}
