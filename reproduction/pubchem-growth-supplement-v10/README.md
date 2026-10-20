@@ -32,6 +32,63 @@ These sizes and SHA-256 digests were copied from the expanded public `GROWTH_MAN
 
 The manifest's `payload_bytes=3,511,140` is larger than these 13 growth-file sizes (3,137,462 bytes). Five visible delta-array entries explain most, but not all, of the difference. Treat this as a broader package aggregate until its composition is independently verified.
 
+## Runnable integrity check
+
+Attach Kaggle dataset version 10 as an input before running this cell. It verifies the publisher-declared size and SHA-256 for each growth file, then checks the row count of every NumPy array and the mass ordering. It reads only the 11,177-row supplement. This example has **not** been run against the mounted payload, so it does not upgrade the copied manifest hashes to independent verification.
+
+```python
+import hashlib
+import json
+from pathlib import Path
+
+import numpy as np
+
+roots = [
+    Path("/kaggle/input/datasets/dmitriigluzdov/casmi26-pubchem-popularity-prior"),
+    Path("/kaggle/input/casmi26-pubchem-popularity-prior"),
+]
+data = next(p for p in roots if (p / "GROWTH_MANIFEST.json").is_file())
+manifest = json.loads((data / "GROWTH_MANIFEST.json").read_text())
+files = manifest["files"]
+names = sorted(
+    name for name in files
+    if name.startswith("growth_pc_") and name.endswith(".npy")
+)
+names.append("growth_pubchem_tier.csv")
+assert len(names) == 13
+
+for name in names:
+    path = data / name
+    expected = files[name]
+    assert path.stat().st_size == expected["bytes"], name
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(1 << 20), b""):
+            digest.update(block)
+    assert digest.hexdigest() == expected["sha256"], name
+    if name.endswith(".npy"):
+        array = np.load(path, mmap_mode="r", allow_pickle=False)
+        assert array.shape[0] == manifest["rows"], name
+        if name == "growth_pc_mass.npy":
+            assert np.all(array[1:] >= array[:-1]), "mass order"
+
+print(f"PASS: {len(names)} V10 growth files; {manifest['rows']} aligned rows")
+```
+
+The proposed score test comes after integrity and identity checks:
+
+```mermaid
+flowchart LR
+    A[Pinned V10 input] --> B[Verify bytes and row alignment]
+    B --> C[Mass-window candidate lookup]
+    C --> D[Competition-identity deduplication]
+    D --> E[Identity/scaffold holdout]
+    E --> F[Candidate recall@K]
+    E --> G[MRR@25]
+```
+
+This diagram describes a proposed evaluation workflow, not a completed experiment.
+
 ## Integration gate
 
 Before using the supplement, pin dataset version 10 in the Kaggle notebook's input configuration, verify all listed file hashes and row counts at the mounted root, and record runtime/tool versions. Use identity/scaffold-heldout known-answer cases to compare incremental candidate recall and MRR against the already-used base tier plus earlier delta. Recompute scorer identities, preserve aligned row order, and keep the candidate-generation and ranking effects separate. CID dates are a compound creation-date proxy, not evidence of source deposition time.
