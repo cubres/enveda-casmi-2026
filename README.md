@@ -78,3 +78,8 @@ Existing public campaign notebook: [Analog Propagation - CASMI 2026 baseline](ht
 The permanent archive includes [Energy-balanced projection](https://github.com/cubres/enveda-casmi-2026/blob/0c5cf4615cf1de050e7e3dc769630c5b760f284b/tools/energy-balanced-projection/2026-10-05/README.md) and [Protected candidate/control comparison](https://github.com/cubres/enveda-casmi-2026/blob/1832b0157cc151f8e1afe3ac363763348a9ec784/protected-candidate-control-2026-10-09/README.md). Read their original claim limits and provenance before a fork. Failures and unexecuted ideas remain part of the record; invented controls are separate from native qualification and official scores.
 
 The shared [Static notebook execution map](https://github.com/cubres/gemma-4-developer-agent/blob/4b21f05ee4542c9f0c5a9dfd2a6d7081385af6d7/tools/notebook-execution-map/2026-10-05/README.md) provides a read-only first look at direct configuration bindings. It does not execute notebooks or infer effective runtime.
+
+
+## Strongest public notebook source audit · 20 October
+
+The public [V465 notebook version](https://www.kaggle.com/code/guhongbin/casmi26-v465-v15-pop015?scriptVersionId=359783615) displays **0.456**; the live competition leaderboard at 16:43 UTC showed a top score of **0.495** and a prvsiyan best of **0.345**. The new [source audit package](tools/casmi-public-notebook-audit/2026-10-20/README.md) binds V465's exact 35-cell source hash and 15 listed input slugs, with three supporting public README hashes and an original diagram. It explicitly leaves the input-version and license checks open; this is source evidence, not a reproduced score or a notebook update.
