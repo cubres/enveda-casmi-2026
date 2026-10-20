@@ -1,0 +1,82 @@
+{
+  "implementation": {
+    "file": "gated_fold0_replay.py",
+    "license": "Apache-2.0",
+    "sha256": "9e894b93c99f2e9793116908ffa2792f319af5d7ab8c52f3037f3ed1adcc57ac"
+  },
+  "source": {
+    "dataset": "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+    "dataset_id": 12288074,
+    "dataset_version": 7,
+    "last_updated_utc": "2026-10-20T15:30:47.943Z",
+    "license": "Other (specified in description); competition-derived data and third-party annotations retain source terms",
+    "dataset_url": "https://www.kaggle.com/datasets/dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+    "score_source": "public panel cached predictions; not an official competition score"
+  },
+  "method": "At inference, accept the fold0-weight=1/3 list only if its top metric identity equals the fold0-weight=0 top identity; otherwise retain the complete baseline list.",
+  "gate_feature": "Exact predicted top metric identity from each list; no labels used by the gate.",
+  "canary": {
+    "n": 64,
+    "gate_accepts": 61,
+    "baseline": {
+      "mrr25": 0.49602340504889847,
+      "top1": 0.375
+    },
+    "static_one_third": {
+      "mrr25": 0.49806223792654714,
+      "top1": 0.375
+    },
+    "gated_one_third": {
+      "mrr25": 0.49802841758022676,
+      "top1": 0.375
+    },
+    "gated_delta_mrr": 0.0020050125313282874,
+    "gated_delta_top1": 0.0
+  },
+  "full_panel": {
+    "n": 250,
+    "missing_baseline_rows_padded_zero": 4,
+    "missing_candidate_rows_padded_zero": 4,
+    "gate_accepts": 243,
+    "baseline": {
+      "mrr25": 0.5119767131673311,
+      "top1": 0.4
+    },
+    "static_one_third": {
+      "mrr25": 0.5145327360299173,
+      "top1": 0.4
+    },
+    "gated_one_third": {
+      "mrr25": 0.5144288399260213,
+      "top1": 0.4
+    },
+    "gated_delta_mrr25": 0.0024521267586902263,
+    "gated_delta_mrr25_paired_bootstrap_95ci": [
+      8.758131342341888e-05,
+      0.005343597067706973
+    ],
+    "gated_delta_top1": 0.0,
+    "gated_delta_top1_paired_bootstrap_95ci": [
+      0.0,
+      0.0
+    ],
+    "identity_changes_static_blend": 7
+  },
+  "limitations": [
+    "Uses cached public panel predictions; no model inference or training was run.",
+    "The 250-molecule public development panel does not establish hidden-test or leaderboard performance.",
+    "The gate is evaluated once on the same public panel and needs a separate identity-disjoint inference replay before notebook integration."
+  ],
+  "inputs": {
+    "per_query_file": "panel_fpnet_per_molecule.csv",
+    "per_query_sha256": "3f0fb337dd8014e07639973a56eaf2e8d4a86e83ae1c7c15663480eabe621ee6",
+    "panel_file": "panel.parquet",
+    "panel_sha256": "93469d9bd7e51f9e0c2e891f59844a1ffc56c0921035110495b598c9b4e52eb3"
+  },
+  "bootstrap": {
+    "seed": 20261019,
+    "replicates": 20000,
+    "unit": "molecule",
+    "interval": "paired percentile 95%"
+  }
+}
