@@ -94,7 +94,9 @@ The public [V465 notebook version](https://www.kaggle.com/code/guhongbin/casmi26
 
 ## V43 PubChem growth integration audit · 20 October
 
-A source-only audit binds V43 to its exact 35-cell source and finds that its code uses the SID/PMID prior but no synonym term or `growth_pc_*` supplement. The public V15 data notebook reports a synonym-panel gain; versions 13 and 14 both display 0.456, while version 15 is unscored. The V10 manifest's novelty count and file hashes remain publisher claims, and component-specific rights require review. The [audit and gated four-arm held-out test plan](research/v43-pubchem-growth-source-audit/2026-10-20/README.md) records the limits; V43 was still running when checked, so no follow-up inference has started.
+The exact V43 source is bound at SHA-256 `f254dfbca64c0b332049860d1f6c1dd5f67a80fdaee7e78b8f63597cdf8f57b1`; it uses the SID/PMID prior and does not reference the synonym term or the new growth supplement. The public V15 data notebook's synonym-panel result remains development evidence (V13 and V14 both display 0.456; V15 is unscored). We independently downloaded the 12 growth arrays and CSV from public dataset V10 and verified all 13 file hashes, dtypes, shapes, offsets, sorted masses, and 11,177 row alignments. The public manifest reports 13 official-versus-RDKit CID mapping differences; its “scorer-novel” comparator is still undefined. Source masks remain unknown, and component rights remain source-specific.
+
+The [audit report and exact JSON receipt](research/v43-pubchem-growth-source-audit/2026-10-20/README.md) include an Apache-2.0 verifier script (script-only license scope) and a four-arm held-out canary plan. The receipt verifies data integrity, not hidden-test coverage or score gain. V43 was still running on the native submissions page at the latest check, so no new inference or score claim is recorded.
 
 ## Public scoring strategy review · 20 October
 
