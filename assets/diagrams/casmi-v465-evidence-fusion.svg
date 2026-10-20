@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 900" role="img" aria-labelledby="title desc">
+<title id="title">CASMI26 V465 evidence-fusion pipeline</title>
+<desc id="desc">Test spectra feed two candidate-ranking engines and a gated PubChem channel. Weighted reciprocal-rank fusion combines their lists, same-formula ICEBERG and GLACIER evidence reranks candidates, and a metric-identity audit emits up to 25 SMILES per molecule.</desc>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M1,1 L10,6 L1,11 Z" fill="#61748a"/></marker>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1d3044" flood-opacity=".10"/></filter>
+  <style>
+    .head{font:700 34px Inter,Arial,sans-serif;fill:#20354a}.sub{font:400 18px Inter,Arial,sans-serif;fill:#607286}
+    .title{font:700 20px Inter,Arial,sans-serif;fill:#20354a}.body{font:400 15px Inter,Arial,sans-serif;fill:#40556a}
+    .tiny{font:500 12px Inter,Arial,sans-serif;fill:#64778b;letter-spacing:.04em}.number{font:700 13px Inter,Arial,sans-serif;fill:#fff}
+    .edge{fill:none;stroke:#71849a;stroke-width:3;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="1680" height="900" rx="30" fill="#fbfaf6"/>
+<circle cx="1530" cy="92" r="90" fill="#f2e8d7" opacity=".7"/><circle cx="1590" cy="145" r="48" fill="#e2eee9" opacity=".8"/>
+<text x="70" y="82" class="head">CASMI26 V465 · EVIDENCE FUSION</text>
+<text x="70" y="118" class="sub">A candidate-retrieval pipeline: independent evidence first, chemistry-aware ranking at the end.</text>
+
+<!-- input -->
+<g filter="url(#shadow)"><rect x="55" y="340" width="235" height="190" rx="22" fill="#fff" stroke="#dbe4e8" stroke-width="2"/></g>
+<circle cx="82" cy="369" r="15" fill="#5b8f86"/><text x="78" y="374" class="number">0</text>
+<text x="108" y="376" class="title">Test spectra</text>
+<text x="80" y="415" class="body">m/z peaks + intensity</text><text x="80" y="441" class="body">precursor mass · adduct</text>
+<path d="M82 490 L82 468 L103 468 L103 477 L124 477 L124 448 L145 448 L145 484 L166 484 L166 459 L187 459 L187 471 L208 471 L208 450 L229 450" fill="none" stroke="#c58649" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- engines -->
+<g filter="url(#shadow)"><rect x="355" y="185" width="340" height="185" rx="22" fill="#edf5f2" stroke="#c8ddd6" stroke-width="2"/></g>
+<circle cx="383" cy="214" r="15" fill="#5b8f86"/><text x="379" y="219" class="number">1</text>
+<text x="410" y="222" class="title">Main library + FP ranker</text>
+<text x="382" y="262" class="body">v4n spectral/analog engine</text><text x="382" y="288" class="body">pool candidates · FPNet features</text><text x="382" y="322" class="tiny">PRIMARY RANKED LIST</text>
+
+<g filter="url(#shadow)"><rect x="355" y="500" width="340" height="185" rx="22" fill="#f0f2f8" stroke="#d4d9e8" stroke-width="2"/></g>
+<circle cx="383" cy="529" r="15" fill="#727ca1"/><text x="379" y="534" class="number">2</text>
+<text x="410" y="537" class="title">Second analog engine</text>
+<text x="382" y="577" class="body">two-ranker · BIO + AFIX</text><text x="382" y="603" class="body">independent top-candidate list</text><text x="382" y="637" class="tiny">COMPLEMENTARY RANKS</text>
+
+<!-- pubchem -->
+<g filter="url(#shadow)"><rect x="760" y="185" width="300" height="185" rx="22" fill="#fff4e7" stroke="#ead3b3" stroke-width="2"/></g>
+<circle cx="788" cy="214" r="15" fill="#c58649"/><text x="784" y="219" class="number">3</text>
+<text x="815" y="222" class="title">Gated PubChem tier</text>
+<text x="787" y="262" class="body">CC0 candidate fingerprints</text><text x="787" y="288" class="body">enters only when library evidence</text><text x="787" y="314" class="body">is weak; popularity is a small prior</text><text x="787" y="346" class="tiny">RECALL EXTENSION · GATED</text>
+
+<!-- fusion -->
+<g filter="url(#shadow)"><rect x="760" y="500" width="300" height="185" rx="22" fill="#fff" stroke="#dbe4e8" stroke-width="2"/></g>
+<circle cx="788" cy="529" r="15" fill="#c58649"/><text x="784" y="534" class="number">4</text>
+<text x="815" y="537" class="title">Weighted RRF fusion</text>
+<text x="787" y="577" class="body">merge independent ranked lists</text><text x="787" y="603" class="body">compact metric-identity duplicates</text><text x="787" y="637" class="tiny">SHARED SHORTLIST</text>
+
+<!-- rescore -->
+<g filter="url(#shadow)"><rect x="1120" y="330" width="310" height="230" rx="22" fill="#f7f0f5" stroke="#e3d5e2" stroke-width="2"/></g>
+<circle cx="1148" cy="359" r="15" fill="#9a7293"/><text x="1144" y="364" class="number">5</text>
+<text x="1175" y="367" class="title">Chemistry-aware rerank</text>
+<text x="1148" y="407" class="body">ICEBERG + GLACIER predictions</text><text x="1148" y="433" class="body">compare within molecular formula</text><text x="1148" y="459" class="body">MetFrag-lite helps where forward</text><text x="1148" y="485" class="body">simulator evidence is missing</text><text x="1148" y="528" class="tiny">ORTHOGONAL FRAGMENT EVIDENCE</text>
+
+<!-- output -->
+<g filter="url(#shadow)"><rect x="1480" y="340" width="150" height="190" rx="22" fill="#20354a"/></g>
+<circle cx="1508" cy="369" r="15" fill="#5b8f86"/><text x="1504" y="374" class="number">6</text>
+<text x="1530" y="410" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700" fill="#fff">Top 25</text>
+<text x="1500" y="449" font-family="Inter,Arial,sans-serif" font-size="14" fill="#e7eef2">unique structures</text>
+<text x="1500" y="476" font-family="Inter,Arial,sans-serif" font-size="14" fill="#e7eef2">per molecule</text>
+<text x="1500" y="508" font-family="Inter,Arial,sans-serif" font-size="12" fill="#c4d3db">submission.csv</text>
+
+<!-- arrows -->
+<path class="edge" d="M290 390 C315 390 320 280 355 280"/>
+<path class="edge" d="M290 480 C315 480 320 590 355 590"/>
+<path class="edge" d="M695 275 L760 275"/>
+<path class="edge" d="M695 315 C725 340 730 515 760 545"/>
+<path class="edge" d="M695 590 L760 590"/>
+<path class="edge" d="M910 370 L910 500"/>
+<path class="edge" d="M1060 590 C1090 590 1090 500 1120 500"/>
+<path class="edge" d="M1430 445 L1480 445"/>
+<text x="78" y="785" class="tiny">V465 SOURCE-REPORTED DESIGN · NOT A VALIDATION CURVE OR SCORE CLAIM</text>
+<text x="78" y="820" class="body">Source: Hongbin Gu, script version 359783615. The score badge is the source notebook’s public result.</text>
+</svg>
