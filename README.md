@@ -1,5 +1,9 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Checkpoint and ranker reproducibility audit · 20 October
+
+The source, prepared inputs and recorded S2/M1 commands are now linked in a [public, source-pinned audit](reproduction/legacy-v2/public-reproducibility-audit/2026-10-20/README.md). It separates the parts that can be inspected and rerun from the unresolved historical checkpoint-to-ranker-cache binding and raw ChEBI/LIPID MAPS ingestion lineage; it makes no new score claim.
+
 ## Verified ChEBI fingerprint shard · 20 October
 
 The [producer, numerical checks and runnable retrieval demo](reproduction/chebi3-fullfp-shard/2026-10-20/README.md) cover 4,096 ChEBI three-star records absent by raw key and exact SMILES from our older candidate bank. All 45 producer outputs passed their hash and numerical checks; the shard contains 4,092 canonical groups. [The pipeline diagram](reproduction/chebi3-fullfp-shard/2026-10-20/assets/pipeline.png) shows the row and fingerprint contracts. Kaggle packaging is pending; score improvement and canonical novelty against the entire old bank remain unmeasured.
