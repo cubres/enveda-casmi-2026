@@ -92,6 +92,10 @@ The shared [Static notebook execution map](https://github.com/cubres/gemma-4-dev
 
 The public [V465 notebook version](https://www.kaggle.com/code/guhongbin/casmi26-v465-v15-pop015?scriptVersionId=359783615) displays **0.456**; the live competition leaderboard at 16:43 UTC showed a top score of **0.495** and a prvsiyan best of **0.345**. The new [source audit package](tools/casmi-public-notebook-audit/2026-10-20/README.md) binds V465's exact 35-cell source hash and 15 listed input slugs, with three supporting public README hashes and an original diagram. It explicitly leaves the input-version and license checks open; this is source evidence, not a reproduced score or a notebook update.
 
+## V43 PubChem growth integration audit · 20 October
+
+A source-only audit binds V43 to its exact 35-cell source and identifies a possible retrieval gap: the current notebook references the base PubChem arrays but no `growth_pc_*` supplement. The V10 manifest's novelty count and file hashes remain publisher claims, and its component-specific rights require review. The [audit and gated 64-query recall test plan](research/v43-pubchem-growth-source-audit/2026-10-20/README.md) records the limits; V43 was still running when checked, so no follow-up inference has started.
+
 ## Public scoring strategy review · 20 October
 
 A source-attributed [review of the strongest visible public methods and a proposed cross-fitted evidence-calibration experiment](research/public-code-strategy-audit/2026-10-20/README.md) distinguishes leaderboard scores, scored notebook versions, unscored ideas, input-rights limits, and V43’s pending status. No new inference or score claim is made.
