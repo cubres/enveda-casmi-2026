@@ -1,5 +1,9 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## V9 complementary checkpoint held-out validation · 20 October
+
+The 3,000-update V9 complementary FPNet checkpoint did not improve on the selected V6 baseline in a paired, fixed-draw 2,048-structure CPU-FP32 proxy: **0.702585 vs 0.706274**, paired change **−0.003689** (95% query-bootstrap interval **[−0.008241, +0.000569]**). This is neither CUDA-FP16 parity nor an official score, and the checkpoint is not adopted into the scorer. The [R3 report, exact receipt, evaluator source and limits](experiments/2026-10-20-v9-complementary-heldout-r3/README.md) retain the full hash binding.
+
 ## Fixed synonym prior replay · 20 October
 
 The [V14 PubChem synonym-prior replay](experiments/2026-10-20-v14-synonym-prior-replay/README.md) reproduces the public author's fixed `0.5 * log1p(synonym count)` panel experiment using hash-pinned cached inputs. The 250-molecule panel changes from MRR@25 **0.96467 to 0.97033**, with top-1 **0.960 to 0.968**; this is a labelled development-panel result, not a hidden-test or official score. The package credits the original method, includes a CPU-only replay and figure, and records an unresolved per-query cache/tie discrepancy.
@@ -29,7 +33,7 @@ The [public V1 dataset](https://www.kaggle.com/datasets/prvsiyan/casmi26-v6-chec
 
 ## Completed complementary training · 20 October
 
-The [V9 reproducibility release](reproduction/v9-complementary-training/2026-10-20/README.md) records 3,000 completed role-0 FPNet updates after a 64-update canary, with the exact source, public V1 inputs, recipe, runtime and independent CPU artifact checks. Its 197.7 MB checkpoint and 395.5 MB optimizer state remain in [the exact public V9 Output](https://www.kaggle.com/code/prvsiyan/casmi-fp-trainer-merged-spectra?scriptVersionId=360180749); version-specific download instructions and hashes prevent a silent latest-version substitution. Quality and serving remain unmeasured, and historical S2/M1/ranker-cache provenance gaps are still stated explicitly.
+The [V9 reproducibility release](reproduction/v9-complementary-training/2026-10-20/README.md) records 3,000 completed role-0 FPNet updates after a 64-update canary, with the exact source, public V1 inputs, recipe, runtime and independent CPU artifact checks. Its 197.7 MB checkpoint and 395.5 MB optimizer state remain in [the exact public V9 Output](https://www.kaggle.com/code/prvsiyan/casmi-fp-trainer-merged-spectra?scriptVersionId=360180749); version-specific download instructions and hashes prevent a silent latest-version substitution. Serving remains unmeasured. A fixed-draw CPU-FP32 held-out R3 comparison found no candidate gain (paired Δ MRR@25 −0.003689; 95% query-bootstrap interval [−0.008241, +0.000569]); this is local proxy evidence, not a competition score. See the [R3 report](experiments/2026-10-20-v9-complementary-heldout-r3/README.md). Historical S2/M1/ranker-cache provenance gaps are still stated explicitly.
 
 ## Recovered training and preparation sources · 18 October
 
