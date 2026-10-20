@@ -4,6 +4,10 @@
 
 The 3,000-update V9 complementary FPNet checkpoint did not improve on the selected V6 baseline in a paired, fixed-draw 2,048-structure CPU-FP32 proxy: **0.702585 vs 0.706274**, paired change **−0.003689** (95% query-bootstrap interval **[−0.008241, +0.000569]**). This is neither CUDA-FP16 parity nor an official score, and the checkpoint is not adopted into the scorer. The [R3 report, exact receipt, evaluator source and limits](experiments/2026-10-20-v9-complementary-heldout-r3/README.md) retain the full hash binding.
 
+## PubChem growth supplement V10 input binding · 20 October
+
+The [manifest fingerprints and held-out evaluation plan](reproduction/pubchem-growth-supplement-v10/README.md) record the 13 growth-file sizes and SHA-256 claims visible in the public V10 manifest, with no independent payload readback. The note documents row alignment, scorer-identity mismatches, component-specific rights, and a candidate-recall/MRR experiment to run after V43 reaches terminal status. The supplement remains untested; no score gain is claimed.
+
 ## Fixed synonym prior replay · 20 October
 
 The [V14 PubChem synonym-prior replay](experiments/2026-10-20-v14-synonym-prior-replay/README.md) reproduces the public author's fixed `0.5 * log1p(synonym count)` panel experiment using hash-pinned cached inputs. The 250-molecule panel changes from MRR@25 **0.96467 to 0.97033**, with top-1 **0.960 to 0.968**; this is a labelled development-panel result, not a hidden-test or official score. The package credits the original method, includes a CPU-only replay and figure, and records an unresolved per-query cache/tie discrepancy.
