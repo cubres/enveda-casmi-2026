@@ -1,0 +1,136 @@
+{
+  "checks": {
+    "all_13_growth_payload_files_match_manifest": true,
+    "count_arrays_finite_nonnegative": true,
+    "csv_row_count_and_four_array_columns_aligned": true,
+    "mass_finite_positive_sorted": true,
+    "natural_product_bits_valid": true,
+    "npy_manifest_shapes_and_dtypes": true,
+    "offsets_and_smiles_valid": true,
+    "raw_ik14_unique": true,
+    "representative_cids_unique": true,
+    "row_arrays_aligned": true,
+    "unmeasured_source_masks_are_zero": true
+  },
+  "csv_array_alignment_rows": {
+    "cid": 11177,
+    "ik14": 11177,
+    "mass": 11177,
+    "smiles": 11177
+  },
+  "csv_official_ik14_vs_ik14_disagreements": 12,
+  "csv_rows": 11177,
+  "dataset_slug": "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+  "dataset_version_observed": 10,
+  "files": {
+    "growth_pc_cid.npy": {
+      "bytes": 44836,
+      "dtype": "<i4",
+      "sha256": "dd182e3b29c435b4a8b6f8db9af271a26bd895d04dbe2f63c60e9c7a403eb4cf",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_ik14.npy": {
+      "bytes": 156606,
+      "dtype": "|S14",
+      "sha256": "4b5cc955bd472bf4b6f79111382f08da2b2e13d0955fd9f7ae7861df636f6867",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_lotus_refs.npy": {
+      "bytes": 44836,
+      "dtype": "<u4",
+      "sha256": "c36054e30c5762a76287242dd6905fe673f8998be356c2c10b4dfd2525d65d07",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_lpmid.npy": {
+      "bytes": 22482,
+      "dtype": "<f2",
+      "sha256": "6087f448d23c830d71b507f0d37d2fa03e8a7edb439fc4f11cac2c6dc296272f",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_lsid.npy": {
+      "bytes": 22482,
+      "dtype": "<f2",
+      "sha256": "b61869798298ec8bc909263a58f5025830f599ec8488d16ef4f94b5625a40e6b",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_lsynonyms.npy": {
+      "bytes": 22482,
+      "dtype": "<f2",
+      "sha256": "82104705a06d5296d8fb14a6daa786e47fe193359b0fc881d7f32d439f0105da",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_mass.npy": {
+      "bytes": 89544,
+      "dtype": "<f8",
+      "sha256": "ca46c1c72932c1cc6b58ab9bcb833a2125281f20c0b623af9fa30b182561ef1b",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_np.npy": {
+      "bytes": 11305,
+      "dtype": "|u1",
+      "sha256": "0247d671abeee3d605859f4f95b6d9876fca22539136039ece9c7f73c0ba6464",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_off.npy": {
+      "bytes": 89552,
+      "dtype": "<i8",
+      "sha256": "07ba3dc94264691e8a74912aa85c9e64415a4511d41e58055de36fdda34cce5e",
+      "shape": [
+        11178
+      ]
+    },
+    "growth_pc_smiles.npy": {
+      "bytes": 559296,
+      "dtype": "|u1",
+      "sha256": "578590187454a7b01d3af9f994ab7cd148041a8fcab913bffa44a99909167ab4",
+      "shape": [
+        559168
+      ]
+    },
+    "growth_pc_src_mask.npy": {
+      "bytes": 22482,
+      "dtype": "<u2",
+      "sha256": "9723906a530f498a678018ae5ea4c616690aaf6f435f2bbd9f588594b3676ea8",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pc_src_observed.npy": {
+      "bytes": 11305,
+      "dtype": "|u1",
+      "sha256": "befe16f61edd8b2d9bb0947026c01b52f01763b6641b0ba402d13dd44a0ca3f5",
+      "shape": [
+        11177
+      ]
+    },
+    "growth_pubchem_tier.csv": {
+      "bytes": 2040254,
+      "sha256": "c1f25947913aa809e63888ba66b635e02a42082a5beba8cf46ec99cd1de162f3"
+    }
+  },
+  "identity_note": "official_ik14 is retained separately; the dataset manifest reports 13 official-versus-RDKit CID mapping differences. The CSV field disagreement count above is a different row-wise comparison.",
+  "manifest_growth_files_bytes": 3137462,
+  "manifest_rows": 11177,
+  "manifest_sha256": "cae173a5ab7e21c4d86a57579ce1bd106f96502a11fbbac8cdf1205a07e5e73c",
+  "manifest_total_new_payload_bytes": 3511140,
+  "provenance_note": "Source/depositor masks are all zero because they were not measured; zero means unknown, not absent. The receipt does not relicense the source data or assert competition eligibility.",
+  "status": "PASS",
+  "verified_at_utc": "2026-10-20T20:43:47Z",
+  "verified_growth_payload_bytes": 3137462
+}
