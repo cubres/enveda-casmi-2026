@@ -94,7 +94,7 @@ The public [V465 notebook version](https://www.kaggle.com/code/guhongbin/casmi26
 
 ## V43 PubChem growth integration audit · 20 October
 
-A source-only audit binds V43 to its exact 35-cell source and identifies a possible retrieval gap: the current notebook references the base PubChem arrays but no `growth_pc_*` supplement. The V10 manifest's novelty count and file hashes remain publisher claims, and its component-specific rights require review. The [audit and gated 64-query recall test plan](research/v43-pubchem-growth-source-audit/2026-10-20/README.md) records the limits; V43 was still running when checked, so no follow-up inference has started.
+A source-only audit binds V43 to its exact 35-cell source and finds that its code uses the SID/PMID prior but no synonym term or `growth_pc_*` supplement. The public V15 data notebook reports a synonym-panel gain; versions 13 and 14 both display 0.456, while version 15 is unscored. The V10 manifest's novelty count and file hashes remain publisher claims, and component-specific rights require review. The [audit and gated four-arm held-out test plan](research/v43-pubchem-growth-source-audit/2026-10-20/README.md) records the limits; V43 was still running when checked, so no follow-up inference has started.
 
 ## Public scoring strategy review · 20 October
 
