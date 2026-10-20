@@ -1,0 +1,14 @@
+{
+  "snapshot_file": "enveda-CASMI26-molecule-id-mass-spectra-publicleaderboard-2026-10-20T16:00:20.csv",
+  "source_url": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/leaderboard",
+  "snapshot_zip_sha256": "c49223a17e5ac4280cb2a316245599453296efd2dc5a660443263cf791ecaa6c",
+  "rows": 3670,
+  "top_score": 0.495,
+  "prvsiyan_row": {
+    "rank": 1954,
+    "team": "prvsiyan",
+    "score": 0.345,
+    "last_submission": "2026-10-10 11:34:30",
+    "submission_count": 37
+  }
+}
