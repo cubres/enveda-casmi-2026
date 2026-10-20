@@ -13,7 +13,7 @@ As of the dated **2026-10-20 16:00 UTC** public leaderboard snapshot, the top sc
 
 ## Checkpoint and ranker reproducibility audit · 20 October
 
-The source, prepared inputs and recorded S2/M1 commands are now linked in a [public, source-pinned audit](reproduction/legacy-v2/public-reproducibility-audit/2026-10-20/README.md). It separates the parts that can be inspected and rerun from the unresolved historical checkpoint-to-ranker-cache binding and raw ChEBI/LIPID MAPS ingestion lineage; it makes no new score claim.
+The [source-pinned historical audit](reproduction/legacy-v2/public-reproducibility-audit/2026-10-20/README.md) records the original preparation and S2/M1 trainer commands. The [updated public asset audit](reproduction/legacy-v2/PUBLIC_REPRODUCIBILITY_AUDIT_2026-10-20.md) now inventories the versioned `casmi26-spec-fp` and `casmi26-pool` inputs, including the retained split, and distinguishes them from the separate 10,395-bit full-fingerprint bank. It also identifies the remaining historical FP-logit cache/checkpoint and ChEBI/LIPID MAPS ingestion provenance gaps. This is a reproducibility update, not a new score claim.
 
 ## Verified ChEBI fingerprint shard · 20 October
 
