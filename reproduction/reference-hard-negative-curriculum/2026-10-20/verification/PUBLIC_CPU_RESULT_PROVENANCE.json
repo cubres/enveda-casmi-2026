@@ -1,0 +1,22 @@
+{
+  "actual_run_independent_review": "PENDING_ROOT_EXISTING_PEER",
+  "all_other_result_values_unchanged": true,
+  "no_producer_canary_or_consumer_reexecution_during_staging": true,
+  "omitted_top_level_fields": [
+    "distinct_actual_admission_pin",
+    "attempt_remains_consumed"
+  ],
+  "original_actual_result_sha256": "cd2e27c9ec8cb0977d9ffd895a4dee29e7b1d055f5879a7837313d9f68185c12",
+  "public_consumer_execution_on_this_staged_copy": "NOT_EXECUTED",
+  "public_result": {
+    "bytes": 1428,
+    "path": "completed/RESULT.json",
+    "sha256": "b734d87ac9ef0203be3342334cec341a2618c2f699c596a4c56ae13b5060de0e"
+  },
+  "publication": "NOT_PERFORMED_BY_STAGER",
+  "reason": "Exclude operational admission/attempt bookkeeping; no measurement, PASS condition, source/input identity or output/completion pin changed.",
+  "schema": "casmi-reference-curriculum-public-cpu-receipt-provenance/1",
+  "scope": "CPU reference-target mechanics, not spectrum/model performance or historical checkpoint licensing qualification.",
+  "source_manifest_sha256": "c0625d4b332478a271b07c417610c4912171af37b4d94c5cfde1ad13115a19c2",
+  "status": "ACTUAL_ROOT_CPU_PASS_SANITIZED_FOR_PUBLIC_SOURCE_RELEASE_REVIEW"
+}

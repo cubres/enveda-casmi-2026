@@ -1,0 +1,39 @@
+{
+  "accounting": "Same frozen R2 conservative sum of wrapper peak + reported child peak + reported observer peak, including repeated aggregate RUSAGE_CHILDREN high-water charge; no subtraction/reinterpretation.",
+  "experiment": "casmi-reference-curriculum-r3-160mib",
+  "new_admission_name": "ROOT_REVISED_160MIB_ADMISSION.json",
+  "new_marker_name": "ROOT_CURRICULUM_R3_160MIB_ONCE_CONSUMED.json",
+  "preserved_prior_files": {
+    "ROOT_CURRICULUM_ONCE_CONSUMED.json": {
+      "bytes": 1067,
+      "sha256": "d5f0330d9a5da435a8d352e087ef5128bf65067341b6c3c0b18db317c27a2ccb"
+    },
+    "r2/FAILURE_ANALYSIS.json": {
+      "bytes": 6105,
+      "sha256": "8fe083163f2ca3ffb6f2d11ec1dee34ba57b5fb777fc373754908626f236102c"
+    },
+    "r2/ROOT_OWNED_CURRICULUM_RUN/RESULT.json": {
+      "bytes": 1112,
+      "sha256": "ea954ba33dea7ffe82c9ca3078afe64db1f49c7aec5032a13af501fc3dddd7b8"
+    },
+    "r2/source/SOURCE_MANIFEST.json": {
+      "bytes": 1262,
+      "sha256": "32bebcb836a26f68ddeb2bb67f6efda63b1ed045f6d4c7c21ebc82b6ed95d3a1"
+    },
+    "source/SOURCE_MANIFEST.json": {
+      "bytes": 998,
+      "sha256": "415989aa4fb7abbeb9eefe074c2e54f77eb0f57af1ae96b979748086c0ca2c59"
+    }
+  },
+  "prior_failed_result_must_never_be_retroactively_qualified": true,
+  "prospective_limits": {
+    "active_single_thread_tasks_max": 2,
+    "aggregate_CPU_seconds": 240,
+    "wall_seconds": 120,
+    "whole_RSS_bytes": 167772160
+  },
+  "schema": "casmi-reference-curriculum-prospective-resource-revision/1",
+  "scientific_input_contract_sha256": "0e22c9f934c4deb7723b52c8c8b890cf4ce30de2acc811715267a61e9f8284e1",
+  "scientific_recipe_unchanged": true,
+  "status": "PROPOSAL_ONLY_NO_ROOT_OR_HUMAN_ADMISSION"
+}

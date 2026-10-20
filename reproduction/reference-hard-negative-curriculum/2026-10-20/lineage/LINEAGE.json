@@ -1,0 +1,24 @@
+{
+  "Python_version_of_accepted_R3": "3.12.14",
+  "R2_failed_result": {
+    "bytes": 1112,
+    "path": "lineage/R2_FAILED_RESOURCE_RESULT.json",
+    "sha256": "ea954ba33dea7ffe82c9ca3078afe64db1f49c7aec5032a13af501fc3dddd7b8"
+  },
+  "R2_original_result_never_reclassified": true,
+  "R2_source_manifest_sha256": "32bebcb836a26f68ddeb2bb67f6efda63b1ed045f6d4c7c21ebc82b6ed95d3a1",
+  "R2_terminal_status": "FAILED_CONSUMED_UNQUALIFIED",
+  "R3_executed_source_manifest_sha256": "c0625d4b332478a271b07c417610c4912171af37b4d94c5cfde1ad13115a19c2",
+  "R3_terminal_status": "PASS_REFERENCE_CURRICULUM_MECHANICS_NO_MODEL_QUALITY_CLAIM",
+  "default_interpreter_preflight_stopped_before_scientific_attempt": true,
+  "no_private_admissions_markers_preflight_records_or_machine_paths_included": true,
+  "original_source_manifest_sha256": "415989aa4fb7abbeb9eefe074c2e54f77eb0f57af1ae96b979748086c0ca2c59",
+  "prospective_RSS_budget_change_bytes": {
+    "R2": 134217728,
+    "R3": 167772160
+  },
+  "qualified_scientific_recipe_changes_between_R2_and_R3": false,
+  "same_conservative_sum_accounting_preserved": true,
+  "schema": "casmi-curriculum-public-execution-lineage/1",
+  "scope": "Executed scientific source and CPU receipts only. Input licensing terms and unresolved FP/checkpoint lineage limits remain."
+}

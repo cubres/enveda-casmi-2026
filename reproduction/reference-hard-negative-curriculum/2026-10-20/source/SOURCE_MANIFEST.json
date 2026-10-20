@@ -1,0 +1,40 @@
+{
+  "files": {
+    "INPUT_CONTRACT.json": {
+      "bytes": 2836,
+      "sha256": "0e22c9f934c4deb7723b52c8c8b890cf4ce30de2acc811715267a61e9f8284e1"
+    },
+    "REVISION_CONTRACT.json": {
+      "bytes": 1702,
+      "sha256": "37e15560ec2d954f645c0a430a44be35f3cedde3b839f1b4674aa064fc8ea00b"
+    },
+    "build_curriculum.py": {
+      "bytes": 15562,
+      "sha256": "a4965d5857d5049de28bae48cce5360267ff4865711b8521bb9b18f0496a9ca8"
+    },
+    "curriculum_core.py": {
+      "bytes": 10091,
+      "sha256": "993f48d0b21bde2a28b0db9827b2283e66ac9ca690312637e16f27e602648d42"
+    },
+    "demo_tiny.py": {
+      "bytes": 3392,
+      "sha256": "053ea909d101d1be314c82164df17cdd4df859ede672449431f3021164d86bcc"
+    },
+    "qualification.py": {
+      "bytes": 5396,
+      "sha256": "f8fb58f1e47028a86cda84698417affefc3d0b285bda2db7dd8a8a5c2ba0547c"
+    },
+    "run_owned_curriculum.py": {
+      "bytes": 12531,
+      "sha256": "44e79492ac50a8ba8f05950628340810a0a3f8a1bba3e7488b7053dfb433c0fe"
+    },
+    "sample_curriculum.py": {
+      "bytes": 1778,
+      "sha256": "6a795183ef9b94e530774f57b546332a391054d4985929c95e9e27152f0895b3"
+    }
+  },
+  "manifest_self_excluded": true,
+  "prior_failed_r2_manifest_sha256": "32bebcb836a26f68ddeb2bb67f6efda63b1ed045f6d4c7c21ebc82b6ed95d3a1",
+  "schema": "casmi-negative-curriculum-prospective160mib-source-manifest/1",
+  "status": "FROZEN_SOURCE_PROPOSAL_PENDING_ROOT_REVIEW_AND_HUMAN_EXCEPTION"
+}

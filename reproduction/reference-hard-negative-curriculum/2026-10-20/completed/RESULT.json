@@ -1,0 +1,35 @@
+{
+  "aggregate_CPU_seconds": 0.257484,
+  "child_completion_pin": {
+    "bytes": 941,
+    "sha256": "9ee370d20338666f8e107e3bf427a39a77b4a59684a8ed3eb54659c0b6b78141"
+  },
+  "child_returncode": 0,
+  "child_status": "COMPLETE_REFERENCE_CURRICULUM_PENDING_OWNED_RESOURCE_QUALIFICATION",
+  "conservative_RSS_peaks_sum_bytes": 136429568,
+  "conservative_observer_RSS_peak_bytes": 55754752,
+  "experiment": "casmi-reference-curriculum-r3-160mib",
+  "input_contract_sha256": "0e22c9f934c4deb7723b52c8c8b890cf4ce30de2acc811715267a61e9f8284e1",
+  "no_training_or_model_performed": true,
+  "output_manifest_pin": {
+    "bytes": 1062,
+    "sha256": "5d97a0402ceac115d37c2cf51f0e6d49c250c9df90a6177f6282a8297af37b9f"
+  },
+  "owned_process_group_clean": true,
+  "peak_child_RSS_bytes": 55754752,
+  "peak_wrapper_RSS_bytes": 24920064,
+  "reason": null,
+  "reference_identity": {
+    "atlas_commit": "8f2fd96360ddeb878053bc89298401657fe3e25d",
+    "packed_bytes_per_row": 1300,
+    "selected_bits": 10395,
+    "structure_commit": "9cb4a4a6bc9ce2e97ce7dfcbaca1419bbb5bbb34"
+  },
+  "schema": "casmi-reference-curriculum-owned-result/2",
+  "seconds": 0.24206512499949895,
+  "source_bytes_unchanged": true,
+  "source_manifest_sha256": "c0625d4b332478a271b07c417610c4912171af37b4d94c5cfde1ad13115a19c2",
+  "status": "PASS_REFERENCE_CURRICULUM_MECHANICS_NO_MODEL_QUALITY_CLAIM",
+  "wall_limit_seconds": 120.0,
+  "whole_RSS_limit_bytes": 167772160
+}

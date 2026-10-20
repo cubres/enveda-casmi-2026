@@ -1,0 +1,38 @@
+{
+  "anchor": {
+    "canonical_group": "eeeaa85f9d44aa03e1bc1973ae18397f9a3c7158162a843d553eab7d5b00a70c",
+    "component_id": "730da37bfa79f1b4eac21e550f563b7209057939f8b63f2191681903cc0a3b38",
+    "confusable_pool": "1",
+    "eligible_target_aliases": "1",
+    "empty_control": "False",
+    "fingerprint_sha256": "728c44a7e63de60407cf1aeda683cc485193c61c8028756168c65a0ec0272786",
+    "identity_alias": "ac28f3b9160e8d934cae1fd6ec293dae8f35d41010f1abe19a58a6063f1b5a8a",
+    "inchikey14": "AABTWRKUKUPMJG",
+    "intermediate_pool": "1",
+    "original_source_row": "17019",
+    "query_row": "0",
+    "reference_exact_mass_da": "96.057514875999999",
+    "separated_pool": "1",
+    "source_id": "CHEBI:89526",
+    "source_pair_count": "1",
+    "split": "train"
+  },
+  "scope": "Exact rows read from completed CSVs; consumer command NOT executed during staging. A sole eligible candidate fixes every stage/epoch choice for this anchor.",
+  "sole_reference_negative": {
+    "binary_cosine": "0.090932578596063143",
+    "candidate_identity_alias": "f5b70f20725ac4de73eb9063c2df8eede5f9f917fc6c787d969f88239d5f24f3",
+    "candidate_on_bits": "129",
+    "candidate_row": "192",
+    "hardness_bin": "separated",
+    "intersection_on_bits": "12",
+    "jaccard": "0.047619047619047616",
+    "minimum_stage": "0",
+    "query_on_bits": "135",
+    "query_row": "0",
+    "selected_reference_ppm": "10",
+    "signed_reference_ppm": "0",
+    "split": "train",
+    "target_hamming_bits": "240",
+    "union_on_bits": "252"
+  }
+}

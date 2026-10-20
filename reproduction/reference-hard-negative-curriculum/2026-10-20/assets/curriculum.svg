@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="580" viewBox="0 0 1280 580" role="img" aria-labelledby="title desc">
+<title id="title">Reference-target hard-negative curriculum</title>
+<desc id="desc">4096 reference anchors and 3800 atlas pairs pass through target collision and alias filters to 3629 pairs. Whole components stay within folds, then a deterministic train-only sampler uses progressive target-similarity pools. No spectrum or model result is claimed.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#66809a"/></marker></defs>
+<rect width="1280" height="580" rx="24" fill="#f3f7fb"/>
+<g font-family="system-ui, sans-serif" fill="#162d45">
+<text x="52" y="58" font-size="31" font-weight="700">Reference-target negatives, ready for a qualified training join</text>
+<text x="52" y="91" font-size="18" fill="#536b80">Public structures only · exact fingerprint targets · no spectra or trained-model result</text>
+<g stroke="#d2dfe9" stroke-width="2">
+<rect x="48" y="135" width="264" height="214" rx="18" fill="#ffffff"/>
+<rect x="354" y="135" width="264" height="214" rx="18" fill="#ffffff"/>
+<rect x="660" y="135" width="264" height="214" rx="18" fill="#ffffff"/>
+<rect x="966" y="135" width="264" height="214" rx="18" fill="#ffffff"/>
+</g>
+<g stroke="#66809a" stroke-width="3" marker-end="url(#arrow)"><path d="M317 242H343"/><path d="M623 242H649"/><path d="M929 242H955"/></g>
+<g font-size="18" font-weight="700"><text x="70" y="174">1  Frozen reference atlas</text><text x="376" y="174">2  Training-specific filters</text><text x="682" y="174">3  Whole-component folds</text><text x="988" y="174">4  Deterministic pools</text></g>
+<g font-size="17"><text x="70" y="217">4,096 anchors</text><text x="70" y="250">3,800 directed pairs</text><text x="70" y="283">Reference mass windows</text><text x="70" y="316">Existing Jaccard / cosine</text>
+<text x="376" y="217">−96 identical targets</text><text x="376" y="250">−75 repeated aliases</text><text x="376" y="283" font-weight="700" fill="#087f70">3,629 retained pairs</text><text x="376" y="316">Every source edge accounted</text>
+<text x="682" y="217">2,686 components</text><text x="682" y="250">Largest: 91 rows</text><text x="682" y="283" fill="#087f70">Zero endpoint fold crossings</text><text x="682" y="316">Identity aliases stay together</text>
+<text x="988" y="217">Train: 3,125 pairs</text><text x="988" y="250">Validation: 304 · Test: 200</text><text x="988" y="283">Progressive Jaccard bins</text><text x="988" y="316">Train-only anchor sampler</text></g>
+<rect x="48" y="382" width="1182" height="78" rx="16" fill="#e1f1ed"/>
+<text x="72" y="414" font-size="21" font-weight="700">All 4,096 anchors retained, including 2,517 empty eligible pools</text>
+<text x="72" y="443" font-size="18">Empty means skip a negative. Different targets do not prove distinguishable MS/MS.</text>
+<text x="52" y="503" font-size="18">Actual CPU mechanics: 0.242 s wall · 136,429,568-byte conservative RSS sum within 160 MiB</text>
+<text x="52" y="535" font-size="17" fill="#536b80">Reference mass is not observed precursor mass. License and qualify positive spectra and chemical joins separately.</text>
+</g></svg>

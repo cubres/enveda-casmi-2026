@@ -1,0 +1,23 @@
+{
+  "data_terms": "Other/per-component, ChEBI CC BY4.0 attribution plus separate existing selected-mask terms; new code Apache2.0 where marked.",
+  "executed_source_manifest_sha256": "c0625d4b332478a271b07c417610c4912171af37b4d94c5cfde1ad13115a19c2",
+  "fresh_dynamic_receipt_byte_parity_claim": false,
+  "fresh_producer_canary_consumer_model_execution_by_release_worker": false,
+  "historical_FP_checkpoint_lineage_resolved": false,
+  "input_atlas_commit": "8f2fd96360ddeb878053bc89298401657fe3e25d",
+  "input_contract_sha256": "0e22c9f934c4deb7723b52c8c8b890cf4ce30de2acc811715267a61e9f8284e1",
+  "input_structure_commit": "9cb4a4a6bc9ce2e97ce7dfcbaca1419bbb5bbb34",
+  "no_PASS_measurement_identity_or_output_pin_changed": true,
+  "original_owning_result_sha256": "cd2e27c9ec8cb0977d9ffd895a4dee29e7b1d055f5879a7837313d9f68185c12",
+  "original_source_and_all_seven_actual_data_tree_files_byte_exact": true,
+  "positive_spectrum_license_and_qualified_chemical_join_supplied": false,
+  "public_portable_owner_included": false,
+  "public_receipt_provenance": "verification/PUBLIC_CPU_RESULT_PROVENANCE.json",
+  "public_result_omissions": [
+    "distinct_actual_admission_pin",
+    "attempt_remains_consumed"
+  ],
+  "root_specific_wrapper_fresh_public_reproduction_claim": false,
+  "schema": "casmi-reference-negative-curriculum-public-provenance/1",
+  "scope": "Completed reference-target curriculum and actual CPU mechanics/resource evidence; no model/spectra/quality result."
+}
