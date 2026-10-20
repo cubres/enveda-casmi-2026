@@ -1,0 +1,91 @@
+{
+  "attempt_marker": "created after hash, data, and split preflight; before any model construction/inference",
+  "baseline": {
+    "checkpoint_sha256": "9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31",
+    "historical_reference_mrr25": 0.7074749658368091,
+    "matches_historical_within_0_002": true,
+    "mrr25": 0.706274031461362
+  },
+  "canary": {
+    "baseline_mrr25": 0.684780572715681,
+    "candidate_minus_baseline": -0.017267169838305563,
+    "candidate_mrr25": 0.6675134028773755,
+    "performance_not_used_as_gate": true,
+    "projected_full_seconds": 86.61,
+    "rows": 64,
+    "seconds": 2.255,
+    "status": "PASS_MECHANICS_RESOURCE_AND_NUMERICS"
+  },
+  "canary_rows": 64,
+  "candidate": {
+    "checkpoint_sha256": "c1c7650411d507f395e3077e90db72a8b1d692493e91c7f13ba6f55e6359b286",
+    "mrr25": 0.7025845963125903,
+    "training_steps": 3000
+  },
+  "candidate_draws_per_query": 63,
+  "cuda_fp16_rank_parity_claimed": false,
+  "device": "CPU FP32 for both baseline and candidate; not CUDA autocast FP16 parity",
+  "fixed_candidate_draws": {
+    "draws_per_query": 63,
+    "duplicates_preserved_in_ranking": true,
+    "out_of_range_indices": 0,
+    "positive_overlap_rows": 0,
+    "repeated_draws": 45039,
+    "repeated_rows": 2036,
+    "rows": 2048,
+    "sampling_with_replacement": true
+  },
+  "full_rows": 2048,
+  "historical_baseline_match_is_diagnostic_only": true,
+  "input_and_source_sha256": {
+    "bank/FULL_FINGERPRINT_MANIFEST.json": "5b08ca4b830de1558be4ce568a10f0997b5fa2fe875a872dcd6a216f901fd9ef",
+    "bank/fp_bits.npy": "f771cb6aa87a418b06d9abfbdac0c1759040afb955b9dfa59e8932105a65bdc6",
+    "bank/fp_meta.pkl": "88411e98cec6f862f7b121dbc27b807e5e18782416219fe2b11566deb3254132",
+    "bank/optimizer_bit_counts.npy": "4d874c910de699a0fa030a40d6bcded08d78c236f44aeefe0101f2ac20122193",
+    "bank/pool_fp.npy": "84afb2d17d567359963f1941c4c8b20523770aad4167ccc0bd715530360611e0",
+    "bank/pool_mass.npy": "0d28d5c288201e3598ba2fffea7f3d7284e397341ab0d72e5111b4cc67dabd1e",
+    "bank/pool_meta.pkl": "53c276a6625f38c90d93e3a8c23c25a2d08712754358b1160f6683e42a922324",
+    "bank/roles_by_structure.b64": "fe654a3f5f655df3897a344ca222e01a9f555a7dfd22a786e6cb32b126c76049",
+    "baseline_checkpoint": "9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31",
+    "candidate_checkpoint": "c1c7650411d507f395e3077e90db72a8b1d692493e91c7f13ba6f55e6359b286",
+    "checkpoint_decoy_indices": "2714697b0d21c956b883e5d4860bd67cae4d7b5a2f2a689edd198321ba3647ea",
+    "checkpoint_spectrum_ids": "b16cc570c4db9716cfe4cb8a19efb73185b5f663c136d3ed75e2c2c13cc9112a",
+    "runtime_source/LICENSE-SOURCE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "runtime_source/LICENSE-WEIGHTS.md": "e4d40b59c2414619baf7a1c06c8687740c5363387a9eeae76c34c0778a34380f",
+    "runtime_source/NOTICE.md": "5cb3c2f31322b630c373375f7d1f6d87b4b91204f721634bd3733532a81eaeff",
+    "runtime_source/ORIGINAL_SOURCE_BINDING.json": "0d645476c86de5afc2f2f5cb75697965ff20c367c6cb6ed5f635547fb9a23a96",
+    "runtime_source/PERMISSION_SCOPE.json": "a50a2bc10be38f0e51850bddb217abe175143aa29aa0d20ba591b5d70d94d0ac",
+    "runtime_source/TRAINING_CONTRACT.json": "092a0ad1b46dbdf369a78d70fde409395eb3db53f0027da6240bc62e0c8f75f6",
+    "runtime_source/fpmodel.py": "69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76",
+    "runtime_source/structure_uniform_sampler.py": "d2edd84f6db5d0d9138b6576ccda94b6f322e04424fe7c2c2db448f045421ea6",
+    "runtime_source/train_complementary_fp.py": "6cb6a26a0e5a0323d6332d9ffdb9afdfddfc85803ca2cef1636566265566f058",
+    "runtime_source/train_fp4.py": "1daa2532ef186600c21fc96fa6a16e1729084b4e7257524a0dc33fc2adc7abb0",
+    "runtime_source/train_full_fingerprint.py": "df609595b23b37fa475b480057275dcc22b753ae4159726bc7ddff5442980a0e",
+    "source_binding": "3797c232ce0f8911c6d3a0b779803d12f259f9cf34261ddcfba4203b4b38f6f0",
+    "spec.npz": "99dbf966d2607e2da8085a6550206a71fc912d2c90b9555a725a2569e4af4500",
+    "training_config": "4e766f7d2d9b17b809c1aece155be43e55e0eebe75cfe7e7a7adf030800c06a0",
+    "training_contract": "092a0ad1b46dbdf369a78d70fde409395eb3db53f0027da6240bc62e0c8f75f6"
+  },
+  "max_monitored_peak_rss_bytes": 12884901888,
+  "max_seconds": 1800,
+  "metric": "structure-weighted sampled-draw MRR@25 on fixed role-1-even queries and 63 preselected candidate draws; repeated draws remain repeated candidates",
+  "observed_utc": "2026-10-20T19:18:33.918513+00:00",
+  "official_score": null,
+  "paired_delta": {
+    "bootstrap_95_percentile_ci_seed20261020_draws5000": [
+      -0.008240622330686165,
+      0.0005690432806659222
+    ],
+    "candidate_minus_baseline_mrr25": -0.003689435148771736
+  },
+  "peak_rss_bytes": 2961555456,
+  "queries": 2048,
+  "schema": "casmi-v9-complementary-fp-heldout-validation/3",
+  "scope": "local CPU proxy only; no official score or submission",
+  "script_sha256": "09c0ed92c0bd8bef0f2bc8cede1bfabd2a72cd8c6399edd3f19274cbfc42fa43",
+  "seconds": 55.149,
+  "status": "COMPLETE_HELDOUT_VALIDATION_NO_COMPETITION_SCORE",
+  "submission_performed": false,
+  "threads": 2,
+  "unique_structures": 2048
+}
