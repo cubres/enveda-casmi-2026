@@ -1,5 +1,12 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Fold-safe top-identity gate · 20 October
+
+A deterministic 64-query canary and the full 250-molecule cached panel replay support a small top-1-preserving fold-safe FPNet blend: gated MRR@25 **0.51443 vs 0.51198 baseline** (paired 95% interval for the gain: **+0.00009 to +0.00534**), with top-1 unchanged. This is public development-panel evidence, not an official score; the [recipe, runnable script, exact hashes, and limits](experiments/2026-10-20-fold0-identity-gate/README.md) are recorded separately. The current panel dataset’s embedded manifests have several mismatched file pins; the release binds the exact Kaggle version 7 inputs by hash.
+
+As of the dated **2026-10-20 16:00 UTC** public leaderboard snapshot, the top score was **0.495** and the prvsiyan row was **0.345** (rank 1,954 of 3,670). That row is not evidence for this cached panel experiment or the current notebook source. See the [dated snapshot](experiments/2026-10-20-fold0-identity-gate/leaderboard_snapshot.json) and [live leaderboard](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/leaderboard).
+
+
 ## Checkpoint and ranker reproducibility audit · 20 October
 
 The source, prepared inputs and recorded S2/M1 commands are now linked in a [public, source-pinned audit](reproduction/legacy-v2/public-reproducibility-audit/2026-10-20/README.md). It separates the parts that can be inspected and rerun from the unresolved historical checkpoint-to-ranker-cache binding and raw ChEBI/LIPID MAPS ingestion lineage; it makes no new score claim.
