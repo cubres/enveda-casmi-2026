@@ -1,0 +1,62 @@
+{
+  "script_license": "Apache-2.0",
+  "data_license_note": "This report contains aggregate metrics and input hashes only; upstream dataset contents remain subject to their source terms.",
+  "source": {
+    "public_notebook": "dmitriigluzdov/casmi-26-the-data-behind-spectra-to-structures",
+    "public_notebook_script_version": 360413706,
+    "reported_best_score": 0.456,
+    "reported_best_score_version": 13,
+    "notebook_source_sha256": "913acc2dec872faf6a7b04438288339adfa092dbab1d44fe6f3d484feb454a4b",
+    "panel_dataset": "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+    "panel_dataset_version": 7,
+    "pubchem_dataset": "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+    "pubchem_dataset_version": 9,
+    "pubchem_synonym_feature": "pc_lsynonyms.npy; row-aligned log(1 + PubChem synonym count)",
+    "score_type": "public labelled development-panel replay, not official leaderboard score"
+  },
+  "method": {
+    "baseline": "cached A+B plus 0.5 fold0 full/partial FPNet scores; v10 prior; 5,000 partial-score shortlist union top 200 prior; 0.15 prior coefficient; metric-identity dedupe; exclude pool identities except truth",
+    "candidate": "same replay with fixed +0.5 * log1p(PubChem synonym count) added to the prior before the 5,000/200 shortlist and final ranking",
+    "canary_selection": "first 64 IDs in lexical SHA256 order over 'casmi-v14-synonym-prior-fixed-canary-v1|'; label-free and fixed before scoring",
+    "canary_gate": "full panel allowed only if candidate MRR does not fall and top-1 does not fall on the fixed 64-query canary"
+  },
+  "inputs": {
+    "panel.parquet": "93469d9bd7e51f9e0c2e891f59844a1ffc56c0921035110495b598c9b4e52eb3",
+    "panel_fpnet_scores.parquet": "e06f88459ae088932d45e93eefe7dceff68bd9f80e34f73601b2639946215226",
+    "pubchem_signals.parquet": "d8cc2df0bb2bed4259b7b8850508ebcd8ccf7c4158e33d10eca7c05df7b2785a",
+    "pubchem_candidates.parquet": "be20481af52e2b7485ed204685d88b71271bdc6a34a51c30c1745be1d42d1666",
+    "pc_lsynonyms.npy": "7bf7c427d1746fb2c1eff7271c5bc81b47b740c74b99acbd2f1a95d838562504"
+  },
+  "panel_candidate_rows": 1939476,
+  "queries_with_candidate_rows": 246,
+  "n_queries_requested": 64,
+  "baseline_replay": {
+    "n": 64,
+    "mrr25": 0.9453125,
+    "top1": 0.9375,
+    "hit25": 0.96875
+  },
+  "candidate_replay": {
+    "n": 64,
+    "mrr25": 0.9466145833333333,
+    "top1": 0.9375,
+    "hit25": 0.96875
+  },
+  "canary_or_panel_delta": {
+    "mrr25": 0.001302083333333333,
+    "top1": 0.0,
+    "improved_queries": 1,
+    "worse_queries": 0,
+    "unchanged_queries": 63
+  },
+  "cached_baseline_check": {
+    "max_abs_per_query_delta": 0.0,
+    "mean_per_query_delta": 0.0,
+    "reference_queries_present": 63
+  },
+  "limitations": [
+    "Public development panel is a labelled training-derived natural-product subset and does not establish hidden-test performance.",
+    "The synonym feature and fixed weight were already reported from this panel by the public baseline author; this replay verifies transfer/alignment and does not provide an untouched scientific holdout.",
+    "Cached scores are used; no spectra, model weights, fitting, or GPU inference are used."
+  ]
+}
