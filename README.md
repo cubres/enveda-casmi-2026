@@ -1,5 +1,9 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Fixed synonym prior replay · 20 October
+
+The [V14 PubChem synonym-prior replay](experiments/2026-10-20-v14-synonym-prior-replay/README.md) reproduces the public author's fixed `0.5 * log1p(synonym count)` panel experiment using hash-pinned cached inputs. The 250-molecule panel changes from MRR@25 **0.96467 to 0.97033**, with top-1 **0.960 to 0.968**; this is a labelled development-panel result, not a hidden-test or official score. The package credits the original method, includes a CPU-only replay and figure, and records an unresolved per-query cache/tie discrepancy.
+
 ## Fold-safe top-identity gate · 20 October
 
 A deterministic 64-query canary and the full 250-molecule cached panel replay support a small top-1-preserving fold-safe FPNet blend: gated MRR@25 **0.51443 vs 0.51198 baseline** (paired 95% interval for the gain: **+0.00009 to +0.00534**), with top-1 unchanged. This is public development-panel evidence, not an official score; the [recipe, runnable script, exact hashes, and limits](experiments/2026-10-20-fold0-identity-gate/README.md) are recorded separately. The current panel dataset’s embedded manifests have several mismatched file pins; the release binds the exact Kaggle version 7 inputs by hash.
