@@ -12,7 +12,18 @@ The anonymous Kaggle metadata and complete version-specific file listings checke
 | [casmi26-ranker-features](https://www.kaggle.com/datasets/prvsiyan/casmi26-ranker-features/versions/6) | 12039490 / 6 | rank_train.npz — 9,553,020 | CC BY-NC-SA 4.0 |
 | [chebi-lipidmaps-casmi26](https://www.kaggle.com/datasets/prvsiyan/chebi-lipidmaps-casmi26/versions/1) | 12051681 / 1 | bio_fp.npy — 54,399,176; bio_mass.npy — 502,080; bio_meta.pkl — 5,545,993 | CC BY-NC-SA 4.0 |
 
-These are metadata and inventory observations; this audit did not download or hash the weight, NPZ, NPY, or pickle payloads. The “v2” string is the fingerprint bundle's name; its Kaggle dataset version is 1.
+The three assets above are the released model, ranker-feature, and bio-fingerprint outputs. The prepared inputs used by the legacy 6,930-output trainers are also public:
+
+| Prepared input asset | Version | Published files and declared bytes | Kaggle metadata label |
+|---|---:|---|---|
+| [casmi26-spec-fp](https://www.kaggle.com/datasets/prvsiyan/casmi26-spec-fp/versions/1) | 1 | spec.npz — 920,788,910; fp_sel.npy — 239,127,398; fp_bits.npy — 55,568; fp_meta.pkl — 17,095,875; split.pkl — 47,965 | Other (specified in description) |
+| [casmi26-pool](https://www.kaggle.com/datasets/prvsiyan/casmi26-pool/versions/1) | 1 | pool_fp.npy — 617,048,363; pool_mass.npy — 5,693,768; pool_meta.pkl — 64,843,052 | Other (specified in description) |
+
+The published `split.pkl` includes the retained legacy validation split. These releases make the prepared spectra, selected fingerprint metadata, and matching 6,930-bit pool available without access to the private trainer kernel. The full file hashes are listed on their versioned dataset pages; this audit checked public metadata and inventories, not downloaded payload bytes or hash equality.
+
+[casmi26-full-fingerprint-inputs v1](https://www.kaggle.com/datasets/prvsiyan/casmi26-full-fingerprint-inputs/versions/1) is a distinct 10,395-bit, 711,705-candidate input bank with explicit training roles for the newer full-fingerprint workflow. It is not a replacement input for the legacy S2/M1 checkpoints or their 6,930-output trainers. Its Kaggle metadata also says “Other (specified in description).”
+
+The listed datasets' own descriptions govern permitted reuse and source terms; “Other” is not a general-purpose open-data licence. The “v2” string in the first table is the fingerprint bundle's name; its Kaggle dataset version is 1.
 
 ## FP preparation and validation split
 
@@ -28,7 +39,7 @@ python "$SOURCE/build_dataset.py"
 python "$SOURCE/build_pool.py"
 ~~~
 
-It writes ds/spec.npz, ds/split.pkl, up_train/fp_bits.npy, up_train/fp_sel.npy, up_train/fp_meta.pkl, pool_fp.npy, pool_mass.npy, and pool_meta.pkl. The source files [build_fps.py](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/public_source/build_fps.py), [build_dataset.py](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/public_source/build_dataset.py), [build_coconut.py](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/public_source/build_coconut.py), and [build_pool.py](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/public_source/build_pool.py) are byte-preserved. The complete raw inputs, historical input-version hashes, package versions, produced is_val arrays, and resource profile are not part of this audit's input bundle.
+It writes ds/spec.npz, ds/split.pkl, up_train/fp_bits.npy, up_train/fp_sel.npy, up_train/fp_meta.pkl, pool_fp.npy, pool_mass.npy, and pool_meta.pkl. The matching prepared arrays are now published in the versioned `casmi26-spec-fp` and `casmi26-pool` assets above; `split.pkl` carries the retained structure-level validation assignment. The source files [build_fps.py](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/public_source/build_fps.py), [build_dataset.py](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/public_source/build_dataset.py), [build_coconut.py](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/public_source/build_coconut.py), and [build_pool.py](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/public_source/build_pool.py) are byte-preserved. Public availability closes the missing-prepared-files issue raised in the notebook comment. What remains unbound is the complete upstream input-version/checksum chain, exact environment/package lock, and a fresh payload hash comparison; no payload was downloaded or rehashed for this audit.
 
 Source inspection records sorted eligible natural-product keys, forces all enveda-np-examples structures into validation, then samples up to 2,500 additional keys with NumPy default_rng(0). Every spectrum inherits the structure-level is_val value. Legacy bit selection uses frequency thresholds 0.005–0.995 over the legacy structure matrix, including validation structures; it is not the later optimizer-only 10,395-bit selection recipe. The public guide reports zero structure overlap between its retained legacy train and validation spectra, but that is not a fresh blind validation result. Original full-data preparation uses large arrays and ten workers; no full-run memory or time measurement is claimed.
 
@@ -67,7 +78,7 @@ The separate [V465 source-binding audit](../../tools/casmi-public-notebook-audit
 
 ## What is still needed for a complete reproduction
 
-1. Pin and hash every original input and runtime, including the exact spec, metadata, pool and validation-split artifacts.
+1. Bind the public preparation outputs to exact upstream input versions and checksums, pin the runtime, and independently download/hash the published spec, metadata, pool, and split artifacts.
 2. Record the generator and FPNet/checkpoint SHA-256 for both FP-logit caches, and bind ranker G to its query and structure identities.
 3. Reproduce and hash each checkpoint export, including the mapping from training output names to the public bundle filenames.
 4. Publish a source-release manifest and rebuild recipe for the combined ChEBI/LIPID MAPS bank, subject to each source's terms.
