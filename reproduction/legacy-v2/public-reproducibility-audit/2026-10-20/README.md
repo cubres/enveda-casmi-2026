@@ -27,6 +27,16 @@ The selected public saves are at steps 20,000 (S2) and 24,000 (M1), below the co
 
 The original [FPNet](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/checkpoint_lineage/original_sources/fpmodel.py) source is pinned at SHA256 `69f2656778a08233e22235bf4853f0b3d2420b431390a32d6c8ed453cde85c76`. The original S2 and M1 trainer files are `train_fp3.py` (SHA256 `43bb618dd512def4ccb1119f813aabce2b9f9bcbfa681c9d2db5adfa05e66840`) and `train_fp4.py` (SHA256 `e2eaef630c5f09f157eea3652095b8b9780cbe7fdffa6f0652ae5845d7b18c8a`). The [scoped Apache-2.0 source grant](https://github.com/cubres/enveda-casmi-2026/blob/3b1ba8eb9d064632f6aaed2283e6b7da958e1d1a/reproduction/legacy-v2/LICENSE_SCOPE.md) covers enumerated owned code, not weights, datasets, caches, dependencies or unrelated files.
 
+## Verify the cited source bytes
+
+The public preparation, FPNet, trainer and ranker source files can be checked from a repository clone with the standard-library-only [source pin auditor](audit_source_pins.py):
+
+```bash
+python3 reproduction/legacy-v2/public-reproducibility-audit/2026-10-20/audit_source_pins.py
+```
+
+It checks eight byte-count/SHA-256 pins against repository commit `7c885861724ba280db9cfee9d96fe8fa56813e80`, without importing or executing code or reading model/data payloads. A mismatch exits nonzero; pins are never refreshed automatically. Passing confirms source bytes only, not historical checkpoint-to-cache lineage, data rights, model quality or score reproducibility. The script is Apache-2.0 under its SPDX header; this grant does not change the terms on datasets, weights or caches.
+
 ## The remaining ranker gap
 
 The [public `make_ranker3.py`](https://github.com/cubres/enveda-casmi-2026/blob/f4b645acffa70809885eb14082fbe83af47a903d/reproduction/legacy-v2/ranker_lineage/original_sources/make_ranker3.py) (SHA256 `e94e41a384ee78c027d8c9f3918708aa2d4a94b1eae8fee00c9a7bc5fa427532`) builds `rank_train.npz` from upstream query caches and optional FP logits; it does not export the fitted serving classifier. Its `--model` option reads `val_model_logits_combo.npy` and `hard_model_logits.npy`, but those arrays do not carry a checkpoint hash or producer receipt. If the flag or cache is absent, the corresponding twelve FP-derived feature columns are filled with zeros. Therefore the public FPNet version and trainers are identifiable, but **the exact FPNet/checkpoint used for the published ranker columns is not**.
