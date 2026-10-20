@@ -41,7 +41,7 @@ Also retain the matching peak filtering, intensity transform, neutral-loss encod
 
 ### License and attribution
 
-The existing Kaggle license is **CC0-1.0**. The license label applies to this published bundle; it does not establish the terms of every upstream training source. Check upstream terms and competition rules when retraining or redistributing derived artifacts.
+Kaggle's current metadata for [dataset version 1](https://www.kaggle.com/datasets/prvsiyan/casmi26-fp-models-v2/versions/1) reports **CC BY-NC-SA 4.0** (checked October 20, 2026). This published label does not establish rights to upstream training data or alter competition restrictions. The reproduction source-code grant is separately scoped and excludes weights and data; see the [public provenance audit](../reproduction/legacy-v2/PUBLIC_REPRODUCIBILITY_AUDIT_2026-10-20.md).
 
 ### Reproducibility and scope
 

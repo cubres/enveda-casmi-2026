@@ -11,7 +11,7 @@ This compact archive lets you retrain the baseline's gradient-boosted candidate 
 | `M` | `(142762,)` | float64 | Simulation-regime selector used for mixture/sample weighting |
 | `G` | `(142762,)` | int64 | Integer grouping array; query/structure mapping is not documented in the archive |
 
-The archive does not include column names, a complete query manifest, checkpoint hashes, or a certified structure-level validation split. Keep a pinned copy of the feature-builder source with the archive; changing a model channel while retaining the same column count can silently change the feature distribution.
+The archive does not include column names, a complete query manifest, checkpoint hashes, or a certified structure-level validation split. Its [feature builder](../reproduction/legacy-v2/ranker_lineage/original_sources/make_ranker3.py) and [column definitions](../reproduction/legacy-v2/ranker_lineage/FEATURE_COLUMNS.json) are public. The historical FP-logit cache producer and checkpoint remain unbound; changing a model channel while retaining the same column count can silently change the feature distribution. See the [public provenance audit](../reproduction/legacy-v2/PUBLIC_REPRODUCIBILITY_AUDIT_2026-10-20.md).
 
 ### Inspect the archive
 
@@ -55,7 +55,7 @@ Report retrieval coverage and full-query ranking metrics as well as classifier m
 
 Kaggle version 2 introduced a 25-feature layout. Later releases introduced the 31-feature layout and changed the fingerprint-model channel. Current version 6 is described in the original release notes as **“v5: 31 features, m1 merged-spectrum model channel”**: the internal recipe label and Kaggle version number are different. Avoid mixing an old feature archive with a newer inference recipe based only on a shared filename.
 
-The existing Kaggle license is **CC0-1.0**. Companion assets: [fingerprint v2](https://www.kaggle.com/datasets/prvsiyan/casmi26-fp-models-v2), [fingerprint v4](https://www.kaggle.com/datasets/prvsiyan/casmi26-fp-models-v4), and [COCONUT candidates](https://www.kaggle.com/datasets/prvsiyan/coconut-casmi26-candidates). Upstream resource terms still matter when regenerating or redistributing derived data.
+Kaggle's current metadata for [dataset version 6](https://www.kaggle.com/datasets/prvsiyan/casmi26-ranker-features/versions/6) reports **CC BY-NC-SA 4.0** (checked October 20, 2026). This label does not identify upstream source rights; see the [public provenance audit](../reproduction/legacy-v2/PUBLIC_REPRODUCIBILITY_AUDIT_2026-10-20.md). Companion assets: [fingerprint v2](https://www.kaggle.com/datasets/prvsiyan/casmi26-fp-models-v2), [fingerprint v4](https://www.kaggle.com/datasets/prvsiyan/casmi26-fp-models-v4), and [COCONUT candidates](https://www.kaggle.com/datasets/prvsiyan/coconut-casmi26-candidates). Upstream resource terms still matter when regenerating or redistributing derived data.
 
 ### Project notebook and experiment history
 
