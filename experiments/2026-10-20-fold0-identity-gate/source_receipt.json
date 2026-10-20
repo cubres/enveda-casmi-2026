@@ -1,0 +1,139 @@
+{
+  "dataset": {
+    "id": 12288074,
+    "ref": "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+    "title": "CASMI26 Natural-Product Panel Benchmark",
+    "current_version_number": 7,
+    "last_updated": "2026-10-20T15:30:47.943Z",
+    "license_name": "Other (specified in description)",
+    "url": "https://www.kaggle.com/datasets/dmitriigluzdov/casmi26-natural-product-panel-benchmark"
+  },
+  "captured_at_utc": "2026-10-20T16:07:54+00:00",
+  "file_listing_source": "Kaggle CLI 2.2.3: datasets files dmitriigluzdov/casmi26-natural-product-panel-benchmark --format json --page-size 200",
+  "selected_inputs": [
+    {
+      "name": "panel.parquet",
+      "bytes": 23269,
+      "sha256": "93469d9bd7e51f9e0c2e891f59844a1ffc56c0921035110495b598c9b4e52eb3",
+      "kaggle_size_bytes": 23269,
+      "kaggle_creation_date": "2026-10-20T15:30:55.237000",
+      "size_matches_listing": true
+    },
+    {
+      "name": "panel_fpnet_per_molecule.csv",
+      "bytes": 270090,
+      "sha256": "3f0fb337dd8014e07639973a56eaf2e8d4a86e83ae1c7c15663480eabe621ee6",
+      "kaggle_size_bytes": 270090,
+      "kaggle_creation_date": "2026-10-20T15:30:55.202000",
+      "size_matches_listing": true
+    },
+    {
+      "name": "panel_fpnet_scores.parquet",
+      "bytes": 51937874,
+      "sha256": "e06f88459ae088932d45e93eefe7dceff68bd9f80e34f73601b2639946215226",
+      "kaggle_size_bytes": 51937874,
+      "kaggle_creation_date": "2026-10-20T15:30:56.453000",
+      "size_matches_listing": true
+    },
+    {
+      "name": "pubchem_signals.parquet",
+      "bytes": 22547350,
+      "sha256": "d8cc2df0bb2bed4259b7b8850508ebcd8ccf7c4158e33d10eca7c05df7b2785a",
+      "kaggle_size_bytes": 22547350,
+      "kaggle_creation_date": "2026-10-20T15:30:56.384000",
+      "size_matches_listing": true
+    },
+    {
+      "name": "prior_rule_per_query.parquet",
+      "bytes": 11658,
+      "sha256": "a47c2b1b266ed3380c72196a402b3a749f915f5f969850328f27f907564db472",
+      "kaggle_size_bytes": 11658,
+      "kaggle_creation_date": "2026-10-20T15:30:55.614000",
+      "size_matches_listing": true
+    },
+    {
+      "name": "gate_diagnostics.csv",
+      "bytes": 365797,
+      "sha256": "07bf47a47b5119e9a6dc0e7e61654c9e4db366a71e5249002f5533ca47311836",
+      "kaggle_size_bytes": 365797,
+      "kaggle_creation_date": "2026-10-20T15:30:55.248000",
+      "size_matches_listing": true
+    },
+    {
+      "name": "main_candidates.parquet",
+      "bytes": 1639248,
+      "sha256": "63854375ebd0f3242e31e31069363b497f1fd80a2bfcb3222ee69a848e74ae67",
+      "kaggle_size_bytes": 1639248,
+      "kaggle_creation_date": "2026-10-20T15:30:55.224000",
+      "size_matches_listing": true
+    }
+  ],
+  "embedded_manifest_comparisons": [
+    {
+      "manifest": "MANIFEST_20261019.json",
+      "file": "README.md",
+      "expected_bytes": 12450,
+      "actual_bytes": 6915,
+      "expected_sha256": "43c5f5f8203aef5c61e7e063a985be50891db59db674d99cc6a70680d8aded24",
+      "actual_sha256": "2ba9fd06a38c60787362bd4e2fc9c21b75d73049e66436a744afc065c817a3e9",
+      "matches": false
+    },
+    {
+      "manifest": "MANIFEST_20261019.json",
+      "file": "VALIDATION_20261019.json",
+      "expected_bytes": 2715,
+      "actual_bytes": 2580,
+      "expected_sha256": "ffa6ee3eefa680ef28ccd7565e03d4ba6b8c7286f765aab637e6f7afed578e54",
+      "actual_sha256": "5e3984406f228c6b9c7b1a9d7141d72fdff8bd181b5a6ee5cf7dfe1e324ce3ed",
+      "matches": false
+    },
+    {
+      "manifest": "MANIFEST_20261019.json",
+      "file": "PANEL_REPLAY_PUBLIC.json",
+      "expected_bytes": 12742,
+      "actual_bytes": 12718,
+      "expected_sha256": "7c0a6839986feaae751bc69a60cfdffffb5702313a2027e9d08c3cabaeddc719",
+      "actual_sha256": "90e8e64f0f5f4ef106aaf17ecd3c174bbc2650d1c557829a43701cbd4f0e65fd",
+      "matches": false
+    },
+    {
+      "manifest": "MANIFEST_20261019_2.json",
+      "file": "README.md",
+      "expected_bytes": 5444,
+      "actual_bytes": 6915,
+      "expected_sha256": "4a76c6ee5ca4c0b5c8444f6ad7247848639f33b6000ddf69608fd8368f36aaf2",
+      "actual_sha256": "2ba9fd06a38c60787362bd4e2fc9c21b75d73049e66436a744afc065c817a3e9",
+      "matches": false
+    }
+  ],
+  "notes": [
+    "The panel and derived scores are competition-derived and subject to the Kaggle competition terms and third-party source terms.",
+    "No candidate rows, spectra, structures, hidden labels, or model weights are included in this receipt.",
+    "The embedded manifests are not accepted as pins for the current version where their byte count or SHA-256 differs."
+  ],
+  "dataset_version_url": "https://www.kaggle.com/datasets/dmitriigluzdov/casmi26-natural-product-panel-benchmark/versions/7",
+  "panel_summary_replay": {
+    "result": "PASS",
+    "rows_reproduced": 11,
+    "max_absolute_difference": 1.1102230246251565e-16,
+    "inputs": [
+      "panel_fpnet_per_molecule.csv",
+      "panel.parquet"
+    ],
+    "scope": "cached panel summary reproduction; no model inference"
+  },
+  "official_public_leaderboard_snapshot": {
+    "snapshot_file": "enveda-CASMI26-molecule-id-mass-spectra-publicleaderboard-2026-10-20T16:00:20.csv",
+    "source_url": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/leaderboard",
+    "snapshot_zip_sha256": "c49223a17e5ac4280cb2a316245599453296efd2dc5a660443263cf791ecaa6c",
+    "rows": 3670,
+    "top_score": 0.495,
+    "prvsiyan_row": {
+      "rank": 1954,
+      "team": "prvsiyan",
+      "score": 0.345,
+      "last_submission": "2026-10-10 11:34:30",
+      "submission_count": 37
+    }
+  }
+}
