@@ -1,5 +1,9 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Candidate-generation frontier experiment · 21 October 2026
+
+A public discussion reports correct structures generated for 100/130 database-absent molecules but only 7/130 at rank 1. Gluzdov's 20-parent version is still unscored. The [candidate-generation audit](research/2026-10-21-candidate-generation-recall/README.md) sets a molecule-disjoint test that measures answer survival through generation, filtering and ranking separately. This is a proposed experiment, not a score claim.
+
 ## Verified campaign status and next test · 21 October 2026
 
 The native [submission row](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/submissions) confirms that **Analog Propagation, Version 43** (`scriptVersionId=360497306`) completed successfully with public MRR@25 **0.456**. The current [public leaderboard](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/leaderboard) shows **0.495** at the top and prvsiyan at rank **374/3,740**. Kaggle says the public score covers about 31% of test molecules, so this is not a private/final score. The accepted row is recorded; it must not be resubmitted as recovery.
