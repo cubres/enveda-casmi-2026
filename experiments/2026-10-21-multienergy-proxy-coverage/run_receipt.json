@@ -1,0 +1,19 @@
+{
+  "canary_sha256": "efb4e7a274bbf3aed6db8aac1c0a991d307c27448356515a7ed5967806dcbe45",
+  "command": "python profile_coverage.py --train train.parquet --output coverage.json --workers 6",
+  "coverage_sha256": "c9bd0ddf604ba5bc682c72ea17ee4f06c2c9c5800a048c1d6e41e608e3b2458b",
+  "identity_basis": "RDKit TautomerEnumerator canonicalization then InChIKey14",
+  "input_file": "train.parquet",
+  "input_sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98",
+  "kaggle_submission_created": false,
+  "measured_at_utc": "2026-10-21T17:18:39.518361+00:00",
+  "pyarrow": "21.0.0",
+  "python": "3.12.14",
+  "rdkit": "2026.03.3",
+  "rows_read": 2539608,
+  "runtime_seconds": 490.022,
+  "score_claim": null,
+  "source_sha256": "77e56895038abfb32d145590c99ac2cf42039a2125ece8bbe56911f02d73c7c9",
+  "status": "COMPLETE",
+  "workers": 6
+}
