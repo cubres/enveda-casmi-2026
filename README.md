@@ -10,6 +10,10 @@ A clean-room follow-up is to use identity-disjoint labeled molecules with no mea
 
 The new [PubChemLite V1 payload audit](datasets/casmi26-pubchemlite-v1-integrity-audit/README.md) reproduces the exact archive, CRC, manifest, payload hashes, and NumPy headers without loading the pickle. It explicitly leaves row identity/alignment and the Kaggle-mirror versus upstream license difference unresolved. No score gain or competition-use clearance is claimed.
 
+## Reference-target curriculum rights correction · 21 October 2026
+
+The [reference-target curriculum package](reproduction/reference-hard-negative-curriculum/2026-10-20/README.md) is now source-only. Its derived tables were withdrawn from the current branch because their fingerprint features depend on a training-derived mask whose exact redistribution terms remain unresolved. The source, synthetic mechanics demo, and run receipt remain; no model-quality or score claim is made. Earlier Git history is not rewritten and may still contain old output blobs, which should not be redistributed pending rights clarification.
+
 The dated sections below preserve what was known at their capture times; any earlier wording that V43 was still running or pending is superseded by this verified status.
 
 

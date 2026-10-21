@@ -1,25 +1,57 @@
 {
-  "bytes_excluding_self": 2103871,
+  "schema": "casmi-reference-negative-curriculum-public-release-files/2",
+  "status": "CODE_ONLY_OUTPUTS_WITHDRAWN_PENDING_COMPONENT_RIGHTS",
+  "scope": "Marked Apache-2.0 source, synthetic demo, attribution and execution provenance only; generated mask-derived tables are absent.",
+  "files_count_excluding_self": 25,
+  "bytes_excluding_self": 97671,
   "files": {
+    "assets/curriculum.svg": {
+      "bytes": 3275,
+      "sha256": "7b5edc7709b9a85811a87683e3f7f88d9b308dd25510b98816c8525dba985296"
+    },
+    "completed/RESULT.json": {
+      "bytes": 1428,
+      "sha256": "b734d87ac9ef0203be3342334cec341a2618c2f699c596a4c56ae13b5060de0e"
+    },
+    "DATA_WITHDRAWAL_NOTICE.md": {
+      "bytes": 1106,
+      "sha256": "e3619714dbadc97dee64b5c161faf9dffad0430654cd3f257c1fc1d3a3c550bc"
+    },
     "DATA-LICENSE.md": {
-      "bytes": 1692,
-      "sha256": "fc15bc403595069e10ed3130c930ab67850eec29b3bf6a14ae5631181f30d82c"
+      "bytes": 2121,
+      "sha256": "9d875773d0213b6f8316030a8c1d5256443d465e4284ac4b2f5c314040e80df5"
+    },
+    "examples/README.md": {
+      "bytes": 800,
+      "sha256": "cf7cae79b0995e970329fb9a55c36d7132d0b8cbb85b61945d7e090328652ad1"
     },
     "INPUTS.md": {
-      "bytes": 4210,
-      "sha256": "47b366e791a2eb5956f84c92e3249efc4a5bf6eda8251e752aa83c5a44c95c6f"
+      "bytes": 4200,
+      "sha256": "0dd59ddb8ac6610cc8fdf8546f2736a2a5051346badb3d2acf2014ab589b0064"
     },
     "LICENSE-SOURCE": {
       "bytes": 11358,
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
+    "lineage/LINEAGE.json": {
+      "bytes": 1300,
+      "sha256": "5647c6a542086153f3df8b34420b1aab856c3a73f71a460aa68861b7ca96151d"
+    },
+    "lineage/R2_FAILED_RESOURCE_RESULT.json": {
+      "bytes": 1112,
+      "sha256": "ea954ba33dea7ffe82c9ca3078afe64db1f49c7aec5032a13af501fc3dddd7b8"
+    },
+    "lineage/README.md": {
+      "bytes": 1896,
+      "sha256": "76e51f6cf1ae56bd557f28b1070d92bd5b6e140e9f3f787b29e519d783ddf1af"
+    },
     "PROVENANCE.json": {
-      "bytes": 1479,
-      "sha256": "e7341bfe99e0a2a768d51ee6cbd0fb50dd1e00c6121670debd8516de58025c81"
+      "bytes": 2317,
+      "sha256": "04938313ca18ae22a6e23e6bec471763dd1991e772532e353a179d22e9db24de"
     },
     "README.md": {
-      "bytes": 8651,
-      "sha256": "e7b2654507ac8b8315e2694b178ed2a9481e87661abe79f93d7a6e4a0d2a0704"
+      "bytes": 3508,
+      "sha256": "bc839f65b691257dfb023a10e0b64e3ebc79d235af22f4e728f8939aee5f115f"
     },
     "SOURCE_ATTRIBUTION.md": {
       "bytes": 2428,
@@ -29,14 +61,62 @@
       "bytes": 3175,
       "sha256": "156994f6e1c288d65ed68d0b83d0bc8cb6ddd901a7073038cd839b483ee71871"
     },
-    "assets/curriculum.svg": {
-      "bytes": 3275,
-      "sha256": "7b5edc7709b9a85811a87683e3f7f88d9b308dd25510b98816c8525dba985296"
+    "source/build_curriculum.py": {
+      "bytes": 15562,
+      "sha256": "a4965d5857d5049de28bae48cce5360267ff4865711b8521bb9b18f0496a9ca8"
     },
-    "completed/RESULT.json": {
-      "bytes": 1428,
-      "sha256": "b734d87ac9ef0203be3342334cec341a2618c2f699c596a4c56ae13b5060de0e"
+    "source/curriculum_core.py": {
+      "bytes": 10091,
+      "sha256": "993f48d0b21bde2a28b0db9827b2283e66ac9ca690312637e16f27e602648d42"
     },
+    "source/demo_tiny.py": {
+      "bytes": 3392,
+      "sha256": "053ea909d101d1be314c82164df17cdd4df859ede672449431f3021164d86bcc"
+    },
+    "source/INPUT_CONTRACT.json": {
+      "bytes": 2836,
+      "sha256": "0e22c9f934c4deb7723b52c8c8b890cf4ce30de2acc811715267a61e9f8284e1"
+    },
+    "source/qualification.py": {
+      "bytes": 5396,
+      "sha256": "f8fb58f1e47028a86cda84698417affefc3d0b285bda2db7dd8a8a5c2ba0547c"
+    },
+    "source/REVISION_CONTRACT.json": {
+      "bytes": 1702,
+      "sha256": "37e15560ec2d954f645c0a430a44be35f3cedde3b839f1b4674aa064fc8ea00b"
+    },
+    "source/run_owned_curriculum.py": {
+      "bytes": 12531,
+      "sha256": "44e79492ac50a8ba8f05950628340810a0a3f8a1bba3e7488b7053dfb433c0fe"
+    },
+    "source/sample_curriculum.py": {
+      "bytes": 1778,
+      "sha256": "6a795183ef9b94e530774f57b546332a391054d4985929c95e9e27152f0895b3"
+    },
+    "source/SOURCE_MANIFEST.json": {
+      "bytes": 1434,
+      "sha256": "c0625d4b332478a271b07c417610c4912171af37b4d94c5cfde1ad13115a19c2"
+    },
+    "verification/PUBLIC_CPU_RESULT_PROVENANCE.json": {
+      "bytes": 1194,
+      "sha256": "3bacb60b0ac743ca21934b3abb45f60df86baaa491c04cf28b8c374ba8320528"
+    },
+    "verify_release.py": {
+      "bytes": 1731,
+      "sha256": "aec8ecddb57fa7cce7f7fca053caf541634c9ea6c952d8e67e17512fb5f3ad4a"
+    }
+  },
+  "withdrawn_paths": [
+    "completed/data/CANARY64.json",
+    "completed/data/CURRICULUM_COMPLETE.json",
+    "completed/data/OUTPUT_MANIFEST.json",
+    "completed/data/SPLIT_EVIDENCE.json",
+    "completed/data/anchors.csv",
+    "completed/data/excluded_source_pairs.csv",
+    "completed/data/negative_pairs.csv",
+    "examples/anchor0_frozen_rows.json"
+  ],
+  "withdrawn_artifacts": {
     "completed/data/CANARY64.json": {
       "bytes": 3352,
       "sha256": "f3e94ee148976a6d1c19c4052eeff6b68c5b9dd0e566ce574b10ccd936614281"
@@ -65,73 +145,11 @@
       "bytes": 603276,
       "sha256": "b9f2374110b53aa1b550f3c6580f0402f421757ed5480b638773c14c10370041"
     },
-    "examples/README.md": {
-      "bytes": 1896,
-      "sha256": "f2c892b55abb71d0aca4ee9411a90d80c969062163d3473d841c8cde59134fcb"
-    },
     "examples/anchor0_frozen_rows.json": {
       "bytes": 1512,
       "sha256": "62c5f4c512fb00f03bfb06c75b1a747ab7482d71bc8bfa3d09b3b84555cb03c5"
-    },
-    "lineage/LINEAGE.json": {
-      "bytes": 1300,
-      "sha256": "5647c6a542086153f3df8b34420b1aab856c3a73f71a460aa68861b7ca96151d"
-    },
-    "lineage/R2_FAILED_RESOURCE_RESULT.json": {
-      "bytes": 1112,
-      "sha256": "ea954ba33dea7ffe82c9ca3078afe64db1f49c7aec5032a13af501fc3dddd7b8"
-    },
-    "lineage/README.md": {
-      "bytes": 1896,
-      "sha256": "76e51f6cf1ae56bd557f28b1070d92bd5b6e140e9f3f787b29e519d783ddf1af"
-    },
-    "source/INPUT_CONTRACT.json": {
-      "bytes": 2836,
-      "sha256": "0e22c9f934c4deb7723b52c8c8b890cf4ce30de2acc811715267a61e9f8284e1"
-    },
-    "source/REVISION_CONTRACT.json": {
-      "bytes": 1702,
-      "sha256": "37e15560ec2d954f645c0a430a44be35f3cedde3b839f1b4674aa064fc8ea00b"
-    },
-    "source/SOURCE_MANIFEST.json": {
-      "bytes": 1434,
-      "sha256": "c0625d4b332478a271b07c417610c4912171af37b4d94c5cfde1ad13115a19c2"
-    },
-    "source/build_curriculum.py": {
-      "bytes": 15562,
-      "sha256": "a4965d5857d5049de28bae48cce5360267ff4865711b8521bb9b18f0496a9ca8"
-    },
-    "source/curriculum_core.py": {
-      "bytes": 10091,
-      "sha256": "993f48d0b21bde2a28b0db9827b2283e66ac9ca690312637e16f27e602648d42"
-    },
-    "source/demo_tiny.py": {
-      "bytes": 3392,
-      "sha256": "053ea909d101d1be314c82164df17cdd4df859ede672449431f3021164d86bcc"
-    },
-    "source/qualification.py": {
-      "bytes": 5396,
-      "sha256": "f8fb58f1e47028a86cda84698417affefc3d0b285bda2db7dd8a8a5c2ba0547c"
-    },
-    "source/run_owned_curriculum.py": {
-      "bytes": 12531,
-      "sha256": "44e79492ac50a8ba8f05950628340810a0a3f8a1bba3e7488b7053dfb433c0fe"
-    },
-    "source/sample_curriculum.py": {
-      "bytes": 1778,
-      "sha256": "6a795183ef9b94e530774f57b546332a391054d4985929c95e9e27152f0895b3"
-    },
-    "verification/PUBLIC_CPU_RESULT_PROVENANCE.json": {
-      "bytes": 1194,
-      "sha256": "3bacb60b0ac743ca21934b3abb45f60df86baaa491c04cf28b8c374ba8320528"
-    },
-    "verify_release.py": {
-      "bytes": 1596,
-      "sha256": "77e4c1611b23d521b1622a67e2b32024ec7a416375b352922c32b90b6ace984f"
     }
   },
-  "files_count_excluding_self": 32,
   "manifest_self_excluded": true,
-  "schema": "casmi-reference-negative-curriculum-public-release-files/1",
   "staging_worker_reexecution": false
 }

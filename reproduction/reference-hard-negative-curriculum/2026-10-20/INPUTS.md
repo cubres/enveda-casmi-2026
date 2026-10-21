@@ -1,6 +1,6 @@
 # Immutable scientific inputs
 
-The completed-output consumer needs no additional data. A future fresh scientific reproduction must obtain every listed exact path and verify its raw length/SHA256 before use. These links are public commit-specific objects; no private/native dataset, credentials or source download is part of release staging.
+These are the exact public-input pins used by the prior R3 mechanics run. The current public package is source-only and no longer contains its completed output tables. A URL and hash pin document provenance; they do not grant permission to reproduce or redistribute any mask-derived output. Verify current component terms before use.
 
 | Input path | Bytes | SHA256 | Immutable raw object |
 | --- | ---: | --- | --- |
@@ -16,4 +16,4 @@ The completed-output consumer needs no additional data. A future fresh scientifi
 | structure_files/external_chebi3_4096.parquet | 435,905 | `0e93055e6f38da092dd0c7594a82ad2ac549f94f5091a002e084fc51c8f6048a` | [download](https://raw.githubusercontent.com/cubres/enveda-casmi-2026/9cb4a4a6bc9ce2e97ce7dfcbaca1419bbb5bbb34/reproduction/chebi3-fullfp-shard/2026-10-20/external_chebi3_4096.parquet) |
 | structure_files/external_fp.npy | 5,324,928 | `bf054278a885292b95391aeaa6778b13c5f05e4705638ef582eef566dcf6af57` | [download](https://raw.githubusercontent.com/cubres/enveda-casmi-2026/9cb4a4a6bc9ce2e97ce7dfcbaca1419bbb5bbb34/reproduction/chebi3-fullfp-shard/2026-10-20/external_fp.npy) |
 
-The historical ROOT owner is archival and requires excluded private local control records. Do not invoke it as a public full reproduction or set the builder guard manually. A separate portable owner is only proposed outside this qualified release. All six actual released output bytes are verified by `python3 -B verify_release.py`; a fresh run can compare the four deterministic scientific files, while its timing/RSS receipts are newly measured.
+The historical ROOT owner is archival and requires excluded private local control records. Do not invoke it as a public full reproduction or set the builder guard manually. The prior R3 output tree has been withdrawn from the current public branch pending mask-rights clarification; the consumer cannot run against this source-only checkout. The single synthetic demo remains runnable without any of these inputs.

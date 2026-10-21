@@ -19,5 +19,22 @@
   ],
   "root_specific_wrapper_fresh_public_reproduction_claim": false,
   "schema": "casmi-reference-negative-curriculum-public-provenance/1",
-  "scope": "Completed reference-target curriculum and actual CPU mechanics/resource evidence; no model/spectra/quality result."
+  "scope": "Completed reference-target curriculum and actual CPU mechanics/resource evidence; no model/spectra/quality result.",
+  "current_publication_status": "SOURCE_ONLY_DERIVED_OUTPUTS_WITHDRAWN_PENDING_MASK_RIGHTS",
+  "withdrawal": {
+    "date": "2026-10-21",
+    "reason": "Independent review could not establish exact redistribution terms for the training-derived selected fingerprint mask used to compute the generated tables.",
+    "withdrawn_paths": [
+      "completed/completed/data/CANARY64.json",
+      "completed/completed/data/CURRICULUM_COMPLETE.json",
+      "completed/completed/data/OUTPUT_MANIFEST.json",
+      "completed/completed/data/SPLIT_EVIDENCE.json",
+      "completed/completed/data/anchors.csv",
+      "completed/completed/data/excluded_source_pairs.csv",
+      "completed/completed/data/negative_pairs.csv",
+      "examples/anchor0_frozen_rows.json"
+    ],
+    "git_history_rewritten": false,
+    "notebook_identity_touched": false
+  }
 }
