@@ -2,6 +2,8 @@
 
 Captured 2026-10-21 14:29 UTC. This is an original research note based on public Kaggle pages. It contains no competition rows, derived features, copied candidate tables, model weights, or notebook source code.
 
+This is a proposed experiment only: it reports no measured gain, new official score, or new dataset.
+
 ## Current verified position
 
 The native public leaderboard shows a top score of **0.495** and prvsiyan at **0.456**, rank **374/3,740**. Kaggle says the public score covers about 31% of test molecules, so it is a partial and noisy view of final performance. The public code list sorted by score currently surfaces Gluzdov's data/method notebook at **0.464** and Flexonafft's notebook at **0.462**. The 0.495 leaderboard row is not linked to a public notebook in that view.
