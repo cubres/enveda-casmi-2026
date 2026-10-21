@@ -54,6 +54,14 @@ flowchart LR
     H --> I[Measure MRR@25 and top-1]
 ~~~
 
+
+## Mass-calibration hypothesis: not confirmed for hidden spectra
+
+A separate [public discussion on positive-mode m/z](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/discussion/743395) reports a possible **0.00055 Da** calibrant offset: its author argues the released positive-mode reference uses neutral sodium mass rather than Na⁺ mass and says released positive-mode fragments sit about 0.00049 Da above negative-mode fragments. Those are the author's observations, not an independently reproduced result. The organizer's latest visible reply, dated 29 September, says they are still checking which hidden spectra used that processing; hidden-test applicability remains unconfirmed.
+
+The author notes the difference is unlikely to matter for a 0.01 Da or wider matching tolerance, though tighter fragment-formula matching could be sensitive. Do not shift every positive-mode spectrum on this evidence alone. If a clean, identity-disjoint local holdout is available, the useful test is a mode-stratified paired comparison that subtracts 0.00055 Da from positive-mode peaks only, freezes candidate generation and ranking, and reports eligible coverage and MRR with paired uncertainty. This is a proposed verification only; no score gain or official score is claimed.
+
+
 ## Release and notebook status
 
 This note publishes no derived dataset. The V1 split and all source assets retain their own terms; the split is linked only as an input pointer. Gluzdov's notebook declares Apache-2.0, while its attributed data bundle declares CC BY-NC-SA 4.0 and preserves component-specific terms. The public notebook is credited as a source of the high-level parent-count idea; its code and outputs are not copied here.
