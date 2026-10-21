@@ -20,11 +20,11 @@ The actionable hypothesis is that expanding and diversifying analogue parents ca
 
 Use the already public V1 identity-disjoint split (10,859 train queries and 2,653 development queries) as the fixed source, but re-mask each development answer from every candidate bank and reference spectrum table by the recomputed competition scorer identity. Also remove every query's spectra from the retrieval index. This makes a removal-based unseen-structure analogue test; it is not a verified reconstruction of the hidden test's class-3 population.
 
-Freeze one query-level split, the current candidate generator, downstream filters, final ranker, all random seeds, and tie-breaking. Compare only parent selection:
+Once the preservation gate allows source inspection, bind the actual V43 source/version/hash and record its current parent-selection count. Freeze one query-level split, that exact candidate generator, downstream filters, final ranker, all random seeds, and tie-breaking. Compare only parent selection:
 
 | Arm | Parent set |
 | --- | --- |
-| Control | Six nearest spectral analogues |
+| Control | Exact parent policy and count from the hash-bound V43 source; the public six-parent method is a reference, not an assumption about V43 |
 | Count | Twenty nearest spectral analogues |
 | Diversity | Twenty parents selected from the top 40 spectral neighbours by greedy maximum-minimum Morgan-fingerprint diversity (radius 2, 2,048 bits); spectral-similarity rank breaks ties |
 
