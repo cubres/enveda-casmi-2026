@@ -1,0 +1,85 @@
+{
+  "adduct_row_counts": {
+    "[2M+C2H4O2-H]-": 13,
+    "[2M+CH2O2-H]-": 45,
+    "[2M+H]+": 4819,
+    "[2M+Na]+": 10392,
+    "[2M-H]-": 2832,
+    "[M+2H]2+": 8,
+    "[M+Br]-": 2,
+    "[M+C2H4O2-H]-": 27,
+    "[M+CH2O2-H]-": 1263,
+    "[M+Cl]-": 137,
+    "[M+H]+": 34165,
+    "[M+K]+": 207,
+    "[M+NH4]+": 407,
+    "[M+Na]+": 1037,
+    "[M-H]-": 10117,
+    "[M]+": 65
+  },
+  "all_training_rows": 2539608,
+  "collision_energy_signature_row_counts_top_20": {
+    "-20 ev": 2579,
+    "-40 ev": 4496,
+    "-40,-20 ev": 37,
+    "-60 ev": 3797,
+    "-60,-20 ev": 2,
+    "-60,-40 ev": 1,
+    "-60,-40,-20 ev": 3524,
+    "20 ev": 9480,
+    "20,40 ev": 69,
+    "20,40,60 ev": 13131,
+    "20,60 ev": 2,
+    "40 ev": 13365,
+    "40,60 ev": 1,
+    "60 ev": 12507,
+    "unknown": 2545
+  },
+  "identity_basis": "RDKit TautomerEnumerator canonicalization then InChIKey14",
+  "ingest_library_row_counts": {
+    "drug_plus": 2545,
+    "enveda-180": 62991
+  },
+  "invalid_unique_smiles": 0,
+  "limitations": [
+    "A comma-separated collision-energy label is one acquisition setting, not several spectra.",
+    "Training coverage does not establish hidden-test coverage or model-quality improvement.",
+    "Only aggregate counts are emitted; no spectra, structures, labels, or predictions are emitted."
+  ],
+  "rdkit_version": "2026.03.3",
+  "rows_read": 65536,
+  "runtime_seconds": 15.281,
+  "scope": "aggregate training coverage only; no model score or test-data access",
+  "scorer_identity_coverage": {
+    "structures_with_direct_[M+H]+": 11128,
+    "structures_without_direct_[M+H]+": 1360,
+    "without_[M+H]+_with_[M+NH4]+": 71,
+    "without_[M+H]+_with_any_proxy": 71,
+    "without_[M+H]+_with_at_least_two_distinct_proxy_CE_signatures": 71,
+    "without_[M+H]+_with_both_proxy_types": 0,
+    "without_[M+H]+_with_dehydrated_protonated_proxy": 0
+  },
+  "scorer_identity_multi_energy_by_proxy": {
+    "ammonium": 71
+  },
+  "scorer_unique_structures": 12488,
+  "status": "COMPLETE_CANARY",
+  "stored_identity_coverage": {
+    "structures_with_direct_[M+H]+": 11130,
+    "structures_without_direct_[M+H]+": 1363,
+    "without_[M+H]+_with_[M+NH4]+": 71,
+    "without_[M+H]+_with_any_proxy": 71,
+    "without_[M+H]+_with_at_least_two_distinct_proxy_CE_signatures": 71,
+    "without_[M+H]+_with_both_proxy_types": 0,
+    "without_[M+H]+_with_dehydrated_protonated_proxy": 0
+  },
+  "stored_identity_multi_energy_by_proxy": {
+    "ammonium": 71
+  },
+  "stored_inchikey14_unique_structures": 12493,
+  "training_file": "train.parquet",
+  "training_license": "CC BY-NC 4.0; derived aggregates retain source terms",
+  "training_sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98",
+  "unique_normalized_smiles": 12494,
+  "workers": 6
+}
