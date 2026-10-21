@@ -6,7 +6,7 @@ This is a proposed experiment only: it reports no measured gain, new official sc
 
 ## Current verified position
 
-The native public leaderboard shows a top score of **0.499** and prvsiyan at **0.456**, rank **382/3,744**. Kaggle says the public score covers about 31% of test molecules, so it is a partial and noisy view of final performance. The public code list sorted by score currently surfaces Gluzdov's data/method notebook at **0.464** and Flexonafft's notebook at **0.462**. The score-sorted code list does not surface a notebook for the current 0.499 leader, pikachu (`jzhpfn`); the live profile's Public Notebooks section returned “No results found.” This only means no public notebook was found on that profile, not that the leaderboard submission lacks a private source.
+The native public leaderboard shows a top score of **0.499** and prvsiyan at **0.456**, rank **383/3,744** (fresh native leaderboard read, 2026-10-21). Kaggle says the public score covers about 31% of test molecules, so it is a partial and noisy view of final performance. The public code list sorted by score currently surfaces Gluzdov's data/method notebook at **0.464** and Flexonafft's notebook at **0.462**. The score-sorted code list does not surface a notebook for the current 0.499 leader, pikachu (`jzhpfn`); the live profile's Public Notebooks section returned “No results found.” This only means no public notebook was found on that profile, not that the leaderboard submission lacks a private source.
 
 Our accepted Analog Propagation V43 result is 0.456. It remains terminal and must not be re-submitted. The current notebook-preservation workflow is still stopped, so this note makes no claim that V43's source or output was inspected or changed.
 
