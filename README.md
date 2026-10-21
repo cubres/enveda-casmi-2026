@@ -1,5 +1,18 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Verified campaign status and next test · 21 October 2026
+
+The native [submission row](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/submissions) confirms that **Analog Propagation, Version 43** (`scriptVersionId=360497306`) completed successfully with public MRR@25 **0.456**. The current [public leaderboard](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/leaderboard) shows **0.495** at the top and prvsiyan at rank **374/3,740**. Kaggle says the public score covers about 31% of test molecules, so this is not a private/final score. The accepted row is recorded; it must not be resubmitted as recovery.
+
+The strongest verifiable public code pages reviewed are [Gluzdov V16](https://www.kaggle.com/code/dmitriigluzdov/casmi-26-the-data-behind-spectra-to-structures?scriptVersionId=360635689), whose page shows a 0.464 badge while its own version table does not score V16, and [Flexonafft V47](https://www.kaggle.com/code/flexonafft/casmi26-closing-the-evidence-gap?scriptVersionId=360486019), whose best badge is 0.462. Flexonafft V49's [multi-collision-energy proxy experiment](https://www.kaggle.com/code/flexonafft/casmi26-closing-the-evidence-gap?scriptVersionId=360740328) is unscored; its visible smoke had no eligible multi-energy proxy molecules, requested no additional ICE/GL pairs, and left the candidate output unchanged. These are public leads, not reproduced gains.
+
+A clean-room follow-up is to use identity-disjoint labeled molecules with no measured `[M+H]+` and multiple collision-energy proxy spectra. Freeze candidate generation and the rest of ranking; compare the current proxy path with per-energy GLACIER scores averaged across energy buckets, fusing ICE only among same-formula candidates. Report MRR@25, paired uncertainty, and eligible-row coverage; keep the existing route for ineligible molecules. This is a proposed experiment, not a measured result.
+
+The new [PubChemLite V1 payload audit](datasets/casmi26-pubchemlite-v1-integrity-audit/README.md) reproduces the exact archive, CRC, manifest, payload hashes, and NumPy headers without loading the pickle. It explicitly leaves row identity/alignment and the Kaggle-mirror versus upstream license difference unresolved. No score gain or competition-use clearance is claimed.
+
+The dated sections below preserve what was known at their capture times; any earlier wording that V43 was still running or pending is superseded by this verified status.
+
+
 ## V9 complementary checkpoint held-out validation · 20 October
 
 The 3,000-update V9 complementary FPNet checkpoint did not improve on the selected V6 baseline in a paired, fixed-draw 2,048-structure CPU-FP32 proxy: **0.702585 vs 0.706274**, paired change **−0.003689** (95% query-bootstrap interval **[−0.008241, +0.000569]**). This is neither CUDA-FP16 parity nor an official score, and the checkpoint is not adopted into the scorer. The [R3 report, exact receipt, evaluator source and limits](experiments/2026-10-20-v9-complementary-heldout-r3/README.md) retain the full hash binding.
