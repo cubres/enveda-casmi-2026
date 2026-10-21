@@ -1,0 +1,55 @@
+{
+  "archive": "casmi26-pubchemlite-cc0-candidate-fingerprints.zip",
+  "archive_bytes": 113498418,
+  "archive_sha256": "fb4be2fe5d12d3c5bfb16dcec7bfe4462fb94572a3125d5eb2bde156c3ef0cf7",
+  "arrays": {
+    "pubchemlite_fp.npy": {
+      "descr": "|u1",
+      "dtype": "uint8",
+      "fortran_order": false,
+      "logical_nbits_from_manifest": 6930,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        385760,
+        867
+      ]
+    },
+    "pubchemlite_mass.npy": {
+      "descr": "<f8",
+      "dtype": "float64",
+      "fortran_order": false,
+      "logical_nbits_from_manifest": 6930,
+      "npy_version": [
+        1,
+        0
+      ],
+      "shape": [
+        385760
+      ]
+    }
+  },
+  "dataset": "franciscoangulo/casmi26-pubchemlite-cc0-candidate-fingerprints",
+  "dataset_version": 1,
+  "files": {
+    "pubchemlite_fp.npy": {
+      "bytes": 334454048,
+      "sha256": "724926ecb4bfb2efc7e63014e7f6b8bed8aec34882a435f039c0ddab139e569c"
+    },
+    "pubchemlite_mass.npy": {
+      "bytes": 3086208,
+      "sha256": "f107bdf361b75fb2f6115abb2a28eda053b476b6c3694f4b0a2bfdadb248730f"
+    },
+    "pubchemlite_meta.pkl": {
+      "bytes": 23642096,
+      "sha256": "3c9a18c7662022bce51759b1660292b712fe7544459020e38299d2f0747517ce"
+    }
+  },
+  "license_cleared_for_competition_use": false,
+  "manifest_sha256": "f333f6fa150f807f2981faa7dcb930b90c6f5022015f7314f428cb8bd84e42cb",
+  "metadata_pickle_loaded": false,
+  "row_identity_alignment_verified": false,
+  "zip_crc": "passed"
+}
