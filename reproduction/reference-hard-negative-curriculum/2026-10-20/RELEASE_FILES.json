@@ -3,7 +3,7 @@
   "status": "CODE_ONLY_OUTPUTS_WITHDRAWN_PENDING_COMPONENT_RIGHTS",
   "scope": "Marked Apache-2.0 source, synthetic demo, attribution and execution provenance only; generated mask-derived tables are absent.",
   "files_count_excluding_self": 25,
-  "bytes_excluding_self": 97671,
+  "bytes_excluding_self": 97601,
   "files": {
     "assets/curriculum.svg": {
       "bytes": 3275,
@@ -46,8 +46,8 @@
       "sha256": "76e51f6cf1ae56bd557f28b1070d92bd5b6e140e9f3f787b29e519d783ddf1af"
     },
     "PROVENANCE.json": {
-      "bytes": 2317,
-      "sha256": "04938313ca18ae22a6e23e6bec471763dd1991e772532e353a179d22e9db24de"
+      "bytes": 2247,
+      "sha256": "847ce68bc22d964f1e3087ea7509951ab2e9d95c94519e889cac872f469c8925"
     },
     "README.md": {
       "bytes": 3508,
