@@ -1,5 +1,13 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Multi-energy proxy coverage audit · 21 October 2026
+
+A reproducible scan of all **2,539,608** public training rows found **1,474** scorer-canonical structures with no measured `[M+H]+` and at least two distinct proxy collision-energy signatures (1,207 ammonium and 292 dehydrated-protonated; 25 overlap). The corresponding stored-key count is 1,478, demonstrating why the scorer’s tautomer-canonical InChIKey14 must be used for joins. This is training-data coverage only; it is not a model score or evidence of hidden-test coverage.
+
+The [runnable profiler, aggregate coverage dataset, hash-bound run receipt and diagram](experiments/2026-10-21-multienergy-proxy-coverage/README.md) are published. The experiment is inspired by Gluzdov V16’s same-formula ICEBERG/GLACIER rerank and the unscored multi-energy idea in Flexonafft V49; it proposes a fixed-candidate, structure-disjoint comparison of the current proxy path against equal-weight collision-energy pooling. No Kaggle scoring job or submission was started; the existing Analog Propagation kernel is terminal `COMPLETE`, and the stopped V43 follow-on remains gated on the missing external source-repair receipt.
+
+![Multi-energy proxy coverage audit pipeline](experiments/2026-10-21-multienergy-proxy-coverage/coverage_pipeline.svg)
+
 ## Candidate-generation frontier experiment · 21 October 2026
 
 A public discussion reports correct structures generated for 100/130 database-absent molecules but only 7/130 at rank 1. Gluzdov's 20-parent version is still unscored. The [candidate-generation audit](research/2026-10-21-candidate-generation-recall/README.md) sets a molecule-disjoint test that measures answer survival through generation, filtering and ranking separately. This is a proposed experiment, not a score claim.
