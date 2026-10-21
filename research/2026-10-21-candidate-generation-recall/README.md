@@ -20,6 +20,14 @@ A separate high-visibility public candidate, [Dual-Gate Evidence Margin & PubChe
 
 The actionable hypothesis is that expanding and diversifying analogue parents can raise candidate recall, while the existing filters and ranker may discard the extra correct structures. We should measure each stage before tuning the ranker or blending more lists.
 
+## New public analog-propagation lead and library to qualify · 21 October
+
+A new public [Haideptry notebook](https://www.kaggle.com/code/haideptry/enveda-casmi-2026-fast-spectral-cosine-baseline) shows a **0.339 best score at V17** and a 59-minute T4×2 run. Its related [competition discussion](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/discussion) describes “4-channel mass-shifted analog propagation” with neural Bayes reranking. That score is below our accepted V43 result (0.456) and the current public leader (0.499), so this is not a stronger baseline to reproduce. The discussion gives a useful hypothesis—separate mass-shift retrieval channels and calibrate their combined evidence—but does not provide a controlled ablation or a reproduction recipe in the listing.
+
+The discussion index also surfaced a newly shared “139K harmonized MassBank spectra + fingerprints” library. Its exact dataset version, source manifest, license scope, and overlap with competition training were not established here. Kaggle’s [official data page](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/data) already lists 101,727 MassBank and 92,416 MoNA spectra, so the added library may be substantially redundant. Do not treat its size as new coverage or use it until its exact version, terms, record hashes, and scorer-identity overlap are checked.
+
+A distinct follow-up, once the source gate clears, is cross-fitted evidence calibration over per-candidate, metric-deduplicated channel evidence. Keep parent diversity explicit so near-duplicate analogues do not cast correlated votes; learn channel weights only on structure-disjoint folds; freeze the candidate union and compare full-list MRR@25, top-1, and query coverage on a separate holdout. Remove each answer from every candidate and spectral retrieval source before scoring, and use paired query uncertainty. This combines the public multi-channel idea with an independently testable correction for correlated parent evidence. No run or score gain is claimed.
+
 ## Proposed experiment
 
 Use the already public V1 identity-disjoint split (10,859 train queries and 2,653 development queries) as the fixed source, but re-mask each development answer from every candidate bank and reference spectrum table by the recomputed competition scorer identity. Also remove every query's spectra from the retrieval index. This makes a removal-based unseen-structure analogue test; it is not a verified reconstruction of the hidden test's class-3 population.
