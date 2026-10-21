@@ -30,6 +30,14 @@ Overlap with the current competition training is unmeasured. Kaggle's [official 
 
 A distinct follow-up, once the source gate clears, is cross-fitted evidence calibration over per-candidate, metric-deduplicated channel evidence. Keep parent diversity explicit so near-duplicate analogues do not cast correlated votes; learn channel weights only on structure-disjoint folds; freeze the candidate union and compare full-list MRR@25, top-1, and query coverage on a separate holdout. Remove each answer from every candidate and spectral retrieval source before scoring, and use paired query uncertainty. This combines the public multi-channel idea with an independently testable correction for correlated parent evidence. No run or score gain is claimed.
 
+## Complementary fingerprint checkpoint screen: no positive result · 20 October
+
+A one-use, local CPU validation compared the 3,000-step complementary fingerprint checkpoint against its pinned baseline on 2,048 held-out structures. The measured sampled-draw MRR@25 was **0.706274** for the baseline and **0.702585** for the candidate (candidate minus baseline **−0.003689**). A paired 5,000-resample percentile bootstrap gave a 95% interval of **[−0.008241, 0.000569]**. The point estimate favors the baseline and the interval includes zero; this is not evidence of improvement.
+
+The split contains one query per role-1-even structure and uses 63 fixed candidate draws per query sampled with replacement, retaining repeated draws in rank positions. The 64-query canary passed mechanics, resource and numerical checks; its score was not used as a quality gate. Both arms ran CPU FP32 with two threads. This local proxy is **not** the official unique-candidate metric, CUDA FP16 parity, a Kaggle score, native-serving qualification, or a submission. No GPU or Kaggle call occurred.
+
+The evaluator script is Apache-2.0, but the executed copy currently binds local data and checkpoint paths. This note publishes only aggregate metrics and checkpoint hashes, not the script, model weights, queries or per-query rows; a portable public tool has not yet been released. The baseline checkpoint SHA-256 is `9c46ca4fcf19002fecbcded0d0808e8a81e3a25a143e684e259f265c44a5be31`; the candidate checkpoint SHA-256 is `c1c7650411d507f395e3077e90db72a8b1d692493e91c7f13ba6f55e6359b286`. Do not advance this checkpoint to serving or claim a score gain from this result.
+
 ## Proposed experiment
 
 Use the already public V1 identity-disjoint split (10,859 train queries and 2,653 development queries) as the fixed source, but re-mask each development answer from every candidate bank and reference spectrum table by the recomputed competition scorer identity. Also remove every query's spectra from the retrieval index. This makes a removal-based unseen-structure analogue test; it is not a verified reconstruction of the hidden test's class-3 population.
