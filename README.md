@@ -1,5 +1,13 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## CC0 COCONUT ion index published · 25 October 2026
+
+The [COCONUT Oct 2026 CC0 Mass and Structure Index](https://www.kaggle.com/datasets/prvsiyan/coconut-oct-2026-cc0-neutral-mass-index) is public. It contains 738,794 source-ordered COCONUT records, a 728,033-row neutral mass index, and ten theoretical channels matching the official CASMI test-adduct order. The [dataset card](datasets/coconut-oct-2026-cc0-neutral-mass-index/README.md) records the query contract, source hashes, formula audit, and limits.
+
+The release is a reusable data artifact, not a model or score claim. Kaggle reports the dataset ready and lists all 12 expected files with matching byte sizes; a downloaded `adducts.csv` matches the local SHA-256. COCONUT marks the October 2026 release CC0 on its [download page](https://coconut.naturalproducts.net/download).
+
+The latest verified prvsiyan CASMI submission remains **0.456 MRR@25** (completed 20 October). No new notebook version or competition submission has been made from this dataset. Any future scored use still needs split-safe evaluation and a full rights review of every input used by the notebook.
+
 ## Multi-energy proxy coverage audit · 21 October 2026
 
 A reproducible scan of all **2,539,608** public training rows found **1,474** scorer-canonical structures with no measured `[M+H]+` and at least two distinct proxy collision-energy signatures (1,207 ammonium and 292 dehydrated-protonated; 25 overlap). The corresponding stored-key count is 1,478, demonstrating why the scorer’s tautomer-canonical InChIKey14 must be used for joins. This is training-data coverage only; it is not a model score or evidence of hidden-test coverage.
