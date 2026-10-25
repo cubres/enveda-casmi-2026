@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="400" viewBox="0 0 920 400" role="img" aria-labelledby="title desc">
+  <title id="title">CASMI local diagnostic MRR comparison</title>
+  <desc id="desc">On one selected sample of 200 targets, the bi encoder scored 0.47981 and the cross encoder scored 0.48345 MRR at 25. The difference was 0.00364 and is not a leaderboard result.</desc>
+  <rect width="920" height="400" rx="24" fill="#f7f8fc"/>
+  <text x="54" y="58" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700" fill="#17223b">One local diagnostic · 200 targets</text>
+  <text x="54" y="91" font-family="Inter, Arial, sans-serif" font-size="16" fill="#526078">Official-key MRR@25 · one checkpoint · CPU</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="15" fill="#526078">
+    <text x="54" y="167">Bi encoder</text>
+    <text x="54" y="241">Cross encoder</text>
+  </g>
+  <g>
+    <rect x="206" y="138" width="560" height="38" rx="9" fill="#e4e9f2"/>
+    <rect x="206" y="138" width="537.4" height="38" rx="9" fill="#62769b"/>
+    <rect x="206" y="212" width="560" height="38" rx="9" fill="#e4e9f2"/>
+    <rect x="206" y="212" width="541.4" height="38" rx="9" fill="#277d73"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#17223b">
+    <text x="778" y="164">0.47981</text>
+    <text x="778" y="238">0.48345</text>
+  </g>
+  <line x1="54" y1="284" x2="866" y2="284" stroke="#d4dae5"/>
+  <rect x="54" y="306" width="218" height="42" rx="21" fill="#e5f4ef"/>
+  <text x="76" y="333" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#17685f">Difference +0.00364</text>
+  <text x="294" y="332" font-family="Inter, Arial, sans-serif" font-size="15" fill="#526078">Small one sample signal. No official score or leaderboard change is claimed.</text>
+</svg>
