@@ -1,5 +1,12 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## CASMI Structure Atlas v5 lookup guard · 8 November 2026
+
+Published additive version 5 of the [public CASMI Structure Atlas](https://www.kaggle.com/datasets/prvsiyan/casmi-structure-atlas-v2). The dataset keeps its existing identity, CC0 license, and 738,789-row COCONUT Parquet table (SHA-256 `b2603bc552c921cdc35ec0639fc7edc783cb9fb96d2d1c46fb0e07baaebc1d17`). The lookup now rejects NaN and positive or negative infinity for observed m/z and ppm before opening the table.
+
+The documented 5 ppm example still returns 98 mass matches, displays 10, and lists `CNP0043052.0` first. Exact mass alone cannot identify a compound. The uploaded public `mass_lookup.py` was downloaded again and matched the candidate byte for byte (SHA-256 `50f025c9de2c8f9a3ca8d3f8d6aeee2f24cad327c750f5d3706a2b129bdc07e0`). Kaggle reported 10/10 usability and 0 visible votes at the post-upload check. No table rows, CASMI competition records, or competition notebooks changed.
+
+
 ## CC0 COCONUT ion index published · 25 October 2026
 
 The [COCONUT Oct 2026 CC0 Mass and Structure Index](https://www.kaggle.com/datasets/prvsiyan/coconut-oct-2026-cc0-neutral-mass-index) is public. It contains 738,794 source-ordered COCONUT records, a 728,033-row neutral mass index, and ten theoretical channels matching the official CASMI test-adduct order. The [dataset card](datasets/coconut-oct-2026-cc0-neutral-mass-index/README.md) records the query contract, source hashes, formula audit, and limits.
