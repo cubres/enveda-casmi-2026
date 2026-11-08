@@ -1,5 +1,10 @@
 # Enveda CASMI 2026: experiments and public notebook
 
+## Public Version 46 submission pending · 8 November 2026
+
+Kaggle submission row **58131924** for `Analog Propagation - CASMI 2026 baseline`, Version 46 (`submission.csv`), was still **PENDING** at the 2026-11-08 status check. Public and private scores are blank, so this is not a score result. No further competition submission should be sent until this row reaches a terminal status.
+
+
 ## CASMI Structure Atlas v5 lookup guard · 8 November 2026
 
 Published additive version 5 of the [public CASMI Structure Atlas](https://www.kaggle.com/datasets/prvsiyan/casmi-structure-atlas-v2). The dataset keeps its existing identity, CC0 license, and 738,789-row COCONUT Parquet table (SHA-256 `b2603bc552c921cdc35ec0639fc7edc783cb9fb96d2d1c46fb0e07baaebc1d17`). The lookup now rejects NaN and positive or negative infinity for observed m/z and ppm before opening the table.
