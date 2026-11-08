@@ -1,9 +1,8 @@
 # Enveda CASMI 2026: experiments and public notebook
 
-## Public Version 46 submission pending · 8 November 2026
+## Version 46 submission completed · 8 November 2026
 
-Kaggle submission row **58131924** for `Analog Propagation - CASMI 2026 baseline`, Version 46 (`submission.csv`), was still **PENDING** at the 2026-11-08 status check. Public and private scores are blank, so this is not a score result. No further competition submission should be sent until this row reaches a terminal status.
-
+Official Kaggle row **58131924** for `prvsiyan/casmi26-leader-safe-doc-prior-ensemble`, Version 46 (`submission.csv`), is **COMPLETE** with public score **0.481**; the private score is blank. The official CLI row and fresh kernel status both reported COMPLETE at 2026-11-08 20:13 UTC. This records the row’s score only: V46 validation had already found source drift and marked the candidate unqualified, so this result does not clear its source-rights or promotion gate. No new CASMI update or submission was made in this recheck.
 
 ## CASMI Structure Atlas v5 lookup guard · 8 November 2026
 
